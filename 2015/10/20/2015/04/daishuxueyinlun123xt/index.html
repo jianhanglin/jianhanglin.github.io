@@ -1,0 +1,938 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题解答">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算">
+<meta property="og:url" content="http://yoursite.com/2015/10/20/2015/04/daishuxueyinlun123xt/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题解答">
+<meta property="og:updated_time" content="2015-10-20T14:01:50.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算">
+<meta name="twitter:description" content="习题解答">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/20/2015/04/daishuxueyinlun123xt/" title="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算" itemprop="url">《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-20T14:00:10.000Z" itemprop="datePublished"> 發表於 2015-10-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">1.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="习题">习题</h2><p>$1$.在下述映射中，哪些是线性映射：</p>
+<p>$$\begin{align}<br>a) &amp; [x_1 ,x_2 ,\cdots ,x_n ]\mapsto [x_n ,\cdots ,x_2 ,x_1 ]; \\<br>b) &amp; [x_1 ,x_2 ,\cdots ,x_n ]\mapsto [x_1 ,x_2^2 ,\cdots ,x_n^n ]; \\<br>c) &amp; [x_1 ,x_2 ,\cdots ,x_n ]\mapsto [x_1 ,x_1 +x_2 ,\cdots ,x_1 +x_2 +\cdots +x_n ].<br>\end{align}$$</p>
+<p>解：任取$x=[x_1 ,x_2 ,\cdots ,x_n ] ,y=[y_1 ,y_2 ,\cdots ,y_n ] ,\lambda \in \mathbb{R}$，</p>
+<p>$a)\;$.根据定义，</p>
+<p>$$\varphi (x+y) =\varphi ([x_1 +y_1 ,x_2 +y_2 ,\cdots ,x_n +y_n ])=[x_n +y_n ,\cdots ,x_2 +y_2 ,x_1 +y_1 ],$$</p>
+<p>$$\varphi (x) +\varphi (y) =[x_n ,\cdots ,x_2 ,x_1 ] +[y_n ,\cdots ,y_2 ,y_1 ] =[x_n +y_n ,\cdots ,x_2 +y_2 ,x_1 +y_1 ],$$</p>
+<p>$$\varphi (\lambda x)=[\lambda x_n \cdots ,\lambda x_2 ,\lambda x_1 ]=\lambda \varphi (x),$$</p>
+<p>有$\varphi (x+y)=\varphi (x) +\varphi (y)$且$\varphi (\lambda x)=\lambda \varphi (x)$，满足线性映射的定义.</p>
+<p>$b)\;$.因为</p>
+<p>$$\begin{align}<br>\varphi (\lambda x) &amp; =\varphi ([\lambda x_1 ,\lambda x_2 ,\cdots ,\lambda x_n ]) \\<br> &amp; = [\lambda x_1 ,\lambda ^2 x_2^2 ,\cdots ,\lambda ^n x_n^n ] \\<br> &amp; =\lambda [x_1 ,\lambda x_2^2 ,\cdots ,\lambda ^{n-1} x_n^n ] \\<br> &amp; \neq \lambda \varphi (x)<br>\end{align}$$</p>
+<p>所以，不满足线性映射的定义.</p>
+<p>$c)\;$.根据定义，</p>
+<p>$$\begin{align}<br>\varphi (x+y) &amp; =\varphi ([x_1 +y_1 ,x_2 +y_2 ,\cdots ,x_n +y_n ]) \\<br> &amp; = [x_1 +y_1 ,x_1 +y_1 +x_2 +y_2 ,\cdots ,x_1 +y_1 +x_2 +y_2 +\cdots +x_n +y_n ] \\<br> &amp; = [x_1 ,x_1 +x_2 ,\cdots ,x_1 +x_2 +\cdots +x_n ] +[y_1 ,y_1 +y_2 ,\cdots ,y_1 +y_2 +\cdots +y_n ] \\<br> &amp; =\varphi (x) +\varphi (y),<br>\end{align}$$</p>
+<p>$$\begin{align}<br>\varphi (\lambda x) &amp; =\varphi ([\lambda x_1 ,\lambda x_2 ,\cdots ,\lambda x_n ]) \\<br> &amp; = [\lambda x_1 ,\lambda x_1 +\lambda x_2 ,\cdots ,\lambda x_1 +\lambda x_2 +\lambda x_n ] \\<br> &amp; =\lambda [x_1 ,x_1 +x_2 ,\cdots ,x_1 +x_2 +x_n ] \\<br> &amp; =\lambda \varphi (x),<br>\end{align}$$</p>
+<p>有$\varphi (x+y)=\varphi (x) +\varphi (y)$且$\varphi (\lambda x)=\lambda \varphi (x)$，满足线性映射的定义.</p>
+<p>$2$.证明</p>
+<p>$$\begin{pmatrix} 1 &amp; a &amp; c \\ 0 &amp; 1 &amp; b \\ 0 &amp; 0 &amp; 1 \end{pmatrix} ^m =\begin{pmatrix} 1 &amp; ma &amp; \dfrac{m(m-1)}{2}ab+mc \\ 0 &amp; 1 &amp; mb \\ 0 &amp; 0 &amp; 1 \end{pmatrix} .$$</p>
+<p>求矩阵</p>
+<p>$$\begin{pmatrix} 1 &amp; a &amp; c \\ 0 &amp; 1 &amp; b \\ 0 &amp; 0 &amp; 1 \end{pmatrix}$$</p>
+<p>的逆矩阵.</p>
+<p>证明：$(1)\;$.设</p>
+<p>$$A=\begin{pmatrix} 1 &amp; a &amp; c \\ 0 &amp; 1 &amp; b \\ 0 &amp; 0 &amp; 1 \end{pmatrix} $$</p>
+<p>则</p>
+<p>$$A=\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix} +\begin{pmatrix} 0 &amp; a &amp; c \\ 0 &amp; 0 &amp; b \\ 0 &amp; 0 &amp; 0 \end{pmatrix} =I+B,$$</p>
+<p>其中$$B=\begin{pmatrix} 0 &amp; a &amp; c \\ 0 &amp; 0 &amp; b \\ 0 &amp; 0 &amp; 0 \end{pmatrix} $$</p>
+<p>显然</p>
+<p>其中$$B^3=\begin{pmatrix} 0 &amp; a &amp; c \\ 0 &amp; 0 &amp; b \\ 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; a &amp; c \\ 0 &amp; 0 &amp; b \\ 0 &amp; 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; a &amp; c \\ 0 &amp; 0 &amp; b \\ 0 &amp; 0 &amp; 0 \end{pmatrix} =0 $$</p>
+<p>因为$I$与$B$可交换，所以由二项式定理得</p>
+<p>$$\begin{align}<br>A^m &amp; =(I+B)^m \\<br> &amp; = I^m +{m \choose 1} I^{m-1} B+{m \choose 2}I^{m-2} B^2\\<br> &amp; = I+mIB+\dfrac{m(m-1)}{2} IB^2 \\<br> &amp; = I+mB+\dfrac{m(m-1)}{2} B^2 \\<br> &amp; = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}+\begin{pmatrix} 0 &amp; ma &amp; mc \\ 0 &amp; 0 &amp; mb \\ 0 &amp; 0 &amp; 0 \end{pmatrix} +\begin{pmatrix} 0 &amp; 0 &amp; \dfrac{m(m-1)}{2} ab \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix} \\<br> &amp; = \begin{pmatrix} 1 &amp; ma &amp; \dfrac{m(m-1)}{2}ab+mc \\ 0 &amp; 1 &amp; mb \\ 0 &amp; 0 &amp; 1 \end{pmatrix}<br>\end{align}$$</p>
+<p>$(2)\;$.把$m=-1$代入$(1)$的结果，有</p>
+<p>$$\begin{pmatrix} 1 &amp; a &amp; c \\ 0 &amp; 1 &amp; b \\ 0 &amp; 0 &amp; 1 \end{pmatrix} ^1 =\begin{pmatrix} 1 &amp; -a &amp; ab-c \\ 0 &amp; 1 &amp; -b \\ 0 &amp; 0 &amp; 1 \end{pmatrix} .$$</p>
+<p>$3$.验证$\begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} ^3 =E$.</p>
+<p>解：</p>
+<p>$$\begin{align}<br>\begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} ^3 &amp; =\begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix}\\<br> &amp; = \begin{pmatrix} -1 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix}\\<br> &amp; = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} \\<br> &amp; = E,<br>\end{align}$$</p>
+<p>得证.</p>
+<p>$4$.马尔可夫(或随机)矩阵在应用中十分重要：</p>
+<p>$$P=(p_{ij}),p_{ij} \geq 0,\displaystyle \sum_{j=1}^n p_{ij} =1 ,i=1,2,\cdots ,n.$$</p>
+<p>由马尔可夫矩阵确定的线性变换$\varphi _P$通常作用于概率行向量：</p>
+<p>$$X=(x_1 ,\cdots ,x_n ),x_i \geq 0,\displaystyle \sum_{i=1}^n x_i =1.$$</p>
+<p>从下述论断可见，这些来自于自然科学问题的定义是协调的论断，即便对$n=2$，也需要证明.</p>
+<p>$a)$矩阵$P\in M_n (\mathbb{R} )$是马尔可夫的，当且仅当对任意概率向量$X$，$XP$仍然是概率向量(此处$XP=\varphi _P (X)$).</p>
+<p>$b)$如果$P$是正的马尔可夫矩阵(即$\forall i,j,\; p_{ij} &gt; 0$)，那么任意概率向量$X$对应到正的概率向量$XP$(所有的分量严格大于$0$).</p>
+<p>$c)$如果$P$和$Q$都是马尔可夫矩阵，那么矩阵$PQ$也是马尔可夫矩阵.特别地，马尔可夫矩阵的任意次方幂$P^k$是马尔可夫矩阵.</p>
+<p>证明：$(a)\;(1)$.若矩阵$P\in M_n (\mathbb{R} )$是马尔可夫的，则对于任意的概率向量$X$来说，有</p>
+<p>$$\begin{align}<br>XP &amp; = ( x_1 ,\cdots ,x_n ) \begin{pmatrix} p_{11} &amp; p_{12} &amp; \cdots &amp; p_{1n} \\ p_{21} &amp; p_{22} &amp; \cdots &amp; p_{2n} \\ \vdots &amp; \vdots &amp;  &amp; \vdots \\ p_{n1} &amp; p_{n2} &amp; \cdots &amp; p_{nn} \end{pmatrix} \\<br> &amp; = (x_1 p_{11} +x_2 p_{21} +\cdots +x_n p_{n1} ,\cdots ,x_1 p_{1n} +x_2 p_{2n} +\cdots +x_n p_{nn} )\\<br>\end{align}$$</p>
+<p>把$XP$的所有分量全部加起来，得</p>
+<p>$$\begin{align}<br> &amp; (x_1 p_{11} +x_2 p_{21} +\cdots +x_n p_{n1} )+\cdots +(x_1 p_{1n} +x_2 p_{2n} +\cdots +x_n p_{nn} ) \\<br>= &amp; x_1 (p_{11} +p_{12} +\cdots +p_{1n} )+\cdots +x_n (p_{n1} +p_{n2} +\cdots +p_{nn} ) \\<br> &amp; (\because \displaystyle \sum_{j=1}^n p_{ij} =1 ,i=1,2,\cdots ,n ) \\<br>= &amp; x_1 \cdot 1 +\cdots +x_n \cdot 1 \\<br>= &amp; 1<br>\end{align}$$</p>
+<p>故$XP$为概率向量.</p>
+<p>$(2)$.若对于任意的概率向量$X$来说，$XP$为概率向量.由$(1)$中对$XP$的展开式可知，对应于$x_1 ,\cdots ,x_n$的系数$p_{11} +p_{12} +\cdots +p_{1n} ,\cdots ,p_{n1} +p_{n2} +\cdots +p_{nn}$应该分别为$1,\cdots ,1$.根据定义，得矩阵$P$是马尔可夫矩阵.</p>
+<p>$(b)\;$.如果$P$是正的马尔可夫矩阵(即$\forall i,j,\; p_{ij} &gt; 0$)，则对于任意的概率向量$X$来说，有</p>
+<p>$$\begin{align}<br>XP &amp; = ( x_1 ,\cdots ,x_n ) \begin{pmatrix} p_{11} &amp; p_{12} &amp; \cdots &amp; p_{1n} \\ p_{21} &amp; p_{22} &amp; \cdots &amp; p_{2n} \\ \vdots &amp; \vdots &amp;  &amp; \vdots \\ p_{n1} &amp; p_{n2} &amp; \cdots &amp; p_{nn} \end{pmatrix} \\<br> &amp; = (x_1 p_{11} +x_2 p_{21} +\cdots +x_n p_{n1} ,\cdots ,x_1 p_{1n} +x_2 p_{2n} +\cdots +x_n p_{nn} )\\<br>\end{align}$$</p>
+<p>把$XP$的所有分量全部加起来，得</p>
+<p>$$\begin{align}<br> &amp; (x_1 p_{11} +x_2 p_{21} +\cdots +x_n p_{n1} )+\cdots +(x_1 p_{1n} +x_2 p_{2n} +\cdots +x_n p_{nn} ) \\<br>= &amp; x_1 (p_{11} +p_{12} +\cdots +p_{1n} )+\cdots +x_n (p_{n1} +p_{n2} +\cdots +p_{nn} ) \\<br> &amp; (\because \displaystyle \sum_{j=1}^n p_{ij} =1 ,i=1,2,\cdots ,n ) \\<br>= &amp; x_1 \cdot 1 +\cdots +x_n \cdot 1 \\<br>= &amp; 1<br>\end{align}$$</p>
+<p>由于$\forall i,j,\; p_{ij} &gt; 0$，且$x_i \geq 0,\displaystyle \sum_{i=1}^n x_i =1$，故$XP$的所有分量$x_1 p_{1i} +\cdots +x_n p_{ni}$中，必有某个$x_k \neq 0$，且对应于$p_{ki} &gt; 0$，使得分量$x_1 p_{1i} +\cdots +x_n p_{ni} &gt; 0$，故所有的分量必然全大于零.</p>
+<p>因此，任意概率向量$X$对应到正的概率向量$XP$(所有的分量严格大于$0$).</p>
+<p>$(c)\;(1)$.如果$P$和$Q$都是马尔可夫矩阵，设</p>
+<p>$$P=(p_{ij}),p_{ij} \geq 0,\displaystyle \sum_{j=1}^n p_{ij} =1 ,i=1,2,\cdots ,n,$$</p>
+<p>$$Q=(q_{ij}),q_{ij} \geq 0,\displaystyle \sum_{j=1}^n q_{ij} =1 ,i=1,2,\cdots ,n.$$</p>
+<p>记$PQ=C=(c_{ij} )$，考察$C$之第$i$行元素之和，则</p>
+<p>$$\displaystyle \sum_{j=1}^n c_{ij} =\sum_{j=1}^n \sum_{k=1}^n a_{ik} b_{kj} =\sum_{k=1}^n a_{ik} \left( \sum_{j=1}^n b_{kj} \right) =\sum_{k=1}^n a_{ik} \cdot 1=1 (i=1,2,\cdots ,n)$$</p>
+<p>简言之，根据定义，矩阵$PQ$也是马尔可夫矩阵.</p>
+<p>$(2)\;$.由$(1)$并用数学归纳法可证.</p>
+<p>明显，当$k=2$时，由$(1)$可知论断成立.</p>
+<p>设当$k=m$时也成立，下面证明当$k=m+1$时论断也成立.</p>
+<p>$$P^{m+1}=P^m \cdot P ,$$</p>
+<p>因为$P^m$已经假设是马尔可夫矩阵，$P$本身已经是马尔可夫矩阵，根据$(1)$的结论，两个马尔可夫矩阵的乘积必然也是一个马尔可夫矩阵，故当$k=m+1$时，$P^{m+1}$也是一个马尔可夫矩阵.</p>
+<p>由数学归纳法知，马尔可夫矩阵的任意次方幂$P^k$是马尔可夫矩阵.</p>
+<p>$5$.若</p>
+<p>$$H=\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} ,$$</p>
+<p>求$\sideset{^t}{}H\cdot H$.</p>
+<p>解：$$\begin{align}<br>\sideset{^t}{}H\cdot H &amp; =\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot \begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \\<br> &amp; = \begin{pmatrix} 4 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 4 \end{pmatrix}<br>\end{align}$$</p>
+<p>$6$.由$S_n$中的$n$阶循环(见第$1$章$\S 8$)确定的置换矩阵(行单位阵$E_n$)为</p>
+<p>$$P=\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0\end{pmatrix} ,$$</p>
+<p>验证$P^n =E$.</p>
+<p>解：通过计算，矩阵$P$每乘一个$P$，其结果是矩阵$P$里$1$的位置相对往左下角移了一位：</p>
+<p>$$P^2=\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 &amp; 0 \end{pmatrix} ,$$</p>
+<p>$$P^3=\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \end{pmatrix} ,$$</p>
+<p>$$\cdots \cdots \cdots $$</p>
+<p>$$P^n =E.$$</p>
+<p>$7$.对于任意两个$m\times n$矩阵$A$和$B$，证明</p>
+<p>$$\text{rank}(A+B) \leq \text{rank}A +\text{rank}B.$$</p>
+<p>证明：令$A,B$的列向量组分别为</p>
+<p>$$\alpha _1 ,\alpha _2 ,\cdots ,\alpha _n ;\quad \beta _1 ,\beta _2 ,\cdots ,\beta _n .$$</p>
+<p>则$A+B$的列向量组为</p>
+<p>$$\alpha _1 +\beta _1 ,\alpha _2 +\beta _2 ,\cdots ,\alpha _n +\beta _n . $$</p>
+<p>设$\alpha _{i_1 } ,\alpha _{i_2 } ,\cdots ,\alpha _{i_r }$是向量组$\alpha _1 ,\alpha _2 ,\cdots ,\alpha _n$的一个极大线性无关组；$\beta _{j_1 } ,\beta _{j_2 } ,\cdots ,\beta _{j_t }$是向量组$\beta _1 ,\beta _2 ,\cdots ,\beta _n$的一个极大线性无关组.则$\alpha _1 +\beta _1 ,\alpha _2 +\beta _2 ,\cdots ,\alpha _n +\beta _n$可以由向量组$\alpha _{i_1 } ,\alpha _{i_2 } ,\cdots ,\alpha _{i_r } ,\beta _{j_1 } ,\beta _{j_2 } ,\cdots ,\beta _{j_t }$线性表出.因此</p>
+<p>$$\begin{align}<br> &amp; \text{rank} \lbrace \alpha _1 +\beta _1 ,\alpha _2 +\beta _2 ,\cdots ,\alpha _n +\beta _n \rbrace \\<br>\leq &amp; \text{rank} \lbrace \alpha _{i_1 } ,\alpha _{i_2 } ,\cdots ,\alpha _{i_r } ,\beta _{j_1 } ,\beta _{j_2 } ,\cdots ,\beta _{j_t } \rbrace \\<br>\leq &amp; r+t.<br>\end{align}$$</p>
+<p>于是</p>
+<p>$$\text{rank}(A+B) \leq \text{rank}A +\text{rank}B.$$</p>
+<p>$8$.对于任意的$m\times s$矩阵$A$和$s\times n$矩阵$B$，证明</p>
+<p>$$\text{rank}A +\text{rank}B -s\leq \text{rank}AB.$$</p>
+<p>证明： 对于分块阵$\begin{pmatrix} E_s &amp; B \\ A &amp; 0_{m\times n } \end{pmatrix}$来说，有</p>
+<p>$$\begin{pmatrix} E_s &amp; 0_{s\times n} \\ -A &amp; E_{m\times n}\end{pmatrix} \begin{pmatrix} E_s &amp; B \\ A &amp; 0_{m\times n } \end{pmatrix} \begin{pmatrix} E_s &amp; -B \\ 0_{m\times s} &amp; E_{m\times n} \end{pmatrix} =\begin{pmatrix} E_s &amp; 0_{s\times n} \\ 0_{m\times s} &amp; -AB \end{pmatrix} $$</p>
+<p>因此，有</p>
+<p>$$\text{rank} \begin{pmatrix} E_s &amp; B \\ A &amp; 0_{m\times n } \end{pmatrix} =\text{rank} \begin{pmatrix} E_s &amp; 0_{s\times n} \\ 0_{m\times s} &amp; -AB \end{pmatrix} =\text{rank} E_s +\text{rank} (-AB) =s+\text{rank} AB .$$</p>
+<p>设$\text{rank} A=r ,\text{rank} B=t$，则$A$有一个$r$级子矩阵$A_1 $，使得$\mid A_1 \mid \neq 0$；$B$有一个$t$级子矩阵$B_1 $，使得$\mid B_1 \mid \neq 0$.从而$\begin{pmatrix} E_s &amp; B \\ A &amp; 0 \end{pmatrix}$有一个$r+t$阶子式：</p>
+<p>$$\begin{vmatrix} E_1 &amp; B_1 \\ A_1 &amp; 0 \end{vmatrix} =\mid A_1 \mid \mid B_1 \mid \neq 0.$$</p>
+<p>于是，$\text{rank} \begin{pmatrix} E_s &amp; B \\ A &amp; 0 \end{pmatrix} \geq \text{rank} A+\text{rank} B$</p>
+<p>综上所述，有$s+\text{rank} AB \geq \text{rank} A+\text{rank} B$，即对于任意的$m\times s$矩阵$A$和$s\times n$矩阵$B$，</p>
+<p>$$\text{rank}A +\text{rank}B -s\leq \text{rank}AB.$$</p>
+<p>$9$.设$A,B,C$是$n$阶方阵，若$ABC=0$，则</p>
+<p>$$\text{rank}A +\text{rank}B +\text{rank}C \leq 2n.$$</p>
+<p>证明：因为$ABC=0$，$C$的各个列向量都是齐次方程组$ABX=0$的解，故能由它的基础解系线性表出，于是$\text{rank} C \leq $基础解系的秩$n-\text{rank} AB$.即有$\text{rank} AB\leq n-\text{rank} C$.</p>
+<p>利用$8$题结论，有</p>
+<p>$$\text{rank}A +\text{rank}B -n\leq \text{rank}AB ,$$</p>
+<p>因此，</p>
+<p>$$\text{rank}A +\text{rank}B -n\leq \text{rank}AB \leq n-\text{rank} C,$$</p>
+<p>即</p>
+<p>$$\text{rank}A +\text{rank}B +\text{rank}C \leq 2n.$$</p>
+<p>$10$.求矩阵</p>
+<p>$$A=\begin{pmatrix} x_1 y_1 &amp; x_1 y_2 &amp; \cdots &amp; x_1 y_n \\ x_2 y_1 &amp; x_2 y_2 &amp; \cdots &amp; x_2 y_n \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ x_n y_1 &amp; x_n y_2 &amp; \cdots &amp; x_n y_n \end{pmatrix} $$</p>
+<p>的秩.</p>
+<p>提示：$A=[x_1 ,\cdots ,x_n ] (y_1 ,\cdots ,y_n )$.</p>
+<p>证明：设$[x_1 ,\cdots ,x_n ] =B,(y_1 ,\cdots ,y_n )=C$.则</p>
+<p>由定理$3$：不等式$\text{rank} AB \leq \min{\lbrace \text{rank} A,\text{rank} B\rbrace }$成立，得到</p>
+<p>$$\text{rank} A =\text{rank} BC\leq \min{\lbrace \text{rank} B,\text{rank} C\rbrace }$$</p>
+<p>因为行向量和列向量本身秩都为$1$，故$\text{rank} A\leq 1$.</p>
+<p>$11$.若$A=(a_{ij})$是非退化对称矩阵(即$a_{ij} =a_{ji}$)，证明$A^{-1}$也是对称矩阵.</p>
+<p>证明：设$A$是非退化对称矩阵，则$\sideset{^t}{}A =A$.因为逆的转置等于转置的逆，故</p>
+<p>$$\sideset{^t}{}(A^{-1}) =(\sideset{^t}{}A )^{-1} =A^{-1}.$$</p>
+<p>根据对称的定义，知$A^{-1}$是对称矩阵.</p>
+<p>$12$.设</p>
+<p>$$A=\begin{pmatrix} 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 \\ 4 &amp; 8 &amp; 6 &amp; 4 &amp; 2 \\ 3 &amp; 6 &amp; 9 &amp; 6 &amp; 3 \\ 2 &amp; 4 &amp; 6 &amp; 8 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \end{pmatrix} ,F=\begin{pmatrix} 2 &amp; 3 &amp; 2 &amp; 1 \\ 3 &amp; 6 &amp; 4 &amp; 2 \\ 4 &amp; 8 &amp; 6 &amp; 3 \\ 2 &amp; 4 &amp; 3 &amp; 2 \end{pmatrix} ,$$</p>
+<p>求$A^{-1}$和$F^{-1}$.</p>
+<p>解：$(1)\;$</p>
+<p>$$\begin{align}<br>(A\mid E)= &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 4 &amp; 8 &amp; 6 &amp; 4 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 3 &amp; 6 &amp; 9 &amp; 6 &amp; 3 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 6 &amp; 8 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{1,5} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 4 &amp; 8 &amp; 6 &amp; 4 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 3 &amp; 6 &amp; 9 &amp; 6 &amp; 3 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 6 &amp; 8 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array} \end{pmatrix} \\<br>\overset{F_{2,1} (-4)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \\ 3 &amp; 6 &amp; 9 &amp; 6 &amp; 3 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 6 &amp; 8 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array} \end{pmatrix} \\<br>\overset{F_{3,1} (-3)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 2 &amp; 4 &amp; 6 &amp; 8 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array} \end{pmatrix} \\<br>\overset{F_{4,1} (-2)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array} \end{pmatrix} \\<br>\overset{F_{5,1} (-5)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; -6 &amp; -12 &amp; -18 &amp; -24 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -5 \end{array} \end{pmatrix} \\<br>\overset{F_{2,5} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; -6 &amp; -12 &amp; -18 &amp; -24 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -5 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \end{array} \end{pmatrix} \\<br>\overset{F_2 (-\dfrac{1}{6} ) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \end{array} \end{pmatrix} \\<br>\overset{F_{3,5} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \end{array} \end{pmatrix} \\<br>\overset{F_{4,5} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; -6 &amp; -12 &amp; -18 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \end{array} \end{pmatrix} \\<br>\overset{F_3 (-\dfrac16 ) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; 0 &amp; \dfrac46 \\ 0 &amp; 0 &amp; 0 &amp; -6 &amp; -12 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \end{array} \end{pmatrix} \\<br>\overset{F_4 (-\dfrac16 ) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; 0 &amp; \dfrac46 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; \dfrac36 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -6 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \end{array} \end{pmatrix} \\<br>\overset{F_5 (-\dfrac16 ) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; 0 &amp; \dfrac46 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; \dfrac36 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{4,5} (-2) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; 0 &amp; \dfrac46 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{3,5} (-3) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; 0 &amp; \dfrac36 &amp; -\dfrac26 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{3,4} (-2) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac{5}{6} \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{2,5} (-4) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; -\dfrac{1}{6} &amp; 0 &amp; 0 &amp; \dfrac46 &amp; -\dfrac{3}{6} \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{2,4} (-3) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; -\dfrac{1}{6} &amp; 0 &amp; \dfrac36 &amp; -\dfrac26 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{2,3} (-2) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac{1}{6} &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{1,5} (-5) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac56 &amp; -\dfrac46 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac{1}{6} &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{1,4} (-4) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac46 &amp; -\dfrac36 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac{1}{6} &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{1,3} (-3) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac36 &amp; -\dfrac26 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac{1}{6} &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} \\<br>\overset{F_{1,2} (-2) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{ccccc|ccccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac{1}{6} &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac26 \end{array} \end{pmatrix} ,\\<br>\end{align}$$</p>
+<p>因此，矩阵$A$的逆为$\begin{pmatrix} \dfrac13 &amp; -\dfrac16 &amp; 0 &amp; 0 &amp; 0 \\ -\dfrac{1}{6} &amp; \dfrac13 &amp; -\dfrac16 &amp; 0 &amp; 0 \\ 0 &amp; -\dfrac16 &amp; \dfrac13 &amp; -\dfrac16 &amp; 0 \\ 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac13 &amp; -\dfrac16 \\ 0 &amp; 0 &amp; 0 &amp; -\dfrac16 &amp; \dfrac13 \end{pmatrix}$.</p>
+<p> $(2)\;$</p>
+<p>$$\begin{align}<br>(F\mid E)= &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 3 &amp; 6 &amp; 4 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 4 &amp; 8 &amp; 6 &amp; 3 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 2 &amp; 4 &amp; 3 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{2,1} (-1) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 3 &amp; 2 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 \\ 4 &amp; 8 &amp; 6 &amp; 3 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 2 &amp; 4 &amp; 3 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{3,4} (-2)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 3 &amp; 2 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 2 &amp; 4 &amp; 3 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{4,1} (-1)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 3 &amp; 2 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{1,2} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 3 &amp; 2 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 \\ 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{2,1} (-2)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 3 &amp; 2 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; -3 &amp; -2 &amp; -1 &amp; 3 &amp; -2 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{1,2} (1)}{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; -3 &amp; -2 &amp; -1 &amp; 3 &amp; -2 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{2,4} (3) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_{2,4} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -2 &amp; 0 &amp; 3 \end{array} \end{pmatrix} \\<br>\overset{F_{3,4} }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; -2 \end{array} \end{pmatrix} \\<br>\overset{F_4 (-1) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 &amp; 2 \end{array} \end{pmatrix} \\<br>\overset{F_{2,3} (-1) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; -1 &amp; -1 &amp; 2 &amp; 0 &amp; -2 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 &amp; 2 \end{array} \end{pmatrix} \\<br>\overset{F_{2,4} (1) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 &amp; 2 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -2 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 &amp; 2 \end{array} \end{pmatrix} \\<br>\overset{F_{3,4} (-2) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 &amp; 2 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -2 &amp; 2 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 &amp; 2 \end{array} \end{pmatrix} \\<br>\end{align}$$</p>
+<p>因此，矩阵$F$的逆为$\begin{pmatrix} 2 &amp; -1 &amp; 0 &amp; 0 \\ -1 &amp; 2 &amp; -1 &amp; 0 \\ 0 &amp; -2 &amp; 2 &amp; -1 \\ 0 &amp; 0 &amp; -1 &amp; 2 \end{pmatrix}$.</p>
+<p>$13$.验证</p>
+<p>$$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} ,ad-bc\neq 0\Rightarrow A^{-1}=\dfrac{1}{ad-bc}\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>特别地，</p>
+<p>$$ad-bc=1\Rightarrow A^{-1}=\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>如果$ad-bc=0$，$A^{-1}$存在吗？</p>
+<p>证明：$(1)\;$设$ad-bc\neq 0$，对任意矩阵$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}$，同时它的逆矩阵为$N=\begin{pmatrix} u &amp; v \\ s &amp; t \end{pmatrix}$.</p>
+<p>根据逆矩阵的定义，有</p>
+<p>$$AN=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} u &amp; v \\ s &amp; t \end{pmatrix} =\begin{pmatrix} au+bs &amp; av+bt \\ cu+ds &amp; cv+dt \end{pmatrix} =\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} .$$</p>
+<p>于是，实数$u,v,s,t$必须满足</p>
+<p>$$\begin{cases} au+bs=1 \\ cu+ds=0 \\ av+bt=0 \\ cv+dt=1 \end{cases} $$</p>
+<p>即$\begin{cases} au+bs=1 \\ cu+ds=0 \end{cases} $且$\begin{cases}  av+bt=0 \\ cv+dt=1 \end{cases} $</p>
+<p>由于$ad-bc\neq 0$，故解得</p>
+<p>$$\begin{cases} u=\dfrac{d}{ad-bc} \\ s=\dfrac{-c}{ad-bc} \end{cases} \quad 且\quad \begin{cases} v=\dfrac{-b}{ad-bc} \\ t=\dfrac{a}{ad-bc} \end{cases}.$$</p>
+<p>经验证，有$AN=NA=I$.因此，矩阵$A$的逆矩阵为</p>
+<p>$$A^{-1}=\dfrac{1}{ad-bc}\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>$(2)\;$由$(1)$知，当$ad-bc=1$时，有</p>
+<p>$$A^{-1}=\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>$(3)\;$由$(1)$知，当$ad-bc=0$时，方程组无解，此时矩阵$A$不存在逆矩阵.</p>
+<p>$14$.证明任意矩阵</p>
+<p>$$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} $$</p>
+<p>满足关系式</p>
+<p>$$A^2 =(a+d)A-(ad-bc)E \label{23} \tag{23}$$</p>
+<p>(换言之，$A$是二次方程$x^2-(a+d)x+(ad-bc)=0$的一个“根”).</p>
+<p>证明：对任意的矩阵$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}$来说，有</p>
+<p>$$A^2=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} =\begin{pmatrix} a^2+bc &amp; ab+bd \\ ac+cd &amp; bc+d^2 \end{pmatrix},$$</p>
+<p>$$(a+d)A-(ad-bc)E=(a+d)\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} -(ad-bc)\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}=\begin{pmatrix} a^2+bc &amp; ab+bd \\ ac+cd &amp; bc+d^2 \end{pmatrix},$$</p>
+<p>故对任意的矩阵$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}$来说，</p>
+<p>满足关系式</p>
+<p>$$A^2 =(a+d)A-(ad-bc)E .$$</p>
+<p>$15$.如果$ad-bc\neq 0$，运用关系$\eqref{23}$求逆矩阵$A^{-1}$.</p>
+<p>解：由关系$\eqref{23}$得</p>
+<p>$$A^2 =(a+d)A-(ad-bc)E ,$$</p>
+<p>即</p>
+<p>$$(ad-bc)E=(a+d)A-A^2 =A[(a+d)E-A]=[(a+d)E-A]A.$$</p>
+<p>因为$ad-bc\neq 0$，故有</p>
+<p>$$E=A\dfrac{1}{ad-bc} [(a+d)E-A]=\dfrac{1}{ad-bc} [(a+d)E-A]A.$$</p>
+<p>根据逆矩阵的定义，知矩阵$A$的逆矩阵为</p>
+<p>$$A^{-1}=\dfrac{1}{ad-bc} [(a+d)E-A] =\dfrac{1}{ad-bc}\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>$16$.证明若$\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} ^m =0$，则$\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} ^2 =0$.</p>
+<p>证明：证法$1$.设矩阵$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}$.</p>
+<p>因为$A^m =0$，所以$\mid A^m \mid =\mid A\mid ^m =0$，得到行列式$\mid A\mid =0$.又矩阵$A$是$2\times 2$阶的，故其对应的秩只能为$0$或为$1$.</p>
+<p>如果矩阵$A$的秩为$0$，那么显然$A^2 =0$.</p>
+<p>如果矩阵$A$的秩为$1$，则矩阵$A$的两行成比例，可设为</p>
+<p>$$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} =\begin{pmatrix} a &amp; b \\ ra &amp; rb \end{pmatrix} =\begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) ,$$</p>
+<p>则</p>
+<p>$$\begin{align}<br>A^2 &amp; =A\cdot A \\<br> &amp; = \begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) \begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) \\<br> &amp; = \begin{pmatrix} 1 \\ r \end{pmatrix} (a+rb) (a,b) \\<br> &amp; = (a+rb)\begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) \\<br> &amp; = (a+rb)A,<br>\end{align}$$</p>
+<p>$$\cdots \cdots \cdots $$</p>
+<p>$$\begin{align}<br>A^m &amp; =A^{m-1} \cdot A \\<br> &amp; = (a+rb)^{m-2} \begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) \begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) \\<br> &amp; = (a+rb)^{m-2} \begin{pmatrix} 1 \\ r \end{pmatrix} (a+rb) (a,b) \\<br> &amp; = (a+rb)^{m-1} \begin{pmatrix} 1 \\ r \end{pmatrix} (a,b) \\<br> &amp; = (a+rb)^{m-1}A .<br>\end{align}$$</p>
+<p>因为$A^m =0$，故$(a+rb)^{m-1} =0$，即$a+rb=0$，所以$A^2=(a+rb)A =0$.</p>
+<p>证法$2$.设$\mu $是矩阵$A$的特征值，$x$为$\mu $所对应的特征向量，由</p>
+<p>$$\mu ^m x=A^m x =0$$</p>
+<p>及$x\neq 0$可知$\mu =0$，这就是说，矩阵$A$的特征值全为$0$，可见矩阵$A$的特征多项式为$\phi _A (\lambda )=\lambda ^2 $，从而有</p>
+<p>$$A^2 =\phi _A (A) =0.$$</p>
+<p>$17$.阐明下述论断：设$m\times s$矩阵$X$被水平线和竖直线划分为块(或长方块)，</p>
+<p>$$X=\begin{pmatrix} X_{11} &amp; X_{12} &amp; \cdots &amp; X_{1k} \\ X_{21} &amp; X_{22} &amp; \cdots &amp; X_{2k} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ X_{l1} &amp; X_{l2} &amp; \cdots &amp; X_{lk} \\ \end{pmatrix} $$</p>
+<p>这里$X_{i1} ,\cdots ,X_{ik}$都是$m_i$行矩阵$(m_1 +\cdots +m_l =m)$，而$X_{1j} ,\cdots ,X_{lj}$，都是$s_j$列矩阵$(s_1 +\cdots +s_k =s)$.</p>
+<p>如果</p>
+<p>$$Y=\begin{pmatrix} Y_{11} &amp; Y_{12} &amp; \cdots &amp; Y_{1r} \\ Y_{21} &amp; Y_{22} &amp; \cdots &amp; Y_{2r} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ Y_{k1} &amp; Y_{k2} &amp; \cdots &amp; Y_{kr} \\ \end{pmatrix} $$</p>
+<p>是一个$s\times n$矩阵，它的块$Y_{ij}$的阶是$s_i \times n_j$($n_1 +\cdots +n_r =n$)，则乘积$Z=XY$是有意义的，并且矩阵$Z=(z_{ij})$可以分块计算，它的块$Z_{ij}$可按公式$(7)$形式地写出：</p>
+<p>$$Z_{ij} =X_{i1} Y_{1j} +X_{i2} Y_{2j} +\cdots +X_{ik} Y_{kj} .$$</p>
+<p>由于矩阵$X_{i\nu } ,Y_{\nu j}$的阶所满足的条件，乘积$X_{i\nu } Y_{\nu j}$也是有意义的.矩阵的分块法即便在最简单的情况下也会带来方便，例如</p>
+<p>$$\begin{pmatrix} E &amp; A \\ 0 &amp; E \end{pmatrix} \begin{pmatrix} A &amp; 0 \\ -E &amp; B \end{pmatrix} =\begin{pmatrix} 0 &amp; AB \\ -E &amp; B \end{pmatrix} ，$$</p>
+<p>此处$A,B,E,0\in M_n(\mathbb{R} )$($E$是单位矩阵，$0$是零矩阵).</p>
+<p>证明：矩阵$Z$的行数为$m_1 +m_2 +\cdots +m_l =m$；$Z$的列数为$n_1 +n_2 +\cdots +n_r =n$.于是$XY$与$Z$都是$m\times n$矩阵.</p>
+<p>$$(XY)(i;j)=\displaystyle \sum_{w=1}^n x_{iw} y_{wj} $$</p>
+<p>设$i=m_1 +\cdots +m_{p-1} +f$，其中$0 &lt; f \leq m_p$；设$j=n_1 +\cdots +n_{q-1} +g$，其中$0 &lt; g \leq n_q$.这意思是$X$的第$i$行属于$X$的第$p$个行组，$Y$的第$j$列属于$Y$的第$q$个列组.于是，</p>
+<p>$$\begin{align}<br> &amp; \displaystyle Z(i;j)  \\<br>= &amp; Z_{pq} (f;g) \\<br>= &amp; (\sum_{h=1}^k X_{ph} Y_{hq})(f;g) \\<br>= &amp; \sum_{h=1}^k (X_{ph} Y_{hq})(f;g) \\<br>= &amp; \sum_{h=1}^k \sum_{a=1}^{s_h } X_{ph} (f;a) Y_{hq}(a;g) \\<br>= &amp; \sum_{a=1}^{s_1 } X_{p1} (f;a) Y_{1q}(a;g) +\cdots +\sum_{a=1}^{s_k } X_{pk} (f;a) Y_{kq}(a;g) \\<br>= &amp; \sum_{w=1}^{s_1 } x_{iw} y_{wj} +\cdots +\sum_{w=s_1 +\cdots +s_{k-1} +1}^{s} x_{iw} y_{wj} \\<br>= &amp; \sum_{w=1}^s x_{iw} y_{wj} \\<br>= &amp; (XY)(i;j)<br>\end{align}$$</p>
+<p>因此$XY=Z$.</p>
+<p>$18$.令矩阵</p>
+<p>$$X=(x_{ij}) \in M_n (\mathbb{R} ) ,T=(t_{ij}) \in M_n (\mathbb{R} ).$$</p>
+<p>证明$T$左乘$X$得到行$X_{(1)} ,\cdots ,X_{(n)}$的线性组合，而右乘得到列$X^{(1)} ,\cdots ,X^{(n)}$的线性组合，特别注意到如果</p>
+<p>$$T=\begin{pmatrix} 1 &amp; t_{12} &amp; t_{13} &amp; \cdots &amp; t_{1n} \\ &amp; 1 &amp; t_{23} &amp; \cdots &amp; t_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \end{pmatrix} $$</p>
+<p>是上三角矩阵，则</p>
+<p>$$TX=\begin{pmatrix} X_{(1)} + t_{12} &amp; X_{(2)} &amp; +\cdots + t_{1n} &amp; X_{(n)} \\  &amp; X_{(2)} &amp; +\cdots + t_{2n} &amp; X_{(n)} \\ &amp; &amp; &amp; \cdots \\ &amp; &amp;  &amp; X_{(n)} \end{pmatrix} $$</p>
+<p>是从$X$经过一系列(Ⅱ)型初等行变换得到的矩阵.</p>
+<p>证明：$(1)\;$如果把矩阵$X$看成是$n\times 1$矩阵的，则</p>
+<p>$$X=\begin{pmatrix} X_{(1)} \\ X_{(2)} \\ \vdots \\ X_{(n)} \end{pmatrix} ,$$</p>
+<p>于是$T$左乘$X$得到</p>
+<p>$$\begin{align}<br> &amp; TX  \\<br>= &amp; \begin{pmatrix} t_{11} &amp; t_{12} &amp; \cdots &amp; t_{1n} \\ t_{21} &amp; t_{22} &amp; \cdots &amp; t_{2n} \\ \vdots &amp; \vdots &amp;  &amp; \vdots \\ t_{n1} &amp; t_{n2} &amp; \cdots &amp; t_{nn} \end{pmatrix} \begin{pmatrix} X_{(1)} \\ X_{(2)} \\ \vdots \\ X_{(n)} \end{pmatrix} \\<br>= &amp; t_{11} X_{(1)} +\cdots +t_{1n} X_{(n)} +\cdots +t_{n1} X_{(1)} +\cdots +t_{nn} X_{(n)} \\<br>= &amp; (t_{11} +\cdots +t_{n1} )X_{(1)} +\cdots +(t_{1n} +\cdots +t_{nn} )X_{(n)}<br>\end{align}$$</p>
+<p>即$T$左乘$X$得到行$X_{(1)} ,\cdots ,X_{(n)}$的线性组合.</p>
+<p>同样的，如果把矩阵$X$看成是$1\times n$矩阵的，则</p>
+<p>$$X=(X^{(1)} ,X^{(2)} ,\cdots ,X^{(n)}) ,$$</p>
+<p>于是$T$右乘$X$得到</p>
+<p>$$\begin{align}<br> &amp; XT  \\<br>= &amp; (X^{(1)} ,X^{(2)} ,\cdots ,X^{(n)}) \begin{pmatrix} t_{11} &amp; t_{12} &amp; \cdots &amp; t_{1n} \\ t_{21} &amp; t_{22} &amp; \cdots &amp; t_{2n} \\ \vdots &amp; \vdots &amp;  &amp; \vdots \\ t_{n1} &amp; t_{n2} &amp; \cdots &amp; t_{nn} \end{pmatrix} \\<br>= &amp; t_{11} X^{(1)} +\cdots +t_{n1} X^{(n)} +\cdots +t_{1n} X^{(1)} +\cdots +t_{nn} X^{(n)} \\<br>= &amp; (t_{11} +\cdots +t_{1n} )X^{(1)} +\cdots +(t_{n1} +\cdots +t_{nn} )X^{(n)}<br>\end{align}$$</p>
+<p>即$T$右乘得到列$X^{(1)} ,\cdots ,X^{(n)}$的线性组合.</p>
+<p>$(2)\;$如果</p>
+<p>$$T=\begin{pmatrix} 1 &amp; t_{12} &amp; t_{13} &amp; \cdots &amp; t_{1n} \\ &amp; 1 &amp; t_{23} &amp; \cdots &amp; t_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \end{pmatrix} $$</p>
+<p>是上三角矩阵，并把矩阵$X$看成是$n\times 1$矩阵的，即</p>
+<p>$$X=\begin{pmatrix} X_{(1)} \\ X_{(2)} \\ \vdots \\ X_{(n)} \end{pmatrix} .$$</p>
+<p>利用(Ⅱ)型初等行变换，对矩阵$X$进行变换.</p>
+<p>首先，第$i=2,\cdots ,n$行分别乘以$t_{1i}$加到第$1$行，得</p>
+<p>$$\begin{pmatrix} X_{(1)} +t_{12} X_{(2)} +\cdots + &amp; t_{1n} X_{(n)} \\ &amp; X_{(2)} \\ &amp;  \vdots \\ &amp; X_{(n)} \end{pmatrix} .$$</p>
+<p>然后，第$i=3,\cdots ,n$行分别乘以$t_{2i}$加到第$2$行，得</p>
+<p>$$\begin{pmatrix} X_{(1)} + t_{12} &amp; X_{(2)} &amp; +\cdots + t_{1n} &amp; X_{(n)} \\  &amp; X_{(2)} &amp; +\cdots + t_{2n} &amp; X_{(n)} \\ &amp; &amp; &amp; X_{(3)} \\ &amp; &amp; &amp; \cdots \\ &amp; &amp;  &amp; X_{(n)} \end{pmatrix} .$$</p>
+<p>重复上面的步骤，第$j$次（$j=1,\cdots ,n-1$），把第$i=j+1 ,\cdots ,n $行分别乘以$t_{ji}$加到第$j$行，得</p>
+<p>$$\begin{pmatrix} X_{(1)} + t_{12} &amp; X_{(2)} &amp; +\cdots + t_{1n} &amp; X_{(n)} \\  &amp; X_{(2)} &amp; +\cdots + t_{2n} &amp; X_{(n)} \\ &amp; &amp; &amp; \cdots \\ &amp; X_{(j)} + &amp; t_{j,j+1} X_{(j+1)} +\cdots + &amp; t_{j,n} X_{(n)} \\ &amp; &amp; &amp; \cdots \\ &amp; &amp;  &amp; X_{(n)} \end{pmatrix} .$$</p>
+<p>当第$n-1$次时，把第$n$行乘以$t_{n-1,n}$加到第$n-1$行，得</p>
+<p>$$\begin{pmatrix} X_{(1)} + t_{12} &amp; X_{(2)} &amp; +\cdots + t_{1n} &amp; X_{(n)} \\  &amp; X_{(2)} &amp; +\cdots + t_{2n} &amp; X_{(n)} \\ &amp; &amp; &amp; \cdots \\ &amp; &amp;  &amp; X_{(n)} \end{pmatrix} ,$$</p>
+<p>根据上述对矩阵$X$的一系列(Ⅱ)型初等行变换，可知，矩阵$TX$是从$X$经过一系列(Ⅱ)型初等行变换得到的矩阵.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/20/2015/04/daishuxueyinlun123xt/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/20/2015/04/weijifenxuejiaocheng122/" title="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/20/2015/03/jimiduoweiqishuxuefenxixitiji111/"  title="《数学分析习题集》第一章 分析引论 1. 实数">
+ <strong>下一篇：</strong><br/> 
+ <span>《数学分析习题集》第一章 分析引论 1. 实数
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/20/2015/04/daishuxueyinlun123xt/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算" data-url="http://yoursite.com/2015/10/20/2015/04/daishuxueyinlun123xt/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">1.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

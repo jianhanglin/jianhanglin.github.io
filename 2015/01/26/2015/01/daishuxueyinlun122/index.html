@@ -1,0 +1,836 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="矩阵的秩">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩">
+<meta property="og:url" content="http://yoursite.com/2015/01/26/2015/01/daishuxueyinlun122/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="矩阵的秩">
+<meta property="og:updated_time" content="2015-11-08T07:31:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩">
+<meta name="twitter:description" content="矩阵的秩">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/01/26/2015/01/daishuxueyinlun122/" title="《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩" itemprop="url">《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-01-26T00:34:14.000Z" itemprop="datePublished"> 發表於 2015-01-26</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方程组的回顾"><span class="toc-number">1.</span> <span class="toc-text">方程组的回顾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的秩"><span class="toc-number">2.</span> <span class="toc-text">矩阵的秩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可解性准则"><span class="toc-number">3.</span> <span class="toc-text">可解性准则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="方程组的回顾">方程组的回顾</h2><p>在高为$m$的列向量空间$\mathbb{R}^m$中，考察$n$个向量</p>
+<p>$$A^{(j)}=[a_{1j} ,a_{2j} ,\cdots ,a_{mj} ],j=1,2,\cdots ,n,$$</p>
+<p>以及它们的线性包$V=\langle A^{(1)} ,A^{(2)} ,\cdots ,A^{(n)} \rangle$.假设再给出一个向量$B$，问$B$是否在线性包$V\subset \mathbb{R}^m$中，如果在，它的坐标$b_1 ,\cdots ,b_m$(在$\S 1(3′)$的标准基下)是怎么样通过$A^{(j)}$的坐标表示出来的.当$dim V=n$时，问题的第二部分相当于确定向量$B$在基$A^{(1)} ,\cdots ,A^{(n)}$之下的坐标.为此，我们取$A^{(j)}$以未知数$x_j$为系数的线性组合，并构造方程$x_1 A^{(1)} +\cdots +x_n A^{(n)} =B$.该方程的直观形式为</p>
+<p>$$x_1 \begin{pmatrix} a_{11} \\ a_{21} \\ \vdots \\ a_{m1} \end{pmatrix} +x_2 \begin{pmatrix} a_{12} \\ a_{22} \\ \vdots \\ a_{m2} \end{pmatrix} +\cdots +x_n \begin{pmatrix} a_{1n} \\ a_{2n} \\ \vdots \\ a_{mn} \end{pmatrix} =\begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{pmatrix} .\label{1} \tag{1}$$</p>
+<p>方程的另一种写法是含有$m$个方程，$n$个未知数的线性方程组</p>
+<p>$$ \begin{matrix} a_{11} x_1 +a_{12} x_2 +\cdots +a_{1n} x_n =b_1 ,\\ a_{21} x_1 +a_{22} x_2 +\cdots +a_{2n} x_n =b_2 ,\\ \cdots \cdots \cdots \cdots \\ a_{m1} x_1 +a_{m2} x_2 +\cdots +a_{mn} x_n =b_m , \end{matrix} \label{2} \tag{2}$$</p>
+<p>这就是我们最初在第$1$章$\S 3$中遇到过的方程组.在那里我们引入了线性方程组$\eqref{2}$的系数矩阵和增广矩阵.</p>
+<p>$$A=\begin{pmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} \end{pmatrix} ,(A\mid B)=\left( \begin{array}{cccc|c} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; b_1 \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; b_2 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; b_m \end{array} \right) .\label{3} \tag{3}$$</p>
+<p>乍一看来，我们又回到了出发点，浪费了时间而什么都没得到.但事实上，我们现在得到了一系列重要的概念.余下的事情是学会使用它们.</p>
+<p>先来约定一些符号.我们通常将和$s_1 +s_2 +\cdots +s_n $简写成$\displaystyle \sum_{i=1}^n s_i $.此处$s_1 ,\cdots ,s_n$是满足数或向量的加法法则的任意量(数，行向量等等).法则</p>
+<p>$$\displaystyle \sum_{i=1}^n ts_i =t\sum_{i=1}^n s_i ,\sum_{i=1}^n (s_i +t_i ) =\sum_{i=1}^n s_i +\sum_{i=1}^n t_i $$</p>
+<p>是不证自明的.</p>
+<p>我们也要考虑下述<strong>双重和</strong></p>
+<p>$$\sum_{j=1}^n \sum_{i=1}^m a_{ij} =\sum_{j=1}^n \left( \sum_{i=1}^m a_{ij} \right) =\sum_{i=1}^m \left( \sum_{j=1}^n a_{ij} \right) =\sum_{i,j} a_{ij} ,$$</p>
+<p>求和的顺序(按照第一或第二个脚标)可以根据自己的希望选择.易见，如果将$a_{ij}$排成$m\times n$阶的长方阵，那么矩阵元素的求和既可以按行进行，也可以按列进行.</p>
+<h2 id="矩阵的秩">矩阵的秩</h2><p>上节引入的线性包$V=\langle A^{(1)} ,A^{(2)} ,\cdots ,A^{(n)} \rangle $叫作$m\times n$阶长方阵$A$(见公式$\eqref{3}$)的<strong>列空间</strong>.将$V$记作$V_c (A)$或简记作$V_c $(其中$c$表示列).维数$r_c (A)=dim V_c $叫作矩阵$A$的<strong>列秩</strong>.类似地可定义矩阵$A$的<strong>行秩</strong>：$r_r (A)=dim V_r $，此处$V_r =\langle A_{(1)} ,A_{(2)} ,\cdots ,A_{(n)} \rangle $是矩阵$A$的<strong>行空间</strong>，即由$\mathbb{R}^n$中的行向量$A_{(i)} =(a_{i1} ,a_{i2} ,\cdots ,a_{in} )$，$i=1,2,\cdots ,m$，生成的线性包(其中$r$表示行).换言之，</p>
+<p>$$r_c (A) =\text{rank} \lbrace A^{(1)} ,A^{(2)} ,\cdots ,A^{(n)} \rbrace ,$$</p>
+<p>$$r_r (A) =\text{rank} \lbrace A_{(1)} ,A_{(2)} ,\cdots ,A_{(n)} \rbrace $$</p>
+<p>分别为行向量组和列向量组的秩.根据$\S 1$定理$2$，数值$r_c (A)$和$r_r (A)$的定义是合理的.</p>
+<p>按照第$1$章$\S 3$的术语，称矩阵$A’$是由矩阵$A$经过Ⅰ型初等变换得到的，如果有某对脚标$s\neq t$，使得$A’_{(s)} =A_t $，$A’_{(t)} =A_s $，但对任意脚标$i\neq s,t$，$A’_{(i)} =A_{(i)} $；称矩阵$A’$是由矩阵$A$经过Ⅱ型初等变换得到的，如果有某对脚标$s\neq t$，使得任取脚标$i\neq s$，$A’_{(i)} =A_{(i)} $，而$A’_s =A_{(s)} +\lambda A_{(t)} $，其中$\lambda \in \mathbb{R} $.注意到初等变换是在$A$上的行上进行的.</p>
+<p>我们指出，两类初等变换都是可逆的，也就是说，从$A$得到的矩阵$A’$可以借助于初等变换重新变回到$A$，并且所用的初等变换是同型的.</p>
+<p><strong>引理</strong> 如果矩阵$A’$是由长方阵$A$经过有限多次初等行变换得到的，则有等式</p>
+<p>$i) r_r (A’) =r_r (A);$</p>
+<p>$ii) r_c (A’) =r_c (A).$</p>
+<p><strong>证明</strong> 只要考虑$A’$是由$A$经过一次初等行变换得到的情况就足够了.</p>
+<p>$i)$因为</p>
+<p>$$\langle A_{(1)} ,\cdots ,A_{(s)} ,\cdots ,A_{(t)} ,\cdots ,A_{(m)} \rangle =\langle A_{(1)} ,\cdots ,A_{(t)} ,\cdots ,A_{(s)} ,\cdots ,A_{(m)} \rangle ,$$</p>
+<p>所以Ⅰ型初等变换不改变$r_r (A)$.另一方面，</p>
+<p>$$A’_{(s)} =A_{(s)} +\lambda A_{(t)} \Rightarrow A_{(s)} =A’_{(s)} -\lambda A_{(t)} ,$$</p>
+<p>从而</p>
+<p>$$\langle A_{(1)} ,\cdots ,A_{(s)} +\lambda A_{(t)} ,\cdots ,A_{(t)} ,\cdots ,A_{(m)} \rangle =\langle A_{(1)} ,\cdots ,A_{(s)} ,\cdots ,A_{(t)} ,\cdots ,A_{(m)} \rangle ,$$</p>
+<p>这样Ⅱ型初等变换也不改变$r_r (A)$.</p>
+<p>$ii)$设$A’^{(j)} $，$1\leq j\leq n$，是矩阵$A’$的列.我们来证明</p>
+<p>$$\displaystyle \sum_{j=1}^n \lambda _j A^{(j)} =0 \Leftrightarrow \sum_{j=1}^n \lambda _j A’^{(j)} =0.\label{4} \tag{4} $$</p>
+<p>为此，考察$A$和$A’$对应的齐次线性方程组$\text{HLS}$和$\text{HLS}’$，它们用$\eqref{1}$的形式给出(常数项取零)：</p>
+<p>$$\text{HLS} :\displaystyle \sum_{j=1}^n x_j A^{(j)} =0,\text{HLS}’ :\displaystyle \sum_{j=1}^n x_j A’^{(j)} =0.$$</p>
+<p>矩阵$A$与$A’$的关系使得$\text{HLS}’$是由$\text{HLS}$经过Ⅰ型或Ⅱ型初等变换得到的.根据第$1$章$\S 3$定理$1$，$\text{HLS}$与$\text{HLS}’$等价，即一个方程组的所有的解$(\lambda _1 ,\lambda _2 ,\cdots ,\lambda _n )$也是另一个的解，这样，蕴含关系$\eqref{4}$成立.</p>
+<p>综上所述，一个矩阵的列向量的极大线性无关组的向量个数与另一个矩阵列向量的相应个数相符，这就确立了等式$r_c (A’)=r_c (A).\quad \quad \square $</p>
+<p>本节的基本结论是下述断言.</p>
+<p><strong>定理$1$</strong> 对于任意$m\times n$阶长方阵$A$，等式$r_c (A)=r_r (A)$成立(这个数叫作矩阵$A$的秩，记作$\text{rank} A$).</p>
+<p><strong>证明</strong> 根据第$1$章$\S 3$定理$2$，经过有限次初等行变换，矩阵$A$可以化成阶梯形</p>
+<p>$$\overline{A} =\begin{pmatrix} \overline{a}_{11} &amp; \cdots &amp; \overline{a}_{1k} &amp; \cdots &amp; \overline{a}_{1l} &amp; \cdots &amp; \overline{a}_{1s} &amp; \cdots &amp; \overline{a}_{1n} \\ 0 &amp; \cdots &amp; \overline{a}_{2k} &amp; \cdots &amp; \overline{a}_{2l} &amp; \cdots &amp; \overline{a}_{2s} &amp; \cdots &amp; \overline{a}_{2n} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{3l} &amp; \cdots &amp; \overline{a}_{3s} &amp; \cdots &amp; \overline{a}_{3n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{rs} &amp; \cdots &amp; \overline{a}_{rn} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} \label{5} \tag{5} $$</p>
+<p>其中$\overline{a}_{11} \cdot \overline{a}_{2k} \cdot \overline{a}_{3l} \cdots \overline{a}_{rs} \neq 0$，根据引理</p>
+<p>$$r_c (A) =r_c (\overline{A} ),r_r (A) =r_r (\overline{A} ),$$</p>
+<p>我们只需证明等式$r_c (\overline{A} )=r_r (\overline{A} )$就足够了.</p>
+<p>在矩阵$A$与$\overline{A}$中脚标为$1,k,l,\cdots ,s$的列叫作列向量基.它们对应于线性方程组$\eqref{2}$的主未知数$x_1 ,x_k ,x_l ,\cdots ,x_s $.列向量基这一术语是很有道理的.假设矩阵$\eqref{5}$的第$1,k,l,\cdots ,s$个列向量</p>
+<p>$$\overline{A}^{(1)} =[\overline{a}_{11} ,0,\cdots ,0] ,\overline{A}^{(k)} =[\overline{a}_{1k} ,\overline{a}_{2k} ,0,\cdots ,0],\cdots \cdots ,\overline{A}^{(s)} =[\overline{a}_{1s} ,\overline{a}_{2s} ,\cdots ,\overline{a}_{rs} ,0,\cdots ,0],$$</p>
+<p>如果它们之间有关系式</p>
+<p>$$\lambda _1 \overline{A}^{(1)} + \lambda _k \overline{A}^{(k)} +\lambda _l \overline{A}^{(l)} +\cdots +\lambda _s \overline{A}^{(s)} =0,$$</p>
+<p>则</p>
+<p>$$\lambda _s \overline{a}^{rs} =0,\cdots ,\lambda _l \overline{a}^{3l} =0,\lambda _k \overline{a}^{2k} =0,\lambda _1 \overline{a}^{11} =0,$$</p>
+<p>又因为$\overline{a}_{11} \cdot \overline{a}_{2k} \cdot \overline{a}_{3l} \cdot \overline{a}_{rs} \neq 0$，故$\lambda _1 =\lambda _k =\lambda _l =\cdots =\lambda _s =0$.于是</p>
+<p>$$\text{rank} \lbrace \overline{A}^{(1)} ,\overline{A}^{(k)} ,\overline{A}^{(l)} ,\cdots ,\overline{A}^{(s)} \rbrace =r,$$</p>
+<p>$$r_c (\overline{A} )\geq r.$$</p>
+<p>但是矩阵$\overline{A}$的列空间$\overline{V}_c$等同于从$\overline{A}$中删去后$m-r$个零行所成矩阵的列空间.所以</p>
+<p>$$r_c (\overline{A} )=\text{dim} \overline{V}_c \leq \text{dim} \mathbb{R}^r =r.$$</p>
+<p>比较两个不等式得到$r_c (\overline{A} )=r$.(不等式$r_c (\overline{A} )\leq r$也可以从一个显然的事实得到，即矩阵$\overline{A}$的所有列都是列向量基的线性组合；我们把这一论断留作习题.)</p>
+<p>另一方面，矩阵$\overline{A}$的所有非零行是线性无关的：任意线性关系</p>
+<p>$$\lambda _1 \overline{A}_{(1)} + \lambda _2 \overline{A}_{(2)} +\cdots +\lambda _r \overline{A}_{(r)} =0,\lambda _i \in \mathbb{R}$$</p>
+<p>如同在列向量的情况一样，给出</p>
+<p>$$\lambda _1 \overline{a}^{11} =0,\lambda _2 \overline{a}^{2k} =0,\cdots ,\lambda _r \overline{a}^{rs} =0,$$</p>
+<p>因而$\lambda _1 =\lambda _2 =\cdots =\lambda _r =0$.于是$r_r (\overline{A} )=r=r_c (\overline{A}).\quad \square $</p>
+<h2 id="可解性准则">可解性准则</h2><p>矩阵$A$的阶梯形可以回答对应的线性方程组(见第$1$章$\S 3$)的一系列问题，但阶梯形依赖于初等变换的实施过程，例如，列向量基，或等价地方程组$\eqref{2}$中的主未知数，可以有不同的选择.尽管如此，我们却可以从定理$1$及其证明得出下述</p>
+<p><strong>推论</strong> 若$b_1 =b_2 =\cdots =b_m =0$，则齐次线性方程组$\eqref{2}$中主未知数的个数不依赖于化为阶梯形的方式，它等于$\text{rank} A$，其中$A$是方程组的系数矩阵.</p>
+<p><strong>证明</strong> 我们已经看到，主未知数的个数等于矩阵$\overline{A}$(见公式$\eqref{5}$)的非零行的个数，后者等于矩阵$A$的秩.而矩阵的秩是唯一确定的.(这句话表明，矩阵的秩作为它的内在特征，不依赖于任何外加状况.)$\quad \square $</p>
+<p>在下一章中，我们将得到一个有效的方法去计算矩阵$A$的秩，不需要将$A$化为阶梯型.这种诊断的一个简单而有用的例子是第$1$章中谈到的线性方程组的可解性准则.</p>
+<p><strong>定理$2$</strong> (克罗内克-卡皮里)线性方程组$\eqref{2}$是可解的，当且仅当它的系数矩阵的秩等于增广矩阵的秩(见$\eqref{3}$).</p>
+<p><strong>证明</strong> 将线性方程组$\eqref{2}$写成形式$\eqref{1}$，它的可解性可以解释成下述问题(见本节开头)：列向量$B$是否可以写成矩阵$A$的列向量的线性组合.如果$B$能这样表示(即方程组$\eqref{2}$是可解的)，则$B\in \langle A^{(1)} ,A^{(2)} ,\cdots ,A^{(n)} \rangle$，那么$\text{rank} \lbrace A^{(1)} ,\cdots ,A^{(n)} \rbrace =\text{rank} \lbrace A^{(1)} ,\cdots ,A^{(n)},B \rbrace$，于是$\text{rank} A=r_c (A)=r_c ((A\mid B)) =\text{rank} (A\mid B)$(见定理$1$).</p>
+<p>反之，如果矩阵$A$与矩阵$(A\mid B)$有相同的秩，且$\lbrace A^{(j_1)} ,\cdots ,A^{(j_r)} \rbrace $是矩阵$A$列向量组的极大线性无关组，则扩张组$\lbrace A^{(j_1)} ,\cdots ,A^{(j_r)} ,B\rbrace $是线性相关的，根据$\S 1$定理$1,v)$，$B$是基本列$A^{(j)}$的线性组合.于是方程组$\eqref{2}$是可解的.$\quad \square $</p>
+<h2 id="习题">习题</h2><p>$1$.不把$m\times n$阶矩阵$A=(a_{ij})$化成阶梯形，证明定理$1$.</p>
+<p>提示：设$\text{dim}V_r (A)=r,\text{dim}V_c (A)=s$.选择$r$个基行；不失一般性，可以假定它们是前$r$行$A_{(1)} ,A_{(2)} ,\cdots ,A_{(r)} $.考察由$A$的前$r$行组成的$r\times n$矩阵$\tilde{A} =[A_{(1)} ,A_{(2)} ,\cdots ,A_{(r)} ]$.在$\tilde{A}$中选择$t$个基列，此处$t=\text{dim}V_c (\tilde{A} )$.设为$\tilde{A}^{(1)} ,\cdots ,\tilde{A}^{(t)} $.因为$V_c (\tilde{A} )\subset \mathbb{R}^r$，故$t\leq r$.对于$A$的任意列$A^{(k)}$，$k &gt; t$，可以找到常数$\lambda _1 ,\cdots ,\lambda _t \in \mathbb{R}$，使得$A^{(k)}=\lambda _1 A^{(1)}+\cdots +\lambda _t A^{(t)}$，即$a_{ik} =\displaystyle \sum_{p=1}^t \lambda _p a_{ip} $，$1\leq i\leq m$.当$i\leq r$时，这是显然的，因为我们有关于$\tilde{A}$列的关系式$\tilde{A}^{(k)} =\lambda _1 \tilde{A}^{(1)} +\cdots +\lambda _t \tilde{A}^{(t)}$.当$i &gt; r$时，运用第$i$行通过前$r$列的表达式$A_{(i)} =\mu _1 A_{(1)} +\cdots +\mu _r A_{(r)}$，得到</p>
+<p>$$a_{ik} =\displaystyle \sum_{l=1}^r \mu _l a_{lk} =\sum_{l=1}^r \mu _l \sum_{p=1}^t \lambda _p a_{lp} =\sum_{p=1}^t \lambda _p \sum_{l=1}^r  \mu _l a_{lp} =\sum_{p=1}^t \lambda _p a_{ip} .$$</p>
+<p>列的线性相关性准则表明，$s\leq t$，但上述证明给出$t\leq r$，故$s\leq r$.进一步，考察$n\times m$阶转置矩阵</p>
+<p>$$\sideset{^t}{}A=\begin{pmatrix} a_{11} &amp; a_{21} &amp; \cdots &amp; a_{m1} \\ a_{12} &amp; a_{22} &amp; \cdots &amp; a_{m2} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{1n} &amp; a_{2n} &amp; \cdots &amp; a_{mn} \end{pmatrix} $$</p>
+<p>得到等式$r_r (\sideset{^t}{}A )=r_c (A) ,r_c (\sideset{^t}{}A )=r_r (A)$，所以根据上述证明$r\leq s$.综上所述，$r=s$.</p>
+<p>$2$.如同行的情况，交换矩阵$A$的第$s$列和第$t$列，叫作Ⅰ型初等变换，而将第$t$列乘以常数$\lambda $加到第$s$列上，叫作Ⅱ型初等变换.</p>
+<p>描述矩阵$A$经初等列变换化成的阶梯形.用初等列变换将矩阵$\overline{A}$(见公式$\eqref{5}$)化为形式</p>
+<p>$$\begin{pmatrix} \tilde{a}_{11} &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp; \tilde{a}_{22} &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp;  &amp; \ddots &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp;  &amp;  &amp; \tilde{a}_{rr} &amp; \vdots &amp;  &amp;  &amp; \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \vdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \\ &amp;  &amp;  &amp;  &amp; \vdots &amp; 0 &amp;  &amp;  &amp; \\  &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp; \ddots &amp;  &amp; \\  &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; 0 \end{pmatrix} ,$$</p>
+<p>其中</p>
+<p>$$\tilde{a}_{11} =\overline{a}_{11} ,\tilde{a}_{22} =\overline{a}_{2k} ,\tilde{a}_{33} =\overline{a}_{3l} ,\cdots ,\tilde{a}_{rr} =\overline{a}_{rs} ;\displaystyle \prod_{i=1}^r \tilde{a}_{ii} \neq 0.$$</p>
+<p>解：$(1)\;$对于矩阵$A=\begin{pmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} \end{pmatrix} $来说，通过施行一系列的初等列变换，可以将其转化为阶梯形</p>
+<p>$$\overline{A} =\begin{pmatrix} \overline{a}_{11} &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{k1} &amp; \overline{a}_{k2} &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{l1} &amp; \overline{a}_{l2} &amp; \overline{a}_{l3} &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{s1} &amp; \overline{a}_{s2} &amp; \overline{a}_{s3} &amp; \cdots &amp; \overline{a}_{sr} &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots  \\ \overline{a}_{m1} &amp; \overline{a}_{m2} &amp; \overline{a}_{m3} &amp; \cdots &amp; \overline{a}_{mr} &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>其中$\overline{a}_{11} \cdot \overline{a}_{k2} \cdot \overline{a}_{l3} \cdots \overline{a}_{sr} \neq 0$.</p>
+<p>具体步骤：首先指出，对于矩阵$A=\begin{pmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} \end{pmatrix} $，第一行中其系数$a_{1j} $当中至少有一个不等于$0$.否则考虑第二行，直至找到第$i$行当中最先出现不等于$0$的数为止.如果$a_{11} =0$，$a_{1j} \neq 0$，交换第$1$列与第$j$列，（用Ⅰ型初等变换）得到一个新矩阵.否则，$a_{11} \neq 0$，则不进行初等变换，但为方便，依然记为新矩阵.现在新矩阵中的第一行第一列位置的系数非$0$.如下所示：</p>
+<p>$$\begin{pmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{11} &amp; \cdots &amp; a_{1n} \\ a_{2i} &amp; a_{22} &amp; \cdots &amp;  a_{21} &amp; \cdots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; &amp; \vdots &amp; &amp; \vdots \\ a_{mi} &amp; a_{m2} &amp; \cdots &amp; a_{m1} &amp; \cdots &amp; a_{mn} \end{pmatrix} $$</p>
+<p>将第一列分别乘以常数$\lambda _i $，分别加到第$j$列$(j=2,3,\cdots ,n)$上去，使得加完后第一行的系数除$a_{11}$以外都变为$0$（做$n-1$次Ⅱ型初等变换）.显然为此必须取$\lambda _i =-\dfrac{a_{1j}}{a_{11}} $.结果我们就得到了另一个新矩阵，第一行除第一个位置以外全为零.如下所示：</p>
+<p>$$\begin{pmatrix} a_{11} &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ a_{2i} &amp; a_{22} -a_{2i} \dfrac{a_{12}}{a_{11}} &amp; \cdots &amp;  a_{21} -a_{2i} \dfrac{a_{11}}{a_{11}} &amp; \cdots &amp; a_{2n} -a_{2i} \dfrac{a_{1n}}{a_{11}} \\ \vdots &amp; \vdots &amp; &amp; \vdots &amp; &amp; \vdots \\ a_{mi} &amp; a_{m2} -a_{mi} \dfrac{a_{12}}{a_{11}} &amp; \cdots &amp; a_{m1} -a_{mi} \dfrac{a_{11}}{a’_{11}} &amp; \cdots &amp; a_{mn} -a_{mi} \dfrac{a_{1n}}{a_{11}} \end{pmatrix} $$</p>
+<p>为方便，把上面的矩阵记为</p>
+<p>$$\begin{pmatrix} a’_{11} &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ a’_{21} &amp; a’_{22} &amp; \cdots &amp;  a’_{2j} &amp; \cdots &amp; a’_{2n} \\ \cdots &amp; \cdots &amp; &amp; \cdots &amp; &amp; \cdots \\ a’_{m1} &amp; a’_{m2} &amp; \cdots &amp; a’_{mj} &amp; \cdots &amp; a’_{mn} \end{pmatrix} $$</p>
+<p>接着，从第二行开始，考察第$2,\cdots ,n$列的数，如果能找到一个不为零的数$ a’_{2p}$，则交换第$2$列与第$p$列.否则，考察第三行，直至找出一个不为零的数出来为止.</p>
+<p>假设，当考察到第$k$行时，能找到这么一个不为零的数$ a’_{kp}$出来，那么交换第$2$列与第$p$列（用Ⅰ型初等变换），得</p>
+<p>$$\begin{pmatrix} a’_{11} &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a’_{k1} &amp; a’_{kp} &amp; \cdots &amp;  a’_{22} &amp; \cdots &amp; a’_{kn} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a’_{m1} &amp; a’_{mp} &amp; \cdots &amp; a’_{m2} &amp; \cdots &amp; a’_{mn} \end{pmatrix} $$</p>
+<p>将第二列分别乘以常数$\lambda’_i $，分别加到第$j$列$(j=3,4,\cdots ,n)$上去，使得加完后第$k$行的系数除$a_{kp}$以外都变为$0$（做$n-2$次Ⅱ型初等变换）.显然为此必须取$\lambda’_i =-\dfrac{a’_{kj}}{a’_{kp}} $.结果我们就得到了另一个新矩阵，第$k$行除第一个和第二个位置以外全为零.如下所示：</p>
+<p>$$\begin{pmatrix} a’_{11} &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a’_{k1} &amp; a’_{kp} &amp; \cdots &amp;  0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a’_{m1} &amp; a’_{mp} &amp; \cdots &amp; a’_{m2} -a’_{mp} \dfrac{a’_{22}}{a’_{kp}} &amp; \cdots &amp; a’_{mn} -a’_{mp} \dfrac{a’_{kn}}{a’_{kp}}\end{pmatrix} $$</p>
+<p>同样，为方便，把上面的矩阵记为</p>
+<p>$$\begin{pmatrix} a’’_{11} &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a’’_{k1} &amp; a’’_{k2} &amp; \cdots &amp;  0 &amp; \cdots &amp; 0 \\  a’’_{k+1,1} &amp; a’’_{k+1,2} &amp; \cdots &amp;  a’’_{k+1,j} &amp; \cdots &amp; a’’_{k+1,n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a’’_{m1} &amp; a’’_{m2} &amp; \cdots &amp; a’’_{mj} &amp; \cdots &amp; a’’_{mn} \end{pmatrix} $$</p>
+<p>接着，从$k+1$行，第三列开始，重复上述的步骤，经过有限次的初等列交换，必能将矩阵$A$转化为阶梯形</p>
+<p>$$\overline{A} =\begin{pmatrix} \overline{a}_{11} &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{k1} &amp; \overline{a}_{k2} &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{l1} &amp; \overline{a}_{l2} &amp; \overline{a}_{l3} &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{s1} &amp; \overline{a}_{s2} &amp; \overline{a}_{s3} &amp; \cdots &amp; \overline{a}_{sr} &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots  \\ \overline{a}_{m1} &amp; \overline{a}_{m2} &amp; \overline{a}_{m3} &amp; \cdots &amp; \overline{a}_{mr} &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>其中$\overline{a}_{11} \cdot \overline{a}_{k2} \cdot \overline{a}_{l3} \cdots \overline{a}_{sr} \neq 0$.</p>
+<p>所以，矩阵$A$经初等列变换化成的阶梯形为</p>
+<p>$$\overline{A} =\begin{pmatrix} \overline{a}_{11} &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{k1} &amp; \overline{a}_{k2} &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{l1} &amp; \overline{a}_{l2} &amp; \overline{a}_{l3} &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \overline{a}_{s1} &amp; \overline{a}_{s2} &amp; \overline{a}_{s3} &amp; \cdots &amp; \overline{a}_{sr} &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots  \\ \overline{a}_{m1} &amp; \overline{a}_{m2} &amp; \overline{a}_{m3} &amp; \cdots &amp; \overline{a}_{mr} &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>其中$\overline{a}_{11} \cdot \overline{a}_{k2} \cdot \overline{a}_{l3} \cdots \overline{a}_{sr} \neq 0$</p>
+<p>$(2)\;$对于矩阵$\overline{A} =\begin{pmatrix} \overline{a}_{11} &amp; \cdots &amp; \overline{a}_{1k} &amp; \cdots &amp; \overline{a}_{1l} &amp; \cdots &amp; \overline{a}_{1s} &amp; \cdots &amp; \overline{a}_{1n} \\ 0 &amp; \cdots &amp; \overline{a}_{2k} &amp; \cdots &amp; \overline{a}_{2l} &amp; \cdots &amp; \overline{a}_{2s} &amp; \cdots &amp; \overline{a}_{2n} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{3l} &amp; \cdots &amp; \overline{a}_{3s} &amp; \cdots &amp; \overline{a}_{3n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{rs} &amp; \cdots &amp; \overline{a}_{rn} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $</p>
+<p>其中$\overline{a}_{11} \cdot \overline{a}_{2k} \cdot \overline{a}_{3l} \cdots \overline{a}_{rs} \neq 0$，来说，将第$1$列分别乘以常数$\lambda _i $，分别加到第$j$列$(j=k,l,s,\cdots ,n)$上去，使得加完后第$1$行的系数除$\overline{a}_{11} $以外都变为$0$（做$n-1$次Ⅱ型初等变换）.显然为此必须取$\lambda _i =-\dfrac{\overline{a}_{1j}}{\overline{a}_{11}} $.结果我们就得到了另一个新矩阵，第$1$行除第一个位置以外全为零.如下所示：</p>
+<p>$$\begin{pmatrix} \overline{a}_{11} &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; \overline{a}_{2k} &amp; \cdots &amp; \overline{a}_{2l} &amp; \cdots &amp; \overline{a}_{2s} &amp; \cdots &amp; \overline{a}_{2n} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{3l} &amp; \cdots &amp; \overline{a}_{3s} &amp; \cdots &amp; \overline{a}_{3n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{rs} &amp; \cdots &amp; \overline{a}_{rn} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>接着，考察第二行，将第$k$列分别乘以常数$\lambda’_i $，分别加到第$j$列$(j=l,s,\cdots ,n)$上去，使得加完后第$2$行的系数除$\overline{a}_{2k} $以外都变为$0$.显然为此必须取$\lambda’_i =-\dfrac{\overline{a}_{2j}}{\overline{a}_{2k}} $.结果我们就得到了另一个新矩阵，第$2$行除第$k$个位置以外全为零.如下所示：</p>
+<p>$$\begin{pmatrix} \overline{a}_{11} &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; \overline{a}_{2k} &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{3l} &amp; \cdots &amp; \overline{a}_{3s} &amp; \cdots &amp; \overline{a}_{3n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{rs} &amp; \cdots &amp; \overline{a}_{rn} \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>然后，依次考察第三行，第四行，直至第$r$行，得到矩阵</p>
+<p>$$\begin{pmatrix} \overline{a}_{11} &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; \overline{a}_{2k} &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{3l} &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \overline{a}_{rs} &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>然后，依次把第$k,l,\cdots ,s$列与第$2,3,\cdots ,r$列交换，得到下面矩阵</p>
+<p>$$\begin{pmatrix} \overline{a}_{11} &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp; \overline{a}_{2k} &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp;  &amp; \ddots &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp;  &amp;  &amp; \overline{a}_{rs} &amp; \vdots &amp;  &amp;  &amp; \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \vdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \\ &amp;  &amp;  &amp;  &amp; \vdots &amp; 0 &amp;  &amp;  &amp; \\  &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp; \ddots &amp;  &amp; \\  &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; 0 \end{pmatrix} ,$$</p>
+<p>即</p>
+<p>$$\begin{pmatrix} \tilde{a}_{11} &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp; \tilde{a}_{22} &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp;  &amp; \ddots &amp;  &amp; \vdots &amp;  &amp;  &amp; \\  &amp;  &amp;  &amp; \tilde{a}_{rr} &amp; \vdots &amp;  &amp;  &amp; \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \vdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \\ &amp;  &amp;  &amp;  &amp; \vdots &amp; 0 &amp;  &amp;  &amp; \\  &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp; \ddots &amp;  &amp; \\  &amp;  &amp;  &amp;  &amp; \vdots &amp;  &amp;  &amp; 0 \end{pmatrix} ,$$</p>
+<p>其中</p>
+<p>$$\tilde{a}_{11} =\overline{a}_{11} ,\tilde{a}_{22} =\overline{a}_{2k} ,\tilde{a}_{33} =\overline{a}_{3l} ,\cdots ,\tilde{a}_{rr} =\overline{a}_{rs} ;\displaystyle \prod_{i=1}^r \tilde{a}_{ii} \neq 0.$$</p>
+<p>$3$.证明若$a_0 \neq 0$，方阵</p>
+<p>$$\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_0 \\ 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_1 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 &amp; a_2 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 &amp; a_{n-2} \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 &amp; a_{n-1} \end{pmatrix} $$</p>
+<p>的秩为$n$.</p>
+<p>证明：方阵$\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_0 \\ 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_1 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 &amp; a_2 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 &amp; a_{n-2} \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 &amp; a_{n-1} \end{pmatrix} $经过有限次初等行变换化成如下形式：</p>
+<p>$$\begin{pmatrix}  1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_1 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 &amp; a_2 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 &amp; a_{n-2} \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 &amp; a_{n-1} \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_0 \end{pmatrix} $$</p>
+<p>上述矩阵经过有限次初等列变换最后化成如下形式：</p>
+<p>$$A’=\begin{pmatrix}  1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; a_0 \end{pmatrix} .$$</p>
+<p>因此，有$r_r (A) =r_r(A’)=n$且$r_c (A) =r_c(A’)=n$，于是$r_c (A)=r_r (A)=n$，可知方阵$A$的秩为$n$.</p>
+<p>$4$.设两个矩阵</p>
+<p>$$A=\begin{pmatrix} \alpha _1 &amp; \alpha _2 &amp; \cdots &amp; \alpha _n \\ \beta _1 &amp; \beta _2 &amp; \cdots &amp; \beta _n  \end{pmatrix} ,B=\begin{pmatrix} \alpha _1 &amp; \alpha _2 &amp; \cdots &amp; \alpha _n \\ \beta _1 &amp; \beta _2 &amp; \cdots &amp; \beta _n  \\  \gamma _1 &amp; \gamma _2 &amp; \cdots &amp; \gamma _n \end{pmatrix}$$</p>
+<p>试用平面上$n$条直线所成集合的几何性质给出$A$和$B$有相等秩的条件.</p>
+<p>解：只需要$(\gamma _1 ,\gamma _2 ,\cdots ,\gamma _n )$是$(\alpha _1 , \alpha _2 , \cdots , \alpha _n )$与$(\beta _1 ,\beta _2 , \cdots , \beta _n )$的线性组合，即有矩阵$A$和$B$有相等秩.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/01/26/2015/01/daishuxueyinlun122/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/01/26/2015/01/kaoyanshiti4/" title="华南理工大学2009年攻读硕士学位研究生入学考试试卷">
+  <strong>上一篇：</strong><br/>
+  <span>
+  华南理工大学2009年攻读硕士学位研究生入学考试试卷</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/01/26/2015/01/kaoyanshiti5/"  title="浙江大学2010年攻读硕士学位研究生入学考试试题">
+ <strong>下一篇：</strong><br/> 
+ <span>浙江大学2010年攻读硕士学位研究生入学考试试题
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/01/26/2015/01/daishuxueyinlun122/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 2 矩阵的秩" data-url="http://yoursite.com/2015/01/26/2015/01/daishuxueyinlun122/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方程组的回顾"><span class="toc-number">1.</span> <span class="toc-text">方程组的回顾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的秩"><span class="toc-number">2.</span> <span class="toc-text">矩阵的秩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可解性准则"><span class="toc-number">3.</span> <span class="toc-text">可解性准则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

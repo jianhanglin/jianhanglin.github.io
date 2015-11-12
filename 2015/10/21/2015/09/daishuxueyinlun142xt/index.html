@@ -1,0 +1,779 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群">
+<meta property="og:url" content="http://yoursite.com/2015/10/21/2015/09/daishuxueyinlun142xt/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题">
+<meta property="og:image" content="http://yoursite.com/assets/img/daishuxueyinlun1/tu21.png">
+<meta property="og:updated_time" content="2015-10-21T11:30:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群">
+<meta name="twitter:description" content="习题">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/21/2015/09/daishuxueyinlun142xt/" title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群" itemprop="url">《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-21T11:30:38.000Z" itemprop="datePublished"> 發表於 2015-10-21</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">1.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="习题">习题</h2><p>$1$.证明群$G$的任意子群族$\lbrace H_i \vert i\in I\rbrace $的交$\displaystyle \underset{i\in I}{\bigcap} H_i $是$G$的一个子群.</p>
+<p>证明：设$H_1 ,H_2 ,\cdots $是群$G$的任意子群.</p>
+<p>$1)\;$利用子群的定义，有$e\in H_1 ,e\in H_2 ,\cdots $，因此单位元$e\in \displaystyle \underset{i\in I}{\bigcap} H_i $.</p>
+<p>$2)\;$对于任意的$x,y\in \displaystyle \underset{i\in I}{\bigcap} H_i $，则$x,y\in H_1 $，$x,y\in H_2 ,\cdots $.利用子群的定义，由$x,y\in H_1 $可知$xy\in H_1 $，$x,y\in H_2 $可知$xy\in H_2 ,\cdots $.因此，$xy\in \displaystyle \underset{i\in I}{\bigcap} H_i $.</p>
+<p>$3)\;$对于任意的$x\in \displaystyle \underset{i\in I}{\bigcap} H_i $，有$x\in H_1 $，$x\in H_2 ,\cdots $.利用子群的定义，由$x\in H_1 $可知$x^{-1} \in H_1 $，$x\in H_2 $可知$x^{-1} \in H_2 ,\cdots $.因此，$x^{-1} \in \displaystyle \underset{i\in I}{\bigcap} H_i $.</p>
+<p>利用子群的定义，结合上述三点，可证群$G$的任意子群族$\lbrace H_i \vert i\in I\rbrace $的交$\displaystyle \underset{i\in I}{\bigcap} H_i $是$G$的一个子群.</p>
+<p>$2$.设$S$是群$G$的子集，称$G$是由$S$生成的，并记作$G=\langle S\rangle $，若包含$S$的所有子群的交与$G$重合.（换言之，在$G$中没有包含$S$的真子群.）证明，当$G=\langle S\rangle $时，任意元素$g\in G$形如$g=t_1 t_2 \cdots t_n $，$n=1,2,\cdots $，其中$t_i \in S$或$t_i^{-1} \in S$，$1\leq t\leq n$.</p>
+<p>$3$.证明群$G$中乘法可换的元素$a,b$若有互素的阶$s,t$，则在$G$中生成一个$st$阶的循环子群：$\langle a,b\rangle =\langle ab\rangle $.</p>
+<p>提示：包含$\langle ab\rangle \subset \langle a,b\rangle =\lbrace a^i b^j \vert 0\leq i\leq s-1,0\leq j\leq t-1\rbrace $显然成立.根据第$1$章$\S 9$第$3$段，从$(s,t)=1$可知，存在$k,l\in \mathbb{Z}$，使$tk+sl=1$.考虑到定理$1$，$a=a^{1-sl}=a^{tk}=a^{tk}b^{tk}=(ab)^{tk}\in \langle ab\rangle $.类似地，$b\in \langle ab\rangle $，故$\langle a,b\rangle \subset \langle ab\rangle $.</p>
+<p>$4$.设$M=\langle S\rangle $是由集合$S$生成的幺半群，如果每个元素$s\in S$在$M$中可逆，证明$M$是一个群.</p>
+<p>证明：由题意知，$M$是一个所有的元素都可逆的幺半群，故$M$是一个群.</p>
+<p>$5$.证明下述论断：设$G$是一个幺半群，使得任取$a,b\in G$，方程$ax=b,ya=b$有唯一解，则$G$是一个群.</p>
+<p>证明：取$b=e$，则$ax=e$有解$a_1 $，$ya=e$有解$a_2 $，这样有</p>
+<p>$$a_1 =ea_1 =(a_2 a)a_1 =a_2 (aa_1 )=a_2 e=a_2 ,$$</p>
+<p>故对任意$a\in G$，有$a_1 $满足$aa_1 =a_1 a=e$，故$G$是一个群.</p>
+<p>$6$.令${\varphi }_{a,b} \colon x\mapsto ax+b(a,b\in \mathbb{R} ;a\neq 0)$是实直线上的一个<strong>仿射变换</strong>，它们的集合记作$A_1 (\mathbb{R} )$，在$A_1 (\mathbb{R} )$中定义乘法${\varphi }_{a,b} {\varphi }_{c,d} ={\varphi }_{ac,ad+b}$，证明$A_1 (\mathbb{R} )$是一个群.$A_1 (\mathbb{R} )$包含有一个子群$\mathrm{GL}_1 (\mathbb{R} )$，它使点$x=0$保持不动，也包含有一个由“纯位移”$x\mapsto x+b$组成的子群.</p>
+<p>证明：任取${\varphi }_{a_i ,b_i } (x)=a_i x+b_i $，其中$a_0 \neq 0,i=1,2$.由于</p>
+<p>$$({\varphi }_{a_1 ,b_1 } \circ {\varphi }_{a_2 ,b_2 } )(x)={\varphi }_{a_1 a_2 ,a_1 b_2 +b_1 } (x) =a_1 a_2 x+(a_1 b_2 +b_1 ),$$</p>
+<p>因此${\varphi }_{a_1 ,b_1 }  \circ {\varphi }_{a_2 ,b_2 } \in A_1 (\mathbb{R} )$.这说明映射的乘法是$A_1 (\mathbb{R} )$的一个运算.映射的乘法适合结合律.$\mathbb{R} $上的恒等映射$1_{\mathbb{R} } (x)=x$是一次函数，它是$A_1 (\mathbb{R} )$的单位元.一次函数${\varphi }_{a,b} (x)=ax+b$有反函数${\varphi }_{a,b}^{-1} (x)=\dfrac{1}{a} x-\dfrac{b}{a}$，${\varphi }_{a,b}^{-1} $仍是一次函数.综上所述，$A_1 (\mathbb{R} )$对于映射的乘法${\varphi }_{a,b} {\varphi }_{c,d} ={\varphi }_{ac,ad+b}$成为一个群.</p>
+<p>$7$.群$\mathrm{SL}_2 (\mathbb{Z} )$包含有元素$A=\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix}$和$B=\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; -1 \end{pmatrix}$，阶数分别为$4$和$3$.证明$\langle AB\rangle $是$\mathrm{SL}_2 (\mathbb{Z} )$中的无限循环子群.这说明群$G$中两个有限阶元素的乘积不一定是有限阶元.这件事在阿贝尔群中成立吗？</p>
+<p>证明：$1)\;$由题意知$AB=\begin{pmatrix} -1 &amp; -1 \\ 0 &amp; -1 \end{pmatrix}$，易验证矩阵$\begin{pmatrix} -1 &amp; -1 \\ 0 &amp; -1 \end{pmatrix}$生成$\mathrm{SL}_2 (\mathbb{Z} )$的一个无限循环子群，故$\langle AB\rangle $是$\mathrm{SL}_2 (\mathbb{Z} )$中的无限循环子群.</p>
+<p>$2)\;$这件事在阿贝尔群中不成立，因为此时两个有限阶元素的乘积一定是有限阶元.$a,b$是群$G$中的元素，$ab=ba,o(a)=m,o(b)=n,o(ab)=k$，则$o(ab)\vert [m,n],\dfrac{[m,n]}{(m,n)} \vert o(ab)$.特别地，当$(m,n)=1$时，$o(ab)=mn$.其中$[m,n]$表示正整数$m$与$n$的最小公倍数，$(m,n)$表示正整数$m$与$n$的最大公约数 ，由数论的知识有$[m,n] (m,n)=mn$.对于群中元素$a$，$o(a)$表示$a$的阶.证明如下：</p>
+<p>首先，$(ab)^{[m,n]} =(a^m)^{\dfrac{[m,n]}{m} } (b^n)^{\dfrac{[m,n]}{n} } =1$，故$o(ab)\vert [m,n]$.其次，$(ab)^{o(ab)} =1$，则$1=(ab)^{o(ab)m} =(a^m)^{o(ab)}b^{o(ab)m} =b^{o(ab)m}$，故$n\vert o(ab)m$.于是$\dfrac{n}{(m,n)} \vert o(ab)$，同理$\dfrac{[m,n]}{(m.n)} =\dfrac{m}{(m,n)} \dfrac{n}{(m.n)} \vert o(ab)$.若$(m,n)=1$，由上即得$o(ab)=mn$.</p>
+<p>记$d=(m,n)$，由上面的证明可设$k=\dfrac{mn}{d^2} l$，其中$1\leq l\leq d$且$l\vert d$.</p>
+<p>参考文献：</p>
+<p><a href="https://drive.google.com/a/ljh.tbst.edu.au/file/d/0ByBe9fIy963UYmx3a2ZBWE4tcDg/view?usp=sharing" target="_blank" rel="external">[1]范兴亚.关于群中两可交换元素乘积的阶.首都师范大学学报：第27卷第4期,2006年8月</a></p>
+<p>$8$.证明若群$G$的阶$\vert G\vert =2n$是偶数，则$G$中包含有一个二阶元$g\neq e$.</p>
+<p>提示：观察$G$用元素对$g,g^{-1}$的划分.</p>
+<p>证明：假如$G$中没有二阶元，则对于每一个非单位元$g$都有$g\neq g^{-1}$.从而$G$中的所有非单位元可以两两配对，于是$\vert G\vert =2n+1$.这与$\vert G\vert $为偶数矛盾.因此$G$中有二阶元.</p>
+<p>$9$.证明$S_n =\langle (12),(13),\cdots ,(1n)\rangle $.</p>
+<p>证明：$S_n $中每个置换可以表示成一些对换的乘积，又任一对换$(ij)$可以表示成</p>
+<p>$$(ij)=(1i)(1j)(1i).$$</p>
+<p>因此$S_n $可以由$\lbrace (12),(13),(14),\cdots ,(1n)\rbrace $生成，即</p>
+<p>$$S_n =\langle (12),(13),\cdots ,(1n)\rangle .$$</p>
+<p>$10$.证明$S_n =\langle (12),(123\cdots n)\rangle $.</p>
+<p>证明：$1)\;$我们已证$S_n =\langle (12),(13),\cdots ,(1n)\rangle $，因此只要对于$k\in \lbrace 3,4,\cdots ,n\rbrace $，去证$(1k)$可以表示成$(12),(23),\cdots ,(n-1,n)$这些对换的乘积（它们可以重复出现）.</p>
+<p>$$\begin{align}<br>(13) &amp; =(23)(12)(23) , \\<br>(14) &amp; =(34)(13)(34)=(34)(23)(12)(23)(34), \\<br>\cdots &amp; \cdots \cdots \cdots \\<br>(1k) &amp; =(k-1,k)(1,k-1)(k-1,k) \\<br> &amp; =(k-1,k)(k-2,k-1)\cdots (34)(23)(12)(23)(34)\cdots (k-2,k-1)(k-1,k). \\<br>\end{align}$$</p>
+<p>因此$S_n =\langle (12),(23),(34),\cdots ,(n-1,n)\rangle $.</p>
+<p>$2)\;$根据$1)\;$，只要去证对于$k\in \lbrace 2,3,\cdots ,n-1\rbrace $，有$(k,k+1)$可以表示成$(1,2),(123\cdots n)$的整数次幂的乘积.</p>
+<p>$$\begin{align}<br>(23) &amp; =(123\cdots n)(12)(123\cdots n)^{-1} ,\\<br>(34) &amp; =(123\cdots n)(23)(123\cdots n)^{-1} =(123\cdots n)^2(12)(123\cdots n)^{-2} , \\<br>\cdots &amp; \cdots \cdots \cdots \\<br>(k,k+1) &amp; =(123\cdots n)(k-1,k)(123\cdots n)^{-1}  \\<br> &amp; =(123\cdots n)^{k-1}(12)(123\cdots n)^{-(k-1)}. \\<br>\end{align}$$</p>
+<p>因此$S_n =\langle (12) ,(123\cdots n)\rangle $.</p>
+<p>$11$.证明交错群$A_n ,n\geq 3$，是由$3$循环生成的，并且事实上</p>
+<p>$$A_n =\langle (123),(124),\cdots ,(12n)\rangle .$$</p>
+<p>证明：$1)\;$由于任一偶置换可以表示成偶数个对换的乘积，且$S_n $可以由$(12),(13),(14),\cdots ,(1n)$生成，因此只要考察$(1i)(1j)$能写成什么形式.由于$(1i)(1j)=(1ji)$，因此每一个$n$元偶置换$(n\geq 3)$可以表示成一些$3-$轮换的乘积.从而$A_n $由$3-$轮换生成.</p>
+<p>$2)\;$我们已证$A_n $可由$3-$轮换生成，因此只要去证任一$3-$轮换$(ijk)\in \langle (123),(124),\cdots ,(12n)\rangle $.</p>
+<p>$$\begin{align}<br>(ijk) &amp; =[(1i)(2j)] (12k)[(1i)(2j)]^{-1} ,\\<br> &amp; =[(1i)(12)(21)(2j)] (12k)[(1i)(12)(21)(2j)]^{-1} \\<br> &amp; =[(12i)(12j)] (12k)[(12i)(12j)]^{-1}  .\\<br>\end{align}$$</p>
+<p>因此$A_n =\langle (123),(124),\cdots ,(12n)\rangle $.</p>
+<p>$12$.证明循环$\pi =(12\cdots n)\in S_n $的$k$次方幂${\pi }^k $是$d$个互不相交的循环的乘积，每一个的长度为$q=\dfrac{n}{d} $，其中$d=\mathrm{g.c.d} (n,k)$是$n$和$k$的最大公因数.</p>
+<p>$13$.设置换$\pi \in S_n $，将$\pi $分解成互不相交的循环的乘积，证明$\pi $的阶（即循环子群$\langle \pi \rangle $的阶），等于这些循环的阶的最小公倍数.</p>
+<p>$14$.设$A,B\in M_n (\mathbb{R} )$且$(AB)^m =E$对某个整数$m$成立，那么一定有$(BA)^m =E$吗？</p>
+<p>解：设$A,B\in M_n (\mathbb{R} )$且$(AB)^m =E$对某个整数$m$成立，若$B$可逆，则</p>
+<p>$$\begin{align}<br>(BA)^m &amp; =(BA)(BA)\cdots (BA) \\<br> &amp; =B(AB)(AB)\cdots (AB)A \\<br> &amp; =B(AB)(AB)\cdots (AB)A E \\<br> &amp; =B(AB)(AB)\cdots (AB)(A B)B^{-1} \\<br> &amp; =BEB^{-1} \\<br> &amp; =E .\\<br>\end{align}$$</p>
+<p>$15$.设$G$是一个有限（乘法）群，$H$是$G$的一个非空子集，如果$H$关于$G$的乘法封闭，证明$H$是一个子群.事实上，在这种情况下，在$H$中存在单位元$e$和逆元$h^{-1},h\in H$的要求是多余的.</p>
+<p>证明：对于群$G$的非空子集$H$，如果$H$关于$G$的乘法具有封闭性，则$H$是有限半群.由于消去律在群$G$中成立，在其子集合中当然成立.于是$H$是$G$的一个子群.</p>
+<p>$16$.正有理数的乘法群$(\mathbb{Q}_+ ,\cdot )$可以有什么样的生成元集？</p>
+<p>提示：利用第$1$章$\S 9$的算术基本定理.</p>
+<p>在$(\mathbb{Q}_+ ,\cdot )$中是否存在有限生成元集？</p>
+<p>$17$.证明对于给定的阶数$n$，在同构的意义下仅有有限多个$n$阶群，群的个数记作$\rho (n)$.</p>
+<p>提示：估计上述$n$阶凯莱表的个数.运用定理$4$证明$\rho (n)$不会超过$\displaystyle {n! \choose n}$，即从$S_n $中取$n$个置换组成的不同子集的个数.事实上，$\rho (n)$远小于此数，但逼近于精确值的较好的估计至今没有找到.</p>
+<p>$18$.用习题$10$证明，每个有限群都可以嵌入到具有两个生成元的有限群中（即存在到这种群内的一个单同态）.</p>
+<p>$19$.试证图$17$标示出了交错群$A_4 $的所有子群.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu21.png" alt=""></center>
+
+<p>其中符号$V_4 $代表克莱因$4$元群，$V_4 =\lbrace e,(12)(34),(13)(24),(14)(23)\rbrace $，图中的其他顶点代表循环子群，其生成元已写明.</p>
+<p>$20$.证明所有的$4$阶群都是阿贝尔群，精确到同构只有置换群$U=\langle (1234)\rangle $和克莱因四元群$V_4 $两种，也可以写成矩阵群：</p>
+<p>$$L_1 =\left\lbrace \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} ,\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} ,\begin{pmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} ,\begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix} \right\rbrace \subset \mathrm{GL}_2 (\mathbb{R} ) ,$$</p>
+<p>$$L_2 =\left\lbrace \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} ,\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} ,\begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} ,\begin{pmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} \right\rbrace \subset \mathrm{GL}_2 (\mathbb{R} ) .$$</p>
+<p>给出同构映射$U\to L_1 ,V_4 \to L_2 $.</p>
+<p>提示：若任取$x\in G$，有$x^2 =e$，则$abab=e\Rightarrow ab =b^{-1}a^{-1} =b(b^{-1})^2(a^{-1})^2 a=beea=ba$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/21/2015/09/daishuxueyinlun142xt/" data-title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/21/2015/09/weijifenxuejiaocheng132/" title="《微积分学教程(第一卷)》 第三章 导数及微分 2 微分">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 第三章 导数及微分 2 微分</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/21/2015/07/daishuxueyinlun142/"  title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/21/2015/09/daishuxueyinlun142xt/" data-title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群" data-url="http://yoursite.com/2015/10/21/2015/09/daishuxueyinlun142xt/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">1.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

@@ -1,0 +1,916 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析习题集》第一章 分析引论 2. 数列理论 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题41-68">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析习题集》第一章 分析引论 2. 数列理论">
+<meta property="og:url" content="http://yoursite.com/2015/10/20/2015/04/jimiduoweiqishuxuefenxixitiji1121/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题41-68">
+<meta property="og:updated_time" content="2015-11-02T14:28:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 2. 数列理论">
+<meta name="twitter:description" content="习题41-68">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/20/2015/04/jimiduoweiqishuxuefenxixitiji1121/" title="《数学分析习题集》第一章 分析引论 2. 数列理论" itemprop="url">《数学分析习题集》第一章 分析引论 2. 数列理论</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-20T14:05:13.000Z" itemprop="datePublished"> 發表於 2015-10-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#极限的定义与计算"><span class="toc-number">1.</span> <span class="toc-text">极限的定义与计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#几个极限证明题"><span class="toc-number">2.</span> <span class="toc-text">几个极限证明题</span></a></li></ol>
+		
+		</div>
+		
+		<p>$1$.<strong>数列极限的概念</strong>.若对于任何的$\varepsilon &gt; 0$，存在数$N=N(\varepsilon )$，使得</p>
+<p>$$当n &gt; N 时，\mid x_n -a \mid &lt; \varepsilon ,$$</p>
+<p>则称数列$x_1 ,x_2 ,\cdots ,x_n ,\cdots $有极限$a$（或者说，收敛于$a$），即</p>
+<p>$$\lim_{n\to \infty } x_n =a .$$</p>
+<p>特别地，若$\displaystyle \lim_{n\to \infty } x_n =0$，则称$x_n $为无穷小量.</p>
+<p>没有极限的数列，称为发散的.</p>
+<p>$2$.<strong>极限存在的判别法</strong>.</p>
+<p>$(1)$若$y_n \leq x_n \leq z_n$，且$\displaystyle \lim_{n\to \infty } y_n =\lim_{n\to \infty } z_n =c$，则$\displaystyle \lim_{n\to \infty } x_n =c$.</p>
+<p>$(2)$单调有界数列有极限.</p>
+<p>$(3)$柯西准则：数列$x_n$的极限存在的充分必要条件是：对于任何的$\varepsilon &gt; 0$，存在数$N=N(\varepsilon )$，使当$n &gt; N$和$p &gt; 0$时$\mid x_n -x_{n+p} \mid &lt; \varepsilon$.</p>
+<p>$3$.<strong>关于数列极限的基本定理</strong>.设$\displaystyle \lim_{n\to \infty } x_n$和$\displaystyle \lim_{n\to \infty } y_n$存在，则有：</p>
+<p>$(1)\;$若$x_n \leq y_n$，则$\displaystyle \lim_{n\to \infty } x_n \leq \lim_{n\to \infty } y_n$；</p>
+<p>$(2)\; $ $\displaystyle \lim_{n\to \infty } (x_n \pm y_n )=\lim_{n\to \infty } x_n \pm \lim_{n\to \infty } y_n$；</p>
+<p>$(3)\;$ $\displaystyle \lim_{n\to \infty } (x_n y_n )=\lim_{n\to \infty } x_n \lim_{n\to \infty } y_n$；</p>
+<p>$(4)\;$若$\displaystyle \lim_{n\to \infty } y_n \neq 0$，则$\displaystyle \lim_{n\to \infty } \dfrac{x_n }{y_n } =\dfrac{\displaystyle \lim_{n\to \infty } x_n }{\displaystyle \lim_{n\to \infty } y_n }$.</p>
+<p>$4$.<strong>数$e$</strong>.数列</p>
+<p>$$\left( 1+\dfrac{1}{n} \right) ^n \quad (n=1,2,\cdots )$$</p>
+<p>具有有限的极限</p>
+<p>$$\lim_{n\to \infty } \left( 1+\dfrac{1}{n} \right) ^n =e=2.718\;281\;828\;4\cdots .$$</p>
+<p>$5$.<strong>无穷极限</strong>.记号</p>
+<p>$$\lim_{n\to \infty } x_n =\infty $$</p>
+<p>表示：对于任何的$E &gt; 0$，存在数$N=N(E)$，使得</p>
+<p>$$当n &gt; N时,\mid x_n \mid &gt; E.$$</p>
+<p>$6$.<strong>极限点</strong>.若一个给定数列$x_n (n=1,2,\cdots )$有子数列</p>
+<p>$$x_{p_1 } ,x_{p_2 } ,\cdots ,x_{p_n } ,\cdots (1\leq p_1 &lt; p_2 &lt; \cdots )$$</p>
+<p>满足</p>
+<p>$$\lim_{n\to \infty } x_{p_n } =\xi ,$$</p>
+<p>则称数$\xi $（或符号$\infty $）为数列$x_n $的子列极限（极限点）.</p>
+<blockquote>
+<p>极限点也称为聚点.一般地，若$x$的任何邻域中至少有一个不同于$x$且属于给定集合$X$的点，则称点$x$为集合$X$的极限点.</p>
+</blockquote>
+<p>任何有界数列至少有一个有限的子列极限（波尔查诺-魏尔斯特拉斯原理）.若这个子列极限是唯一的，则它即为该数列的有限极限.</p>
+<p>数列$x_n $的最小子列极限（有限的或无穷的）</p>
+<p>$$\varliminf_{n\to \infty } x_n $$</p>
+<p>称为此数列的下极限，而它的最大子列极限</p>
+<p>$$\varlimsup_{n\to \infty } x_n $$</p>
+<p>称为上极限.</p>
+<p>等式</p>
+<p>$$\varliminf_{n\to \infty } x_n =\varlimsup_{n\to \infty } x_n $$</p>
+<p>为数列$x_n $的（有限或无穷）极限存在的充分必要条件.</p>
+<h2 id="极限的定义与计算">极限的定义与计算</h2><p>$41$.设</p>
+<p>$$x_n =\dfrac{n}{n+1} \quad (n=1,2,\cdots ).$$</p>
+<p>证明：</p>
+<p>$$\lim_{n\to \infty } x_n =1,$$</p>
+<p>即对于任何的$\varepsilon &gt; 0$，可以求出数$N=N(\varepsilon )$，使得</p>
+<p>$$在n &gt; N时,\mid x_n -1 \mid &lt; \varepsilon .$$</p>
+<p>填下表：</p>
+<p>$$ \begin{array}{c|c|c|c|c|c}<br>\hline<br>\varepsilon &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; 0.0001 &amp; \cdots \\<br>\hline<br>N &amp; &amp; &amp; &amp; &amp; \\<br>\hline<br>\end{array} $$</p>
+<p>证：对给定的任意$\varepsilon &gt; 0$，欲使$\mid x_n -1\mid &lt; \varepsilon $，由$\mid x_n -1\mid =\dfrac{1}{n+1} &lt; \varepsilon $解出$n &gt; \dfrac{1}{\varepsilon } -1$，故可取$N=[\dfrac{1}{\varepsilon } -1]$（$[x]$表示$x$的整数部分），则当$n &gt; N$时，就有$\mid x_n -1\mid &lt; \varepsilon $.然后即可填表如下：</p>
+<p>$$ \begin{array}{c|c|c|c|c|c}<br>\hline<br>\varepsilon &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; 0.0001 &amp; \cdots \\<br>\hline<br>N &amp; 9 &amp; 99 &amp; 999 &amp; 9999 &amp; \cdots \\<br>\hline<br>\end{array} $$</p>
+<p>$42$.设</p>
+<p>$$(a)\; x_n =\dfrac{(-1)^{n+1}}{n} ;\quad \quad (b)\;x_n =\dfrac{2n}{n^3}+1;$$</p>
+<p>$$(c)\;x_n =\dfrac{1}{n!} ;\quad \quad \quad (d)\;x_n =(-1)^n \cdot 0.999^n ,$$</p>
+<p>证明：$x_n (n=1,2,\cdots )$为无穷小量（即它的极限为$0$），即对于任何的$\varepsilon &gt; 0$，可以求出数$N=N(\varepsilon )$，使得</p>
+<p>$$当n &gt; N时,\mid x_n \mid &lt; \varepsilon .$$</p>
+<p>对于上述每一种情形，填下表：</p>
+<p>$$ \begin{array}{c|c|c|c|c}<br>\hline<br>\varepsilon &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; \cdots \\<br>\hline<br>N &amp; &amp; &amp; &amp; \\<br>\hline<br>\end{array} $$</p>
+<p>证：$(1)\;$因为$\mid x_n \mid =\dfrac{1}{n}$.任给$\varepsilon &gt; 0$，要$\mid x_n \mid &lt; \varepsilon$，只要$\dfrac{1}{n} &lt; \varepsilon $，即只要$n &gt; \dfrac{1}{\varepsilon }$.取$N=\left[ \dfrac{1}{\varepsilon } \right] $，则当$n &gt; N$时，$\mid x_n \mid &lt; \varepsilon$，所以，$\displaystyle \lim_{n\to \infty } x_n =0$.</p>
+<p>$(2)\;$因为$\mid x_n \mid =\dfrac{2n}{n^3+1} &lt; \dfrac{2}{n^2}$.任给$\varepsilon &gt; 0$，要$\mid x_n \mid &lt; \varepsilon$，只要$\dfrac{2}{n^2} &lt; \varepsilon $，即只要$n &gt; \sqrt{\dfrac{2}{\varepsilon }}$.取$N=\left[ \sqrt{\dfrac{2}{\varepsilon }} \right] $，则当$n &gt; N$时，$\mid x_n \mid &lt; \varepsilon$，所以，$\displaystyle \lim_{n\to \infty } x_n =0$.</p>
+<p>$(3)\;$因为$\mid x_n \mid =\dfrac{1}{n!} \leq \dfrac{1}{2^{n-1}}$.任给$\varepsilon &gt; 0$，要$\mid x_n \mid &lt; \varepsilon$，只要$\dfrac{1}{2^{n-1}} &lt; \varepsilon $，即只要$n &gt; 1+\log_2{\dfrac{1}{\varepsilon}}$.取$N=\left[ \log_2{\dfrac{1}{\varepsilon}} \right] +1$，则当$n &gt; N$时，$\mid x_n \mid &lt; \varepsilon$，所以，$\displaystyle \lim_{n\to \infty } x_n =0$.</p>
+<p>$(4)\;$因为$\mid x_n \mid =0.999^n$.任给$\varepsilon &gt; 0$，要$\mid x_n \mid &lt; \varepsilon$，只要$n\lg 0.999 &lt; \lg \varepsilon $，由于$\lg 0.999 &lt; 0$，故只要$n &gt; \dfrac{\lg \varepsilon }{\lg 0.999} \approx 2500\lg \dfrac{1}{\varepsilon }$.取$N=\left[ 2500\lg \dfrac{1}{\varepsilon } \right]$，则当$n &gt; N$时，$\mid x_n \mid &lt; \varepsilon$，所以，$\displaystyle \lim_{n\to \infty } x_n =0$.</p>
+<p>填下表：</p>
+<p>$$ \begin{array}{c|c|c|c|c}<br>\hline<br>\varepsilon &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; \cdots \\<br>\hline<br>N &amp; 10 &amp; 100 &amp; 1000 &amp; \cdots \\<br>\hline<br>N &amp; 4 &amp; 14 &amp; 44 &amp; \cdots \\<br>\hline<br>N &amp; 4 &amp; 7 &amp; 10 &amp; \cdots \\<br>\hline<br>N &amp; 2500 &amp; 5000 &amp; 7500 &amp; \cdots \\<br>\hline<br>\end{array} $$</p>
+<p>$43$.证明：数列</p>
+<p>$$(a)\;x_n =(-1)^nn;\quad (b)\;x_n =2^{\sqrt{n}} ;\quad (c)\;x_n =\lg (\lg n) \quad (n\geq 2)$$</p>
+<p>当$n\to \infty $时有无穷极限（即它们是无穷大），即对于任何的$E &gt; 0$，可以求出数$N=N(E)$，使得</p>
+<p>$$当n &gt; N时,\vert x_n \vert &gt; E.$$</p>
+<p>对于上述每一种情形，填下表：</p>
+<p>$$ \begin{array}{c|c|c|c|c|c}<br>\hline<br>E &amp; 10 &amp; 100 &amp; 1000 &amp; 10000 &amp; \cdots \\<br>\hline<br>N &amp; &amp; &amp; &amp; &amp; \\<br>\hline<br>\end{array} $$</p>
+<p>证：$(a)\;$因为$\vert x_n \vert =n$，任给$E &gt; 0$，要$\vert x_n \vert &gt; E$，只要$n &gt; E$.取$N=[E]$，则当$n &gt; N$时，$\vert x_n \vert &gt; E$，所以，$\displaystyle \lim_{n\to \infty } x_n =\infty $.</p>
+<p>$(b)\;$因为$\vert x_n \vert =2^{\sqrt{n}}$，任给$E &gt; 0$，要$\vert x_n \vert &gt; E$，只要$2^{\sqrt{n}} &gt; E$.即只要$n &gt; \left( \dfrac{\lg E}{\lg 2} \right) ^2 $.取$N= \left[ \left( \dfrac{\lg E}{\lg 2}  \right) ^2\right] $，则当$n &gt; N$时，$\vert x_n \vert &gt; E$，所以，$\displaystyle \lim_{n\to \infty } x_n =\infty $.</p>
+<p>$(c)\;$当$n &gt; 10$时，$\lg n &gt; 1$及$\lg (\lg n) &gt; 0$.任给的$E &gt; 0$，要$\vert x_n \vert &gt; E$，只要$\lg (\lg n) &gt; E$，即只要$n &gt; 10^{\displaystyle 10^E}$.取$N=\left[ 10^{\displaystyle 10^E} \right]$，则当$n &gt; N$时，$\vert x_n \vert &gt; E$，所以，$\displaystyle \lim_{n\to \infty } x_n =\infty $.</p>
+<p>填下表：</p>
+<p>$$ \begin{array}{c|c|c|c|c|c}<br>\hline<br>E &amp; 10 &amp; 100 &amp; 1000 &amp; 10000 &amp; \cdots \\<br>\hline<br>\begin{array}{c|c} (a) &amp; N \end{array} &amp; 10 &amp; 100 &amp; 1000 &amp; 10000 &amp; \cdots \\<br>\hline<br>\begin{array}{c|c} (b) &amp; N \end{array} &amp; 11 &amp; 44 &amp; 99 &amp; 176 &amp; \cdots \\<br>\hline<br>\begin{array}{c|c} (c) &amp; N \end{array} &amp; 10^{\displaystyle 10^{10}} &amp; 10^{\displaystyle 10^{100}} &amp; 10^{\displaystyle 10^{1000}} &amp; 10^{\displaystyle 10^{10000}} &amp; \cdots \\<br>\hline<br>\end{array} $$</p>
+<p>$44$.求证：</p>
+<p>$$x_n =n^{(-1)^n} \quad (n=1,2,\cdots )$$</p>
+<p>无界，但当$n\to \infty $时，它并不是无穷大.</p>
+<p>证明：因为</p>
+<p>$$x_n =\begin{cases} 2k, &amp; n=2k, \\ \dfrac{1}{2k-1} , &amp; n=2k-1, \end{cases}$$</p>
+<p>其中$k$为正整数，则$x_{2k} \to \infty$，$x_{2k-1} \to 0(k\to \infty )$.由于$x_{2k} \to \infty$，故$x_n$无界；但因为$x_{2k-1} \to 0$，故$x_n $并不是趋于无穷大.</p>
+<p>$45$.用不等式表述下列命题：</p>
+<p>$$(a)\;\lim_{n\to \infty } x_n =\infty ;\quad (b)\;\lim_{n\to \infty } x_n =-\infty ;\quad (c)\;\lim_{n\to \infty } x_n =+\infty .$$</p>
+<p>解：$(a)\;$对于任给的的正数$E$，存在正整数$N=N(E)$，使当$n &gt; N$时，$\vert x_n \vert &gt; E$，此即$\displaystyle \lim_{n\to \infty } x_n =\infty $.</p>
+<p>$(b)\;$对于任给的正数$E$，存在正整数$N=N(E) $，使当$n &gt; N$时，$x_n &lt; -E$，此即$\displaystyle \lim_{n\to \infty } x_n =-\infty $.</p>
+<p>$(c)\;$对于任给的正数$E$，存在正整数$N=N(E)$，使当$n &gt; N$时，$x_n &gt; E$，此即$\displaystyle \lim_{n\to \infty } x_n =+\infty $.</p>
+<p>设$n$遍历正整数列，求下列各式之值：</p>
+<p>$46$.$\displaystyle \lim_{n\to \infty } \dfrac{10\;000n}{n^2+1} $.</p>
+<p>解：$\displaystyle \lim_{n\to \infty } \dfrac{10\;000n}{n^2+1} =\lim_{n\to \infty } \dfrac{10000}{n+\dfrac{1}{n}} =0$.</p>
+<p>$47$.$\displaystyle \lim_{n\to \infty } (\sqrt{n+1} -\sqrt{n} )$.</p>
+<p>解：$\displaystyle \lim_{n\to \infty } (\sqrt{n+1} -\sqrt{n} ) =\lim_{n\to \infty } \dfrac{(\sqrt{n+1} -\sqrt{n} )(\sqrt{n+1} +\sqrt{n} )}{\sqrt{n+1} +\sqrt{n} } =\lim_{n\to \infty } \dfrac{1}{\sqrt{n+1} +\sqrt{n} } =0$.</p>
+<p>$48$.$\displaystyle \lim_{n\to \infty } \dfrac{\sqrt[3]{n^2} \sin{n!}}{n+1} $.</p>
+<p>解：看出分母是无穷大量，分子是无穷大量$\sqrt[3]{n^2} $乘有界量$\sin{n!}$，就可如下求解：</p>
+<p>$$\left| \dfrac{\sqrt[3]{n^2} \sin{n!}}{n+1} \right| &lt; \dfrac{\sqrt[3]{n^2}}{n} =\dfrac{1}{\sqrt[3]{n}} \to 0,$$</p>
+<p>可见极限为$0$.</p>
+<p>$49$.$\displaystyle \lim_{n\to \infty } \dfrac{(-2)^n +3^n}{(-2)^{n+1} +3^{n+1}} $.</p>
+<p>解：$\displaystyle \lim_{n\to \infty } \dfrac{(-2)^n +3^n}{(-2)^{n+1} +3^{n+1}} =\lim_{n\to \infty } \dfrac{3^n\cdot \left[ \left( -\dfrac23 \right) ^n +1 \right] }{3^{n+1} \cdot \left[ \left( -\dfrac23 \right) ^{n+1} +1 \right] } =\dfrac13$.</p>
+<p>$50$.$\displaystyle \lim_{n\to \infty } \dfrac{1+a+a^2+\cdots +a^n}{1+b+b^2+\cdots +b^n} \;(\vert a\vert &lt; 1,\vert b\vert &lt; 1)$.</p>
+<p>解：$\displaystyle \lim_{n\to \infty } \dfrac{1+a+a^2+\cdots +a^n}{1+b+b^2+\cdots +b^n} =\lim_{n\to \infty } \dfrac{\dfrac{1-a^{n+1}}{1-a}}{\dfrac{1-b^{n+1}}{1-b}} =\dfrac{1-b}{1-a}$.</p>
+<p>$51$.$\displaystyle \lim_{n\to \infty } \left( \dfrac{1}{n^2} +\dfrac{2}{n^2} +\cdots +\dfrac{n-1}{n^2} \right) $.</p>
+<p>解：$\displaystyle \lim_{n\to \infty } \left( \dfrac{1}{n^2} +\dfrac{2}{n^2} +\cdots +\dfrac{n-1}{n^2} \right) =\lim_{n\to \infty } \dfrac{(n-1)n}{2n^2} =\dfrac12$.</p>
+<p>$52$.$\displaystyle \lim_{n\to \infty } \left| \dfrac{1}{n} -\dfrac{2}{n}+\dfrac{3}{n} -\cdots +\dfrac{(-1)^{n-1}n}{n} \right| $.</p>
+<p>解：将取绝对值之前的数列记为$x_n =\dfrac{1}{n} -\dfrac{2}{n}+\dfrac{3}{n} -\cdots +\dfrac{(-1)^{n-1}n}{n}$.该和式各项的分母相同，将分子直接相加较便捷.注意$(1-2)+(3-4)+\cdots +((2k-1)-2k)=-k$，就可以分别求出下标为偶数和奇数时的表达式为：</p>
+<p>$$x_{2k} =\dfrac{1}{2k} \cdot [(1-2)+(3-4)+\cdots +((2k-1)-2k)] =-\dfrac12 ,$$</p>
+<p>$$x_{2k-1} =\dfrac{1}{2k-1} \cdot [-(k-1)+(2k-1)] =\dfrac{k}{2k-1} \to \dfrac12 \;(k\to \infty ),$$</p>
+<p>故$\lbrace \vert x_n \vert \rbrace $的极限为$\dfrac12$.</p>
+<p>$53$.$\displaystyle \lim_{n\to \infty } \left[ \dfrac{1^2}{n^3} +\dfrac{2^2}{n^3}+\cdots +\dfrac{(n-1)^2}{n^3} \right] $.</p>
+<p>解：$\displaystyle \lim_{n\to \infty } \left[ \dfrac{1^2}{n^3} +\dfrac{2^2}{n^3}+\cdots +\dfrac{(n-1)^2}{n^3} \right] =\lim_{n\to \infty } \left[ \dfrac{1}{n^3} \cdot \dfrac{(n-1)n(2n-1)}{6} \right] =\dfrac13$.</p>
+<p>$54$.$\displaystyle \lim_{n\to \infty } \left[ \dfrac{1^2}{n^3} +\dfrac{3^2}{n^3}+\cdots +\dfrac{(2n-1)^2}{n^3} \right] $.</p>
+<p>解：设$f(n)=\dfrac{1^2}{n^3} +\dfrac{2^2}{n^3}+\cdots +\dfrac{(n-1)^2}{n^3}$，由$53$题即得</p>
+<p>$$\displaystyle \lim_{n\to \infty } \left[ \dfrac{1^2}{n^3} +\dfrac{3^2}{n^3}+\cdots +\dfrac{(2n-1)^2}{n^3} \right] =\lim_{n\to \infty } [8f(2n)-4f(n)] =\dfrac43 .$$</p>
+<p>$55$.$\displaystyle \lim_{n\to \infty } \left( \dfrac{1}{2} +\dfrac{3}{2^2}+\dfrac{5}{2^3} +\cdots +\dfrac{2n-1}{2^n} \right) $.</p>
+<p>解：这里的求和要难一点.注意到$\dfrac{2k-1}{2^k} (k=1,2,\cdots ,n)$的分子是等差数列，而分母是等比数列，可以用下面的方法解决.写出</p>
+<p>$$x_n =\dfrac12 +\dfrac{3}{2^2} +\dfrac{5}{2^3} +\cdots +\dfrac{2n-1}{2^n} ,$$</p>
+<p>$$\dfrac12 x_n =\quad \dfrac{1}{2^2} +\dfrac{3}{2^3} +\cdots +\dfrac{2n-3}{2^n} +\dfrac{2n-1}{2^{n+1}} ,$$</p>
+<p>两式相减并乘以$2$得到</p>
+<p>$$x_n =1+1+\dfrac12 +\cdots +\dfrac{1}{2^{n-2}} -\dfrac{2n-1}{2^n} =3-\dfrac{1}{2^{n-2}} -\dfrac{2n-1}{2^n} .$$</p>
+<p>对上式右边的最后一项用习题$58$或$60$的结论（见下一小节），就得到$\displaystyle \lim_{n\to \infty } x_n =3$.</p>
+<p>$56$.$\displaystyle \lim_{n\to \infty } \left[ \dfrac{1}{1\cdot 2} +\dfrac{1}{2\cdot 3}+\cdots +\dfrac{1}{n(n+1)} \right] $.</p>
+<p>解：本题可以用裂项消去法求解如下：</p>
+<p>$$ \begin{align}\dfrac{1}{1\cdot 2} +\dfrac{1}{2\cdot 3}+\cdots +\dfrac{1}{n(n+1)} &amp; =\left( 1-\dfrac12 \right) +\left( \dfrac12 -\dfrac13 \right) +\cdots +\left( \dfrac1n -\dfrac{1}{n+1} \right) \\<br> &amp; =1-\dfrac{1}{n+1} \to 1 \quad (n\to \infty ).<br>\end{align} $$</p>
+<p>$57$.$\displaystyle \lim_{n\to \infty } \left( \sqrt{2} \sqrt[4]{2} \sqrt[8]{2} \cdots \sqrt[2^n]{2} \right) $.</p>
+<p>解：由于</p>
+<p>$$\sqrt{2} \sqrt[4]{2} \sqrt[8]{2} \cdots \sqrt[2^n]{2} =2^{\left( \frac12 +\frac{1}{2^2} +\frac{1}{2^3} +\cdots +\frac{1}{2^n} \right) } =2^{\left[ \frac12 \cdot \frac{1-\left( \frac12 \right) ^n}{1-\frac12} \right] } ,$$</p>
+<p>故</p>
+<p>$$\lim_{n\to \infty } \left( \sqrt{2} \sqrt[4]{2} \sqrt[8]{2} \cdots \sqrt[2^n]{2} \right) =\lim_{n\to \infty } 2^{\left[ \frac12 \cdot \frac{1-\left( \frac12 \right) ^n}{1-\frac12} \right] } =2.$$</p>
+<h2 id="几个极限证明题">几个极限证明题</h2><p>证明下列等式：</p>
+<p>$58$.$\displaystyle \lim_{n\to \infty } \dfrac{n}{2^n} =0$.</p>
+<p>证：因为$2^n =(1+1)^n =1+n+\dfrac{n(n-1)}{2} +\cdots 1 &gt; \dfrac{n(n-1)}{2} \quad (n &gt; 2)$，故</p>
+<p>$$0 &lt; \dfrac{n}{2^n} &lt; \dfrac{2}{n-1} ;$$</p>
+<p>又因为$\displaystyle \lim_{n\to \infty } \dfrac{2}{n-1} =0$，所以</p>
+<p>$$\lim_{n\to \infty } \dfrac{n}{2^n} =0.$$</p>
+<p>$59$.$\displaystyle \lim_{n\to \infty } \dfrac{2^n}{n!} =0$.</p>
+<p>证：因为$0 &lt; \dfrac{2^n}{n!} =\dfrac{2}{1} \cdot \dfrac{2}{2} \cdots \dfrac{2}{n} \leq \dfrac4n $及$\displaystyle \lim_{n\to \infty } \dfrac{4}{n} =0$，所以</p>
+<p>$$\lim_{n\to \infty } \dfrac{2^n}{n!} =0.$$</p>
+<p>$60$.$\displaystyle \lim_{n\to \infty } \dfrac{n^k}{a^n} =0\;(a &gt; 1)$.</p>
+<p>（对给定的任意$k$可改取正整数$\max{\lbrace 1,[k]+1\rbrace }$，因此以下设题中的$k$已为正整数.）</p>
+<p>证$1$：（用二项式定理）这里的分子是$n$的幂函数，分母是$n$的指数函数，关键条件是$a &gt; 1$.记$a=1+\delta $，其中$\delta &gt; 0$.利用二项式定理就可以将$n$转移到底数上去，且使其指数大于分子的幂函数的指数$k$.具体推导如下.</p>
+<p>当$n &gt; k$时有</p>
+<p>$$ \begin{align} a^n &amp; =(1+\delta )^n \\<br> &amp; =1+n\delta +\dfrac{n(n-1)}{2!} \delta ^2 +\cdots +\dfrac{n(n-1)\cdots (n-k)}{(k+1)!} \delta ^{k+1} +\cdots +\delta ^n \\<br> &amp; &gt; \dfrac{n(n-1)\cdots (n-k)}{(k+1)!} \delta ^{k+1} ,<br>\end{align} $$</p>
+<p>于是就有</p>
+<p>$$ \begin{align} 0 &lt; \dfrac{n^k}{a^n} &amp; &lt; \dfrac{n^k (k+1)!}{n^{k+1}(1-\dfrac1n )\cdots (1-\dfrac{k}{n} )\delta ^{k+1}} \\<br> &amp; =\dfrac1n \cdot \dfrac{(k+1)!}{(1-\dfrac1n )\cdots (1-\dfrac{k}{n} )\delta ^{k+1} } \to 0\; (n\to \infty ),<br>\end{align} $$</p>
+<p>根据夹逼定理原题证毕.</p>
+<p>证$2$：（利用单调性分析）记$x_n =\dfrac{n^k}{a^n} $，就可以对后项与前项之比作出以下分析：</p>
+<p>$$\dfrac{x_{n+1}}{x_n} =\left( \dfrac{n+1}{n} \right) ^k \dfrac1a \to \dfrac1a &lt; 1\quad (n\to \infty ).$$</p>
+<p>利用数列极限的比较定理，对某个$q\in (\dfrac1a ,1)$取定$N_0$，使得当$n &gt; N_0$时恒有$\dfrac{x_{n+1}}{x_n } &lt; q$成立，于是对于$n &gt; N_0 $就有下列估计而完成证明：</p>
+<p>$$x_n =x_{N_0 +1} \cdot \dfrac{x_{N_0 +2}}{x_{N_0 +1}} \cdot \cdots \cdot \dfrac{x_n}{x_{n-1}} \leq x_{N_0 +1} q^{n-N_0 -1} \to 0\quad (n\to \infty ).$$</p>
+<p>证$3$：（利用单调有界数列的收敛定理）如证$2$开始所示，数列的后项与前项之比的极限小于$1$，这表明正数列$\lbrace x_n \rbrace $当$n$充分大时严格单调递减，因此存在极限，记为$A \geq 0$.</p>
+<p>若$A &gt; 0$，则在$\dfrac{x_{n+1}}{x_n} =\left( \dfrac{n+1}{n} \right) ^k \dfrac1a $中令$n\to \infty $就得到$\dfrac{A}{A} =1\cdot \dfrac1a $，这与$a &gt; 1$矛盾.因此只能是$A= 0$.</p>
+<p>$61$.$\displaystyle \lim_{n\to \infty } \dfrac{a^n}{n!} =0$.</p>
+<p>证：令$k$代表任何一个大于$2\vert a\vert $的正整数，则当$n &gt; k$时，有</p>
+<p>$$0 &lt; \left| \dfrac{a^n}{n!} \right| =\left( \dfrac{\vert a\vert }{1} \cdot \dfrac{\vert a\vert }{2} \cdot \cdots \cdot \dfrac{\vert a\vert }{k} \right) \left( \dfrac{\vert a\vert }{k+1} \cdot \dfrac{\vert a\vert }{k+2} \cdot \cdots \cdot \dfrac{\vert a\vert }{n} \right) &lt; \vert a\vert ^k \left( \dfrac12 \right) ^{n-k} =\dfrac{(2\vert a\vert )^k}{2^n} .$$</p>
+<p>由于$\displaystyle \lim_{n\to \infty } \dfrac{(2\vert a\vert )^k}{2^n} =0$，所以,$\displaystyle \lim_{n\to \infty } \dfrac{a^n}{n!} =0$.</p>
+<p>$62$.$\displaystyle \lim_{n\to \infty } nq^n =0\;(\vert q\vert &lt; 1)$.</p>
+<p>证：$(1)$当$0 &lt; q &lt; 1$时，可令$q=\dfrac1a $，其中$a &gt; 1$，所以当$n\to \infty $时，$nq^n =\dfrac{n}{a^n} \to 0$；</p>
+<p>$(2)$当$-1 &lt; q &lt; 0$时，可令$q=-q’$，其中$0 &lt; q’ &lt; 1$，所以当$n\to \infty $时，$nq^n =(-1)^n n {q’}^n \to 0$；</p>
+<p>$(3)$当$q=0$时，$nq^n =0$.</p>
+<p>总之，当$\vert q\vert &lt; 1$时，$\displaystyle \lim_{n\to \infty } nq^n =0$.</p>
+<p>$63$.$\displaystyle \lim_{n\to \infty } \sqrt[n]{a} =1\;(a &gt; 0)$.</p>
+<p>证：$(1)$当$a =1$时，等式显然成立；</p>
+<p>$(2)$当$a &gt; 1$时，因为$(1+\varepsilon )^n &gt; 1+n\varepsilon (n &gt; 1 ,\varepsilon &gt; 0)$，则当$n$充分大时，就可使$1+n\varepsilon &gt; a$，即$(1+\varepsilon )^n &gt; a$.事实上，只要取$N=\left[ \dfrac{a-1}{\varepsilon } \right] $，当$n &gt; N$时，就可保证这点.所以，$1 &lt; \sqrt[n]{a} &lt; 1+\varepsilon $，于是，当$n &gt; N$时，$\vert \sqrt[n]{a} -1 \vert &lt; \varepsilon $，此即$\displaystyle \lim_{n\to \infty } \sqrt[n]{a} =1$；</p>
+<p>$(3)$当$0 &lt; a &lt; 1$时，则令$a=\dfrac{1}{a’} $，其中$a’ &gt; 1$.于是，当$n\to \infty $时，$\sqrt[n]{a} =\dfrac{1}{\sqrt[n]{a’}} \to 1$.</p>
+<p>总之，当$a &gt; 0$时，$\displaystyle \lim_{n\to \infty } \sqrt[n]{a} =1$.</p>
+<p>$64$.$\displaystyle \lim_{n\to \infty } \dfrac{\log_a n}{n} =0\;(a &gt; 1)$.</p>
+<p>证：先证$\displaystyle \lim_{n\to \infty } \sqrt[n]{n} =1$.事实上，令$a_n =\sqrt[n]{n} $，则$a_n &gt; 1$.令$a_n =1+\lambda_n \;(\lambda_n &gt; 0)$，则</p>
+<p>$$a_n^n =(1+\lambda_n )^n =1+n\lambda_n +\dfrac{n(n-1)}{2} \lambda_n^2 +\cdots +\lambda_n^n &gt; \dfrac{n(n-1)}{2} \lambda_n^2 &gt; \dfrac{n^2}{4} \lambda_n^2 =\dfrac{n^2 (a_n -1)^2}{4}, \quad (n &gt; 2)$$</p>
+<p>即</p>
+<p>$$n &gt; \dfrac{n^2}{4} (\sqrt[n]{n} -1)^2 ,$$</p>
+<p>由此可知$0 &lt; \sqrt[n]{n} -1 &lt; \dfrac{2}{\sqrt{n}} $，故$\displaystyle \sqrt[n]{n} =1$成立.</p>
+<p>现任给$\varepsilon &gt; 0$.因$a^{\varepsilon } &gt; 1(a &gt; 1)$，故存在$N=N(\varepsilon ) $，使当$n &gt; N$时，恒有$\sqrt[n]{n} &lt; a^{\varepsilon } $，由此可知$(n &gt; N)$，</p>
+<p>$$0 &lt; \dfrac{\log_a n}{n} &lt; \varepsilon .$$</p>
+<p>故$\displaystyle \lim_{n\to \infty } \dfrac{\log_a n}{n} =0$.</p>
+<p>$65$.$\displaystyle \lim_{n\to \infty } \sqrt[n]{n} =1$.</p>
+<p>证$1$（用二项式定理）当$n \geqslant 2$时，由</p>
+<p>$$n=1+(n-1)=1+\dfrac{n(n-1)}{2} \cdot \dfrac{2}{n} =1+\mathrm{C}_n^2 \left( \sqrt{\dfrac{2}{n}} \right)^2 &lt; \left( 1+\sqrt{\dfrac{2}{n} } \right) ^n $$</p>
+<p>就得到$1 &lt; \sqrt[n]{n} &lt; 1+\sqrt{\dfrac{2}{n}} $，然后用夹逼定理即可.</p>
+<p>证$2$（用平均不等式）当$n \geqslant 2$时将$\sqrt[n]{n}$看成为两个$\sqrt{n} $与$n-2$个$1$的几何平均值，则就有</p>
+<p>$$1\leqslant \sqrt[n]{n} =(\sqrt{n} \sqrt{n} \cdot \underbrace{1\cdots 1}_{n-2个1} )^{\frac{1}{n} } &lt; \dfrac{2\sqrt{n} +n-2}{n} &lt; 1+\dfrac{2}{\sqrt{n}} ,$$</p>
+<p>然后用夹逼定理即可.</p>
+<p>证$3$（利用单调性分析）考虑该数列的后项与前项之比：</p>
+<p>$$\dfrac{\sqrt[n+1\;]{n+1}}{\sqrt[n]{n}} =\sqrt[n(n+1)\quad ]{\dfrac{(n+1)^n}{n^{n+1}} } =\sqrt[n(n+1)\quad ]{\left( 1+\dfrac{1}{n} \right) ^n \cdot \dfrac{1}{n}} ,$$</p>
+<p>利用习题$69-70$可以知道$\left( 1+\dfrac{1}{n} \right) ^n &lt; 3$，因此从$n=3$起数列$\lbrace \sqrt[n]{n} \rbrace $严格单调递减，从而有极限.（从$\sqrt[1]{1} =1 &lt; \sqrt[2]{2} =\sqrt[6]{8} &lt; \sqrt[6]{9} =\sqrt[3]{3}$可见数列的前三项是单调递增的.）</p>
+<p>记$A=\displaystyle \lim_{n\to \infty } \sqrt[n]{n} $，则从$\sqrt[n]{n} \geqslant 1$有$A \geqslant 1$.若$A &gt; 1$，则从$n &gt; 3$起有$\sqrt[n]{n} &gt; A &gt; 1$，即$n &gt; A^n $，这与习题$60$的结论矛盾.因此只能是$A=1$.</p>
+<blockquote>
+<p>从本小节的习题可以知道有以下重要结论，它们都是分析中的基本知识（其中$a &gt; 1,k &gt; 0$）：</p>
+<p>$$\log_a n \ll n^k \ll a^n \ll n!.$$</p>
+</blockquote>
+<p>$66$.$\displaystyle \lim_{n\to \infty } \dfrac{1}{\sqrt[n]{n!} }=0$.</p>
+<p>证$1$（思路）按照极限定义只要对给定的$\varepsilon $求$N$，使得当$n &gt; N$时成立不等式</p>
+<p>$$\left\vert \dfrac{1}{\sqrt[n]{n!}} -0\right\vert &lt; \varepsilon .$$</p>
+<p>将它改写为等价的不等式$\dfrac{1}{n!} &lt; \varepsilon^n $之后，如果能够联想到习题$61$，同时将上述不等式再改写为</p>
+<p>$$\dfrac{(1/\varepsilon )^n}{n!} &lt; 1,$$</p>
+<p>则满足上述要求的$N$的存在性已经没有问题了.</p>
+<p>证$2$（思路）模仿习题$65$的证$3$，容易证明本题的正数列严格单调递减，因此它的极限（记为）$A\geqslant 0$.只要证明$A &gt; 0$不可能就行了：因为这时对所有正整数$n$有不等式</p>
+<p>$$\dfrac{1}{\sqrt[n]{n!}} &gt; A &gt; 0\Leftrightarrow \dfrac{(1/A)^n}{n!} &gt; 1,$$</p>
+<p>因此只要用习题$61$（即证明$\displaystyle \lim_{n\to \infty } \dfrac{a^n}{n!} =0$）就导出矛盾.</p>
+<p>证$3$（思路）这需要本节后面的知识.取（自然）对数后可见本题等价于证明</p>
+<p>$$\lim_{n\to \infty } \dfrac{\ln 1+\ln 2+\cdots +\ln n}{n} =+\infty ,$$</p>
+<p>于是用习题$139$（即柯西命题）就足够了.</p>
+<p>$67$.当$n$充分大时，下列各组表达式中哪个更大？</p>
+<p>$$(a)\;100n+200,0.01n^2;\quad (b)\;2^n ,n^{1000} ;\quad (c)\;1000^n ,n!.$$</p>
+<p>解：$(a)\;$因为$\displaystyle \lim_{n\to \infty } \dfrac{100n+200}{0.01n^2} =0$，所以，当$n$充分大时，$0.01n^2$较$100n+200$大些.</p>
+<p>$(b)\;$因为$\displaystyle \lim_{n\to \infty } \dfrac{n^{1000}}{2^n} =0$，所以，当$n$充分大时，$2^n$较$n^{1000}$大些.</p>
+<p>$(c)\;$因为$\displaystyle \lim_{n\to \infty } \dfrac{1000^n}{n!} =0$，所以，当$n$充分大时，$n!$较$1000^n$大些.</p>
+<p>$68$.证明：</p>
+<p>$$\lim_{n\to \infty } \left( \dfrac12 \cdot \dfrac34 \cdots \dfrac{2n-1}{2n} \right) =0.$$</p>
+<p>提示：参阅习题$9(b)$.</p>
+<p>证：因为$0 &lt; \dfrac12 \cdot \dfrac34 \cdots \dfrac{2n-1}{2n} &lt; \dfrac{1}{\sqrt{2n+1}} $，又因为$\displaystyle \lim_{n\to \infty } \dfrac{1}{\sqrt{2n+1} }=0$，所以，$\displaystyle \lim_{n\to \infty } \left( \dfrac12 \cdot \dfrac34 \cdots \dfrac{2n-1}{2n} \right) =0$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/20/2015/04/jimiduoweiqishuxuefenxixitiji1121/" data-title="《数学分析习题集》第一章 分析引论 2. 数列理论 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/20/2015/04/daishuxueyinlun131/" title="《代数学引论(第一卷)基础代数》 第3章 行列式 1 行列式：构造和基本性质">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第3章 行列式 1 行列式：构造和基本性质</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/20/2015/04/weijifenxuejiaocheng122/"  title="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/20/2015/04/jimiduoweiqishuxuefenxixitiji1121/" data-title="《数学分析习题集》第一章 分析引论 2. 数列理论" data-url="http://yoursite.com/2015/10/20/2015/04/jimiduoweiqishuxuefenxixitiji1121/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#极限的定义与计算"><span class="toc-number">1.</span> <span class="toc-text">极限的定义与计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#几个极限证明题"><span class="toc-number">2.</span> <span class="toc-text">几个极限证明题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

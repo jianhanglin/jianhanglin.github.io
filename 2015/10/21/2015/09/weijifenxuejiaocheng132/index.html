@@ -1,0 +1,921 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第三章 导数及微分 2 微分 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="微分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第三章 导数及微分 2 微分">
+<meta property="og:url" content="http://yoursite.com/2015/10/21/2015/09/weijifenxuejiaocheng132/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="微分">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu48.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu49.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu50.png">
+<meta property="og:updated_time" content="2015-10-21T11:32:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第三章 导数及微分 2 微分">
+<meta name="twitter:description" content="微分">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/21/2015/09/weijifenxuejiaocheng132/" title="《微积分学教程(第一卷)》 第三章 导数及微分 2 微分" itemprop="url">《微积分学教程(第一卷)》 第三章 导数及微分 2 微分</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-21T11:31:44.000Z" itemprop="datePublished"> 發表於 2015-10-21</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#微分的定义"><span class="toc-number">1.</span> <span class="toc-text">微分的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可微性与导数存在之间的关系"><span class="toc-number">2.</span> <span class="toc-text">可微性与导数存在之间的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微分法的基本公式及法则"><span class="toc-number">3.</span> <span class="toc-text">微分法的基本公式及法则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微分的形式不变性"><span class="toc-number">4.</span> <span class="toc-text">微分的形式不变性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微分是近似公式的来源"><span class="toc-number">5.</span> <span class="toc-text">微分是近似公式的来源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用微分来估计误差"><span class="toc-number">6.</span> <span class="toc-text">应用微分来估计误差</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="微分的定义">微分的定义</h2><p>设函数$y=f(x)$是在某一区间$\mathcal{X} $内定义，并且在所考察的点$x_0 $处是连续的.于是对应于变元的增量$\Delta x$，函数的增量</p>
+<p>$$\Delta y=\Delta f(x_0 )=f(x_0 +\Delta x)-f(x_0 )$$</p>
+<p>就随着$\Delta x$一同成为无穷小.现在提出一个非常重要的问题：对于$\Delta y$是否存在着一个关于$\Delta x$为线性的无穷小$A\cdot \Delta x$（$A=$常数），使它与$\Delta y$的差是较$\Delta x$更高阶的无穷小：</p>
+<p>$$\Delta y=A\cdot \Delta x+o(\Delta x).\label{1} \tag{1} $$</p>
+<p>等式$\eqref{1} $在$A\neq 0$时成立就表明，无穷小$A\cdot \Delta x$等价于无穷小$\Delta y$，也就是说，若取$\Delta x$作为基本无穷小时<a href="http://jianhanglin.github.io/blog/2015/05/weijifenxuejiaocheng123/" target="_blank" rel="external">[等价无穷小，主部的分出]</a>，$A\cdot \Delta x$就可当作$\Delta y$的<strong>主部</strong>.</p>
+<p>若等式$\eqref{1} $成立，则函数$y=f(x)$称为（在所给数值$x=x_0 $时）可微的，表达式$A\cdot \Delta x$就称为函数的微分，用记号$\mathrm{d} y$或$\mathrm{d} f(x_0 )$表示.</p>
+<p>（在后一种记号中，括号内的$x_0 $表示$x$的初值.）</p>
+<blockquote>
+<p>此片$\mathrm{d} f$是一整个的记号，表示函数$f(x)$的微分.</p>
+</blockquote>
+<p>再重复一遍，函数的微分有两个特性：$(а)$它是变元的增量$\Delta x$的线性（齐次）函数，并且$(б)$它与函数的增量相差一个数量，这数量在$\Delta x\to 0$时是较$\Delta x $更高阶的无穷小.</p>
+<blockquote>
+<p>用斜体字（中译本是用楷体字）印出的$(а)$与$(б)$两点一起构成了函数$f$在固定点$x_0 $微分的定义的拆开形式.我们要强调的是函数$\mathrm{d} y=\mathrm{d} f(x_0 )$的定义域（如同所有的线性函数一样）是整个实直线$\mathcal{R} $.这意味着每一个实数$\Delta x$都对应着微分$\mathrm{d} y$的确定的值；这个值通过$\Delta x$用公式$\mathrm{d} y=A\cdot \Delta x$表示，其中数$A$是线性函数$\mathrm{d} y$的斜率.</p>
+</blockquote>
+<p>考察几个例子.</p>
+<p>$1)\;$半径为$r$的圆的面积$Q$由公式$Q=\pi r^2 $所给定.若半径$r$增大$\Delta r$，则数量$Q$的对应增量$\Delta Q$就是在半径为$r$与$r+\Delta r$的两个同心圆之间的圆环的面积.由表达式</p>
+<p>$$\Delta Q=\pi (r+\Delta r)^2 -\pi r^2 =2\pi r \cdot \Delta r+\pi (\Delta r)^2$$</p>
+<p>立刻看出，在$\Delta r\to 0$时$\Delta Q$的主部是$2\pi r\cdot \Delta r$；而这就是微分$\mathrm{d} Q$.在几何意义上它表示底等于圆周的长$2\pi r$而高为$\Delta r$的矩形的面积（好像是把圆环“拉直”所得出的矩形）.</p>
+<p>$2)\;$类似地，半径为$r$的球的体积$V=\dfrac43 \pi r^3 $在半径增大$\Delta r$时获得增量</p>
+<p>$$\Delta V=\dfrac43 \pi (r+\Delta r)^3-\dfrac43 \pi r^3 =4\pi r^2 \cdot \Delta r+4\pi r\cdot (\Delta r)^2 +\dfrac43 \pi (\Delta r)^3 .$$</p>
+<p>在$\Delta r\to 0$时它的主部显然是$\mathrm{d} V=4\pi r^2 \cdot \Delta r$.这是底等于球的表面积$4\pi r^2 $而高为$\Delta r$的一块薄片的体积；它好像是由半径为$r$与$r+\Delta r$的两个同心球面之间的部分所展开的一般.</p>
+<p>$3)\;$最后，考察质点依定律$s=\dfrac{gt^2}{2} $的自由降落.在由时刻$t$至$t+\Delta t$的一段时间$\Delta t$内，动点经过路程</p>
+<p>$$\Delta s=\dfrac{g(t+\Delta t)^2}{2} -\dfrac{gt^2}{2} =gt\cdot \Delta t+\dfrac{g}{2} (\Delta t)^2 .$$</p>
+<p>当$\Delta t\to 0$时它的主部是$\mathrm{d} s=gt\cdot \Delta t$.回想在时刻$t$的速度是$v=gt$<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[求动点速度的问题]</a>，就看出，路程的微分（近似地代替着路程的增量）好像是质点在全部时间$\Delta t$内就是用这速度$v$移动着所经过的路程.</p>
+<h2 id="可微性与导数存在之间的关系">可微性与导数存在之间的关系</h2><p>现在很易建立下列命题的正确性：</p>
+<p>要使函数$y=f(x)$在点$x_0 $处是可微的，其充要条件是它在这点处有有限的导数$y’=f’(x_0 )$存在.当这条件获得满足时，等式$\eqref{1} $就在常数$A$刚好等于这导数时成立：</p>
+<p>$$\Delta y=y_x’ \Delta x+o(\Delta x).\label{111} \tag{1a} $$</p>
+<p><strong>必要性</strong>$\quad $若$\eqref{1} $成立，则由此</p>
+<p>$$\dfrac{\Delta y}{\Delta x} =A+\dfrac{o(\Delta x)}{\Delta x} ,$$</p>
+<p>于是使$\Delta x$趋于$0$，实际上就得出</p>
+<p>$$A=\lim \dfrac{\Delta y}{\Delta x} =y_x’ .$$</p>
+<p><strong>充分性</strong>$\quad $立刻可从<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[函数的增量的公式，1°]</a>[参阅那里的$(3a)$]内推得.</p>
+<p>因此，函数$y=f(x)$的微分永远等于</p>
+<p>$$\mathrm{d} y=y_x’ \cdot \Delta x.\label{2} \tag{2}$$</p>
+<blockquote>
+<p>很易验证，在前段内所考察的一切情形就都是这样组成微分的.例如，在情形$1)$，就有</p>
+<p>$$Q=\pi r^2,Q_r’ =2\pi r,\mathrm{d} Q=2\pi r\cdot \Delta r.$$</p>
+</blockquote>
+<p>在这里还需着重指出，表达式内的$\Delta x$被我们理解为自变量的任意增量，就是一个任意数（把它当作并不依赖于$x$常常更为方便）.在这时完全不必假定$\Delta x$是无穷小，但假如$\Delta x\to 0$，则微分$\mathrm{d} y$也是无穷小，也（在$y_x’ \neq 0$时）就是函数的无穷小增量$\Delta y$的主部.这就使近似等式</p>
+<p>$$\Delta y\doteq \mathrm{d} y\label{3} \tag{3}$$</p>
+<p>获得根据，$\Delta x$愈小则近似的准确度愈大.我们将在[微分是近似公式的来源]内再回头考察近似等式$\eqref{3} $.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu48.png" alt=""></center>
+
+<p>为着要用几何图形说明函数$y=f(x)$的微分$\mathrm{d} y$及它与增量$\Delta y$的关系，试考察这函数的图像（图$44$）.变元的数值$x$及函数的数值$y$确定着曲线上的一点$M$.在曲线上的这一点处引切线$MT$；正如我们已看到过的<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[导数的定义]</a>，它的斜率$\tan{\alpha } $等于导数$y_x’ $.若给横标$x$以增量$\Delta x$，则曲线的纵标$y$就得增量$\Delta y=NM_1 $.同时切线的纵标就得增量$NK$.把$NK$看作直角三角形$MNK$的一直角边而计算其长度，就得出</p>
+<p>$$NK=MN\cdot \tan{\alpha } =y_x’ \cdot \Delta x=\mathrm{d} y.$$</p>
+<p>因此，当$\Delta y$是曲线的纵标的增量时，$\mathrm{d} y$就是切线的纵标的对应增量.</p>
+<p>最后再讨论到自变量$x$本身：称为它的微分就是增量$\Delta x$，即约定</p>
+<p>$$\mathrm{d} x=\Delta x.\label{4} \tag{4} $$</p>
+<blockquote>
+<p>公式$\eqref{4} $意味着$\mathrm{d} x$是自变量$\Delta x$的函数，更确切地说是$\Delta x$的线性函数，其斜率为$1$.</p>
+</blockquote>
+<p>假如把自变量$x$的微分认为就是函数$y=x$的微分（这同样也是一种约定），则公式$\eqref{4} $也可以证明，根据$\eqref{2} $：$\mathrm{d} x=x_x’ \cdot \Delta x=1\cdot \Delta x =\Delta x.$</p>
+<p>利用约定式$\eqref{4} $，现在就可以把给出微分定义的公式$\eqref{2} $改写成为</p>
+<p>$$\mathrm{d} y=y_x’ \cdot \mathrm{d} x,\label{5} \tag{5} $$</p>
+<p>我们通常都把它写成这种形式.</p>
+<blockquote>
+<p>这里请读者注意$\mathrm{d} y$的表示法的某些特点.这个（传统的与方便的）表示有某些缺陷：它没有指出函数的微分是在哪一点取的.与此相应，$\mathrm{d} y$的值实际上依赖于两个参数：在其处考虑微分的点$x$，以及增量$\Delta x$，即$\mathrm{d} y=\mathrm{d} y(x,\Delta x)$.当这两个参数之一固定时，$\mathrm{d} y$变成另一参数的函数，到目前为止，仅仅利用了符号$\mathrm{d} y$的一个解释——作为$\Delta x $的函数，然而同一符号的第二个解释——当$\Delta x$固定时作为$x$的函数——同样重要（例如，当定义高阶微分时，它有重要的作用）.</p>
+</blockquote>
+<p>由此得</p>
+<p>$$y_x’=\dfrac{\mathrm{d} y}{\mathrm{d} x} ,\label{6} \tag{6} $$</p>
+<p>于是，我们以前把它看作整个记号的那个表达式，现在就可以当作分数来处理了.读者不要因为在等式左边放着完全确定的数，而同时在右边却有着两个不确定数$\mathrm{d} y$及$\mathrm{d} x$（因为$\mathrm{d} x=\Delta x$是任意的）的比式这一情况感到困惑：要知道$\mathrm{d} x$及$\mathrm{d} y$本是比例地变动着的，而导数$y_x’ $刚好就是比例系数.</p>
+<p>微分这一概念及“微分”这个术语源于莱布尼茨，虽然他并不曾给出这概念的准确的定义.莱布尼茨在考察微分时，同时亦曾考察“微商”，即两个微分的商，那就相当于我们的导数；然而对于莱布尼茨，微分却是原始的概念.从柯西用自己的极限理论创立一切分析的基础，并且首先明确地定义导数是一极限以后，分析的研究通常就从导数出发，而微分的概念已经是从导数的基础上建立起来的了.</p>
+<blockquote>
+<p>微分由拉丁文$\mathrm{differentia} $得来，表示“差”.</p>
+</blockquote>
+<h2 id="微分法的基本公式及法则">微分法的基本公式及法则</h2><p>函数的微分的求法称为<strong>微分法</strong>.</p>
+<blockquote>
+<p>而且通常亦用这术语表示导数的求法，这在俄语上并无特殊的术语.在多数的外国语中，对于这两种运算的表示法存在着两种不同的术语；例如，法文中就分别为$\mathrm{derivation} $及$\mathrm{differentiation} $.</p>
+</blockquote>
+<p>因为微分$\mathrm{d} y$与导数$y_x’ $只相差一个因子$\mathrm{d} x$，故由初等函数的导数表<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[导数公式一览表]</a>很易做出它们的微分表：</p>
+<p>$$\begin{array}{lll}<br>1 . &amp; \quad y=c &amp; \quad \mathrm{d} y=0 \\<br>2 . &amp; \quad y=x^{\mu} &amp; \quad \mathrm{d} y=\mu x^{\mu -1} \cdot \mathrm{d} x\\<br> &amp; \quad y=\dfrac{1}{x} &amp; \quad \mathrm{d} y=-\dfrac{\mathrm{d} x}{x^2} \\<br> &amp; \quad y=\sqrt{x} &amp; \quad \mathrm{d} y=\dfrac{\mathrm{d} x}{2\sqrt{x} } \\<br>3 . &amp; \quad y=a^x &amp; \quad \mathrm{d} y=a^x \cdot \ln a \cdot \mathrm{d} x\\<br> &amp; \quad y=e^x &amp; \quad \mathrm{d} y=e^x \cdot \mathrm{d} x\\<br>4 . &amp; \quad y=\log_ax &amp; \quad \mathrm{d} y=\dfrac{\log_ae \cdot \mathrm{d} x}{x} \\<br> &amp; \quad y=\ln x &amp; \quad \mathrm{d} y=\dfrac{\mathrm{d} x}{x} \\<br>5 . &amp; \quad y=\sin{x} &amp; \quad \mathrm{d} y=\cos{x} \cdot \mathrm{d} x\\<br>6 . &amp; \quad y=\cos{x} &amp; \quad \mathrm{d} y=-\sin{x} \cdot \mathrm{d} x\\<br>7 . &amp; \quad y=\tan{x} &amp; \quad \mathrm{d} y=\sec{} ^2 x \cdot \mathrm{d} x=\dfrac{\mathrm{d} x}{\cos{} ^2 x} \\<br>8 . &amp; \quad y=\cot{x} &amp; \quad \mathrm{d} y=-\csc{} ^2 x \cdot \mathrm{d} x=-\dfrac{\mathrm{d} x}{\sin{} ^2 x} \\<br>9 . &amp; \quad y=\arcsin{x} &amp; \quad \mathrm{d} y=\dfrac{\mathrm{d} x}{\sqrt{1-x^2} } \\<br>10 . &amp; \quad y=\arccos{x} &amp; \quad \mathrm{d} y=-\dfrac{\mathrm{d} x}{\sqrt{1-x^2} } \\<br>11 . &amp; \quad y=\arctan{x} &amp; \quad \mathrm{d} y=\dfrac{\mathrm{d} x}{1+x^2 } \\<br>12 . &amp; \quad y=\text{arccot} \;x &amp; \quad \mathrm{d} y=-\dfrac{\mathrm{d} x}{1+x^2 } \\<br>\end{array}$$</p>
+<p>微分法则就是：</p>
+<blockquote>
+<p>若说及的正是微分的求法.</p>
+</blockquote>
+<p>Ⅰ.$\mathrm{d} (cu)=c\cdot \mathrm{d} u,$</p>
+<p>Ⅱ.$\mathrm{d} (u\pm v)=\mathrm{d} u\pm \mathrm{d} v,$</p>
+<p>Ⅲ.$\mathrm{d} (uv)=u\cdot \mathrm{d} v+v\cdot \mathrm{d} u,$</p>
+<p>Ⅳ.$\mathrm{d} (\dfrac{u}{v} )=\dfrac{v\cdot \mathrm{d} u-u\cdot \mathrm{d} v}{v^2} .$</p>
+<p>它们都能从对应的求导数法则容易地推出，例如，我们证明后面的两式：</p>
+<p>$$\begin{align}<br>\mathrm{d} (u\cdot v) &amp; =(u\cdot v)^{\prime } \cdot \mathrm{d} x=(u’\cdot v+u\cdot v’)\mathrm{d} x\\<br> &amp; =v\cdot (u’\cdot \mathrm{d} x)+u\cdot (v’\cdot \mathrm{d} x)=v\cdot \mathrm{d} u+u\cdot \mathrm{d} v. \\<br>\end{align}$$</p>
+<p>$$\begin{align}<br>\mathrm{d} \left( \dfrac{u}{v} \right) &amp; =\left( \dfrac{u}{v} \right)^{\prime } \cdot \mathrm{d} x=\dfrac{u’v-uv’}{v^2} \cdot \mathrm{d} x\\<br> &amp; =\dfrac{v\cdot (u’\cdot \mathrm{d} x) -u\cdot (v’\cdot \mathrm{d} x) }{v^2} =\dfrac{v\cdot \mathrm{d} u-u\cdot \mathrm{d} v}{v^2}. \\<br>\end{align}$$</p>
+<h2 id="微分的形式不变性">微分的形式不变性</h2><p>复合函数的微分法则，使我们得出微分的一个显著而重要的性质.</p>
+<p>假设$y=f(x)$及$x=\varphi (t)$是这样的两个函数，从它们能组成复合函数：$y=f(\varphi (t))$.若导数$y_x’ $及$x_t’$存在，则依法则Ⅴ<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[复合函数的导数]</a>，亦存在着导数</p>
+<p>$$y_t’ =y_x’ \cdot x_t’ .\label{7} \tag{7} $$</p>
+<p>若把$x$当作自变量，则微分$\mathrm{d} y$可由公式$\eqref{5} $表示.现在改用$t$作自变量；这样假定之后，就有微分的另一表达式</p>
+<p>$$\mathrm{d} y=y_t’ \cdot \mathrm{d} t.$$</p>
+<p>然而，若用表达式$\eqref{7} $代换导数$y_t’ $，并注意到$x_t’ \cdot \mathrm{d} t$是$x$当作$t$的函数时的微分，最后就得出：</p>
+<p>$$\mathrm{d} y=y_x’ \cdot x_t’ \mathrm{d} t=y_x’ \cdot \mathrm{d} x,$$</p>
+<p>即又回到微分的原来形式！</p>
+<p>这样，我们看出，微分的形式即使在原来的自变量换成新的自变量以后仍然可以保持着.我们永远可以把$y$的微分写成$\eqref{5} $的形式，不管$x$是否自变量；其差别仅在于，若选取$t$作为自变量，则$\mathrm{d} x$并不表示任意增量$\Delta x$，而是表示$x$作为$t$的函数时的微分.这性质就称为<strong>微分的形式不变性</strong>.</p>
+<p>因为由公式$\eqref{5} $直接得出用微分$\mathrm{d} x$及$\mathrm{d} y$表示导数$y_x’ $的公式$\eqref{6} $，所以不论那些微分是依着怎样的自变量而求出的（当然，在第一种情形都是依着同一的自变量），后一公式亦仍有效.</p>
+<p>例如，设$y=\sqrt{1-x^2} (-1 &lt; x &lt; 1)$，则</p>
+<p>$$y_x’ =-\dfrac{x}{\sqrt{1-x^2} } .$$</p>
+<p>今假定$x=\sin{t} \left( -\dfrac{\pi }{2} &lt; t &lt; \dfrac{\pi }{2} \right) $.则$y=\sqrt{1-\sin{} ^2 t} =\cos{t} $而我们就有：$\mathrm{d} x=\cos{t} \cdot \mathrm{d} t$，$\mathrm{d} y=-\sin{t} \cdot \mathrm{d} t$.很易检验，公式</p>
+<p>$$y_x’ =\dfrac{-\sin{t} \cdot \mathrm{d} t}{\cos{t} \cdot \mathrm{d} t} =-\dfrac{\sin{t} }{\cos{t} } $$</p>
+<p>不过给出上面已经求出的导数的另一个式子罢了.</p>
+<p>当$y$对于$x$的关系不是直接给定，而是由$x$及$y$两者对于第三辅助变量（称为参变量）的关系所给定时：</p>
+<p>$$x=\varphi (t),\quad y=\psi (t).\label{8} \tag{8} $$</p>
+<p>应用上述论点以求$y_x’ $最为便利，今假定这两函数都有导数，而且第一个又存在反函数$t=\theta (x)$，它也有导数[<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng125/" target="_blank" rel="external">反函数的存在</a>，<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">反函数的导数</a>]，很易看出，那时$y$亦成为$x$的函数：</p>
+<p>$$y=\psi (\theta (x))=f(x),\label{9} \tag{9} $$</p>
+<p>它也有导数存在.这导数的计算可以由上述的法则完成：</p>
+<p>$$y_x’ =\dfrac{\mathrm{d} y}{\mathrm{d} x} =\dfrac{y_t’ \cdot \mathrm{d} t}{x_t’ \cdot \mathrm{d} t} =\dfrac{y_t’ }{x_t’ } =\dfrac{\psi’(t)}{\varphi’(t)} ,\label{10} \tag{10} $$</p>
+<p>而不必重新建立$y$对于$x$的直接关系.</p>
+<p>例如，若$x=\sin{t} ,y=\cos{t} \left( -\dfrac{\pi }{2} &lt; t &lt; \dfrac{\pi }{2} \right) $，则导数$y_x’ $可以依前法确定，完全不必应用关系式$y=\sqrt{1-x^2} $.</p>
+<p>若把$x$及$y$看作平面上点的直角坐标，则对于参变量$t$的每一数值，方程$\eqref{8} $就对应地给放上一点，这点随着$t$的变动在平面上画出一曲线.方程$\eqref{8} $就称为这曲线的<strong>参变量方程</strong>.</p>
+<p>当曲线由参变量方程给定时，用公式$\eqref{10} $就可以直接依方程组$\eqref{8} $确定切线的斜率，而不必把$\eqref{8} $先转换成方程$\eqref{9} $；就是</p>
+<p>$$\tan{\alpha } =\dfrac{y_t’ }{x_t’ } . \label{11} \tag{11} $$</p>
+<p><strong>附注</strong>$\quad $依任意变量而取的微分可以表示导数，这一可能性，在特殊情形，就引出下面的事实：就是公式</p>
+<p>$$\dfrac{\mathrm{d} y}{\mathrm{d} x} =\dfrac{1}{\dfrac{\mathrm{d} x}{\mathrm{d} y} } ,\dfrac{\mathrm{d} y}{\mathrm{d} x} =\dfrac{\mathrm{d} y}{\mathrm{d} u} \cdot \dfrac{\mathrm{d} u}{\mathrm{d} x} ,$$</p>
+<p>原来依次表示在莱布尼茨记法下的反函数及复合函数的微分法则，而现在却已成为简单的代数恒等式了（由于在此处一切微分都可依同一变量取之）.可是不要以为这就给反函数及复合函数微分法公式的新的推导法.首先，在此处并没有证明等式左边的导数的存在，而且主要的是：我们基本上已应用了微分形式的不变性，而它本身却是法则Ⅴ的推论.</p>
+<h2 id="微分是近似公式的来源">微分是近似公式的来源</h2><p>我们已看到，在$\Delta x\to 0$时函数$y$的微分$\mathrm{d} y$（只要$y_x’ \neq 0$）是函数的无穷小增量$\Delta y$的主部.这样$\Delta y\sim \mathrm{d} y$，于是</p>
+<p>$$\Delta y\doteq \mathrm{d} y,\tag{3} $$</p>
+<p>或更详细些</p>
+<p>$$\Delta f(x_0 )=f(x_0 +\Delta x)-f(x_0 )\doteq f’(x_0 )\cdot \Delta x.\label{31} \tag{3a} $$</p>
+<p>其不准确度是较$\Delta x$更高阶的无穷小.就是说<a href="http://jianhanglin.github.io/blog/2015/05/weijifenxuejiaocheng123/" target="_blank" rel="external">[等价无穷小]</a>，这等式的<strong>相对误差</strong>可以小到任意程度，只要$\Delta x$充分小.</p>
+<p>考察一个简单的例子：设$y=x^3$.则</p>
+<p>$$\Delta y=(x_0 +\Delta x)^3-x_0^3 =3x_0^2 \cdot \Delta x+3x_0 \cdot \Delta x^2 +\Delta x^3 ,$$</p>
+<p>而成为$\Delta y$的线性部分的（像我们在前面曾用普遍形式所确定的那样）实际上就是微分$\mathrm{d} y=3x_0^2 \cdot \Delta x=y_x’ \cdot \Delta x$.具体地假定$x_0 =2.3$；若取$\Delta x=0.1$，那么就有$\Delta y=2.4^3 -2.3^3=1.657$及$\mathrm{d} y=3\cdot 2.3^2 \cdot 0.1=1.587$，于是由第一数换成第二数时的误差是$0.070$，而相对误差超过$4\%$.在$\Delta x=0.01$时得$\Delta y=0.159391$及$\mathrm{d} y=0.1587$，所得相对误差已小于$0.5\%$；在$\Delta x=0.001$时，相对误差小于$0.05\%$，余依此类推.</p>
+<p>类似的状况亦可从图$44$中微分的几何说明直接看出.在图像上很明显地可以看出，若我们把曲线的纵标的增量换成切线的纵标的增量，则在$\Delta x$愈小时这种替换的相对准确度就愈大.</p>
+<p>读者自能明了，把函数的增量$\Delta y$换成它的微分$\mathrm{d} y$时，其好处在于$\mathrm{d} y$对于$\Delta x$是线性关系，而$\Delta y$通常却是$\Delta x$的很繁复的函数.</p>
+<p>若假定$\Delta x=x-x_0 $，而$x_0 +\Delta x=x$，则等式$\eqref{31} $的形式就成为</p>
+<p>$$f(x)-f(x_0 )\doteq f’(x_0 )\cdot (x-x_0 )$$</p>
+<p>或</p>
+<p>$$f(x)\doteq f(x_0 )+f’(x_0 )\cdot (x-x_0 ).$$</p>
+<p>依这公式，在接近于$x_0 $的$x$的数值，函数$f(x)$可以用一线性函数近似地来代换.在几何上，这对应于将邻接于点$(x_0 ,f(x_0 ))$的曲线$y=f(x)$的小段改以曲线在这点的切线的小段来代换，这切线表示为</p>
+<p>$$y=f(x_0 )+f’(x_0 )\cdot (x-x_0 )$$</p>
+<blockquote>
+<p>实际上，经过点$(x_0 ,y_0 )$而有斜率$k$的直线方程是</p>
+<p>$$y=y_0 +k(x-x_0 );$$</p>
+<p>在切线的情形，应置$y_0 =f(x_0 ),k=f’(x_0 )$.</p>
+</blockquote>
+<p>（参阅图$44$）.为简单起见，取$x_0 =0$，并限于$x$的微小数值，就有近似公式：</p>
+<p>$$f(x)\doteq f(0)+f’(0)\cdot x.$$</p>
+<p>由此，用各种初等函数代换这里的$f(x)$,很易获得一系列的公式：</p>
+<p>$$(1+x)^{\mu } \doteq 1+\mu x,$$</p>
+<p>特别情形$\sqrt{1+x} \doteq 1+\dfrac12 x,$</p>
+<p>$$e^x \doteq 1+x,\ln (1+x) \doteq x,\sin{x} \doteq x,\tan{x} \doteq x,$$</p>
+<p>余类推（它们之中有很多是我们已经知道的）.</p>
+<p>再引入一些其他类型的近似公式的例子，它们也是根据等式$\eqref{3} $得来的.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu49.png" alt=""></center>
+
+<p>$1)\;$设有两端悬挂着的有重量的线（电线，锚索，皮带），用$2s$表示其长度，用$2l$表示跨度，用$f$表示垂度（图$45$），则在求$s$时经常应用着（近似的公式）</p>
+<p>$$s=l\left( 1+\dfrac23 \cdot \dfrac{f^2}{l^2} \right) .$$</p>
+<p>现在把数量$f$当作自变量，而把$s$当作$f$的函数.要求建立长度$s$的改变量$\Delta s$与垂度$f$的改变量$\Delta f$之间的关系.</p>
+<p>把$\Delta s$换成$\mathrm{d} s$，就得</p>
+<p>$$\Delta s\doteq \dfrac43 \dfrac{f}{l} \cdot \Delta f,$$</p>
+<p>由此，</p>
+<p>$$\Delta f\doteq \dfrac34 \dfrac{l}{f} \cdot \Delta s.$$</p>
+<p>例如，若能估计到电线由于温度或负荷所引起的长度的变动，就可以由此而预见到垂度的变动.</p>
+<p>$2)\;$已知图形电路（图$46$）作用于其轴上与中心$O$距离$x$的单位磁极的力是：</p>
+<p>$$\dfrac{k}{(a^2+x^2)^{\frac32 }} ,$$</p>
+<p>此处$k$是常系数，$a$是半径.试求此圆形电路作用于沿轴放置的长度为$\Delta x$的磁铁$NS$的力.这时算作在$N$极集中着正磁量$m$，而在$S$极集中着与它相等的负磁量$-m$.</p>
+<p>电流作用于磁铁的总力$F$可表示为：</p>
+<p>$$F=\dfrac{km}{(a^2+x^2)^{\frac32 }} -\dfrac{km}{[a^2+(x+\Delta x)^2]^{\frac32 }} =-km\cdot \Delta \left[ \dfrac{1}{(a^2+x^2)^{\frac32 }} \right] .$$</p>
+<p>用函数的微分代换它的增量（假定$\Delta x$很微小），就得</p>
+<p>$$F\doteq -km\mathrm{d} \left[ \dfrac{1}{(a^2+x^2)^{\frac32 }} \right] =3k\cdot m\Delta x\cdot \dfrac{x}{(a^2+x^2)^{\frac52 }} .$$</p>
+<h2 id="应用微分来估计误差">应用微分来估计误差</h2><p>应用微分概念于近似算法中的估计误差，是特别方便而且自然的.例如，设数量$x$可以直接地度量或计算，而依赖着它的数量$y$则依公式$y=f(x)$来决定.在度量数量$x$通常发生误差$\Delta x$，它就引起数量$y$的误差$\Delta y$.由于这些误差是微小数量，可以假定</p>
+<p>$$\Delta y=y_x’ \cdot \Delta x,$$</p>
+<p>即用微分代替增量.设$\delta x$是$x$的最大绝对误差；$\vert \Delta x\vert \leq \delta x$（在通常的条件下，此类度量时的误差限度是可以知道的）.那时显然可以采用</p>
+<p>$$\delta y=\vert y_x’ \vert \cdot \delta x.\label{12} \tag{12} $$</p>
+<p>作为$y$的最大绝对误差（误差的限度）.</p>
+<p>$1)\;$例如，设要确定球的体积，首先（用游标测径器，公差仪，螺旋测径器等）直接来量球的直径$D$，再依公式</p>
+<p>$$V=\dfrac{\pi }{6} D^3 $$</p>
+<p>计算体积$V$.</p>
+<p>因为$V_D’ =\dfrac{\pi }{2} D^2 $，所以在这情形，根据$\eqref{12} $，</p>
+<p>$$\delta V=\dfrac{\pi }{2} D^2 \cdot \delta D.$$</p>
+<p>用前式除这等式，就得</p>
+<p>$$\dfrac{\delta V}{V} =3\dfrac{\delta D}{D} ,$$</p>
+<p>因此由计算得来的体积的（最大的）相对误差比由量度得来的直径的（最大的）相对误差大了两倍.</p>
+<p>$2)\;$设得到$x$时有一误差，则由$x$而求它的以十为底的对数$y=\lg x$时，亦就造成$y$的误差.</p>
+<p>在此处$y_x’ =\dfrac{M}{x} (M\doteq 0.4343)$，于是依公式$\eqref{12} $，</p>
+<p>$$\delta y=0.4343\cdot \dfrac{\delta x}{x} .$$</p>
+<p>这样，$x$的对数$y$的（最大）绝对误差就单纯地依数$x$本身的（最大）相对误差而确定.反过来说亦正确.</p>
+<p>这结果有各种各样的应用.例如，借此可以获得关于常用的$25$厘米$=250$毫米对数尺的准确度的概念.在放置瞄准器或读数时可能发生错误，例如在这一方或另一方错误$0.1$毫米，则在对数上对应着误差</p>
+<p>$$\delta y=\dfrac{0.1}{250} =0.0004.$$</p>
+<p>由此，依我们的公式</p>
+<p>$$\dfrac{\delta x}{x} =\dfrac{0.0004}{0.4343} =0.00092\cdots \doteq 0.001.$$</p>
+<p>读数的相对准确度在算尺的任何部分是相同的！</p>
+<p>$3)\;$在依三角函数的对数表而求角$\varphi $时发生这样一个问题，用正弦表或正切表那一种更为有利，假定</p>
+<p>$$y_1 =\lg \sin{\varphi } $$</p>
+<p>及</p>
+<p>$$y_2 =\lg \tan{\varphi } ,$$</p>
+<p>并且假定最大误差$\delta y_1 $及$\delta y_2 $是相等的（就说是，等于数标的末位数字的一半）.若用${\delta }_1 \varphi $及${\delta }_2 \varphi $表示角$\varphi $的对应的最大误差，则同上面一样，就得</p>
+<p>$$\delta y_1 =\dfrac{M}{\sin{\varphi } } \cdot \cos{\varphi }  \cdot {\delta }_1 \varphi ,\delta y_2 =\dfrac{M}{\tan{\varphi } } \cdot \sec{} ^2 \varphi \cdot {\delta }_2 \varphi .$$</p>
+<p>于是</p>
+<p>$${\delta }_2 \varphi ={\delta }_1 \varphi \cdot \cos{} ^2 \varphi &lt; {\delta }_1 \varphi .$$</p>
+<p>由此可见，在对数值有同等的错误时，正切对数表所给出的角比正弦对数表所给出的角有较小的误差，因此用前者就是更有利的.</p>
+<blockquote>
+<p>在这种算法时，我们假定角是用弧度表示着的.但是显然，不论量角度时用哪一种单位，结果总是正确的.</p>
+</blockquote>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu50.png" alt=""></center>
+
+<p>$4)\;$作为最后一个例题，考察用惠司登电桥（图$47$）量未知电阻$y$的准确度的问题.在这时，把接触器$D$沿着刻度尺$AC$移动，直至电流计指出没有电流通过为止.确定电阻$y$的公式是</p>
+<p>$$y=\dfrac{Rx}{a-x} \label{13} \tag{13} $$</p>
+<p>此处$a=AC,x=AD,R$是支线$BC$上的已知电阻.</p>
+<p>依公式$\eqref{12} $，就得出：</p>
+<p>$$\delta y=\left( \dfrac{Rx}{a-x} \right)_x’ \cdot \delta x=\dfrac{aR}{(a-x)^2} \cdot \delta x;$$</p>
+<p>若在这等式两端各用等式$\eqref{13} $两端来除，就得$y$的（最大）相对误差的表达式：</p>
+<p>$$\dfrac{\delta y}{y} =\dfrac{a\cdot \delta x}{x(a-x)} .$$</p>
+<p>因为分母$x(a-x)$在$x=\dfrac{a}{2} $时达到自己的最大数值，</p>
+<blockquote>
+<p>由明显的不等式</p>
+<p>$$x^2-ax+\dfrac{a^2}{4} =\left( x-\dfrac{a}{2} \right) ^2 \geq 0$$</p>
+<p>直接可得</p>
+<p>$$x(a-x)\leq \dfrac{a^2}{4} .$$</p>
+<p>这就证明了我们的命题.</p>
+</blockquote>
+<p>而在度量长度时误差$\delta x$可以当作是并不依赖于$x$，所以正是在$x=\dfrac{a}{2} $时相对误差达到最小数值.因此，为着获得尽可能准确的结果，设置电阻$R$时（用电阻箱）总要想法使得当电流消失时接触器$D$的位置尽可能地更接近于尺$AC$的中点.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/21/2015/09/weijifenxuejiaocheng132/" data-title="《微积分学教程(第一卷)》 第三章 导数及微分 2 微分 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/21/2015/09/boliyajishudingli11/" title="《波利亚计数定理》一 几个问题 1.1 球棒组合玩具">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》一 几个问题 1.1 球棒组合玩具</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/21/2015/09/daishuxueyinlun142xt/"  title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第4章 群.环.域 2 群
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/21/2015/09/weijifenxuejiaocheng132/" data-title="《微积分学教程(第一卷)》 第三章 导数及微分 2 微分" data-url="http://yoursite.com/2015/10/21/2015/09/weijifenxuejiaocheng132/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#微分的定义"><span class="toc-number">1.</span> <span class="toc-text">微分的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可微性与导数存在之间的关系"><span class="toc-number">2.</span> <span class="toc-text">可微性与导数存在之间的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微分法的基本公式及法则"><span class="toc-number">3.</span> <span class="toc-text">微分法的基本公式及法则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微分的形式不变性"><span class="toc-number">4.</span> <span class="toc-text">微分的形式不变性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微分是近似公式的来源"><span class="toc-number">5.</span> <span class="toc-text">微分是近似公式的来源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用微分来估计误差"><span class="toc-number">6.</span> <span class="toc-text">应用微分来估计误差</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

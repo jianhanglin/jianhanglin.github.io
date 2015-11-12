@@ -1,0 +1,879 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="无穷小及无穷大的分阶">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶">
+<meta property="og:url" content="http://yoursite.com/2015/10/20/2015/05/weijifenxuejiaocheng123/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="无穷小及无穷大的分阶">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu30.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu31.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu32.png">
+<meta property="og:updated_time" content="2015-10-20T14:09:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶">
+<meta name="twitter:description" content="无穷小及无穷大的分阶">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/20/2015/05/weijifenxuejiaocheng123/" title="《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶" itemprop="url">《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-20T14:09:50.000Z" itemprop="datePublished"> 發表於 2015-10-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小的比较"><span class="toc-number">1.</span> <span class="toc-text">无穷小的比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小的尺度"><span class="toc-number">2.</span> <span class="toc-text">无穷小的尺度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等价无穷小"><span class="toc-number">3.</span> <span class="toc-text">等价无穷小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主部的分出"><span class="toc-number">4.</span> <span class="toc-text">主部的分出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用题"><span class="toc-number">5.</span> <span class="toc-text">应用题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷大的分阶"><span class="toc-number">6.</span> <span class="toc-text">无穷大的分阶</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="无穷小的比较">无穷小的比较</h2><p>假定在作某种研究时须同时考察一系列的无穷小量：</p>
+<p>$$\alpha ,\beta ,\gamma .$$</p>
+<p>一般地说来，它们是同一变量$x$（譬如说）的函数.而$x$是趋于有限极限或无穷极限$a$的变量.</p>
+<p>在很多场合，按照它们接近于零的方式而将这些都称为无穷小的量加以比较是很有趣的.二无穷小$\alpha $及$\beta $的比较以其比式的性态为基础.为此，引进下列两个定义：</p>
+<blockquote>
+<p>我们将假定用作除数的变量不等于零，至少当$x$的数值充分接近于$a$时是如此.</p>
+</blockquote>
+<p>Ⅰ.若比式$\dfrac{\beta }{\alpha }$（$\dfrac{\alpha }{\beta }$亦一样）有一异于零的有限极限，则无穷小$\alpha$与$\beta $称为是同阶的.</p>
+<p>Ⅱ.若比式$\dfrac{\beta }{\alpha }$趋于无穷小（相反地，比式$\dfrac{\alpha }{\beta }$趋向于$\infty $），则无穷小$\beta $称为是比$\alpha $高阶的无穷小，同时无穷小$\alpha $就是比$\beta $低阶的无穷小.</p>
+<p>例如，若$\alpha =x\to 0$，则</p>
+<p>$$\sin{x} ,\tan{x} ,\sqrt[m]{1+x} -1$$</p>
+<p>与这一无穷小相比较都是与它同阶的无穷小，因为，我们已知道<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，7）；例题，3）]</a></p>
+<p>$$\lim_{x\to 0} \dfrac{\sin{x}}{x} =1,\lim_{x\to 0} \dfrac{\sqrt[m]{1+x} -1}{x} =\dfrac{1}{m} .$$</p>
+<p>反之，无穷小</p>
+<p>$$\sqrt[m]{1+x} -1-\dfrac{x}{m} ,1-\cos{x} ,\tan{x} -\sin{x} \label{1} \tag{1} $$</p>
+<p>显然是比$x$高阶的无穷小<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，4）；5）(а)及(Б)]</a>.</p>
+<p>当然也可能有二无穷小的比式并不趋向于任何极限的情形；例如，若取<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[参阅 例题，9），10）]</a></p>
+<p>$$\alpha =x,\quad \beta =x\sin{\dfrac{1}{x}} ,$$</p>
+<p>则它们的比式等于$\sin{\dfrac{1}{x}}$，当$x\to 0$时并无极限；在这种情形则说，这二无穷小不能比较.</p>
+<p>注意，若无穷小$\beta $是比无穷小$\alpha $更高阶的，则这一事实就写成：</p>
+<p>$$\beta =o(\alpha ).$$</p>
+<p>例如，可以写</p>
+<p>$$1-\cos{x} =o(x),\tan{x} -\sin{x} =o(x),等等.$$</p>
+<p>这样，$o(\alpha )$就可作为比$\alpha $更高阶的无穷小的普遍记号.我们以后就要应用这种方便的记法.</p>
+<h2 id="无穷小的尺度">无穷小的尺度</h2><p>有时为了要更精确地比较无穷小的性态，需要用数字来表达它们的阶.在这种情形，首先在所研究的无穷小内选出一个（就说是$\alpha $）作为一种“标准”，把它称为“<strong>基本无穷小</strong>”.当然基本无穷小的选取在某种程度内是任意的，但通常总取最简单的.例如，假定被考察的量都是$x$的函数，而它们当$x$趋向于$a$时成为无穷小，那么根据$a$是零，是异于零的有限数或是无穷大，自然地，就依次选取</p>
+<p>$$x,x-a,\dfrac{1}{x}$$</p>
+<p>作为基本无穷小.</p>
+<p>其次，再由基本无穷小$\alpha $（我们认作$\alpha &gt; 0$）的各种正指数幂$\alpha ^k $来组成一尺度，去评较性质上更为复杂的无穷小.</p>
+<blockquote>
+<p>很易看出，在$k &gt; 0$时$\alpha ^k $将随着$\alpha $同时成为无穷小.</p>
+</blockquote>
+<p>Ⅲ.若$\beta $与$\alpha ^k (k &gt; 0)$是同阶的无穷小量，即若比式$\dfrac{\beta }{\alpha ^k }$有异于零的有限极限，则称无穷小$\beta $为关于基本无穷小$\alpha $的$k$阶无穷小量.</p>
+<p>例如，我们已知$\eqref{1}$中诸无穷小（当$x\to 0$时）是比$\alpha =x$更高阶的无穷小，若对这说法仍觉不满意，就可准确地说，$\eqref{1}$中前面两个是关于$\alpha =x$的<strong>二阶</strong>无穷小，而最后一个是<strong>三阶</strong>无穷小，因为<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，4）；5）,(а)及(Б)]</a></p>
+<p>$$\begin{array}{lc}<br>\displaystyle \lim_{x\to 0} \dfrac{\sqrt[m]{1+x} -1-\dfrac{1}{m} x}{x^2} =-\dfrac{m-1}{2m^2} ,&amp; \displaystyle \lim_{x\to 0} \dfrac{1-\cos{x}}{x^2} =\dfrac12 , \\<br>\displaystyle \lim_{x\to 0} \dfrac{\tan{x} -\sin{x}}{x^3} =\dfrac12 . &amp; \\<br>\end{array}$$</p>
+<p>为着要看更复杂的例子，试考察表达式</p>
+<p>$$\beta =\sqrt{x+1} +\sqrt{x-1} -2\sqrt{x} ;$$</p>
+<p>在$x\to +\infty $时它将是无穷小，这是很明显的，只需把它表示为下面的形状：</p>
+<p>$$\beta =(\sqrt{x+1} -\sqrt{x} )-(\sqrt{x} -\sqrt{x-1} )=\dfrac{1}{\sqrt{x+1} +\sqrt{x} } -\dfrac{1}{\sqrt{x} +\sqrt{x-1} } .$$</p>
+<p>继续这变形法，求得</p>
+<p>$$\begin{align}<br>\beta &amp; =\dfrac{\sqrt{x-1} -\sqrt{x+1}}{(\sqrt{x+1} +\sqrt{x} )(\sqrt{x} +\sqrt{x-1} )}\\<br> &amp; =\dfrac{-2}{(\sqrt{x+1} +\sqrt{x} )(\sqrt{x} +\sqrt{x-1} )(\sqrt{x-1} +\sqrt{x+1} )} .<br>\end{align}$$</p>
+<p>令$\alpha =\dfrac{1}{x} $，现在已不难了解</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to +\infty } \dfrac{\beta}{\alpha ^{3/2}} \\<br> = &amp; \lim_{x\to +\infty } \dfrac{-2(\sqrt{x})^3}{(\sqrt{x+1} +\sqrt{x} )(\sqrt{x} +\sqrt{x-1} )(\sqrt{x-1} +\sqrt{x+1} )} \\<br> = &amp; \lim_{x\to +\infty } \dfrac{-2}{\left( \sqrt{1+\dfrac{1}{x}} +1\right) \left( 1+\sqrt{1-\dfrac{1}{x}} \right)} \cdot \lim_{x\to +\infty } \dfrac{1}{\left( \sqrt{1-\dfrac{1}{x}} +\sqrt{1+\dfrac{1}{x}} \right) } \\<br> = &amp; -\dfrac14 .<br>\end{align}$$</p>
+<blockquote>
+<p>在此处我们应用$\displaystyle \lim_{z\to 0} \sqrt{1+z} =1$；这在<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，3）]</a>内（对任意$m$次幂的根式）已经证明了.</p>
+</blockquote>
+<p>这样，$\beta $的阶就是$\dfrac32$.</p>
+<p>当然，不要以为任一无穷小$\beta $（即使是与一切幂$\alpha ^k$都能比较的）都有确定的阶数.</p>
+<p>下列有趣例题可以从<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，4）及5）]</a>内已建立的公式得出$(a &gt; 1,k &gt; 0)$：</p>
+<p>$$\lim_{x\to +\infty } \dfrac{a^x}{x^k} =+\infty ,\quad \lim_{x\to +\infty } \dfrac{x^k}{\log_ax} =0,\label{2} \tag{2} $$</p>
+<p>由此，首先</p>
+<p>$$\lim_{x\to +\infty } \dfrac{x^k}{a^x} =0,\quad \lim_{x\to +\infty } \dfrac{x^k}{\log_ax} =\infty .$$</p>
+<p>现在再把式中的$x$换成$\dfrac1x$，并在第一式内假定$a=\dfrac1c ,0 &lt; c &lt; 1$，则得：</p>
+<p>$$\lim_{x\to +0} \dfrac{c^{\frac1x}}{x^k} =0,\quad \lim_{x\to +0} \dfrac{\frac{1}{\log_ax }}{x^k} =\infty .$$</p>
+<p>这样，$c^{\frac1x} (0 &lt; c &lt; 1)$就成为比一切幂$x^k (k &gt; 0)$更高阶的无穷小，而同时$\dfrac{1}{\log_ax} (a &gt; 1)$成为比一切幂$x^k $更低阶的无穷小.</p>
+<h2 id="等价无穷小">等价无穷小</h2><p>今讨论同阶无穷小的一种非常重要的特殊情形.</p>
+<p>Ⅳ.无穷小$\alpha $与$\beta $称为等价无穷小（记为$\alpha \sim \beta $），若它们的差$\gamma =\beta -\alpha $是比$\alpha $及$\beta $中的任何一个更高阶的无穷小：</p>
+<p>$$\gamma =o(\alpha ) \quad 及\quad \gamma =o(\beta ).$$</p>
+<p>然而，这只要$\gamma $是比这些无穷小之一更高阶就已够了，因为，例如，若$\gamma $是比$\alpha $更高阶，则它亦必比$\beta $更高阶.事实上，由$\lim \dfrac{\gamma}{\alpha } =0$，就能推得</p>
+<p>$$\lim \dfrac{\gamma }{\beta } =\lim \dfrac{\gamma }{\alpha +\gamma } =\lim \dfrac{\dfrac{\gamma }{\alpha }}{1+\dfrac{\gamma }{\alpha }} =0.$$</p>
+<p>考察两个等价无穷小$\alpha $及$\beta $，设$\beta =\alpha +\gamma $，其中$\gamma =o(\alpha )$.若近似地假定$\beta \dot= \alpha $，则当它们的值都在减小时，不但由这代替所生的绝对误差$\vert \gamma \vert $趋于零，而且相对误差$\left| \dfrac{\gamma }{\alpha } \right| $也趋于零.换句话说，近似等式$\beta \dot= \alpha $在$\alpha $及$\beta $的数值充分小时可有任意大的准确度.据此，在近似计算内，繁复的无穷小可以换成与它等价的简单的无穷小.</p>
+<blockquote>
+<p>符号$\dot= $表示近似等式.</p>
+</blockquote>
+<p>今建立一个有用的检定二无穷小的等价性的方法，在本质上，它就给出这概念的第二定义，与前面所给的定义等价：</p>
+<p>要使二无穷小$\alpha $与$\beta $成为等价的，其充要条件为</p>
+<p>$$\lim \dfrac{\beta }{\alpha } =1.$$</p>
+<p>先设这关系式成立，于是</p>
+<p>$$\delta =\dfrac{\beta }{\alpha } -1 \to 0.$$</p>
+<p>则</p>
+<p>$$\gamma =\beta -\alpha =\delta \cdot \alpha $$</p>
+<p>就是比$\alpha $更高阶的无穷小，因为</p>
+<p>$$\lim =\dfrac{\gamma }{\alpha } =\lim \delta =0.$$</p>
+<p>反之，设$\alpha $与$\beta $是等价的，即$\gamma =\beta -\alpha $是比$\alpha $更高阶的无穷小.由此就有</p>
+<p>$$\dfrac{\beta }{\alpha } -1 =\dfrac{\gamma }{\alpha } \to 0,$$</p>
+<p>故</p>
+<p>$$\dfrac{\beta }{\alpha } \to 1.$$</p>
+<p>这就是我们所要证明的.</p>
+<p>用这检定法，立即看出，在$x\to 0$时无穷小$\sin{x}$及$\tan{x}$是与$x$等价的，而$\sqrt[m]{1+x} -1$是与$\dfrac{1}{m} x$等价的.由此就得出近似公式：</p>
+<p>$$\sin{x} \dot= x,\quad \tan{x} \dot= x,$$</p>
+<p>$$\sqrt[m]{1+x} -1 \dot= \dfrac{1}{m} x ,特例,\sqrt{1+x} -1 \dot= \dfrac12 x.$$</p>
+<p>等价无穷小的已证明的性质可以应用于确定形如$\dfrac00$的不定式，即确定二无穷小的比式$\dfrac{\beta }{\alpha }$的极限.这时，它们中的任一个可以换成任何与它等价的无穷小，而对于极限的存在及数值并无影响.</p>
+<p>事实上，若$\overline{\alpha } \sim \alpha $，又$\overline{\beta } \sim \beta $，即</p>
+<p>$$\lim \dfrac{\overline{\alpha }}{\alpha } =1 ,\quad 又\quad \lim \dfrac{\overline{\beta }}{\beta } =1,$$</p>
+<p>则比式</p>
+<p>$$\dfrac{\beta }{\alpha } =\dfrac{\beta }{\overline{\beta }} \cdot \dfrac{\overline{\beta }}{\overline{\alpha }} \cdot \dfrac{\overline{\alpha }}{\alpha } ,$$</p>
+<p>与比式$\dfrac{\overline{\beta }}{\overline{\alpha }}$的区别仅是多了两个趋于$1$的因式，因此与它同时趋于同一的极限.</p>
+<p>若能把$\alpha $及$\beta $选取得足够简单，则立即可使问题大为简化；例如，</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt{1+x+x^2} -1}{\sin{2x}} =\lim_{x\to 0} \dfrac{\dfrac12 (x+x^2)}{2x} =\dfrac14 .$$</p>
+<p>由已证明的定理推得：都与第三者等价的二无穷小是等价的.</p>
+<h2 id="主部的分出">主部的分出</h2><p>若选定$\alpha $为基本无穷小，则形如$c\cdot \alpha ^k $的量自然就认为是<strong>最简单</strong>的无穷小，此处$c$是常系数，而$k &gt; 0$.设$\beta $是关于$\alpha $的$k$阶无穷小，即</p>
+<p>$$\lim \dfrac{\beta }{\alpha ^k } =c ,$$</p>
+<p>式中$c$是异于零的有限数，则</p>
+<p>$$\lim \dfrac{\beta }{c \alpha ^k } =1.$$</p>
+<p>而无穷小$\beta $与$c \alpha ^k $就是等价的无穷小：$\beta \sim c \alpha ^k $.</p>
+<p>与给定的无穷小$\beta $等价的这个最简单的无穷小$c\alpha ^k $就称为$\beta $的主部（或主项）.</p>
+<p>应用上面所建立的结果，除去已经指出的简单例题以外，很易分出下列各式的主部：</p>
+<p>$$1-\cos{x} \sim \dfrac12 x^2 ,\tan{x} -\sin{x} \sim \dfrac12 x^3 .$$</p>
+<p>此处$x\to 0$.而$\alpha =x $本身就是基本无穷小.</p>
+<p>最后.若$x\to +\infty $而采用$\alpha =\dfrac1x $作为基本无穷小，就有</p>
+<p>$$\sqrt{x+1} +\sqrt{x-1} -2\sqrt{x} \sim -\dfrac14 \left( \dfrac{1}{x} \right) ^{\frac32} .$$</p>
+<p>一切这些结果再一次导向近似公式.</p>
+<p>设$\beta \sim c\alpha ^k $.即$\beta =c\alpha ^k +\gamma $，式中$\gamma =o(\alpha ^k ) $.可以想象，从无穷小$\gamma $内再可以分出主部：$\gamma =c’\alpha ^{k’} +\delta $.式中$k’ &gt; k$.而$\delta =o(\alpha ^{k’})$，余类推.</p>
+<p>例如，若假定（设$x\to 0$）：</p>
+<p>$$\sqrt[m]{1+x} -1=\dfrac{1}{m} x+\gamma ,$$</p>
+<p>则我们已求得<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，4）]</a></p>
+<p>$$\lim_{x\to 0} \dfrac{\gamma }{x^2} =-\dfrac{m-1}{2m^2} ,$$</p>
+<p>于是$\gamma $的主部是$-\dfrac{m-1}{2m^2} x^2 $.由此</p>
+<p>$$\sqrt[m]{1+x} -1=\dfrac{1}{m} x-\dfrac{m-1}{2m^2} x^2 +o(x^2).$$</p>
+<p>特别是，</p>
+<p>$$\sqrt{1+x} -1 =\dfrac12 x-\dfrac18 x^2 +o(x^2).$$</p>
+<p>这种从无穷小内逐次分出阶数始终在增高的最简单的无穷小的步骤，可以继续进行下去.</p>
+<p>在本目内我们仅限于建立主部的概念，并且只用少数几个例题说明它们.对刚才所讲如何做出已给无穷小的主部，以及如何从无穷小内继续分出更高阶的最简单无穷小，以后我们还要指出系统的方法[参看可微性与导数之间的关系，任意函数的展开式·余项的佩亚诺式].</p>
+<p>末了，再讨论这样的问题：若已知二无穷小$\beta $及$\gamma$的主部是$c\alpha ^k $及$c’ \alpha ^{k’}$，则关于其和$\beta +\gamma $的主部能说些什么？</p>
+<p>在$k\neq k’$时，它的主部显然就是$c\alpha ^k $及$c’\alpha ^{k’}$两项中指数较小的那一项.今设$k=k’$，则$\beta +\gamma $的主部就是$(c+c’)\alpha ^k $——唯需假定$c+c’\neq 0$.但当两个主部互相对消的情形，则和$\beta +\gamma $将是比任一加数更高阶的无穷小.</p>
+<p>例如，在$x\to 0$时，对于无穷小</p>
+<p>$$\beta =\sqrt{1+x} -1\sim \dfrac12 \quad 及\quad \gamma =\sqrt{1-x} -1 \sim -\dfrac12 $$</p>
+<p>就是如此.若再分出它们以后的分部：</p>
+<p>$$\beta =\dfrac12 -\dfrac18 x^2 +o(x^2),\gamma =-\dfrac12 -\dfrac18 x^2 +o(x^2),$$</p>
+<p>则很明显的，有</p>
+<p>$$\beta +\gamma =\sqrt{1+x} +\sqrt{1-x} -2 =-\dfrac14 x^2 +o(x^2),$$</p>
+<p>于是$\beta +\gamma $就是二阶无穷小，而它的主部等于$-\dfrac14 x^2 $.</p>
+<h2 id="应用题">应用题</h2><p>现在举几个应用问题来说明以上讲过的这些.</p>
+<p>$1)$设用长$l$米的尺测量某一地方的直线距离.因为实际上没有把尺准确地沿着测量的直线放置，以致测量的结果显得比真实的长度大了一些.试就最坏的情形而论，假设在测量时把尺放成锯齿形，就是说，它的两端交迭地忽而偏在直线的一侧忽而偏在另一侧，其离开直线的距离为$\lambda $米（图$25$）.今估计其误差.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu30.png" alt=""></center>
+
+<p>在尺每放下一次时所发生的绝对误差等于尺的长度$l$与它在所测量的直线上的投影的差；其投影是：</p>
+<p>$$2\sqrt{\left( \dfrac{l}{2} \right) ^2 -\lambda ^2 } =l\sqrt{1-\dfrac{4\lambda ^2}{l^2}} .$$</p>
+<p>应用近似公式</p>
+<p>$$\sqrt{1+x} \dot= 1+\dfrac12 x.$$</p>
+<p>于$x=-\dfrac{4\lambda ^2 }{l^2}$的场合（由于$\lambda $比$l$小得多，所以这样做是可以的），可以把投影的长度换成下式：</p>
+<p>$$l\left( 1-\dfrac{2\lambda ^2}{l^2} \right) =l-\dfrac{2\lambda ^2 }{l} .$$</p>
+<p>因此，绝对误差是$\dfrac{2\lambda ^2}{l}$，而相对误差显然是$\dfrac{2\lambda ^2}{l^2}$.这相对误差并不随所量距离的长短而改变.</p>
+<p>若限制相对误差不能大于$\delta $，即应有$\dfrac{2\lambda ^2}{l^2} &lt; \delta $，则必须$\lambda &lt; l\sqrt{\dfrac{\delta }{2}} $.</p>
+<p>例如，在用$2$米的尺（$l=2$）测量时，要达到$0.001$的相对准确度，只要偏差$\lambda $不超过$2\sqrt{0.0005} \cdot= 0.045$米$=4.5$厘米就够了.</p>
+<p>$2)$今求一开接皮带的长度$l$的公式.它套在一对滑轮上，它们的半径各为$R$及$r$，两中心之间的距离为$d$（图$26$）.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu31.png" alt=""></center>
+
+<p>由图知</p>
+<p>$$\dfrac{l}{2} =\overset{\frown}{AC} +Cc+\overset{\frown}{ca} .$$</p>
+<p>但$\overset{\frown}{AC} =R\left( \dfrac{\pi }{2} +\alpha \right) $，$\overset{\frown}{ca} =r\left( \dfrac{\pi }{2} -\alpha \right) $，此处用$\alpha $表示相等的角$\angle BOC$及$\angle boc $；而从$\triangle ODo$内</p>
+<p>$$Cc =Do =\sqrt{d^2 -(R-r)^2} .$$</p>
+<p>这样</p>
+<p>$$l=\pi (R+r) +2\alpha (R-r) +2\sqrt{d^2 -(R-r)^2} .$$</p>
+<p>要化简这公式，回忆</p>
+<p>$$\alpha \dot= \sin{\alpha } =\dfrac{OD}{Oo} =\dfrac{R-r}{d} ,$$</p>
+<p>但须假定$R-r$对于$d$来说是很微小的.在同一假定下，</p>
+<p>$$\sqrt{d^2 -(R-r)^2} =d\sqrt{1-\left( \dfrac{R-r}{d} \right) ^2 } \dot= d\left[ 1-\dfrac{1}{2} \left( \dfrac{R-r}{d} \right) ^2 \right] .$$</p>
+<p>把这些数值代入并整理化简就得出最后的公式：</p>
+<p>$$l\dot= \pi (R+r) +2d+\dfrac{(R-r)^2}{d} .$$</p>
+<p>$3)$在分割圆弧时，下面的应用题是有价值的：求圆弧$ABC$内的矢$f=DB$与其半弧$AB_1 B$内的矢$f_1 =D_1 B_1 $的比值（图$27$）.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu32.png" alt=""></center>
+
+<p>若令圆的半径等于$r$，$\angle AOB=\varphi $，则$\angle AOB_1 =\dfrac{\varphi }{2} $又</p>
+<p>$$f= DB=r(1-\cos{\varphi} ),$$</p>
+<p>$$f_1 =r(1-\cos{\dfrac{\varphi }{2} } ).$$</p>
+<p>这样，所求的比值等于</p>
+<p>$$\dfrac{f}{f_1 } =\dfrac{1-\cos{\varphi } }{1-\cos{\dfrac{\varphi }{2} } } .$$</p>
+<p>这式子太嫌繁复，在实用上很不便.我们将求出它在$\varphi \to 0$时的极限（因为对于充分小的$\varphi $，可以用这式子的极限作为它的近似值）.为此目的，就将分子及分母分别用它们的主部代入，立即求得：</p>
+<p>$$\lim \dfrac{f}{f_1 } =\lim \dfrac{\dfrac12 \varphi ^2 }{\dfrac12 \left( \dfrac{\varphi }{2} \right) ^2 } =4.$$</p>
+<p>这样，当弧对应于不大的中心角时，可以近似地认为，弧的矢是半弧的矢的四倍.这就使我们得以逐次地找出一弧的许多中间点，只要弧的两端及其中点已知时.</p>
+<h2 id="无穷大的分阶">无穷大的分阶</h2><p>注意，对于无穷大也可以进行相似的分阶如同在[无穷小的比较]内一样，我们将所考察的诸无穷大量当作是同一变量$x$的函数，当$x$趋于$a$时它们趋于$\infty $.</p>
+<p>Ⅰ.二无穷大$y$及$z$称为同阶的无穷大，若它们的比式$\dfrac{z}{y}$（$\dfrac{y}{z}$也如此）有异于零的有限极限.</p>
+<p>Ⅱ.但若比式$\dfrac{z}{y}$趋于$\infty $（而比式$\dfrac{y}{z}$趋于零），则称$z$为比$y$更高阶的无穷大，而同时$y$称为比$z$更低阶的无穷大.</p>
+<p>当比式$\dfrac{z}{y}$不趋于任何极限时，无穷大$y$与$z$就是不能比较的.</p>
+<p>在同时考察一系列的无穷大量时，可选取其中之一（就是说$y$）当作基本无穷大，而其余的无穷大就与它的幂相比较.例如，若（如我们上面曾假定的）它们全部都是$x$的函数，且当$x\to a$时趋于$\infty $，那么，通常若$a=\pm \infty $就取$\vert x\vert $本身，因而$a$为有限数时就取$\dfrac{1}{\vert x-a\vert }$作为基本无穷大.</p>
+<p>Ⅲ.无穷大$z$称为$k$阶的无穷大（关于基本无穷大$y$）,如果$z$与$y^k $是同阶的话，即若比式$\dfrac{z}{y^k}$有异于零的有限极限.</p>
+<p>我们在这里不再引入例题，因为把前面所考察过的无穷小量换成它们的倒数，就很容易地得出这种例题.我们要提到的仅是：当$x\to +\infty $时$a^x$是比任何幂$x^k$更高阶的无穷大（$k$是正指数），而$\log_a x(a &gt; 1)$是比任何$x^k $更低阶的无穷大，这是从[无穷小的尺度公式$\eqref{2}$]推得的. </p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/20/2015/05/weijifenxuejiaocheng123/" data-title="《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/20/2015/05/daishuxueyinlun132/" title="《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/20/2015/04/daishuxueyinlun131/"  title="《代数学引论(第一卷)基础代数》 第3章 行列式 1 行列式：构造和基本性质">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第3章 行列式 1 行列式：构造和基本性质
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/20/2015/05/weijifenxuejiaocheng123/" data-title="《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶" data-url="http://yoursite.com/2015/10/20/2015/05/weijifenxuejiaocheng123/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小的比较"><span class="toc-number">1.</span> <span class="toc-text">无穷小的比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小的尺度"><span class="toc-number">2.</span> <span class="toc-text">无穷小的尺度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等价无穷小"><span class="toc-number">3.</span> <span class="toc-text">等价无穷小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主部的分出"><span class="toc-number">4.</span> <span class="toc-text">主部的分出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用题"><span class="toc-number">5.</span> <span class="toc-text">应用题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷大的分阶"><span class="toc-number">6.</span> <span class="toc-text">无穷大的分阶</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

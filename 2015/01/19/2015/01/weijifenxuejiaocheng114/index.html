@@ -1,0 +1,911 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="收敛原理·部分极限">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限">
+<meta property="og:url" content="http://yoursite.com/2015/01/19/2015/01/weijifenxuejiaocheng114/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="收敛原理·部分极限">
+<meta property="og:updated_time" content="2015-11-08T07:32:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限">
+<meta name="twitter:description" content="收敛原理·部分极限">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/01/19/2015/01/weijifenxuejiaocheng114/" title="《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限" itemprop="url">《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-01-19T06:37:26.000Z" itemprop="datePublished"> 發表於 2015-01-19</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#收敛原理"><span class="toc-number">1.</span> <span class="toc-text">收敛原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部分数列及部分极限"><span class="toc-number">2.</span> <span class="toc-text">部分数列及部分极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布尔查诺-魏尔斯特拉斯$(\text{B-Bolzano-C-Weierstrass})$引理"><span class="toc-number">3.</span> <span class="toc-text">布尔查诺-魏尔斯特拉斯$(\text{B.Bolzano-C.Weierstrass})$引理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上极限及下极限"><span class="toc-number">4.</span> <span class="toc-text">上极限及下极限</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="收敛原理">收敛原理</h2><p>设给定整序变量$x_n$，依数列</p>
+<p>$$x_1 ,x_2 ,\cdots ,x_n ,\cdots ,x_{n’} ,\cdots \label{1} \tag{1}$$</p>
+<p>而递变.最后，我们要研究关于这一整序变量是否有有限极限存在的一般判定法的问题.为着这一目的，极限定义本身是不能使用的，因为在定义内已经用到这个极限，而它的存在与否却还是我们所要讨论的问题.我们所需要的，是在判定法内仅需应用我们已经有的东西，也就是整序变量$x_n$的数值所成的数列$\eqref{1}$.</p>
+<p>所提出的问题由下列著名的定理而得解决.这定理属于捷克数学家布尔查诺($\text{B.Bolzano}$)及法国数学家柯西，它常称为收敛原理.</p>
+<p><strong>定理</strong> 整序变量$x_n$有有限极限的必要且充分的条件是：对于每一个数$\varepsilon &gt; 0$总存在着序号$N$，使当$n &gt; N$及$n’ &gt; N$时，便能成立不等式</p>
+<p>$$\mid x_n -x_{n’} \mid &lt; \varepsilon .\label{2} \tag{2}$$</p>
+<p>有如读者所看到的，在这里，事情就是这样，要使变量的诸数值依它们的序号增大的程度互相无限地接近着.[使得定理条件成立的序列$x_n$通常称为<strong>自己收敛的</strong>(术语“基本序列”和“柯西序列”同样通行)]且看<strong>证明</strong>.</p>
+<p><strong>必要性</strong> 设整序变量$x_n$有确定的有限极限$a$.依<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">整序变量的极限</a>极限的定义，就是对于不论怎样的数$\varepsilon &gt; 0$，根据数$\dfrac{\varepsilon}{2}$，必能求出序号$N$，使当$n ＞ N$时，不等式</p>
+<p>$$\mid x_n -a \mid &lt; \dfrac{\varepsilon}{2}$$</p>
+<p>恒能成立.</p>
+<p>今任意取出二序号$n &gt; N$及$n’ &gt; N$，则必同时成立</p>
+<p>$$\mid x_n -a \mid &lt; \dfrac{\varepsilon}{2}\quad 及\quad \mid a-x_{n’} \mid &lt; \dfrac{\varepsilon}{2} ,$$</p>
+<p>由此</p>
+<p>$$\mid x_n -x_{n’} \mid =\mid (x_n -a)+(a-x_{n’} )\mid \leq \mid x_n -a\mid +\mid a-x_{n’} \mid &lt; \dfrac{\varepsilon}{2} +\dfrac{\varepsilon}{2} =\varepsilon .$$</p>
+<p>这样，条件的必要性已证明.证明它的充分性要难得多.</p>
+<p><strong>充分性</strong> 设定理的条件已经满足，需要证明整序变量$x_n$有确定的有限极限存在.</p>
+<p>为这目的，在全体实数域中依下列法则产生一个分划.对于实数$\alpha $，若$x_n$从某一序号开始能满足不等式</p>
+<p>$$x_n &gt; \alpha ,$$</p>
+<p>则取这种实数$\alpha $归入下组$A$.取其余的(即不落在$A$内的)一切实数$\alpha’$归入上组$A’$.</p>
+<p>首先， 利用定理的条件说明这些组均非空集.指定任意数$\varepsilon &gt; 0$，取出(前述的意义下)对应于它的序号$N$.若$n &gt; N$及$n’ &gt; N$，则$\eqref{2}$式成立，由此</p>
+<p>$$x_{n’} -\varepsilon &lt; x_n &lt; x_{n’} +\varepsilon .\label{3} \tag{3}$$</p>
+<p>现在我们看到，每一数$x_{n’} -\varepsilon$(其中$n’ &gt; N$)都属于$A$组，因为在$n$充分大时(就是，$n &gt; N$)$x_n $总能超过它.另一方面，因为(对于同样这些$n$)$x_n$显得比$x_{n’} +\varepsilon (n’ &gt; N)$型的任何一数为小，就没有哪一个$x_{n’} +\varepsilon$可以放入$A$内去，因此，必属于$A’$组.</p>
+<p>由确定$A$及$A’$的法则很明显地可以看出，每一实数必定而且仅只落在二组之一内.同时还有，每一($A$内的)数$\alpha$必小于每一($A’$内的)数$\alpha’$；事实上，在$\alpha &gt; \alpha’$时，整序变量$x_n$，从某一项起，便要违反数$\alpha’$的定义而超过数$\alpha’$了.这样，上述实数域的分组确实产生一个分划.</p>
+<p>根据[<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">实数域的连续性</a>]戴德金的基本定理，有实数$a$存在，它是两组数中间的界数：</p>
+<p>$$\alpha \leq a\leq \alpha’ .$$</p>
+<p>但我们注意到，在任何$n’ &gt; N$时，$x_{n’} -\varepsilon$是某一个$\alpha $，而$x_{n’} +\varepsilon$是某一个$\alpha’$.因此，对于任何$n’ &gt; N$，特别有</p>
+<p>$$x_{n’} -\varepsilon \leq a\leq x_{n’} +\varepsilon \quad 或\quad \mid a-x_{n’} \mid =\mid x_{n’} -a\mid \leq \varepsilon .$$</p>
+<p>根据[<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">整序变量的极限</a>]极限的定义，这即指</p>
+<p>$$a=\lim x_n .$$</p>
+<p>定理已证明.不利用分割的概念也可以证明定理中所给收敛条件的充分性.</p>
+<p>用等式$a_n =\underset{k\geq n}{\text{inf}} x_k ,b_n =\underset{k\geq n}{\text{sup}} x_k$分别定义数$a_n ,b_n$($a_n ,b_n$是有限的或无穷——暂时没多大关系).那么，当$k\geq n$时$a_n \leq x_k \leq b_n$；此外对任意的$n$有$a_n \leq a_{n+1}$，$b_n \geq b_{n+1}$.根据定理条件，对任意$\varepsilon &gt; 0$，存在这样的数$N=N(\varepsilon )$，使得对所有的$n,n’ &gt; N$有$x_n -x_{n’}\leq \varepsilon$.任意固定$n’ &gt; N$，那么不等式$x_n &lt; x_{n’} +\varepsilon$表明序列上有界，数$b_n$对所有$n$有限，且当$n &gt; N$时$b_n \leq x_{n’} +\varepsilon$.现在固定$n &gt; N$，因为当$n’ &gt; N$时$x_{n’} \geq b_n -\varepsilon$，我们已可断言当$n’ &gt; N$时$a_{n’} \geq b_n -\varepsilon$.令$n’=n$，便得到，当$n &gt; N$时$0 &lt; b_n -a_n \leq \varepsilon $，从而$b_n -a_n \underset{n\rightarrow \infty}{\longrightarrow} 0$.根据<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">关于区间套的引理</a>目第一个断言，序列$a_n$与$b_n$收敛于某个共同的极限$c$，因为$a_n \leq x_n \leq b_n$，序列$x_n$同样收敛于$c$，布尔查诺-柯西定理证毕.</p>
+<h2 id="部分数列及部分极限">部分数列及部分极限</h2><p>今同时考察数列$\eqref{1}$及由它里面所选出的任一部分<strong>数列</strong>(或<strong>子数列</strong>)</p>
+<p>$$x_{n_1} ,x_{n_2} ,\cdots ,x_{n_k} ,\cdots \label{4} \tag{4}$$</p>
+<p>式中$\lbrace n_k \rbrace $是某一自然数的递增数列：</p>
+<p>$$n_1 &lt; n_2 &lt; \cdots &lt; n_k &lt; n_{k+1} &lt; \cdots \label{5} \tag{5}$$</p>
+<p>在这里，依次取所有自然数为值的序号已不是由$n$，而是由$k$担任；而$n_k$则已成为一个取自然数为值的整序变量，且显然地，在$k$增大时它趋向于$\infty$.</p>
+<p>若数列$\eqref{1}$有确定的极限$a$(有限或无穷)，则部分数列$\eqref{4}$亦必有相同的极限.</p>
+<p>为了示例，试考察$a$为有限的情形.设对于指定的$\varepsilon &gt; 0$能求出$N$，使当$n &gt; N$时已成立不等式：</p>
+<p>$$\mid x_n -a \mid &lt; \varepsilon ,$$</p>
+<p>因$n_k \to \infty$，故必有$K$存在，使当$k &gt; K$时有$n_k &gt; N$.于是对于那些$k$的值将成立不等式</p>
+<p>$$\mid x_{n_k} -a \mid &lt; \varepsilon ,$$</p>
+<p>这就证明了我们的命题.</p>
+<p>(顺便注意到，在作出这论断时，我们并没用不等式$\eqref{5}$，即并未应用到整序变量$n_k$的单调性.因此，不论整序变量$n_k$依怎样的规律趋向$+\infty $，我们的命题仍为有效.)</p>
+<p>若整序变量$x_n$，或即数列$\eqref{1}$，并无确定的极限，则对于它的任何一个部分数列$\eqref{4}$或对于它的整序变量$x_{n’} =x_{n_k}$来说，极限仍可能存在.这种极限称为整序变量$x_n$或数列$\eqref{1}$的<strong>部分极限</strong>.</p>
+<p>例如，设$x_n =(-1)^{n+1}$，这整序变量无极限，但若限制$n$仅依奇数或偶数而递变，则部分数列</p>
+<p>$$x_1 =1 ,x_3 =1 ,\cdots ,x_{2k-1} =1 ,\cdots $$</p>
+<p>及</p>
+<p>$$x_2 =-1 ,x_4 =-1 ,\cdots ,x_{2k} =-1 ,\cdots $$</p>
+<p>将各有极限为$1$或$-1$.这两数就是$x_n$的部分极限.类似地，整序变量$x_n =(-1)^{n+1}n$有部分极限$+\infty $及$-\infty $，而$x_n =n^{(-1)^{n+1}}$有部分极限$+\infty $及$0$.</p>
+<p>整序变量的部分极限可以是一无穷集，举一个这种例子也很容易；下面是其一例.依下列法则定义整序变量$x_n$：若序号$n$写成十进位制为：$\alpha \beta \cdots \nu $($\alpha ,\beta ,\cdots ,\nu$是数码)，则令</p>
+<p>$$x_n =0.\alpha \beta \cdots \nu .$$</p>
+<p>例如，$x_{13} =0.13,x_{4035} =0.4035$等等.在这时，每一个$0.1$与$1$之间的有限十进小数在这整序变量的数列中出现无穷多次，例如，$0.217$在第$217$项出现，又在第$2170$，第$21700$项，等等出现.</p>
+<p>由此立刻推得，在$0.1$与$1$之间的每一个有限十进小数将成为这整序变量的部分极限.但若在这限界内取任何另一实数$\alpha $，则只需将它表示为无穷十进小数[<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">用无限小数来表示实数</a>]：</p>
+<p>$$\alpha =0.c_1 c_2 \cdots c_k \cdots (c_1 \geq 1),$$</p>
+<p>就立刻可知部分数列</p>
+<p>$$x_{c_1} =0.c_1 ,x_{c_1 c_2} =0.c_1 c_2 ,\cdots ,x_{c_1 c_2 \cdots c_k } =0.c_1 c_2 \cdots c_k ,\cdots $$</p>
+<p>的极限刚好就是$\alpha $，这样，在所考察的情形，数列的部分极限充满着全区间$[0.1,1]$.</p>
+<p>整序变量$x_n $是否恒有部分极限存在？在数集$\lbrace x_n \rbrace $非为有界时，这问题很易肯定地回答.例如，设它不上有界，则对于每一个自然数$k$，必能在数列$\eqref{1}$内求得大于$k$的项$x_{n_k}$：</p>
+<p>$$x_{n_k} &gt; k\quad (k=1,2,\cdots )$$</p>
+<p>(并且很易办到，使得序号$n_k$随$k$而增大).部分数列</p>
+<p>$$x_{n_1} ,x_{n_2} ,\cdots ,x_{n_k} ,\cdots $$</p>
+<p>显然将有极限$+\infty $；它就是原数列的部分极限.</p>
+<p>在有界整序变量的情形，亦可以给予肯定的回答.但这需要更细致的讨论，我们在下一段内再谈.</p>
+<h2 id="布尔查诺-魏尔斯特拉斯$(\text{B-Bolzano-C-Weierstrass})$引理">布尔查诺-魏尔斯特拉斯$(\text{B.Bolzano-C.Weierstrass})$引理</h2><p>由任何有界数列$\eqref{1}$内恒能选出收敛于有限极限的部分数列$\eqref{4}$.</p>
+<p>(这种写法不致除去在所给数列内有相等的数的可能性，应用起来有便利之处.)</p>
+<p><strong>证明</strong> 设一切数$x_n$都位于界限$a$与$b$之间.将区间$[a,b]$分为两半，则必有一半包含着所给数列的无穷多个元素，因为，若不是这样，则在全区间$[a,b]$内所包含着的元素将是有限个数，但这不可能的.因此设包含着无穷多个$x_n$的那一半是$[a_1 ,b_2 ]$(若两个半区间都是如此，则任取其中之一).</p>
+<p>类似地，在区间$[a_1 ,b_1 ]$内分出它的一半$[a_2 ,b_2 ]$，使得在它里面包含无穷多个$x_n$.继续这种步骤至于无穷，在第$k$次分出的区间$[a_k ,b_k ]$内照样包含着无穷多个的$x_n$.</p>
+<p>这样构成的区间(由第二个开始)，每一个都包含在前一个内，等于它的一半.此外，第$k$个区间的长等于</p>
+<p>$$b_k -a_k =\dfrac{b-a}{2^k} .$$</p>
+<p>它随着$k$的增大而趋向零.把[<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">关于区间套的引理</a>]关于区间套的引理应用到这里来，便得结论：$a_k$及$b_k$趋向一公共极限$c$.</p>
+<p>现在部分数列$\lbrace x_{n_k} \rbrace$可由下列方法归纳地产生出来.在所给数列的元素$x_n$内任取包含在$[a_1 ,b_1 ]$中的一个(例如，第一个)当作$x_{n_1}$.在$x_{n_1}$后面的元素$x_n$内任取包含在$[a_2 ,b_2 ]$中的一个(例如，第一个)当作$x_{n_2}$，等等.一般地说，在以前分出的$x_{n_1} ,x_{n_2},\cdots ,x_{n_{k-1}}$后面的元素$x_n$内任取包含在$[a_k ,b_k ]$中的一个(例如，第一个)，当作$x_{n_k}$.这种产生数列方法是完全可能的：因为每一区间$[a_k ,b_k ]$内包含着无穷多个$x_n$，即包含着序号可为任意大的元素$x_n$.</p>
+<p>再则，因为</p>
+<p>$$a_k \leq x_{n_k} \leq b_k ,又\lim a_k =\lim b_k =c,$$</p>
+<p>故依<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">对等式及不等式取极限</a>的定理$3°$必有$\lim x_{n_k} =c$.此即所要证的.</p>
+<p>在证明这引理时，用了逐次等分所考察的区间的方法，称为<strong>布尔查诺方法</strong>.这在其他场合对我们也是经常有用的.</p>
+<p>布尔查诺-魏尔斯特拉斯引理使许多困难定理的证明大为简化，就好像它本身已吸收了论证中的基本困难点似的.我们用它再来证明收敛原理作为一例；我们来考虑其中条件的充分性，它在<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">收敛原理</a>内曾费了我们很多力气.</p>
+<p>因此，设条件已满足，且依指定的$\varepsilon &gt; 0$已求出序号$N$，在$n &gt; N$及$n’ &gt; N$时成立不等式$\eqref{2}$或$\eqref{3}$.若在这时固定$n’$，则很清楚地，由$\eqref{3}$式，整序变量$x_n$在一切情形下将成为有界的：因为在$n &gt; N$时它的值全部位于$x_{n’} -\varepsilon$与$x_{n’} +\varepsilon$之间，且不难把这些即界的距离拉长，使它又包括首$N$个值：$x_1 ,x_2 ,\cdots ,x_N$.</p>
+<p>于是，依刚才所证明的定理，可以分出收敛于有限极限$c$的部分数列$\lbrace x_{n_k} \rbrace $：</p>
+<p>$$\lim x_{n_k} =c.$$</p>
+<p>现在证明，整序变量$x_n$也趋向这一极限.我们可以选取充分大的$k$，使</p>
+<p>$$\mid x_{n_k} -c\mid &lt; \varepsilon ,$$</p>
+<p>又同时使$n_k &gt; N$.因此，可在$\eqref{2}$内取$n’ =n_k $：</p>
+<p>$$\mid x_n -x_{n_k} \mid &lt; \varepsilon ,$$</p>
+<p>联合这两不等式，最后即得</p>
+<p>$$\mid x_n -c \mid &lt; 2\varepsilon \quad (n &gt; N),$$</p>
+<p>这就表明了我们的命题.数$2\varepsilon $，有如$\varepsilon $，亦可“任意小”.假若愿意的话，可以在开始时不取$\varepsilon $而取$\dfrac{\varepsilon }{2}$，则在这里我们便得出$\varepsilon $.</p>
+<h2 id="上极限及下极限">上极限及下极限</h2><p>这样，任何整序变量$x_n$，不论它是有界的或无界的，都有部分极限存在.现在我们将指出，在这些部分极限内必能求出最大的及最小的.它们即称为整序变量$x_n$的<strong>上极限</strong>与<strong>下极限</strong>，并各记成</p>
+<p>$$\overline{\lim }x_n \quad 及\quad \underline{\lim }x_n .$$</p>
+<p><strong>定理</strong> 整序变量$x_n$恒有上极限及下极限存在.这两限相等是整序变量有极限(变通意义下)存在的必要且充分的条件.</p>
+<p><strong>证明</strong> <strong>从考察上极限的问题开始</strong>.我们已在上面[<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">部分数列及部分极限</a>]看到，若$x_n$不上有界，则可以从数列$\eqref{1}$内分出部分数列$\lbrace x_{n_k} \rbrace$，使</p>
+<p>$$\lim x_{n_k} =+\infty .$$</p>
+<p>这样，在这种情形，$+\infty $便是整序变量的部分极限之一，显然，它是一切可能的极限中之最大者，因此，</p>
+<p>$$\overline{\lim }x_n =+\infty $$</p>
+<p>今再假定整序变量$x_n$上有界：</p>
+<p>$$x_n \leq M\quad (n=1,2,\cdots ).$$</p>
+<p>考察$x_n$在$n &gt; k$时的上确界：</p>
+<p>$$M_k =\underset{n &gt; k}{\text{sup}} \lbrace x_n \rbrace =\text{sup} \lbrace x_{k+1} ,x_{k+2} ,\cdots \rbrace \leq M.$$</p>
+<p>在$k$增大时$M_k$的值只能减小，因此，依[<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">单调整序变量的极限</a>]单调整序变量的定理，无论如何极限(在$k$无限增大时)</p>
+<p>$$\lim M_k$$</p>
+<p>必存在，是有限的或等于$-\infty $.</p>
+<p>当这极限是$-\infty $时，情形同样是那么简单.对于任何$E &gt; 0$必能求出序号$k=N$，使</p>
+<p>$$M_N &lt; -E;$$</p>
+<p>但在$n &gt; N$时，显然$x_n \leq M_N$，因此，对于这种$n$更有</p>
+<p>$$x_n &lt; -E.$$</p>
+<p>而这就表示有极限(普通意义下)</p>
+<p>$$\lim x_n =-\infty $$</p>
+<p>存在，这极限将同时是上极限和下极限.当整序变量的普通极限存在时，一切部分极限都和它重合.</p>
+<p>尚待考察最重要的情形，即有一有限极限</p>
+<p>$$\lim M_k =M^{\ast }$$</p>
+<p>存在的情形.我们将指出，这数$M^{\ast }$将是整序变量$x_n$的上极限.</p>
+<p>为此目的，我们将先确立数$M^{\ast }$的二特性.</p>
+<p>若任意取数$\varepsilon &gt; 0$，则必能求出$k=N’$，使$M_{N’} &lt; M^{\ast } +\varepsilon$；因为，在$n &gt; N’$时，$x_n \leq M_{N’}$，所以更有$x_n &lt; M^{\ast } +\varepsilon $.因此，</p>
+<p><strong>$M^{\ast }$的特性Ⅰ</strong>：对于不论怎样的$\varepsilon &gt; 0$，必有序号$N’$存在，使对一切$n &gt; N’$有</p>
+<p>$$x_n &lt; M^{\ast } +\varepsilon .$$</p>
+<p>另一方面，对于任意的$\varepsilon &gt; 0$及任何的$k$必有</p>
+<p>$$M_k \geq M^{\ast } &gt; M^{\ast } -\varepsilon .$$</p>
+<p>但依上确界的性质[<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">数集的界</a>]，在序号$n=k+1,k+2,\cdots $的$x_n$各值中间必能求出$x_{n’}$，使$x_{n’} &gt;M^{\ast } -\varepsilon$.把任意取的$k$换成$N$，便得</p>
+<p><strong>$M^{\ast }$的特性Ⅱ</strong>：对于不论怎样的$\varepsilon &gt; 0$及序号$N$,必能求出$x_{n’}$，其序号$n’ &gt; N$，满足</p>
+<p>$$x_{n’} &gt;M^{\ast } -\varepsilon .$$</p>
+<p>必须强调这两种性质的差别.在第一种情形，一切$x_n$的值，由某一项开始，毫无例外地满足着不等式.在第二种情形，仅是若干个别的$x_n$满足不等式，但在这些个别的值中间却有序号为任意大的$x_n$.</p>
+<p>首先，根据这些特性，证明数$M^{\ast }$是整序变量$x_n$的部分极限.为此，需要分出收敛于$M^{\ast }$的部分数列$\lbrace x_{n_i} \rbrace$.</p>
+<p>作一正数的数列$\varepsilon _i \to 0$.设$n_1 =1$，假定序号</p>
+<p>$$n_1 =1 &lt; n_2 &lt; \cdots &lt; n_{i-1} $$</p>
+<p>已选出，现在说明怎样选取$n_i$.依特性Ⅰ，在$\varepsilon =\varepsilon _i$时必能求出对应的序号$N’=N_i$，使对一切$n &gt; N_i$有$x_n &lt; M^{\ast } +\varepsilon _i$.今再看特性Ⅱ，仍旧假定$\varepsilon =\varepsilon _i$，并取序号$n_{i-1}$及$N_i$中的最大者作为$N$；对于这样的$\varepsilon $及$N$，由特性Ⅱ所得到的序号$n’$就取作$n_i$.那么，一方面，</p>
+<p>$$x_{n_i} &gt; M^{\ast } -\varepsilon _i ,$$</p>
+<p>而另一方面，因$n_i &gt; N_i $，同时必有</p>
+<p>$$x_{n_i} &lt; M^{\ast } +\varepsilon .$$</p>
+<p>除此之外，还需注意$n_i &gt; n_{i-1}$.</p>
+<p>对于用这种方法——归纳地——构成的数列中的元素$x_{n_i}$，必有</p>
+<p>$$\mid x_{n_i} -M^{\ast} \mid &lt; \varepsilon_i (i=2,3,\cdots ),$$</p>
+<p>实际上就是$x_{n_i} \to M^{\ast}$.</p>
+<p>最后，将证明没有一个部分极限能超过$M^{\ast}$.事实上，设对于某一部分数列$\lbrace x_{n_i} \rbrace$有$x_{n_i} \to a$，则$a$就是部分极限之一.依特性Ⅰ，当$n_i$充分大时(已大于$N’$)，必有</p>
+<p>$$x_{n_i} &lt; M^{\ast } +\varepsilon .$$</p>
+<p>在这不等式中取极限，则得$a\leq M^{\ast } +\varepsilon $,又因$\varepsilon $是任意小，最后，即得</p>
+<p>$$a\leq M^{\ast } .$$</p>
+<p>这样，$M^{\ast } $实际上就成为一切部分极限中之最大的，即</p>
+<p>$$M^{\ast } =\overline{\lim }x_n .$$</p>
+<p>类似地可证下极限的存在.</p>
+<p><strong>接着考察下极限的问题开始</strong>.我们已在上面[<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">部分数列及部分极限</a>]看到，若$x_n$不下有界，则可以从数列$\eqref{1}$内分出部分数列$\lbrace x_{n_k} \rbrace$，使</p>
+<p>$$\lim x_{n_k} =-\infty .$$</p>
+<p>这样，在这种情形，$-\infty $便是整序变量的部分极限之一，显然，它是一切可能的极限中之最小者，因此，</p>
+<p>$$\underline{\lim }x_n =-\infty $$</p>
+<p>今再假定整序变量$x_n$下有界：</p>
+<p>$$x_n \geq -M\quad (n=1,2,\cdots ).$$</p>
+<p>考察$x_n$在$n &gt; k$时的下确界：</p>
+<p>$$M_k =\underset{n &gt; k}{\text{inf}} \lbrace x_n \rbrace =\text{inf} \lbrace x_{k+1} ,x_{k+2} ,\cdots \rbrace \geq -M.$$</p>
+<p>在$k$增大时$M_k$的值只能增大，因此，依[<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">单调整序变量的极限</a>]单调整序变量的定理，无论如何极限(在$k$无限增大时)</p>
+<p>$$\lim M_k$$</p>
+<p>必存在，是有限的或等于$+\infty $.</p>
+<p>当这极限是$+\infty $时，情形同样是那么简单.对于任何$E &gt; 0$必能求出序号$k=N$，使</p>
+<p>$$M_N &gt; E;$$</p>
+<p>但在$n &gt; N$时，显然$x_n \geq M_N$，因此，对于这种$n$更有</p>
+<p>$$x_n &gt; E.$$</p>
+<p>而这就表示有极限(普通意义下)</p>
+<p>$$\lim x_n =+\infty $$</p>
+<p>存在，这极限将同时是上极限和下极限.当整序变量的普通极限存在时，一切部分极限都和它重合.</p>
+<p>尚待考察最重要的情形，即有一有限极限</p>
+<p>$$\lim M_k =M_{\ast }$$</p>
+<p>存在的情形.我们将指出，这数$M_{\ast }$将是整序变量$x_n$的下极限.又若下极限是有限数$M_{\ast }$，</p>
+<p>$$M_{\ast } =\underline{\lim }x_n ,$$</p>
+<p>则它具有类似于上述的$M^{\ast}$的特性.</p>
+<p>为此目的，我们将先确立数$M_{\ast }$的二特性.</p>
+<p>若任意取数$\varepsilon &gt; 0$，则必能求出$k=N’’$，使$M_{N’’} &gt; M_{\ast } -\varepsilon$；因为，在$n &gt; N’’$时，$x_n \geq M_{N’’}$，所以更有$x_n &gt; M_{\ast } -\varepsilon$.因此，</p>
+<p><strong>$M^{\ast }$的特性Ⅰ</strong>：对于不论怎样的$\varepsilon &gt; 0$，必有序号$N’’$存在，使对一切$n &gt; N’’$有</p>
+<p>$$x_n &gt; M_{\ast } -\varepsilon .$$</p>
+<p>另一方面，对于任意的$\varepsilon &gt; 0$及任何的$k$必有</p>
+<p>$$M_k \leq M_{\ast } &lt; M_{\ast } +\varepsilon .$$</p>
+<p>但依下确界的性质[<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">数集的界</a>]，在序号$n=k+1,k+2,\cdots $的$x_n$各值中间必能求出$x_{n’’}$，使$x_{n’’} &lt; M_{\ast } +\varepsilon$.把任意取的$k$换成$N$，便得</p>
+<p><strong>$M^{\ast }$的特性Ⅱ</strong>：对于不论怎样的$\varepsilon &gt; 0$及序号$N$,必能求出$x_{n’’}$，其序号$n’’ &gt; N$，满足</p>
+<p>$$x_{n’} &lt; M_{\ast } +\varepsilon .$$</p>
+<p>必须强调这两种性质的差别.在第一种情形，一切$x_n$的值，由某一项开始，毫无例外地满足着不等式.在第二种情形，仅是若干个别的$x_n$满足不等式，但在这些个别的值中间却有序号为任意大的$x_n$.</p>
+<p>首先，根据这些特性，证明数$M_{\ast }$是整序变量$x_n$的部分极限.为此，需要分出收敛于$M_{\ast }$的部分数列$\lbrace x_{n_i} \rbrace$.</p>
+<p>作一正数的数列$\varepsilon _i \to 0$.设$n_1 =1$，假定序号</p>
+<p>$$n_1 =1 &lt; n_2 &lt; \cdots &lt; n_{i-1} $$</p>
+<p>已选出，现在说明怎样选取$n_i$.依特性Ⅰ，在$\varepsilon =\varepsilon _i$时必能求出对应的序号$N’’=N_i$，使对一切$n &gt; N_i$有$x_n &gt; M_{\ast } -\varepsilon _i$.今再看特性Ⅱ，仍旧假定$\varepsilon =\varepsilon _i$，并取序号$n_{i-1}$及$N_i$中的最大者作为$N$；对于这样的$\varepsilon $及$N$，由特性Ⅱ所得到的序号$n’’$就取作$n_i$.那么，一方面，</p>
+<p>$$x_{n_i} &lt; M_{\ast } +\varepsilon _i ,$$</p>
+<p>而另一方面，因$n_i &gt; N_i $，同时必有</p>
+<p>$$x_{n_i} &gt; M_{\ast } -\varepsilon .$$</p>
+<p>除此之外，还需注意$n_i &gt; n_{i-1}$.</p>
+<p>对于用这种方法——归纳地——构成的数列中的元素$x_{n_i}$，必有</p>
+<p>$$\mid x_{n_i} -M_{\ast} \mid &lt; \varepsilon_i (i=2,3,\cdots ),$$</p>
+<p>实际上就是$x_{n_i} \to M_{\ast}$.</p>
+<p>最后，将证明没有一个部分极限能超出$M_{\ast}$.事实上，设对于某一部分数列$\lbrace x_{n_i} \rbrace$有$x_{n_i} \to b$，则$b$就是部分极限之一.依特性Ⅰ，当$n_i$充分大时(已大于$N’’$)，必有</p>
+<p>$$x_{n_i} &gt; M_{\ast } -\varepsilon .$$</p>
+<p>在这不等式中取极限，则得$b\geq M_{\ast } -\varepsilon $,又因$\varepsilon $是任意小，最后，即得</p>
+<p>$$b\geq M_{\ast } .$$</p>
+<p>这样，$M_{\ast } $实际上就成为一切部分极限中之最小的，即</p>
+<p>$$M_{\ast } =\underline{\lim }x_n .$$</p>
+<p>现在来证明定理的后半部.若在普通意义下说有极限</p>
+<p>$$\lim x_n $$</p>
+<p>(有限或无穷)存在，则一切可能的部分极限都与它重合[<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">部分数列及部分极限</a>]，前述条件的必要性便得证明.</p>
+<p>今假定</p>
+<p>$$\overline{\lim }x_n =\underline{\lim }x_n .$$</p>
+<p>若它们的公共数值是$+\infty $或$-\infty $，则有如我们已看到的，整序变量在普通意义下有极限存在，且就是那一值.</p>
+<p>最后，设二极限都是有限的：</p>
+<p>$$M^{\ast} =M_{\ast} =a.$$</p>
+<p>则比较$M^{\ast}$及$M_{\ast}$的特性Ⅰ，依预先指定的$\varepsilon &gt; 0$可求出序号$N$，使当$n &gt; N$时成立</p>
+<p>$$a-\varepsilon &lt; x_n &lt; a+\varepsilon \quad 即\quad \mid x_n -a\mid &lt; \varepsilon .$$</p>
+<p>这就说明，$a$是整序变量$x_n$在普通意义下的极限.定理证明完毕.</p>
+<p>注意，用这定理，布尔查诺-柯西条件的充分性[<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">收敛原理</a>]就能很简单地被证明了.就是说(若仍用原来的记法)，由不等式</p>
+<p>$$x_{n’} -\varepsilon &lt; x_n &lt; x_{n’} +\varepsilon (n及n’ &gt; N)$$</p>
+<p>立刻可以看出，整序变量$x_n$的上极限及下极限是有限的，而且相差不大于$2\varepsilon $，由于$\varepsilon $可任意小，因此必须重合.由此，立刻推得有一有限极限(在普通意义下)存在.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/微积分/">微积分</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微积分/">微积分</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/01/19/2015/01/weijifenxuejiaocheng114/" data-title="《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/01/25/2014/09/Algebra11/" title="《Algebra》Chapter I Groups 1. Monoids">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《Algebra》Chapter I Groups 1. Monoids</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/01/04/2014/12/weijifenxuejiaocheng113/"  title="《微积分学教程(第一卷)》 第一章 极限论 3 单调整序变量">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 第一章 极限论 3 单调整序变量
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/01/19/2015/01/weijifenxuejiaocheng114/" data-title="《微积分学教程(第一卷)》 第一章 极限论 4 收敛原理·部分极限" data-url="http://yoursite.com/2015/01/19/2015/01/weijifenxuejiaocheng114/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#收敛原理"><span class="toc-number">1.</span> <span class="toc-text">收敛原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部分数列及部分极限"><span class="toc-number">2.</span> <span class="toc-text">部分数列及部分极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布尔查诺-魏尔斯特拉斯$(\text{B-Bolzano-C-Weierstrass})$引理"><span class="toc-number">3.</span> <span class="toc-text">布尔查诺-魏尔斯特拉斯$(\text{B.Bolzano-C.Weierstrass})$引理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上极限及下极限"><span class="toc-number">4.</span> <span class="toc-text">上极限及下极限</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

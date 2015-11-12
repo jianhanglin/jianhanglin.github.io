@@ -1,0 +1,915 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="行列式的进一步性质">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质">
+<meta property="og:url" content="http://yoursite.com/2015/10/20/2015/05/daishuxueyinlun132/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="行列式的进一步性质">
+<meta property="og:updated_time" content="2015-10-20T14:12:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质">
+<meta name="twitter:description" content="行列式的进一步性质">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/20/2015/05/daishuxueyinlun132/" title="《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质" itemprop="url">《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-20T14:11:11.000Z" itemprop="datePublished"> 發表於 2015-10-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#行列式按一行或一列的元素展开"><span class="toc-number">1.</span> <span class="toc-text">行列式按一行或一列的元素展开</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊矩阵的行列式"><span class="toc-number">2.</span> <span class="toc-text">特殊矩阵的行列式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">3.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="行列式按一行或一列的元素展开">行列式按一行或一列的元素展开</h2><p>有一种计算行列式的常用方法，基于逐次降低行列式的阶数.它需要用到子式$M_{ij}$和代数余子式$A_{ij}$的概念（见$\S 1$的定义）.</p>
+<p><strong>定理1</strong>$\quad $设$A=(a_{ij} )\in M_n (\mathbb{R} )$.下述公式成立：</p>
+<p>$$\det A=\sum_{i=1}^n (-1)^{i+j} a_{ij} M_{ij} =\sum_{i=1}^n a_{ij} A_{ij} \label{1} \tag{1} $$</p>
+<p>（行列式按照第$j$列的元素展开）；</p>
+<p>$$\det A=\sum_{j=1}^n (-1)^{i+j} a_{ij} M_{ij} =\sum_{j=1}^n a_{ij} A_{ij} \label{2} \tag{2} $$</p>
+<p>（行列式按照第$i$列的元素展开）.</p>
+<p>换言之，矩阵$A$的行列式等于某列（或某行）的一切元素与它们的代数余子式的乘积之和.</p>
+<p><strong>证明</strong>$\quad 1)$根据基本性质$\text{D1}$和$\text{D2}$，行列式（先对应于列，而后对应于行）满足一系列等式：</p>
+<p>$$\begin{align}<br>\det A &amp; =\begin{vmatrix} a_{11} &amp; \cdots &amp; a_{1j} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; \cdots &amp; a_{2j} &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{nj} &amp; \cdots &amp; a_{nn} \end{vmatrix} \\<br> &amp; =\begin{vmatrix} a_{11} &amp; \cdots &amp; a_{1j} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; \cdots &amp; 0 &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; 0 &amp; \cdots &amp; a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} &amp; \cdots &amp; 0 &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; \cdots &amp; a_{2j} &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; 0 &amp; \cdots &amp; a_{nn} \end{vmatrix} \\<br> &amp; +\cdots +\begin{vmatrix} a_{11} &amp; \cdots &amp; 0 &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; \cdots &amp; 0 &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{nj} &amp; \cdots &amp; a_{nn} \end{vmatrix} \\<br> &amp; =\sum_{i=1}^n \begin{vmatrix} a_{11} &amp; \cdots &amp; a_{1,j-1} &amp; 0 &amp; a_{1,j+1} &amp; \cdots &amp; a_{1n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{i1} &amp; \cdots &amp; a_{i,j-1} &amp; a_{ij} &amp; a_{i,j+1} &amp; \cdots &amp; a_{in} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{n,j-1} &amp; 0 &amp; a_{n,j+1} &amp; \cdots &amp; a_{nn} \end{vmatrix} \\<br> &amp; = \sum_{i=1}^n (-1)^{j-1} \begin{vmatrix} 0 &amp; a_{11} &amp; \cdots &amp; a_{1,j-1} &amp; a_{1,j+1} &amp; \cdots &amp; a_{1n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{ij} &amp; a_{i1} &amp; \cdots &amp; a_{i,j-1} &amp; a_{i,j+1} &amp; \cdots &amp; a_{in} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; a_{n1} &amp; \cdots &amp; a_{n,j-1} &amp; a_{n,j+1} &amp; \cdots &amp; a_{nn} \end{vmatrix} \\<br> &amp; =\sum_{i=1}^n (-1)^{(j-1)+(i-1)} \begin{vmatrix} a_{ij} &amp; a_{i1} &amp; \cdots &amp; a_{i,j-1} &amp; a_{i,j+1} &amp; \cdots &amp; a_{in} \\ 0 &amp; a_{11} &amp; \cdots &amp; a_{1,j-1} &amp; a_{1,j+1} &amp; \cdots &amp; a_{1n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; a_{i-1,1} &amp; \cdots &amp; a_{i-1,j-1} &amp; a_{i-1,j+1} &amp; \cdots &amp; a_{i-1,n} \\ 0 &amp; a_{i+1,1} &amp; \cdots &amp; a_{i+1,j-1} &amp; a_{i+1,j+1} &amp; \cdots &amp; a_{i+1,n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; a_{n1} &amp; \cdots &amp; a_{n,j-1} &amp; a_{n,j+1} &amp; \cdots &amp; a_{nn} \end{vmatrix} \\<br> &amp; =\sum_{i=1}^n (-1)^{i+j} a_{ij} M_{ij} . \end{align}$$</p>
+<p>最后一个等式基于对矩阵$A’$使用$\S 1$命题$2$，</p>
+<p>$$A’ =\begin{pmatrix} a’_{11} &amp; a’_{12} &amp; \cdots &amp; a’_{1n} \\ 0 &amp; a’_{22} &amp; \cdots &amp; a’_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; a’_{n2} &amp; \cdots &amp; a’_{nn} \end{pmatrix} ,$$</p>
+<p>其中$a’_{11} =a_{ij} ,a’_{12} =a_{i1} ,\cdots ,a’_{1n} =a_{in} ,M’_{11} =M_{ij}$.回忆定义$A_{ij} =(-1)^{i+j} M_{ij}$.公式$\eqref{1}$得证.</p>
+<p>$2)$令$\sideset{^t}{}A =(a’_{ji} ) ,a’_{ji} =a_{ij}$.我们再次指出，对应于$\det \sideset{^t}{}A $的元素$a’_{ji}$的子式为$M’_{ji} =M_{ij}$.用$1)$的结论，$\det A =\det \sideset{^t}{}A =\displaystyle \sum_{j=1}^n (-1)^{j+i} a’_{ji} M’_{ji} =\sum_{j=1}^n (-1)^{i+j} a_{ij} M_{ij}$，公式$\eqref{2}$得证.亦可直接引用$\S 1 $注记$3$简单地证明.</p>
+<p>举两个例子用来说明行列式的上述性质.</p>
+<p><strong>例1</strong>$\quad $行列式</p>
+<p>$$\Delta _n =\begin{vmatrix} 1 &amp; 1 &amp; \cdots &amp; 1 \\ x_1 &amp; x_2 &amp; \cdots &amp; x_n \\ x_1^2 &amp; x_2^2 &amp; \cdots &amp; x_n^2 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ x_1^{n-1} &amp; x_2^{n-1} &amp; \cdots &amp; x_n^{n-1} \end{vmatrix} =\Delta (x_1 ,x_2 ,\cdots ,x_n )$$</p>
+<p>叫作<strong>范德蒙德行列式</strong>，可按公式</p>
+<p>$$\Delta _n =\prod_{1\leq i &lt; j\leq n} (x_j -x_i ) \label{3} \tag{3} $$</p>
+<p>计算，或更详细地写成</p>
+<p>$$\Delta _n =(x_2 -x_1 )(x_3 -x_1 ) \cdots (x_n -x_1 )(x_3 -x_2 )\cdots (x_n -x_2 )\cdots (x_n -x_{n-1} )$$</p>
+<p>（回顾$\S 1$习题$1$与这一公式的联系）.特别地，当元素$x_1 ,\cdots ,x_n $两两不同时，范德蒙德行列式不等于零.它的这一性质经常被用到.根据$\S 1$定理$1$，我们也有</p>
+<p>$$\Delta _n =\begin{vmatrix} 1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-1} \\ 1 &amp; x_2 &amp; x_2^2 &amp; \cdots &amp; x_2^{n-1} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 1 &amp; x_n &amp; x_n^2 &amp; \cdots &amp; x_n^{n-1}\end{vmatrix} .$$</p>
+<p>现在对$n$作归纳法来证明公式$\eqref{3}$.假设当$m &lt; n$时，$\Delta _m $可由公式$\eqref{3}$计算，根据性质$\text{D7}$，对于每一个$i$，我们从行列式$\Delta _n $的第$i$行减去第$(i-1)$行乘以$x_1$：</p>
+<p>$$\Delta _n =\begin{vmatrix} 1 &amp; 1 &amp; \cdots &amp; 1 \\ 0 &amp; x_2 -x_1 &amp; \cdots &amp; x_n -x_1 \\ 0 &amp; x_2^2 -x_2 x_1 &amp; \cdots &amp; x_n^2 -x_n x_1 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; x_2^{n-1} -x_2^{n-2} x_1 &amp; \cdots &amp; x_n^{n-1} -x_n^{n-2} x_1 \end{vmatrix} $$</p>
+<p>现在将行列式按照第一列的元素展开，并在所得到的$(n-1)$阶行列式中将第$j$列$(j=1,2,\cdots ,n-1)$的公因子$x_{j+1} -x_1 $提到行列式符号的外面（行列式关于列的性质$\text{D1}$）.我们得到了表达式</p>
+<p>$$\begin{align}<br>\Delta _n &amp; =(x_n -x_1 )(x_{n-1} -x_1 ) \cdots (x_2 -x_1 ) \begin{vmatrix} 1 &amp; 1 &amp; \cdots &amp; 1 \\ x_2 &amp; x_3 &amp; \cdots &amp; x_n \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ x_2^{n-2} &amp; x_3^{n-2} &amp; \cdots &amp; x_n^{n-2} \end{vmatrix} \\<br> &amp; =(x_n -x_1 )(x_{n-1} -x_1 )\cdots (x_2 -x_1 ) \cdot \Delta (x_2 ,x_3 ,\cdots ,x_n ),<br>\end{align}$$</p>
+<p>由归纳条件对最后一个因子使用$\eqref{3}$</p>
+<p>$$\Delta (x_2 ,\cdots ,x_n ) =\prod_{2\leq i &lt; j\leq n } (x_j -x_i ).$$</p>
+<p><strong>例2</strong>$\quad $形如</p>
+<p>$$A=\begin{pmatrix} 0 &amp; a_{12} &amp; a_{13} &amp; \cdots &amp; a_{1n} \\ -a_{12} &amp; 0 &amp; a_{23} &amp; \cdots &amp; a_{2n} \\ -a_{13} &amp; -a_{23} &amp; 0 &amp; \cdots &amp; a_{3n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ -a_{1n} &amp; -a_{2n} &amp; -a_{3n} &amp; \cdots &amp; 0 \end{pmatrix} $$</p>
+<p>的矩阵$A=(a_{ij} )$叫作<strong>斜对称的</strong>（其行列式亦称为<strong>斜对称的</strong>）.换言之$\sideset{^t}{}A =-A$，考虑到$\S 1$的定理$1$，我们有</p>
+<p>$$\det A=\det \sideset{^t}{}A =\det (-A) =(-1)^n \det A,$$</p>
+<p>从而$[1+(-1)^{n-1}]\det A =0$.当$n$为奇数时，得到$\det A=0$，即任意奇数阶斜对称矩阵的行列式等于零.</p>
+<h2 id="特殊矩阵的行列式">特殊矩阵的行列式</h2><p>如果矩阵$A$的元素中有较多的零，并且它们的位置“较好”，那么计算行列式$\det A$比较容易.在某些情况下这样的直觉可以导致准确的公式.例如我们知道（见$\S 1(6)$式）（上或下）三角矩阵的行列式等于主对角线上元素之积.另一个重要的特殊情况是</p>
+<p><strong>定理2</strong>$\quad $设$m+n$阶行列式$D$在前$n$列与后$m$行的交叉处为$0$，则有下述公式：</p>
+<p>$$\begin{vmatrix} a_{11} &amp; \cdots &amp; a_{1n} &amp; a_{1,n+1} &amp; \cdots &amp; a_{1,n+m} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{nn} &amp; a_{n,n+1} &amp; \cdots &amp; a_{n,n+m} \\ 0 &amp; \cdots &amp; 0 &amp; b_{11} &amp; \cdots &amp; b_{1m} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; b_{m1} &amp; \cdots &amp; b_{mm} \end{vmatrix} = \begin{vmatrix} a_{11} &amp; \cdots &amp; a_{1n} \\ \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{nn} \end{vmatrix} \cdot \begin{vmatrix} b_{11} &amp; \cdots &amp; b_{1m} \\ \cdots &amp; \cdots &amp; \cdots \\ b_{m1} &amp; \cdots &amp; b_{mm} \end{vmatrix}$$</p>
+<p>（等式左边的行列式叫作<strong>准三角</strong>或<strong>带有零角的</strong>行列式）.</p>
+<p><strong>证明</strong>$\quad $首先固定$n(n+m)$个元素$a_{ij}$，并将行列式$D$看作元素$b_{kl}$的函数，$b_{kl}$组成一个$m$阶方阵$B$.因而所得函数可看作矩阵$B$的函数：$D=\mathcal{D} (B)$.</p>
+<p>显然，行列式$D$关于后$m$行的多重线性性质和斜对称性，等价于$\mathcal{D} (B)$关于$B$的行有同样的性质.这就意味着将$\S 1$定理$3$应用于$\mathcal{D} (B)$是合理的，因此$\mathcal{D} (B)=\mathcal{D} (E)\det B$.根据函数$\mathcal{D} $的定义，我们有：</p>
+<p>$$\mathcal{D} (E)=\begin{vmatrix} a_{11} &amp; \cdots &amp; a_{1n} &amp; a_{1,n+1} &amp; \cdots &amp; a_{1,n+m} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{nn} &amp; a_{n,n+1} &amp; \cdots &amp; a_{n,n+m} \\ 0 &amp; \cdots &amp; 0 &amp; 1 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \end{vmatrix} .$$</p>
+<p>按照最后一行展开$\mathcal{D} (E)$（见公式$\eqref{2}$），然后按倒数第二行展开等等.重复这一算法$m$次，我们得到$\mathcal{D} (E)=\det A$，其中</p>
+<p>$$A=\begin{pmatrix} a_{11} &amp; \cdots &amp; a_{1n} \\ \cdots &amp; \cdots &amp; \cdots \\ a_{n1} &amp; \cdots &amp; a_{nn} \end{pmatrix} .$$</p>
+<p>最后有$D=\mathcal{D} (B)=\det A\cdot \det B$.</p>
+<p>使用新符号可将定理$2$的公式写成更紧凑的形式</p>
+<p>$$\det \begin{pmatrix} A &amp; C \\ 0 &amp; B \end{pmatrix} =\det A \cdot \det B,\label{4} \tag{4} $$</p>
+<p>其中$A,B$是方阵，而$0$和$C$是长方阵.</p>
+<p>将$\S 1$的定理$1$和定理$2$结合起来，或使用定理$2$的证法直接论证，易得</p>
+<p>$$\det \begin{pmatrix} A &amp; 0 \\ C &amp; B \end{pmatrix} =\det A \cdot \det B.$$</p>
+<p>当我们试图写出行列式$\det \begin{pmatrix} C &amp; A \\ B &amp; 0 \end{pmatrix}$的表达式时，旋即得到了一个简单的反例$\begin{vmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{vmatrix} =-1$.问题在于符号.为了得到正确的结论，必须交换行或列，将矩阵$\begin{pmatrix} C &amp; A \\ B &amp; 0 \end{pmatrix}$化成$\begin{pmatrix} B &amp; 0 \\ C &amp; A \end{pmatrix}$或$\begin{pmatrix} A &amp; C \\ 0 &amp; B \end{pmatrix}$的形式.</p>
+<p>更简单的方法基于已使用过若干次的$\S 1$定理$3$.事实上</p>
+<p>$$\det \begin{pmatrix} C &amp; A \\ B &amp; 0 \end{pmatrix} =\det \begin{pmatrix} C &amp; A \\ E &amp; 0 \end{pmatrix} \cdot \det B.$$</p>
+<p>其次运用公式$\eqref{2}$ $m$次，得到</p>
+<p>$$\begin{align}<br>\det \begin{pmatrix} C &amp; A \\ E_m &amp; 0 \end{pmatrix} &amp; =\begin{vmatrix} &amp; &amp; &amp; a_{11} &amp; \cdots &amp; a_{1n} \\ &amp; \ast &amp; &amp; \cdots &amp; \cdots &amp; \cdots \\ &amp; &amp; &amp; a_{n1} &amp; \cdots &amp; a_{nn} \\ 1 &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; 1 &amp; 0 &amp; \cdots &amp; 0 \end{vmatrix} \\<br> &amp; =(-1)^{(n+2)+(n+4)+\cdots +(n+2m)} \det A =(-1)^{mn} \det A.<br>\end{align}$$</p>
+<p>最后，如果$A,B$分别是$n,m$阶方阵，则</p>
+<p>$$\det \begin{pmatrix} C &amp; A \\ B &amp; 0 \end{pmatrix} =(-1)^{nm} \det A\cdot \det B.\label{5} \tag{5} $$</p>
+<p>公式$\eqref{4}$和$\eqref{5}$包含在关于行列式展开的拉普拉斯一般定理中.但这个定理的使用面较窄，我们就不再讨论了，留给好学的读者作为下一节后面的练习.</p>
+<p>关于矩阵的行列式在理论方面最重要的论断是</p>
+<p><strong>定理3</strong>$\quad $设$A$和$B$是$n$阶方阵，则</p>
+<p>$$\det AB =\det A \cdot \det B.$$</p>
+<p><strong>证明</strong>$\quad $根据第$2$章$\S 3$公式$(7)$和$(9)$，可以将矩阵$(c_{ij} )=AB=(a_{ij} )(b_{ij} )$的系数用矩阵$A$和$B$的系数表示出来，第$i$行$(AB)_{(i)}$写成下式</p>
+<p>$$(AB)_{(i)} =(A_{(i)} B^{(1)} ,A_{(i)} B^{(2)} ,\cdots ,A_{(i)} B^{(n)} ),$$</p>
+<p>$$A_{(i)} B^{(j)} =\sum_{k=1}^n a_{ik} b^{kj} .$$</p>
+<p>固定矩阵$B$，任取矩阵$A$，令</p>
+<p>$${\mathcal{D}}_{B} (A) =\det AB.$$</p>
+<p>我们证明，函数$\mathcal{D} ={\mathcal{D}}_{B}$满足$\S 1$定理$3$的条件$i),ii)$.事实上，将$A_{(s)}$与$A_{(t)}$交换位置.由于矩阵$AB$的第$s$行和第$t$行形如</p>
+<p>$$(A_{(s)} B^{(1)} ,\cdots ,A_{(s)} B^{(n)} ),$$</p>
+<p>$$(A_{(t)} B^{(1)} ,\cdots ,A_{(t)} B^{(n)} ),$$</p>
+<p>那么$(AB)_{(s)}$与$(AB)_{(t)}$也交换了位置，于是根据定理$1$，</p>
+<p>$$\begin{align}<br> &amp; \mathcal{D} (\cdots ,A_{(s)} ,\cdots ,A_{(t)} ,\cdots ) \\<br> = &amp; \mathcal{D} (A) \\<br> = &amp; \det AB \\<br> = &amp; \det[\cdots ,(AB)_{(s)} ,\cdots ,(AB)_{(t)} ,\cdots ] \\<br> = &amp; -\det [\cdots ,(AB)_{(t)} ,\cdots ,(AB)_{(s)} ,\cdots ] \\<br> = &amp; -\mathcal{D} (\cdots ,A_{(t)} ,\cdots ,A_{(s)} ,\cdots ).<br>\end{align}$$</p>
+<p>进一步，$\det AB$是第$i$行$(AB)_{(i)}$的元素的线性函数：</p>
+<p>$$\det AB =\lambda_1 A_{(i)} B^{(1)} +\lambda_2 A_{(i)} B^{(2)} +\cdots +\lambda_n A_{(i)} B^{(n)} .$$</p>
+<p>所以$\mathcal{D} (A) =\displaystyle \sum_{j=1}^n \lambda_j \sum_{k=1}^n a_{ik} b_{kj} =\sum_{k=1}^n a_{ik} \sum_{j=1}^n \lambda_j b_{kj} =\sum_{k=1}^n \mu_k a_{ik}$，其中$\mu_k =\displaystyle \sum_{j=1}^n \lambda_j b_{kj}$是一个纯量，它不依赖于矩阵$A$的第$i$行的元素.</p>
+<p>我们看到$\mathcal{D}$对矩阵$A$的第$i$行的元素是线性的.</p>
+<p>这样，$\S 1$定理$3$的两个条件皆满足，故$\mathcal{D} (A) =\mathcal{D} (E)\cdot \det A$.但是根据定义$\mathcal{D} (E) =\det EB =\det B$.所求公式得证.</p>
+<p>当$n=2$时，定理$3$容易直接验证，但当$n=3$时，直接计算已经非常困难.然而在一般情况下，可以采用迂回手段，直接运用性质$\text{D1} \sim \text{D2} $，或运用定理$2$（见习题$3$）.</p>
+<h2 id="习题">习题</h2><p>$1$.整数$1798,2139,3255,4867$可以被$31$整除.不必计算，证明$4$阶行列式</p>
+<p>$$\begin{vmatrix} 1 &amp; 7 &amp; 9 &amp; 8 \\ 2 &amp; 1 &amp; 3 &amp; 9 \\ 3 &amp; 2 &amp; 5 &amp; 5 \\ 4 &amp; 8 &amp; 6 &amp; 7 \\ \end{vmatrix}$$</p>
+<p>也可以被$31$整除.</p>
+<p>证明$\quad $第一列乘以$1000$，第二列乘以$100$，第三列乘以$10$，分别加到第四列，得</p>
+<p>$$\begin{vmatrix} 1 &amp; 7 &amp; 9 &amp; 8 \\ 2 &amp; 1 &amp; 3 &amp; 9 \\ 3 &amp; 2 &amp; 5 &amp; 5 \\ 4 &amp; 8 &amp; 6 &amp; 7 \end{vmatrix} =\begin{vmatrix} 1 &amp; 7 &amp; 9 &amp; 1798 \\ 2 &amp; 1 &amp; 3 &amp; 2139 \\ 3 &amp; 2 &amp; 5 &amp; 3255 \\ 4 &amp; 8 &amp; 6 &amp; 4867 \end{vmatrix}$$</p>
+<p>第四列的数都可以被$31$整除，于是第四列包含$31$的倍数，这样$4$阶行列式的值也包含$31$的倍数，故其也可以被$31$整除.</p>
+<p>$2$.证明任意四阶斜对称行列式$\vert a_{ij} \vert$，其中$a_{ij} \in \mathbb{Z}$，是一个整数的平方.</p>
+<p><strong>注记</strong>$\quad $这对于任意阶的斜对称行列式都是对的.</p>
+<p>证明$\quad $对于任意的四阶斜对称行列式$\vert a_{ij} \vert$来说，其中$a_{ij} \in \mathbb{Z}$，则</p>
+<p>$$\begin{align}<br> &amp; \begin{vmatrix} 0 &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ -a_{12} &amp; 0 &amp; a_{23} &amp; a_{24} \\ -a_{13} &amp; -a_{23} &amp; 0 &amp; a_{34} \\ -a_{14} &amp; -a_{24} &amp; -a_{34} &amp; 0 \end{vmatrix} \\<br> = &amp; -\begin{vmatrix} a_{12} &amp; 0 &amp; a_{13} &amp; a_{14} \\ 0 &amp; -a_{12} &amp; a_{23} &amp; a_{24} \\ -a_{23} &amp; -a_{13} &amp; 0 &amp; a_{34} \\ -a_{24} &amp; -a_{14} &amp; -a_{34} &amp; 0 \end{vmatrix} \\<br> = &amp; -\begin{vmatrix} a_{12} &amp; 0 &amp; a_{13} &amp; a_{14} \\ 0 &amp; -a_{12} &amp; a_{23} &amp; a_{24} \\ 0 &amp; -a_{13} &amp; \dfrac{a_{23}}{a_{12}} a_{13} &amp; \dfrac{a_{23}}{a_{12}} a_{14} +a_{34} \\ -a_{24} &amp; -a_{14} &amp; -a_{34} &amp; 0 \end{vmatrix} \\<br> = &amp; -\begin{vmatrix} a_{12} &amp; 0 &amp; a_{13} &amp; a_{14} \\ 0 &amp; -a_{12} &amp; a_{23} &amp; a_{24} \\ 0 &amp; -a_{13} &amp; \dfrac{a_{23}}{a_{12}} a_{13} &amp; \dfrac{a_{23}}{a_{12}} a_{14} +a_{34} \\ 0 &amp; -a_{14} &amp; \dfrac{a_{24}}{a_{12}} a_{13} -a_{34} &amp; \dfrac{a_{24}}{a_{12}} a_{14} \end{vmatrix} \\<br> = &amp; -\begin{vmatrix} a_{12} &amp; 0 &amp; a_{13} &amp; a_{14} \\ 0 &amp; -a_{12} &amp; a_{23} &amp; a_{24} \\ 0 &amp; 0 &amp; 0 &amp; \dfrac{a_{23}}{a_{12}} a_{14} +a_{34} -\dfrac{a_{13}}{a_{12}} a_{24} \\ 0 &amp; -a_{14} &amp; \dfrac{a_{24}}{a_{12}} a_{13} -a_{34} &amp; \dfrac{a_{24}}{a_{12}} a_{14} \end{vmatrix} \\<br> = &amp; -\begin{vmatrix} a_{12} &amp; 0 &amp; a_{13} &amp; a_{14} \\ 0 &amp; -a_{12} &amp; a_{23} &amp; a_{24} \\ 0 &amp; 0 &amp; 0 &amp; \dfrac{a_{23}}{a_{12}} a_{14} +a_{34} -\dfrac{a_{13}}{a_{12}} a_{24} \\ 0 &amp; 0 &amp; \dfrac{a_{13}}{a_{12}} a_{24} -a_{34} -\dfrac{a_{23}}{a_{12}} a_{14} &amp; 0 \end{vmatrix} \\<br> = &amp; \begin{vmatrix} a_{12} &amp; 0 &amp; a_{13} &amp; a_{14} \\ 0 &amp; -a_{12} &amp; a_{23} &amp; a_{24} \\ 0 &amp; 0 &amp; \dfrac{a_{13}}{a_{12}} a_{24} -a_{34} -\dfrac{a_{23}}{a_{12}} a_{14} &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \dfrac{a_{23}}{a_{12}} a_{14} +a_{34} -\dfrac{a_{13}}{a_{12}} a_{24} \end{vmatrix} \\<br> = &amp; a_{12} \cdot (-a_{12} ) (\dfrac{a_{13}}{a_{12}} a_{24} -a_{34} -\dfrac{a_{23}}{a_{12}} a_{14} )(\dfrac{a_{23}}{a_{12}} a_{14} +a_{34} -\dfrac{a_{13}}{a_{12}} a_{24} ) \\<br> = &amp; a_{12}^2 (\dfrac{a_{13}}{a_{12}} a_{24} -a_{34} -\dfrac{a_{23}}{a_{12}} a_{14} )^2<br>\end{align}$$</p>
+<p>由上可知，任意四阶斜对称行列式$\vert a_{ij} \vert$，其中$a_{ij} \in \mathbb{Z}$，是一个整数的平方.</p>
+<p>$3$.用下述方法证明$\det AB=\det A\cdot \det B$（定理$3$）：令$2n\times 2n$阶辅助矩阵$C=\begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix}$运用Ⅱ型初等行变换将$C$化成</p>
+<p>$$C’=\begin{pmatrix} E &amp; B \\ 0 &amp; AB \end{pmatrix} .$$</p>
+<p>提示：利用等式$\det C=\det C’$和公式$\eqref{4}$，$\eqref{5}$.</p>
+<p>同样地，证明也可以根据第$2$章$\S 3$习题$17,18$给出，注意到$\begin{pmatrix} E &amp; A \\ 0 &amp; E \end{pmatrix}$是上三角矩阵.</p>
+<p>证明$\quad $令$2n\times 2n$阶辅助矩阵$C=\begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix}$，它的行列式等于</p>
+<p>$$(-1)^{n^2} \det (-A) \cdot \det B=(-1)^{n^2+n} \det A \cdot \det B =\det A \cdot \det B.$$</p>
+<p>为了与$\det AB $联系起来，我们把分块矩阵$C=\begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix}$的第一块行的$A$倍加到第二块行上，而这相当于在分块矩阵$C$的左边乘上一个相应的分块初等矩阵，即</p>
+<p>$$\begin{pmatrix} E &amp; 0 \\ A &amp; E \end{pmatrix} \begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix} =\begin{pmatrix} E &amp; B \\ 0 &amp; AB \end{pmatrix} \label{6} \tag{6}$$</p>
+<p>为了计算$\eqref{6}$式右端的分块矩阵的行列式，得用$\eqref{4}$式，得</p>
+<p>$$\det \begin{pmatrix} E &amp; B \\ 0 &amp; AB \end{pmatrix} =\det E\cdot \det AB =\det AB \label{7} \tag{7} .$$</p>
+<p>现在来计算$\eqref{6}$式左端的两个分块矩阵乘积的行列式.设$A=(a_{ij})$，因为</p>
+<p>$$\begin{align}<br>\begin{pmatrix} E &amp; 0 \\ 0 &amp; E \end{pmatrix} &amp; \xrightarrow[]{\begin{matrix} \displaystyle F_{n+1,1} (a_{11} ) \\ \cdots \\ \displaystyle F_{n+1,n} (a_{1n} ) \end{matrix} } \begin{pmatrix} E &amp; 0 \\ \begin{matrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ 0 &amp; 0 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp;  &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 \end{matrix} &amp; E \end{pmatrix} \\<br> &amp; \xrightarrow[]{\begin{matrix} \displaystyle F_{n+2,1} (a_{21} ) \\ \cdots \\ \displaystyle F_{n+2,n} (a_{2n} ) \end{matrix} } \begin{pmatrix} E &amp; 0 \\ \begin{matrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ 0 &amp; 0 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 \end{matrix} &amp; E \end{pmatrix} \\<br> &amp; \xrightarrow[]{Ⅱ型行变换} \cdots \xrightarrow[]{Ⅱ型行变换} \begin{pmatrix} E &amp; 0 \\ A &amp; E \end{pmatrix}\\<br>\end{align}$$</p>
+<p>所以据初等行变换与初等矩阵的乘法的关系得</p>
+<p>$$\begin{pmatrix} E &amp; 0 \\ A &amp; E \end{pmatrix} =P_t \cdots P_2 P_1 \begin{pmatrix} E &amp; 0 \\ 0 &amp; E \end{pmatrix} =P_t \cdots P_2 P_1 ,\\$$</p>
+<p>其中$P_1 ,P_2 ,\cdots ,P_t $是与上述Ⅱ型初等行变换相应的初等矩阵，并且$t=n^2$.于是$\eqref{6}$式左端为</p>
+<p>$$\begin{pmatrix} E &amp; 0 \\ A &amp; E \end{pmatrix} \begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix} =P_t \cdots P_2 P_1\begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix} .$$</p>
+<p>因为Ⅱ型初等行变换不改变矩阵的行列式的值，所以</p>
+<p>$$\det \begin{pmatrix} E &amp; 0 \\ A &amp; E \end{pmatrix} \begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix} =\det \begin{pmatrix} E &amp; B \\ -A &amp; 0 \end{pmatrix} =\det A\cdot \det B .\label{8} \tag{8} $$</p>
+<p>由$\eqref{6}$，$\eqref{7}$，$\eqref{8}$式得</p>
+<p>$$\det AB =\det A\cdot \det B.$$</p>
+<p>$4$.（扎哈洛夫В.И.——图拉，$1984$）在平稳随机过程模型的研究中，出现了下述行列式：</p>
+<p>$$\Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m )=\begin{vmatrix} M_{k_1}^n (x_1 ) \\ M_{k_2}^n (x_2 ) \\ \cdots \\ M_{k_m}^n (x_m )\end{vmatrix} ,$$</p>
+<p>其中$x_1 ,x_2 ,\cdots ,x_m$是未知量；$k_1 ,\cdots ,k_m$是自然数，$k_1 +k_2 +\cdots +k_m =n$；$M_{k}^n (x)$是$k\times n$阶矩阵，形如</p>
+<p>$$M_k^n (x)=\begin{pmatrix} 1 &amp; x &amp; x^2 &amp; \cdots &amp; x^{n-1} \\ 0 &amp; 1 &amp; \begin{pmatrix} 2 \\ 1 \end{pmatrix} x &amp; \cdots &amp; \begin{pmatrix} n-1 \\ 1 \end{pmatrix} x^{n-2} \\ 0 &amp; 0 &amp; 1 &amp; \cdots &amp; \begin{pmatrix} n-1 \\ 2 \end{pmatrix} x^{n-3} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \begin{pmatrix} n-1 \\ k-1 \end{pmatrix} x^{n-k} \end{pmatrix} .$$</p>
+<p>证明</p>
+<p>$$\Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m ) =\prod_{1\leq j &lt; i\leq m} (x_i -x_j )^{k_i k_j } .$$</p>
+<p>提示：当$k_1 =\cdots =k_m =1$时，即当$m=n$时，得到范德蒙德行列式.</p>
+<p>证明$\quad $将$\Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m )$的第$n-1,n-2,\cdots ,2,1$列各乘以$-x_1 $，然后分别加到第$n,n-1,\cdots ,2$列，得</p>
+<p>$$\begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; 1 &amp; (\displaystyle {2\choose 1} -{1\choose 1} )x_1 &amp; \cdots &amp; (\displaystyle {n-1\choose 1} -{n-2\choose 1} )x_1^{n-2} \\ 0 &amp; 0 &amp; 1 &amp; \cdots &amp; (\displaystyle {n-1\choose 2} -{n-2\choose 2} )x_1^{n-3} \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; (\displaystyle {n-1\choose k_1 -1 }-{n-2\choose k_1 -1 } )x_1^{n-k_1} \\ 1 &amp; x_2 -x_1 &amp; (x_2 -x_1 )x_2 &amp; \cdots &amp; (x_2 -x_1 ) x_2^{n-2} \\ 0 &amp; 1 &amp; \displaystyle {2\choose 1} x_2 -{1\choose 1} x_1 &amp; \cdots &amp; \displaystyle {n-1\choose 1} x_2^{n-2} -{n-2\choose 1} x_1 x_2^{n-3} \\ 0 &amp; 0 &amp; 1 &amp; \cdots &amp; \displaystyle {n-1\choose 2} x_2^{n-3} -{n-2\choose 2} x_1 x_2^{n-4} \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \displaystyle {n-1\choose k_2 -1} x_2^{n-k_2}-{n-2\choose k_2 -1} x_1 x_2^{n-k_1 -1} \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 1 &amp; x_m -x_1 &amp; (x_m -x_1 )x_m &amp; \cdots &amp; (x_m -x_1 ) x_m^{n-2} \\ 0 &amp; 1 &amp; \displaystyle {2\choose 1} x_m -{1\choose 1} x_1 &amp; \cdots &amp; \displaystyle {n-1\choose 1} x_m^{n-2} -{n-2\choose 1} x_1 x_m^{n-3} \\ 0 &amp; 0 &amp; 1 &amp; \cdots &amp; \displaystyle {n-1\choose 2} x_m^{n-3} -{n-2\choose 2} x_1 x_m^{n-4} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \displaystyle {n-1\choose k_m -1} x_m^{n-k_m}-{n-2\choose k_m -1}  x_1 x_m^{n-k_m -1} \end{vmatrix} ,$$</p>
+<p>并按第$1$行展开得到一个$n-1$阶行列式，设为$\Delta _{n-1}$，也即</p>
+<p>$$\begin{align}<br> &amp; \Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m ) \\<br>= &amp; \begin{vmatrix} 1 &amp; (\displaystyle {2\choose 1} -{1\choose 1} )x_1 &amp; \cdots &amp; (\displaystyle {n-1\choose 1} -{n-2\choose 1} )x_1^{n-2} \\ 0 &amp; 1 &amp; \cdots &amp; (\displaystyle {n-1\choose 2} -{n-2\choose 2} )x_1^{n-3} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; (\displaystyle {n-1\choose k_1 -1 }-{n-2\choose k_1 -1 } )x_1^{n-k_1} \\ x_2 -x_1 &amp; (x_2 -x_1 )x_2 &amp; \cdots &amp; (x_2 -x_1 ) x_2^{n-2} \\ 1 &amp; \displaystyle {2\choose 1} x_2 -{1\choose 1} x_1 &amp; \cdots &amp; \displaystyle {n-1\choose 1} x_2^{n-2} -{n-2\choose 1} x_1 x_2^{n-3} \\ 0 &amp; 1 &amp; \cdots &amp; \displaystyle {n-1\choose 2} x_2^{n-3} -{n-2\choose 2} x_1 x_2^{n-4} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; \displaystyle {n-1\choose k_2 -1} x_2^{n-k_2}-{n-2\choose k_2 -1} x_1 x_2^{n-k_1 -1} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ x_m -x_1 &amp; (x_m -x_1 )x_m &amp; \cdots &amp; (x_m -x_1 ) x_m^{n-2} \\ 1 &amp; \displaystyle {2\choose 1} x_m -{1\choose 1} x_1 &amp; \cdots &amp; \displaystyle {n-1\choose 1} x_m^{n-2} -{n-2\choose 1} x_1 x_m^{n-3} \\ 0 &amp; 1 &amp; \cdots &amp; \displaystyle {n-1\choose 2} x_m^{n-3} -{n-2\choose 2} x_1 x_m^{n-4} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; \displaystyle {n-1\choose k_m -1} x_m^{n-k_m}-{n-2\choose k_m -1}  x_1 x_m^{n-k_m -1} \end{vmatrix} \\<br>\overset{\triangle }{=} &amp; \Delta _{n-1} (n-1阶)<br>\end{align}$$</p>
+<p>显然，$\Delta _{n-1}$的第$1$行是$n-1$维向量$(1,x_1 ,\cdots ,x_1^{n-2} )$，$\Delta _{n-1}$的第$2$行是$(0,1,\cdots ,\displaystyle {n-2\choose 1} x_1^{n-3} )$，$\Delta _{n-1}$的第$3$行是$(0,0,\cdots ,\displaystyle {n-2\choose 2} x_1^{n-4} )$，$\cdots $，$\Delta _{n-1}$的第$k_1 -1$行是$(0,0,\cdots ,0,1,\displaystyle {n-2\choose k_1 -2 } x_1 ,\cdots ,{n-2\choose k_1 -2 } x_1^{n-k_1 } )$，从而知$\Delta _{n-1}$的前第$k_1 -1$行是$M_{k_1 -1}^{n-1} (x_1 )$，又易知$x_2 -x_1 $是$\Delta _{n-1}$的第$k_1 $行各元素的公因子，故第$k_1 $行可变成（将$x_2 -x_1 $提到行列式的外边相乘）：$(1,x_2 ,x_2^2 ,\cdots ,x_2^{n-2} )$.</p>
+<p>再把第$k_1 $行乘以$-1$加到第$k_1 +1$行上去，得第$k_1 +1$行为：</p>
+<p>$$\begin{align}<br> &amp; (0,(\displaystyle {2\choose 1} -{1\choose 0})x_2 -{1\choose 1} x_1 ,\cdots ,(\displaystyle {n-1\choose 1} -{n-2\choose 0})x_2^{n-2} -{n-2\choose 1} x_1 x_2^{n-3} ) \\<br>= &amp; (0,x_2 -x_1 ,\cdots ,{n-2\choose 1} (x_2 -x_1 ) x_2^{n-3}),<br>\end{align}$$</p>
+<p>它也有公因子$(x_2 -x_1 )$，也提到行列式外边相乘，这时$k_1 +1$行变为：$(0,1,\displaystyle {2\choose 1} x_2 ,\cdots ,{n-2\choose 1} x_2^{n-3})$.</p>
+<p>再把第$k_1 +1$行乘以$-1$加到第$k_1 +2$行，于是第$k_1 +2$行变为：</p>
+<p>$$\begin{align}<br> &amp; (0,0,(\displaystyle {3\choose 2} -{2\choose 1})x_2 -{2\choose 2} x_1 ,\cdots ,(\displaystyle {n-1\choose 2} -{n-2\choose 1})x_2^{n-3} -{n-2\choose 2} x_1 x_2^{n-4} ) \\<br>= &amp; (0,0,x_2 -x_1 ,\cdots ,{n-2\choose 2} (x_2 -x_1 ) x_2^{n-4}),<br>\end{align}$$</p>
+<p>它也有公因子$(x_2 -x_1 )$，可提到行列式外边相乘，这时第$k_1 +2$行变为：$\displaystyle (0,0,1,\cdots ,{n-2\choose 2} x_2^{n-4})$.这样一直进行到第$k_1 +k_2 -1$行（共$k_2 $次）为：$\displaystyle (0,0,\cdots ,0,1,\cdots ,{n-2\choose k_2 -1} x_2^{n-k_2 -1})$，而提到行列式外面的因子为$(x_2 -x_1 )^{k_2}$.</p>
+<p>同理，可依次得出$\Delta _{n-1}$的其余$n-k_1 -k_2 +1$行，最后得出</p>
+<p>$$\Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m ) =\prod_{i=2}^m (x_i -x_1 )^{k_i} \begin{vmatrix} M_{k_1 -1}^{n-1} (x_1 ) \\ M_{k_2}^{n-1} (x_2 ) \\ \cdots \\ M_{k_m}^{n-1} (x_m )\end{vmatrix} =\prod_{i=2}^m (x_i -x_1 )^{k_i} \Delta _{n-1} (k_1 -1,x_1 ;k_2 ,x_2;\cdots ;k_m ,x_m ),$$</p>
+<p>即有</p>
+<p>$$\Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m ) =\prod_{i=2}^m (x_i -x_1 )^{k_i} \Delta _{n-1} (k_1 -1,x_1 ;k_2 ,x_2;\cdots ;k_m ,x_m ),$$</p>
+<p>反复用上式即得</p>
+<p>$$\begin{align}<br> &amp; \Delta _n (k_1 ,x_1 ;\cdots ;k_m ,x_m ) \\<br>= &amp; (x_2 -x_1 )^{k_2} \cdots (x_m -x_1 )^{k_m } \Delta _{n-1} (k_1 -1,x_1 ;k_2 ,x_2;\cdots ;k_m ,x_m ) \\<br>= &amp; (x_2 -x_1 )^{2k_2} \cdots (x_m -x_1 )^{2k_m } \Delta _{n-2} (k_1 -2,x_1 ;k_2 ,x_2;\cdots ;k_m ,x_m ) \\<br>\cdots &amp; =(x_2 -x_1 )^{k_1 k_2} \cdots (x_m -x_1 )^{k_1 k_m } \Delta _{n-k_1 } (k_2 ,x_2;\cdots ;k_m ,x_m ) \\<br>= &amp; \prod_{2\leq i\leq m} (x_i -x_1 )^{k_1 k_i }\Delta _{n-k_1 } (k_2 ,x_2;\cdots ;k_m ,x_m ) \\<br>\cdots &amp; = \prod_{2\leq i\leq m} (x_i -x_1 )^{k_1 k_i } \prod_{3\leq i\leq m} (x_i -x_2 )^{k_2 k_i } \Delta _{n-k_1 -k_2 } (k_3 ,x_3;\cdots ;k_m ,x_m ) \\<br>= &amp; \prod_{2\leq i\leq m} (x_i -x_1 )^{k_1 k_i } \prod_{3\leq i\leq m} (x_i -x_2 )^{k_2 k_i } \prod_{4\leq i\leq m} (x_i -x_3 )^{k_3 k_i }\Delta _{n-k_1 -k_2 -k_3 } (k_4 ,x_4 ,\cdots ;k_m ,x_m ) \\<br>\cdots &amp; =\prod_{2\leq i\leq m} (x_i -x_1 )^{k_1 k_i } \prod_{3\leq i\leq m} (x_i -x_2 )^{k_2 k_i } \cdots (x_m -x_{m-1} )^{k_m k_{m-1} } \\<br>= &amp; \prod_{1\leq j &lt; i\leq m} (x_i -x_j )^{k_i k_j } ,<br>\end{align}$$</p>
+<p>得证.</p>
+<blockquote>
+<p>参考：普丰山，陈军.广义范德蒙行列式及其应用.河南科学:第24卷第5期,2006年10月.</p>
+</blockquote>
+<p>$5$.证明</p>
+<p>$$\begin{align}<br>B_n (s,t) &amp; =\begin{vmatrix} \displaystyle {s\choose t} &amp; \displaystyle {s\choose t+1} &amp; \cdots &amp; \displaystyle {s\choose t+n-1} \\ \displaystyle {s+1\choose t} &amp; \displaystyle {s+1\choose t+1} &amp; \cdots &amp; \displaystyle {s+1\choose t+n-1} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ \displaystyle {s+n-1\choose t} &amp; \displaystyle {s+n-1\choose t+1} &amp; \cdots &amp; \displaystyle {s+n-1\choose t+n-1} \end{vmatrix} \\<br> &amp; =\dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t\choose n} }{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n\choose n} } .<br>\end{align}$$</p>
+<p>提示：逐次从第$k$行中提出$(s+k-1),k=1,2,\cdots ,n$，然后从第$l$列中提出$\dfrac{1}{t+l-1}$，$l=1,2,\cdots ,n$.直到第一列中除了$1$之外不再含有其他元素.</p>
+<p>证明$\quad $根据题意，</p>
+<p>$$\begin{align}<br>B_n (s,t) &amp; =\begin{vmatrix} \dfrac{s!}{(s-t)!t!} &amp; \dfrac{s!}{(s-t-1)!(t+1)!} &amp; \cdots &amp; \dfrac{s!}{(s-t-n+1)!(t+n-1)!} \\ \dfrac{(s+1)!}{(s+1-t)!t!} &amp; \dfrac{(s+1)!}{(s-t)!(t+1)!} &amp; \cdots &amp; \dfrac{(s+1)!}{(s-t-n+2)!(t+n-1)!} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ \dfrac{(s+n-1)!}{(s+n-1-t)!t!} &amp; \dfrac{(s+n-1)!}{(s+n-t-2)!(t+1)!} &amp; \cdots &amp; \dfrac{(s+n-1)!}{(s-t)!(t+n-1)!} \end{vmatrix}<br>\end{align}$$</p>
+<p>当第$i=1,2,\cdots ,t$次时，从第$k$行中提出$(s+k-i),k=1,2,\cdots ,n$，然后从第$l$列中提出$\dfrac{1}{t+l-i}$，$l=1,2,\cdots ,n$，得到</p>
+<p>$$\begin{align}<br> &amp; B_n (s,t) \\<br>= &amp; \dfrac{s\cdots (s+n-1)}{t\cdots (t+n-1)} \\<br> &amp; \cdot \begin{vmatrix} \dfrac{(s-1)!}{(s-t)!(t-1)!} &amp; \dfrac{(s-1)!}{(s-t-1)!t!} &amp; \cdots &amp; \dfrac{(s-1)!}{(s-t-n+1)!(t+n-2)!} \\ \dfrac{s!}{(s+1-t)!(t-1)!} &amp; \dfrac{s!}{(s-t)!t!} &amp; \cdots &amp; \dfrac{s!}{(s-t-n+2)!(t+n-2)!} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ \dfrac{(s+n-2)!}{(s+n-1-t)!(t-1)!} &amp; \dfrac{(s+n-2)!}{(s+n-t-2)!t!} &amp; \cdots &amp; \dfrac{(s+n-2)!}{(s-t)!(t+n-2)!} \end{vmatrix} \\<br>= &amp; \dfrac{s\cdots (s+n-1)}{t\cdots (t+n-1)} \dfrac{(s-1)\cdots (s+n-2)}{(t-1)\cdots (t+n-2)} \\<br> &amp; \cdot \begin{vmatrix} \dfrac{(s-2)!}{(s-t)!(t-2)!} &amp; \dfrac{(s-2)!}{(s-t-1)!(t-1)!} &amp; \cdots &amp; \dfrac{(s-2)!}{(s-t-n+1)!(t+n-3)!} \\ \dfrac{(s-1)!}{(s+1-t)!(t-2)!} &amp; \dfrac{(s-1)!}{(s-t)!(t-1)!} &amp; \cdots &amp; \dfrac{(s-1)!}{(s-t-n+2)!(t+n-3)!} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ \dfrac{(s+n-3)!}{(s+n-1-t)!(t-2)!} &amp; \dfrac{(s+n-3)!}{(s+n-t-2)!(t-1)!} &amp; \cdots &amp; \dfrac{(s+n-3)!}{(s-t)!(t+n-3)!} \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} }{\displaystyle {n+t-1\choose n} {n+t-2\choose n}} \\<br> &amp; \cdot \begin{vmatrix} \dfrac{(s-2)!}{(s-t)!(t-2)!} &amp; \dfrac{(s-2)!}{(s-t-1)!(t-1)!} &amp; \cdots &amp; \dfrac{(s-2)!}{(s-t-n+1)!(t+n-3)!} \\ \dfrac{(s-1)!}{(s+1-t)!(t-2)!} &amp; \dfrac{(s-1)!}{(s-t)!(t-1)!} &amp; \cdots &amp; \dfrac{(s-1)!}{(s-t-n+2)!(t+n-3)!} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ \dfrac{(s+n-3)!}{(s+n-1-t)!(t-2)!} &amp; \dfrac{(s+n-3)!}{(s+n-t-2)!(t-1)!} &amp; \cdots &amp; \dfrac{(s+n-3)!}{(s-t)!(t+n-3)!} \end{vmatrix} \\<br>= &amp; \cdots \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} }{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} } \\<br> &amp; \cdot \begin{vmatrix} \dfrac{(s-t+1)!}{(s-t)!1!} &amp; \dfrac{(s-t+1)!}{(s-t-1)!2!} &amp; \cdots &amp; \dfrac{(s-t+1)!}{(s-t-n+1)!n!} \\ \dfrac{(s-t+2)!}{(s+1-t)!1!} &amp; \dfrac{(s-t+2)!}{(s-t)!2!} &amp; \cdots &amp; \dfrac{(s-t+2)!}{(s-t-n+2)!n!} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ \dfrac{(s+n-t)!}{(s+n-1-t)!1!} &amp; \dfrac{(s+n-t)!}{(s+n-t-2)!2!} &amp; \cdots &amp; \dfrac{(s+n-t)!}{(s-t)!n!} \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} } \\<br> &amp; \cdot \begin{vmatrix} \dfrac{(s-t)!}{(s-t)!} &amp; \dfrac{(s-t)!}{(s-t-1)!1!} &amp; \cdots &amp; \dfrac{(s-t)!}{(s-t-n+1)!(n-1)!} \\ \dfrac{(s-t+1)!}{(s+1-t)!} &amp; \dfrac{(s-t+1)!}{(s-t)!1!} &amp; \cdots &amp; \dfrac{(s-t+1)!}{(s-t-n+2)!(n-1)!} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ \dfrac{(s+n-t-1)!}{(s+n-1-t)!} &amp; \dfrac{(s+n-t-1)!}{(s+n-t-2)!1!} &amp; \cdots &amp; \dfrac{(s+n-t-1)!}{(s-t)!(n-1)!} \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} } \\<br> &amp; \cdot \begin{vmatrix} 1 &amp; s-t &amp; \displaystyle {s-t\choose 2} &amp; \cdots &amp; \displaystyle {s-t\choose n-1} \\  1 &amp; s-t+1 &amp; \displaystyle {s-t+1\choose 2} &amp; \cdots &amp; \displaystyle {s-t+1\choose n-1} \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 1 &amp; s-t+n-2 &amp; \displaystyle {s-t+n-2\choose 2} &amp; \cdots &amp; \displaystyle {s-t+n-2\choose n-1} \\ 1 &amp; s-t+n-1 &amp; \displaystyle {s-t+n-1\choose 2} &amp; \cdots &amp; \displaystyle {s-t+n-1\choose n-1} \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} } \\<br> &amp; \cdot \begin{vmatrix} 1 &amp; s-t &amp; \displaystyle {s-t\choose 2} &amp; \cdots &amp; \displaystyle {s-t\choose n-1} \\ 0 &amp; 1 &amp; \displaystyle {s-t\choose 1} &amp; \cdots &amp; \displaystyle {s-t\choose n-2} \\ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 1 &amp; \displaystyle {s-t+n-3\choose 1} &amp; \cdots &amp; \displaystyle {s-t+n-3\choose n-2} \\ 0 &amp; 1 &amp; \displaystyle {s-t+n-2\choose 1} &amp; \cdots &amp; \displaystyle {s-t+n-2\choose n-2} \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} } \\<br> &amp; \cdot \begin{vmatrix} 1 &amp; \displaystyle {s-t\choose 1} &amp; \cdots &amp; \displaystyle {s-t\choose n-2} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 1 &amp; \displaystyle {s-t+n-3\choose 1} &amp; \cdots &amp; \displaystyle {s-t+n-3\choose n-2} \\ 1 &amp; \displaystyle {s-t+n-2\choose 1} &amp; \cdots &amp; \displaystyle {s-t+n-2\choose n-2} \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} } \\<br> &amp; \cdot \begin{vmatrix} 1 &amp; \displaystyle {s-t\choose 1} &amp; \cdots &amp; \displaystyle {s-t\choose n-2} \\ 0 &amp; 1 &amp; \cdots &amp; \displaystyle {s-t-1\choose n-3} \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ 0 &amp; 1 &amp; \cdots &amp; \displaystyle {s-t+n-4\choose n-3} \\ 0 &amp; 1 &amp; \cdots &amp; \displaystyle {s-t+n-3\choose n-3} \end{vmatrix} \\<br>= &amp; \cdots \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} } \cdot \begin{vmatrix} 1 \end{vmatrix} \\<br>= &amp; \dfrac{\displaystyle {n+s-1\choose n} {n+s-2\choose n} \cdots {n+s-t+1\choose n} {n+s-t\choose n}}{\displaystyle {n+t-1\choose n} {n+t-2\choose n} \cdots {n+1\choose n} {n\choose n} }<br>\end{align}$$</p>
+<p>得证.</p>
+<p>$6$.设</p>
+<p>$$C_n (\lambda _1 ,\cdots ,\lambda _n )=\begin{pmatrix} \lambda _1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; \lambda _2 &amp; 1 &amp;  \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda _{n-2} &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; \lambda _{n-1} &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; -1 &amp; \lambda _n \end{pmatrix} .$$</p>
+<p>证明$\det C_n =\lambda _n C_{n-1} +\det C_{n-2}$.当$\lambda _1 =\lambda _2 =\cdots =\lambda _n =1$时，求出数值$\det C_n $.</p>
+<p>提示：用第$2$章$\S 3$第$3$段的例$3$，并注意到事实$\det C_n (1,\cdots ,1)=(-1)^n \det C_n (-1,\cdots ,-1)$.</p>
+<p>证明：$(1)\;$矩阵$C_n $的行列式从最后一行展开，得</p>
+<p>$$\begin{align}<br> &amp; \begin{vmatrix} \lambda _1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; \lambda _2 &amp; 1 &amp;  \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda _{n-2} &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; \lambda _{n-1} &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; -1 &amp; \lambda _n \end{vmatrix} \\<br>= &amp; \lambda _n \begin{vmatrix} \lambda _1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ -1 &amp; \lambda _2 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda _{n-2} &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; \lambda _{n-1} \end{vmatrix} +(-1)^{n+(n-1)}\cdot (-1) \begin{vmatrix} \lambda _1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ -1 &amp; \lambda _2 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda _{n-2} &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; 1 \end{vmatrix} \\<br>= &amp; \lambda _n \begin{vmatrix} \lambda _1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ -1 &amp; \lambda _2 &amp; 1 &amp;  \cdots &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda _{n-2} &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; \lambda _{n-1} \end{vmatrix} +(-1)^{n+(n-1)}\cdot (-1) \begin{vmatrix} \lambda _1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ -1 &amp; \lambda _2 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda _{n-3} &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; \lambda _{n-2} \end{vmatrix} ,\\<br>\end{align}$$</p>
+<p>由上可知，$\det C_n =\lambda _n C_{n-1} +\det C_{n-2}$.</p>
+<p>$(2)\;$当$\lambda _1 =\lambda _2 =\cdots =\lambda _n =1$时，令$\alpha +\beta =1$，$\alpha \beta =-1$，则$\alpha ,\beta $是方程</p>
+<p>$$x^2-x-1 =0$$</p>
+<p>的两个根：</p>
+<p>$$\alpha =\dfrac{1+\sqrt{5} }{2} ,\beta =\dfrac{1-\sqrt{5} }{2} .$$</p>
+<p>于是</p>
+<p>$$\begin{align}<br> &amp; \det C_n (1,\cdots ,1) \\<br>= &amp; \det C_n \\<br>= &amp; \begin{vmatrix} 1 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; -1 &amp; 1 \end{vmatrix} \\<br>= &amp; \begin{vmatrix} \alpha +\beta &amp; 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \alpha \beta &amp; \alpha +\beta &amp; 1 &amp;  \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \alpha +\beta &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \alpha \beta &amp; \alpha +\beta &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; \alpha \beta &amp; \alpha +\beta \end{vmatrix} .\\<br>\end{align}$$</p>
+<p>当$n\geq 3$时，按第$1$行展开，得</p>
+<p>$$\begin{align}<br> &amp; \det C_n \\<br>= &amp; (\alpha +\beta )\det C_{n-1} +(-1)^{1+2} 1 \cdot \alpha \beta \cdot \det C_{n-2} \\<br>= &amp; (\alpha +\beta )\det C_{n-1} -\alpha \beta \det C_{n-2} .\label{9} \tag{9} \\<br>\end{align}$$</p>
+<p>由$\eqref{9}$式得</p>
+<p>$$\det C_n -\alpha \det C_{n-1} =\beta (\det C_{n-1} -\alpha \det C_{n-2} ).$$</p>
+<p>于是$\det C_2 -\alpha \det C_1 ,\det C_3 -\alpha \det C_2 ,\cdots ,\det C_n -\alpha \det C_{n-1}$是公比为$\beta $的等比数列.从而</p>
+<p>$$\det C_n -\alpha \det C_{n-1} =(\det C_2 -\alpha \det C_1 )\beta ^{n-2} .$$</p>
+<p>由于$\det C_1 =\vert \alpha +\beta \vert =\alpha +\beta $，</p>
+<p>$$\det C_2 =\begin{vmatrix} \alpha +\beta &amp; 1 \\ \alpha \beta &amp; \alpha +\beta \end{vmatrix} =(\alpha +\beta )^2 -\alpha \beta =\alpha ^2 +\alpha \beta +\beta ^2.$$</p>
+<p>因此$\det C_2 -\alpha \det C_1 =\beta ^2$.从而</p>
+<p>$$\det C_n -\alpha C_{n-1} =\beta ^n .\label{10} \tag{10} $$</p>
+<p>由$\eqref{9}$式又可得出</p>
+<p>$$\det C_n -\beta \det C_{n-1} =\alpha (\det C_{n-1} -\beta \det C_{n-2} ).$$</p>
+<p>同理可得</p>
+<p>$$\det C_n -\beta \det C_{n-1} =\alpha ^n .\label{11} \tag{11} $$</p>
+<p>联立$\eqref{10}$，$\eqref{11} $式，解得</p>
+<p>$$\det C_n =\dfrac{\alpha ^{n+1} -\beta ^{n+1}}{\alpha -\beta } .\\label{12} \tag{12} $$</p>
+<p>当$n=1,2$时，公式$\eqref{12}$也成立.</p>
+<p>故</p>
+<p>$$\det C_n =\dfrac{\left( \dfrac{1+\sqrt{5}}{2} \right) ^{n+1} -\left( \dfrac{1-\sqrt{5}}{2} \right) ^{n+1}}{\sqrt{5}} .$$</p>
+<p>$7$.证明$n\times n$矩阵</p>
+<p>$$A_n =\begin{pmatrix} 2 &amp; -1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; 2 &amp; -1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 2 &amp; -1 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; 2 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; -1 &amp; 2 \end{pmatrix} $$</p>
+<p>的行列式等于$n+1$.</p>
+<p>证明$\quad n=1$时，$A_1 =\vert 2\vert =2$.下面设$n &gt; 1$，把第$2,3,\cdots ,n$列都加到第$1$列上，然后按第$1$列展开：</p>
+<p>$$\begin{align}<br> &amp; \det A_n \\<br>= &amp; \begin{vmatrix} 2 &amp; -1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; -1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 2 &amp; -1 &amp; \cdots &amp; 0 &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; -1 &amp; 2 &amp; -1 \\ 1 &amp; 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; -1 &amp; 2 \end{vmatrix} \\<br>= &amp; 1\cdot \det A_{n-1} +(-1)^{n+1} 1\cdot (-1)^{n-1} \\<br>= &amp; \det A_{n-1} +1.<br>\end{align}$$</p>
+<p>由此看出，$\det A_1 ,\det A_2 ,\cdots ,\det A_n $是首项为$2$，公差为$1$的等差数列.</p>
+<p>因此</p>
+<p>$$\det A_n =2+(n-1)\cdot 1=n+1.$$</p>
+<p>$8$.设$A,B$是任意$n$阶方阵.证明</p>
+<p>$$\det \begin{pmatrix} A &amp; B \\ B &amp; A \end{pmatrix} =\det (A+B) \cdot \det (A-B) .$$</p>
+<p>证明</p>
+<p>$$\begin{align}<br>\begin{pmatrix} A &amp; B \\ B &amp; A \end{pmatrix} &amp; \xrightarrow[]{F_{1,2} (1)} \begin{pmatrix} A+B &amp; B+A \\ B &amp; A \end{pmatrix} \\<br> &amp; \xrightarrow[F_{2,1} (-1)]{} \begin{pmatrix} A+B &amp; 0 \\ B &amp; A-B \end{pmatrix} .<br>\end{align}$$</p>
+<p>于是</p>
+<p>$$\begin{pmatrix} E &amp; E \\ 0 &amp; E \end{pmatrix} \begin{pmatrix} A &amp; B \\ B &amp; A \end{pmatrix} \begin{pmatrix} E &amp; -E \\ 0 &amp; E \end{pmatrix} =\begin{pmatrix} A+B &amp; 0 \\ B &amp; A-B \end{pmatrix} .$$</p>
+<p>两边取行列式，得</p>
+<p>$$\det \begin{pmatrix} A &amp; B \\ B &amp; A \end{pmatrix} =\det (A+B) \cdot \det (A-B) .$$</p>
+<p>$9$.设$X$是$n\times k$矩阵而$Y$是$k\times n$矩阵.证明</p>
+<p>$$\det (E_n +XY)=\det (E_k +YX).$$</p>
+<p>提示：利用关系式</p>
+<p>$$\begin{pmatrix} E_k +YX &amp; 0 \\ X &amp; E_n \end{pmatrix} \begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix}=\begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix} \begin{pmatrix} E_k &amp; 0 \\ X &amp; E_n +XY \end{pmatrix}.$$</p>
+<p>证明$\quad $引入矩阵$\begin{pmatrix} E_k +YX &amp; Y+YXY \\ X &amp; E_n +XY \end{pmatrix}$.</p>
+<p>因为</p>
+<p>$$\begin{pmatrix} E_k +YX &amp; 0 \\ X &amp; E_n \end{pmatrix} \begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix} =\begin{pmatrix} E_k +YX &amp; Y+YXY \\ X &amp; E_n +XY \end{pmatrix} ,$$</p>
+<p>$$\begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix} \begin{pmatrix} E_k &amp; 0 \\ X &amp; E_n +XY \end{pmatrix} =\begin{pmatrix} E_k +YX &amp; Y+YXY \\ X &amp; E_n +XY \end{pmatrix} .$$</p>
+<p>故有</p>
+<p>$$\begin{pmatrix} E_k +YX &amp; 0 \\ X &amp; E_n \end{pmatrix} \begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix}=\begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix} \begin{pmatrix} E_k &amp; 0 \\ X &amp; E_n +XY \end{pmatrix}.$$</p>
+<p>于是</p>
+<p>$$\det \begin{pmatrix} E_k +YX &amp; 0 \\ X &amp; E_n \end{pmatrix} \det \begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix}=\det \begin{pmatrix} E_k &amp; Y \\ 0 &amp; E_n \end{pmatrix} \det \begin{pmatrix} E_k &amp; 0 \\ X &amp; E_n +XY \end{pmatrix} ,$$</p>
+<p>得</p>
+<p>$$\det (E_k +YX) \cdot \det E_n \cdot \det E_k \cdot \det E_n =\det E_k \cdot \det E_n \cdot \det E_k \cdot \det (E_n +XY) ,$$</p>
+<p>即</p>
+<p>$$\det (E_n +XY)=\det (E_k +YX).$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/20/2015/05/daishuxueyinlun132/" data-title="《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/20/2015/05/daishuxueyinlun133/" title="《代数学引论(第一卷)基础代数》 第3章 行列式 3 行列式的应用">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第3章 行列式 3 行列式的应用</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/20/2015/05/weijifenxuejiaocheng123/"  title="《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 第二章 一元函数 3 无穷小及无穷大的分阶
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/20/2015/05/daishuxueyinlun132/" data-title="《代数学引论(第一卷)基础代数》 第3章 行列式 2 行列式的进一步性质" data-url="http://yoursite.com/2015/10/20/2015/05/daishuxueyinlun132/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#行列式按一行或一列的元素展开"><span class="toc-number">1.</span> <span class="toc-text">行列式按一行或一列的元素展开</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊矩阵的行列式"><span class="toc-number">2.</span> <span class="toc-text">特殊矩阵的行列式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">3.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

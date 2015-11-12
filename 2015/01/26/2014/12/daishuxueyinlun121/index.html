@@ -1,0 +1,869 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="行和列的向量空间">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间">
+<meta property="og:url" content="http://yoursite.com/2015/01/26/2014/12/daishuxueyinlun121/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="行和列的向量空间">
+<meta property="og:updated_time" content="2015-11-08T07:29:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间">
+<meta name="twitter:description" content="行和列的向量空间">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/01/26/2014/12/daishuxueyinlun121/" title="《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间" itemprop="url">《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-01-26T00:24:28.000Z" itemprop="datePublished"> 發表於 2015-01-26</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题的提出"><span class="toc-number">1.</span> <span class="toc-text">问题的提出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本定义"><span class="toc-number">2.</span> <span class="toc-text">基本定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线性组合-线性包"><span class="toc-number">3.</span> <span class="toc-text">线性组合.线性包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线性相关性"><span class="toc-number">4.</span> <span class="toc-text">线性相关性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基-维数"><span class="toc-number">5.</span> <span class="toc-text">基.维数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">6.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<p>在第一章$\S 3$<a href="http://linjianhang.me/blog/2014/10/daishuxueyinlun113/" target="_blank" rel="external">线性方程组初步</a>中介绍的长方矩阵是如此常见，以至于随着时间的推移产生了数学的一个独立的分支——矩阵论.矩阵论是在$19$世纪中叶建立起来的，稍后与线性代数的发展同步，逐渐得到了完善和精确.到目前为止，矩阵论仍然是重要的研究工具，既适合于实际应用，又适合于现代数学的抽象结构.我们将在本章给出矩阵论最简要的结果.</p>
+<p>矩阵是向量空间的线性映射的自然伴侣.在线性代数与几何教程中[$\text{BA}$Ⅱ]，我们将赋予这一论断精确的含义.在本章中，空间，向量，线性相关性，方程组的秩等概念将从纯代数的方面展开，以满足我们直接目标的需要.</p>
+<h2 id="问题的提出">问题的提出</h2><p>由于线性方程组，我们研究了含义各不相同的长为$n$的行.它们是$m\times n$矩阵$A=(a_{ij })$的行$(a_{i1 } ,a_{i2 } ,\cdots ,a_{in } )$，$1\leq i \leq m$，以及系数矩阵为$A$的线性方程组的解$(x_1^0 ,x_2^0 ,\cdots ,x_n^0)$.在第$1$章$\S 3$，把一个线性方程组或矩阵化为阶梯形时，除(Ⅰ)型初等变换运用了两种重要的运算：将一行乘以一个常数并加到另一行上.对于齐次线性方程组的解也可以施行这两种运算.事实上，如果$(x’_1 ,x’_2 ,\cdots ,x’_n )$和$(x’’_1 ,x’’_2 ,\cdots ,x’’_n )$是线性方程组</p>
+<p>$$a_{i1} x_1 +a_{i2} x_2 +\cdots +a_{in} x_n =0,i=1,2,\cdots ,m$$</p>
+<p>的两个解，$\alpha ,\beta$是任意两个实数，则行</p>
+<p>$$(\alpha x’_1 +\beta x’’_1 ,\alpha x’_2 +\beta x’’_2 ,\cdots ,\alpha x’_n +\beta x’’_n )$$</p>
+<p>也是我们的方程组的解：</p>
+<p>$$\begin{align}<br>&amp; a_{i1} (\alpha x’_1 +\beta x’’_1 ) +a_{i2} (\alpha x’_2 +\beta x’’_2 ) +\cdots +a_{in} (\alpha x’_n +\beta x’’_n ) \\<br>= &amp; \alpha (a_{i1} x’_1 +a_{i2} x’_2 +\cdots +a_{in} x’_n )+\beta (a_{i1} x’’_1 +a_{i2} x’’_2 +\cdots +a_{in} x’’_n)\\<br>= &amp; 0<br>\end{align}$$</p>
+<p>另一方面，任意的行，无论它代表什么，都是一般集合$\mathbb{R}^n$中的一个元素，其中$\mathbb{R}^n$是实数集$\mathbb{R}$的$n$次笛卡儿幂.所以我们希望去研究这种一般的对象，然后将其性质自然地运用到矩阵和齐次线性方程组的解上.</p>
+<h2 id="基本定义">基本定义</h2><p>设$n$是一个固定的自然数.$\mathbb{R}$上长为$n$的行向量空间指集合$\mathbb{R}^n$(其元素称为<strong>行向量</strong>或简称<strong>向量</strong>)，连同向量的加法以及<strong>纯量</strong>(实数)与向量的乘法运算.纯量用小写拉丁字母或希腊字母表示，而向量像矩阵一样用大写拉丁字母表示.事实上，向量$X=(x_1 ,x_2 ,\cdots ,x_n )$可以看成一个$1\times n$矩阵.设$Y=(y_1 ,y_2 ,\cdots ,y_n )$也是一个向量，$\lambda$是纯量.根据定义</p>
+<p>$$X+Y=(x_1 +y_1 ,x_2 +y_2 ,\cdots ,x_n +y_n ),$$</p>
+<p>$$\lambda X=(\lambda x_1 ,\lambda x_2 ,\cdots ,\lambda x_n ).$$</p>
+<p>零向量$(0,0,\cdots ,0)$今后用一般的符号$0$表示.此外$\mathbb{R}^1$显然与$\mathbb{R}$恒同.</p>
+<p>读者熟知的实数的运算法则无条件地适用于$\mathbb{R}^n$.尽管列举它们是枯燥的，但给出它们的精确定义，有助于理解抽象的向量空间，我们将在后面的线性代数和几何课程中学习这种向量空间.</p>
+<p>$VS_1$：$X+Y=Y+X$对任意向量$X,Y\in \mathbb{R}^n$成立(交换律)；</p>
+<p>$VS_2$：$(X+Y)+Z=X+(Y+Z)$对任意三个向量$X,Y,Z\in \mathbb{R}^n$成立(结合律)；</p>
+<p>$VS_3$：存在一个特别的(零)向量$0$，使得$X+0=X$对所有的$X\in \mathbb{R}^n$成立；</p>
+<p>$VS_4$：每个向量$X\in \mathbb{R}^n$对应一个负向量$-X$，使得$X+(-X)=0$；</p>
+<p>$VS_5$：$1X=X$对所有的$X\in \mathbb{R}^n$成立；</p>
+<p>$VS_6$：$(\alpha \beta )X=\alpha (\beta X)$对所有的$\alpha ，\beta \in \mathbb{R},X\in \mathbb{R}^n$成立；</p>
+<p>$VS_7$：$(\alpha +\beta )X=\alpha X+\beta X$；</p>
+<p>$VS_8$：$\alpha (X+Y)=\alpha X+\alpha Y$.</p>
+<p>在$VS_3$和$VS_4$中向量$0$及$-X$的唯一性是所列法则的简单推论(如果考虑抽象的向量空间则是公理)，我们不做推导，而将它们看作明显的事实.</p>
+<p>术语“向量”(或线性)空间的起源在第一学期的解析几何课程中已有说明，在那里建立了笛卡儿平面的点(向量)与它们的坐标$(x,y)$之间的一一对应.由平行四边形法则给出的向量的加法和用数去乘向量恰好对应于$\mathbb{R}^2$中向量的运算.</p>
+<p>除了长为$n$的行向量空间外，也可以考虑高为$n$的列向量组成的向量空间</p>
+<p>$$\begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}=[x_1 ,x_2 ,\cdots ,x_n ],$$</p>
+<p>列向量表示成我们在第$1$章$\S 3$中约定的样子.显然，行空间和列空间之间的区别纯属约定，但我们很快就会看到，给出空间的两种形式是有益处的.一般来说，我们从上下文就可以判断考虑的是行空间还是列空间，所以不引进任何特别的记号来加以区分.</p>
+<h2 id="线性组合-线性包">线性组合.线性包</h2><p>设$X_1 ,X_2 ,\cdots ,X_k$是向量空间$\mathbb{R}^n$中的向量，$\alpha _1 ,\alpha _2 ,\cdots ,\alpha _k$是纯量.向量$X=\alpha _1 X_1 +\alpha _2 X_2 +\cdots +\alpha _k X_k $叫作向量$X_i$的带有系数$\alpha _i$的<strong>线性组合</strong>.例如，</p>
+<p>$$(2,3,5,5)-3(1,1,1,1)+2(1,0,-1,-1)=(1,0,0,0).$$</p>
+<p>其次设$Y=\beta _1 X_1 +\beta _2 X_2 +\cdots +\beta _k X_k$是同样的向量$X_i$带有系数$\beta _i$的线性组合，而$\alpha ,\beta \in \mathbb{R}$.则</p>
+<p>$$\begin{align}<br>\alpha X +\beta Y &amp; =\alpha (\alpha _1 X_1 +\alpha _2 X_2 +\cdots +\alpha _k X_k ) +\beta (\beta _1 X_1 +\beta _2 X_2 +\cdots +\beta _k X_k) \\<br> &amp; = (\alpha \alpha _1 +\beta \beta _1 )X_1 +(\alpha \alpha _2 +\beta \beta _2 )X_2 +\cdots +(\alpha \alpha _k +\beta \beta _k )X_k<br>\end{align}$$</p>
+<p>也是向量$X_i$的线性组合，其系数为$\alpha \alpha _i +\beta \beta _i$.于是我们看到，由给定向量组$X_1 ,X_2 ,\cdots ,X_k$的所有线性组合构成的集合$V$具有性质</p>
+<p>$$X,Y \in V \Rightarrow \alpha X+\beta Y \in V \label{1}\tag{1}$$</p>
+<p>对所有的$\alpha ,\beta \in \mathbb{R}$成立.特别地，零向量永远包含在$V$中.</p>
+<p>$V$通常用符号$\langle X_1 ,X_2 ,\cdots ,X_k \rangle$表示，并称之为向量组$X_1 ,X_2 ,\cdots ,X_k$的<strong>线性包</strong>(或简称<strong>包</strong>).通常称包$\langle X_1 ,X_2 ,\cdots ,X_k \rangle$是在$X_1 ,X_2 ,\cdots ,X_k$上<strong>张成的</strong>，或称由向量$X_1 ,X_2 ,\cdots ,X_k$上<strong>生成的</strong>.</p>
+<p>可以定义任意子集$S\subset \mathbb{R}^n$的线性包$\langle S \rangle$，$\langle S \rangle$是$S$中的任意有限个向量的任意线性组合构成的集合.显然，如果$V$是$\mathbb{R}^n$中的一个线性包，则$\langle V \rangle =V$：$V$当中向量的任意线性组合仍属于$V$.特别地，$S\subset V \Rightarrow \langle S \rangle \subset V$，也就是说线性包$\langle S \rangle$可以定义成$\mathbb{R}^n$中包有$S$的任意向量的集合的线性包的交：</p>
+<p>$$\langle S \rangle =\underset{S\subset V}{\bigcap}V.\label{2}\tag{2}$$</p>
+<p>初看起来结论并不明显，需要验证$\eqref{2}$式右边线性包的交集还是一个线性包.事实上如果$X,Y\in \bigcap V$那么对于这个集合中的每一个$V$，$X,Y\in V$.这就意味着$\alpha X+\beta Y \in V$对所有的$\alpha ,\beta \in \mathbb{R}$成立，从而给出了所需的包含关系$\alpha X+\beta Y \in \bigcap V$.与交不同，两个线性包$U$和$V$的并$U\bigcup V$一般来说不是一个线性包，例如在$\mathbb{R}^2$中，$U=\lbrace (\lambda ,0)\mid \lambda \in \mathbb{R}\rbrace$，$V=\lbrace (0,\lambda )\mid \lambda \in \mathbb{R}\rbrace$.</p>
+<p><strong>例$1$</strong> 设</p>
+<p>$$U_m =\lbrace (\lambda _1 ,\cdots ,\lambda _m ,0,\cdots ,0)\mid \lambda _i \in \mathbb{R}\rbrace \subset \mathbb{R}^n ,$$ </p>
+<p>$$V_m =\lbrace (0,\cdots ,0,\lambda _{m+1 } ,\cdots ,\lambda _n )\mid \lambda _i \in \mathbb{R} \rbrace \subset \mathbb{R}^n ,$$</p>
+<p>$0 &lt; m &lt; n$.直接验证可知$U_m ,V_m$都是线性包，并且$\langle U_m ,V_m \rangle =\mathbb{R}^n$，$U_m \bigcap V_m =\lbrace 0\rbrace $.</p>
+<p><strong>例$2$</strong> 在空间$\mathbb{R}^n$中考察<strong>单位行向量</strong></p>
+<p>$$E_{(1)} =(1,0,\cdots ,0),E_{(2)} =(0,1,\cdots ,0),\cdots ,E_{(n)} =(0,0,\cdots ,1).\label{3}\tag{3}$$</p>
+<p>每一个向量$X=(x_1 ,x_2 ,\cdots ,x_n )$可唯一地表示成$X=x_1 E_{(1)} +x_2 E_{(2)} +\cdots +x_n E_{(n)}$.所以</p>
+<p>$$\mathbb{R}^n =\langle E_{(1)} ,E_{(2)} ,\cdots ,E_{(n)} \rangle .$$</p>
+<p><strong>单位列向量</strong>将记作</p>
+<p>$$E^{(1)} =[1,0,\cdots ,0],E^{(2)} =[0,1,\cdots ,0],\cdots ,E^{(n)} =[0,0,\cdots ,1].\label{31}\tag{3′}$$</p>
+<h2 id="线性相关性">线性相关性</h2><p>空间$\mathbb{R}^n$的向量组$X_1 ,\cdots ,X_k$称为<strong>线性相关的</strong>，如果可以找到$k$个不全为零的数$\alpha _1 ,\cdots ,\alpha _k$，使得</p>
+<p>$$\alpha _1 X_1 +\alpha _2 X_2 +\cdots +\alpha _k X_k =0\label{4}\tag{4}$$</p>
+<p>(右边是零向量).并称线性式$\eqref{4}$为非平凡的.如果$\alpha _1 X_1 +\alpha _2 X_2 +\cdots +\alpha _k X_k =0\Rightarrow \alpha _1 =\alpha _2 =\cdots =\alpha _k =0$，则向量$X_1 ,X_2 ，\cdots ,X_k$叫作<strong>线性无关的</strong>.</p>
+<p>第$3$段例$2$表明，单位向量$E_{(1)} ,E_{(2)} ,\cdots ,E_{(n)} $是线性无关的.一个向量$X\neq 0$显然总是线性无关，因为$(\lambda X=0 ,X\neq 0)\Rightarrow \lambda =0$.其次，$X_1 ,X_2 ，\cdots ,X_k$是线性无关的这一性质与向量的顺序无关，因为$\eqref{4}$式中的项$\alpha _i X_i$可以用任意顺序排列.</p>
+<p><strong>定理$1$</strong> 下述论断成立</p>
+<p>$i)$如果向量组$\lbrace X_1 ,\cdots ,X_k \rbrace$的某一个部分组是线性相关的，则向量组本身也是线性相关的.</p>
+<p>$ii)$线性无关的向量组$\lbrace X_1 ,\cdots ,X_k \rbrace$的任意部分组都是线性无关的.</p>
+<p>$iii)$在线性相关的向量$X_1 ,\cdots ,X_k$中间，至少有一个向量是其余向量的线性组合.</p>
+<p>$iv)$如果向量$X_1 ,\cdots ,X_k$中间有一个向量是其余向量的线性组合，则向量$X_1 ,\cdots ,X_k$是线性相关的.</p>
+<p>$v)$如果向量$X_1 ,\cdots ,X_k$线性无关，而$X_1 ,\cdots ,X_k ,X$线性相关，则$X$是向量$X_1 ,\cdots ,X_k$的线性组合.</p>
+<p>$vi)$如果向量$X_1 ,\cdots ,X_k$线性无关，而向量$X_{k+1 }$不能表示成它们的线性组合，则向量组$\lbrace X_1 ,\cdots ,X_k ,X_{k+1 }\rbrace $是线性无关的.</p>
+<p><strong>证明</strong> $i)$设前$s$个向量$X_1 ,\cdots ,X_s ,s &lt; k$是线性相关的，即存在不全为零的$\alpha _i$，使得</p>
+<p>$$\alpha _1 X_1 +\cdots +\alpha _s X_s =0.$$</p>
+<p>令$\alpha _{s+1 } =\cdots =\alpha _k =0$，我们得到一个非平凡关系</p>
+<p>$$\alpha _1 X_1 +\cdots +\alpha _s X_s +\alpha _{s+1 } X_{s+1 } +\cdots +\alpha _k X_k=0.$$</p>
+<p>论断$ii)$从$i)$立即得出(用反证法).</p>
+<p>$iii)$不失一般性，设在关系式$\eqref{4}$中$\alpha _k \neq 0$.则</p>
+<p>$$X_k =-\dfrac{\alpha _1 }{\alpha _k }X_1 -\cdots -\dfrac{\alpha _{k-1 } }{\alpha _k }X_k .$$</p>
+<p>$iv)$设$X_k =\beta _1 X_1 +\cdots +\beta _{k-1 } X_{k-1 } $.令$\alpha _1 =\beta _1 ,\cdots ,\alpha _{k-1 } =\beta _{k-1 } ,\alpha _k =-1 $，得到关系式$\eqref{4}$，且系数$\alpha _k \neq 0$.</p>
+<p>$v)$如果有非平凡的关系式</p>
+<p>$$\beta _1 X_1 +\cdots +\beta _k X_k +\beta X=0$$</p>
+<p>使得$\beta \neq 0$，则$X$是$X_1 ,\cdots ,X_k$的线性组合.若$\beta =0$，则由$X_1 ,\cdots ,X_k$线性无关的条件，知$\beta _1 =\cdots =\beta _k =0$，与关系式的非平凡性矛盾.</p>
+<p>论断$vi)$由$v)$立即得出.$\quad \quad \square$</p>
+<h2 id="基-维数">基.维数</h2><p>我们现在给出一个重要的</p>
+<p><strong>定义</strong> 设$V$是$\mathbb{R}^n$中的一个非零线性包.向量组$X_1 ,\cdots ,X_r \in V$称为$V$的<strong>基</strong>，如果它们是线性无关的，且它们生成的线性包与$V$重合：</p>
+<p>$$\langle X_1 ,\cdots ,X_k \rangle =V.$$</p>
+<p>从基和向量组的线性包的定义推出，每一个向量$X\in V$都可以唯一地写成$X=\alpha _1 X_1 +\cdots +\alpha _k X_k $的形式.系数$\alpha _1 ,\cdots ,\alpha _k \in \mathbb{R}$叫作$X$相对于基$X_1 ,\cdots ,X_k $的<strong>坐标</strong>.</p>
+<p>正如我们已经看到的，线性无关的单位向量$\eqref{3}$生成$\mathbb{R}^n$.于是，$\lbrace E_{(1) } ,E_{(2) } ,\cdots ,E_{(n) } \rbrace $成为向量空间$\mathbb{R}^n$的基，称之为<strong>标准基</strong>.但它不是$\mathbb{R}^n$中唯一的基.例如</p>
+<p>$$E’_{(1) } =E_{(1) } ,E’_{(2) } =E_{(1) } +E_{(2) } ,E’_{(3) } =E_{(1) } +E_{(2) } +E_{(3) } ,\cdots $$</p>
+<p>$$E’_{(n) } =E_{(1) } +E_{(2) } +\cdots +E_{(n) } $$</p>
+<p>也是空间$\mathbb{R}^n$的基(仔细验证).另一方面，直到现在尚未明确，是否$\mathbb{R}^n$中的每一个线性包都有一组基，如果有，基向量的个数是否不变.这两个问题的回答都是肯定的.我们的认证基于下述引理.</p>
+<p><strong>引理</strong> 设$V$是$\mathbb{R}^n$中的一个以$X_1 ,\cdots ,X_r $为基的线性包.而$Y_1 ,Y_2 ,\cdots ,Y_s $是$V$中一个线性无关的向量组.则$s\leq r$.</p>
+<p><strong>证明</strong> 就像$V$中所有的向量一样，$Y_1 ,Y_2 ,\cdots ,Y_s $是基向量的线性组合.设</p>
+<p>$$Y_1 =a_{11 } X_1 +a_{21 } X_2 +\cdots +a_{r1 } X_r ,$$</p>
+<p>$$Y_2 =a_{12 } X_1 +a_{22 } X_2 +\cdots +a_{r2 } X_r ,$$</p>
+<p>$$\cdots \cdots \cdots \cdots $$</p>
+<p>$$Y_s =a_{1s } X_1 +a_{2s } X_2 +\cdots +a_{rs } X_r ,$$</p>
+<p>其中$a_{ij } $是纯量(是唯一确定的向量$Y_j$的坐标，但后一点目前对我们并不重要).</p>
+<p>用反证法.假设$s &gt; r$.写出$Y_j$的以$x_j$为系数的线性组合：</p>
+<p>$$x_1 Y_1 +\cdots +x_s Y_s =(a_{11 } x_1 +a_{12 } x_2 +\cdots +a_{1s } x_s )X_1 +\cdots +(a_{r1 } x_1 +a_{r2 } x_2 +\cdots +a_{rs } x_s )X_r ,$$</p>
+<p>并考察含有$r$个方程，$s$个未知数的线性方程组</p>
+<p>$$a_{11 } x_1 +a_{12 } x_2 +\cdots +a_{1s } x_s =0,$$</p>
+<p>$$\cdots \cdots \cdots \cdots $$</p>
+<p>$$a_{r1 } x_1 +a_{r2 } x_2 +\cdots +a_{rs } x_s =0.$$</p>
+<p>因为假设$s &gt; r$，根据第$1$章$\S 3$推论$2$，我们的方程组有非零解$(x_1^0 ,\cdots ,x_s^0 )$.我们得到了一个非平凡的线性关系</p>
+<p>$$x_1^0 Y_1 +x_2^0 Y_2 +\cdots +x_s^0 Y_s =0,$$</p>
+<p>与引理的条件矛盾.这就意味着$s\leq r$.</p>
+<p><strong>定理$2$</strong> $\mathbb{R}^n$中的每一个非零线性包$V\subset \mathbb{R}^n$都有一组有限基.线性包$V$的所有的基都含有相同个数的向量.这个个数$r\leq n$，称$r$为线性包$V$的维数，记作$\text{dim}_{\mathbb{R} } V$或简记作$\text{dim} V$.</p>
+<p><strong>证明</strong> 根据条件，$V$包含有至少一个非零向量$X_1$(行或列).设我们已在$V$中找到了一个线性无关的向量组$\lbrace X_1 ,\cdots ,X_k \rbrace $.如果线性包$\langle X_1 ,\cdots ,X_k \rangle $不等于$V$，那么我们在$V$中选出一个向量$X_{k+1 } \notin \langle X_1 ,\cdots ,X_k \rangle $.换言之，$X_{k+1} $不是$X_1 ,\cdots ,X_k$的线性组合.根据定理$1$，$vi)$，向量组$\lbrace X_1 ,\cdots ,X_k x_{k+1 } \rbrace $是线性无关的.这一扩充线性无关向量组的过程可以无限制地继续下去，但是所有的向量都在$\mathbb{R}^n =\langle E_{(1) } ,E_{(2) } ,\cdots ,E_{(n) } \rangle $中，而引理证明了，$\mathbb{R}^n$中任意的线性无关组最多包含有$n$个向量.因而对于某个自然数$r\leq n$，线性无关组$X_1 ,\cdots ,X_k ,\cdots ,X_r \in V$成为<strong>极大的</strong>，即任取$V$中的向量$X\neq 0$，向量组$\lbrace X_1 ,\cdots ,X_r ,X\rbrace $是线性相关的.由定理$1,v)$，有$X\in \rangle X_1 ,\cdots ,X_r \rangle $.所以$V=\langle X_1 ,\cdots ,X_r \rangle $，而向量$X_1 ,\cdots ,X_r $构成$V$的一组基.</p>
+<p>现在设$Y_1 ,\cdots ,Y_s$也是$V$的一组基.根据引理，我们有不等式$s\leq r$.交换$X_1 ,\cdots ,X_r$与$Y_1 ,\cdots ,Y_s$的位置，再一次由引理得到不等式$r\leq s$.因此$s=r$.定理得证.$\quad \quad \square$</p>
+<p>尽管不太必要，我们还是指出，上述所有的讨论既适合于行空间，也适合于列空间.</p>
+<p>这样，$\mathbb{R}^n$中的每一个非零线性包$V$都具有一个正整数$r\leq n$，称之为维数$r=\text{dim } V$.特别地$\text{dim} \mathbb{R}^n=n$.向量空间的这一重要参数也可以用其他的方法进行刻画.维数另一种可能的定义基于向量组秩的概念.即如果$\lbrace X_1 ,X_2 ,\cdots \rbrace $是$\mathbb{R}^n$中的一个向量组(可能是无限的)，则如我们所知道的，线性包$\langle x_1 ,\cdots \rangle $的维数不超过$n$.这一维数叫作向量组$\lbrace X_1 ,X_2 ,\cdots \rbrace $的<strong>秩</strong>：</p>
+<p>$$\text{rank} \lbrace X_1 ,X_2 ,\cdots \rbrace =\text{dim} \langle X_1 ,X_2 ,\cdots \rangle .$$</p>
+<p>当$V=\lbrace 0\rbrace $时，显然可以认为$\text{dim} V=0$.</p>
+<h2 id="习题">习题</h2><p>$1$.设$U$和$V$是$\mathbb{R}^n$中的两个线性包，线性包$\langle U\cup V\rangle $叫作$U$与$V$的<strong>和</strong>： </p>
+<p>$$U+V=\langle U\cup V\rangle =\lbrace u+v \mid u\in U ,v\in V\rbrace $$</p>
+<p>如果$U\cap V=0$，则称$U+V$为<strong>直和</strong>，记作$U\oplus V$.</p>
+<p>设$V=V_1 \oplus V_2 $，且$X=X_1 +X_2 =X’_1 +X’_2 $是向量$X\in V$的两种线性组合，此处$X_1 ,X’_1 \in V_1 $，$X_2 ,X’_2 \in V_2 $，则有$X_1 -X’_1 =X_2 -X’_2 \in V_1 \cap V_2 $，因为$V_1 \cap V_2 =0$，所以$X_1 =X’_1 ,X_2 =X’_2 $.</p>
+<p>证明逆命题：如果对于每一个向量$X\in V$，写法$X=X_1 +X_2 $都是唯一的，此处$X_i \in V_i$，则和式$V=V_1 +V_2 $都是直和.更一般地，如果$V_1 ,\cdots ,V_k$是$\mathbb{R}^n$中的线性包，并且对于每一个向量$X\in V$，表法$X=X_1 +\cdots +X_k$都是唯一的，此处$X_i \in V_i$，则称$V=V_1 \oplus \cdots V_k$为<strong>直和</strong>.</p>
+<p>证明：根据写法$X=X_1 +X_2$都是唯一的，此处$X_i \in V_i $，那么可知零向量的分解式也是唯一的.这说明$0=0+0\in V_1 +V_2 $，所以$V_1 \cap V_2 =0$$，根据定义，得和式$V=V_1 +V_2 $是直和.</p>
+<p>同理可证$V=V_1 +\cdots +V_k $是直和.</p>
+<p>$2$.设$V,V_1$和$V_2$都是$\mathbb{R}^n$中的线性包，并且$V\subset V_1 +V_2$.等式$V=V\cap V_1 +V\cap V_2$永远成立吗？在$V_1 \subset V$的特殊情况下，这一关系式成立吗？</p>
+<p>解：由于$V\subset V_1 +V_2 $，因此，$V=V\cap (V_1 +V_2 )$.于是有</p>
+<p>$$V=V\cap (V_1 +V_2 ) \supset V\cap V_1 +V\cap V_2 ,$$</p>
+<p>并且的确有不相等的例子.例如，在几何空间$V$中，设$V_1 ,V_2 ,V$是过原的三个平面，且它们相交于同一条直线$L$.由于$V,V_1 ,V_2 $相交于同一条直线$L$，因此$V\cap V_1 +V\cap V_2 =L$，而$V\nsupseteq L$.</p>
+<p>如果$V_1 \subset V$，那么有$V=V\cap V_1 +V\cap V_2$.理由如下：任取$\alpha \in V$，由于$V\subset V_1 +V_2 $，因此$\alpha \in V_1 +V_2 $.从而有</p>
+<p>$$\alpha =\alpha _1 +\alpha _2 ,\alpha _1 \in V_1 ,\alpha _2 \in V_2 .$$</p>
+<p>由于$V_1 \subset V$，因此$\alpha _1 \in V$.从而$\alpha _2 =\alpha -\alpha _1 \in V$.于是$\alpha _2 \in V\cap V_2 $.由此得到，$\alpha =\alpha _1 +\alpha _2 \in V\cap V_1 +V\cap V_2 $.因此$V\subset V\cap V_1 +V\cap V_2 $.又由于$V\supset V\cap V_1 +V\cap V_2 $，所以$V=V\cap V_1 +V\cap V_2$.</p>
+<p>$3$.设$V$是$\mathbb{R}^n$中的一个线性包.如果$V=U\oplus W$是一个直和分解，则$W$叫作$U$在$V$中的一个<strong>补</strong>.而$U$叫作$W$在$V$中的一个<strong>补</strong>.$U$在$V$中的补是唯一确定的吗？试比较$W$与集合论概念下的补集$V\backslash U$(见$\S 5$第$1$段).</p>
+<p>解：$U$在$V$中的补不是唯一确定的.例如，在几何空间中，设$\pi $是过原点$O$的一个平面，则任意一条经过$O$点但不在$\pi $上的直线都是$\pi $的补空间.</p>
+<p>两个集合$V$与$U$的差集$V\backslash U$指属于$V$但不属于$U$的元素的全体.在这里一般不假设$U\subset V$.如果$U$是$V$的子集，也称$V\backslash U$为$U$在$V$中的补集.</p>
+<p>$4$.证明向量$X_1 =(1,2,3),X_2 =(3,2,1)$是线性无关的，考察线性包$V=\langle X_1 ,X_2 \rangle $；证明向量$X=(-5,2,9)$属于$V$，并计算$X$在基$X_1 ,X_2 $下的系数；求$V$在$\mathbb{R}^3$中的任意一个补.</p>
+<p>证明：令$\alpha _1 X_1 +\alpha _2 X_2 =0$，则$(\alpha _1 +3\alpha _2 ,2\alpha _1 +2\alpha _2 ,3\alpha _1 +\alpha _2 )=0$，可求得$\alpha _1 =0 $，$\alpha _2 =0$，因此向量$X_1 =(1,2,3),X_2 =(3,2,1)$是线性无关的.</p>
+<p>对于线性包$V=\langle X_1 ,X_2 \rangle $来说，设$X=\alpha _1 X_1 +\alpha _2 X_2 $，即$(-5,2,9)=\alpha _1 (1,2,3)+\alpha _2 (3,2,1)$，可解得$\alpha _1 =4$，$\alpha _2 =-3$.可知向量$X=(-5,2,9)$属于$V$，$X$在基$X_1 ,X_2 $下的系数分别是$4,-3$.</p>
+<p>由于$X_1 ,X_2 $线性无关，把它扩充成$\mathbb{R}^3$的一个基，取$X_3 =(1,0,-2)$.由于矩阵$A=[X_1 ,X_2 ,X_3 ]$的行列式不为$0$，因此$X_1 ,X_2 ,X_3 $线性无关，从而它是$\mathbb{R}^3$的一个基，于是$\mathbb{R}^3 =\langle X_1 ,X_2 \rangle \oplus \langle X_3 \rangle $.由此得出，$\langle X_3 \rangle $是$V$在$\mathbb{R}^3$的一个补空间.</p>
+<p>$5$.证明，$\mathbb{R}^n$中的向量组$X_1 ,\cdots ,X_n$张成$\mathbb{R}^n$，当且仅当它们是线性无关的.</p>
+<p>证明：充分性.若$\mathbb{R}^n$中的向量组$X_1 ,\cdots ,X_n$能张成$\mathbb{R}^n$，则根据定义，$\mathbb{R}^n$里的任意$n$维向量可以由向量组$X_1 ,\cdots ,X_n $线性表出，则其单位向量组$\varepsilon _1 ,\cdots ,\varepsilon _n $可由向量组$X_1 ,\cdots ,X_n $线性表出.设$W=\langle \varepsilon _1 ,\cdots ,\varepsilon _n \rangle $，$U=\langle X_1 ,\cdots ,X_n \rangle $.那么可在$W$中取一个基，其应为$\varepsilon _1 ,\cdots ,\varepsilon _n $，在$U$中取一个基$X_1 ,\cdots ,X_s (s\leq n)$.因为$\varepsilon _i \in \langle X_1 ,\cdots ,X_n \rangle i=1,2,\cdots ,n$，从而$W\subset U$.于是单位向量组$\varepsilon _1 ,\cdots ,\varepsilon _n $可以由向量组$X_1 ,\cdots ,X_s $线性表出.又由于$\varepsilon _1 ,\cdots ,\varepsilon _n$线性无关，得$n \leq s$.</p>
+<p>另一方面，因为向量组$X_1 ,\cdots ,X_n $是一组$n$维向量，所以它们的秩$s\leq n$.</p>
+<p>从而$s=n$，这说明向量组$X_1 ,\cdots ,X_n $是线性无关的.</p>
+<p>必要性.若$\mathbb{R}^n$中的向量组$X_1 ,\cdots ,X_n$是线性无关的，在$\mathbb{R}^n$中任取一个向量$\beta $.其中：</p>
+<p>$$X_1 =\begin{pmatrix} x_{11} \\  x_{12} \\ \vdots \\ x_{1n} \end{pmatrix} ,X_2 =\begin{pmatrix} x_{21} \\  x_{22} \\ \vdots \\ x_{2n} \end{pmatrix} ,\cdots ,\beta =\begin{pmatrix} x_{n+1,1} \\  x_{n+1,2} \\ \vdots \\ x_{n+1,n} \end{pmatrix} ,$$</p>
+<p>考虑齐次线性方程组$k_1 X_1 +k_2 X_2 +\cdots +k_{n+1} \beta =0$，它的方程个数$n$小于未知量个数$n+1$，因此它有非零解.从而向量组$X_1 ,X_2 ,\cdots ,X_n ,\beta $必线性相关.从而$\mathbb{R}^n$中的任意向量$\beta$都可以由$X_1 ,\cdots ,X_n $线性表出.于是，$\mathbb{R}^n$中的向量组$X_1 ,\cdots ,X_n$张成$\mathbb{R}^n$.</p>
+<p>$6$.设$V$是$\mathbb{R}^n$的一个线性包，证明$V$中任意线性无关的向量$X_1 ,\cdots ,X_k$可以扩充成$V$的一组基.</p>
+<p>证明：任取$V$的一个线性无关的向量组$\alpha _1 ,\cdots ,\alpha _r $.若$r=n$，则$\alpha _1 ,\cdots ,\alpha _n $是$V$的一个基.下设$r &lt; n$，此时$V$中必有一个向量$\beta _1 $不能由$\alpha _1 ,\cdots ,\alpha _r $线性表出，从而向量组$\alpha _1 ,\cdots ,\alpha _r ,\beta $线性无关.由向量组$\alpha _1 ,\cdots ,\alpha _r ,\beta $线性相关，则向量$\beta _1 $能由$\alpha _1 ,\cdots ,\alpha _r $线性表出的逆否命题得出.若$r+1=n$，则向量组$\alpha _1 ,\cdots ,\alpha _r ,\beta _1 $是$V$的一个基.若$r+1 &lt; n$，则$V$中有一个向量$\beta _2 $不能由$\alpha _1 ,\cdots ,\alpha _r ,\beta _1 $线性表出，从而$\alpha _1 ,\cdots ,\alpha _2 ,\beta _1 ,\beta _2 $线性无关.依次下去，得到线性无关的向量组</p>
+<p>$$\alpha _1 ,\cdots ,\alpha _r ,\beta _1 ,\beta _2 ,\cdots ,\beta _s ,$$</p>
+<p>其中$r+s=n$，从而把$\alpha _1 ,\cdots ,\alpha _r $扩充成了$V$的一个基.</p>
+<p>$7$.设$U$和$V$是$\mathbb{R}^n$中的线性包.证明若$U\cap V=0$，则$\text{dim}(U+V)=\text{dim}(U)+\text{dim}(V)$.</p>
+<p>证明：设$U,V,U\cap V$的维数分别是$p,q,m$.取$U\cap V$的一个基$\alpha _1 ,\cdots ,\alpha _m $，把它分别扩充成$U$和$V$的一个基：$\alpha _1 ,\cdots ,\alpha _m ,\beta _1 ,\cdots ,\beta _{p-m} $和$\alpha _1 ,\cdots ,\alpha _m ,\gamma _1 ,\cdots ,\gamma _{q-m} $.于是有</p>
+<p>$$\begin{align}<br>U +V &amp; =\langle \alpha _1 ,\cdots ,\alpha _m ,\beta _1 ,\cdots ,\beta _{p-m} \rangle +\langle \alpha _1 ,\cdots ,\alpha _m ,\gamma _1 ,\cdots ,\gamma _{q-m} \rangle \\<br> &amp; = \langle \alpha _1 ,\cdots ,\alpha _m ,\beta _1 ,\cdots ,\beta _{p-m} ,\gamma _1 ,\cdots ,\gamma _{q-m} \rangle .<br>\end{align}$$</p>
+<p>因此$U+V$是有限维的.如果能证明</p>
+<p>$$\alpha _1 ,\cdots ,\alpha _m ,\beta _1 ,\cdots ,\beta _{p-m} ,\gamma _1 ,\cdots ,\gamma _{q-m} $$</p>
+<p>线性无关，那么它就是$U+V$的一个基，由此得出</p>
+<p>$$\begin{align}<br>\text{dim} (U+V)&amp; =m+(p-m)+(q-m) \\<br> &amp; = p+q-m \\<br> &amp; = \text{dim} U+\text{dim} V-\text{dim} (U\cap V).<br>\end{align}$$</p>
+<p>假设</p>
+<p>$$k_1 \alpha _1 +\cdots +k_m \alpha _m +e_1 \beta _1 +\cdots +e_{p-m} \beta _{p-m} +f_1 \gamma _1 +\cdots +f_{q-m} \gamma _{q-m} =0.$$</p>
+<p>则</p>
+<p>$$f_1 \gamma _1 +\cdots +f_{q-m} \gamma _{q-m} =-k_1 \alpha _1 -\cdots -k_m \alpha _m -e_1 \beta _1 -\cdots -e_{p-m} \beta _{p-m} .$$</p>
+<p>上式的左边属于$V$,右边的向量属于$U$，从而它属于$U\cap V$.因此有</p>
+<p>$$f_1 \gamma _1 +\cdots +f_{q-m} \gamma _{q-m} =l_1 \alpha _1 +\cdots +l_m \alpha _m .$$</p>
+<p>由上式得出，$f_1 =\cdots =f_{q-m} =l_1 =\cdots =l_m =0$.代入前面假设的式子，可得出</p>
+<p>$$k_1 =\cdots =k_m =e_1 =\cdots =e_{p-m} =0.$$</p>
+<p>因此$\alpha _1 ,\cdots ,\alpha _m ,\beta _1 ,\cdots ,\beta _{p-m} ,\gamma _1 ,\cdots ,\gamma _{q-m} $线性无关.</p>
+<p>因此，得到子空间的维数公式：</p>
+<p>$$\text{dim} (U+V)=\text{dim} U +\text{dim} V -\text{dim} (U\cap V).$$</p>
+<p>回到原题，由于$U\cap V=0$，则$\text{dim} (U\cap V) =0$，代入维数公式，有</p>
+<p>$$\text{dim} (U+V)=\text{dim} U +\text{dim} V .$$</p>
+<p>$8$.计算向量组$(0,1,1),(1,0,1),(1,1,0)$的秩.</p>
+<p>解：令$k_1 (0,1,1)+k_2 (1,0,1)+k_3 (1,1,0)=0$，则有</p>
+<p>$$\begin{cases} \quad k_2 +k_3 =0, \\ k_1 +\quad k_3 =0, \\ k_1 +k_2 \quad =0.\end{cases}$$</p>
+<p>解得$k_1 =0,k_2 =0,k_3 =0$.</p>
+<p>因此向量组$(0,1,1),(1,0,1),(1,1,0)$线性相关，从而$(0,1,1),(1,0,1),(1,1,0)$是向量组$(0,1,1),(1,0,1),(1,1,0)$的一个极大线性无关组.于是</p>
+<p>$$\text{rank} \lbrace (0,1,1),(1,0,1),(1,1,0)\rbrace =3.$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/01/26/2014/12/daishuxueyinlun121/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/01/26/2014/12/daishuxueyinlun119/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/01/26/2014/12/kaoyanshiti3/"  title="华南理工大学2009年攻读硕士学位研究生入学考试试卷">
+ <strong>下一篇：</strong><br/> 
+ <span>华南理工大学2009年攻读硕士学位研究生入学考试试卷
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/01/26/2014/12/daishuxueyinlun121/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 1 行和列的向量空间" data-url="http://yoursite.com/2015/01/26/2014/12/daishuxueyinlun121/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题的提出"><span class="toc-number">1.</span> <span class="toc-text">问题的提出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本定义"><span class="toc-number">2.</span> <span class="toc-text">基本定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线性组合-线性包"><span class="toc-number">3.</span> <span class="toc-text">线性组合.线性包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线性相关性"><span class="toc-number">4.</span> <span class="toc-text">线性相关性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基-维数"><span class="toc-number">5.</span> <span class="toc-text">基.维数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">6.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

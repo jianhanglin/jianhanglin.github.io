@@ -1,0 +1,877 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析习题集》第一章 分析引论 2. 数列理论 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题69-75,146-147">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析习题集》第一章 分析引论 2. 数列理论">
+<meta property="og:url" content="http://yoursite.com/2015/11/02/2015/11/jimiduoweiqishuxuefenxixitiji1122/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题69-75,146-147">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/1.png">
+<meta property="og:updated_time" content="2015-11-08T07:12:49.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 2. 数列理论">
+<meta name="twitter:description" content="习题69-75,146-147">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/11/02/2015/11/jimiduoweiqishuxuefenxixitiji1122/" title="《数学分析习题集》第一章 分析引论 2. 数列理论" itemprop="url">《数学分析习题集》第一章 分析引论 2. 数列理论</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-11-02T14:30:52.000Z" itemprop="datePublished"> 發表於 2015-11-02</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#与数$e$有关的习题"><span class="toc-number">1.</span> <span class="toc-text">与数$e$有关的习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="与数$e$有关的习题">与数$e$有关的习题</h2><p>$69$.证明：数列</p>
+<p>$$x_n =\left( 1+\dfrac{1}{n} \right) ^n \quad (n=1,2,\cdots )$$</p>
+<p>是单调增的，且上方有界，而数列</p>
+<p>$$y_n =\left( 1+\dfrac{1}{n} \right) ^{n+1} \quad (n=1,2,\cdots )$$</p>
+<p>是单调减的，且下方有界.由此推出这些数列有共同的极限：</p>
+<p>$$\lim_{n\to \infty } \left( 1+\dfrac{1}{n} \right) ^n =\lim_{n\to \infty } \left( 1+\dfrac{1}{n} \right) ^{n+1} =e.$$</p>
+<p>提示：先作出比$\dfrac{x_{n+1}}{x_n} ,\dfrac{y_n}{y_{n-1}} $，并利用习题$7$的不等式.</p>
+<p>证$1$（用习题$7$的伯努利不等式）当$n\geqslant 2$时对数列$\lbrace x_n \rbrace $的后项与前项之比可以估计如下：</p>
+<p>$$\begin{align}<br>\dfrac{x_n}{x_{n-1}} &amp; =\left( \dfrac{n+1}{n} \right) ^n \cdot \left( \dfrac{n-1}{n} \right) ^{n-1} =\dfrac{n}{n-1} \cdot \left( \dfrac{n^2-1}{n^2} \right) ^n \\<br> &amp; =\dfrac{n}{n-1} \cdot \left( 1-\dfrac{1}{n^2} \right) ^n &gt; \dfrac{n}{n-1} \cdot \left( 1-\dfrac{1}{n} \right) =1,<br>\end{align}$$</p>
+<p>其中利用了习题$7$的伯努利不等式，并从该题中等号成立的条件可知这时一定成立严格的不等号.于是知道数列$\lbrace x_n \rbrace $严格单调递增.</p>
+<p>对于$\lbrace y_n \rbrace $类似地有</p>
+<p>$$\begin{align}<br>\dfrac{y_n}{y_{n-1}} &amp; =\left( \dfrac{n+1}{n} \right) ^{n+1} \cdot \left( \dfrac{n-1}{n} \right) ^n =\dfrac{n+1}{n} \cdot \dfrac{1}{\left( 1+\dfrac{1}{n^2-1} \right) ^n } \\<br> &amp; &lt; \dfrac{n+1}{n} \cdot \dfrac{1}{1+\dfrac{n}{n^2-1} } &lt; \dfrac{n+1}{n} \cdot \dfrac{1}{1+\dfrac{1}{n} } =1,<br>\end{align}$$</p>
+<p>可知$\lbrace y_n \rbrace $严格单调递减.又因对每一个$n$有$x_n &lt; y_n $，因此任一确定的$y_n $，例如$y_1 =4$，都是$\lbrace x_n \rbrace $的上界.同理，任一确定的$x_n $，例如$x_1 =2$，都是$\lbrace y_n \rbrace $的下界，故两个极限$\displaystyle \lim_{n\to \infty } x_n ,\lim_{n\to \infty } y_n $都存在.最后由$y_n =x_n (1+\dfrac{1}{n} )$得知$\displaystyle \lim_{n\to \infty } y_n =\lim_{n\to \infty } x_n $，记其为$e$，即得所证.</p>
+<p>证$2$（用平均值不等式）将$x_n $“无中生有”地看成为不全相等的$n+1$个非负数的乘积，就可以从平均值不等式$G &lt; A$推出数列$\lbrace x_n \rbrace $严格单调递增：</p>
+<p>$$x_n =1\cdot \left( \dfrac{n+1}{n} \right) ^n &lt; \left( \dfrac{1+n\left( \dfrac{n+1}{n} \right) }{n+1} \right) ^{n+1} =\left( \dfrac{n+2}{n+1} \right) ^{n+1} =x_{n+1} .$$</p>
+<p>然后同样地将$y_n $看成为$n+2$个不全相等的正数的乘积，就可用平均值不等式$G &gt; H$推出数列$\lbrace y_n \rbrace $严格单调递减：</p>
+<p>$$y_n =1\cdot \left( \dfrac{n+1}{n} \right) ^{n+1} &gt; \left( \dfrac{n+2}{1+(n+1)\left( \dfrac{n}{n+1} \right) } \right) ^{n+2} =\left( \dfrac{n+2}{n+1} \right) ^{n+2} =y_{n+1} .$$</p>
+<p>以下同证$1$.</p>
+<p><strong>注</strong>$\quad $为了定义数$e$，只需要用上述两数列中的任何一个就够了.这时不难分别证明两个数列有界.例如用平均值不等式$G &lt; A$可以得到</p>
+<p>$$x_n \cdot \dfrac12 \cdot \dfrac12 &lt; \left( \dfrac{n\left( \dfrac{n+1}{n} \right) +\dfrac12 +\dfrac12 }{n+2} \right) ^{n+2} =1,$$</p>
+<p>可见$\lbrace x_n \rbrace $以$4$为其上界.再用平均值不等式$G &gt; H$可以得到</p>
+<p>$$y_n \cdot \dfrac12 =\left( \dfrac{n+1}{n} \right) ^{n+1} \cdot \dfrac12 &gt; \left( \dfrac{n+2}{2+(n+1)\left( \dfrac{n}{n+1} \right) } \right) ^{n+2} =1,$$</p>
+<p>可见$\lbrace y_n \rbrace $有下界$2$.在习题$69$中同时讨论两个数列，这样做的好处是为许多问题的讨论提供了更多的工具，这在下面的许多习题中有用.</p>
+<p>$70$.证明：</p>
+<p>$$0 &lt; e-\left( 1+\dfrac{1}{n} \right)^n &lt; \dfrac{3}{n} \quad (n=1,2,\cdots ).$$</p>
+<p>当指数$n$取什么样的数值时，表达式$\left( 1+\dfrac{1}{n} \right) ^n $与数$e$相差不到$0.001$？</p>
+<p>证：引用上题的记号和结论，则就对每个正整数$n$有$x_n &lt; e &lt; y_n $，因此有</p>
+<p>$$0 &lt; e-x_n &lt; y_n -x_n =\left( 1+\dfrac{1}{n} \right)^n \cdot \dfrac{1}{n} .$$</p>
+<p>又取$y_5 =\left( 1+\dfrac15 \right) ^6 \approx 2.986 &lt; 3$为数列$\lbrace x_n \rbrace $的上界，则就得到所要的不等式.</p>
+<p>从所得的不等式即可知道当$n &gt; 3000$时$\left( 1+\dfrac{1}{n} \right) ^n $与数$e$的差小于$0.001$.</p>
+<p>$71$.设$p_n (n=1,2,\cdots )$为趋于$+\infty $的任意数列，而$q_n (n=1,2,\cdots )$为趋于$-\infty $的任意数列（$p_n ,q_n \notin [-1,0]$）.求证：</p>
+<p>$$\lim_{n\to \infty } \left( 1+\dfrac{1}{p_n } \right) ^{p_n } =\lim_{n\to \infty } \left( 1+\dfrac{1}{q_n } \right) ^{q_n }  =e.$$</p>
+<p>证：条件$p_n ,q_n \notin [-1,0] $等价于$1+\dfrac{1}{p_n }$和$1+\dfrac{1}{q_n}$都大于$0$.</p>
+<p>$(1)$不妨先对于每一个$p_n $都是正整数的情况作出证明，然后推广到一般情况.</p>
+<p>这时对$\varepsilon &gt; 0$，存在$N$，使得当$n &gt; N$时成立$0 &lt; e-\left( 1+\dfrac{1}{n} \right) ^n &lt; \varepsilon $.又由于$p_n \to +\infty $,对上述$N$，存在$N_1 $，使得当$n &gt; N_1 $时成立$p_n &gt; N$.</p>
+<p>综合以上，由于$p_n $为正整数，因此当$n &gt; N_1 $时就有$0 &lt; e-\left( 1+\dfrac{1}{p_n } \right) ^{p_n } &lt; \varepsilon $.这就证明了$\displaystyle \lim_{n\to \infty } \left( 1+\dfrac{1}{p_n } \right) ^{p_n } =e.$</p>
+<p>对一般情况，对$p_n $取整数部分得到$[p_n ]\leqslant p_n &lt; [p_n ]+1$.于是有不等式</p>
+<p>$$\left( 1+\dfrac{1}{[p_n ]+1} \right) ^{[p_n ]} \leqslant \left( 1+\dfrac{1}{p_n } \right) ^{p_n } \leqslant \left( 1+\dfrac{1}{[p_n ]} \right) ^{[p_n ]+1} .$$</p>
+<p>由于这时也有$[p_n ] \to +\infty $，于是从上述夹逼关系和两边都趋于$e$就知道中间的数列也收敛于$e$.</p>
+<p>$(2)$对于$q_n \to -\infty $的情况可以将问题归结为$(1)$来解决.这只要如下变换即可：</p>
+<p>$$\begin{align}<br>\left( 1+\dfrac{1}{q_n } \right) ^{q_n } &amp; =\left( \dfrac{q_n }{1+q_n } \right) ^{-q_n } =\left( 1+\dfrac{1}{-q_n -1} \right) ^{-q_n } \\<br> &amp; =\left( 1+\dfrac{1}{-q_n -1} \right) ^{-q_n -1} \cdot \left( \dfrac{q_n }{1+q_n } \right) .<br>\end{align}$$</p>
+<p><strong>注</strong>$\quad $习题$71$是很强的结论，它包含了许多特殊情况为其特例，且可在今后的函数极限中通过归结原理过渡到更一般的结论.</p>
+<p>$72$.已知</p>
+<p>$$\lim_{n\to \infty } \left( 1+\dfrac{1}{n} \right) ^n =e,$$</p>
+<p>求证：</p>
+<p>$$\lim_{n\to \infty } \left( 1+1+\dfrac{1}{2!} +\dfrac{1}{3!} +\cdots +\dfrac{1}{n!} \right) =e.$$</p>
+<p>由此推出公式</p>
+<p>$$e=1+1+\dfrac{1}{2!} +\dfrac{1}{3!} +\cdots +\dfrac{1}{n!} +\dfrac{\theta_n }{n!n} ,$$</p>
+<p>其中$0 &lt; \theta_n &lt; 1$，并计算数$e$，精确到$10^{-5}$.</p>
+<p>证：记$z_n =1+1+\dfrac{1}{2!} +\dfrac{1}{3!} +\cdots +\dfrac{1}{n!} $.从该式联想到将习题$69$中的第一个数列的通项$x_n =\left( 1+\dfrac{1}{n} \right) ^n $作二项式展开，即有</p>
+<p>$$x_n =1+1+\dfrac{1}{2!} ( 1-\dfrac{1}{n} ) +\cdots +\dfrac{1}{k!} (1-\dfrac{1}{n} ) \cdots (1-\dfrac{k-1}{n} ) +\cdots +\dfrac{1}{n!} (1-\dfrac{1}{n} )\cdots (1-\dfrac{n-1}{n} ).$$</p>
+<p>比较待求极限的数列$z_n $与已知极限为$e$的数列$x_n $，可见它们之间的差别在于后者的展开式中从第三项起每一项多乘了一些介于$0,1$之间的因子.由于其中有阶乘的倒数，故两者相差不大，有望$z_n -x_n \to 0(n\to \infty )$.</p>
+<p>为了估计$z_n -x_n $，注意到$x_n $中的$(1-\dfrac{1}{n} )(1-\dfrac{2}{n} )\cdots (1-\dfrac{k-1}{n} )$等等可用习题$6$中的伯努利不等式分离出$1$，并得较好的估计.</p>
+<p>先用该不等式估计$z_n $与$x_n $的和式中的对应项$(k\geqslant )$的差：</p>
+<blockquote>
+<p>当$k=2$时下面出现的$(k-2)!$为$0!$.在数学中约定$0!=1$.</p>
+</blockquote>
+<p>$$\begin{align}<br>0 &amp; \leqslant \dfrac{1}{k!} -\dfrac{1}{k!} (1-\dfrac{1}{n} )(1-\dfrac{2}{n} )\cdots (1-\dfrac{k-1}{n} ) \\<br> &amp; \leqslant \dfrac{1}{k!} \left( 1-(1-\dfrac{(k-1)k}{2n} )\right) =\dfrac{1}{(k-2)!} \cdot \dfrac{1}{2n} .<br>\end{align}$$</p>
+<p>将上式对$k$从$2$到$n$求和$(n\geqslant 3)$得到</p>
+<p>$$\begin{align}<br>0\leqslant z_n -x_n &amp; \leqslant \dfrac{1}{2n} \left( 1+1+\dfrac{1}{2!} +\dfrac{1}{3!} +\cdots +\dfrac{1}{(n-2)!} \right) \\<br> &amp; \leqslant \dfrac{1}{2n} \left( 1+1+\dfrac12 +\dfrac{1}{2^2} +\cdots +\dfrac{1}{2^{n-3}} \right) &lt; \dfrac{3}{2n} \to 0.<br>\end{align}$$</p>
+<p>从$x_n \leqslant z_n &lt; x_n +\dfrac{3}{2n} $出发，用夹逼定理即可得到</p>
+<p>$$\lim_{n\to \infty } (1+1+\dfrac{1}{2!} +\dfrac{1}{3!} +\cdots +\dfrac{1}{n!} ) =e.$$</p>
+<p>下面估计用$z_n $近似$e$的误差.不妨设$m &gt; n$，得</p>
+<p>$$\begin{align}<br>0 &lt; z_m -z_n &amp; =\dfrac{1}{(n+1)!} +\cdots +\dfrac{1}{m!} \\<br> &amp; &lt; \dfrac{1}{(n+1)!} \left( 1+\dfrac{1}{n+2} +\dfrac{1}{(n+2)^2} +\cdots +\dfrac{1}{(n+2)^{m-n-1} }\right) \\<br> &amp; &lt; \dfrac{1}{(n+1)!} \cdot \dfrac{1}{1-\dfrac{1}{n+2}} =\dfrac{1}{(n+1)!} \cdot \dfrac{n+2}{n+1} .<br>\end{align}$$</p>
+<p>固定$n$，令$m\to \infty $，就得到</p>
+<p>$$0\leqslant e-z_n \leqslant \dfrac{n+2}{n!(n+1)^2} &lt; \dfrac{1}{n!n} .$$</p>
+<p>注意$\lbrace z_n \rbrace $严格单调递增趋于$e$，故上式左端的$\leqslant $号中等号恒不成立，即有</p>
+<p>$$0 &lt; e-z_n &lt; \dfrac{1}{n!n} .\label{1} \tag{1} $$</p>
+<p>由此可见存在$\theta_n \in (0,1)$，使得</p>
+<p>$$e=1+1+\dfrac{1}{2!} +\cdots +\dfrac{1}{n!} +\dfrac{\theta_n }{n!n} .$$</p>
+<p>最后按照误差$10^{-5}$的要求来计算$e$的近似值.根据误差限不超过$\dfrac{1}{n!n}$，经尝试知道取$n=8$时误差不超过$\dfrac{3}{10^6}$.然后如右面的附表所示将每一项计算到第$6$位小数，并在其后用$\pm $号标出四舍或五入的情况，每一步所引起的误差不会超过$0.5/10^6$.</p>
+<p>$$\begin{array}{ccc} &amp; 2.000\;000 &amp; \\ \dfrac{1}{2!} = &amp; 0.500\;000 &amp; \\ \dfrac{1}{3!} = &amp; 0.166\;667 &amp; - \\ \dfrac{1}{4!} = &amp; 0.041\;667 &amp; - \\ \dfrac{1}{5!} = &amp; 0.008\;333 &amp; + \\ \dfrac{1}{6!} = &amp; 0.001\;389 &amp; - \\ \dfrac{1}{7!} = &amp; 0.000\;198 &amp; + \\  \dfrac{1}{8!} = &amp; 0.000\;025 &amp; - \\ \hline &amp; 2.718\;279 &amp;  \end{array}$$</p>
+<p>与右边附表最后计算的结果$2.718\;279$比较，除了因为取$n=8$而舍去的（至多）$3\cdot 10^{-6}$之外，还因两次“四舍”而产生（至多）$1\cdot 10^{-6}$的误差，因此数$e$可能比$2.718\;279$大（确实如此），但不会超过$4\cdot 10^{-6}$以上.</p>
+<p>同理因为四次“五入”而产生（至多）$2\cdot 10^{-6}$的误差，因此$e$也可能比$2.718\;279$小，但不会减少$2\cdot 10^{-6}$以上.这样就知道数$e$一定满足以下不等式：</p>
+<p>$$2.718\;277 &lt; e &lt; 2.718\;283.$$</p>
+<p>可见取$e\approx 2.718\;28$就可保证误差小于$10^{-5}$.</p>
+<p>$73$.证明：数$e$是无理数.</p>
+<p>证：用反证法.设$e=\dfrac{p}{q}$，其中$p,q$是正整数.</p>
+<p>由于$\eqref{1}$对每个正整数$n$都成立，因此可以取$n=q$得到不等式</p>
+<p>$$0 &lt; \dfrac{p}{q} -\left( 2+\dfrac{1}{2!} +\cdots +\dfrac{1}{q!} \right) &lt; \dfrac{1}{q!q} .$$</p>
+<p>乘以$q!q$后左边为$0$，右边为$1$，而中间却是一个整数，这是不可能的.</p>
+<p>$74$.证明不等式：</p>
+<p>$$\left( \dfrac{n}{e} \right) ^n &lt; n! &lt; e\left( \dfrac{n}{2} \right) ^n .$$</p>
+<p>证$1$：$(1)$对左边的不等式用数学归纳法.$n=1$时是平凡的.设$n=k$是该不等式成立，则当$n=k+1$时就有</p>
+<p>$$\left( \dfrac{k+1}{e} \right) ^{k+1} =\left( \dfrac{k}{e} \right) ^k \cdot \left( 1+\dfrac{1}{k} \right) ^k \cdot \dfrac{k+1}{e} &lt; (k+1)! ,$$</p>
+<p>其中利用了$\left( \dfrac{k}{e} \right) ^k &lt; k!$的归纳假设和对每一个$k$有$\left( 1+\dfrac{1}{k} \right) ^k &lt; e$.</p>
+<p>$(2)$对右边的不等式用数学归纳法.$n=1$是平凡的.设$n=k$时该不等式已经成立，则当$n=k+1$时就有</p>
+<p>$$e\left( \dfrac{k+1}{2} \right) ^{k+1} =e\left( \dfrac{k}{2} \right) ^k \cdot \left( 1+\dfrac{1}{k} \right) ^k \cdot \dfrac{k+1}{2} &gt; (k+1)! ,$$</p>
+<p>其中利用了$e\left( \dfrac{k}{2} \right) ^k &gt; k!$的归纳假设和对每一个$k$有$\left( 1+\dfrac{1}{k} \right) ^k &gt; 2$.</p>
+<p>证$2$：$(1)$利用习题$69$中的$x_k =\left( 1+\dfrac{1}{k} \right) ^k &lt; e$，取$k=1,2,\cdots ,n-1$并边边相乘，就有</p>
+<p>$$x_1 x_2 \cdots x_{n-1} =\dfrac21 \cdot \left( \dfrac32 \right) ^2 \cdot \cdots \cdot \left( \dfrac{n}{n-1} \right) ^{n-1} =\dfrac{n^n }{n!} &lt; e^{n-1} ,$$</p>
+<p>整理后得到比本题左边更强的不等式$e\left( \dfrac{n}{e} \right) ^{n} &lt; n!$.</p>
+<p>$(2)$利用习题$69$中的$y_k =\left( 1+\dfrac{1}{k} \right) ^{k+1} &gt; e$，于是有</p>
+<p>$$y_1 y_2 \cdots y_{n-1} =x_1 x_2 \cdots x_{n-1} \cdot \left( \dfrac21 \cdot \dfrac32 \cdot \cdots \cdot \dfrac{n}{n-1} \right) =\dfrac{n^{n+1}}{n!} &gt; e^{n-1} ,$$</p>
+<p>这样就得到</p>
+<p>$$n! &lt; en\left( \dfrac{n}{e} \right) ^n =e\left( \dfrac{n}{2} \right) ^n \cdot n\left( \dfrac{2}{e} \right) ^n .$$</p>
+<p>这里的情况要复杂一点.首先利用$2 &lt; e$和习题$60$知道上式右边的第二个因子$n\left( \dfrac{2}{e} \right) ^n \to 0$，因此当$n$充分大时本题的右边不等式成立.用数学归纳法可以证明当$n\geqslant 6$时$n\left( \dfrac{2}{e} \right) ^n &lt; 1$，然后对于$n=1$到$5$作计算，可知这时不等式也是成立的.</p>
+<p>$75$.证明不等式：</p>
+<p>$(a)\;\dfrac{1}{n+1} &lt; \ln \left( 1+\dfrac{1}{n} \right) &lt; \dfrac{1}{n} $，其中$n$为任何正整数.</p>
+<p>$(b)\;1+\alpha &lt; e^{\alpha }$，其中$\alpha $为异于零的实数.</p>
+<p>证：$(a)$引用习题$69$中的记号和结论，由于该题中的数列$\lbrace x_n \rbrace $严格单调递增收敛，数列$\lbrace y_n \rbrace $严格单调递减收敛，它们的极限都是$e$，因此就对每一个$n$成立不等式</p>
+<p>$$x_n =\left( 1+\dfrac{1}{n} \right) ^n &lt; e &lt; y_n =\left( 1+\dfrac{1}{n} \right) ^{n+1} .$$</p>
+<p>取自然对数，并利用函数$\ln x$的严格单调递增性，再加整理就可得到所要的不等式.</p>
+<p>$(b)$首先指出可以从习题$69$得出稍弱一点的不等式$e^{\alpha } \geqslant 1+\alpha (\alpha \neq 0)$.</p>
+<p>分$\alpha &gt; 0$和$\alpha &lt; 0$两种情况来证明.</p>
+<p>若$\alpha &gt; 0$且为有理数，可设$\alpha =\dfrac{p}{q} $，其中$p,q$都是正整数，则从习题$69$知道有</p>
+<p>$$e &gt; \left( 1+\dfrac{1}{q} \right) ^q ,$$</p>
+<p>然后利用幂函数$x^{\frac{p}{q} } $在$x &gt; 0$时严格单调递增，就有</p>
+<p>$$e^{\alpha } =e^{\frac{p}{q} } &gt; \left( 1+\dfrac{1}{q} \right) ^p &gt; 1+\dfrac{p}{q} =1+\alpha .$$</p>
+<p>对于$\alpha &lt; 0$的情况，由于$\alpha \leqslant -1$时表达式$1+\alpha $已经小于等于$0$，可见只要在$-1 &lt; \alpha &lt; 0$的条件下来证明即可.设$\alpha =-\dfrac{p}{q} $，其中$p,q$为正整数，且有$q &gt; 1$.</p>
+<p>从习题$69$知道对于大于$1$的正整数$q$有</p>
+<p>$$e &lt; \left( 1+\dfrac{1}{q-1} \right) ^q ,$$</p>
+<p>然后利用负指数的幂函数$x^{-\frac{p}{q} } $在$x &gt; 0$时严格单调递减，就有</p>
+<p>$$e^{\alpha } =e^{-\frac{p}{q} } &gt; \left( 1+\dfrac{1}{q-1} \right) ^{-p} =\left( 1-\dfrac{1}{q} \right) ^p &gt; 1-\dfrac{p}{q} =1+\alpha .$$</p>
+<p>（在$\alpha &gt; 0$时最后一步只要用二项式定理，但在$-1 &lt; \alpha &lt; 0$时的最后一步需要用到的是习题$7$中的伯努利不等式.）</p>
+<p>这样就已经对于所有不等于$0$的有理数$\alpha $得到了$e^{\alpha } &gt; 1+\alpha $.对于$\alpha $为无理数的情况，可以取一个有理数列$\lbrace \alpha_n \rbrace $，使得$\alpha_n \to \alpha $，然后对于不等式$e^{\alpha_n } &gt; 1+\alpha_n $取极限（其中包括代入法命题$1.4$）就可以得到</p>
+<p>$$e^{\alpha } \geqslant 1+\alpha \quad (\alpha \neq 0).\label{2} \tag{2}$$</p>
+<p>下面证明在$\eqref{2}$中不可能成立等号.其中的主要工具就是前面已经证明过的习题$76$中的极限等式.</p>
+<p>用反证法.分$-1 &lt; \alpha &lt; 0$和$\alpha &gt; 0$两种情况来证明.</p>
+<p>$(1)$设有某个$\alpha_0 \in (-1,0)$使得$e^{\alpha_0 } =1+\alpha_0 $成立.这时</p>
+<p>$$\begin{align}<br>e^{\alpha_0 +\frac{1}{n} } -1-\left( \alpha_0 +\dfrac{1}{n} \right) &amp; =(1+\alpha_0 )(e^{\frac{1}{n} } -1) -\dfrac{1}{n} \\<br> &amp; =\dfrac{(1+\alpha_0 ) \cdot n(e^{\frac{1}{n}} -1) -1}{n} .<br>\end{align}$$</p>
+<p>在习题$76$中令$a=e$，可见上面的最后一个分式的分子当$n\to \infty $的极限为$\alpha_0 &lt; 0$，因此当$n$充分大时上述分式小于$0$.这样就证明了当$n$充分大时，对于$\alpha =\alpha_0 +\dfrac{1}{n}$来说，得到了与不等式$\eqref{2}$相矛盾的结果.因此$-1 &lt; \alpha &lt; 0$时其中不可能成立等号.</p>
+<p>$(2)$现在设有某个$\alpha_1 &gt; 0$，使得$e^{\alpha_1 } =1+\alpha_1 $成立.这时</p>
+<p>$$\begin{align}<br>e^{\alpha_1 -\frac{1}{n} } -1-\left( \alpha_1 -\dfrac{1}{n} \right) &amp; =(1+\alpha_1 )(e^{-\frac{1}{n} } -1) +\dfrac{1}{n} \\<br> &amp; =\dfrac{(1+\alpha_1 ) \cdot n(e^{-\frac{1}{n}} -1) +1}{n} .<br>\end{align}$$</p>
+<p>同样利用习题$76$（令其中的$a=e^{-1}$），可见上式的最后一个分式的分子当$n\to \infty $的极限为$-\alpha_1 &lt; 0$，因此当$n$充分大时上述分式小于$0$.这样就证明了当$n$充分大时，对于$\alpha =\alpha_1 -\dfrac{1}{n} $来说，得到了与不等式$\eqref{2}$相矛盾的结果.因此当$\alpha &gt; 0$时其中也不可能成立等号.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/1.png" alt=""></center>
+
+<p><strong>注</strong>$\quad $最后对于上述解法的来历作一点解释.学过导数的读者不难看出，上述解法的第二步，即证明$\eqref{2}$中不可能成立等号，其中的思想方法来自于曲线$y=e^{\alpha }$的切线斜率在$\alpha &gt; 0$时大于$1$，而在$\alpha &lt; 0$时小于$1$.同时$y=1+\alpha $是斜率恒等于$1$的直线.</p>
+<p>如左图所示，于$\alpha \neq 0$时$e^{\alpha } &gt; 1+\alpha $，同时如两条虚线所示，如果曲线$y=e^{\alpha }$与斜率为$1$的直线相交（$\alpha \neq 0$），则就不可能完全在该直线的上方.这就是上述证明的几何背景.</p>
+<p>$76$.求证：</p>
+<p>$$\lim_{n\to \infty } n\left( a^{\frac{1}{n}} -1\right) =\ln a\quad (a &gt; 0),$$</p>
+<p>式中$\ln a$是取$e=2.718\cdots $作底时，数$a$的对数.</p>
+<p>证：本题是$0\cdot \infty $型的不定式.作代换$u_n =a^{\frac{1}{n}} -1$，于是有$u_n \to 0$，同时得到</p>
+<p>$$n\left( a^{\frac{1}{n}} -1\right) =\ln a\cdot \dfrac{u_n }{\ln (1+u_n )} ,$$</p>
+<p>从而转换为$\dfrac{0}{0}$型的不定式，并只需要证明$\displaystyle \lim_{n\to \infty } \dfrac{\ln (1+u_n )}{u_n } =1$.</p>
+<p>利用习题$71$的两个结论就可以推出当$u_n \to 0$时有</p>
+<p>$$\lim_{n\to \infty } (1+u_n )^{\frac{1}{u_n }} =e.$$</p>
+<p>（这里又将问题转化为$1^{\infty }$型的不定式.）最后用代入法命题$1.4$就得到所要求的</p>
+<p>$$\lim_{n\to \infty } \dfrac{\ln (1+u_n )}{u_n } =\lim_{n\to \infty } \ln [(1+u_n )^{\frac{1}{u_n }}] =\ln e =1.$$</p>
+<p>下面介绍习题$146$和$147$.由于它们与数$e$密切有关，而与其前后的许多习题没有多少联系，因此将它们放在这里介绍.</p>
+<p>$146$.证明：数列</p>
+<p>$$x_n =1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{n} -\ln n \quad (n=1,2,\cdots )$$</p>
+<p>收敛，从而有公式</p>
+<p>$$1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{n} =C+\ln n +\varepsilon_n ,$$</p>
+<p>式中$C=0.577216\cdots $称为欧拉常数，且当$n\to \infty $时$\varepsilon_n \to 0$.</p>
+<p>证：利用习题$75(a)$的不等式：$\dfrac{1}{k+1} &lt; \ln (1+\dfrac{1}{k} ) &lt; \dfrac{1}{k} $，就有</p>
+<p>$$0 &lt; \dfrac{1}{k} -\ln (1+\dfrac{1}{k}) &lt; \dfrac{1}{k} -\dfrac{1}{k+1} .$$</p>
+<p>在上式中取$k$从$1$到$n$并相加，得到</p>
+<p>$$0 &lt; y_n \overset{def}{=} 1+\dfrac12 +\cdots +\dfrac{1}{n} -\ln (n+1) &lt; 1-\dfrac{1}{n+1} &lt; 1.$$</p>
+<p>又由于</p>
+<p>$$y_{n+1} -y_n =\dfrac{1}{n+1} +\ln (n+1) -\ln (n+2) =\dfrac{1}{n+1} -\ln (1+\dfrac{1}{n+1}) &gt; 0,$$</p>
+<p>故数列$\lbrace y_n \rbrace $单调递增有上界，因此收敛.又可以发现有</p>
+<p>$$x_n =1+\dfrac12 +\cdots +\dfrac{1}{n} -\ln n =y_n +\ln \dfrac{n+1}{n} .$$</p>
+<p>利用$0 &lt; \ln \dfrac{n+1}{n} &lt; \dfrac{1}{n}$并结合$\lbrace y_n \rbrace $收敛，可见$\lbrace x_n \rbrace $收敛.记其极限为$C$，就得到</p>
+<p>$$1+\dfrac12 +\cdots +\dfrac{1}{n} -\ln n=C+\varepsilon_n ,$$</p>
+<p>其中$\varepsilon_n \to 0$.</p>
+<p>$147$.求$\displaystyle \lim_{n\to \infty } \left( \dfrac{1}{n+1} +\dfrac{1}{n+2} +\cdots +\dfrac{1}{2n} \right) $.</p>
+<p>解$1$由上一题的公式得到</p>
+<p>$$1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{n} =C+\ln n+\varepsilon_n ,$$</p>
+<p>$$1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{2n} =C+\ln 2n +\varepsilon_{2n} .$$</p>
+<p>两式相减得到</p>
+<p>$$\dfrac{1}{n+1} +\dfrac{1}{n+2} +\cdots +\dfrac{1}{2n} =\ln 2+\varepsilon_{2n} -\varepsilon_n ,$$</p>
+<p>令$n\to \infty $，可见上式左边的极限为$\ln 2$.</p>
+<p>解$2$不用欧拉常数的知识，可以直接用习题$75(a)$中的不等式求本题的极限.</p>
+<p>记$x_n =\dfrac{1}{n+1} +\dfrac{1}{n+2} +\cdots +\dfrac{1}{2n} $.取$k=1,2,\cdots ,n$，则可以从习题$75(a)$得到下列$n$个不等式：</p>
+<p>$$\ln \dfrac{2n+1}{n+1} &lt; x_n &lt; \ln \dfrac{2n}{n} =\ln 2.$$</p>
+<p>将上式左边改写为$\ln \dfrac{2n+1}{n+1} =\ln 2-\ln (1+\dfrac{1}{2n+1} ) $，令$n\to \infty $，并用夹逼定理就得到$\displaystyle \lim_{n\to \infty } x_n =\ln 2$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/11/02/2015/11/jimiduoweiqishuxuefenxixitiji1122/" data-title="《数学分析习题集》第一章 分析引论 2. 数列理论 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/11/04/2015/11/boliyajishudingli14/" title="《波利亚计数定理》一 几个问题 1.4 开关电路">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》一 几个问题 1.4 开关电路</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/11/01/2015/11/boliyajishudingli13/"  title="《波利亚计数定理》一 几个问题 1.3 同分异构体">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》一 几个问题 1.3 同分异构体
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/11/02/2015/11/jimiduoweiqishuxuefenxixitiji1122/" data-title="《数学分析习题集》第一章 分析引论 2. 数列理论" data-url="http://yoursite.com/2015/11/02/2015/11/jimiduoweiqishuxuefenxixitiji1122/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#与数$e$有关的习题"><span class="toc-number">1.</span> <span class="toc-text">与数$e$有关的习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

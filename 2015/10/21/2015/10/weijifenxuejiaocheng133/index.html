@@ -1,0 +1,841 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="微分学的基本定理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理">
+<meta property="og:url" content="http://yoursite.com/2015/10/21/2015/10/weijifenxuejiaocheng133/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="微分学的基本定理">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu51.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu52.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu53.png">
+<meta property="og:updated_time" content="2015-10-24T11:39:53.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理">
+<meta name="twitter:description" content="微分学的基本定理">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/21/2015/10/weijifenxuejiaocheng133/" title="《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理" itemprop="url">《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-21T13:29:04.000Z" itemprop="datePublished"> 發表於 2015-10-21</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#费马定理"><span class="toc-number">1.</span> <span class="toc-text">费马定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#罗尔定理"><span class="toc-number">2.</span> <span class="toc-text">罗尔定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拉格朗日公式"><span class="toc-number">3.</span> <span class="toc-text">拉格朗日公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导数的极限"><span class="toc-number">4.</span> <span class="toc-text">导数的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#柯西公式"><span class="toc-number">5.</span> <span class="toc-text">柯西公式</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="费马定理">费马定理</h2><p>知道了某一函数$f(x)$的导数$f’(x)$，往往就能作出关于函数$f(x)$本身的性态的结论.这一目及下一目就将讲述这一类的问题.</p>
+<p>先证明一个简单的引理：</p>
+<p><strong>引理</strong>$\quad $设函数$f(x)$在点$x_0 $处有有限导数.若这导数$f’(x_0 ) &gt; 0[f’(x_0 ) &lt; 0]$，则当$x$取右方充分接近于$x_0 $的数值时就有$f(x) &gt; f(x_0 )$$[f(x) &lt; f(x_0 )]$，而当$x$取左方充分接近于$x_0 $的数值时就有$f(x) &lt; f(x_0 )[f(x) &gt; f(x_0 )]$.</p>
+<p>换言之，这事实表示：函数$f(x)$在点$x_0 $处增大（减小）.若所考虑的是单侧导数，例如右导数，则只有对于$x_0 $右方的$x$的数值时，命题方才有效.</p>
+<p><strong>证明</strong>$\quad $依导数的定义，</p>
+<p>$$f’(x_0 )=\lim_{x\to x_0 } \dfrac{f(x)-f(x_0 )}{x-x_0 } ,$$</p>
+<p>若$f’(x_0 ) &gt; 0$（限于这情形），则根据<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[极限理论的拓广，2°]</a>，能求出点$x_0 $的邻域$(x_0 -\delta ,x_0 +\delta )$，使在其中（当$x\neq x_0 $时）成立</p>
+<p>$$\dfrac{f(x)-f(x_0 )}{x-x_0 } &gt; 0.$$</p>
+<p>首先设$x_0 &lt; x &lt; x_0 +\delta $，于是$x-x_0 &gt; 0$；由上面的不等式推得$f(x)-f(x_0 ) &gt; 0$，即$f(x) &gt; f(x_0 )$.又若$x_0 -\delta &lt; x &lt; x_0 $而$x-x_0 &lt; 0$，则显然亦有$f(x)-f(x_0 ) &lt; 0$，即$f(x) &lt; f(x_0 )$.证明已完毕.</p>
+<p><strong>费马</strong>$(\mathbf{P.F\acute{e} rmat} )$<strong>定理</strong>$\quad $设函数$f(x)$是在某一区间$\mathcal{X} $内定义的，并且在这区间的内点$c$取最大（最小值）.若在这点处存在着有限导数$f’(c) $，则必须$f’(c)=0$.</p>
+<blockquote>
+<p>这命题当然仅是根据费马用来求函数的最大值及最小值的方法的要点而重新产生的（费马并不曾有导数的概念）.</p>
+</blockquote>
+<p><strong>证明</strong>$\quad $为了明确起见，设$f(x)$在点$c$处有最大值.假定$f’(c)\neq 0$，就可引出矛盾：设$f’(c) &gt; 0$，则当$x &gt; c$而且充分接近于$c$时（依引理）就有$f(x) &gt; f(c)$，又若$f’(c) &lt; 0$，则当$x &lt; c$而且充分接近于$c$时亦有$f(x) &gt; f(c)$.在这两种情况，$f(c)$都不能是函数$f(x)$在区间$\mathcal{X} $内的最大值.所得的矛盾就证明了定理.</p>
+<p>回想<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[在曲线上作切线的问题，导数的定义]</a>导数$y’=f’(x)$的几何说明是曲线$y=f(x)$的切线的斜率.导数$f’(c)$等于零，在几何上表示在这曲线上的对应点处切线平行于$x$轴.图$48$使这情况显得十分清楚.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu51.png" alt=""></center>
+
+<p>证明内所应用的假定：$c$是区间的内点，是很重要的，因为它使我们不得不同时考察在$c$右方的点和在$c$左方的点.没有这一假定，定理就不成立：若函数$f(x)$是在闭区间内定义的，并且在这区间的一端，达到它的最大（最小）值，则在这端点的导数$f’(x)$（若存在着）也可以不是零.建议读者去找寻适当的例题，这事实的几何说明见图$49$.</p>
+<p>作为费马定理的应用，我们将证明一个关于连续函数的导数的有趣的定理.</p>
+<p><strong>达布</strong>$(\mathbf{G.Darboux} )$<strong>定理</strong>$\quad $若函数$f(x)$在区间$[a,b]$内有有限导数，</p>
+<blockquote>
+<p>这时我们设想在点$a$处存在着右导数，而在点$b$处有左导数.它们在以后简单地表示为$f’(a)$及$f’(b)$.</p>
+</blockquote>
+<p>则函数$f’(x)$必至少有一次取得介于$f’(a)$及$f’(b)$之间的每一个值.</p>
+<p><strong>证明</strong>$\quad $首先假定$f’(a)$及$f’(b)$有不同的符号，例如$f’(a) &gt; 0$而$f’(b) &lt; 0$，要证明在$a$与$b$之间存在着一点$c$，在这点处导数等于零.实际上，从有限导数$f’(x)$的存在可以推得函数$f(x)$的连续性<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[函数的增量的公式，2°]</a>，于是依魏尔斯特拉斯第二定理<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng125/" target="_blank" rel="external">[函数的最大值及最小值]</a>，$f(x)$在某一点$c$处取得最大值.这点$c$不能重合于$a$，也不能重合于$b$，因为根据引理，在$a$点的近处（右方）$f(x)$大于$f(a)$，而在$b$点的近处（左方）$f(x)$也大于$f(b)$.因此$a &lt; c &lt; b$，然后依费马定理，就得$f’(c)=0$.</p>
+<p>转到普遍的情形，取位于$f’(a)$及$f’(b)$之间的任意数$C$；为了确定起见，设$f’(a) &gt; C &gt; f’(b)$.考察辅助函数$\varphi (x)=f(x)-Cx$，它在区间$[a,b]$内是连续的并且有导数$\varphi’ (x)=f’(x)-C$.</p>
+<p>因为$\varphi’ (x)=f’(a)-C &gt; 0$，而$\varphi’ (x)=f’(b)-C &lt; 0$，故依已证明的定理，有一点$c$存在（$a &lt; c &lt; b$），在这点处</p>
+<p>$$\varphi’ (c)=f’(c)-C=0,$$</p>
+<p>即</p>
+<p>$$f’(c)=C.$$</p>
+<p>所证明的定理与柯西第二定理<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng125/" target="_blank" rel="external">[介值定理]</a>很相似，根据柯西第二定理任一连续函数从一个数值变到另一数值时，必须经过全部中间数值.然而达布定理决不就是柯西定理的推论，因为连续函数的导数$f’(x)$也可以不是连续函数.</p>
+<h2 id="罗尔定理">罗尔定理</h2><p>作为微分学的许多定理与公式及其应用之基石的，有着下面的简单而重要的以罗尔（$\mathrm{M.Rolle}$）命名的定理.</p>
+<blockquote>
+<p>在实际上，罗尔说出这命题时，仅是对多项式而言.</p>
+</blockquote>
+<p><strong>罗尔定理</strong>$\quad $设$1)$函数$f(x)$在闭区间$[a,b]$内定义着而且是连续的；$2)$至少在开区间$(a,b)$内，存在着有限导数$f’(x)$；$3)$在区间的两端点处函数值相等：$f(a)=f(b)$.</p>
+<p>那么在$a$与$b$之间必能求出一点$c(a &lt; c &lt; b)$，使$f’(c)=0$.</p>
+<blockquote>
+<p>当然，在$1)$内所假定的函数$f(x)$在$(a,b)$内的连续性，已可从$2)$推得，但我们不论在此处或以后都不拟把定理的条件分解成互不相关的假定.</p>
+</blockquote>
+<p><strong>证明</strong>$\quad f(x)$在闭区间$[a,b]$内是连续的，因此，依魏尔斯特拉斯第二定理<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng125/" target="_blank" rel="external">[函数的最大值及最小值]</a>，$f(x)$在这区间内必有最大值$M$亦必有最小值$m$.</p>
+<p>考察两种情形：</p>
+<p>$1.\quad M=m$，这时$f(x)$在区间$[a,b]$内保持为常数：事实上，这时不等式$m\leq f(x)\leq M$对于一切$x$都变成$f(x)=M$；因此在全区间内$f’(x)=0$，于是可以取$(a,b)$内的任意一点作为$c$.</p>
+<p>$2.\quad M &gt; m$，我们知道函数必能达到这两个数值的，但因为$f(a)=f(b)$，所以至少会在$a$与$b$之间的某一点$c$处达到其中一个数值.这时，从费马定理就推得，在这点的导数$f’(c)=0$.定理就已证明.</p>
+<p>用几何的语言，罗尔定理表示为：若曲线$y=f(x)$的两端纵标相等，则在曲线上必能求出一点，此处的切线平行于$x$轴（图$50$）.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu52.png" alt=""></center>
+
+<p>注意，函数$f(x)$须在闭区间$[a,b]$内连续，且在全部开区间$(a,b)$内须有导数存在，这对于定理结论的成立是很要紧的.函数$f(x)=x-E(x)$在区间$[0,1]$内除去在$x=1$时有间断以外满足定理的一切条件，但在$(0,1)$内处处都是$f’(x)=1$.由等式$f(x)=x\left( 0\leq x\leq \dfrac12 \right) $及$f(x)=1-x\left( \dfrac12 \leq x\leq 1\right) $所定义的函数，在这区间内除去当$x=\dfrac12 $时（双侧的）导数不存在以外它也满足定理的一切条件；可是导数$f’(x)$在左半区间内等于$+1$而在右半区间内等于$-1$.</p>
+<p>定理的条件$3)$也是很要紧的：函数$f(x)=x$在区间$[0,1]$内除去条件$3)$以外满足定理的一切条件，而它的导数到处是$f’(x)=1$.</p>
+<p>这些函数的图留给读者自己去画.</p>
+<h2 id="拉格朗日公式">拉格朗日公式</h2><p>转而讨论罗尔定理的直接的推论.</p>
+<p><strong>拉格朗日定理</strong>$\quad $设$1)\; f(x)$是闭区间$[a,b]$内定义着的而且是连续的，$2)$至少在开区间$(a,b)$内有有限导数$f’(x)$存在.那么在$a$与$b$之间必能求得一点$c(a &lt; c &lt;b)$，它满足等式</p>
+<p>$$\dfrac{f(b)-f(a)}{b-a} =f’(c).\label{1} \tag{1} $$</p>
+<p><strong>证明</strong>$\quad $引入辅助函数，它在区间$[a,b]$内用等式</p>
+<p>$$F(x)=f(x)-f(a)-\dfrac{f(b)-f(a)}{b-a} (x-a)$$</p>
+<p>定义.这函数满足罗尔定理的一切条件.事实上，它在$[a,b]$内是连续的，因为它是连续函数$f(x)$与一线性函数的差.在区间$(a,b)$内它有确定的有限导数，等于</p>
+<p>$$F’(x)=f’(x)-\dfrac{f(b)-f(a)}{b-a} .$$</p>
+<p>最后，用$a$和$b$直接代入，证实$F(a)=F(b)=0$，即$F(x)$在区间的两端点处具有相等的数值.</p>
+<p>因此，可以把罗尔定理应用于函数$F(x)$，并肯定在$(a,b)$内有点$c$存在，使$F’(c)=0$.这样</p>
+<p>$$f’(c)-\dfrac{f(b)-f(a)}{b-a} =0,$$</p>
+<p>由此</p>
+<p>$$f’(c)=\dfrac{f(b)-f(a)}{b-a} ,$$</p>
+<p>此即所要证的.</p>
+<p>已证明的定理也称为（微分学中的）<strong>中值定理</strong>.</p>
+<p>罗尔定理是拉格朗日定理的特别情形；前面所作关于罗尔定理的条件$1)$及$2)$的附注在此处仍为有效.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu53.png" alt=""></center>
+
+<p>转而讨论拉格朗日定理的几何说明（图$51$），须指出，比式</p>
+<p>$$\dfrac{f(b)-f(a)}{b-a} =\dfrac{CB}{AC} $$</p>
+<p>是割线$AB$的斜率，而$f’(c)$是曲线$y=f(x)$上横标$x=c$的点的切线的斜率.这样，拉格朗日定理的论断就相当于：在弧$AB$上恒能求出至少一点$M$，在这点处切线平行于弦$AB$.</p>
+<p>已证明的公式</p>
+<p>$$\dfrac{f(b)-f(a)}{b-a} =f’(c)$$</p>
+<p>或</p>
+<p>$$f(b)-f(a)=f’(c)(b-a)$$</p>
+<p>称为<strong>拉格朗日公式</strong>或<strong>有限增量公式</strong>.它显然在$a &gt; b$时仍为有效.</p>
+<p>取在区间$[a,b]$内的任意数值$x_0 $，并给以增量$\Delta x\gtrless 0$，以致使它超出区间的范围者有限.当$\Delta x &gt; 0$时应用拉格朗日公式于区间$[x_0 ,x_0 +\Delta x]$，当$\Delta x &lt; 0$时应用这公式于区间$[x_0 +\Delta x,x_0 ]$.这时介于$x_0 $与$x_0 +\Delta x$之间的数$c$可以表示为</p>
+<p>$$c=x_0 +\theta \cdot \Delta x,$$</p>
+<p>此处$0 &lt; \theta &lt; 1$.</p>
+<blockquote>
+<p>有时说，$\theta $是“真分数”；但不要以为它一定就是有理分数，数$\theta $亦可以为无理数.</p>
+</blockquote>
+<p>从而拉格朗日公式就可写成：</p>
+<p>$$\dfrac{f(x_0 +\Delta x)-f(x_0 )}{\Delta x} =f’(x_0 +\theta \Delta x). \label{11} \tag{1a} $$</p>
+<p>或</p>
+<p>$$\Delta f(x_0 )=f(x_0 +\Delta x)-f(x_0 )=f’(x_0 +\theta \Delta x)\cdot \Delta x(0 &lt; \theta &lt; 1).\label{2} \tag{2} $$</p>
+<p>这等式给出在变元的任意有限增量$\Delta x$时的函数增量的准确表达式.它自然是与近似等式<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">[微分是近似公式的来源，（3a）]</a>：</p>
+<p>$$\Delta f(x_0 )=f(x_0 +\Delta x)-f(x_0 )\doteq f’(x_0 )\cdot \Delta x$$</p>
+<p>相对立着的，在近似等式里，只有当$\Delta x$无限小时相对误差方才趋于零.由此就产生“有限增量公式”这名称.</p>
+<p>拉格朗日公式的缺点是在公式内有我们所不知道的数$\theta $</p>
+<blockquote>
+<p>仅在少数的情形中我们可以确定它；例如，对于二次函数$f(x)=ax^2+bx+c$，很易验证$\theta =\dfrac12 $.</p>
+</blockquote>
+<p>（或$c$）.但这并不妨碍这公式在分析学内的各种各样的应用.</p>
+<h2 id="导数的极限">导数的极限</h2><p>下面的附注就给出这种应用的有用处的例子.假定函数$f(x)$在区间$[x_0 ,x_0 +H] (H &gt; 0)$内是连续的，并且当$x &gt; x_0 $时有有限导数$f’(x)$.若存在着（有限或无穷）极限</p>
+<p>$$\lim_{x\to x_0 +0} f’(x)=K,$$</p>
+<p>则在点$x_0 $处$f(x)$的右方导数也等于$K$.事实上，在$0 &lt; \Delta x\leq H$时$\eqref{11} $成立.若$\Delta x\to 0$，则由于数量$\theta $的有界性，导数的变元$x_0 +\theta \Delta x$趋于$x_0 $，于是等式的右端，随之而左端，就趋于极限$K$，此即所要证的.对于点$x_0 $的左方邻域也可建立类似的论断.</p>
+<p>作为例子，考察在区间$[-1,1]$内的函数</p>
+<p>$$f(x)=x\arcsin{x} +\sqrt{1-x^2} .$$</p>
+<p>若$-1 &lt; x &lt; 1$，则依微分学的普通法则，很易求出：</p>
+<p>$$f’(x)=\arcsin{x} +\dfrac{x}{\sqrt{1-x^2} } -\dfrac{x}{\sqrt{1-x^2} } =\arcsin{x} .$$</p>
+<p>当$x\to 1-0(x\to -1+0)$时这导数显然趋于极限$\dfrac{\pi }{2} \left( -\dfrac{\pi }{2} \right) $；就是在$x=\pm 1$时也存在着（单侧的）导数：</p>
+<p>$$f’(\pm 1)=\pm \dfrac{\pi }{2} .$$</p>
+<p>上述的附注最常应用于下面的情况：由所求的导数式当$x$由这一方或另一方趋于$x_0 $时而趋于$+\infty (-\infty )$这一事实，就可作出结论，在点$x_0 $本身的对应的单侧导数等于$+\infty (-\infty )$.</p>
+<p>例如，若回顾<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">无穷导数</a>中考察过的函数$f_1 (x)=x^{\frac13 } $及$f_2 (x)=x^{\frac23 } $，则得</p>
+<p>$$f_1’ (x)=\dfrac{1}{3x^{2/3}} ,f_2’ (x)=\dfrac{2}{3x^{1/3}} .$$</p>
+<p>因为第一式在$x\to \pm 0$时趋于$+\infty $，而第二式在$x\to +0$与$x\to -0$时分别趋于$+\infty $与$-\infty $，故知$f_1 (x)$在点$x=0$处有双侧的导数：$+\infty $，而$f_2 (x)$在该点处只有单侧的导数：右方的导数$+\infty $，左方的导数$-\infty $.</p>
+<p>由上述的论断就可推得，若有限导数$f’(x)$在某一区间内存在，则它本身也必为$x$的函数，且这函数不能有通常的间断或跃度：在每一点处，它或是连续，或是有第二类间断[比较<a href="http://jianhanglin.github.io/blog/2015/07/weijifenxuejiaocheng131/" target="_blank" rel="external">特殊情形的例题，2°</a>].</p>
+<h2 id="柯西公式">柯西公式</h2><p>有限增量的公式将依下列方式来推广：</p>
+<p><strong>柯西定理</strong>$\quad $设$1)$函数$f(x)$及$g(x)$在闭区间$[a,b]$内连续；$2)$至少在开区间$(a,b)$内有有限导数$f’(x)$及$g’(x)$；$3)$在区间$(a,b)$内$g’(x)\neq 0$.</p>
+<p>那么在$a$与$b$之间必能求出一点$c(a &lt; c &lt; b)$，使</p>
+<p>$$\dfrac{f(b)-f(a)}{g(b)-g(a)} =\dfrac{f’(c)}{g’(c)} .\label{3} \tag{3} $$</p>
+<p>这公式称为<strong>柯西公式</strong>.</p>
+<p><strong>证明</strong>$\quad $首先将确定，等式左端的分母不等于零，因为否则，这表达式就没有意义.假若$g(b)\neq g(a)$，则依罗尔定理，导数$g’(x)$在区间内的某一点处就要等于零，这是违反条件$3)$的；因此$g(a)\neq g(b)$.</p>
+<p>现在考察辅助函数</p>
+<p>$$F(x)=f(x)-f(a)-\dfrac{f(b)-f(a)}{g(b)-g(a)} [g(x)-g(a)].$$</p>
+<p>这函数满足罗尔定理的一切条件.实际上，$F(x)$在$[a,b]$内是连续的，因为$f(x)$及$g(x)$都是连续的；导数$F’(x)$在$(a,b)$内存在，就是，它等于</p>
+<p>$$F’(x)=f’(x)-\dfrac{f(b)-f(a)}{g(b)-g(a)} \cdot g’(x).$$</p>
+<p>最后，用$a$和$b$直接代入，得知$F(a)=F(b)=0$.由于这样，在区间$(a,b)$内存在着一点$c$，使$F’(c)=0$.即</p>
+<p>$$f’(c)-\dfrac{f(b)-f(a)}{g(b)-g(a)} \cdot g’(c)=0.$$</p>
+<p>或</p>
+<p>$$f’(c)=\dfrac{f(b)-f(a)}{g(b)-g(a)} \cdot g’(c).$$</p>
+<p>用$g’(c)$去除（这是可以的，因为$g’(c)\neq 0$），就得出所求的等式.</p>
+<p>很明显地，拉格朗日定理是柯西定理的特别情形.要从柯西公式得出有限增量公式，只需令$g(x)=x$.柯西定理常称为（微分学中的）<strong>广义中值定理</strong>.</p>
+<p>柯西定理的几何说明亦同拉格朗日定理的一样.要使读者很容易地看出这点，换成另一种表示法：把$x$换成$t$，而函数改记为$\varphi (t)$及$\psi (t)$.若$t$在区间$[\alpha ,\beta ]$内变动，则柯西公式就写成：</p>
+<p>$$\dfrac{\psi (\beta )-\psi (\alpha )}{\varphi (\beta )-\varphi (\alpha )} =\dfrac{\psi’ (\gamma )}{\varphi’ (\gamma )} (\alpha &lt; \gamma &lt; \beta ).\label{4} \tag{4} $$</p>
+<p>今考察用参变量方程</p>
+<p>$$x=\varphi (t),y=\psi (t)\quad (\alpha \leq t\leq \beta )\label{5} \tag{5} $$</p>
+<p>所给定的曲线.于是公式的左边在这里就表示着连接曲线两端的弦的斜率，而右端则表示弧上对应于$t=\gamma $的那一点处的切线的斜率<a href="http://jianhanglin.github.io/blog/2015/09/weijifenxuejiaocheng132/" target="_blank" rel="external">[微分的形式不变性，（11）]</a>.</p>
+<p><strong>附注</strong>$\quad $这些想法暗示着拉格朗日公式导出柯西公式的可能性.推导的要点在于：如果不用参变关系式$\eqref{5} $而改用直接关系式；$y=f(x)$，则公式$\eqref{4}$显出是与$\eqref{1}$有同等意义的.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/21/2015/10/weijifenxuejiaocheng133/" data-title="《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/24/2015/10/daishuxueyinlun151/" title="《代数学引论(第一卷)基础代数》 第5章 复数和多项式 1 复数域">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第5章 复数和多项式 1 复数域</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/21/2015/09/daishuxueyinlun143/"  title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/21/2015/10/weijifenxuejiaocheng133/" data-title="《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理" data-url="http://yoursite.com/2015/10/21/2015/10/weijifenxuejiaocheng133/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#费马定理"><span class="toc-number">1.</span> <span class="toc-text">费马定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#罗尔定理"><span class="toc-number">2.</span> <span class="toc-text">罗尔定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拉格朗日公式"><span class="toc-number">3.</span> <span class="toc-text">拉格朗日公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导数的极限"><span class="toc-number">4.</span> <span class="toc-text">导数的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#柯西公式"><span class="toc-number">5.</span> <span class="toc-text">柯西公式</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

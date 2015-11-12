@@ -1,0 +1,1105 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="函数的极限">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限">
+<meta property="og:url" content="http://yoursite.com/2015/10/20/2015/04/weijifenxuejiaocheng122/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="函数的极限">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu27.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu28.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu29.png">
+<meta property="og:updated_time" content="2015-10-20T14:02:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限">
+<meta name="twitter:description" content="函数的极限">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/10/20/2015/04/weijifenxuejiaocheng122/" title="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限" itemprop="url">《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-10-20T14:03:02.000Z" itemprop="datePublished"> 發表於 2015-10-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的极限的定义"><span class="toc-number">1.</span> <span class="toc-text">函数的极限的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变成整序变量的情形"><span class="toc-number">2.</span> <span class="toc-text">变成整序变量的情形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">3.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#极限理论的拓广"><span class="toc-number">4.</span> <span class="toc-text">极限理论的拓广</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题-1"><span class="toc-number">5.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调函数的极限"><span class="toc-number">6.</span> <span class="toc-text">单调函数的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布尔查诺-柯西的一般判定法"><span class="toc-number">7.</span> <span class="toc-text">布尔查诺-柯西的一般判定法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的上极限及下极限"><span class="toc-number">8.</span> <span class="toc-text">函数的上极限及下极限</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="函数的极限的定义">函数的极限的定义</h2><p>考察数集$\mathcal{X} =\lbrace x\rbrace $.若在点$a$的任意近处包含有$\mathcal{X}$中异于$a$的$x$值，则点$a$称为这数集的聚点.</p>
+<p>为着要更准确地表达这定义，我们引入点$a$的<strong>邻域</strong>的概念：以点$a$为中心的开区间$(a-\delta ,a+\delta )$就称为点$a$的邻域.现在就可以说，若在点$a$的任一邻域内包含$\mathcal{X}$中异于$a$的值，则点$a$是数集$\mathcal{X}$的聚点.</p>
+<p>在这时，聚点本身可以属于$\mathcal{X}$或不属于$\mathcal{X}$.</p>
+<p>设在区域$\mathcal{X}$内给定函数$f(x)$，且$a$是$\mathcal{X}$的聚点.这函数在$x$接近于$a$时的性态是值得注意的.若对于任一数$\varepsilon &gt; 0$能求出数，只需$\mid x-a \mid &lt; \delta $，能使</p>
+<p>$$\mid f(x)-A\mid &lt; \varepsilon \label{1} \tag{1}$$</p>
+<p>（式中的$x$取自$\mathcal{X}$内且异于$a$）[就因为$a$是$\mathcal{X}$的聚点，所以可以确知，在点$a$的邻域$(a-\delta ,a+\delta )$内这种$x$的数值一定是存在的.]则称当$x$趋向于$a$时（或在$a$点处）函数$f(x)$以数$A$为极限.这一事实记成</p>
+<p>$$\lim_{x\to a} f(x) =A.\label{2} \tag{2}$$</p>
+<p>设$\mathcal{X}$是这样一种区域，仅在$a$的右边任意近处，能找出$\mathcal{X}$内的异于$a$的$x$数值（在这种场合点$a$称为$\mathcal{X}$的右聚点），则可以把刚才所给的函数的极限的定义特殊化，使仅限于$x &gt; a$的数值.在这种场合，若函数的极限存在，就称为当$x$从右边趋向于$a$时函数$f(x)$的极限，或简称（在点$a$处的）<strong>右极限</strong>，并记成</p>
+<p>$$\lim_{x\to a+0} f(x)\quad 或\quad f(a+0).$$</p>
+<p>若$a$本身等于$0$，则代替$0+0(0-0)$而简单地写成$+0(-0)$.</p>
+<p>类似地可建立概念：左聚点，及当$x$从左边趋向于$a$时函数的极限或（在点$a$处的）<strong>左极限</strong>：</p>
+<p>$$\lim_{x\to a-0} f(x)\quad 或\quad f(a-0).$$</p>
+<p>若点$a$同时为$\mathcal{X}$的右聚点及左聚点，则很易证明，极限$\eqref{2}$存在的必要而且充分的条件为右极限及左极限各自存在而且相等：</p>
+<p>$$\lim_{x\to a+0} f(x) =\lim_{x\to a-0} f(x)=A.$$</p>
+<p>当$x$趋向于有限极限$a$时，函数亦可以有无穷极限（不带符号或有确定符号）.就是，若对于任一数$E &gt; 0$，能求出数$\delta &gt; 0$，只需$\mid x-a\mid &lt; \delta $，便能使</p>
+<p>$$f(x) &gt; E \quad (f(x) &lt; -E)\label{3} \tag{3}$$</p>
+<p>（式中的$x$，如经常一样，是取自$\mathcal{X}$内的异于$a$的数），则称当$x$趋向于$a$时（或在点$a$处）函数$f(x)$以$+\infty (-\infty )$为极限.</p>
+<p>这些事实的记法，类似于$\eqref{2}$：</p>
+<p>$$\lim_{x\to a} f(x) =+\infty (-\infty ).$$</p>
+<p>对于现在这个情形亦可以仿照前面定义右边及左边的单侧极限时的做法.</p>
+<p>若数集$\mathcal{X} =\lbrace x\rbrace $包含（绝对值）任意大的正（负）值$x$，则称$+\infty (-\infty )$是$\mathcal{X}$的聚点.</p>
+<p>在此假定下，若对于不论怎样的数$\varepsilon &gt; 0$恒有数$\Delta &gt; 0$存在，只需$x &gt; \Delta (x &lt; -\Delta )$，便能使</p>
+<p>$$\mid f(x)-A\mid &lt; \varepsilon \label{4} \tag{4}$$</p>
+<p>（式中的$x$取自$\mathcal{X}$内），则称当$x$趋向于$+\infty (-\infty )$时函数$f(x)$有极限$A$.并写成：</p>
+<p>$$\underset{(x\to -\infty )}{\lim_{x\to \infty }} f(x)=A.\label{5} \tag{5}$$</p>
+<p>最后，易于改述上列定义，使适用于$A=+\infty $或$-\infty $的场合.</p>
+<p>所有这些定义的本质是同一件东西：函数$f(x)$可任意地“接近”于其极限$A$，只需自变量$x$充分地“接近”于它自己的极限$a$.但变量“接近”于有限极限的意思是指：他们之间的差（的绝对值）很微小；而它“接近”于无穷极限的意思是指，它本身（的绝对值）是很巨大，且当讲及确定符号的无穷时，极限的符号仍保持着.</p>
+<p>很明显地，数$\delta (\Delta )$在一切场合都依赖于$\varepsilon (E)$.</p>
+<p>最后注意，当函数$f(x)$趋向于$0$时，它称为<strong>无穷小</strong>；若$f(x)$趋向于$\infty $，它就称为<strong>无穷大</strong>.若后一情况发生于$x\to a$时，则亦称在点$a$处函数成为无穷大.</p>
+<h2 id="变成整序变量的情形">变成整序变量的情形</h2><p>若将整序变量视为自然数序范围内变动着的自变量$n$的函数，则当$n\to \infty $时这函数的极限，有如在[函数的极限的定义]内定义的，显然与<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[整序变量的极限-无穷大量]</a>内所定义的整序变量的极限（$\Delta $的角色在那里由$N$担任）相一致.这样，整序变量的极限是函数的极限的特殊情形.</p>
+<p>而且，反之，在某些意义上，函数的极限可归结于整序变量的极限.</p>
+<p>设数集$\mathcal{X} =\lbrace x\rbrace $有聚点$a$（$a$可以是有限的数，也可以是不同符号无穷）.则由$\mathcal{X}$内可以（用无数种方法）取出以$a$为极限的$x$的（异于$a$的）序列</p>
+<p>$$x_1 ,x_2 ,\cdots ,x_n ,\cdots .\label{6} \tag{6}$$</p>
+<p>事实上，若$a$是有限的，则在给定一趋于零的整序变量$\delta _n$以后，在点$a$的任一邻域$(a-\delta _n ,a+\delta )(n=1,2,3,\cdots )$内必能求出$\mathcal{X}$中异于$a$的点$x=x_n$；因$\mid x_n -a \mid &lt; \delta _n $，故$x_n \to a$.当$a$为无穷时，就给定一整序变量$\Delta _n \to +\infty $，且对于任一$\Delta _n $求出$\mathcal{X}$中的一数值$x=x_n $，使$\mid x_n \mid &gt; \Delta _n $；显然，有$x_n \to \infty $等等.</p>
+<p>与变元的序列$\eqref{6}$对应着的是函数的序列</p>
+<p>$$f(x_1 ),f(x_2 ),\cdots ,f(x_n ),\cdots .\label{7} \tag{7}$$</p>
+<p>很易看出，在等式$\eqref{2}$成立时这序列恒收敛于$A$.且以$a$及$A$均为有限的情形作为示例.</p>
+<p>若给定任意数$\varepsilon &gt; 0$，则首先根据极限定义$\eqref{2}$，能取出与它对应的数$\delta &gt; 0$.由于序列$\eqref{6}$收敛于$a$，所以根据数$\delta $，必能求出<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[整序变量的极限]</a>序号$N$，使$n &gt; N$时能成立不等式$\mid x_n -a \mid &lt; \delta $，因此[参阅$\eqref{1}$]，又有$\mid f(x_n ) -A\mid &lt; \varepsilon $.由此亦就证明了序列$\eqref{7}$收敛于$A$.</p>
+<p>这定理的逆亦是真实的：</p>
+<p>今假设自变量$x$依着以$a$为极限的任意序列$\eqref{6}$（由$\mathcal{X}$内取出的）递变时，与它对应的函数值的序列$\eqref{7}$恒有极限$A$.则这数$A$就是[函数的极限的定义]所定义的函数$f(x)$的极限.</p>
+<p>我们在这里仍限于$a$及$A$均为有限数的情形.试由反面推论，假定$A$并非函数的极限.那时对于某些数$\varepsilon &gt; 0$，就没有对应的$\delta $存在；即不论取怎样小的$\delta $，至少能求出变数$x$的一个数值$x=x’$（异于$a$），虽然</p>
+<p>$$\mid x’-a \mid &lt; \delta ,但仍有\mid f(x’)-A\mid \geq \varepsilon .$$</p>
+<p>取一趋于零的正数$\lbrace \delta _n \rbrace $的序列.根据刚才所说的，对于任一数$\delta =\delta _n $恒能找出数值$x’=x’_n $，虽然</p>
+<p>$$\mid x’_n -a \mid &lt; \delta _n ,但仍有\mid f(x’_n )-A\mid \geq \varepsilon .$$</p>
+<p>于是这些数值便组成某一序列</p>
+<p>$$x’_1 ,x’_2 ,\cdots ,x’_n ,\cdots ,$$</p>
+<p>对于它们，恒有</p>
+<p>$$\mid x’_n -a \mid &lt; \delta _n \quad (n=1,2,\cdots );$$</p>
+<p>因$\delta _n \to 0$，故$x’_n \to a$.</p>
+<p>依定理的假定，对应的函数的序列</p>
+<p>$$f(x’_1 ),f(x’_2 ),\cdots ,f(x’_n),$$</p>
+<p>应趋于$A$，但这是不可能的，因对于的$n=1,2,\cdots $恒有$\mid f(x’_n )-A\geq \varepsilon $.所得的矛盾就证明了我们的命题.</p>
+<p>这样，我们在实质上已得出函数的极限概念的第二定义，它在[函数的极限的定义]内是用“$\varepsilon -\delta $的语言”表达着的.现在我们又可以用“序列的语言”表达它，即把等式$\eqref{2}$的意义理解为：对于任何以$a$为极限的序列$\eqref{6}$，对应的序列$\eqref{7}$常有极限$A$.</p>
+<p>末了，我们注意到，只需假定对应于任何收敛于$a$的序列$\eqref{6}$，序列$\eqref{7}$的极限常存在，就足以推得一切这些极限是重合的.事实上，假定对于趋于$a$的两个序列</p>
+<p>$$x’_1 ,x’_2 ,\cdots ,x’_n ,\cdots \quad 及\quad x’’_1 ,x’’_2 ,\cdots ,x’’_n ,\cdots ,$$</p>
+<p>有</p>
+<p>$$f(x’_n )\to A’\quad 及\quad f(x’’_n )\to A’’,$$</p>
+<p>此处$A’\neq A’’$.则把两序列的各项相间着以组成新序列：</p>
+<p>$$x’_1 ,x’’_1 ,x’_2 ,x’’_2 ,\cdots ,x’_n ,x’’_n ,\cdots ;$$</p>
+<p>它显然是趋向于$a$的，因此对于充分大的$n$，$x’_n$及$x’’_n$都与$a$相差任意小.而同时对应的函数的序列：</p>
+<p>$$f(x’_1 ),f(x’’_1 ),f(x’_2 ),f(x’’_2 ),\cdots ,f(x’_n ),f(x’’_n ),\cdots ,$$</p>
+<p>则违反假定，根本没有极限，因为它的奇数项或偶数项所组成的部分序列，各趋向于不同的极限<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[部分数列及部分极限]</a>.所得的矛盾，就证明形式如$\eqref{7}$的序列，事实上始终趋向于同一的极限.</p>
+<h2 id="例题">例题</h2><p>$1)\;$证明</p>
+<p>$$\lim_{x\to +\infty } a^x =+\infty \quad (a &gt; 1).$$</p>
+<p>对于任何$E &gt; 0$，只要取$\Delta =\log_aE $，就可由</p>
+<p>$$x &gt; \Delta \quad 导出\quad a^x &gt; E,$$</p>
+<p>这就证明了我们的命题.</p>
+<blockquote>
+<p>我们在<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">无穷大量</a>内已经得出较为特殊的结果<br>$$\lim a^n =+\infty (a &gt; 1).$$</p>
+</blockquote>
+<p>仿此可证明</p>
+<p>$$\lim_{x\to -\infty } a^x =0\quad (a &gt; 1).$$</p>
+<p>即不论$\varepsilon &gt; 0(\varepsilon &lt; 1)$怎样小，若取$\Delta =\log_a{\dfrac{1}{\varepsilon }} =-\log_a \varepsilon $，则</p>
+<p>$$在x &lt; -\Delta 时必有a^x &lt; \varepsilon .$$</p>
+<p>又若$0 &lt; a &lt; 1$，则用变换式$a^x =\left( \dfrac{1}{a} \right) ^{-x} $很易建立结果</p>
+<p>$$\lim_{x\to +\infty }a^x =0,\lim_{x\to -\infty } a^x =+\infty \quad (0 &lt; a &lt; 1).$$</p>
+<p>$2)\;$证明$\quad $在$a &gt; 1$时</p>
+<p>$$\lim_{x\to +\infty } \log_ax =+\infty ,\lim_{x\to +0} \log_ax=-\infty .$$</p>
+<p>对于任何给定的$E &gt; 0$，只需$x &gt; a^E $，就有$\log_ax &gt; E$，因而仿此，只需$0 &lt; x &lt; a^{-E} $,就成立不等式：$\log_ax &lt; -E$.由此就证明了那两个关系式.</p>
+<p>$3)\;$我们再证</p>
+<p>$$\lim_{x\to +\infty } \arctan{x} =\dfrac{\pi }{2} ,\lim_{x\to -\infty } \arctan{x} =-\dfrac{\pi }{2} .$$</p>
+<p>且讨论第一个极限作为例子.对于任何$\varepsilon &gt; 0$，取$x &gt; \tan{\left( \dfrac{\pi }{2} -\varepsilon \right) }$，就可使$\arctan{x} &gt; \dfrac{\pi }{2} -\varepsilon $，于是</p>
+<p>$$0 &lt; \dfrac{\pi }{2} -\arctan{x} &lt; \varepsilon .$$</p>
+<p>$4)\;$关系式：</p>
+<p>$$\lim_{x\to +\infty } =\dfrac{a^x}{x} =+\infty (a &gt; 1)$$</p>
+<p>是更细致的例子.</p>
+<p>回忆我们早已经遇见过它的特例：</p>
+<p>$$\lim_{n\to +\infty } \dfrac{a^n}{n} =+\infty $$</p>
+<p><a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[极限求法的例题，9)]</a>；显然，同时又有</p>
+<p>$$\lim_{n\to +\infty } \dfrac{a^n}{n+1} =+\infty .$$</p>
+<p>因此，根据给定的$E &gt; 0$能求出自然数，使在$n &gt; N$时，成立不等式</p>
+<p>$$\dfrac{a^n}{n+1} &gt; E.$$</p>
+<p>今设$x &gt; N+1 $；若假定$n=E(x)$，则</p>
+<p>$$n &gt; N又n\leq x &lt; n+1 ,$$</p>
+<p>于是</p>
+<p>$$\dfrac{a^x}{x} &gt; \dfrac{a^n} {n+1} &gt; E,$$</p>
+<p>这就证明了命题.</p>
+<p>由此，也如在<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[极限求法的例题，9)]</a>内那样，很易求得</p>
+<p>$$\lim_{x\to +\infty } \dfrac{a^x}{x^k} =+\infty \quad (a &gt; 1 ,k &gt; 0).$$</p>
+<p>$5)\;$类似地，根据以前的结果<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[极限求法的例题，11)]</a></p>
+<p>$$\lim_{n\to +\infty } \dfrac{\log_an}{n} =0\quad (a &gt; 1),$$</p>
+<p>一般可建立</p>
+<p>$$\lim_{x\to +\infty } \dfrac{\log_ax}{x} =0 \quad (a &gt; 1),$$</p>
+<p>式中$x$是任何正的实数.</p>
+<p>把这里的$x$换成$x^k (k &gt; 0)$，容易证明，</p>
+<p>$$\lim_{x\to +\infty } \dfrac{\log_ax}{x^k} =0\quad (a &gt;1 ,k &gt; 0).$$</p>
+<p>事实上，若对任意给定的$\varepsilon &gt; 0$，取这样的$\Delta $，使当$x &gt; \Delta $时已能满足下等式</p>
+<p>$$\dfrac{\log_ax}{x} &lt; k\varepsilon ,$$</p>
+<p>则在$x &gt; \Delta _1 =\Delta ^{\frac{1}{k} } $时就有$x^k &gt; \Delta $，因而</p>
+<p>$$\dfrac{\log_ax}{x^k} &lt; \varepsilon .$$</p>
+<p>若把这里的$x$换成$\dfrac{1}{x}$，则已得的结果可以改写成</p>
+<p>$$\lim_{x\to +0} x^k log_ax =0\quad (a &gt; 1,k &gt; 0).$$</p>
+<p>$6)\;$由<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[例题，5）]</a>内已证明的极限关系</p>
+<p>$$\lim_{n\to +\infty } a^{\frac{1}{n}} =1$$</p>
+<p>可以得出更普遍的的极限关系</p>
+<p>$$\lim_{x\to 0} a^x =1.$$</p>
+<p>注意到，显然有</p>
+<p>$$\lim_{n\to +\infty } a^{-\frac{1}{n}} =\lim_{n\to +\infty } \dfrac{1}{a^{\frac{1}{n}}} =1.$$</p>
+<p>因此，不论$\varepsilon &gt; 0$怎样，可以求出自然数$n_0 $，使（若$a &gt; 1$）</p>
+<p>$$1-\varepsilon &lt; a^{-\frac{1}{n_0}} &lt; a^{\frac{1}{n_0}} &lt; 1+\varepsilon .$$</p>
+<p>今若</p>
+<p>$$\mid x\mid &lt; \dfrac{1}{n_0 } \quad 或\quad -\dfrac{1}{n_0 } &lt; x &lt; \dfrac{1}{n_0 } ,$$</p>
+<p>则</p>
+<p>$$a^{-\frac{1}{n_0 }} &lt; a^x &lt; a^{\frac{1}{n_0 }} ,$$</p>
+<p>由此</p>
+<p>$$1-\varepsilon &lt; a^x &lt; 1+\varepsilon \quad 或\quad \mid a^x -1\mid &lt; \varepsilon .$$</p>
+<p>这就证明了前述的命题.</p>
+<p>$7)\;$现在我们将建立下面的（对于以后也是很重要的）结果：</p>
+<p>$$\lim_{x\to 0} \dfrac{\sin{x}}{x} =1.\label{8} \tag{8}$$</p>
+<p>但是首先我们必须证明下列有用的不等式：</p>
+<p>$$\sin{x} &lt; x &lt; \tan{x} \quad \left( 0&lt; x &lt; \dfrac{\pi}{2} \right) .\label{9} \tag{9}$$</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu27.png" alt=""></center>
+
+<p>为这目的，我们考察在半径为$R$的圆内的锐角$\angle AOB$，弦$AB$及切圆于点$A$的切线$AC$（图$22$）.则有</p>
+<p>$\triangle AOB$的面积$&lt;$扇形$AOB$的面积$&lt; \triangle AOC$的面积.</p>
+<blockquote>
+<p>在这里我们应用中学教程内已知的关于初等几何图形的面积方面的知识.</p>
+</blockquote>
+<p>若用$x$表示角$\angle AOB$的弧度，于是弧$\overset{\frown}{AB}$的长就可用$Rx$来表示，而这些不等式就可以改写成：</p>
+<p>$$\dfrac12 R^2 \cdot \sin{x} &lt; \dfrac12 R^2 \cdot x &lt; \dfrac12 R^2 \cdot \tan{x} .$$</p>
+<p>由此约去$\dfrac12 R^2 $就得出不等式$\eqref{9}$.</p>
+<p>在假定$0 &lt; x &lt; \dfrac{\pi}{2}$之下，用不等式$\eqref{9}$的各项去除$\sin{x}$.则得：</p>
+<p>$$1 &gt; \dfrac{\sin{x}}{x} &gt; \cos{x} .$$</p>
+<p>由此</p>
+<p>$$0 &lt; 1-\dfrac{\sin{x}}{x} &lt; 1-\cos{x} .$$</p>
+<p>但</p>
+<p>$$1-\cos{x} =2\sin{}^2 \dfrac{x}{2} &lt; 2\sin{\dfrac{x}{2}} &lt; x$$</p>
+<p>[根据$\eqref{9}$].于是</p>
+<p>$$0 &lt; 1-\dfrac{\sin{x}}{x} &lt; x .$$</p>
+<p>由此推得不等式</p>
+<p>$$\left| \dfrac{\sin{x}}{x} -1\right| &lt; \vert x\vert .$$</p>
+<p>显然，在改变$x$的符号时，上式仍旧是正确的，就是说，对于一切$x\neq 0$，只需$\vert x\vert &lt; \dfrac{\pi}{2}$，这不等式总成立.</p>
+<p>所得的不等式就证明了$\eqref{8}$式.事实上，对于任意给定的数$\varepsilon &gt; 0$，只需选取$\varepsilon $及$\dfrac{\pi}{2}$中的最小者作为$\delta $就已足够了：在$\vert x\vert &lt; \delta $时，首先，这不等式是可用的（因$\delta \leq \dfrac{\pi}{2}$），而用了它（因$\delta \leq \varepsilon $），就得到</p>
+<p>$$\left| \dfrac{\sin{x}}{x} -1\right| &lt; \varepsilon .$$</p>
+<p>依函数极限的定义，这就表示，函数$\dfrac{\sin{x}}{x}$在$x$趋向于$0$时以$1$为极限.于是关系式$\eqref{8}$就被证实了.</p>
+<p>$7a)\;$极限关系式$\eqref{8}$根据[变成整序变量的情形]可以理解为：只需$x$依收敛于零的序列$\lbrace x_n \rbrace $而递变，整序变量$\dfrac{\sin{x_n}}{x_n} $终是趋于$1$.</p>
+<p>今试应用这事实来求整序变量的极限</p>
+<p>$$\lim_{n\to \infty } \cos{\dfrac{\varphi}{2}} \cdot \cos{\dfrac{\varphi}{2^2}} \cdot \cdots \cdot \cos{\dfrac{\varphi}{2^n}} ,$$</p>
+<p>式中$\varphi $是任何异于$0$的数.</p>
+<p>显然，</p>
+<p>$$\begin{align}<br>\sin{\varphi } &amp; =2\cos{\dfrac{\varphi}{2}} \cdot \sin{\dfrac{\varphi}{2}} =2^2\cos{\dfrac{\varphi}{2}} \cdot \cos{\dfrac{\varphi}{2^2}} \cdot \sin{\dfrac{\varphi}{2^2}} =\cdots \\<br> &amp; =2^n\cos{\dfrac{\varphi}{2}} \cdot \cos{\dfrac{\varphi}{2^2}} \cdot \cdots \cdot \cos{\dfrac{\varphi}{2^n}} \cdot \sin{\dfrac{\varphi}{2^n}} ,<br>\end{align}$$</p>
+<p>于是那个很有趣的式子的形状就表示为</p>
+<p>$$\dfrac{\sin{\varphi}}{2^n \cdot \sin{\dfrac{\varphi}{2^n}}} =\dfrac{\sin{\varphi}}{\varphi} \cdot \dfrac{\dfrac{\varphi}{2^n}}{\sin{\dfrac{\varphi}{2^n}}} .$$</p>
+<p>因为$x_n =\dfrac{\varphi}{2^n} \to 0$，故依上述的命题</p>
+<p>$$\lim \dfrac{\sin{\dfrac{\varphi}{2^n}}}{\dfrac{\varphi}{2^n}} =1.$$</p>
+<p>于是本题内整序变量的极限就等于数$\dfrac{\sin{\varphi}}{\varphi}$.</p>
+<p>$8)\;$现在我们再研究一个十分重要的极限.就是，在<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[数e]</a>内曾定义数$e$作为整序变量的极限：</p>
+<p>$$e=\lim_{n\to +\infty } \left( 1+\dfrac{1}{n} \right) ^n .\label{10} \tag{10}$$</p>
+<p>今我们要建立更普遍的结果：</p>
+<p>$$\lim_{x\to +\infty } \left( 1+\dfrac{1}{x} \right) ^x =e \label{11} \tag{11}$$</p>
+<p>及同样</p>
+<p>$$\lim_{x\to -\infty } \left( 1+\dfrac{1}{x} \right) ^x =e. \label{11a} \tag{11a}$$</p>
+<p>这次我们要应用借“序列的语言”来表达的极限的第二个定义了[变成整序变量的情形].</p>
+<p>首先，要记起，与$\eqref{10}$同时也成立下面的等式</p>
+<p>$$\lim \left( 1+\dfrac{1}{n_k} \right) ^{\displaystyle n_k} =e,\label{12} \tag{12}$$</p>
+<p>只要$\lbrace n_k \rbrace $是自然数的任意序列，随标号$k$一起增大以至无穷<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[部分数列及部分极限]</a>.</p>
+<p>今设$x$依任何趋向于$+\infty $的序列$\lbrace x_k \rbrace $而递变；并且可以当作一切$x_k &gt; 1$.令$n_k =E(x_k )$，于是</p>
+<p>$$n_k \leq x_k &lt; n_k +1 \quad 又\quad n_k \to +\infty .$$</p>
+<p>因为这时</p>
+<p>$$\dfrac{1}{n_k +1} &lt; \dfrac{1}{x_k } \leq \dfrac{1}{n_k } .$$</p>
+<p>所以</p>
+<p>$$\left( 1+\dfrac{1}{n_k +1} \right) ^{\displaystyle n_k } &lt; \left( 1+\dfrac{1}{x_k } \right) ^{\displaystyle x_k } &lt; \left( 1+\dfrac{1}{n_k } \right) ^{\displaystyle n_k +1} .$$</p>
+<p>两个靠边的式子可以改写成：</p>
+<p>$$\left( 1+\dfrac{1}{n_k +1} \right) ^{\displaystyle n_k } =\dfrac{\left( 1+\dfrac{1}{n_k +1} \right) ^{\displaystyle n_k +1}}{1+\dfrac{1}{n_k +1}} ,$$</p>
+<p>$$\left( 1+\dfrac{1}{n_k } \right) ^{\displaystyle n_k +1} =\left( 1+\dfrac{1}{n_k } \right) ^{\displaystyle n_k } \cdot \left( 1+\dfrac{1}{n_k } \right) ,$$</p>
+<p>并且根据$\eqref{12}$，</p>
+<p>$$\left( 1+\dfrac{1}{n_k } \right) ^{\displaystyle n_k } \to e,同样地有\left( 1+\dfrac{1}{n_k +1} \right) ^{\displaystyle n_k +1} \to e,$$</p>
+<p>同时，显然地，</p>
+<p>$$1+\dfrac{1}{n_k } \to 1,\quad 1+\dfrac{1}{n_k +1} \to 1;$$</p>
+<p>这样，上述的两式都趋于公共的极限$e$，所以夹在他们中间的式子也应趋于$e$<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[依对等式及不等式取极限，定理3°]</a>：</p>
+<p>$$\lim \left( 1+\dfrac{1}{x_k } \right) ^{\displaystyle x_k } =e.$$</p>
+<p>由此，关系式$\eqref{11}$内的第一式已经在“序列的语言”下获得证明.</p>
+<p>为了再要证明$\eqref{11a}$，可以假定序列$\lbrace x_k \rbrace $以$-\infty $为极限（并且可以当作一切$x_k &lt; -1$）.若令$x_k =-y_k $，则$y_k \to +\infty $（又一切$y_k &gt; 1$）.显然，</p>
+<p>$$\left( 1+\dfrac{1}{x_k } \right) ^{\displaystyle x_k } =\left( 1-\dfrac{1}{y_k } \right) ^{\displaystyle -y_k } =\left( \dfrac{y_k }{y_k -1} \right) ^{\displaystyle y_k } =\left( 1+\dfrac{1}{y_k -1} \right) ^{\displaystyle y_k -1} \cdot \left( 1+\dfrac{1}{y_k -1} \right) .$$</p>
+<p>因为，依前面所证明的，最后一式的第一因式趋向于$e$，第二因式显然以$1$为极限，所以在左边的式子也应趋于$e$.故公式$\eqref{11a}$已完全证实.</p>
+<p>今把表达式$\left( 1+\dfrac{1}{x} \right) ^x $内的变量$x$换成$\dfrac{1}{\alpha }$；若$\alpha $是趋向于$0$（但不等于$0$）的序列中的一值 ，则$x=\dfrac{1}{\alpha }$将趋向于$\pm \infty $.因此，公式$\eqref{11}$和$\eqref{11a}$可以改写成</p>
+<p>$$e=\lim_{\alpha \to 0} (1+\alpha )^{\frac{1}{\alpha }} .\label{13} \tag{13}$$</p>
+<p>这一值得注意的结果是数$e$的一切应用上的基础.</p>
+<p>$9)\;$最后，举一个函数的极限并不存在的例题也是很有趣的.函数$\sin{x}$在$x$趋向于$+\infty (-\infty )$时就全然没有极限.</p>
+<p>站在“序列的观点”上来说明极限的不存在最为简单.只要注意$x$值的两个序列</p>
+<p>$$\left\lbrace \left( 2n-\dfrac12 \right) \pi \right\rbrace \quad 及\quad \left\lbrace \left( 2n+\dfrac12 \right) \pi \right\rbrace \quad (n=1,2,\cdots )$$</p>
+<p>都以$+\infty $为极限，而与它们对应的函数值的序列却趋于两个相异的极限：</p>
+<p>$$\sin{\left( 2n-\dfrac12 \right) \pi } =-1 \to -1,\sin{\left( 2n+\dfrac12 \right) \pi } =1\to 1.$$</p>
+<p>（又可以改用这样的说法：若取以$+\infty $为极限的$x$值的序列</p>
+<p>$$\left\lbrace \left( n+\dfrac12 \right) \pi \right\rbrace \quad (n=1,2,\cdots ),$$</p>
+<p>则与它对应的函数值的序列：</p>
+<p>$$\sin{\left( n+\dfrac12 \right) \pi }= (-1)^n \quad (n=1,2,\cdots )$$</p>
+<p>就全然没有极限.）</p>
+<p>若想起正弦曲线的“振动”的特性，则在所考察的情形极限并不存在是很明显的.</p>
+<p>类似地，函数$\sin{\dfrac{1}{\alpha }}$在$\alpha $（从右或从左）趋向于$0$时极限并不存在.实际上，这仅是前述例题的另一形式：只需在函数$\sin{x}$内把$x$换成$\dfrac{1}{\alpha }$就是.显然，若$\alpha $依从右（从左）接近于$0$的序列递变，则$x=\dfrac{1}{\alpha }$就趋向于$+\infty (-\infty )$，反之亦真.</p>
+<p>在表达式$\sin{\dfrac{1}{\alpha }}$内，将字母$\alpha $仍旧写成字母$x$（使变成惯用的横标的记号），并考察当$x$的数值在由$0$至$\dfrac{2}{\pi}$（及由$-\dfrac{2}{\pi}$至$0$）的范围内时的函数</p>
+<p>$$y=\sin{\dfrac{1}{x}} (x\neq 0)$$</p>
+<p>的图像.</p>
+<p>记下依次减小到$0$的$x$数值：</p>
+<p>$$\dfrac{2}{\pi} ,\dfrac{1}{\pi} ,\dfrac{2}{3\pi} ,\dfrac{1}{2\pi} ,\dfrac{2}{5\pi} ,\dfrac{1}{3\pi} ,\dfrac{2}{7\pi} ,\cdots ,\dfrac{2}{(2n-1)\pi} ,\dfrac{1}{n\pi} ,\dfrac{2}{(2n+1)\pi} ,\cdots ,$$</p>
+<p>与它们对应的是增大至无穷大的$\dfrac{1}{x}$数值：</p>
+<p>$$\dfrac{\pi}{2} ,\pi ,\dfrac{3\pi}{2} ,2\pi ,\dfrac{5\pi}{2} ,3\pi ,\dfrac{7\pi}{2} ,\cdots ,\dfrac{(2n-1)\pi}{2} ,n\pi ,\dfrac{(2n+1)\pi}{2} ,\cdots ,$$</p>
+<p>在上述（当$x$减小时）各相邻数值之间的诸区间内，函数$\sin{\dfrac{1}{x}}$更迭地由$1$减小至$0$，再由$0$减小至$-1$，然后又由$-1$增大至$0$，再由$0$增大至$1$，等等.</p>
+<p>这样，函数$\sin{\dfrac{1}{x}}$，类似于函数$\sin{x}$,就有着无数次的振动，但$\sin{x}$的振动散布于无穷区间，而此处$\sin{\dfrac{1}{x}}$的振动却见于有限区间中，且凝聚于$0$.</p>
+<p>在图$23$内画着它的图像（自然是很不完全的，要画出无数次的振动是不可能的！）.因为当$x$的符号改变时$\sin{\dfrac{1}{x}}$的符号亦必改变，所以图像的左半部与右半部关于原点是对称的.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu28.png" alt=""></center>
+
+<p>$10)\;$若考察函数$x\sin{\dfrac{1}{x}}$（在$x\neq 0$时），它与刚才研究过的函数$\sin{\dfrac{1}{x}}$仅差一个乘数$x$，则这次在$x\to 0$时就有极限存在了：</p>
+<p>$$\lim_{x\to 0} x\cdot \sin{\dfrac{1}{x}} =0,$$</p>
+<p>这事实由不等式</p>
+<p>$$\vert x\cdot \sin{\dfrac{1}{x}} \vert \leq \vert x\vert ,$$</p>
+<p>就可以立刻明白.</p>
+<p>在$x$接近于$0$时，我们的函数仍旧发生无数次的振动，但它们的振幅（由于乘数$x$）渐渐减小而趋于$0$，由此就保证了极限的存在.</p>
+<p>函数</p>
+<p>$$y=x\cdot \sin{\dfrac{1}{x}}$$</p>
+<p>的图像画在图$24$内；它包藏在两条坐标角的分角线$y=x$与$y=-x$之间.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu29.png" alt=""></center>
+
+<blockquote>
+<p>在图$23$及$24$内，为着要比较明晰地表示出无数次振动这一事实，不得不在$x$轴上取较大的尺度，因此也就造成了函数的准确图像失真.</p>
+</blockquote>
+<p><strong>附注</strong>$\quad $我们已有一系列的极限</p>
+<p>$$\lim_{x\to } \dfrac{\sin{x}}{x} =1,\quad \lim_{x\to 0} (1+x)^{\frac{1}{x}} =e,\quad \lim_{x\to 0} x\sin{\dfrac{1}{x}} =0,$$</p>
+<p>具有一种共同的特性：即此处所考察的诸函数中没有一个函数在$x=0$时是有定义的.但这并不影响我们说及当$x\to 0$时它们的极限的存在，因为，依照[函数的极限的定义]中所给定义的准确意义，刚好数值$x=0$是不被考察的.</p>
+<p>类似地，函数$\sin{\dfrac{1}{x}}$在$x=0$时并无意义的事实并不影响我们提出当$x\to 0$时它的极限的存在问题；但现在极限并不存在.</p>
+<h2 id="极限理论的拓广">极限理论的拓广</h2><p>在第一章内（$\S 1$和$\S 2$）所阐明的适合于整序变量的极限理论，应如何拓广之使适合于这里所考察的任意函数的一般场合，这一问题是自然会提出来的.</p>
+<p>这存在着两条路径：</p>
+<p>Ⅰ.首先，可以把以前所叙述过的论断改写一下.我们现在就对<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>内的例题$1°$实际地试行一下作为例子.</p>
+<p>考察在某一以$a$为聚点的区域$\mathcal{X}$内所定义的函数$f(x)$.</p>
+<blockquote>
+<p>数$a$可以是无穷的；但我们为着确定起见，且限于$a$为有限的场合.</p>
+</blockquote>
+<p>$1°\quad $若当$x$趋于$a$时函数$f(x)$有一有限的极限$A$，而$A &gt; p(A &lt; q)$，则当$x$的值充分接近于$a$（异于$a$）时函数本身也就满足不等式</p>
+<p>$$f(x) &gt; p \quad (f(x) &lt; q).\label{14} \tag{14} $$</p>
+<p>选取正数$\varepsilon &lt; A-p(q-A)$，就有</p>
+<p>$$A-\varepsilon &gt; p \quad (A+\varepsilon &lt; q).$$</p>
+<p>但依极限定义，对于这$\varepsilon $必能求出$\delta $，只需$\vert x-a \vert &lt; \delta $（其中$x$取自$\mathcal{X}$内且异于$a$），就有</p>
+<p>$$A-\varepsilon &lt; f(x) &lt; A+\varepsilon .$$</p>
+<p>对于这些$x$值，当然$\eqref{14}$式也能成立.</p>
+<p>读者当已看到，在证明时并不需引入任何新的观念.</p>
+<p>由此又可以直接证实<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>内的命题$2°,3°$及$5°$.例如，在$1°$内命$p=0(q=0)$，就得</p>
+<p>$2°\quad $若在$x\to a$时函数$f(x)$有一有限的正（负）极限，则函数本身也必为正（负），至少，对于充分接近于$a$但异于$a$的$x$的数值是如此.</p>
+<p>类似于$4°$的命题亦必真空，但表示为更狭义的形式.</p>
+<p>$4°\quad $若在$x\to a$时函数$f(x)$有一有限的极限，则对于充分接近于$a$的$x$的数值函数是有界的：</p>
+<p>$$\vert f(x)\vert \leq M’\quad (M’=常数,\vert x-a\vert &lt; \delta ).$$</p>
+<p>回想起有一有限极限的整序变量$x_n $，最初也仅在$n &gt; N$时才得出不等式$\vert x_n \vert \leq M’$；但因整序变量的数值仅只有限个数不能满足这不等式，故在有需要的时候也不难增大$M’$，使一切$x_n $都能满足这不等式.但在函数的情形，一般说这是办不到的，因为使$\vert f(x)\vert &gt; M’$的$x$的数值可以是无穷集.例如，函数$f(x)=\dfrac{1}{x}(x &gt; 0)$在$x\to 1$时趋于$1$；显然，若$\vert x-1 \vert &lt; \dfrac12 $，则$f(x) &lt; 2$，然而对于$x$的一切被考察的数值，函数$f(x)$却不是有界的.</p>
+<p>Ⅱ.在叙述别的定理以前，我们首先应该约定，若在那些定理内变量是用等式、不等式或算术运算等符号联系的，则两个或几个（在同一区域$\mathcal{X}$内所定义的）函数$f(x),g(x),\cdots $用这种符号连接起来时，我们总把它们的数值了解为对应于同一个$x$的数值.</p>
+<p>所有这些定理都可以用类似的方法重新证明，但需着重指出，实际上没有必要去一一证明它们.若站在“序列的观点”上来谈函数的极限，则既然对于序列定理已被证明，那么对于函数它们也是正确的.</p>
+<p>姑且讨论<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[变量的算术运算]</a>内的定理$1°,2°,3°$，作为例子：</p>
+<p>设在区域$\mathcal{X}$（有聚点$a$）内给定两函数$f(x)$及$g(x)$，在$x$趋于$a$时有有限极限</p>
+<p>$$\lim f(x) =A,\quad \lim g(x)=B.$$</p>
+<p>则函数</p>
+<p>$$f(x)\pm g(x),\quad f(x)\cdot g(x),\quad \dfrac{f(x)}{g(x)},$$</p>
+<p>也有有限极限（在商的情形须假定$B\neq 0$），就是</p>
+<p>$$A\pm B,\quad A\cdot B,\quad \dfrac{A}{B}.$$</p>
+<p>用“序列的语言”译述上述的两个关系式，就成为：若$\lbrace x_n \rbrace $是$\mathcal{X}$内的任意序列，有极限$a$，则</p>
+<p>$$f(x_n )\to A ,\quad g(x_n )\to B.$$</p>
+<p>若把已经证明的定理应用于这两个整序变量，则立即得出</p>
+<p>$$\lim [f(x_n )\pm g(x_n )] =A\pm B,\quad \lim f(x_n )g(x_n ) =A\cdot B,\quad \lim \dfrac{f(x_n )}{g(x_n )} =\dfrac{A}{B} ,$$</p>
+<p>而这正就（用“序列的语言”）表达着上面所要证明的东西.</p>
+<blockquote>
+<p>在商的情形可以注意到（类似于在论及整序变量时我们曾做过的那样），在$x$充分接近于$a$时分母$g(x)\neq 0$,于是分式$\dfrac{f(x)}{g(x)}$就有了意义，至少在$x$的这些数值时是如此.</p>
+</blockquote>
+<p>在<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[不等式]</a>内所讲的关于“不定式”也都同样地自动转移到我们现在所考察的一般情形来了.它们用约定的记号</p>
+<p>$$\dfrac{0}{0},\quad \dfrac{\infty }{\infty } ,\quad 0\cdot \infty ,\quad \infty -\infty $$</p>
+<p>来表示.如同我们在自然数变量函数的简单情形一样，这里为了要“确定不定式”，仅知道函数$f(x)$及$g(x)$的极限还是不够的，必须计及这些函数的变动的规律.</p>
+<p>读者很容易检查出，在前一目的例$4),5)$内我们已遇见过不定式，其型如$\dfrac{\infty }{\infty }$及$0\cdot \infty $，而在例$7)$内遇见过不定式其型如$\dfrac{0}{0}$.在下一目内我们将再引入一些例题，并应用极限论的最简单的定理.</p>
+<p>在第四章的$\S 4$我们还要回到这个问题来，在那里，我们应用微分学给出了确定不定式的一般方法.</p>
+<h2 id="例题-1">例题</h2><p>$1)\;$把<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[极限求法的例题]</a>的例$1)$及$2)$普遍化，我们研究多项式</p>
+<p>$$p(x) =a_0 x^k +a_1 x^{k-1} +\cdots +a_{k-1} x+a_k $$</p>
+<p>而后再研究两个多项式的商</p>
+<p>$$\dfrac{p(x)}{q(x)} =\dfrac{a_0 x^k +a_1 x^{k-1} +\cdots +a_{k-1} x+a_k}{b_0 x^l +b_1 x^{l-1} +\cdots +b_{l-1} x+b_l}$$</p>
+<p>在$x\to \pm \infty $的性态.</p>
+<p>经变形</p>
+<p>$$p(x)=x^k \left( a_0 +\dfrac{a_1 }{x} +\cdots +\dfrac{a_k }{x_k } \right) $$</p>
+<p>很易确定</p>
+<p>$$\lim_{x\to \pm \infty } p(x) =\pm \infty \quad (\infty -\infty ),$$</p>
+<p>并且极限的符号可以这样确定：当$k$为偶数时它仅由$a_0 $的符号来决定，当$k$为奇数时除$a_0 $以外还要看$x$的符号.</p>
+<p>$2)\;$类似于此，我们可求出</p>
+<p>$$\lim_{x\to \pm \infty } \dfrac{p(x)}{q(x)} =\pm \infty ,\quad \dfrac{a_0 }{b_0 },\quad 0(\dfrac{\infty }{\infty }),$$</p>
+<p>按照$k &gt; l,k =l$或$k &lt; l$.极限的符号（在第二种情形）依$a_0 $及$b_0 $的符号而确定，但在$k-l$为奇数时还须依$x$的符号而确定.</p>
+<p>$3)\;$今将证明对于任意的正有理指数$r$有公式</p>
+<p>$$\lim_{x\to 0} \dfrac{(1+x)^r-1}{x} =r\quad \left( \dfrac{0}{0} \right) .$$</p>
+<p>从指数为自然数：$r=n$这种最简单的情形开始.依牛顿二项定理</p>
+<p>$$\dfrac{(1+x)^n-1}{x} =\dfrac{nx+\dfrac{n(n-1)}{1\cdot 2} x^2 +\cdots +x^n }{x} =n+\dfrac{n(n-1)}{1\cdot 2} x+\cdots +x^{n-1} ;$$</p>
+<p>因为当$x\to 0$时最后一式的一切项，除第一项外，都趋于$0$，因此实际上就成为</p>
+<p>$$\lim_{x\to 0} \dfrac{(1+x)^n-1}{x} =n.$$</p>
+<p>今令$r=\dfrac{1}{m}$（式中$m$是自然数），并考察式子</p>
+<p>$$\dfrac{\sqrt[m]{1+x} -1}{x} .$$</p>
+<p>假定</p>
+<p>$$\sqrt[m]{1+x} -1=y,$$</p>
+<p>由此</p>
+<p>$$x=(1+y)^m -1.$$</p>
+<p>因为（当作$\vert x\vert &lt; 1$）</p>
+<p>$$1-\vert x\vert &lt; \sqrt[m]{1+x} &lt; 1+\vert x\vert ,$$</p>
+<p>所以</p>
+<p>$$\lim_{x\to 0} \sqrt[m]{1+x} =1,$$</p>
+<p>于是，随同着$x\to 0$亦有$y\to 0$.则依前面的情形，</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt[m]{1+x} -1}{x} =\lim_{y\to 0} \dfrac{y}{(1+y)^m-1} =\dfrac{1}{m} .$$</p>
+<p>最后，要证明一般的情形$r=\dfrac{n}{m}$，仍引用辅助变数$y$：</p>
+<p>$$\dfrac{(1+x)^{\frac{n}{m}}-1}{x} =\dfrac{(1+y)^n-1}{(1+y)^m-1} =\dfrac{(1+y)^n-1}{y} \cdot \dfrac{y}{(1+y)^m-1} .$$</p>
+<p>由此</p>
+<p>$$\lim_{x\to 0} \dfrac{(1+x)^{\frac{n}{m}} -1}{x} =\dfrac{n}{m} .$$</p>
+<p>$4)\;$求极限</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt[m]{1+x} -1-\dfrac{x}{m}}{x^2} .$$</p>
+<p>仍用同样的代换式$\sqrt[m]{1+x} -1=y$，则被考察的式子变为</p>
+<p>$$\dfrac{y-\dfrac{1}{m} [(1+y)^m-1]}{[(1+y)^m-1]^2} =\dfrac{-\dfrac{m-1}{2} y^2 +\cdots }{m^2 y^2 +\cdots } =\dfrac{-\dfrac{m-1}{2} +\cdots }{m^2 +\cdots } ,$$</p>
+<p>由此，立刻明白，所求的极限等于$-\dfrac{m-1}{2m^2} $.</p>
+<p>$5)\;$极限[例题，$7)$]</p>
+<p>$$\lim_{x\to 0} \dfrac{\sin{x}}{x} =1$$</p>
+<p>经常被应用着去求其他的极限.</p>
+<p>(а)</p>
+<p>$$\lim_{x\to 0} \dfrac{1-\cos{x}}{x^2} =\dfrac{1}{2} \quad \left( \dfrac00 \right) .$$</p>
+<p>显然</p>
+<p>$$\dfrac{1-\cos{x}}{x^2} =\dfrac{2\sin{}^2 \dfrac{x}{2}}{x^2} =\dfrac12 \left( \dfrac{\sin{\dfrac{x}{2}}}{\dfrac{x}{2}} \right) ^2 ;$$</p>
+<p>因为括弧内的式子趋于$1$，所以总的极限就是$\dfrac12$.</p>
+<p>(Б)</p>
+<p>$$\lim_{x\to 0} \dfrac{\tan{x} -\sin{x}}{x^3} =\dfrac12 \quad \left( \dfrac00 \right) .$$</p>
+<p>在这里用变形法很容易导向上面讨论过的极限：</p>
+<p>$$\dfrac{\tan{x} -\sin{x}}{x^3} =\dfrac{1}{\cos{x}} \cdot \dfrac{\sin{x}}{x} \cdot \dfrac{1-\cos{x}}{x^2} .$$</p>
+<p>只需注意当$x\to 0$时$\cos{x} \to 1$，则由上面(а)的结果便自然能推得本式的结果了.</p>
+<p>(в)</p>
+<p>$$\lim_{x\to \frac{\pi}{2}} (\sec{x} -\tan{x} ) =0(\infty -\infty ).$$</p>
+<p>在这里换成变量$\alpha =\dfrac{\pi}{2} -x$将更为便利；显然，当$x\to \dfrac{\pi}{2} $时$\alpha \to 0$.我们就有</p>
+<p>$$\sec{x} -\tan{x} =\csc{\alpha } -\cot{\alpha } =\dfrac{1-\cos{\alpha } }{\sin{\alpha }} =\dfrac{1-\cos{\alpha }}{\alpha ^2 } \cdot \dfrac{\alpha }{\sin{\alpha }} \cdot \alpha \to 0.$$</p>
+<h2 id="单调函数的极限">单调函数的极限</h2><p>关于函数极限</p>
+<p>$$\lim_{x\to a} f(x)$$</p>
+<p>的存在问题，对于某种特殊类型的函数，即由单调整序变量<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[单调整序变量的极限]</a>这概念拓广而得到的函数，其解决特别简单.</p>
+<p>设函数$f(x)$定义在某一区域$\mathcal{X} =\lbrace x\rbrace $内.若对于这区域内的任意一对数值$x$与$x’$，由$x’ &gt; x$能推得</p>
+<p>$$f(x’) &gt; f(x) [f(x’) &lt; f(x)],$$</p>
+<p>则$f(x)$称为在区域内的<strong>增函数（减函数）</strong>.又若由$x’ &gt; x$只能推得</p>
+<p>$$f(x’) \geq f(x)[f(x’) \leq f(x)],$$</p>
+<p>则$f(x)$称为<strong>不减函数（不增函数）</strong>.在这种场合，有时也称$f(x)$是<strong>广义增函数（减函数）</strong>，这样比较便利些.</p>
+<p>一切这种类型的函数总称为<strong>单调函数</strong>.对于单调函数有一个重要的定理，它完全类似于在<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[单调整序变量的极限]</a>内曾经建立的关于单调整序变量的定理.</p>
+<p><strong>定理</strong>$\quad $设函数$f(x)$在区域$\mathcal{X}$内单调地增大，即使是广义的也可以.区域$\mathcal{X}$以大于一切$x$值的数$a$（它可以是有限的数，或等于$+\infty $）作为聚点.若在这时函数上有界：</p>
+<p>$$f(x)\leq M\quad (对于\mathcal{X} 内的一切x)$$</p>
+<p>则当$x\to a$时函数有一有限的极限；在与此相反的场合，它趋向于$+\infty $.</p>
+<p><strong>证明</strong>$\quad $首先假定函数$f(x)$上有界，即当$x$在区域$\mathcal{X}$内变动时函数值所成的集$\lbrace f(x)\rbrace $是上有界的.则这数集必有一有限的上确界$A$存在<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">[数集的界]</a>.今将证明这数$A$就是所求的极限.</p>
+<p>给定一任意数$\varepsilon &gt; 0$，依上确界的性质，必能求出数值$x’ &lt; a$，使$f(x’) &gt; A-\varepsilon $.由于函数的单调性，则当$x &gt; x’$时当然更有：$f(x) &gt; A-\varepsilon $.另一方面，因为永远有$f(x) \leq A &lt; A+\varepsilon $，故对满足上述条件的$x$显然成立不等式</p>
+<p>$$\vert f(x)-A\vert &lt; \varepsilon .$$</p>
+<p>这就证明了本命题，只需在有限的$x’=a-\delta $（即$\delta =a-x’$），而在$a=+\infty $时取$\Delta =x’$.</p>
+<p>若函数$f(x)$不是上有界，则不论$E$是怎样的数：必能求出$x’$使$f(x’) &gt; E$；而当$x &gt; x’$时当然更有$f(x) &gt; E$了，余类推.</p>
+<p>建议读者重述这一定理，使适用于当极限值$a$小于$x$的一切数值的场合，以及对于单调减函数的场合.</p>
+<p>很易看出，<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[单调整序变量的极限]</a>内关于单调整序变量的定理只是这一定理的特殊情形.在那里标号$n$就是自变量，而带有聚点$+\infty $的自然数序列$\mathcal{N} =\lbrace n\rbrace $就是它的变动区域.</p>
+<p>以后经常遇到的函数$f(x)$的定义域$\mathcal{X}$是整个区间$[a’,a)$，其中$a’ &lt; a$而$a$可以是有限的数或$+\infty $，或是区间$(a ,a’]$，其中$a’ &gt; a$而$a$是有限的数或$-\infty $.</p>
+<h2 id="布尔查诺-柯西的一般判定法">布尔查诺-柯西的一般判定法</h2><p>今转而考察一般的情形，考察在以$a$为聚点的区域$\mathcal{X} =\lbrace x\rbrace $内给定的函数$f(x)$.如同在整序变量的场合<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[收敛原理]</a>一样，现在可以建立当$x$趋于$a$时函数有一有限极限值存在的判定法了.对于有限的$a$及对于$a=+\infty $的场合，我们平行地叙述这一定理.</p>
+<p><strong>定理</strong>$\quad $函数$f(x)$当$x$趋向于$a$时有一有限极限的必要而且充分的条件是，对于任一数$\varepsilon &gt; 0$必存在着$\delta &gt; 0(\Delta &gt; 0)$，只需</p>
+<p>$$\vert x-a\vert &lt; \delta ,\quad \vert x’-a\vert &lt; \delta \quad (x &gt; \Delta ,x’ &gt; \Delta ),$$</p>
+<p>就能成立不等式</p>
+<p>$$\vert f(x)-f(x’)\vert &lt; \varepsilon .$$</p>
+<p><strong>证明</strong>$\quad $我们在$a$是有限的假定下进行证明.</p>
+<p><strong>必要性</strong>$\quad $设存在着有限极限</p>
+<p>$$\lim_{x\to a} f(x)=A.$$</p>
+<p>则依给定的$\varepsilon &gt; 0$必能求出$\delta &gt; 0$，只需$\vert x-a\vert &lt; \delta $，就有</p>
+<p>$$\vert f(x)-A\vert &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>又设$\vert x’-a\vert &lt; \delta $，于是又有</p>
+<p>$$\vert A-f(x’)\vert &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>由此，假定同时有$\vert x-a\vert &lt; \delta $及$\vert x’-a\vert &lt; \delta $，就得</p>
+<p>$$\vert f(x)-f(x’)\vert =\vert \vert f(x)-A\vert +\vert A-f(x’)\vert \vert \leq \vert f(x)-A\vert +\vert A-f(x’)\vert &lt; \varepsilon .$$</p>
+<p><strong>充分性</strong>$\quad $可以应用完全类似于在整序变量的场合<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[收敛原理]</a>所曾用应用的那种论断.然而更简单的方法是不去重复这些论断，而直接把问题引向前已考察的情形.给我们打开这条道路的是用“序列的语言”表达的函数极限的第二定义[变成整序变量的情形].</p>
+<p>因此，设在定理内所叙述的条件已经满足，又依任意取的$\varepsilon &gt; 0$能确定对应的$\delta &gt; 0$.</p>
+<p>若$\lbrace x_n \rbrace $是$\mathcal{X}$中$x$的任意收敛于$a$的序列，则依序列的极限的定义，必能求出序号$N$，当$n &gt; N$时能使$\vert x_n -a\vert &lt; \delta $.与$n$同时又取另一序号$n’ &gt; N$，于是同时有</p>
+<p>$$\vert x_n -a\vert &lt; \delta \quad 及\quad \vert x_{n’} -a\vert &lt; \delta .$$</p>
+<p>根据$\delta $的选法，应有</p>
+<p>$$\vert f(x_n )-f(x_{n’} )\vert &lt; \varepsilon .$$</p>
+<p>因此，只要序号$n$及$n’$同时$&gt; N$，这不等式就能成立.这就表示整序变量$f(x_n )(n=1,2,\cdots )$满足<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[收敛原理]</a>中的条件，因而序列</p>
+<p>$$f(x_1 ),f(x_2 ),\cdots ,f(x_n ),\cdots $$</p>
+<p>有一有限极限.</p>
+<p>在[变成整序变量的情形]内（参阅该目末尾的附注）我们曾看到，由此已足证明不论怎样选取收敛于$a$的序列$\lbrace x_n \rbrace $，序列$f(x_n )$总趋于同一的极限；这极限也就是函数的极限，它的存在即是我们要证明的.</p>
+<p>（上述条件的充分性亦很容易从布尔查诺-魏尔斯特拉斯定理内导出，证法与在<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[布尔查诺-魏尔斯特拉斯(B.Bolzano-C.Weierstrass)引理]</a>）末尾对于整序变量的证法相似.</p>
+<h2 id="函数的上极限及下极限">函数的上极限及下极限</h2><p>当$x$趋近于$a$时即使函数$f(x)$并无确定的极限存在，但是对于特定的序列$x_n \to a$极限</p>
+<p>$$\lim_{n\to +\infty } f(x_n )$$</p>
+<p>仍可以存在；把它称为函数的<strong>部分极限</strong>.</p>
+<p>例如，函数$\sin{x}$在$x\to \pm \infty $时（或$\sin{\dfrac{1}{x}}$在$x\to 0$时）其部分极限就充满于由$-1$至$+1$的整个区间中.</p>
+<p>在函数的部分极限中恒能求出最大与最小的，称为它的上极限与下极限，并记成</p>
+<p>$$\varlimsup_{x\to a} f(x)\quad 及\quad \varliminf_{x\to a} f(x).$$</p>
+<p>函数有确定极限（依通常的意义）存在的必要而且充分的条件是：上极限与下极限相等.</p>
+<p>我们仅限于叙述这定理，不再进行证明.若要证明它，只需依<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[上极限及下极限]</a>内的次序进行好了.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/10/20/2015/04/weijifenxuejiaocheng122/" data-title="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/20/2015/04/jimiduoweiqishuxuefenxixitiji1121/" title="《数学分析习题集》第一章 分析引论 2. 数列理论">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《数学分析习题集》第一章 分析引论 2. 数列理论</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/10/20/2015/04/daishuxueyinlun123xt/"  title="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/20/2015/04/weijifenxuejiaocheng122/" data-title="《微积分学教程(第一卷)》 第二章 一元函数 2 函数的极限" data-url="http://yoursite.com/2015/10/20/2015/04/weijifenxuejiaocheng122/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的极限的定义"><span class="toc-number">1.</span> <span class="toc-text">函数的极限的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变成整序变量的情形"><span class="toc-number">2.</span> <span class="toc-text">变成整序变量的情形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">3.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#极限理论的拓广"><span class="toc-number">4.</span> <span class="toc-text">极限理论的拓广</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题-1"><span class="toc-number">5.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调函数的极限"><span class="toc-number">6.</span> <span class="toc-text">单调函数的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布尔查诺-柯西的一般判定法"><span class="toc-number">7.</span> <span class="toc-text">布尔查诺-柯西的一般判定法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的上极限及下极限"><span class="toc-number">8.</span> <span class="toc-text">函数的上极限及下极限</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>39</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
