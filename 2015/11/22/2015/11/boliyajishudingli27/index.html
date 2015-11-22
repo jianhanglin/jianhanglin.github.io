@@ -1,0 +1,751 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《波利亚计数定理》二 对称和群 2.7 置换群 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="置换群">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《波利亚计数定理》二 对称和群 2.7 置换群">
+<meta property="og:url" content="http://yoursite.com/2015/11/22/2015/11/boliyajishudingli27/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="置换群">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/2.12.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/2.13.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/2.14.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/2.15.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/2.16.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/2.17.png">
+<meta property="og:updated_time" content="2015-11-22T01:44:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《波利亚计数定理》二 对称和群 2.7 置换群">
+<meta name="twitter:description" content="置换群">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/11/22/2015/11/boliyajishudingli27/" title="《波利亚计数定理》二 对称和群 2.7 置换群" itemprop="url">《波利亚计数定理》二 对称和群 2.7 置换群</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-11-22T01:44:53.000Z" itemprop="datePublished"> Published 2015-11-22</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>这一节要介绍的群叫做置换群，其实在第$2.2$节里它们已登了场，但既然它们将要成为主角，我们不妨从头说起.所谓置换，就是把$N$个不同的东西的排列次序调换，说得精确一些，就是一个由这$N$个不同的东西组成的集自身之间的一一对应.为方便叙述，让我们把这$N$个不同的东西记作$1$、$2$、$\cdots $、$N$.一个置换$\sigma $可以表为</p>
+<p>$$\begin{pmatrix}<br>1 &amp; 2 &amp; \cdots &amp; N \\<br>\sigma (1) &amp; \sigma(2) &amp; \cdots &amp; \sigma (N)<br>\end{pmatrix},$$</p>
+<p>意指$N$对应于$\sigma (N)$，例如有五个不同的东西，把$1$和$2$调换，其余不动，得来的置换表为$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 2 &amp; 1 &amp; 3 &amp; 4 &amp; 5 \end{pmatrix}$.$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 3 &amp; 2 &amp; 4 &amp; 1 &amp; 5 \end{pmatrix}$这个置换，把$1$换作$3$，$2$不动，$3$换作$4$，$4$换作$1$，$5$不动.如果$\sigma_1 $和$\sigma_2 $是两个置换，它们的合成$\sigma_1 \sigma_2 $也是一个置换，效果是先按$\sigma_2$调换次序，再按$\sigma_1$调换次序.就拿刚才的两个置换为例，</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 2 &amp; 1 &amp; 3 &amp; 4 &amp; 5 \end{pmatrix} \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 3 &amp; 2 &amp; 4 &amp; 1 &amp; 5 \end{pmatrix} =\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 3 &amp; 1 &amp; 4 &amp; 2 &amp; 5 \end{pmatrix} .$$</p>
+<p>请注意$\sigma_1 \sigma_2 $与$\sigma_2 \sigma_1 $不一定相同，例如</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 3 &amp; 2 &amp; 4 &amp; 1 &amp; 5 \end{pmatrix} \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 2 &amp; 1 &amp; 3 &amp; 4 &amp; 5 \end{pmatrix} =\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 2 &amp; 3 &amp; 4 &amp; 1 &amp; 5 \end{pmatrix} .$$</p>
+<p>$N$个不同的东西的全部置换组成一个群，叫做$N$次对换群，记作$S_N$.它的阶是$N!(=1\times 2\times 3$ $\times \cdots \times (N-1)\times N)$，单位元是$\begin{pmatrix} 1 &amp; 2 &amp; \cdots &amp; N \\ 1 &amp; 2 &amp; \cdots &amp; N \end{pmatrix}$，$\begin{pmatrix} 1 &amp; 2 &amp; \cdots &amp; N \\ \sigma (1) &amp; \sigma (2) &amp; \cdots &amp; \sigma (N) \end{pmatrix}$的逆元是$\begin{pmatrix} \sigma (1) &amp; \sigma (2) &amp; \cdots &amp; \sigma (N) \\ 1 &amp; 2 &amp; \cdots &amp; N \end{pmatrix}$，例如有五个不同的东西，$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 3 &amp; 2 &amp; 4 &amp; 1 &amp; 5 \end{pmatrix}$的逆元是$\begin{pmatrix} 3 &amp; 2 &amp; 4 &amp; 1 &amp; 5 \\ 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \end{pmatrix}$，写得好看一些，即是$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 4 &amp; 2 &amp; 1 &amp; 3 &amp; 5 \end{pmatrix}$.</p>
+<p>几何形体的对称群，通常可以表为一个$N$次对称群里的某个子群.例如正三角形的对称群，也就是$D_3$，里面每个元可以看做是三角形的三个端点的置换，由于全部六个置换都能实现，正三角形的对称群是整个$S_3$.正方形的对称群里每个元可以看做是正方形的四个端点的置换，但这次并非全部$24$个置换都能实现，所以正方形的对称群不是整个$S_4$，它只是$S_4$里一个$8$阶子群，结构与$D_4$相同.正四面体的对称群也是$S_4 $里的一个子群，每个元可以看做是正四面体的四个端点的置换.它也不是整个$S_4 $，因为镜像反影是没有实现的，例如$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 4 &amp; 3 &amp; 2 \end{pmatrix}$不在对称群里.它也不是$D_4$，因为至少已有$9$个对称：绕着一条连接一个端点与它对面的中心的直线为轴旋转$120^{\circ}$和$240^{\circ}$，得到两对称；共有$4$条类似的对称轴，所以至少有$8$个对称，加上恒定不动，便至少有$9$个对称了.根据拉格朗日定理，这个群的阶是$\vert S_4 \vert =24$的因子，它不是$24$，又不小于$9$，便只能是$12$.因此，正四面体的对称群是个$12$阶群，除了刚描述的$9$个对称，再有$3$个，就是绕着一条连接一对棱的中心的直线为轴旋转$180^{\circ}$（图$2.12$）.用置换的写法，那$12$个元是</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \end{pmatrix} , \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 4 &amp; 2 &amp; 3 \end{pmatrix} ,\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 3 &amp; 4 &amp; 2 \end{pmatrix} ,$$</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 4 &amp; 2 &amp; 1 &amp; 3 \end{pmatrix} , \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 3 &amp; 2 &amp; 4 &amp; 1 \end{pmatrix} ,\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 4 &amp; 1 &amp; 3 &amp; 2 \end{pmatrix} ,$$</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 2 &amp; 4 &amp; 3 &amp; 1 \end{pmatrix} , \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 2 &amp; 3 &amp; 1 &amp; 4 \end{pmatrix} ,\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 3 &amp; 1 &amp; 2 &amp; 4 \end{pmatrix} ,$$</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 3 &amp; 4 &amp; 1 &amp; 2 \end{pmatrix} , \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 4 &amp; 3 &amp; 2 &amp; 1 \end{pmatrix} ,\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 2 &amp; 1 &amp; 4 &amp; 3 \end{pmatrix} .$$</p>
+<center><img src="/assets/img/boliyajishudingli/2.12.png" alt=""></center>
+
+<center><img src="/assets/img/boliyajishudingli/2.13.png" alt=""></center>
+
+<p>立方体的对称群是$S_8$的一个子群，看过这么多例子后，读者应该明白这个群不是整个$S_8$，只是$S_8 $里一个较小的子群.如果你留意到立方体有四条对角线（图$2.13$），而这四条对角线的任何置换总可以通过某个对称实现，你便知道立方体的对称群是$S_8$里的一个$24$阶子群，结构与$S_4$相同.例如$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\ 6 &amp; 7 &amp; 8 &amp; 5 &amp; 2 &amp; 3 &amp; 4 &amp; 1 \end{pmatrix}$代表一个绕着横轴转$90^{\circ}$的对称，它把对角线$a=(1,5)$、$b=(2,6)$、$c=(3,7)$、$d=(4,8)$的次序调换，是$\begin{pmatrix} a &amp; b &amp; c &amp; d \\ b &amp; c &amp; d &amp; a \end{pmatrix}$.立方体的每一面的中心构成一个正八面体的$6$个端点，因此正八面体的对称群的结构与立方体的对称群相同.</p>
+<p>正四面体的对称群，是$4$次对称群$S_4$里一个很特殊的子群，叫做$4$次交错群，让我们跟交错群也打个交道吧.首先，让我介绍一个把置换写作圈分解的表示方式，为了更好明白这个表示方式，把$1$、$2$、$\cdots $、$N$写在一个圆周上，如果$\sigma $把$i$换成$j$，即是$\sigma (i)=j$，便从$i$点至$j$点画一条有向的线段，例如$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 &amp; 11 &amp; 12 \\ 4 &amp; 6 &amp; 10 &amp; 5 &amp; 1 &amp; 8 &amp; 7 &amp; 12 &amp; 11 &amp; 3 &amp; 9 &amp; 2 \end{pmatrix}$这个置换的图，如图$2.14$所示.</p>
+<center><img src="/assets/img/boliyajishudingli/2.14.png" alt=""></center>
+
+<p>读者一定留意到这样的图总是由若干个圈组成，在上面的例子，共有$5$个圈，其中一个圈有四个点、一个圈有三个点、两个圈各有两点、一个圈只有一点.我们用$(a_1 ,a_2 ,\cdots ,a_m )$表示一个有$m$点的圈，意指从$a_1$走到$a_2$，$a_2 $走到$a_3$，$\cdots $，$a_{m-1}$走到$a_m $，$a_m $走到$a_1$.在上面的例子，那$5$个圈是$(2,6,8,12)$、$(1,4,5)$、$(3,10)$、$(9,11)$、$(7)$.其实一个圈$(a_1 ,a_2 ,\cdots ,a_m)$也是一个置换，它把$a_1$换作$a_2$、$a_2$换作$a_3$、$\cdots $、$a_{m-1}$换作$a_m $、$a_m $换作$a_1 $，其余不动.从这个角度看，这些圈的合成正好就是原来的置换，而且在结合过程中，由于每个圈含的点不落在另一个圈内，结合次序无关大局.在上面的例子，我们可以写成</p>
+<p>$$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 &amp; 11 &amp; 12 \\ 4 &amp; 6 &amp; 10 &amp; 5 &amp; 1 &amp; 8 &amp; 7 &amp; 12 &amp; 11 &amp; 3 &amp; 9 &amp; 2 \end{pmatrix}$$</p>
+<p>$$=(1,4,5)(2,6,8,12)(3,10)(7)(9,11).$$</p>
+<p>一般而言，任何置换$\sigma $能唯一（次序不计）表成若干个圈的乘积，叫做$\sigma $的圈分解.每个圈上的点数叫做它的圈长，圈长是$1$的圈即是单位元置换，圈长是$2$的圈叫做对换.我们把置换$\sigma $的圈分解里的圈的个数记作$l(\sigma )$，例如在上面的例子，$l(\sigma )=5$.</p>
+<p>设$\sigma $是一个置换，而$\tau$是一个对换，你猜$\tau \sigma $与$\sigma $有什么好的关系呢？分两种情况讨论：</p>
+<p>$(1)\;\tau =(a,b)$，$a$和$b$在$\sigma $的圈分解里同一个圈上，结合$\tau $后，效果等于把这个圈分裂为两个圈（图$2.15$）.</p>
+<center><img src="/assets/img/boliyajishudingli/2.15.png" alt=""></center>
+
+<p>$(2)\;\tau =(a,b)$，$a$和$b$在$\sigma $的圈分解里不同的圈上，结合$\tau $后，效果等于把这两个圈合并为一个圈（图$2.16$）.</p>
+<center><img src="/assets/img/boliyajishudingli/2.16.png" alt=""></center>
+
+<p>不论是哪一种情况，$l(\sigma )$与$l(\sigma \tau )$总是相差$1$.让我们定义$\sigma $的正负号函数作$\mathrm{sgn} (\sigma ) =(-1)^{N-l(\sigma )}$，则$\mathrm{sgn} (\tau \sigma )=-\mathrm{sgn} (\sigma )$.因此，如果$\sigma $是$k$个对换的乘积，则$\mathrm{sgn} (\sigma )=(-1)^k$，这是因为从定义可知$\mathrm{sgn} (e)=1$，$e$是单位元置换.每个置换是若干个圈的乘积，而每个圈又可以写作若干个对换的乘积，比方$(a_1 ,a_2 ,\cdots ,a_m )=(a_1 ,a_2 )(a_2 ,a_3 )\cdots (a_{m-2} ,a_{m-1} )(a_{m-1} ,a_m )$，所以任何置换可以写成若干个对换的乘积.这种写法可不是唯一的，因为把一个圈写成对换的乘积，有不同的方法，例如$(1,2,3,4,5)=(1,2)(2,3)(3,4)(4,5)$，但也有$(1,2,3,4,5)=(1,2)(2,4)(1,5)(4,5)(2,3)$ $(1,4)$.不过，$\mathrm{sgn} (\sigma )$却因$\sigma $而确定，与$\sigma $是多少个对换合成无关.根据刚才的正负号函数公式，我们知道虽然$\sigma $的对换乘积表示方式不唯一，对换的个数的奇偶性却是唯一的，因$\sigma $而确定.我们把$\mathrm{sgn} (\sigma )=1$的置换$\sigma $叫做偶置换，偶置换由偶数多个对换合成；把$\mathrm{sgn} (\sigma )=-1$的置换叫做奇置换，奇置换由奇数多个对换合成.如果$\sigma_1 $和$\sigma_2 $都是偶置换，它们的乘积$\sigma_1 \sigma_2 $也是偶置换，$e$当然是个偶置换，所以全部偶置换组成$S_N$里的一个子群，叫做$N$次交错群，记作$A_N$.如果$\tau $是个对换，它是个奇置换，所以对任何$A_N$中的元$\sigma $，$\tau \sigma $是奇置换，而且任何奇置换$\sigma’$也可以由这种做法得来，只用取偶置换$\tau \sigma’$，便有$\tau (\tau \sigma’ )=\tau^2 \sigma’ =\sigma’$.因此，$A_N$的阶正好是$S_N$的一半，即是$N!/2$，或者说，$A_N$的指数是$2$.</p>
+<p>正四面体的对称群是$S_4$里的一个$12$阶子群，它其实与$A_4$的结构相同.众所周知，正多面体除了正四面体、立方体和正八面体外，还有两个，就是正十二面体和正二十面体.正十二面体每一面的中心构成一个正二十面体的十二个端点，所以它们的对称群是相同的.经过小心地计算（这儿不赘述），可以知道它们的对称群是$A_5$.从几何角度看，正十二面体里蕴藏了五个立方体（图$2.17$），每个正十二面体的对称，把这五个立方体的次序调换，所以正十二面体的对称群可以看做是$S_5$里的一个子群，正好是$A_5$.</p>
+<center><img src="/assets/img/boliyajishudingli/2.17.png" alt=""></center>
+
+<p>以上谈了这么多的例子，都是某个$S_N$里的一个子群.凡是$S_N$里的子群，便叫做置换群，以上的例子，都是置换群.不难从它们的几何定义去理解，例如正三角形有三个端点，所以它的对称群是$S_3$的一个子群.但其实更抽象地，任何有限群都是置换群，说得更仔细些，任何$N$阶群都是$N$次对称群$S_N$里的一个子群.这是英国数学家凯莱（$\mathrm{A.Cayley}$）在$1878$年发现的著名定理.如果你审视群表，也许你会发现这一回事，群表的每一行都是首先的置换，而且行与行（看成是置换）的合成正好与首列相应的元的合成吻合.让我举一实例印证，一般的证明留待有兴趣的读者自己做吧.图$2.18$是矩形（非正方形）的对称群的群表，为易于比较我用了$1$、$2$、$3$、$4$分别代替$I$、$R$、$V$、$H$.对应于$3$的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 3 &amp; 4 &amp; 1 &amp; 2 \end{pmatrix}$，对应于$4$的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 4 &amp; 3 &amp; 2 &amp; 1 \end{pmatrix}$；$3$与$4$结合得$2$，对应于$2$的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 2 &amp; 1 &amp; 4 &amp; 3 \end{pmatrix}$,而正好$\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 3 &amp; 4 &amp; 1 &amp; 2 \end{pmatrix} \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 4 &amp; 3 &amp; 2 &amp; 1 \end{pmatrix} =\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 2 &amp; 1 &amp; 4 &amp; 3 \end{pmatrix}$.所以这个四元群是$S_4$里的一个$4$阶子群.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/11/22/2015/11/boliyajishudingli27/" data-title="《波利亚计数定理》二 对称和群 2.7 置换群 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/11/22/2015/11/boliyajishudingli31/" title="《波利亚计数定理》二 “伯氏引理” 3.1 群在集上的作用">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》二 “伯氏引理” 3.1 群在集上的作用</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/11/22/2015/11/boliyajishudingli26/"  title="《波利亚计数定理》二 对称和群 2.6 两种常见的群">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》二 对称和群 2.6 两种常见的群
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/11/22/2015/11/boliyajishudingli27/" data-title="《波利亚计数定理》二 对称和群 2.7 置换群" data-url="http://yoursite.com/2015/11/22/2015/11/boliyajishudingli27/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>47</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">Tag Cloud</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
