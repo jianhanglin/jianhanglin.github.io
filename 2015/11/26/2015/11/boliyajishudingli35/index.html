@@ -1,0 +1,734 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="空间的有限旋转群">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群">
+<meta property="og:url" content="http://yoursite.com/2015/11/26/2015/11/boliyajishudingli35/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="空间的有限旋转群">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/3.11.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/3.12.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/3.13.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/3.14.png">
+<meta property="og:updated_time" content="2015-11-29T02:07:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群">
+<meta name="twitter:description" content="空间的有限旋转群">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/11/26/2015/11/boliyajishudingli35/" title="《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群" itemprop="url">《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-11-26T11:42:22.000Z" itemprop="datePublished"> 發表於 2015-11-26</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			
+		
+		</div>
+		
+		<p>在第二章第$2.2$节里我们介绍了平面或者空间里的对称，这节要讨论的是有限多个对称组成的群是一个什么模样.我们不考虑平移，所以全部对称都有一公共不动点，叫它作原点.要认真讨论这些对称，读者其实需要具备初等线性代数知识，更具体地，是正交矩阵与正交群的知识，但为了不把叙述岔开得太远，容许我提出以下两个事实作出发点，却不加以证明了：</p>
+<p>$(1)$能在平面上实施的对称，必是绕着原点的旋转.</p>
+<p>$(2)$能在空间里实施的对称，必是以通过原点的某条直线作轴的旋转.</p>
+<p>先看平面的有限旋转群$G$，不妨假定$\vert G\vert \neq 1$.它的每个元$\pi $是绕着原点逆时针方向旋转$\theta $，记作$A(\theta )$.如果$A(\theta_1 )$和$A(\theta_2 )$是$G$的元，它们的乘积是$A(\theta_1 +\theta_2 )$.取最小的那个$\theta $，记作$\theta_0 $，那么任何$A(\theta )$都必定是$A(\theta_0 )$自乘若干次.这是因为$\theta =t\theta_0 +\varphi $，其中$t$是整数，$\varphi $是$0$或者在$0$和$\theta_0 $之间，所以$A(\theta )=A(\theta_0 )^t A(\varphi )$，即是$A(\varphi )=A(\theta_0 )^{-t} A(\theta )$.右边是一个$G$中的元，所以$A(\varphi )$也是$G$中的元，从$\theta_0$的选择得悉$\theta $只能是$0$，从而$A(\theta )=A(\theta_0 )^t$.结论是：$G$是个有限循环群，结构与$Z_N$相同，$N\theta =360^{\circ}$，它可以看作是一个正$N$边形的旋转对称群（不准翻转）.</p>
+<p>现在看空间的有限旋转对称群$G$，也不妨假定$\vert G\vert \neq 1$.它的每个元$\pi $是绕着某条通过原点的直线作轴旋转，这条轴与以原点为中心的单位圆球面相交于两点，叫做$\pi $的极点.除去单位元不计，别的元都有两个极点，这两个极点也是对$\pi $来说在单位圆球面上唯一的两个不动点.设$\pi_1 $和$\pi_2 $是$G$中元，而$x$是$\pi_1 $的一个极点，那么$\pi_2 (x)$是$G$中元$\pi_2 \pi_1 \pi_2^{-1} $的极点，因为$\pi_2 \pi_1 \pi_2^{-1} (\pi_2 (x))=\pi_2 (x)$，而且$\pi_2 (x)$也是在单位圆球面上.考虑全部极点组成的集$S$，对$S$中元$x$和$G$中元$\pi $，规定$\pi \ast x=\pi (x)$，这定义了$G$在$S$上的一个作用.让我们计算在这个作用底下$S$有多少个轨.设有$r$个轨，根据伯氏引理，$r\vert G\vert =\sum \vert X(\pi )\vert $，求和式中$\pi $走遍$G$中元.如果$\pi $是单位元，$\vert X(\pi )\vert =\vert S\vert $；如果$\pi $不是单位元，$\vert X(\pi )\vert =2$.因此，$r\vert G\vert =2(\vert G\vert -1)+\vert S\vert =2(\vert G\vert -1)+\sum \vert G(x)\vert $，求和式中$x$走遍$r$个轨的代表元.记得$\vert G(x)\vert =\vert G\vert /\vert G_x \vert $，$\vert G_x \vert $是稳定子群，因此得到</p>
+<p>$$r=2(1-1/\vert G\vert )+\sum 1/\vert G_x \vert ,$$</p>
+<p>亦即</p>
+<p>$$\sum (1-1/\vert G\vert )=2(1-1/\vert G\vert ) \label{1} \tag{*} $$</p>
+<p>求和式中$x$走遍$r$个轨的代表元.注意到$1\leqslant 2(1-1/\vert G\vert ) &lt; 2$和$1/2\leqslant 1-1/\vert G_x \vert &lt; 1$，前者是因为$\vert G\vert \geqslant 2$，后者是因为$\vert G_x \vert \geqslant 2$（除单位元外还有另一个元以$x$为极点）.由此可以推断式$\eqref{1}$的左边求和式只能有$2$或$3$项，即是$r=2$或$3$，$S$只有$2$个轨或$3$个轨.让我们逐个情况考虑，设$r=2$，代入式$\eqref{1}$有$2=\vert G(x_1 ) \vert +\vert G(x_2 )\vert $，所以$\vert G(x_1 )\vert =\vert G(x_2 )\vert =1$.即是说，只有两个极点，各自成一轨，所以全部旋转都是绕着一条通过原点的公共轨.群的元把垂直于那条轴又通过原点的平面旋转，前面说过，这是个循环群.$G$可以看做是一个底是正多边形的棱锥的旋转对称群.其次，设$r=3$，代入式$\eqref{1}$有$1+2/\vert G\vert =1/\vert G_x \vert +1/\vert G_y \vert +1/\vert G_z \vert $.那三个$\vert G_x \vert $、$\vert G_y \vert $、$\vert G_z \vert $都不小于$2$，但又不能全部大于$2$，所以至少有一个是$2$，不妨置$\vert G_x \vert =2$.于是$1/2+2/\vert G\vert =1/\vert G_y \vert +1/\vert G_z \vert $.$\vert G_y \vert $和$\vert G_z \vert $中至少有一个不大于$3$，不妨置$\vert G_y \vert =2$或$3$，那么$\vert G_z \vert $不能大于$5$.总的来说，只有下列四种情况：$(a)\;\vert G_x \vert =\vert G_y \vert =2$，$\vert G_z \vert =n$（$n$大于$1$），$(b)\;\vert G_x \vert =2,\vert G_y \vert =3$，$\vert G_z \vert =3$，$(c)\;\vert G_x \vert =2,\vert G_y \vert =3$，$\vert G_z \vert =4$，$(d)\;\vert G_x \vert =2,\vert G_y \vert =3$，$\vert G_z \vert =5$.经仔细计算，每种情况都能精确地给描述出来，在这里我不详细写下计算了，有兴趣的读者可试自行补足细节.在情况$(a)$，$\vert G\vert =2n$，三个轨分别有$n$个点、$n$个点和$2$个点，其中一个轨的$n$个点正好是一个正$n$边形的端点，垂直于另一个轨的$2$个点连成的直线.$G$可以看做是一个正$n$边形在空间的旋转对称群，即是二面体群$D_n $（图$3.11$）.</p>
+<center><img src="/assets/img/boliyajishudingli/3.11.png" alt=""></center>
+
+<p>在情况$(b)$，$\vert G\vert =12$，三个轨分别有$4$个点、$4$个点和$6$个点，其中一个轨的$4$个点正好是一个正四面体的端点.$G$可以看做是一个正四面体的旋转对称群（图$3.12$）.</p>
+<center><img src="/assets/img/boliyajishudingli/3.12.png" alt=""></center>
+
+<p>在情况$(c)$，$\vert G\vert =24$，三个轨分别有$6$个点、$8$个点和$12$个点，其中一个轨的$6$个点正好是一个正八面体的端点.$G$可以看做是一个正八面体的旋转对称群（图$3.13$）.</p>
+<center><img src="/assets/img/boliyajishudingli/3.13.png" alt=""></center>
+
+<p>在情况$(d)$，$\vert G\vert =60$，三个轨分别有$12$个点、$20$个点和$30$个点，其中一个轨的$12$个点正好是一个正二十面体的端点.$G$可以看做是一个正二十面体的旋转对称群（图$3.14$）.</p>
+<center><img src="/assets/img/boliyajishudingli/3.14.png" alt=""></center>
+
+<p>在这个例子里，读者看到一件奇妙的事.有限个旋转组成一个群，看似限制不多，结果凭着伯氏引理数一数，竟然发现它只能是几个熟悉的几何形体的旋转对称群！从这一点我们再一次体验到群和几何对称之间的关系.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/11/26/2015/11/boliyajishudingli35/" data-title="《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/11/29/2015/11/boliyajishudingli41/" title="《波利亚计数定理》四 波利亚计数定理 4.1 怎样推广伯氏引理至波利亚计数定理？">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》四 波利亚计数定理 4.1 怎样推广伯氏引理至波利亚计数定理？</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/11/26/2015/11/boliyajishudingli34/"  title="《波利亚计数定理》三 “伯氏引理” 3.4 伯氏引理的应用">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》三 “伯氏引理” 3.4 伯氏引理的应用
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/11/26/2015/11/boliyajishudingli35/" data-title="《波利亚计数定理》三 “伯氏引理” 3.5 空间的有限旋转群" data-url="http://yoursite.com/2015/11/26/2015/11/boliyajishudingli35/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>50</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
