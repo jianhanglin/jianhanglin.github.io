@@ -1,0 +1,762 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="波利亚计数定理的应用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用">
+<meta property="og:url" content="http://yoursite.com/2015/11/29/2015/11/boliyajishudingli42/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="波利亚计数定理的应用">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.3.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.4.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.5.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.6.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.7.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/4.8.png">
+<meta property="og:updated_time" content="2015-12-06T04:14:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用">
+<meta name="twitter:description" content="波利亚计数定理的应用">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/11/29/2015/11/boliyajishudingli42/" title="《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用" itemprop="url">《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-11-29T01:43:35.000Z" itemprop="datePublished"> Published 2015-11-29</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>让我再一次回到立方体涂色问题（见第三章第$3.4$节近结束前的例子）：把立方体的六个面涂上油漆，或涂红色，或涂绿色，共有多少个不同的花式呢？我们已经计算过，共有$10$个，但当时并没有计算每种涂色花式有多少个.考虑的群是$S_6 $里的一个$24$阶子群，在第三章第$3.4$节里我们已经把它的元的圈分解全部写了出来，由此可以写下这个群的圈指标，是$(x_1^6 +6x_1^2 x_4 +3x_1^2 x_2^2 +6x_2^3 +8x_3^2 )/24$.按照波利亚计数定理，这个问题的构形计数记录是</p>
+<p>$$\begin{align}<br>I(a,b) &amp; =[(a+b)^6+6(a+b)^2(a^4+b^4)+3(a+b)^2(a^2+b^2)^2 + \\<br> &amp; 6(a^2+b^2)^3+8(a^3+b^3)^2]/24 \\<br> &amp; =a^6+a^5b+2a^4b^2+2a^3b^3+2a^2b^4+ab^5+b^6 ,<br>\end{align}$$</p>
+<p>$a$代表红，$b$代表绿.六面涂红色的有一个花式、五面涂红色的有一个花式、四面涂红色的有两个花式、三面涂红色的有两个花式、两面涂红色的有两个花式、一面涂红色的有一个花式、没有一面涂红色的有一个花式，合起来共有$10$个花式.如果用逐面相隔的横直彩色线代替整面涂色，那么考虑的群缩小了，是$S_6$里的一个$12$阶子群，只占刚才那个群的一半元，它的圈指标是$(x_1^6 +3x_1^2 x_2^2 +8x_3^2 )/12$，于是构形计数记录是</p>
+<p>$$\begin{align}<br>I(a,b) &amp; =[(a+b)^6+3(a+b)^2(a^2+b^2)^2 +8(a^3+b^3)^2]/12 \\<br> &amp; =a^6+a^5b+2a^4b^2+4a^3b^3+2a^2b^4+ab^5+b^6 ,<br>\end{align}$$</p>
+<p>六面画红线的有一个花式、五面画红线的有一个花式、四面画红线的有两个花式、三面画红线的有四个花式、两面画红线的有两个花式、一面画红线的有一个花式、没有一面画红线的有一个花式，合起来共有$12$个花式.这个计算也清楚地显示了那多出的两个花式怎样产生，它们都有三面红线和三面绿线（图$4.2$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.2.png" alt=""></center>
+
+<p>第二个例子是第一章第$1.1$节和第$1.3$节的问题：如果苯的结构中六个碳原子排成一个正六边形，当两个氢原子（以$c$代表）各给换成两个基（以$a$和$b$代表），有多少个同分异构体呢？如果苯的结构中六个碳原子排成一个三棱柱体，答案有没有不同？头一个情况涉及的群是$D_6$，它的圈指标是$(x_1^6 +4x_2^3 +2x_3^2 +3x_1^2 x_2^2 +2x_6 )/12$，从而得出构形计数记录是</p>
+<p>$$\begin{align}<br>I(a,b,c) &amp; =[(a+b+c)^6+4(a^2+b^2+c^2)^3+2(a^3+b^3+c^3)^2+ \\<br> &amp; 3(a+b+c)^2(a^2+b^2+c^2)^2 +2(a^6+b^6+c^6)]/12,<br>\end{align}$$</p>
+<p>在上一节里我们已经计算了，$abc^4$的系数是$3$.第二个情况涉及的群是$S_6$里的一个$6$阶子群，圈的指标是$(x_1^6+3x_2^3+2x_3^2)/6$，从而得出构形计数记录是</p>
+<p>$$I(a,b,c)=[(a+b+c)^3+3(a^2+b^2+c^2)^3+2(a^3+b^3+c^3)^2]/6,$$</p>
+<p>$abc^4$这一项的系数是$5$.如果读者还未感到筋疲力倦的话，大可计算正八面体的情况，验证一下$abc^4$在那个构形计数记录中的系数是不是$2$.</p>
+<p>第三个例子是第一章第$1.4$节的开关电路问题：如果容许调换输入，需要多少个开关电路便可以实现全部开关电路呢？先看最简单的情况，只有两个输入和一个输出，$S$的元是定义在全部四个二元有序偶$(z_1 ,z_2 )$上的函数，取值$0$（以$y$代表）或$1$（以$x$代表）.应该考虑的群是调换输入后导致的置换群，它是$S_4 $里的一个$2$阶子群.如果我们以$0$代$(0,0)$、$1$代$(0,1)$、$2$代$(1,0)$和$3$代$(0,0)$，那么不调换输入导致的群元就是$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 2 &amp; 3 \end{pmatrix} $，输入经对换后（即从$(z_1 ,z_2 )$变成$(z_2 ,z_1 )$）导致的群元就是$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 2 &amp; 1 &amp; 3 \end{pmatrix} $.这个二元群作用在$S$上得来的轨，便是起码应具备的二元函数类，也即是起码需要设计的开关电路了.这个群的圈指标是$(x_1^4+x_1^2 x_2 )/2$，构形计数记录是</p>
+<p>$$\begin{align}<br>I(y,x) &amp; =[(y+x)^4+(y+x)^2(y^2+x^2)]/2 \\<br> &amp; =y^4+3y^3x+4y^2x^2+3yx^3+x^4 ,<br>\end{align}$$</p>
+<p>意思是说，不取值$1$的函数类有一个、取值$1$一次的函数类有三个、取值$1$两次的函数类有四个、取值$1$三次的函数类有三个、取值$1$四次的函数类有一个，合起来共有$12$个（图$4.3$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.3.png" alt=""></center>
+
+<p>如果开关电路有三个输入和一个输出，应该考虑的群比前一个较在，是$S_8$里的一个$6$阶子群，有兴趣的读者可以试着计算它的圈指标，应是$(x_1^8 +3x_1^4 x_2^2 +2x_1^2 x_3^2 )/6$，所以构形计数记录是</p>
+<p>$$\begin{align}<br>I(y,x) &amp; =[(y+x)^8+3(y+x)^4(y^2+x^2)^2+2(y+x)^2(y^3+x^3)^2]/6 \\<br> &amp; =y^8+4y^7x+9y^6x^2+16y^5x^3+20y^4x^4+16y^3x^5+9y^2x^6+4yx^7+x^8 ,<br>\end{align}$$</p>
+<p>共需用$80$个二元函数类，其中不取值$1$的函数类有一个、取值$1$一次的函数类有四个、取值$1$二次的函数类有九个$\cdots $取值$1$八次的函数类有一个（图$4.4$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.4.png" alt=""></center>
+
+<p>如果更容许某些输入通过非门，应该考虑的群便更大，需用的二元函数类便更少.举两个输入和一个输出的情况为例，刚才的群有两个元，就是$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 2 &amp; 3 \end{pmatrix} $和$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 2 &amp; 1 &amp; 3 \end{pmatrix} $，现在每个元可以衍生四个元，这是因为$(z_1 ,z_2 )$可以变成$(z_1 ,z_2 )$、或$(\overline{z}_1 ,z_2 )$、或$(z_1 ,\overline{z}_2 )$、或$(\overline{z}_1 ,\overline{z}_2 )$，加上横杠表示$0$和$1$的值对换了.从$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 2 &amp; 3 \end{pmatrix} $得来的元是$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 2 &amp; 3 \end{pmatrix} $，$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 0 &amp; 1 \end{pmatrix} $，$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 1 &amp; 0 &amp; 3 &amp; 2 \end{pmatrix} $，$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 3 &amp; 2 &amp; 1 &amp; 0 \end{pmatrix} $；从$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 2 &amp; 1 &amp; 3 \end{pmatrix} $得来的元是$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 0 &amp; 2 &amp; 1 &amp; 3 \end{pmatrix} $，$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 2 &amp; 0 &amp; 3 &amp; 1 \end{pmatrix} $，$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 1 &amp; 3 &amp; 0 &amp; 2 \end{pmatrix} $，$\begin{pmatrix} 0 &amp; 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 &amp; 0 \end{pmatrix} $.应该考虑的群是$S_4$里的一个$8$阶子群，它的圈指标是$(x_1^4 +3x_2^2 +2x_1^2 x_2 +2x_4 )/8$，代入波利亚计数公式，构形计数记录是</p>
+<p>$$\begin{align}<br>I(y,x) &amp; =[(y+x)^4+3(y^2+x^2)^2+2(y+x)^2(y^2+x^2)+2(y^4+x^4)]/8 \\<br> &amp; =y^4+y^3x+2y^2x^2+yx^3+x^4 ,<br>\end{align}$$</p>
+<p>因此，如果容许调换输入又容许某些输入通过非门的话，我们只用设计$6$个开关电路便能实现全部$16$个开关电路了（图$4.5$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.5.png" alt=""></center>
+
+<p>读者有没有兴趣试一试三个输入和一个输出的情况呢？你猜需要多少个开关电路便能实现全部$2^8=256$个开关电路呢？惯于深究的读者自然会问：$N$个输入和一个输出的情况怎样？波利亚早于$1940$年的一篇文章里便提出这个问题，他指出问题相当于以下的构形计数问题：把一个$N$维立方体的$2^N$个端点涂上黑色或白色，共有多少个不同的花式？利用他的计数公式，问题化为计算$N$维立方体的对称群的圈指标.史立派安（$\mathrm{D.Slepian}$）在$1953$年找着一个答案，但目前最有效的算法当推罗宾逊（$\mathrm{R.W.Robinson}$）和巴尔马（$\mathrm{E.M.Palmer}$）在$1969$年发表的理论，见诸：E.M.Palmer.The exponentiation group as the automorphism group of a graph,in “Proof techniques in graph theory”,F.Harary(ed.).New York:Academic Press,$1969\colon 125-131$.</p>
+<p>最后，让我举一个关于图的计数问题来结束本节的讨论.这里我们只讨论单图，即是一些点（叫做图的端点）和一些连接某些点的线（叫做图的边）的组合，但两点之间顶多只有一条线连接，也没有线连接同一个点（用图论的术语说，是没有重边或自身圈）.对一个图，我们只对点的邻接关系感兴趣，有线连接的点叫做邻接的点.至于怎样摆放那些点和怎样画那些连接点的线，我们是不关心的.比方下面的两个图，虽然看去样子极不相似，我们却不区分，把它们当做是同样的图，更正确的说法，它们是同构的图（图$4.6$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.6.png" alt=""></center>
+
+<p>现在的问题是：共有多少个互相不同构的$N$个端点的单图？一个端点的单图只有一个，两个端点的单图有两个，三个端点的单图有四个，这都不难看得出来，但端点数目增大，凭手画画数数便很困难了！</p>
+<p>让我们先把单图计数问题纳入第三章第$3.4$节的架构.把每个端点标号，设为$a_1 $、$\cdots $、$a_N$，每个无序偶$\lbrace a_i ,a_j \rbrace $表示一对端点，或有线连接，或无线连接.如果是有线连接，我们定义函数值$f(\lbrace a_i ,a_j \rbrace )=x$；如果是没有线连接，我们定义函数值$f(\lbrace a_i ,a_j \rbrace )=y$.于是有一个标号端点的图相应于一个从$C=\lbrace 1,2,\cdots ,N(N-1)/2 \rbrace $到$\lbrace x,y\rbrace $的函数.下一个问题是：同构的图应该如何从这些有标号端点的图进行分类得来呢？两个图同构，相当于把图的有标号端点调换次序后，不变更邻接关系.应该考虑的群，是从端点的置换导致的边的置换群，让我举$N=3$为例作说明.三个端点的置换组成$S_3 $，它的六个元是</p>
+<p>$$\begin{pmatrix} a_1 &amp; a_2 &amp; a_3 \\ a_1 &amp; a_2 &amp; a_3 \end{pmatrix} ,\begin{pmatrix} a_1 &amp; a_2 &amp; a_3 \\ a_1 &amp; a_3 &amp; a_2 \end{pmatrix} ,\begin{pmatrix} a_1 &amp; a_2 &amp; a_3 \\ a_2 &amp; a_1 &amp; a_3 \end{pmatrix} ,$$</p>
+<p>$$\begin{pmatrix} a_1 &amp; a_2 &amp; a_3 \\ a_2 &amp; a_3 &amp; a_1 \end{pmatrix} ,\begin{pmatrix} a_1 &amp; a_2 &amp; a_3 \\ a_3 &amp; a_1 &amp; a_2 \end{pmatrix} ,\begin{pmatrix} a_1 &amp; a_2 &amp; a_3 \\ a_3 &amp; a_2 &amp; a_1 \end{pmatrix} ,$$</p>
+<p>从三个端点得出的无序偶有三个，就是$\lbrace a_1 ,a_2 \rbrace $、$\lbrace a_1 ,a_3 \rbrace $和$\lbrace a_2 ,a_3 \rbrace $，为简便起见，分别记作$1$、$2$、$3$.第一个元导致的边的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 1 &amp; 2 &amp; 3 \end{pmatrix} =(1)(2)(3)$、第二个元导致的边的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 1 &amp; 3 \end{pmatrix} =(3)(1,2)$、第三个元导致的边的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 1 &amp; 3 &amp; 2 \end{pmatrix} =(1)(2,3)$、第四个元导致的边的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{pmatrix} =(1,3,2)$，第五个元导致的边的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \end{pmatrix} =(1,2,3)$，第六个元导致的边的置换是$\begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 3 &amp; 2 &amp; 1 \end{pmatrix} =(2)(1,3)$.端点的置换群的圈指标是$(x_1^3 +3x_1 x_2 +2x_3 )/6$，它导致的边的置换群的圈指标也是$(x_1^3 +3x_1 x_2 +2x_3 )/6$.当然，这是因为从三个端点得出三个无序偶，我们根本无须计算也知道有这样的结果.但一般而言，端点的置换群的圈指标（也即是$S_N$的圈指标）跟它导致的边的置换群的圈指标并不相同，后一个群只是$S_{N(N-1)/2}$里的一个$N!$阶子群.读者可试按照刚才的方法计算$N=4$的情况，端点置换群是$S_4 $，它的圈指标是$(x_1^4 +6x_1^2 x_2 +8x_1 x_3 +3x_2^2 +6x_4 )/24$，它导致的边的置换群是$S_6 $里的一个$24$阶子群，圈指标是$(x_1^6 +6x_1^2 x_2^2 +8x_3^2 +3x_1^2 x_2^2 +6x_2 x_4 )/24=(x_1^6 +9x_1^2 x_2^2 +6x_2 x_4 +8x_3^2 )/24$.要计算三个端点的单图的个数，只须代入波利亚计数公式，构形计数记录是</p>
+<p>$$\begin{align}<br>I(x,y) &amp; =[(x+y)^3+3(x+y)(x^2+y^2)+2(x^3+y^3)]/6 \\<br> &amp; =x^3 +x^2y+xy^2 +y^3 ,<br>\end{align}$$</p>
+<p>意思是说，共有$4$个三个端点的单图，其中含三条边、两条边、一条边、没有边的各占一个（图$4.7$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.7.png" alt=""></center>
+
+<p>要计算四个端点的单图的个数，是依样画葫芦，代入波利亚计算公式，得到构形计数记录</p>
+<p>$$\begin{align}<br>I(x,y) &amp; =[(x+y)^6+9(x+y)^2(x^2+y^2)^2+6(x^2+y^2)(x^4+y^4)+8(x^3+y^3)^2]/24 \\<br> &amp; =x^6 +x^5y+2x^4y^2 +3x^3y^3 +2x^2y^4+xy^5 +y^6 ,<br>\end{align}$$</p>
+<p>共有$11$个单图，其中含六条边的有一个、含五条边的有一个、含四条边的有两个、含三条边的有三个、含两条边的有两个、含一条边的有一、没有边的有一个（图$4.8$）.</p>
+<center><img src="/assets/img/boliyajishudingli/4.8.png" alt=""></center>
+
+<p>惯于深究的读者又问：$N$个端点的单图有多少个？根据波利亚公式，这个问题化为计算从$S_N$导致的边的置换群的圈指标，经仔细分析这条公式是可以写下来的，但公式看起来是十分臃肿，在这里我不写出来了.波利亚早便意识到他的计数公式足以应付这方面的问题，但他没有发表，只把他的意见告诉给哈拉利，哈拉利在$1955$年发表了一篇文章，运用波利亚计数公式解决了好几种图的计数问题.有兴趣的读者，可以参阅哈拉利和巴尔马的专著：F.Harary,E.M.Palmer.Graphical enumeration.New York:Academic Press,$1973$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/11/29/2015/11/boliyajishudingli42/" data-title="《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/01/2015/12/boliyajishudingli43/" title="《波利亚计数定理》四 波利亚计数定理 4.3 伯氏引理的另一种推广">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》四 波利亚计数定理 4.3 伯氏引理的另一种推广</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/11/29/2015/11/boliyajishudingli41/"  title="《波利亚计数定理》四 波利亚计数定理 4.1 怎样推广伯氏引理至波利亚计数定理？">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》四 波利亚计数定理 4.1 怎样推广伯氏引理至波利亚计数定理？
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/11/29/2015/11/boliyajishudingli42/" data-title="《波利亚计数定理》四 波利亚计数定理 4.2 波利亚计数定理的应用" data-url="http://yoursite.com/2015/11/29/2015/11/boliyajishudingli42/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>53</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">Tag Cloud</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'your-disqus-shortname';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
