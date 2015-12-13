@@ -1,0 +1,739 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="烷烃$C_N H_{2N+2} $的计数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数">
+<meta property="og:url" content="http://yoursite.com/2015/12/08/2015/12/boliyajishudingli54/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="烷烃$C_N H_{2N+2} $的计数">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.8.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.9.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.10.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.11.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.12.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.13.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.14.png">
+<meta property="og:updated_time" content="2015-12-09T12:03:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数">
+<meta name="twitter:description" content="烷烃$C_N H_{2N+2} $的计数">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/08/2015/12/boliyajishudingli54/" title="《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数" itemprop="url">《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-08T11:50:03.000Z" itemprop="datePublished"> Published 2015-12-08</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>从化学的角度看，烷烃的计数问题应该较烷基的计数问题来得容易，因为烷基是从烷烃中取代一个氢原子得来的.但从数学的角度看，却刚好相反！由于烷基有一个碳原子连着基，地位较别的碳原子特殊，提供了一个让人“乘虚而入”的计算出发点.用树图的语言，就是有根树的计数问题比一般树的计数问题较易处理.为了暂时恢复这一点方便，让我们人为地选定一个点作根，先数数有多少个“有一个标了号的碳原子的烷烃”.设$P_m$是这种烷烃$C<em>m H</em>{2m+2}$的个数（图$5.8$），$P(x)=p_1 x+p_2 x^2 +p_3 x^3 +\cdots $是这个计数问题的母函数.</p>
+<center><img src="/assets/img/boliyajishudingli/5.8.png" alt=""></center>
+
+<p>从图中读者可以看到，那相当于数数在四个角上有多少个放置烷基的方法，这些烷基是容许在四个角上互相调换位置.因此，应该考虑的群是四次对称群$S_4$，它的圈指标是$(x_1^4 +6x_1^2 x_2 +3x_2^2 +8x_1 x_3 +6x_4 )/24$；$R$是全部烷基组成的集，权是碳原子的个数，权分布的母函数是上一节计算了的$A(x)$，这包括了$A_0 =1$（严格说来，那当然不算是一个烷基，只是一个氢原子）.根据波利亚计数定理，有</p>
+<p>$$P(x)=xZ_G (A(x),A(x^2),A(x^3),A(x^4)) ,G=S_4 ,$$</p>
+<p>也就是说</p>
+<p>$$P(x)=x[A(x)^4+6A(x)^2A(x^2)+3A(x^2)^2+8A(x)\cdot A(x^3)+6A(x^4)]/24.$$</p>
+<p>其次，我们再数数有多少个“有一个标了号的碳原子价键的烷烃”.设$Q_m $是这种烷烃$C<em>m H</em>{2m+2}$的个数（图$5.9$），$Q(x)=Q_1 x+Q_2 x^2 +Q_3 x^3 +\cdots $是这个计数问题的母函数.</p>
+<center><img src="/assets/img/boliyajishudingli/5.9.png" alt=""></center>
+
+<p>从图中读者可以看到，那相当于数数在两个位置上有多少个放置烷基的方法，这些烷基是容许在两个位置上作对换.因此，应该考虑是群是二次对称群$S_2 $，它的圈指标是$(x_1^2 +x_2 )/2$；$R$是全部烷基组成的集，权是碳原子的个数.权分布的母函数是$A(x)-1$，这儿我们不包括$A_0 =1$，是因为那个标了号的价键必须是连着两个碳原子的.根据波利亚计数定理，有</p>
+<p>$$Q(x)=Z_G (A(x)-1,A(x^2)-1),G=S_2 ,$$</p>
+<p>也就是说</p>
+<p>$$\begin{align}<br>Q(x) &amp; =\lbrace [A(x)-1]^2+[A(x^2)-1]\rbrace /2 \\<br> &amp; =[A(x)^2+A(x^2)]/2-A(x).<br>\end{align}$$</p>
+<p>非常巧妙的一步，是英国数学家瑞德（R.C.Read）在$1972$年提出的.利用这个思想，他还计算了很多别的化学化合物的同分异构体的个数，有兴趣的读者可以参阅：R.C.Read.The enumeration of acyclic chemical compounds,in”Chemical applications of graph theory”,A.T.Balaban(ed.).New York:Academic Press,$1976\colon 25-61$.怎样糅合$P(x)$和$Q(x)$去计算不作任何标号的烷烃同分异构体的个数呢？瑞德提出这样的看法：给定了某个烷烃的同分异构体，把它的一个碳原子标号，有多少种不同的方法？比方丁烷$C<em>4 H</em>{10}$的一个同分异构体是三个碳原子分别连着第四个碳原子.把一个碳原子标号，有两种不同的方法（图$5.10(a)$）；把其中一个碳原子价键标号，只有一种方法（图$5.10(b)$）.</p>
+<center><img src="/assets/img/boliyajishudingli/5.10.png" alt=""></center>
+
+<p>让我们又采用树图的观点考虑，$T$是一株$N$点树，把$T$的点标上$1$、$2$、$\cdots $、$N$.有些$\lbrace 1$、$2$、$\cdots $、$N\rbrace $的置换并不保持点的邻接关系，有些却仍然保持点的邻接关系，后者叫做$T$的自同构.一个$T$的自同构$\sigma $是个$\lbrace 1$、$2$、$\cdots $、$N\rbrace $的置换，如果点$v_1 $和$v_2 $有边相连，则点$\sigma (v_1 )$和$\sigma (v_2 )$也有边相连，反之亦然.直觉上的意思，$\sigma $只调换那些邻接性质相同的点，例如在下面的树里（图$5.11$），两边六个点可以互相调换，中间两个点也可以互相调换，但两边的六个点却不能跟中间的两个点调换.</p>
+<center><img src="/assets/img/boliyajishudingli/5.11.png" alt=""></center>
+
+<p>$T$的全部自同构组成一个群，叫做$T$的群，记作$G(T)$.对$G(T)$中元$\sigma $和$T$中点$v$，规定$\sigma \ast v =\sigma (v)$，这定义了群$G(T)$在树$T$上的一个作用，它的轨代表了一个其中一点给标了号的树.设$p$是轨的个数，它就是把$T$的一个点标号后得来的有根树的个数.$G(T)$也作用在$T$的边集上，如果$E$是相连$v_1 $和$v_2 $的边，$\sigma \ast E$就是相连$\sigma (v_1 )$和$\sigma (v_2 )$的边.这个作用下的轨代表了一个其中一条边给标了号的树.设$q$是轨的个数，它就是把$T$的一条边标号后得来的树的个数.$p$和$q$有没有关系呢？看看下面的例子（图$5.12(a)$），同一个轨的点以同一个数字表示，写在代表点的圆圈里；同一个轨的边也以同一个数字表示，写在边上面.在这个例子里，$p=2$和$q=2$.再看另一个例子（图$5.12(b)$），$p=6$和$q=5$.</p>
+<center><img src="/assets/img/boliyajishudingli/5.12.png" alt=""></center>
+
+<p>前一个例子有个特点，就是树里有条“对称边”，意思是说这条边在某个$\sigma $的作用下不变更，当然，它连着两个落在同一个轨的点.说它是“对称点”，是因为它的两个端点必定各自连着结构相同的树.懂一点图论的读者，便知道一株树只有一个或者两个互相邻接的中心点，所谓中心点，就是指从那一点到别的点的最远距离（距离的计算是用点到点的段落个数）是最小，下面的树（图$5.13$）的中心点涂了黑色，每点旁边写上从那点至别的点的最远距离.</p>
+<center><img src="/assets/img/boliyajishudingli/5.13.png" alt=""></center>
+
+<p>如果树只有一个中心点，它没有对称边；如果树有两个邻接的中心点但它们不落在同一个轨，它也没有对称边；只有当树有两个邻接的中心点而且它们落在同个轨，它才有对称边.一株树或者没有对称边或才只有一条对称边.在前一种情况，可以从树的每个轨找一个点，这些点有边连着，组成一株树，数数点和边的个数可知$p=q+1$（图$5.14(a)$）.在后一种情况，两个中心点各连着一株相同结构的树（图$5.14(b)$），每株树有$p$个轨的点和$(q-1)$个轨的边，由于$p=(q-1)+1$，便知道$p=q$.</p>
+<center><img src="/assets/img/boliyajishudingli/5.14.png" alt=""></center>
+
+<p>于是，$p-q+s=1$，$s$是对称边的个数，且只能是$1$或$0$.现在，走遍每个点次数不大于$4$的$N$点树，有$\sum p-\sum q+\sum s=\sum 1=C_N$，$C_N$就是这种$N$点树的个数，也就是烷烃$C<em>N H</em>{2N+2}$的同分异构体的个数.右边就是$P_N -Q_N +\sum s$，$P_N $和$Q<em>N $在本节刚开首时已经提过了.要计算$\sum s$并不难，它是有一条对称边而且每点次数不大于$4$的$N$点树的个数.如果一株树有对称边，这条边连着两株相同结构的树，所以这种树的点数$N$必定是偶数，而且这种树的个数是$A</em>{N/2}$，这儿的$A_m $是上一节出现过的母函数$A(x)$里$x^m $的系数.因此，当$N$是奇数时，$P_N -Q_N =C_N $；当$N$是偶数时，$P_N -Q<em>N +A</em>{N/2} =C_N $.置$C(x)=C_1 +C_2 x^2 +\cdots $，便得到$C(x)=P(x)-Q(x)+A(x^2)-1$.我们在本节刚开首时已经计算了$P(x)$和$Q(x)$，它们都能通过$A(x)$表达.如果知道了$A(x)$，便可以知道$C(x)$，也就知道$C_1 $、$C_2 $、$\cdots $的数值了，下面是$N$从$1$到$20$的$C_N$的数值：</p>
+<p>$$\begin{array}{cc}<br>N &amp; C_N \\<br>\hline<br>1 &amp; 1 \\<br>2 &amp; 1 \\<br>3 &amp; 1 \\<br>4 &amp; 2 \\<br>5 &amp; 3 \\<br>6 &amp; 5 \\<br>7 &amp; 9 \\<br>8 &amp; 18 \\<br>9 &amp; 35 \\<br>10 &amp; 75 \\<br>\end{array} \quad<br>\begin{array}{cc}<br>N &amp; C_N \\<br>\hline<br>11 &amp; 159 \\<br>12 &amp; 355 \\<br>13 &amp; 802 \\<br>14 &amp; 1\;858 \\<br>15 &amp; 4\;347 \\<br>16 &amp; 10\;359 \\<br>17 &amp; 24\;894 \\<br>18 &amp; 60\;523 \\<br>19 &amp; 148\;284 \\<br>20 &amp; 366\;319 \\<br>\end{array}$$</p>
+<p>$C_N$也就是烷烃$C<em>N H</em>{2N+2}$的同分异构体个数，例如甲烷、乙烷和丙烷各只有一个，但丁烷有两个，戍烷有三个等等.波利亚也计算了当$N$无限增大时$C_N$的渐近公式，是$C_N \sim c^{-N} N^{-5/2} $，$c$是常数.</p>
+<p>上面的计算只考虑同分异构体，关心的只是原子之间的键合，并没有顾及它们在空间的位置.原子在空间的位置对化合物的化学性质是会产生影响的，这个称作立体同分异构的现象，是法国科学家巴斯德（L.Pasteur）在$1848$年发现的，范霍夫在$1874$年开启了立体化学的研究.立体同分异构体的计数问题，基本上采用同样的方法，差别只在于考虑不同的群，瑞德在这方面做了不少计算，这儿就不介绍了，有兴趣的读者可以参阅刚才提过的文章，或者自己试一试.例如烷烃$C<em>N H</em>{2N+2}$的立体同分异构体个数$D_N$如下所示，$N$从$1$到$20\colon $</p>
+<p>$$\begin{array}{cc}<br>N &amp; D_N \\<br>\hline<br>1 &amp; 1 \\<br>2 &amp; 1 \\<br>3 &amp; 1 \\<br>4 &amp; 2 \\<br>5 &amp; 3 \\<br>6 &amp; 5 \\<br>7 &amp; 11 \\<br>8 &amp; 24 \\<br>9 &amp; 55 \\<br>10 &amp; 136 \\<br>\end{array} \quad<br>\begin{array}{cc}<br>N &amp; D_N \\<br>\hline<br>11 &amp; 345 \\<br>12 &amp; 900 \\<br>13 &amp; 2\;412 \\<br>14 &amp; 6\;563 \\<br>15 &amp; 18\;127 \\<br>16 &amp; 50\;699 \\<br>17 &amp; 143\;255 \\<br>18 &amp; 408\;429 \\<br>19 &amp; 1\;173\;770 \\<br>20 &amp; 3\;396\;844 \\<br>\end{array}$$</p>
+<p>这段故事，是数学和化学的一个优美的结合呀！</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/08/2015/12/boliyajishudingli54/" data-title="《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/09/2015/12/boliyajishudingli6/" title="《波利亚计数定理》附录 群的故事">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》附录 群的故事</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/06/2015/12/boliyajishudingli53/"  title="《波利亚计数定理》五 同分异构体计数 5.3 烷基$C_N H_{2N+1} X$的计数">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》五 同分异构体计数 5.3 烷基$C_N H_{2N+1} X$的计数
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">Tag Cloud</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 10px;">函数论</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

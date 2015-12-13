@@ -1,0 +1,743 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《波利亚计数定理》附录 群的故事 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="群的故事">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《波利亚计数定理》附录 群的故事">
+<meta property="og:url" content="http://yoursite.com/2015/12/09/2015/12/boliyajishudingli6/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="群的故事">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/6.1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/6.2.png">
+<meta property="og:updated_time" content="2015-12-12T07:12:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《波利亚计数定理》附录 群的故事">
+<meta name="twitter:description" content="群的故事">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/09/2015/12/boliyajishudingli6/" title="《波利亚计数定理》附录 群的故事" itemprop="url">《波利亚计数定理》附录 群的故事</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-09T12:10:54.000Z" itemprop="datePublished"> Published 2015-12-09</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>群是近世抽象代数里一个重要概念，而且渗透至众多数学部门，已经成为一个贯穿整个数学学科的主要思想.这个看似朴实简单却又优美深刻的概念十分年青，只是在一个半世纪前才被引进数学，到了$20$世纪初叶，才以今天在每一本抽象代数课本开首的叙述形式展示它的面目.但它的一个重要源头，却是有数千年历史的古典代数问题——怎样解代数整式方程？</p>
+<p>相信读者在初中时已经跟方程打交道，在这儿我们只关心一元$N$次方程.远在几千年前的古代东方或西方的数学文献都记载了相当于解一元一次或者一元二次方程的办法.为了不叫篇幅过长，让我飞越这几千年，把故事从公元$7$世纪开始.穆罕默德（Mohammed）在公元$7$世纪初创立伊斯兰教，还建立了神权国家，在短短$10$间统一了阿拉伯半岛诸部.他的继任人在不到半个世纪内征服了从印度至西班牙，包括南意大利和北非的大片土地，建立了一个横跨欧、亚、非三洲的帝国.在当时的世界，只有唐朝的中国堪与比拟，中国史书称它谓“大食国”，也称“天方”.虽然阿拉伯人在征战初期充满宗教狂热，铁骑所至大肆破坏掠夺，但等到征战完他们又很快定居下来，创造他们的文明文化，也很快关心起艺术和科学来.并且他们对别的种族和教派采取宽容政策，广泛网罗人才，注释古希腊和古印度的文献，吸收外来文化之长并把它发扬光大，传播到四方.$750$年阿拉伯帝国分为东西两个王国，东部定都巴格达（在今伊拉克境内），西部定都哥多瓦（在今西班牙境内）.东部王国的阿拔斯（Abbasid）王朝乃极盛时代，巴格达成为当时世界著名商业城市和文化都会.$1258$年成吉思汗的孙子旭烈兀率领蒙古铁骑攻陷巴格达，把东部阿拉伯王国摧毁，建立伊儿汗国.西部阿拉伯王国至了$1492$年也被西班牙人征服，于是阿拉伯帝国退出世界舞台.但伊斯兰文化却没有消失，古代东西方文化经由它的保存发展才得以在$12$世纪后渐渐传入当时文化极度衰落的西欧，导致其后西欧的“文艺复兴”.历史往往充满矛盾和讽刺，阿拉伯帝国崛起，摧毁了当时古代世界的文化，但后来它却成为古代文化的守护神，为延续世界文化立下不朽的功勋！</p>
+<p>阿拔斯王朝第五代统治者阿尔马蒙（Al-Mamun）极力提倡文化科学，在巴格达建立了一所科学院，称为“智慧之殿”.在那儿当中工作的一位学者，名叫阿尔花喇子米（Al-Khowarizmi），他在$830$年左右写了一本专讨论解一次或二次方程的书，书名是Hisab Al-jabr Wa’l Muq$\bar{a}$balah，前一个字“Al-Jabr”原意是复原，后一个字“Muq$\bar{a}$balah”原意是对消.前者大概是指方程中一边除去一项必须另一边加上那项来恢复平衡，后者大概是指方程中两边相同的项给消除或者一边的相同项给合并.但后来第二个字渐被人遗忘，第一个字译作拉丁文后辗转变为英文的Algebra，就是今天我们熟悉的“代数”的英文词了.阿尔花喇子米把方程分为六类，逐类讨论它的解法.让我们看一个例子：“平方与$10$个根等于$39$”.他叙述的方法是取$10$的一半，即是$5$，自乘得$25$，把这个数加上$39$得$64$，开方得$8$，从这个数减去$10$的一半，即是从$8$减去$5$，余$3$，这就是一个答案，当时的人只理会正数解.用今天的写法，就是解方程$x^2+bx=c$，他的叙述相当于提出公式</p>
+<p>$$x=\sqrt{(b/2)^2+c} -(b/2),$$</p>
+<p>接着，他用几何图形解释这个方法，中心思想就是大家在中学数学熟悉的“配方法”（图$1$）.</p>
+<center><img src="/assets/img/boliyajishudingli/6.1.png" alt=""></center>
+
+<p>“方程”这个中文词，最先见诸我国古代数学名著《九章算术》.古代中国的方程，专指线性方程组，与今天用语意义有别.今天用的“方程”，是借用来译英文的Equation（拉丁文是Aequatio，是相等的意思），在清初本来译作“相等式”，直到$1859$年李善兰和英国人伟烈亚力（A.Wylie）合译棣摩甘（A.Demorgan）的《代数学》时把它译作“方程”.$1873$年华蘅芳和英国人傅兰雅（J.Fryer）合译华里司（W.Wallace）的《代数术》时把它译作“方程式”，仍然将“方程”一词留作专指线性方程组之用.终于到了$20$世纪$30$年代之后，“方程”一词才普遍被用来泛指方程而不仅是线性方程组.李善兰译的《代数学》是第一本西方近代代数学的中文译本，“代数”这个名词由此而来.后来华蘅芳译《代数术》对这个名词作了这样的解释：“代数之法，无论何数，皆可以任何记号代之.”读者在中学读到的代数，很符合这个说法吧！</p>
+<p>$1723$年清帝爱新觉罗$\cdot $玄烨（康熙帝）大力支持出版了一部三十五卷的数学百科全书，名叫《数理精蕴》，把当时已传入或新传入的西洋数学编排整理，也对中国古代数学（就当时仍有传本的古代数学而言）进行了比较研究.下编卷$31$至$36$叫做“借根方比例”，就是当时传入中国的西洋代数了.《数理精蕴》的主要负责编纂者梅瑴成后来写了一篇文章说：“供奉内廷蒙圣祖仁皇帝授以借根方法，且谕曰西洋人名此书为阿尔热八达，译言东来法也.敬受而读之，其法神妙，诚算法之指南.而窃疑天元一之术颇与相似，复取《授时历草》观之，乃涣如冰释，殆名异而实同，非徒曰似之已也.”原来中国数学在传统基础上发展新的代数方法，在宋元之际（$12$至$13$世纪）达到高峰.在古代中国解方程叫做开方术，因为所以解法都跟《九章算术》里开平方根、开立方根等方法一脉相承.北宋时贾宪创立增乘开方法，为此引入“开方作法本原图”，即是六百多年后在西方出现的帕斯卡三角（Pascal Triangle）.南宋时秦九韶把这种方法推广为一般高次方程的数值计算方法，相当于七百年后在西方出现的鲁非尼-霍纳法（Ruffini-Horner Method），秦九韶著的《数学九章》里曾出现解$10$次方程的例子.运用方程解决实际问题分成两个步骤，首先是根据题意列出一个包括未知数和它的乘方的方程，其次才是找出方程的解.未有普遍方法和好的记号之前，第一步并不是轻而易举的，今天只要念了初中数学的人便知道做这一步，其实我们很感激前人的努力！中国宋元数学家创立天元术，就是以代数方法列出方程.很可惜，中国古代数学家的光辉成就至宋元以后很长一段时间没有受到重视，中国数学逐步衰落，很多数学书籍失传，数学不只没有进一步发展，就连已经有的成就亦被遗忘.到了明清，甚至很少有人知道什么叫做增乘开方法或者天元术了！梅瑴成因为编纂《数理精蕴》才把这些宝贵数学文化遗产发掘出来，所以有上面的一番话.中国数学自宋元后衰落，导致的因素是多方面的，但一个不容否认的消极因素是当时的政治和社会.明朝（$1368-1644$）是中国历史上的一个政治黑暗时代，明代君主从明太祖朱元璋起便大搞独裁专制，设置秘密警察机关监视臣民言行，又任宦官专权，以诏狱、廷杖、文字狱蹂躏人权，更以八股文开科取士，不着形迹地禁锢独立思考，造成文化淤塞.宋元的光辉数学传统经历明朝后荡然无存，实在不足为怪.反观同时代的西欧，正值“文艺复兴时期”，在领土、思想、学术等各方面都不断扩展，人的思想开放，视野辽阔，与当时的明朝中国成强烈的对比.当时的意大利是个文化中心，我们的故事便从那儿继续下去.</p>
+<p>意大利的波伦那大学成立于$1088$年，是西方最古老的大学，在$1500$年左右大学里有位数学教授达费罗（Scipione del Ferro）解了$x^3+ax=c$这类三次方程，但他没有发表他的解法，只把它透露给学生菲俄（Fior）和女婿纳发（Annibale della Nave）.当时的风气盛行如此，人们常常把自己的学术发现保密，以便向对手挑战，要求他们解同样的难题，借此拿取奖金或者大学的聘书！过了$30$年，另一位意大利数学家丰坦那（Niccolo Fontana）宣称他懂得如何解三次方程，菲俄听到了不服气，大家约好在$1535$年$2$月$22$日在米兰大教堂举行竞赛，一分高下.丰坦那别号塔塔利亚（Tartaglia），意思是“口吃的人”.他年幼时正值意法交战，法军攻陷了他的家乡后大肆杀戮，他的父亲带着他藏身寺院中亦难幸免，父亲被杀，他自己头部和上下颚受重伤，法军还以为他已死掉.后来他的母亲找着他，兵荒马乱中无处就医，母亲只能效法狗伤时舔伤口的做法，竟然奇迹般地把他救活过来，但他因受伤过重，愈后变成了口吃.塔塔利亚出身贫困，身体又有缺陷，但他意志坚强，勤奋好学.学校自是没法上，就连纸笔也买不起，母亲在坟场的墓碑上教他认字计算，终于成为$16$世纪的出色数学家.他约好菲俄作赛，才知悉菲俄身怀“家传秘方”，不禁着急起来，因为他知道自己的解法是尚未臻完善的.为此他常彻夜不眠，苦思更完善的解法.据说在$2$月$12$日晚上，他的思路豁然开朗，想着了解三次方程的良方，在竞赛中轻易击败了对手.当时，还有另一位意大利数学家卡尔丹（G.Cardano）也对这个问题感兴趣.卡尔丹是数学史上一位最富传奇色彩的人物，是个数学家、医生、占星术士、赌徒、骗子和流氓！卡尔丹以介绍塔塔利亚觐见某王公贵族为饵，把塔塔利亚接回家里好好招待，再三乞求塔塔利亚把三次方程的解法传授予他.卡尔丹还立下誓言，决不泄密.也许塔塔利亚为卡尔丹的“至诚”感动，果然把解三次方程的方法传授给他.结果，卡尔丹在$1545$年出版了他的名著《大术》（Ars Magna），里面竟详详细细地出现了三次方程的解法！这种背信弃义的行为自然激起塔塔利亚的愤怒，双方在谩骂中不了了之.卡尔丹也有自己的辩白，他说他从纳发那儿得悉塔塔利亚的方法跟达费罗的方法一般，所以塔塔利亚并不算是第一个发现者，既然不是，把他的方法公开也就算不上背信了.在《大术》的第十一章他这么说：“大约$30$年前，波伦那的达费罗发现这个法则，并传授予威尼斯的菲俄，菲俄曾与布里西亚的塔塔利亚竞赛，后者也发现了这个方法.塔塔利亚在我的恳求下把方法告诉我，但没有给出证明.在这个基础上我找着了几种证法，它是非常困难的.”虽然卡尔丹未必是个正直的人，但在这一桩事上他的做法却未可厚非.把数学知识保密，当做私人资本去谋名利是不对的，卡尔丹把它公开，但对塔塔利亚和达费罗的功劳给予如实的承认，是正确的做法.</p>
+<p>让我们看看卡尔丹-塔塔利亚公式，以$x^3+mx=n$为例，它的一个根是</p>
+<p>$$x=\sqrt[3]{\sqrt{(n/2)^2+(m/3)^3} +(n/2)} -\sqrt[3]{\sqrt{(n/2)^2+(m/3)^3} -(n/2)} .$$</p>
+<p>卡尔丹用几何图形解释，可以说是“配立方法”（图$2$）.</p>
+<center><img src="/assets/img/boliyajishudingli/6.2.png" alt=""></center>
+
+<p>以$AB$为边的立方体等于从以$AC$为边的立方体减掉以$BC$为边的立方体再三个以$AB$、$AC$、$BC$为边的长方体，也就是说</p>
+<p>$$(\sqrt[3]{t} -\sqrt[3]{u} )^3=t-u-3(\sqrt[3]{t} -\sqrt[3]{u} )\sqrt[3]{t} \sqrt[3]{u} ,$$</p>
+<p>$t$和$u$分别是大小立方体的体积.化简后得</p>
+<p>$$(\sqrt[3]{t} -\sqrt[3]{u} )^3+(3\sqrt[3]{t} \sqrt[3]{u} )(\sqrt[3]{t} -\sqrt[3]{u} )=t-u.$$</p>
+<p>若设$t-u=n$和$tu=(m/3)^3$并比较原来的三次方程，便知道$x=\sqrt[3]{t}-\sqrt[3]{u}$是一个根了.但从上面两个式可以得到一个二次方程，它的解就是$t=\sqrt{(n/2)^2+(m/3)^3} +(n/2)$和$u=\sqrt{(n/2)^2+(m/3)^3} -(n/2)$，由此得卡尔丹-塔塔利亚公式.为了下面叙述需要，让我们再介绍一个大同小异的解法，是$1591$年法国数学家韦达（F.Vieta）提出的.解$x^3+mx=n$，设$x=T-U$，所以</p>
+<p>$$(T-U)^3+m(T-U)=n,$$</p>
+<p>即是</p>
+<p>$$T^3-U^3+(m-3TU)(T-U)=n.$$</p>
+<p>再设$m=3TU$，便得$T^3-(m/3T)^3-n=0$，即是</p>
+<p>$$T^6-nT^3-(m/3)^3=0,$$</p>
+<p>叫做原方程的预解方程.虽然这个预解方程是个六次方程，实质上它是$T^3$的二次方程，有根</p>
+<p>$$T^3=(n/2)\pm \sqrt{(n/2)^2+(m/3)^3} .$$</p>
+<p>如果取$T$为$\sqrt{(n/2)^2+(m/3)^3} +(n/2)$的一个立方根，便从预解方程得悉$U=m/3T$是$\sqrt{(n/2)^2+(m/3)^3} -(n/2)$的一个立方根，由此即得到卡尔丹-塔塔利亚公式.到了$1732$年瑞士数学大师欧拉（L.Euler）提出三次方程应该有三个根，还把它们写了出来.仍然叫</p>
+<p>$$t=\sqrt{(n/2)^2+(m/3)^3}+(n/2)$$</p>
+<p>和</p>
+<p>$$u=\sqrt{(n/2)^2+(m/3)^3}-(n/2),$$</p>
+<p>它们的立方根分别是$T$、$\omega T$、$\omega^2 T$和$U$、$\omega U$、$\omega^2 U$，这儿的$\omega $是本原单位立方根，即是$(-1+\sqrt{-3} )/2$.要写下三次方程的三个根，必须从每组选一个，使两者的乘积是$m/3$，共有三对，即是</p>
+<p>$$x_1 =T-U,x_2 =\omega^2 T-\omega U,x_3 =\omega T-\omega^2 U.$$</p>
+<p>于是，不论是一次、二次或三次方程的根，都可以通过四则运算和开方根运算写成方程系数（及某些常数）的关系式，我们说这些方程是可以根式求解的，以下简称可解.读者必须在这里清楚区分可解和有解这两个概念，有解不等于可解，事实上所有方程都有（复数）解，这个结果被称作“代数基本定理”，这可不是我们目前关心的事情.斐拉里在$16$世纪找到四次方程的解式，收入在卡尔丹的《大术》里.于是数学家便向五次方程进军，寻求它的解式，但经过多人多方努力，二百多年后还是徒劳无功.这方面的突破来自数学家拉格朗日（J.L.Lagrange）在$1770$年的论文，他采取了一个全新的观点和途径，先考察前人解二次、三次、四次方程的办法，找出成功的关键，试图利用这个共通点求高次方程的解.让我们继续以$x^3+mx=n$为例，它的三个解是$x_1 =T-U$、$x_2 =\omega^2 T-\omega U$、$x_3 =\omega T-\omega^2 U$.拉格朗日正确地意识到预解方程$T^6-nT^3-(m/3)^3=0$的重要，注意这个方程的六个根正好是$T$、$\omega T$、$\omega^2 T$、$-U$、$-\omega U$、$-\omega^2 U$，所以$x_1 $、$x_2 $、$x_3 $可以写成预解方程的根的关系式.拉格朗日独具慧眼，看到更重要的一点，是如何把预解方程的六个根写成$x_1 $、$x_2 $、$x_3 $的关系式.他发现那是办得到的，首先$T=(x_1 +\omega x_2 +\omega^2 x_3 )/3$（因为$\omega^2 +\omega +1=0$），而且只要把三个根$x_1 $、$x_2 $、$x_3 $作适当置换，便能从上式得到另一个根.走遍全部六个置换，便得到全部六个根，比方从$\begin{pmatrix} x_1 &amp; x_2 &amp; x_3 \\ x_1 &amp; x_3 &amp; x_2 \end{pmatrix}$得到$(x_1 +\omega x_3 +\omega^2 x_2 )/3=-U$，从$\begin{pmatrix} x_1 &amp; x_2 &amp; x_3 \\ x_2 &amp; x_3 &amp; x_1 \end{pmatrix}$得到$(x_2 +\omega x_3 +\omega^2 x_1 )/3=\omega^2 T$，等等.拉格朗日也指出应考虑全部置换对某些式的作用，例如$(x_1 +\omega x_2 +\omega^2 x_3 )^3/27$经过六个置换只变为两个不同的值，即是$T^3 $和$-U^3 $，这解释了为什么虽然预解方程是个六次方程，它其实是$T^3$的二次方程，三次方程可解的道理便是在此.他用同样的想法考虑四次方程，四个根共有$24$个置换，预解方程虽然是一个$24$次方程，却其实可以看做是一个六次方程，而且还可以进一步化为两个三次方程，所以可解.但当他把这个想法施诸于五次方程上，碰到预解方程是一个$120$次方程，其实可以看做是一个$24$次方程，却不懂得怎样做下去了，由此他怀疑五次或更高次的方程不一定可解.$1813$年意大利数学家鲁非尼（P.Ruffini）发表了一个一般五次方程不可解的证明，但证明并不完整，到了$1824$年挪威数学家阿贝尔（N.H.Abel）给了一个完整的证明.我们说一般五次方程不可解，并不是说全部五次方程不可解，例如可以证明$2x^5-5x^4+5=0$不可解，但$x^5-1=0$却是可解的.最终的答案由法国数学家伽罗华（E.Galois）在$1831$年提出，理论上他总能决定一个给定的方程是否可解.</p>
+<p>阿贝尔和伽罗华都是卓越的数学家，他们的贡献使他们各留青史，但他们在生时命途多蹇，际遇困苦，叫人叹息不已.阿贝尔一生贫病交迫，还得挑起家庭重担，等于后来终于受到柏林大学赏识送来数学教授席位聘书时，他却在信到前两天因肺结核病与世长辞，终年不足$27$岁.伽罗华的一生更为坎坷，年轻时父亲受逼害自杀，他自己两度投考当时最负盛名的巴黎高等工艺学院落第，每次把数学成果送到巴黎科学院又遭冷落.适值他生于法国内政动荡时代，他以满腔热情参加了共和派的政治活动，两度因而被捕下狱，最后还在$1832$年$5$月$30$日的一次决斗中被枪杀，死时还不到$21$岁.</p>
+<p>伽罗华的工作的中心思想，是证明对每一个$N$次方程有一组它的$N$个根的置换满足某些关于不变量的条件.详细一点说，如果$F(a,b,c,\cdots )$是根$a$、$b$、$c$、$\cdots $的多项式，那么$F(a,b,c,\cdots )$经那组置换不变更值的充要条件是$F(a,b,c,\cdots )$为有理数.方程是否可解，便决定于那一组置换是否具备某种性质.伽罗华把这组置换叫“一群置换”，可以说是“群”这个数字术语头一次出现，因为这群置换的确构成一个群，今天我们叫它作那个方程的伽罗华群，以纪念这位年青数学奇才的功绩.举一个例子，方程是$x^5-1=0$，它的根是$x_1 =1$、$x_2 =\omega $、$x_3 =\omega^2 $、$x_4 =\omega^3 $、$x_5 =\omega^4 $，$\omega $是个五次本原单位方根.它的置换群由四个置换组成，就是</p>
+<p>$$I=\begin{pmatrix} x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \\ x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \end{pmatrix} ,$$</p>
+<p>$$A=\begin{pmatrix} x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \\ x_1 &amp; x_3 &amp; x_5 &amp; x_2 &amp; x_4 \end{pmatrix} ,$$</p>
+<p>$$B=\begin{pmatrix} x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \\ x_1 &amp; x_5 &amp; x_4 &amp; x_3 &amp; x_2 \end{pmatrix} ,$$</p>
+<p>$$C=\begin{pmatrix} x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \\ x_1 &amp; x_4 &amp; x_2 &amp; x_5 &amp; x_3 \end{pmatrix} ,$$</p>
+<p>比如在$I$、$A$、$B$、$C$的作用下</p>
+<p>$$F(x_1 ,x_2 ,x_3 ,x_4 ,x_5 )=x_1 x_2 x_3 x_4 x_5 $$</p>
+<p>的值不变更，的确，$x_1 x_2 x_3 x_4 x_5 =1$是个有理数；同样地，$F(x_1 ,x_2 ,x_3 ,x_4 ,x_5 )=x_3 x_4 $经$I$、$A$、$B$、$C$的作用也不变更它的值，的确$x_3 x_4 =1$也是个有理数；但$x_1 +x_2 $却变更它的值，而的确$x_1 +x_2 $并不是个有理数.读者自然认得这个群是$Z_4 $，按照伽罗华的理论，这个群的性质说明了方程$x^5-1=0$是可解的.$2x^5-5x^4+5=0$的伽罗华群却是整个五次对称群$S_5 $（详情没办法在这里解释了），按照伽罗华的理论，这个群的性质说明了方程$2x^5-5x^4+5=0$是不可解的.</p>
+<p>拉格朗日指出根的置换这个想法，导致阿贝尔和伽罗华的工作，重要的倒不是解决了高次方程是否可解这个问题，而是由此撕下群论的种子.虽然伽罗华用了群的思想，甚至采用了“群”这个词，但群的抽象定义却要等到$1854$年才由英国数学家凯莱提出.而且凯莱这种思想，在当时来说是跑得太前了，并没有得到应有的反应，其他数学家都没理会.过了$24$年，凯莱在$1878$年卷土重来，在一系列的文章中讨论群的性质，这次数学家却反应热烈，群论从此在数学占一重要席位.究其原因，倒也一点也不奇怪，在那$24$年间，群的例子在别的数学家的工作里以各种具体形式出现，数学家也就一天比一天感觉到这个思想的重要，有迫切需要把它作为一个抽象的数学对象处理，凯莱的论文正好针对这个需要，自然受到重视了.其实群论的诞生和它的发展由好几个源头汇流而成，刚刚叙述了方程的可解的探讨只是其中一个但也是最主要的一个源头吧，有兴趣的读者可以参阅：I.Kleiner.The evolution of group theory:A brief survey.Mathematics Magazine,$1986(59)\colon 195-215$；H.Wussing.”The genesis of the abstract group concept”.New York:M.I.T.Press,$1984$（原德文本，$1969$）.（这个附录是根据下文部分写成：萧文强.从方程到群的故事，《抖擞》，$1983(54)\colon 58-68$.）</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/09/2015/12/boliyajishudingli6/" data-title="《波利亚计数定理》附录 群的故事 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/12/2015/12/ComplexNumbersComplexFunctionsandTheirApplications11/" title="《复数、复函数及其应用》一 基础知识 1 复数的代数运算">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《复数、复函数及其应用》一 基础知识 1 复数的代数运算</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/08/2015/12/boliyajishudingli54/"  title="《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》五 同分异构体计数 5.4 烷烃$C_N H_{2N+2} $的计数
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">Tag Cloud</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 10px;">函数论</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

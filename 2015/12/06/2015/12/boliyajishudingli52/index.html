@@ -1,0 +1,725 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《波利亚计数定理》五 同分异构体计数 5.2 母函数的运用 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="母函数的运用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《波利亚计数定理》五 同分异构体计数 5.2 母函数的运用">
+<meta property="og:url" content="http://yoursite.com/2015/12/06/2015/12/boliyajishudingli52/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="母函数的运用">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/boliyajishudingli/5.3.png">
+<meta property="og:updated_time" content="2015-12-13T02:22:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《波利亚计数定理》五 同分异构体计数 5.2 母函数的运用">
+<meta name="twitter:description" content="母函数的运用">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/06/2015/12/boliyajishudingli52/" title="《波利亚计数定理》五 同分异构体计数 5.2 母函数的运用" itemprop="url">《波利亚计数定理》五 同分异构体计数 5.2 母函数的运用</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-06T04:13:45.000Z" itemprop="datePublished"> Published 2015-12-06</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>让我们先看看怎样运用母函数尝试解决计数问题，所谓母函数就是一种形式幂级数，它的系数是满足某些条件的构形或者摆法的个数.形式幂级数是指它形如$u_0 +u_1 x+u_2 x^2 +\cdots $的式子，但我们不关心它的收敛性质，计算时也只是形式地套用四则运算法则，有点像$17$和$18$世纪的数学家把幂级数看成是多项式，只不过它有很多很多项而已！读者暂时不清楚这一点，不用担心，读下去便会明白的.</p>
+<p>举一个最简单的例子吧，设$u_m $是从$N$件东西选出$m$件（不同）东西的方法的个数，那么$G(x)=u_0 +u_1 x+u_2 x^2 +\cdots $便叫这个计数问题的母函数.头一遭跟母函数打交道的读者心里可能嘀咕：“这只是一种记法吧，有什么了不起？”但是，正如我们在第四章第$4.1$节里已经说过，好的记法往往带来意想不到的方便！把众多情况的资料（那些$u_m$）集合于一个幂级数身上，在以后的计算中起了不可忽视的作用.上面的例子或许太简单，读者不容易看出这一点，但如果你懂得$u_m $其实是二项式系数$\displaystyle {N \choose m}$，便仍然会感觉得到母函数的优美之处，其实，$G(x)=(1+x)^N$.另一个看法是考虑$(1+x)\cdots (1+x)$，就是$1+x$自乘$N$次，$x^m $的系数等于从$N$项中选出$m$（不同）项的$x$的方法的个数，不正好是$u_m $吗？</p>
+<p>让我再举一个稍为复杂的例子，设$u_m $是从$N$件东西选出$m$件（容许重复）东西的方法的个数.如同刚才把$1+x$自乘$N$次的想法，我们取$1+x+x^2+\cdots $自乘$N$次，每项代表一件东西，在该项选出$x^j$代表把那件东西选了$j$次.因此，$x^m $的系数正好是$u_m $.这里的无穷级数，$1+x+x^2+\cdots $是形式幂级数，形式地作运算，成立</p>
+<p>$$(1+x+x^2+\cdots )(1-x)=1+x+x^2+\cdots -x-x^2-\cdots =1,$$</p>
+<p>所以形式地$1/(1-x)=1+x+x^2+\cdots $.这个计数问题的母函数是$G(x)=1/(1-x)^N$.形式地我们可以作以下的计算，$G(x)=(1-x)^{-N} =1+b_1 x+b_2 x^2 +\cdots $，$b_m $是形式的二项式系数，等于</p>
+<p>$$\begin{align}<br>(-N)(-N-1)(-N-2)\cdots (-N-m+1)(-1)^m/m! &amp; =N(N+1)\cdots (N+m-1)/m! \\<br> &amp; =\displaystyle {N+m-1 \choose m}.<br>\end{align}$$</p>
+<p>因此，$u_m =b_m =\displaystyle {N+m-1 \choose m}$.如果读者套用第三章第$3.4$节介绍过的一个想法去直接计算这个$u_m $（注意，这儿的$N$和$m$应该分别看做是那儿的$m$和$N$），便更体会到母函数的优美了.</p>
+<p>现在，我们可以解释凯莱的计算，但先要弄清楚什么叫做树图（以下简称作树）.一株树是一个这样的图：它的边并不构成圈；沿着它的边总可以从任一个点经过别的点走到任何一个点.看看下面的图（图$5.1$），你自然明白为什么这种图有这样的名字了.</p>
+<center><img src="/assets/img/boliyajishudingli/5.1.png" alt=""></center>
+
+<p>在树里选定一点，把它标为根（比如涂上颜色），这株树叫做有根树.现在的问题是：有$m$个点的有根树，共有多少株互不同构的？比方$m=4$时，共有四株（图$5.2$）.</p>
+<center><img src="/assets/img/boliyajishudingli/5.2.png" alt=""></center>
+
+<p>注意一点，如果没有标明一点作根，互不同构的$4$点树只有两株.把树中一点标作根提供了什么方便呢？一株有根树是由几株有根树接在根上生成，如果根的次数（即是连接那一点到别点的边的数目）是$k$，便有$k$株有根树接在根上（图$5.3$），这个简单的事实显示了根的次数的用途.</p>
+<center><img src="/assets/img/boliyajishudingli/5.3.png" alt=""></center>
+
+<p>设$u_m $是$m$个点的有根树的个数，$u_m (k)$是$m$个点且根的次数是$k$的有根树的个数，那么$u_m =\sum u_m (k)$，求和式中$k$从$1$走到$m-1$.如果有$t_1 $株$1$点的树接在根上，$t_2 $株$2$点的树接在根上，$\cdots ,t_{m-1}$株$m-1$点的树接在根上，便成立$t_1 +\cdots +t_{m-1} =k$和$t_1 +2t_2 +\cdots +(m-1)t_{m-1} =m-1$，两个式合起来可以看成是一个把$m-1$分拆为$k$份的方法.比方上面的例（图$5.3$），树有$18$点，根的次数是$6$，有两株$1$点树、一株$3$点树、三株$4$点树接在根上，它提供的分析是$17=1+1+3+4+4+4$.要数数有多少株$m$个点且根的次数是$k$的有根树，只要数数有多少个不同的方法从$u_1 $株$1$点有根树选出$t_1 $株移植到根上、从$u_2 $株$2$点有根树选出$t_2 $株移植到根上$\cdots \cdots $这些数目亦不难计算，从$u_j $株$j$点有根树选出$t_j $株移植到根上，不同的方法共有$\displaystyle {u_j +t_j -1 \choose t_j }$个.所以，合起来便得到</p>
+<p>$$u_m (k)=\sum \displaystyle {u_1 +t_1 -1 \choose t_1 } {u_2 +t_2 -1 \choose t_2 } \cdots {u_{m-1} +t_{m-1} -1 \choose t_{m-1} } $$</p>
+<p>求和式走遍$m-1$分拆为$k$份（$k_1 +2k_2 +\cdots +(m-1)t_{m-1} =m-1$）的方法.把$u_m (1)$、$u_m (2)$、$\cdots $、$u_m (m-1)$加起来，但得到要计算的$u_m $了.理论上，知道$u_1 $、$u_2 $、$\cdots $、$u_{m-1} $，我们便能从这个叫人望而生畏的公式计算$u_{m+1}$，但实际做下去，这个算法不只繁复，更要命的是每次我们必须知道怎样把$m-1$分拆，以求写下那些$t_1 $、$t_2 $、$\cdots $.随着$m$增大，$m-1$的分拆方法迅速增加，叫人应付不来.比方当$m=20$时，$m-1=19$已经有$490$个分拆方法；当$m=100$时，$m-1=99$更有$169\;229\;875$个分拆方法呢！循这条途径作计算，不会走得很远，让我们看看如何运用母函数回避这点困难.置$u(x)=u_1 x+u_2 x^2 +u_3 x^3 +\cdots =x(u_1 +u_2 x+u_3 x^2 +\cdots )$，经形式运算（不理会收敛问题），得到</p>
+<p>$$\begin{align}<br>u(x) &amp; =x\sum \sum {u_1 +t_1 -1 \choose t_1 } \cdots {u_{m-1} +t_{m-1} -1 \choose t_{m-1} } x^{t_1 +2t_2 +\cdots +(m-1)t_{m-1} } \\<br> &amp; =x\sum \sum {u_1 +t_1 -1 \choose t_1 } x^{t_1 } {u_2 +t_2 -1 \choose t_2 } x^{2t_2 } \cdots {u_{m-1} +t_{m-1} -1 \choose t_{m-1} } x^{(m-1)t_{m-1} } \\<br> &amp; =x\sum \left[ {u_1 +t -1 \choose t} x^{t} \right] \left[ {u_2 +t -1 \choose t} x^{2t} \right] \cdot \left[ {u_3 +t -1 \choose t} x^{3t} \right] \cdots \\<br> &amp; =x/(1-x)^{u_1 } (1-x^2)^{u_2 } (1-x^3)^{u_3 } \cdots .<br>\end{align}$$</p>
+<p>在第一行和第二行的头一个求和式中$m$走遍$1$、$2$、$3$、$\cdots $，后一个求和式中$(t_1 ,\cdots ,t_{m-1} )$走遍$m-1$的分拆，使$t_1 +2t_2 +\cdots +(m-1)t_{m-1} =m-1$；在第三行的每项求和式中$t$走遍$1$、$2$、$3$、$\cdots $.凯莱早在$1857$年的一篇文章里已经发现了上面那个公式，利用这个无穷乘积表示式，我们无须用正整数的分拆方法便能计算$u_m $.其实，计算手续还是够繁复的，我们需要知道$u_1 $、$u_2 $、$\cdots $、$u_{m-1} $的值才能计算$u_m $的值，但较诸刚才动用正整数分拆方法作计算已经改良了好一大步.如果再运用一点形式微积分运算（这儿不赘述），还可以把上式换写成对数形式</p>
+<p>$$u(x)=x\mathrm{exp} (\sum u(x^i)/i),$$</p>
+<p>求和式中$i$走遍$1$、$2$、$3$、$\cdots $.继续运用微积分运算，我们能得到一个有效计算$u_m $的递归公式，凭着它不难算出</p>
+<p>$$u(x)=x+x^2+2x^3+4x^4+9x^5+20x^6+48x^7+115x^8+286x^9+719x^{10} +\cdots .$$</p>
+<p>一个点的有根树只有一株，两个点的有根树也只有一株，三个点的有根树有两株，这些都是显而易见.四个点的有根树有四株，我们已看过了（图$5.2$），读者愿不愿意画下那九株五个点的有根树呢？</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/06/2015/12/boliyajishudingli52/" data-title="《波利亚计数定理》五 同分异构体计数 5.2 母函数的运用 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/06/2015/12/boliyajishudingli53/" title="《波利亚计数定理》五 同分异构体计数 5.3 烷基$C_N H_{2N+1} X$的计数">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《波利亚计数定理》五 同分异构体计数 5.3 烷基$C_N H_{2N+1} X$的计数</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/05/2015/12/boliyajishudingli51/"  title="《波利亚计数定理》五 同分异构体的计数 5.1 引言">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》五 同分异构体的计数 5.1 引言
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">Tag Cloud</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 10px;">函数论</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

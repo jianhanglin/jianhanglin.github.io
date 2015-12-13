@@ -1,0 +1,807 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《复数、复函数及其应用》一 基础知识 1 复数的代数运算 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="复数的代数运算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《复数、复函数及其应用》一 基础知识 1 复数的代数运算">
+<meta property="og:url" content="http://yoursite.com/2015/12/12/2015/12/ComplexNumbersComplexFunctionsandTheirApplications11/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="复数的代数运算">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/1.1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/1.2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/1.3.png">
+<meta property="og:updated_time" content="2015-12-13T02:43:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《复数、复函数及其应用》一 基础知识 1 复数的代数运算">
+<meta name="twitter:description" content="复数的代数运算">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/12/2015/12/ComplexNumbersComplexFunctionsandTheirApplications11/" title="《复数、复函数及其应用》一 基础知识 1 复数的代数运算" itemprop="url">《复数、复函数及其应用》一 基础知识 1 复数的代数运算</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-12T08:02:01.000Z" itemprop="datePublished"> Published 2015-12-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#复数"><span class="toc-number">1.</span> <span class="toc-text">复数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复数的四则运算"><span class="toc-number">2.</span> <span class="toc-text">复数的四则运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#乘方与开方"><span class="toc-number">3.</span> <span class="toc-text">乘方与开方</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单位根"><span class="toc-number">4.</span> <span class="toc-text">单位根</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="复数">复数</h2><p>数</p>
+<p>$$z=x+iy$$</p>
+<p>称为复数，其中$x$和$y$是实数，而$i$是虚数，$i^2=-1$.实数$x$和$y$分别称为复数$z$的实部和虚部，并记为：</p>
+<p>$$x={\rm Re}\,z,y={\rm Im}\,z.$$</p>
+<p>两个复数相等是指它的实部和虚部分别相等，即等式</p>
+<p>$$x_1 +iy_1 =x_2 +iy_2 .$$</p>
+<p>相当于两个等式：</p>
+<p>$$x_1 =x_2 ,y_1 =y_2 .$$</p>
+<p>由于在直角坐标系中，当且仅当两个点具有相等的横坐标和相同的纵坐标时才会重合，所以平面上的全部点可以与所有复数间建立一一对应的关系.换言之，我们将借助于横坐标为$x$，纵坐标为$y$的点来表示复数$z=x+iy$，这样的平面称为复平面$\mathbb{C}$.表示数$z$的点通常称为点$Z$.复数可以用向量来表示，使复数的实部与虚部对应于向量的横坐标与纵坐标（图$1.1$）.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/1.1.png" alt=""></center>
+
+<p>我们将虚部等于零的复数$x+i0$和它的实部看作是一样的：$x+i0=x$，并认为实数是复数的特殊情况.用$ox$轴上的点表示实数，称此轴为实轴.类似地，实部等于零的复数写为$0+iy=iy$，称为纯虚数，用$oy$轴上的点来表示它们，并称这个轴为虚轴.</p>
+<p>复数$z$的位置也可用极坐标来确定，也就是借助对应于复数的向量的长度$r$，和这个向量与实轴正向的夹角$\varphi $来确定.数$r$和$\varphi $分别称为复数$z$的模和幅角，记为</p>
+<p>$$r=\vert z\vert ,\varphi ={\rm Arg}\,z.$$</p>
+<p>这里引进的模的概念是实数的绝对值的概念的推广.实数的模就是它的绝对值，纯虚数的模就是它的虚部的绝对值.</p>
+<p>由模和幅角的定义推出，若$z=x+iy$，则</p>
+<p>$$\begin{equation}<br>\begin{split}<br>x &amp; =r\cos{\varphi } =\vert z\vert \cos{({\rm Arg}\;z)} ,\<br>y &amp; =r\sin{\varphi } =\vert z\vert \sin{({\rm Arg}\;z)}<br>\end{split}<br>\end{equation} \label{1.1} \tag{1.1} $$</p>
+<p>和</p>
+<p>$$\vert z\vert =r=\sqrt{x^2+y^2},$$</p>
+<p>$$\tan{({\rm Arg}\,z)} =\tan{\varphi } =\dfrac{y}{x} .$$</p>
+<p>值得注意的是，幅角${\rm Arg}\,z$是多值的，它们之间可以相差$2\pi $的整数倍，通常取由不等式</p>
+<p>$$0\leqslant {\rm Arg}\,z &lt; 2\pi $$</p>
+<p>所确定的值作为幅角的主值，$z$的幅角的主值记为$\arg{z}$.于是我们有</p>
+<p>$${\rm Arg}\,z=\arg{z}+2k\pi .(k\colon 整数)\label{1.2} \tag{1.2}$$</p>
+<p>例如，当$z$是正实数时，$\arg{z}=0$；当$z$是负实数时，$\arg{z} =\pi $；当$z$是具有正虚部的纯虚数时，$\arg{z} =\dfrac{\pi }{2} $.但是注意，$0$的幅角是没有意义的.</p>
+<p>利用公式$\eqref{1.1}$，可以把任何异于零的复数表达为复数$z$的三角形式：</p>
+<p>$$z=x+iy=r(\cos{\varphi } +i\sin{\varphi } ).\label{1.3} \tag{1.3}$$</p>
+<p>例如，</p>
+<p>$$\begin{array}{l}<br>1 =1(\cos{0} +i\sin{0}) ,\\<br>i=1\left( \cos{\dfrac{\pi }{2}} +i\sin{\dfrac{\pi }{2}} \right) , \\<br>1+i=\sqrt{2} \left( \cos{\dfrac{\pi}{4}} +i\sin{\dfrac{\pi }{4}} \right) ,\\<br>-2=2(\cos{\pi } +i\sin{\pi } ).<br>\end{array}$$</p>
+<p>借助于欧拉公式$e^{i\varphi } =\cos{\varphi } +i\sin{\varphi } $（见本书第六章$\S 1$），可以把复数$z$的三角形式$\eqref{1.3}$化为指数形式：</p>
+<p>$$z=re^{i\varphi } .\label{1.4} \tag{1.4}$$</p>
+<p>复数$z=x+iy$的共轭复数定义为$\overline{z} =x-iy$.彼此共轭的复数关于实轴是对称的.</p>
+<p>彼此共轭的复数的模是相同的，而幅角相差一个符号：</p>
+<p>$$\vert \overline{z} \vert =\vert z\vert ,\arg{\overline{z}} =-\arg{z} .$$</p>
+<p>任何实数与它自己共轭.</p>
+<h2 id="复数的四则运算">复数的四则运算</h2><p>将算术的普通规则运用于复数，我们有</p>
+<p>$$\begin{array}{l}<br>(x_1 +iy_1 )+(x_2 +iy_2 )=(x_1 +x_2 )+i(y_1 +y_2 ), \\<br>(x_1 +iy_1 )(x_2 +iy_2 )=(x_1 x_2 -y_1 y_2 )+i(x_1 y_2 +y_1 x_2 ).<br>\end{array} \label{1.5} \tag{1.5} $$</p>
+<p>第二个恒等式中，我们使用了关系式$i^2=-1$.</p>
+<p>复数的减法定义为加法的逆运算，由此得到</p>
+<p>$$(x_1 +iy_1 )-(x_2 +iy_2 )=(x_1 -x_2 )+i(y_1 -y_2 ).$$</p>
+<p>特别地，由$\eqref{1.5}$推出，两个彼此共轭的复数的乘积是实数，等于该复数的模的平方：</p>
+<p>$$(x+iy)(x-iy)=x^2+y^2$$</p>
+<p>或</p>
+<p>$$z\overline{z} =\vert z\vert ^2 .$$</p>
+<p>若用向量表示复数，则复数的实部和虚部就是向量的坐标.因为向量的相加或相减就是它们的坐标对应地相加或相减，于是复数的相加或相减归结为相应向量的相加或相减（图$1.2$）.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/1.2.png" alt=""></center>
+
+<p>由于复数的模等于对应向量的长度，所以两个复数的和的模不大于两个复数的模的和：</p>
+<p>$$\vert z_1 +z_2 \vert \leqslant \vert z_1 \vert +\vert z_2 \vert .$$</p>
+<p>接连使用几次这个不等式，便得到</p>
+<p>$$\vert z_1 +z_2 +\cdots +z_n \vert \leqslant \vert z_1 \vert +\vert z_2 \vert +\cdots +\vert z_n \vert .$$</p>
+<p>当且仅当表示数$z_1 ,z_2 ,\cdots ,z_n $的向量在一条直线上，且指向同一方向，即当</p>
+<p>$$\arg{z_1 } =\arg{z_2 } =\cdots =\arg{z_n } $$</p>
+<p>时，等式成立.</p>
+<p>由复数减法的几何意义，若$z_0 $是给定的复数，$\rho $是给定的实数，则满足方程</p>
+<p>$$\vert z-z_0 \vert =\rho $$</p>
+<p>的点的全体形成以$z_0 $为中心以$\rho $为半径的圆周，不等式$\vert z-z_0 \vert &lt; \rho $确定这圆周内的点集，而不等式$\vert z-z_0 \vert &gt; \rho$确定圆周外的点集.</p>
+<p>复数的除法定义为乘法的逆运算.利用共轭数的性质，按下述方法进行复数的除法是方便的：首先把分子和分母乘以分母的共轭数，于是分母变为正实数，然后分别用分母除所得分子的实部和虚部：</p>
+<p>$$\begin{align}<br>\dfrac{x_1 +iy_1 }{x_2 +iy_2 } &amp; =\dfrac{(x_1 +iy_1 )(x_2 -iy_2 )}{(x_2 +iy_2 )(x_2 -iy_2 )} \\<br> &amp; =\dfrac{(x_1 x_2 +y_1 y_2 )+i(x_2 y_1 -x_1 y_2)}{x_2^2 +y_2^2 } \\<br> &amp; =\dfrac{x_1 x_2 +y_1 y_2 }{x_2^2 +y_2^2 }+i\dfrac{x_2 y_1 -x_1 y_2 }{x_2^2 +y_2^2 } .<br>\end{align}$$</p>
+<p>若利用复数的三角形式：</p>
+<p>$$\begin{array}{l}<br>z_1 =r_1 (\cos{\varphi_1 } +i\sin{\varphi_1 } ), \\<br>z_2 =r_2 (\cos{\varphi_2 } +i\sin{\varphi_2 } ),<br>\end{array}$$</p>
+<p>则得到，</p>
+<p>$$\begin{align}<br>z_1 z_2 &amp; =r_1 r_2 [(\cos{\varphi_1} \cos{\varphi_2 } -\sin{\varphi_1 } \sin{\varphi_2 } )+i(\cos{\varphi_1 } \sin{\varphi_2 } +\sin{\varphi_1 } \cos{\varphi_2 })] \\<br> &amp; =r_1 r_2 [\cos{(\varphi_1 +\varphi_2 )} +i\sin{(\varphi_1 +\varphi_2 )}] \label{1.6} \tag{1.6}<br>\end{align}$$</p>
+<p>因而复数相乘就是它们的模相乘，而幅角相加：</p>
+<p>$$\begin{array}{l}<br>\vert z_1 z_2 \vert =\vert z_1 \vert \vert z_2 \vert , \\<br>{\rm Arg}\,(z_1 z_2 )={\rm Arg}\,z_1 +{\rm Arg}\,z_2 .<br>\end{array}$$</p>
+<p>注意，后一等式的两端是多值的，所以应理解为等式左端的值的集合和它的右端的值的集合完全一样.</p>
+<p>表示乘积$z_1 z_2 $的向量可以这样得到：把表示数$z_1 $的向量绕正向旋转角度$\varphi_2 $，再把它的长度乘以$\vert z_2 \vert $.</p>
+<p>用三角式表示除法的公式为</p>
+<p>$$\dfrac{z_1 }{z_2 } =\dfrac{r_1 }{r_2 } [\cos{(\varphi_1 -\varphi_2 ) }+i\sin{(\varphi_1 -\varphi_2 )}],$$</p>
+<p>即</p>
+<p>$$\left\vert \dfrac{z_1 }{z_2} \right\vert =\dfrac{\vert z_1 \vert }{\vert z_2 \vert } ;{\rm Arg}\,\dfrac{z_1 }{z_2 } ={\rm Arg}\,z_1 -{\rm Arg}\,z_2 .$$</p>
+<h2 id="乘方与开方">乘方与开方</h2><p>设$z=r(\cos{\varphi} +i\sin{\varphi })$.由乘法规则，</p>
+<p>$$z^n =r^n (\cos{n\varphi } +i\sin{n\varphi }) ,$$</p>
+<p>即</p>
+<p>$$\vert z^n \vert =\vert z\vert ^n ,{\rm Arg}\,(z^n) =n{\rm Arg}\,z.\label{1.7} \tag{1.7}$$</p>
+<p>利用除法规则，不难验证这公式对于负整数$n$也成立.</p>
+<p>在$r=1$的特殊情况下，我们有</p>
+<p>$$(\cos{\varphi } +i\sin{\varphi })^n =\cos{n\varphi } +i\sin{n\varphi } .\label{1.8} \tag{1.8} $$</p>
+<p>利用二项式定理，</p>
+<p>$$(\cos{\varphi } +i\sin{\varphi })^n =\cos{}^n \varphi +ni\cos{}^{n-1} \varphi \sin{\varphi} +\cdots +n(i)^{n-1} \cos{\varphi } \sin{}^{n-1} \varphi +i^n \sin{}^n \varphi .\label{1.9} \tag{1.9} $$</p>
+<p>将$\eqref{1.8}$和$\eqref{1.9}$结合起来，我们就可以得到通过$\cos{\varphi }$和$\sin{\varphi }$表达$\cos{n\varphi }$或$\sin{n\varphi }$的表达公式.</p>
+<p>例如，当$n=3$时</p>
+<p>$$\begin{align}<br>\cos{3\varphi } +i\sin{3\varphi } &amp; =(\cos{\varphi } +i\sin{\varphi })^3 \\<br> &amp; =\cos{}^3 \varphi +3i\cos{}^2 \varphi \sin{\varphi } -3\cos{\varphi } \sin{}^2 \varphi -i\sin{}^3 \varphi .<br>\end{align}$$</p>
+<p>比较两边的实部和虚部，我们得到</p>
+<p>$$\begin{align}<br>\cos{3\varphi } &amp; =\cos{}^3 \varphi -3\cos{\varphi } \sin{}^2 \varphi \\<br> &amp; =4\cos{}^3 \varphi -3\cos{\varphi } ,\label{1.10} \tag{1.10}<br>\end{align}$$</p>
+<p>及</p>
+<p>$$\begin{align}<br>\sin{3\varphi } &amp; =3\cos{}^2 \varphi \sin{\varphi } -\sin{}^3 \varphi \\<br> &amp; =-4\sin{}^3 \varphi +3\sin{\varphi } \label{1.11} \tag{1.11}<br>\end{align}$$</p>
+<p>通过到复数域的旅行，我们很容易地得到了实数域的两个结果.$n$越大，这种方法的优越性就越明显，这使我们回忆起近代著名数学家哈达玛（Jacques Hardamard）的一句名言：实域中两个真理之间的最短路程是通过复域.</p>
+<p>下面我们转而研究求方根的问题.</p>
+<p>设$n$是正整数.求$z$的$n$次方根就是求这样的数$\omega =\sqrt[n]{z}$，它的$n$次方等于$z$，根据乘方法则</p>
+<p>$$\vert \omega \vert ^n =\vert z\vert ,n{\rm Arg}\,\omega ={\rm Arg}\,z.$$</p>
+<p>令$\omega =\rho (\cos{\theta } +i\sin{\theta})$，并考虑到复数的幅角含有$2\pi $的整数倍的未确定项，则有</p>
+<p>$$\rho^n =r,n\theta =\varphi +2k\pi (k=\pm 1,\pm 2,\cdots ).$$</p>
+<p>从而</p>
+<p>$$\rho =\sqrt[n]{r} ,\theta =\dfrac{\varphi +2k\pi }{n} ,$$</p>
+<p>这里根式下取的是算术根.这样一来，</p>
+<p>$$\begin{align}<br>\sqrt[n]{z} &amp; =\sqrt[n]{r(\cos{\varphi } +i\sin{\varphi })} \\<br> &amp; =\sqrt[n]{r} \left( \cos{\dfrac{\varphi +2k\pi }{n}} +i\sin{\dfrac{\varphi +2k\pi }{n}} \right) .\label{1.12} \tag{1.12}<br>\end{align}$$</p>
+<p>虽然$k$是任意整数，但由这个公式只能得到$n$个不同的值，并且这$n$个不同的值可通过令$k=0,1,2,\cdots ,n-1$而得到.</p>
+<p>公式$\eqref{1.12}$表明，所有这些不同的根都具有相同的模$\sqrt[n]{\vert z\vert }$，相邻两个值的幅角差为$2\pi /n$.由此我们知道，任何复数$z\neq 0$的$n$次方根都有$n$个不同的值，而且这些值可以被排成内接于圆$\vert \omega \vert =\sqrt[n]{\vert z\vert }$的一个正$n$边形的$n$个顶点（图$1.3$）.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/1.3.png" alt=""></center>
+
+<p>由此我们还知道，$n$次方程</p>
+<p>$$z^n +\alpha =0\label{1.13} \tag{1.13}$$</p>
+<p>可解，这里$\alpha $是任意的复数，并且知道，这个方程有$n$个不同的值.</p>
+<h2 id="单位根">单位根</h2><p>求数$1$的$n$次根是一种特别重要的情形.这个根有$n$个值，所有这些值我们都叫做$n$次单位根.由等式</p>
+<p>$$1=\cos{0} +i\sin{0} $$</p>
+<p>与公式$\eqref{1.12}$，</p>
+<p>$$\sqrt[n]{1} =\cos{\dfrac{2k\pi }{n}} +i\sin{\dfrac{2k\pi }{n}} ,k=0,1,\cdots ,n-1.\label{1.14} \tag{1.14} $$</p>
+<p>由上式可知，当$n$为偶数时，在$k=0$与$\dfrac{n}{2}$时得$n$次单位根的实值；当$n$为奇数时，仅在$k=0$时才能得出实值.在复平面上，$n$次单位根排列在单位圆的圆周上，而且把圆周分为$n$等分，其中一个分点是数$1$.因此，$n$次单位根那些不是实数的值的位置关于实轴对称，换言之，它们两两共轭.</p>
+<p>二次单位根有两个值$1,-1$.四次单位根有四个值$1,-1,i$和$-i$.三次单位根有三个数，除去$1$以外，是共轭数</p>
+<p>$$\begin{array}{l}<br>\omega =\cos{\dfrac{2\pi }{3}} +i\sin{\dfrac{2\pi }{3}} =-\dfrac{1}{2} +i\dfrac{\sqrt{3}}{2} \\<br>\omega^2 =\cos{\dfrac{4\pi }{3}} +i\sin{\dfrac{4\pi }{3}} =-\dfrac{1}{2} -i\dfrac{\sqrt{3}}{2} .<br>\end{array}\label{1.15} \tag{1.15}$$</p>
+<p>三次根的值经常用到，应当记住.</p>
+<p>这里指出，复数$\alpha $的$n$次方根的所有值，都可从它的某一个值乘上所有的$n$次单位根来得出.事实上，设$\beta $是$\alpha $的$n$次根的某一个值，即$\beta^n =\alpha $，而$\varepsilon $为任一$n$次单位根，即$\varepsilon^n =1$.则$(\beta \varepsilon )^n =\beta^n \varepsilon^n =\alpha $，即$\beta \varepsilon $为$\sqrt[n]{\alpha }$的一个值.用$\beta $乘$n$次单位根的每一个值，就得出$\alpha $的$n$次根的$n$个不同的值，即这个根的所有的值.</p>
+<p>例如，数$-8$的立方根有一个是$-2$，由$\eqref{1.15}$知，它的其它两个根是</p>
+<p>$$-2\omega =1-i\sqrt{3} ,-2\omega^2 =1+i\sqrt{3} .$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/函数论/">函数论</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/函数论/">函数论</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/12/2015/12/ComplexNumbersComplexFunctionsandTheirApplications11/" data-title="《复数、复函数及其应用》一 基础知识 1 复数的代数运算 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/12/09/2015/12/boliyajishudingli6/"  title="《波利亚计数定理》附录 群的故事">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》附录 群的故事
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#复数"><span class="toc-number">1.</span> <span class="toc-text">复数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复数的四则运算"><span class="toc-number">2.</span> <span class="toc-text">复数的四则运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#乘方与开方"><span class="toc-number">3.</span> <span class="toc-text">乘方与开方</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单位根"><span class="toc-number">4.</span> <span class="toc-text">单位根</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">Tag Cloud</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 10px;">函数论</a> <a href="/tags/微分学/" style="font-size: 17.5px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.5px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 15px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 17.5px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.5px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
