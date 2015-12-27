@@ -1,0 +1,842 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《复数、复函数及其应用》四 几何作图 4.2 正多边形 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="正多边形">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《复数、复函数及其应用》四 几何作图 4.2 正多边形">
+<meta property="og:url" content="http://yoursite.com/2015/12/26/2015/12/ComplexNumbersComplexFunctionsandTheirApplications42/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="正多边形">
+<meta property="og:updated_time" content="2015-12-27T06:42:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《复数、复函数及其应用》四 几何作图 4.2 正多边形">
+<meta name="twitter:description" content="正多边形">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/26/2015/12/ComplexNumbersComplexFunctionsandTheirApplications42/" title="《复数、复函数及其应用》四 几何作图 4.2 正多边形" itemprop="url">《复数、复函数及其应用》四 几何作图 4.2 正多边形</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-26T09:13:06.000Z" itemprop="datePublished"> 發表於 2015-12-26</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正多边形作图"><span class="toc-number">1.</span> <span class="toc-text">正多边形作图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余"><span class="toc-number">2.</span> <span class="toc-text">同余</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正十七边形"><span class="toc-number">3.</span> <span class="toc-text">正十七边形</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="正多边形作图">正多边形作图</h2><p>几何作图的另一个重要方面是利用直尺和圆规构造正多边形.早在古希腊时期，欧几里得就在他的《几何原本》的第四篇论述了圆的内接和外切图形，用直尺圆规作正三角形、正方形、正五边形、正六边形和正十五边形.再通过连接平分角或弧，就可作出$2^n$，$3\times 2^n$，$5\times 2^n $，$15\times 2^n $个边的正多边形.这个记录一直保持了两千年，其间没有任何人能用直尺圆规作出新的正多边形.直到$1796$年高斯才发展了这个理论，他证明了可用直尺圆规作出正十七边形，并完成了这个作图.那时他才$19$岁.高斯认为这个问题的解法具有重大意义，并深感自豪.他希望在他死后在他的墓碑上画一个圆的内接正十七边形.后来，人们遵照他的遗嘱这样做了.</p>
+<p>高斯考察了方程</p>
+<p>$$x^p -1=0,\label{2.1} \tag{2.1} $$</p>
+<p>这里$p$是素数.这个方程的根是</p>
+<p>$$z_k =\cos{\dfrac{2k\pi }{p}} +i\sin{\dfrac{2k\pi }{p}} ,k=0,1,\cdots ,p-1.\label{2.2} \tag{2.2} $$</p>
+<p>从几何上看，这些复数$z_k $就是单位圆上正$p$边形的顶点.正是因为这个原因，方程$\eqref{2.1}$叫做分圆方程.</p>
+<p>高斯指出，一个素数个边的正多边形可用直尺圆规作图的充要条件是，边数$p$具有如下形式：</p>
+<p>$$p=2^{2^n} +1.\label{2.3} \tag{2.3} $$</p>
+<p>对于$n=0,1,2,3,4$，我们有$p$的如下值：</p>
+<p>$$3,5,17,257,65\;537.$$</p>
+<p>它们都是素数.这些正多边形都可用直尺圆规作出.</p>
+<p>形如式$\eqref{2.3}$的数叫做费马数.这些数最初是由法国的一个法官费马（Fermat,$1601-1665$）引进的.他业余爱好数学，是一位杰出的数学家.正如上面所说的，最初五个费马数都是素数.除了这五个数外，费马没有做进一步的计算，但它坚信所有的这种数都是素数.可惜这个猜想是不对的.现再多算一个就可推翻这一猜想.这件事是欧拉作的，他证明了下一个费马数为</p>
+<p>$$4\;294\;967\;297=641\times 6\;700\;417,$$</p>
+<p>这个数不是素数.</p>
+<p>直尺圆规作图与费马数有这样密切的联系，这是人们所未曾料到的.高斯的发现引起了人们对费马数的新兴趣.为了寻找新的费马数，人们进行了惊人的计算，现在又使用上了电子计算机，但是至今没有发现新的费马素数.许多数学家倾向于相信不再有其他的费马素数了.</p>
+<p>现在再回到正多边形的作图问题.对于一般的$n$，高斯也解决了哪些正$n$边形可以作出来，哪些则不能.很明显，从一个正$n$边形出发，通过等分它的每一个中心角，就能得到正$2n$边形.另一方面，从一个正$2n$边形出发，只要简单地取它的不相邻的$n$个顶点就能得到正$n$边形.这说明为了判定哪些正多边形可以作出，只要讨论$n$是奇数的情况就足够了.高斯证明了，一个具有$n$个顶点的正多边形，当且仅当$n$是一个费马素数或若干个不同的费马素数的乘积时，才能用直尺和圆规作出来.</p>
+<p>本节的目的是证明可用直尺圆规构造正十七边形.但是在此之前我们还需要一点同余的概念.</p>
+<h2 id="同余">同余</h2><p>让我们从具体例子出发.如果我们知道某月的$2$号是星期$1$，那么$9$号和$16$号也都是星期$1$.用数学语言来表示就是，$16$、$9$被$7$除余数都是$2$.于是有下面的定义：</p>
+<p>定义$\quad $给定一个正整数$m$，把它叫做模.如果用$m$去除任意两个整数$a$和$b$所得的余数相同，我们就说$a$、$b$对模$m$同余，记作</p>
+<p>$$a\equiv b\pmod m.$$</p>
+<p>如果余数不同，我们就说$a$、$b$对模$m$不同余，记作</p>
+<p>$$a\not\equiv b\pmod m.$$</p>
+<p>例$\quad $通过直接计算，不难验证下面的同余式都是成立的：</p>
+<p>$(1)23\equiv 8\pmod 5$，</p>
+<p>$(2)47\equiv 11\pmod 9$，</p>
+<p>$(3)-11\equiv 5\pmod 8$，</p>
+<p>$(4)81\equiv 0\pmod {27} $.</p>
+<p>我们不拟详细讨论同余式的理论，因为那些将远离我们的主题，我们只给出一个下面就要用到的重要事实，而不作理论推导.这一事实是：$10^0 ,10^1 ,10^2 ,\cdots ,10^{15} $对模$17$彼此不同余.事实上，通过具体的数值计算，我们可以把$10$各次方被$17$除的余数列表如下：</p>
+<p>$$\begin{matrix}<br>n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 &amp; 11 &amp; 12 &amp; 13 &amp; 14 &amp; 15 \\<br>10^n &amp; 1 &amp; 10 &amp; 15 &amp; 14 &amp; 4 &amp; 6 &amp; 9 &amp; 5 &amp; 16 &amp; 7 &amp; 2 &amp; 3 &amp; 13 &amp; 11 &amp; 8 &amp; 12<br>\end{matrix}\label{2.4} \tag{2.4}$$</p>
+<p>这个表下面我们还要用到.</p>
+<p>关于上面的事实有一个一般性的定理：对任何奇素数$p$，都存在数$m$，使得$m^0,m^1 ,\cdots ,m^{p-2}$关于模$p$彼此不同余，$m$叫做关于模$p$的一个原根.这就是说，我们有定理：</p>
+<p>定理$\quad $若$p$是奇素数，则模$p$的原根存在.</p>
+<p>这个定理的证明可以在华罗庚先生的《数论导引》中找到，或者在闵嗣鹤与严士健合编的《初等数论》中找到.</p>
+<h2 id="正十七边形">正十七边形</h2><p>现在让我们考虑正十七边形.我们把它看做复平面上的图形，其顶点为复数，分布在以原点$O$为圆心的单位圆上，并且有一个顶点在$1$.设$z=x+iy$是任何一个其他顶点，因为$\vert z\vert =1$，所以我们可以写成$z_j =\cos{\theta_j } +i\sin{\theta_j } $，$j=1,2,\cdots ,16$.因为正十七边形的顶点把圆分为$17$等分，所以$\theta_j =j\theta_1 $，$\theta_1 =\dfrac{2\pi }{17}$.第十七个顶点又是$1$.</p>
+<p>$$1=\cos{17\theta_1 } +i\sin{17\theta_1 } =(\cos{\theta_1 } +i\sin{\theta_1 } )^{17} =z_1^{17} ,$$</p>
+<p>于是$z_1 $是$z^{17} -1=0$的根.因为</p>
+<p>$$z^{17}-1 =(z-1)(z^{16}+z^{15}+\cdots +1)=0$$</p>
+<p>及$z_1 \neq 1$，所以$z_1$是方程</p>
+<p>$$z^{16}+z^{15}+\cdots +1=0\label{2.5} \tag{2.5} $$</p>
+<p>的根.</p>
+<p>下面，我们求出此根的明显表达式，至少是它的实部$\cos{\theta_1 }$或虚部$\sin{\theta_1 }$的表达式.</p>
+<p>前面已经指出，模$17$的原根存在，$10$就是它的一个原根，正像我们在表$\eqref{2.4}$中看到的，这些出现在底排的余数彼此不等，并且每个只出现一次.现将方程$\eqref{2.5}$中的各项进行重排，使得指数按$10$的方幂数被余数的顺序排列.新的排法如下：</p>
+<p>$$z+z^{10}+z^{15}+z^{14}+\cdots +z^8 +z^{12} =-1.\label{2.6} \tag{2.6}$$</p>
+<p>现在，我们用高斯的方法把式$\eqref{2.6}$分成两个和</p>
+<p>$$\eta_1 =z+z^{15} +z^4 +z^9 +z^{16}+z^2+z^{13}+z^8 ,$$</p>
+<p>$$\eta_2 =z^{10} +z^{14} +z^6 +z^5+z^7+z^3+z^{11}+z^{12} ,$$</p>
+<p>$\eta_1 $是式$\eqref{2.6}$中的奇数项之和，$\eta_2 $是式$\eqref{2.6}$中的偶数项之和，我们有</p>
+<p>$$\eta_1 +\eta_2 =-1.$$</p>
+<p>乘积$\eta_1 \cdot \eta_2 $是多少？乘出来共有$64$项.表面上看很复杂，但如果用一种特殊的方法去计算，事情并不像想象的那样坏.我们先试着把$\eta_1 $与$\eta_2 $中上下相对应的项乘起来：$z\cdot z^{10}=z^{11}$，$z^{15} \cdot z^{14} =z^{29} =z^{12} $，$z^4 \cdot z^6 =z^{10}$，$\cdots $.然后把它们加起来，就得到，</p>
+<p>$$z^{11}+z^{12}+z^{10}+z^{14}+z^6+z^5+z^7+z^3.$$</p>
+<p>但是，这正是$\eta_2 $！为什么呢？这是因为在式$\eqref{2.6}$中，相邻项的$z$的指数差一个以$17$为模的$10$的倍数，于是在$\eta_1 $和$\eta_2 $中相邻项的$z$的指数差一个以$17$为模$100$的倍数.比如说，$z^a$和$z^b$分别是$\eta_1 $和$\eta_2 $中的项，那么，在$\eta_1 $和$\eta_2 $中的下一项分别是$z^{100a}$和$z^{100b}$.$z^{a+b}$或者在$\eta_1 $中，或者在$\eta_2 $中，$z^{100a} \cdot z^{100b} =z^{100(a+b)}$与$z^{a+b}$属于同一个$\eta_i $中，即或者同属$\eta_1 $，或者同属$\eta_2 $.以这种方式，我们总能得到$\eta_1 $的所有项，或者得到$\eta_2 $的所有项.有一项属于$\eta_1 $就全部属于$\eta_1 $，有一项属于$\eta_2 $就全部属于$\eta_2 $，因而只要看第一项属于谁即可.类似地，$\eta_1 $的每一项乘以$\eta_2$中这项下面右边的那一项，所得到的所有的乘积都在同一个$\eta_i$中，$i$是$1$或$2$.因为$z\cdot z^{14} =z^{15}$在$\eta_1 $中，所以其余的乘积$z^{15} \cdot z^6 =z^4$，$\cdots $，$z^8 \cdot z^{10} =z$也都在$\eta_1 $中，并且$8$个乘积的和等于$\eta_1 $.现在我们接着做同样的工作.$\eta_1 $的每一项乘以$\eta_2 $中这项下面右边的第二项、第三项，$\cdots $，等等，再求和.这样一来，用不了多少计算，我们就得到下面的结果：</p>
+<p>$$z^{11}+z^{12}+z^{10}+z^{14}+z^6+z^5+z^7+z^3=\eta_2 ,$$</p>
+<p>$$z^{15}+z^4+z^9+z^{16}+z^2+z^{13}+z^8+z=\eta_1 ,$$</p>
+<p>$$z^7+z^3+z^{11}+z^{12}+z^{10}+z^{14}+z^6+z^5=\eta_2 ,$$</p>
+<p>$$z^6+z^5+z^7+z^3+z^{11}+z^{12}+z^{10}+z^{14}=\eta_2 ,$$</p>
+<p>$$z^8+z+z^{15}+z^4+z^9+z^{16}+z^2+z^{13}=\eta_1 ,$$</p>
+<p>$$z^4+z^9+z^{16}+z^2+z^{13}+z^8+z+z^{15}=\eta_1 ,$$</p>
+<p>$$z^{12}+z^{10}+z^{14}+z^6+z^5+z^9+z^3+z^{11}=\eta_2 ,$$</p>
+<p>$$z^{13}+z^8+z+z^{15}+z^4+z^9+z^{16}+z^2=\eta_1 ,$$</p>
+<p>于是$\eta_1 \eta_2 =4\eta_1 +4\eta_2 =-4$.由韦达定理，$\eta_1 $、$\eta_2 $满足方程</p>
+<p>$$y^2+y-4=0,$$</p>
+<p>所以</p>
+<p>$$\eta_1 ,\eta_2 =\dfrac12 (-1\pm \sqrt{17} ).\label{2.7} \tag{2.7}$$</p>
+<p>我们看到了$17$出现在根式下.在一般情况下，我们从$p$边形开始，能证明$\eta_1 $和$\eta_2 $是二次不尽根，$\pm p$将出现在根式下.类似于从$\eta $中选出$\eta_1 $、$\eta_2 $，我们从$\eta_1 $、$\eta_2 $中再取出$\eta_1’$、$\eta_2’$、$\eta_3’$、$\eta_4’$，</p>
+<p>$$\begin{array}{l}<br>z+z^4+z^{16}+z^{13} =\eta_1’ ,\\<br>z^{15}+z^9+z^2+z^8=\eta_2’ ,\\<br>z^{10}+z^6+z^7+z^{11}=\eta_3’ ,\\<br>z^{14}+z^5+z^3+z^{12}=\eta_4’ ,<br>\end{array}\label{2.8} \tag{2.8}$$</p>
+<p>其中</p>
+<p>$$\begin{array}{l}<br>\eta_1’ + \eta_2’ =\eta_1 ,\\<br>\eta_3’ + \eta_4’ =\eta_2  .\\<br>\end{array}$$</p>
+<p>我们用同样的方式求$\eta_1’ \cdot \eta_2’$，并得到</p>
+<p>$$\begin{array}{l}<br>z^{16}+z^{13}+z+z^4 =\eta_1’ ,\\<br>z^{10}+z^6+z^7+z^{11}=\eta_3’ ,\\<br>z^3+z^{12}+z^{14}+z^5=\eta_4’ ,\\<br>z^9+z^2+z^8+z^{15}=\eta_2’ ,<br>\end{array}$$</p>
+<p>其和是$\eta_1’ \cdot \eta_2’ \colon $</p>
+<p>$$\eta_1’ \cdot \eta_2’ =\eta_1’ +\eta_2’ +\eta_3’ +\eta_4’ =\eta_1 +\eta_2 =-1,$$</p>
+<p>于是$\eta_1’ $、$\eta_2’$满足方程</p>
+<p>$$\omega^2 -\eta_1 \omega -1=0,$$</p>
+<p>从二次方程求根公式得</p>
+<p>$$\eta_1’ ,\eta_2’ =\dfrac12 (\eta_1 \pm \sqrt{\eta_1^2 +4} ) .\label{2.9} \tag{2.9} $$</p>
+<p>类似地，</p>
+<p>$$\eta_3’ ,\eta_4’ =\dfrac12 (\eta_2 \pm \sqrt{\eta_2^2 +4} ),\label{2.10} \tag{2.10} $$</p>
+<p>这里指出，一旦在式$\eqref{2.7}$和式$\eqref{2.9}$中取定了符号，在式$\eqref{2.10}$中的符号也就选定了.为了证明这一点，我们展开</p>
+<p>$$(\eta_1’ -\eta_2’ )(\eta_3’ -\eta_4’ )=\eta_1’ \eta_3’ -\eta_1’ \eta_4’ -\eta_2’ \eta_3’ +\eta_2’ \eta_4’ .$$</p>
+<p>按照同样的技巧可知，$\eta_1’ \cdot \eta_3’ $是下述诸项之和：</p>
+<p>$$\begin{array}{l}<br>z^{11}+z^{10}+z^6+z^7 =\eta_3’ ,\\<br>z^7+z^{11}+z^{10}+z^6=\eta_3’ ,\\<br>z^8+z^{15}+z^9+z^2=\eta_2’ ,\\<br>z^{12}+z^{14}+z^5+z^3=\eta_4’ ,<br>\end{array}$$</p>
+<p>所以</p>
+<p>$$\eta_1’ \eta_3’ =2\eta_3’ +\eta_2’ +\eta_4’ ;$$</p>
+<p>$\eta_1’ \cdot \eta_4’ $是下述的和：</p>
+<p>$$\begin{array}{l}<br>z^{15}+z^9+z^2+z^8 =\eta_2’ ,\\<br>z^6+z^7+z^{11}+z^{10}=\eta_3’ ,\\<br>z^4+z^{16}+z^{13}+z=\eta_1’ ,\\<br>z^{13}+z+z^4+z^{16}=\eta_1’ ;<br>\end{array}$$</p>
+<p>所以</p>
+<p>$$\eta_1’ \eta_4’ =2\eta_1’ +\eta_2’ +\eta_3’ ;$$</p>
+<p>$\eta_2’ \cdot \eta_3’ $是下述之和：</p>
+<p>$$\begin{array}{l}<br>z^8+z^{15}+z^9+z^2 =\eta_2’ ,\\<br>z^4+z^{16}+z^{13}+z=\eta_1’ ,\\<br>z^5+z^3+z^{12}+z^{14}=\eta_4’ ,\\<br>z^9+z^2+z^8+z^{15}=\eta_2’ ,<br>\end{array}$$</p>
+<p>所以</p>
+<p>$$\eta_2’ \eta_3’ =2\eta_2’ +\eta_1’ +\eta_4’ ;$$</p>
+<p>最后，$\eta_2’ \cdot \eta_4’ $是下述之和：</p>
+<p>$$\begin{array}{l}<br>z^{12}+z^{14}+z^5+z^3 =\eta_4’ ,\\<br>z^3+z^{12}+z^{14}+z^5=\eta_4’ ,\\<br>z+z^4+z^{16}+z^{13}=\eta_1’ ,\\<br>z^{10}+z^6+z^7+z^{11}=\eta_3’ ,<br>\end{array}$$</p>
+<p>所以</p>
+<p>$$\eta_2’ \eta_4’ =2\eta_4’ +\eta_1’ +\eta_3’ .$$</p>
+<p>于是我们得到：</p>
+<p>$$(\eta_1’ -\eta_2’ )(\eta_3’ -\eta_4’ )=2\eta_3’ +\eta_2’ +\eta_4’ -2\eta_1’ -\eta_2’ -\eta_3’ -2\eta_2’ -\eta_1’ -\eta_4’ +2\eta_4’ +\eta_1’ +\eta_3’ ,$$</p>
+<p>合并同类项：</p>
+<p>$$\begin{align}<br>(\eta_1’ -\eta_2’ )(\eta_3’ -\eta_4’ ) &amp; =-2\eta_1’ -2\eta_2’ +2\eta_3’ +2\eta_4’ \\<br> &amp; =-2(\eta_1 -\eta_2 ) ,<br>\end{align}$$</p>
+<p>这是一个很重要的结果，由此得</p>
+<p>$$\eta_3’ -\eta_4’ =\dfrac{-2(\eta_1 -\eta_2 )}{\eta_1’ -\eta_2’ } .\label{2.11} \tag{2.11}$$</p>
+<p>现在上式的左边依赖于$\eta_3’ $和$\eta_4’ $在式$\eqref{2.10}$中取正号还是取负号，而右边只依赖于$\eta_1 $、$\eta_2 $、$\eta_1’ $、$\eta_2’ $的符号的选取.于是，我们看到了，$\eta_3’ $、$\eta_4’ $的符号依赖于其他四个符号的分布.</p>
+<p>现在我们继续进行分解工作.</p>
+<p>把$\eta_1’$分成</p>
+<p>$$\begin{array}{l}<br>z+z^{16}=\eta_1’’ ,\\<br>z^4+z^{13}=\eta_2’’ ,<br>\end{array}$$</p>
+<p>立刻有</p>
+<p>$$\eta_1’’ +\eta_2’’ =\eta_1’ ,$$</p>
+<p>$$\eta_1’’ \eta_2’’ =z^5+z^{14}+z^3 +z^{12} =\eta_4’  ,$$</p>
+<p>于是$\eta_1’’ $、$\eta_2’’ $是方程</p>
+<p>$$u^2 -\eta_1’ u+\eta_4’ =0$$</p>
+<p>的根，所以</p>
+<p>$$\eta_1’’ ,\eta_2’’ =\dfrac12 [\eta_1’ \pm \sqrt{(\eta_1’ )^2-4\eta_4’ }] .$$</p>
+<p>最后我们有</p>
+<p>$$\begin{array}{l}<br>z+z^{16}=\eta_1’’ ,\\<br>z\cdot z^{16}=1 ,<br>\end{array}$$</p>
+<p>于是$z$和$z^{16}$满足方程</p>
+<p>$$z^2 -\eta_1’’ z+1=0,\label{2.12} \tag{2.12} $$</p>
+<p>把所有这些结果汇集起来，在式$\eqref{2.7}$中，设</p>
+<p>$$\eta_1 =\dfrac12 (-1+\sqrt{17} ),\eta_2 =\dfrac12 (-1-\sqrt{17} ),$$</p>
+<p>所以</p>
+<p>$$\eta_1 -\eta_2 &gt; 0.$$</p>
+<p>如果在式$\eqref{2.9}$中，$\eta_1’$仍选上边的符号，则我们有</p>
+<p>$$\begin{array}{l}<br>\eta_1’ =\dfrac12 (\eta_1 +\sqrt{\eta_1^2 +4} ) ,\\<br>\eta_2’ =\dfrac12 (\eta_1 -\sqrt{\eta_1^2 +4} ) ,<br>\end{array}$$</p>
+<p>从而</p>
+<p>$$\eta_1’ -\eta_2’ &gt; 0.$$</p>
+<p>再由式$\eqref{2.11}$，得</p>
+<p>$$\eta_4’  -\eta_3’ &gt; 0.$$</p>
+<p>因此在式$\eqref{2.10}$中$\eta_4’ $的符号的选取就定了：</p>
+<p>$$\begin{array}{l}<br>\eta_3’ =\dfrac12 (\eta_2 -\sqrt{\eta_2^2 +4} ) ,\\<br>\eta_4’ =\dfrac12 (\eta_2 +\sqrt{\eta_2^2 +4} ) ,<br>\end{array}$$</p>
+<p>进而计算，有</p>
+<p>$$\begin{array}{l}<br>\eta_1^2 =\dfrac14 (-1 +\sqrt{17} )^2 = \dfrac14 (18 -2\sqrt{17} ),\\<br>\eta_2^2 =\dfrac14 (-1 -\sqrt{17} )^2 = \dfrac14 (18 +2\sqrt{17} ),<br>\end{array}$$</p>
+<p>因此</p>
+<p>$$\begin{array}{l}<br>\eta_1’ =\dfrac14 \Big[ -1+\sqrt{17} +\sqrt{2(17-\sqrt{17} )}\Big],\\<br>\eta_4’ =\dfrac14 \Big[ -1-\sqrt{17} +\sqrt{2(17+\sqrt{17} )}\Big], \end{array}$$</p>
+<p>这些值对计算$\eta_1’’ $、$\eta_2’’$是需要的，而$\eta_1’’ $、$\eta_2’’$符号的选取也是自由的.设</p>
+<p>$$\eta_1’’ =\dfrac12 \Big[\eta_1’ + \sqrt{(\eta_1’ )^2-4\eta_4’ }\Big] ,$$</p>
+<p>并得到：</p>
+<p>$$\begin{align}<br>\eta_1’’ =&amp; \dfrac12 \Big\lbrace \dfrac14 \Big[ -1+\sqrt{17} +\sqrt{2(17-\sqrt{17} )}\Big] +\\<br> &amp; \sqrt{\dfrac{1}{16} \Big[ -1+\sqrt{17} +\sqrt{2(17-\sqrt{17} )}\Big]^2+1+\sqrt{17} -\sqrt{2(17+\sqrt{17} )} } \Big\rbrace \\<br> = &amp; \dfrac18 \Big[-1+\sqrt{17} +\sqrt{2(17-\sqrt{17})} +\sqrt{R}\Big] ,<br>\end{align}$$</p>
+<p>其中</p>
+<p>$$\begin{align}<br>R = &amp; \Big[ -1+\sqrt{17} +\sqrt{2(17-\sqrt{17} )}\Big]^2+16+16\sqrt{17} -16\sqrt{2(17+\sqrt{17} )} \\<br> = &amp; 4\cdot 17+12\sqrt{17} +2(-1+\sqrt{17})\sqrt{2(17-\sqrt{17} )} -16\sqrt{2(17+\sqrt{17} )} ,<br>\end{align}$$</p>
+<p>但是，我们有</p>
+<p>$$\begin{align}<br>&amp; (1+\sqrt{17})\sqrt{2(17-\sqrt{17} )} \\<br>= &amp; \sqrt{2\sqrt{17}(\sqrt{17}-1)(1+\sqrt{17})^2} \\<br>= &amp; \sqrt{2\sqrt{17} \cdot 16(1+\sqrt{17})} \\<br>= &amp; 4\sqrt{2(17+\sqrt{17})} .<br>\end{align}$$</p>
+<p>与$R$的最后两项相比较，得到</p>
+<p>$$R=4\cdot 17+12\sqrt{17} -4\sqrt{2(17-\sqrt{17} )} -8\sqrt{2(17+\sqrt{17} )} ,$$</p>
+<p>于是</p>
+<p>$$\begin{align}<br>\eta_1’’ = &amp; \dfrac18 \Big[-1+\sqrt{17} +\sqrt{2(17-\sqrt{17})} + \\<br> &amp; 2\sqrt{17+3\sqrt{17} -\sqrt{2(17-\sqrt{17} )} -2\sqrt{2(17+\sqrt{17} )}}\Big],<br>\end{align}$$</p>
+<p>这个量是实的.我们可从式$\eqref{2.12}$得到$z$和$z^{16}$，它们满足</p>
+<p>$$\eta_1’’ =z+z^{16} =z+z^{-1} =2\cos{\theta_1 } ,$$</p>
+<p>$$\cos{\theta_1 } =\dfrac12 \eta_1’’ ,$$</p>
+<p>这正是正十七边形中心角的余弦.</p>
+<p>$\eta_1’’ $的表达式的最重要的特征是，它只包含有理数的加、减、乘以及开方运算.这个数可以用直尺圆规构造出来.接下来，$\sin{\theta_1 }$也可用直尺圆规构造出来.这样一来，我们就证明了可用直尺圆规构造正十七边形.</p>
+<p>这个证明是属于高斯（Carl Friedrich Gauss,$1777-1855$）的，发表在《算术探讨》（Disquisitions Arithmeticae,$1801$）中，他对此也深感骄傲，并指出，在此之前，两千年来人们对作正多边形的研究没有新的进展.</p>
+<p>从证明中可以清楚地看出，高斯的构造依赖于这样的事实：$16=17-1=2^4$.这就容许我们将问题化为一系列的二次方程的解.若$p$是形如$2^k +1$的素数，则可用高斯的方法借助直尺圆规构造正$p$边形.当$k$含有奇数的因数$u$时，$2^k+1$不可能是素数.事实上，令$k=ul$，并设$2^l =A$，则</p>
+<p>$$\begin{align}<br>2^k+1 = &amp; 2^{ul} +1=A^u +1\\<br> = &amp; (A+1)(A^{u-1} -A^{u-2} +\cdots +1 ),<br>\end{align}$$</p>
+<p>这样一来，$2^k+1$不是素数.要$2^k+1$是素数，$k$必须是$2$的方幂，即$k=2^n $.所以我们必须找形如$2^{2^n} +1$的素数，即费马素数.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/函数论/">函数论</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/函数论/">函数论</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/26/2015/12/ComplexNumbersComplexFunctionsandTheirApplications42/" data-title="《复数、复函数及其应用》四 几何作图 4.2 正多边形 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/12/25/2015/12/ComplexNumbersComplexFunctionsandTheirApplications41/"  title="《复数、复函数及其应用》四 几何作图 4.1 用直尺圆规作图">
+ <strong>下一篇：</strong><br/> 
+ <span>《复数、复函数及其应用》四 几何作图 4.1 用直尺圆规作图
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正多边形作图"><span class="toc-number">1.</span> <span class="toc-text">正多边形作图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余"><span class="toc-number">2.</span> <span class="toc-text">同余</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正十七边形"><span class="toc-number">3.</span> <span class="toc-text">正十七边形</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>8</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
