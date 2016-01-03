@@ -1,0 +1,810 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="代数基本定理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理">
+<meta property="og:url" content="http://yoursite.com/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications52/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="代数基本定理">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.3.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.4.png">
+<meta property="og:updated_time" content="2015-12-28T14:12:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理">
+<meta name="twitter:description" content="代数基本定理">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications52/" title="《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理" itemprop="url">《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-28T14:12:03.000Z" itemprop="datePublished"> 發表於 2015-12-28</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分解因式与韦达定理"><span class="toc-number">2.</span> <span class="toc-text">分解因式与韦达定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子序列"><span class="toc-number">3.</span> <span class="toc-text">子序列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多项式模的最小值定理"><span class="toc-number">4.</span> <span class="toc-text">多项式模的最小值定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代数基本定理的证明"><span class="toc-number">5.</span> <span class="toc-text">代数基本定理的证明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#几何解释"><span class="toc-number">6.</span> <span class="toc-text">几何解释</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="引言">引言</h2><p>现在我们转而研究高次方程的根的存在问题.考虑一般的$n$次方程</p>
+<p>$$x^n +a_1 x^{n-1} +a_2 x^{n-2} +\cdots +a_{n-1} x+a_n =0,\label{2.1} \tag{2.1}$$</p>
+<p>这里的系数$a_1 ,a_2 ,\cdots ,a_{n-1} ,a_n $都是已知的复数.我们假定$x^n $的系数是$1$，当首项$x^n $的系数不是$1$时，用$x^n $的系数遍除各项系数.</p>
+<p>$n\leqslant 4$的情况前面已经研究过了.在这种情况下我们知道，如果把根的重数计算在内，那么$n$次方程有$n$个根.当$n\geqslant 5$时情况怎样呢？是不是$n$次方程仍然恰有$n$个根呢？这就是代数基本定理所要回答的问题.</p>
+<p>代数基本定理$\quad n$次方程$\eqref{2.1}$至少有一个实数根或复数根.</p>
+<p>这个定理是整个数学中最重要的定理之一，它在代数学中起着基石的作用，因而称它为“代数基本定理”.</p>
+<p>代数基本定理的证明是困难的，经过几代数学家的努力才得出它的严格证明.不无惊奇的是，就其本质而言，证明方法不是代数的，而是分析的.代数基本定理的任何一种证明都用到了相当深刻的分析结果.因而它的任何一个严格证明只能出现在分析严密化之后.这之前的任何证明都必然有这样或那样的缺陷.代数基本定理的第一个证明是达朗贝尔给出的.他用到了数学分析中的一个命题：定理在有限区间上的连续函数一定在某一点取得最小值.这个命题的严格证明是在$19$世纪后半叶才得到的，即在达朗贝尔的研究一百年后才得到的.</p>
+<p>$1799$年高斯对代数基本定理给出了他的第一证明.他的证明依赖于对复数的承认，从而对巩固复数的地位作出了贡献.在高斯以及高斯以前那些年代，尽管复数获得了许多卓有成效的应用，人们依然对它怀有疑惧，在当时数学家的眼中复数仍然不是数学大家庭的合法成员.高斯的证明也不是完全严格的.除此之外，当时，高斯还给出了这个定理的三个别的证明，现在已经有了一系列不同的完全严格的证明.在大多复变函数的教材中都可找到它的证明.下面我们将要给出这个定理的一个比较初等的证明.</p>
+<h2 id="分解因式与韦达定理">分解因式与韦达定理</h2><p>只要暂时承认代数基本定理，就可将二次方程与三次方程的韦达定理推广到$n$次方程.为此，先研究$n$次方程的因式分解.设</p>
+<p>$$f(x)=x^n +a_1 x^{n-1} +\cdots +a_n $$</p>
+<p>是任意给定的$x$的$n$次多项式，其中，系数$a_1 ,\cdots ,a_n $是给定的实数或复数.由代数基本定理，方程</p>
+<p>$$f(x)=0\label{2.2} \tag{2.2} $$</p>
+<p>至少有一个实根或复根.设$x_1 $是方程$\eqref{2.2}$的一个根.以$(x-x_1 )$去除$f(x)$，由于除式是一次的，因此余数是一个常数$R$，即我们有恒等式</p>
+<p>$$f(x)=(x-x_1 )f_1 (x)+R,$$</p>
+<p>式中$f_1 (x)$是一个$n-1$次多项式.将根$x_1 $代入上式就得到$R=0$.这样一来，</p>
+<p>$$f(x)=(x-x_1 )f_1 (x) ,$$</p>
+<p>这说明，若$x_1 $是$f(x)=0$的一个根的话，$(x-x_1 )$就能整除多项式$f(x)$.$f_1 (x)$是一个$n-1$次多项式.由代数基本定理，它也有一个根$x_2 $，与前面一样，我们得到</p>
+<p>$$f_1 (x) =(x-x_2 )f_2 (x) ,$$</p>
+<p>式中$f_2 (x)$是一个$n-2$次多项式.这个过程可以继续下去.这样我们就证明了，多项式$f(x)$可以表示成一次因式的连乘积的形式：</p>
+<p>$$f(x)=(x-x_1 )(x-x_2 )\cdots (x-x_n ).\label{2.3} \tag{2.3}$$</p>
+<p>因而每一个$n$次方程有且只有$n$个根.这些根可以是全不相等的，也可以有一些是相同的.当有一些是相同的时候，我们就把相互相同的根的个数叫做这个根的重数.例如，$1$是方程$(x-1)^2(x+1)=0$的二重根.</p>
+<p>将式$\eqref{2.3}$的右边乘开，并与左边$x$的同次幂的系数相比较，我们就得到</p>
+<p>$$\begin{cases}<br>-a_1=x_1 +x_2 +\cdots +x_n ,\\<br>a_2=x_1 x_2 +x_1 x_3 +\cdots +x_{n-1} x_n ,\\<br>-a_3=x_1 x_2 x_3 +x_1 x_2 x_4 +\cdots \\<br>\vdots \\<br>(-1)^n a_n =x_1 x_2 \cdots x_n .<br>\end{cases}\label{2.4} \tag{2.4}$$</p>
+<p>这就是$n$次方程的韦达公式.</p>
+<h2 id="子序列">子序列</h2><p>为了证明代数基本定理，我们需要引入子序列的概念，这里指的是序列的一部分项所组成的序列.例如，在序列</p>
+<p>$$1,\dfrac12 ,\dfrac13 ,\cdots ,\dfrac1n ,\cdots $$</p>
+<p>中，由分母是偶数的项组成的序列</p>
+<p>$$\dfrac12 ,\dfrac14 ,\dfrac16 ,\cdots ,\dfrac{1}{2n} ,\cdots $$</p>
+<p>就是它的一个子序列.所有分母都是奇数的项组成的序列也是它的一个子序列.这种挑选的规则可以是任意的，因而一个序列的子序列可以有非常多.不难看出，一个序列收敛，则它的子序列也收敛.问题在于，一个序列本身不收敛有时也可以挑选出收敛的子序列.我们感兴趣的是，在什么条件下可以从一个序列中挑选出收敛的子序列？</p>
+<p>定理$1\quad $一个有界的复数列有收敛的子序列.</p>
+<p>定理$1$的严格证明需要实数的连续性公理.</p>
+<p>连续性公理$\quad $设给定两个实数列：</p>
+<p>$$a_1 \leqslant a_2 \leqslant \cdots \leqslant a_n \leqslant \cdots $$</p>
+<p>及</p>
+<p>$$b_1 \geqslant b_2 \geqslant \cdots \geqslant b_n \geqslant \cdots $$</p>
+<p>使得对任何一个$n$都有$a_n &lt; b_n $，并且</p>
+<p>$$b_n -a_n \to 0,(n\to +\infty )$$</p>
+<p>那么，有且仅有一个实数$c$存在，使得对于一切$n$都有：</p>
+<p>$$a_n \leqslant c\leqslant b_n .$$</p>
+<p>连续性公理的几何解释是：如果在实轴上给定一个线段列$[a_n ,b_n ]$使得$[a_{n+1} ,b_{n+1} ]$包含在$[a_n ,b_n ]$中（图$5.1$），并且线段的长可以任意小，那么有一点$C$存在，它属于一切线段.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.1.png" alt=""></center>
+
+<p>换言之，线段收缩到一点，而不是“空地”.这就是说实轴是连续的，而没有断开.</p>
+<p>由实数集的连续性出发立刻可得出复数集的连续性.</p>
+<p>如果在复平面上给定一串边与坐标轴平行的长方形$\Delta_1 ,\Delta_2 ,\cdots ,\Delta_n ,\cdots $（图$5.2$），使得$\Delta_{n+1}$包含在$\Delta_n $里面，并且当$n\to \infty $时，$\Delta_n $的对角线趋于$0$，那么有且仅有一点属于这串长方形中的每一个.从图$5.2$看得很清楚，为了证明这个性质，只需将长方形投射到坐标轴上就可以了.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.2.png" alt=""></center>
+
+<p>连续性公理有时被称为中国盒公理.这是因为我国的艺术家用他们精湛的艺术由一块象牙雕出无数个精致华丽的盒子，这些盒子一个套着一个.</p>
+<p>定理$1$常被叫做波尔察诺-魏尔斯特拉斯定理.现在用连续性公理证明它.</p>
+<p>定理$1$的证明：</p>
+<p>设复数序列是$\lbrace z_n \rbrace $，因为它是有界的，所以可用一个边平行于坐标轴的长方形把它们都包起来，将这个长方形记为$\Delta_1 $.用平行于坐标轴的直线把$\Delta_1 $分成四个相等的部分，其中至少有一部分含有序列的无穷多项，并把这部分记作$\Delta_2 $；将$\Delta_2 $再分作相等的四部分，然后取其中含有无穷多项的那部分，记为$\Delta_3 $；将这一过程无限次重复下去，就得到一个长方形串$\Delta_1 ,\Delta_2 ,\cdots ,\Delta_n ,\cdots $，$\Delta_{n+1}$包含在$\Delta_n $中，并且当$n\to +\infty $时，$\Delta_n $的对角线趋于$0$.根据连续性公理，存在唯一的一点$z_0 $属于一切长方形.现在找出收敛的子序列已不困难了.只要依次在$\Delta_1 $中取出第一项，记为$z_{n_1 }$，在$\Delta_2 $中取出第$2$项$z_{n_2 }$，$\cdots $，在$\Delta_i$中取出第$n$项$z_{n_i}$，$\cdots $，不难看出$\lbrace z_n \rbrace $的子序列$\lbrace z_{n_i} \rbrace $收敛到$z_0 $（图$5.3$）.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.3.png" alt=""></center>
+
+<h2 id="多项式模的最小值定理">多项式模的最小值定理</h2><p>考虑$n$次多项式</p>
+<p>$$f(z)=z^n +a_1 z^{n-1} +\cdots +a_{n-1} z+a_n .$$</p>
+<p>我们现在开始给出代数基本定理的证明.这个证明分为两步：</p>
+<p>$(1)$在复平面上存在一点$z_0 $，使得对复平面上的任何$z$都有$\vert f(z_0 )\vert \leqslant \vert f(z)\vert $，即多项式的模在复平面上的某一点取得最小值.</p>
+<p>$(2)$若$z_0 $是这样一点使$\vert f(z_0 )\vert $取得最小值，则$f(z_0 )=0$.</p>
+<p>在这一段我们先证明第一部分.为此我们需要下面的引理.</p>
+<p>引理$\quad $设多项式$f(z)$的次数$n\geqslant 1$.给定一个正数$M &gt; 0$，存在一个实数$R &gt; 0$，使得对于一切$\vert z\vert &gt; R$，都有$\vert f(z)\vert \geqslant M$.</p>
+<p>证明$\quad $对多项式的次数$n$作归纳法.</p>
+<p>首先，设$n=1$，$f(z)=a+bz$，$b\neq 0$.那么</p>
+<p>$$\vert f(z)\vert =\vert a+bz\vert \geqslant \vert bz\vert -\vert a\vert =\vert b\vert \vert z\vert -\vert a\vert .$$</p>
+<p>对于给定的$M$，取$R=(M+\vert a\vert )/\vert b\vert $，于是当$\vert z\vert &gt; R$时，$\vert f(z)\vert \geqslant M$.</p>
+<p>其次，假定定理对$k-1$次多项式成立.设$f(z)$的次数是$k$，则$f(z)=a+zf_1 (z)$，$f_1 (z)$是$k-1$次多项式.</p>
+<p>对于给定的$M$，取$R\geqslant 1$，使得当$\vert z\vert &gt; R$时，$\vert f_1 (z)\vert ＞ M +\vert a\vert $.于是当$\vert z\vert &gt; R$时，</p>
+<p>$$\begin{align}<br>\vert f(z)\vert &amp; =\vert a+zf_1 (z)\vert \\<br> &amp; \geqslant \vert z\vert \vert f_1 (z)\vert -\vert a\vert \\<br> &amp; \geqslant \vert f_1 (z)\vert -\vert a\vert \geqslant M +\vert a\vert -\vert a\vert \geqslant M,<br>\end{align}$$</p>
+<p>根据归纳法原理，引理得证.</p>
+<p>现在我们可以证明多项式模的最小值定理了.</p>
+<p>定理$2\quad $存在复数$z_0 $，使$\vert f(z_0 )\vert $最小，即对任何复数$z$都有$\vert f(z)\vert \geqslant \vert f(z_0 )\vert $.</p>
+<p>证明$\quad $设$\vert f(0)\vert =g$.任取$G &gt; g$.根据前面的论述，存在一个在数$R$，当$\vert z\vert &gt; R$时，$\vert f(z)\vert \geqslant G$.</p>
+<p>如果$g=0$，即$f(0)=0$，则多项式$f(z)$的模$\vert f(z)\vert $在点$0$外达到最小值，因为对任何$z$都有$\vert f(z)\vert \geqslant 0$.</p>
+<p>如果$g &gt; 0$，并且对一切点$z$都有$\vert f(z)\vert \geqslant g$，那么$\vert f(z)\vert $也在$0$点外有最小值.</p>
+<p>我们假定存在一点$z$，使$\vert f(z)\vert &lt; g$.对任意的$n$，考虑序列</p>
+<p>$$0,\dfrac{g}{n} ,\dfrac{2g}{n} ,\cdots ,\dfrac{ng}{n} =g,$$</p>
+<p>这是一个递增的序列.由于对于一切$z$都有$\vert f(z)\vert \geqslant 0$，而存在$z$使$\vert f(z)\vert &lt; g$，所以有上面的序列中一定有一个最大的$\dfrac{ig}{n} $，使得对一切$z$都有$\vert f(z)\vert \geqslant \dfrac{ig}{n}$，而存在$z_n $使$\vert f(z_n )\vert &lt; \dfrac{i+1}{n} g$.记$C_n =\dfrac{ig}{n} ,C_n’ =\dfrac{i+1}{n} g$.</p>
+<p>由于当$\vert z\vert &gt; R$时$\vert f(z)\vert &gt; G &gt; g$，所以对于一切$n$，都有$\vert z_n \vert \leqslant R$.因而这些$z_n $构成一个有界点列，其中可能有重复的.由定理$1$，存在一个收敛的子充$z_{n_k }$收敛到一点$z_0 \colon $</p>
+<p>$$\lim_{k\to \infty } z_{n_k } =z_0 .$$</p>
+<p>我们来证明，在$z_0 $处$\vert f(z)\vert $有最小值.即对任何复数$z$都有$\vert f(z)\vert \geqslant \vert f(z_0 )\vert $.事实上，设$z$是任意一点，这时</p>
+<p>$$\begin{align}<br>\vert f(z)\vert &amp; \geqslant C_{n_k } =C_{n_k}’ -\dfrac{g}{n_k } &gt; \vert f(z_{n_k }) \vert -\dfrac{g}{n_k } \\<br> &amp; =\vert f(z_0 )\vert +(\vert f(z_{n_k })\vert -\vert f(z_0)\vert )-\dfrac{g}{n_k } .<br>\end{align}$$</p>
+<p>令$k\to \infty $，我们有</p>
+<p>$$\lim_{k\to \infty } \dfrac{g}{n_k } =0.$$</p>
+<p>再由$\vert f(z)\vert $的连续性，我们有</p>
+<p>$$\lim_{k\to \infty } (\vert f(z_{n_k })\vert -\vert f(z_0 )\vert ) =0.$$</p>
+<p>这样一来，我们就得出</p>
+<p>$$\vert f(z)\vert \geqslant \vert f(z_0 )\vert .$$</p>
+<p>这就完成了定理的证明.</p>
+<h2 id="代数基本定理的证明">代数基本定理的证明</h2><p>上一段我们证明了多项式模的最小值定理，即证明了，存在复数$z_0 $，使$\vert f(z_0 )\vert $最小.下面我们来证明，$f(z_0 )=0$，即$z_0 $是多项式$f(z)$的一个根.这就证明了代数基本定理.</p>
+<p>证明的方法是，若$\vert f(z_0 )\vert \neq 0$，则$\vert f(z_0 )\vert $一定不是最小值.</p>
+<p>今假定$\vert f(z_0 )\vert \neq 0$.考虑多项式$Q(z)=f(z+z_0 )/f(z_0 )$.$Q(z)$是多项式$f(z_0 +z)$除以常数$f(z_0 )$，所以仍是一个$n$次多项式.$\vert Q(z)\vert $在$z=0$有最小值.$Q(0)=f(z_0 )/f(z_0 )=1$，从而$Q(z)$可写成下述形式：</p>
+<p>$$Q(z)=1+az^m+z^{m+1} R (z) \quad (m\geqslant 1),$$</p>
+<p>这里$a\neq 0$，$az^m $是$Q(z)$中系数不为零的次数最低的那一项，$z^{m+1} R(z)$表示高次项，$R(z)$是复系数的多项式.在第一章我们曾讨论过方程</p>
+<p>$$az^{m}+1=0,$$</p>
+<p>或</p>
+<p>$$z^m +\dfrac{1}{a} =0$$</p>
+<p>的根的求解问题.设$c$是它的一个根：$ac^m +1=0$或$ac^m =-1$.这时</p>
+<p>$$\begin{align}<br>Q(cz) &amp; =1+ac^mz^m +c^{m+1}z^{m+1}R(cz) \\<br> &amp; =1-z^m+c^{m+1}z^{m+1} R(cz) ,<br>\end{align}\label{2.5} \tag{2.5}$$</p>
+<p>$\vert Q(cz)\vert $在$z=0$有最小值.因为多项式在有限圆盘$\vert z\vert \leqslant M$上是有界的，所以可以找到一个正数$T$，使得$\vert R(cz)\vert \leqslant T$.根据式$\eqref{2.5}$有</p>
+<p>$$\begin{align}<br>Q(cz) &amp; \leqslant \vert 1-z^m\vert +\vert c\vert^{m+1} \vert z\vert^{m+1} \vert R(cz)\vert \\<br> &amp; \leqslant \vert 1-z^m \vert +\vert c\vert^{m+1} \vert z\vert^{m+1} T.<br>\end{align}$$</p>
+<p>命$z$沿正实轴趋于$0$，这时$\vert 1-z^m \vert =1-z^m $，于是，</p>
+<p>$$\begin{align}<br>Q(cz) &amp; \leqslant  1-z^m +z^{m+1} \vert c\vert^{m+1} T\\<br> &amp; =1-z^m (1-z\vert c\vert^{m+1} T) \\<br> &amp; \leqslant 1-\dfrac12 z^m ,<br>\end{align}$$</p>
+<p>这是因为当$z$充分小时，$1-z\vert c\vert^{m+1} T\geqslant \dfrac12 $.我们证明了，当$z$充分小时，</p>
+<p>$$\vert Q(cz)\vert &lt; 1=Q(0),$$</p>
+<p>这与$\vert Q(0)\vert $取得最小值是矛盾的，这个矛盾建立了代数基本定理.</p>
+<h2 id="几何解释">几何解释</h2><p>我们对代数基本定理作一几何考察.在每个复数$z$上安置一个立坐标$t$，它的长等于多项式$f(z)$在这一点$z$的模$\vert f(z)\vert $.这些立坐标的端点形成一个曲面，我们把它叫做多项式$f(z)$的模曲面.因为$\vert f(z)\vert \geqslant 0$，所以这个曲面无论在什么地方也不会降到复平面的下面.同时我们还注意到，对于复平面上的任一点$z$，曲面上有且仅有一点与它对应.换言之，整个曲面在复平面上只有一叶.由于$\vert f(z)\vert $是$z$的连续函数，所以当$z$在复平面上连续变动时，这个曲面的点的立坐标$t=\vert f(z)\vert $连续地变动.</p>
+<p>代数基本定理指出，多项式$f(z)$的模曲面至少有一点接触到复平面.事实上，在$\vert f(z)\vert $的每一个最小值处给出$f(z)$的一个根（图$5.4$）.</p>
+<center><img src="/assets/img/ComplexNumbersComplexFunctionsandTheirApplications/5.4.png" alt=""></center>
+
+<p>最小值的个数等于$f(z)=0$的不同根的个数.$f(z)$的模曲面由这些最小值在复平面$z$上支起来.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/函数论/">函数论</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/函数论/">函数论</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications52/" data-title="《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications53/" title="《复数、复函数及其应用》五 代数方程式的根 5.3 辐角原理">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《复数、复函数及其应用》五 代数方程式的根 5.3 辐角原理</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications51/"  title="《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式">
+ <strong>下一篇：</strong><br/> 
+ <span>《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分解因式与韦达定理"><span class="toc-number">2.</span> <span class="toc-text">分解因式与韦达定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子序列"><span class="toc-number">3.</span> <span class="toc-text">子序列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多项式模的最小值定理"><span class="toc-number">4.</span> <span class="toc-text">多项式模的最小值定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代数基本定理的证明"><span class="toc-number">5.</span> <span class="toc-text">代数基本定理的证明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#几何解释"><span class="toc-number">6.</span> <span class="toc-text">几何解释</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

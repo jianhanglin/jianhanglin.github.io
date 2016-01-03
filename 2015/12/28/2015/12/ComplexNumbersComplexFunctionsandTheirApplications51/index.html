@@ -1,0 +1,855 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="代数方程式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式">
+<meta property="og:url" content="http://yoursite.com/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications51/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="代数方程式">
+<meta property="og:updated_time" content="2015-12-28T14:26:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式">
+<meta name="twitter:description" content="代数方程式">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications51/" title="《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式" itemprop="url">《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-28T14:10:46.000Z" itemprop="datePublished"> 發表於 2015-12-28</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一次方程与二次方程"><span class="toc-number">1.</span> <span class="toc-text">一次方程与二次方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三次方程"><span class="toc-number">2.</span> <span class="toc-text">三次方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四次方程"><span class="toc-number">3.</span> <span class="toc-text">四次方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五次以上的方程"><span class="toc-number">4.</span> <span class="toc-text">五次以上的方程</span></a></li></ol>
+		
+		</div>
+		
+		<p>代数方程求解的问题是代数学的中心问题之一.中学讲了一次方程与二次方程的根的求解问题.在此基础上，本章讨论三次方程和四次方程的求解问题，并指出五次以上方程没有根式解.进而讨论了代数基本定理.最后借助辐角原理讨论了代数方程根的分布问题.</p>
+<h2 id="一次方程与二次方程">一次方程与二次方程</h2><p>为了使我们的讨论是完备的，使我们能从简单的东西中找出引我们深入的东西，也为了使读者体会到数学家在创立这些理论时所走过的艰苦而漫长的道路，我们就从代数方程最基础的概念开始.</p>
+<p>如果方程是一次的，那么它的形状是</p>
+<p>$$a_0 x+a_1 =0,a_0 \neq 0,$$</p>
+<p>由此解得</p>
+<p>$$x=-\dfrac{a_1 }{a_0 } ,$$</p>
+<p>二次方程有如下形式</p>
+<p>$$a_0 x^2+a_1 x+a_2 =0,a_0 \neq 0,$$</p>
+<p>用$a_0 $遍除各项后，我们可假定二次方程取</p>
+<p>$$x^2+px+q=0\label{1.1} \tag{1.1}$$</p>
+<p>的形式.众所周知，这一方程可用“配方法”来解，只要$p^2-4q \geqslant 0$，我们有</p>
+<p>$$x^2+px+\dfrac{p^2}{4} =\dfrac{p^2}{4} -q,$$</p>
+<p>$$\left( x+\dfrac{p}{2} \right)^2 =\dfrac{p^2}{4} -q,$$</p>
+<p>$$x+\dfrac{p}{2} =\pm \sqrt{\dfrac{p^2}{4} -q} .$$</p>
+<p>于是我们得到两个解</p>
+<p>$$x_{1,2} =-\dfrac{p}{2} \pm \sqrt{\dfrac{p^2}{4} -q} .\label{1.2} \tag{1.2}$$</p>
+<p>命</p>
+<p>$$D=p^2-4q,\label{1.3} \tag{1.3}$$</p>
+<p>我们称$D$为方程$\eqref{1.1}$的判别式.</p>
+<p>当$D &gt; 0$时，方程$\eqref{1.1}$有两个不同的实根.方程$\eqref{1.1}$有一个重根的充要条件是$D=0$.</p>
+<p>当$D &lt; 0$时，方程没有实根.这就是说，对于实系数的二次方程来说，实数域已经不够用了，只有在复数域中才能给出完善的解答.在复数域中，方程$\eqref{1.1}$的解具有形式</p>
+<p>$$x_{1,2} =-\dfrac{p}{2} \pm i\sqrt{q-\dfrac{p^2}{4}} .$$</p>
+<p>前面我们假定了二次方程$\eqref{1.1}$是实系数的，当方程是复系数时，上面的方法依然奏效，并且仍然有两个解.</p>
+<p>知道了二次方程的两个根就可将它分解因式，我们有</p>
+<p>$$x^2+px+q=(x-x_1 )(x-x_2 )=0.$$</p>
+<p>由此不难得出著名的韦达（Francois Viete,$1540-1603$）定理：</p>
+<p>$$x_1 +x_2 =-p,x_1 \cdot x_2 =q.\label{1.4} \tag{1.4}$$</p>
+<p>一次方程太简单，没有多少东西可谈，但二次方程却提供给我们不少信息，如因式分解，根与系数的关系等.这些将成为我们研究高次方程的重要借鉴.</p>
+<h2 id="三次方程">三次方程</h2><p>用配方法解二次方程早在巴比伦时代就已经知道了.高于二次的方程就是另外一回事了.解一般的三次方程要困难得多，这使得许多古代数学家的努力都归于失败.直到$16$世纪初意大利的文艺复兴时代，这个问题才为意大利的数学家所解决.</p>
+<p>解三次方程的步骤分为三步：</p>
+<p>将一般方程化为缺项的三次方程；</p>
+<p>解缺项的三次方程；</p>
+<p>解的确定.</p>
+<p>$(1)$韦达公式</p>
+<p>设一元三次方程为</p>
+<p>$$y^3+a_1 y^2 +a_2 y+a_3 =0.\label{1.5} \tag{1.5}$$</p>
+<p>下面证明它有三个根，并给出求根公式.在这之前，我们先给出根与系数的关系.设方程$\eqref{1.5}$的三个根为$y_1 ,y_2 ,y_3$，则</p>
+<p>$$\begin{align}<br> &amp; y^3+a_1 y^2 +a_2 y+a_3 \\<br>= &amp; (y-y_1 )(y-y_2 )(y-y_3 ) \\<br>= &amp; y^3 -(y_1 +y_2 +y_3 )y^2 +(y_1 y_2 +y_2 y_3 +y_3 y_1 )y-y_1 y_2 y_3 ,<br>\end{align}$$</p>
+<p>由此可得</p>
+<p>$$\begin{cases}<br>a_1 =-(y_1 +y_2 +y_3 ), \\<br>a_2 = y_1 y_2 +y_2 y_3 +y_3 y_1 ,\\<br>a_3 =-y_1 y_2 y_3 .<br>\end{cases} \label{1.6} \tag{1.6}$$</p>
+<p>这就是三次方程的韦达公式.</p>
+<p>$(2)$缺项的三次方程</p>
+<p>现在回到一般的三次方程$\eqref{1.5}$，这个方程可化为不含$x^2$的三次方程</p>
+<p>$$x^3+px+q=0.\label{1.7} \tag{1.7}$$</p>
+<p>事实上，只要令$y=x-\dfrac{a_1 }{3} $，代入方程$\eqref{1.5}$，得</p>
+<p>$$\begin{align}<br> &amp; \left( x-\dfrac{a_1 }{3} \right)^3 +a_1 \left( x-\dfrac{a_1 }{3} \right)^2 +a_2 \left( x-\dfrac{a_1 }{3} \right) +a_3 \\<br>= &amp; x^3-3\cdot x^2\cdot \dfrac{a_1 }{3} +\cdots +a_1 x^2 +\cdots<br>\end{align}$$</p>
+<p>式中，“$\cdots $”表示$x$的一次项及零次项各项.由此可见，含$x^2$的项互相抵消了，再合并同类项，得到的就是方程$\eqref{1.7}$.</p>
+<p>求根公式$\quad $现在我们来解方程$\eqref{1.7}$.解法虽然不长，但是相当巧妙.方法是引进两个未知量$u$和$v$代表一个未知量$x$.具体是这样作的：设$x=u+v$.$u$、$v$代表两个新的未知量.把它代入方程$\eqref{1.7}$，得到</p>
+<p>$$(u+v)^3+p(u+v)+q=0,$$</p>
+<p>展开，并合并同类项，得到</p>
+<p>$$(u^3+v^3+q)+(3uv+p)(u+v)=0.\label{1.8} \tag{1.8}$$</p>
+<p>因为我们用了两个未知量$u$和$v$代替一个未知量$x$，所以我们还可以再要求</p>
+<p>$$3uv+p\Leftrightarrow uv=-\dfrac{p}{3} .\label{1.9} \tag{1.9}$$</p>
+<p>这样一来，式$\eqref{1.8}$变成了两个方程：</p>
+<p>$$u^3+v^3=-q,u^3v^3=-\dfrac{p^3}{27} .$$</p>
+<p>从这两个方程不难看出，$u^3$和$v^3$是二次方程</p>
+<p>$$z^2+qz-\dfrac{p^3}{27} =0\label{1.10} \tag{1.10} $$</p>
+<p>的两个根.解这个二次方程，得</p>
+<p>$$z=-\dfrac{q}{2} \pm \sqrt{\dfrac{q^2}{4} +\dfrac{p^3}{27}} ,\label{1.11} \tag{1.11}$$</p>
+<p>由此</p>
+<p>$$\begin{array}{l}<br>u=\sqrt[3]{z_1 } =\sqrt[3]{-\dfrac{q}{2}  +\sqrt{\dfrac{q^2}{4} +\dfrac{p^3}{27}}} ,\\<br>v=\sqrt[3]{z_2 } =\sqrt[3]{-\dfrac{q}{2}  -\sqrt{\dfrac{q^2}{4} +\dfrac{p^3}{27}}} ,<br>\end{array}\label{1.12} \tag{1.12}$$</p>
+<p>这样一来，我们就得到了方程$\eqref{1.7}$的根</p>
+<p>$$x=u+v=\sqrt[3]{-\dfrac{q}{2}  +\sqrt{\dfrac{q^2}{4} +\dfrac{p^3}{27}}} +\sqrt[3]{-\dfrac{q}{2}  -\sqrt{\dfrac{q^2}{4} +\dfrac{p^3}{27}}} .\label{1.13} \tag{1.13}$$</p>
+<p>因为立方根在复数域中有三个值，所以式$\eqref{1.12}$给予$u$三个值和$v$三个值.但是利用式$\eqref{1.13}$时，不能取$u$的任一值与$v$的任一值相结合；对于$u$的任一值必须取三个$v$值中满足条件$\eqref{1.9}$的那个值.</p>
+<p>设$u_1 $是$u$的三个值中的任一个.如第一章$\S 1$中指出的，$u$的其他两个值可用$1$的立方根$\omega $与$\omega^2 $乘$u_1$来得到：</p>
+<p>$$u_2 =u_1 \omega ,u_3 =u_1 \omega^2 ,$$</p>
+<p>以$v_1 $记$v$的三个值中由式$\eqref{1.9}$的关系对应于$u_1$的那个值，即$u_1 v_1 =-\dfrac{p}{3}$.$v$的另两个值是</p>
+<p>$$v_2 =v_1 \omega ,v_3 =v_1 \omega^2 .$$</p>
+<p>因为由$\omega^3 =1$，</p>
+<p>$$u_2 v_3 =u_1 \omega \cdot v_1 \omega^2 =u_1 v_1 \omega^3 =u_1 v_1 =-\dfrac{p}{3} ,$$</p>
+<p>所以$u_2 $与$v_3$对应；同理$u_3 $与$v_2 $对应.这样一来，方程$\eqref{1.7}$的三个根是：</p>
+<p>$$\begin{cases}<br>x_1 =u_1 +v_1 , \\<br>x_2 =u_2 +v_3 =u_1 \omega +v_1 \omega^2 ,\\<br>x_3 =u_3 +v_2 =u_1 \omega^2 +v_1 \omega .<br>\end{cases}\label{1.14} \tag{1.14} $$</p>
+<p>例$\quad$解三次方程$z^3-3z=0$.</p>
+<p>解$\quad $这是一个特别选好的例子，它的解显然是</p>
+<p>$$z=0,z=\sqrt{3} ,z=-\sqrt{3} ,$$</p>
+<p>因此容易用它来验证我们的公式.</p>
+<p>我们有$p=-3$，$q=0$.由方程$\eqref{1.10}$得，$u_3 $、$v_3 $是二次方程</p>
+<p>$$x^2+\dfrac{3^3}{27}=0\Leftrightarrow x^2+1=0$$</p>
+<p>的根.由此可得$x=\pm i$.从而可取</p>
+<p>$$u^3=i,v^3 =-i.$$</p>
+<p>首先考虑$u^3=i$.由此解得$u$的三个根：</p>
+<p>$$u_1 =-i,u_2 =\dfrac{\sqrt{3} +i}{2} ,u_3 =-\dfrac{\sqrt{3} -i}{2} .$$</p>
+<p>由$v_3 =-i$，解得由关系$\eqref{1.9}$确定的$v$的三个相对应的值为</p>
+<p>$$v_1 =i,u_2 =\dfrac{\sqrt{3} -i}{2} ,u_3 =-\dfrac{\sqrt{3} +i}{2} .$$</p>
+<p>把$u_i $和$v_i$的对应值加起来，就得到方程式的三个根</p>
+<p>$$z_1 =0,z_2 =\sqrt{3} ,z_3 =-\sqrt{3} ,$$</p>
+<p>于是得到了我们已经知道的解.</p>
+<p>三次方程的求解公式叫卡丹公式，是意大利米兰的数学和物理教授卡丹（Caran,$1501-1576$）最先刊登于$1545$年他所出版的著作《大法》（Ars magna）里.他这种方法得之于意大利数学家塔尔塔里雅（Tartaglia,$1500-1577$）.这里有一段有趣的故事.原来这一问题最初由意大利数学家齐波$\cdot$菲洛（Scipione dal Ferro,$1465-1526$）解决的.但他没有发表他的解法.按照当时的风气，人们常把所得的发现保密，而向对手提出挑战，要他们解决同样的问题.在$1510$年左右，他把们的方法秘传给他的一个学生.菲洛去世后，这个学生向当时意大利最大的数学家之一的塔尔塔里雅提出挑战，要他解出$30$个三次方程.塔尔塔里雅起而应战，并且用八天的时间结束了这场竞赛，解出了对手提出的所有$30$个方程，得到了解形如$x^3+px+q=0$的任何三次方程的方法.</p>
+<p>当卡丹获悉这一发明后，就央求塔尔塔里雅将秘诀告诉他，并发誓对此保守秘密.在卡丹的恳求之下，塔尔塔里雅才把他的方法写成一首语言晦涩的诗告诉了卡丹.但是卡丹背弃了他的诺言，而将方法发表了.</p>
+<p>现在回到我们的三次方程.令</p>
+<p>$$D=\dfrac{q^2}{4} +\dfrac{p^3}{27} ,\label{1.15} \tag{1.15} $$</p>
+<p>并称它为三次方程$\eqref{1.7}$的判别式.这是因为$D$决定了根的性质.</p>
+<p>$D=0$是方程$\eqref{1.7}$有重根的必要且充分的条件.事实上，这时$u^3=v^3=-\dfrac{q}{2}$，所以</p>
+<p>$$x_1 =-2\sqrt[3]{\dfrac{q}{2}} ,$$</p>
+<p>$$x_2 =x_3 =-(\omega +\omega^2 )\sqrt[3]{\dfrac{q}{2}} =\sqrt[3]{\dfrac{q}{2}} ,$$</p>
+<p>这是因为$\omega $是方程$x^2+x+1=0$的根，所以$\omega^2 +\omega +1=0$，或$\omega^2 +\omega =-1$.</p>
+<p>从前面的讨论中我们又一次看到了复数的作用.复数在本质上是不可缺少的，即使对实系数方程而言也是一样.</p>
+<p>三次方程解法总结$\quad $三次方程的成功解出为四次方程的解出开辟了成功之路.所以值得将三次方程的解法再作一小结：</p>
+<p>将完全三次方程化为缺项三次方程；</p>
+<p>引进一对辅助变量$u$、$v$及一个辅助的二次方程；</p>
+<p>解二次方程得到$u^3$、$v^3$，由此得到缺项三次方程的解.</p>
+<h2 id="四次方程">四次方程</h2><p>在三次方程被成功地解出之后，意大利数学家费拉里（Lodovico Ferrari,$1522-1565$）很快就给出了一般四次方程的解法，并发表在卡丹的《大法》中.</p>
+<p>四次方程的解法比三次方程的解法要复杂多了，但基本思想是一致的.其主要步骤如下：</p>
+<p>将完全的四次方程化为缺项的四次方程.</p>
+<p>引进三个辅助变量$u$、$v$、$w$，得到$u$、$v$、$w$的三组关系式，并引出一个辅助的三次方程.</p>
+<p>解三次方程得到$u$、$v$、$w$.</p>
+<p>解的确定.$u$、$v$、$w$的值不能任意搭配，需满足有关的关系式.由此得到缺项的四次方程的解.</p>
+<p>总之，将缺项的四次方程化为三次方程，解出三次方程后，再求出四次方程的根.整个过程是：</p>
+<p>解四次方程化为解三次方程，解三次方程化为解二次方程.</p>
+<p>$(1)$缺项的四次方程</p>
+<p>设一元四次方程为</p>
+<p>$$y^4+a_1 y^3+a_2 y^2 +a_3 y+a_4 =0.\label{1.16} \tag{1.16}$$</p>
+<p>我们首先指出，这个方程可以化为不含$x^3$项的方程：</p>
+<p>$$x^4+qx^2+rx+s=0.\label{1.17} \tag{1.17}$$</p>
+<p>事实上，令$y=x-\dfrac{a_1 }{4} $，代入方程$\eqref{1.16}$得</p>
+<p>$$\left( x-\dfrac{a_1 }{4} \right)^4 +a_1 \left( x-\dfrac{a_1 }{4} \right)^3 +\cdots =0,$$</p>
+<p>$$x^4 -4\cdot x^3 \cdot \dfrac{a_1 }{4} +a_1 x^3 +\cdots =0,$$</p>
+<p>式中，“$\cdots $”表示低于$x$的三次方的项.由此可见含$x^3$的项互相抵消了.</p>
+<p>这样一来，问题化为解方程$\eqref{1.17}$.</p>
+<p>$(2)$求根公式</p>
+<p>在解四次方程$\eqref{1.17}$之前，我们先回顾一下三次方程$\eqref{1.17}$的解法.在那里我们引进了一对辅助变量$u$、$v$，以及一个辅助二次方程</p>
+<p>$$z^2+qz-\dfrac{p^3}{27} =0,$$</p>
+<p>式中$z=u^3$或$v^3$.解出这个方程就可得到三次方程的解.解四次方程$\eqref{1.17}$与解三次方程$\eqref{1.7}$的基本想法是类似的，不过四次方程更复杂一些.在解四次方程时需要引进的不是两个辅助变量，而是三个辅助变量$u$、$v$、$w$.引进的辅助方程也不再是二次的而是三次的了.下面我们就来解方程$\eqref{1.17}$.</p>
+<p>令$x=u+v+w$，于是有</p>
+<p>$$x^2=u^2+v^2+w^2 +2(uv+vw+wu),$$</p>
+<p>$$x^4=(u^2+v^2+w^2)^2 +4(u^2+v^2+w^2)(uv+vw+wu)+4(uv+vw+wu)^2,$$</p>
+<p>将所有这些结果代入方程$\eqref{1.17}$得</p>
+<p>$$\begin{array}{c}<br>(u^2+v^2+w^2)^2 +4(u^2+v^2+w^2)(uv+vw+wu)+4(uv+vw+wu)^2+\\<br>q(u^2+v^2+w^2)+2q(uv+vw+wu)+r(u+v+w)+s=0.<br>\end{array}$$</p>
+<p>注意到</p>
+<p>$$4(uv+vw+wu)^2=4[(u^2v^2+v^2w^2+w^2u^2)+2uvw(u+v+w)],$$</p>
+<p>从而得到</p>
+<p>$$\begin{array}{c}<br>(u^2+v^2+w^2)^2 +2(uv+vw+wu)[2(u^2+v^2+w^2)+q]+q(u^2+v^2+w^2)\\<br>+(8uvw+r)(u+v+w)+4(u^2v^2+v^2w^2+w^2u^2)+s=0,<br>\end{array}\label{1.18} \tag{1.18}$$</p>
+<p>$u$、$v$、$w$是三个变数，而这里只有一个方程，要想通过$u$、$v$、$w$来确定$x$还必须增加两个条件.</p>
+<p>今设</p>
+<p>$$\begin{array}{c}<br>2(u^2+v^2+w^2)+q=0,\\<br>8uvw+r=0,<br>\end{array}$$</p>
+<p>即</p>
+<p>$$u^2+v^2+w^2 =-\dfrac{q}{2} ,\label{1.19} \tag{1.19}$$</p>
+<p>$$uvw=-\dfrac{r}{8} ,\label{1.20} \tag{1.20}$$</p>
+<p>这里式$\eqref{1.18}$变为</p>
+<p>$$(u^2+v^2+w^2)^2 +q(u^2+v^2+w^2)+4(u^2v^2+v^2w^2+w^2u^2)+s=0,$$</p>
+<p>再把式$\eqref{1.19}$代入可得</p>
+<p>$$\dfrac{q^2}{4} -\dfrac{q^2}{2} +4(u^2v^2+v^2w^2+w^2u^2)+s=0,$$</p>
+<p>从而</p>
+<p>$$u^2v^2+v^2w^2+w^2u^2=\dfrac{q^2-4s}{16} ,\label{1.21} \tag{1.21}$$</p>
+<p>由式$\eqref{1.20}$得</p>
+<p>$$u^2v^2w^2 =\dfrac{r^2}{64} ,\label{1.22} \tag{1.22}$$</p>
+<p>将式$\eqref{1.19}$、$\eqref{1.21}$与$\eqref{1.22}$结合起来，利用三次方程的根与系数的关系可知，$u^2$、$v^2$、$w^2$为三次方程</p>
+<p>$$z^3+\dfrac{q}{2} z^2 +\dfrac{q^2-4s}{16} z-\dfrac{r^2}{64} =0\label{1.23} \tag{1.23} $$</p>
+<p>的根.若这个三次方程的根为$z_1 $、$z_2 $、$z_3 $，则</p>
+<p>$$u=\pm \sqrt{z_1 } ,v=\pm \sqrt{z_2 } ,w=\pm \sqrt{z_3 } .$$</p>
+<p>这时$x=u+v+w$有$8$种可能的结合，但由于受到条件$\eqref{1.20}$的限制，实际上只有$4$种结合，这就是$4$次方程的四个根.</p>
+<p>我们看到了，解四次方程要预先解一个形如$\eqref{1.23}$的三次方程.</p>
+<p>一个重要的事实是，二次方程的根是通过系数的根式来表示的，三次方程与四次方程的根也是通过系数的根式来表示的.至于五次以上的方程就完全不同了，下面我们还要谈到这一点.</p>
+<p>还有一点值得指出，我国对高次方程的研究也开始得很早.早在唐朝，王孝通著的《辑古算经》就记载有方程$x^3+px^2+qx=A$，并说明“以立方除之”.到了$13$世纪的金元时期，有李冶（$1192-1279$）、秦九韶（$1202-1261$）、杨辉（$1261-1275$）、朱世杰（$12$世纪末到$13$世纪初）等，都曾对高次方程提出解法，当时用算筹可以解出十次方程.但在我们古代，数学偏重于应用，只讨论正根，不讨论负根，自然更没有虚根.不过在$13$世纪我们已经能求出高到十次方程的正根，这仍然值得我们自豪.</p>
+<h2 id="五次以上的方程">五次以上的方程</h2><p>五次以上的方程如何解？是不是和解二次、三次、四次方程一样？它们的根是否可以用系数的根式表示出来，只不过是技巧更高超，表达式更为复杂呢？产生这种想法是很自然的.代数发展史本身就是一个很好的说明.</p>
+<p>在意大利数学家成功地解出三次方程和四次方程之后，当时的数学家受到极大的鼓舞，并立刻开始研究高次方程的解法，试图用根式解出五次、六次乃至更高次的方程.这种努力持续了两个半世纪之久，而没有获得成效.自然界一个普遍法则是：量变引起质变.方程次数高到一定程度（这里是五），原来的方法就失效了.当时的数学家做梦也没有想到他们的努力是徒劳的.直到$18$世纪的后半叶，人们才意识到这样一种结局.法国著名数学家拉格朗日在$1770$年到$1771$年发表的长文“关于代数方程解法的思考”中指出，用代数运算解一般的高次方程（$n &gt; 4$）看来是不可能的.这里代数运算指的是加、减、乘、除、乘方（指数是整数）与开方这六种运算.他说，或者是这个问题超出了人类的智力范围，或者是根的表达性质一定不同于当时所知道的一切.后面这一猜测道出了问题的关键所在.</p>
+<p>$1824$年，当天才的挪威青年数学家阿贝尔（Niels Henrik Abel,$1802-1829$）的著作出版时，引起了所有数学家的惊奇.他证明了：如果方程的次数$n \geqslant 5$，并且将方程式的系数看成字母，那么任何一个由这些系数组成的根式不可能是方程的根.原来一切国家的最伟大的数学家三个世纪以来用根式去解五次以上的方程之所以不能获得成功，是因为这个问题根本没有解.</p>
+<p>在阿贝尔的工作之后，应该找出一切能用根号解出的那些方程.这个问题是由另一位天才的法国数学家伽罗华（Evariste Galois,$1811-1832$）解决的.伽罗华证明了，一个代数方程有根式解的充要条件是，这个代数方程的伽罗华群是可解群.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/函数论/">函数论</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/函数论/">函数论</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications51/" data-title="《复数、复函数及其应用》五 代数方程式的根 5.1 代数方程式 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/28/2015/12/ComplexNumbersComplexFunctionsandTheirApplications52/" title="《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《复数、复函数及其应用》五 代数方程式的根 5.2 代数基本定理</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/26/2015/12/ComplexNumbersComplexFunctionsandTheirApplications42/"  title="《复数、复函数及其应用》四 几何作图 4.2 正多边形">
+ <strong>下一篇：</strong><br/> 
+ <span>《复数、复函数及其应用》四 几何作图 4.2 正多边形
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一次方程与二次方程"><span class="toc-number">1.</span> <span class="toc-text">一次方程与二次方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三次方程"><span class="toc-number">2.</span> <span class="toc-text">三次方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四次方程"><span class="toc-number">3.</span> <span class="toc-text">四次方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五次以上的方程"><span class="toc-number">4.</span> <span class="toc-text">五次以上的方程</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

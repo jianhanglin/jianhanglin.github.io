@@ -1,0 +1,765 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="毕卡小定理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理">
+<meta property="og:url" content="http://yoursite.com/2015/12/29/2015/12/ComplexNumbersComplexFunctionsandTheirApplicationS62/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="毕卡小定理">
+<meta property="og:updated_time" content="2016-01-03T02:25:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理">
+<meta name="twitter:description" content="毕卡小定理">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/29/2015/12/ComplexNumbersComplexFunctionsandTheirApplicationS62/" title="《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理" itemprop="url">《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-29T14:29:21.000Z" itemprop="datePublished"> 發表於 2015-12-29</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方程$e^z=A$"><span class="toc-number">1.</span> <span class="toc-text">方程$e^z=A$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方程$\cos{z}_=A$"><span class="toc-number">2.</span> <span class="toc-text">方程$\cos{z} =A$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#毕卡小定理"><span class="toc-number">3.</span> <span class="toc-text">毕卡小定理</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="方程$e^z=A$">方程$e^z=A$</h2><p>在介绍毕卡小定理之前，我们先来研究一些具体例子.首先看方程</p>
+<p>$$e^z =A,\label{2.1} \tag{2.1} $$</p>
+<p>这里$A$是任意复数.前面已经指出，当$A=0$时，方程$\eqref{2.1} $没有任何解.这是一件很有意思的事情.在多项式的情况下，代数基本定理指出，对任何的复数$A$，方程</p>
+<p>$$P(z)=A$$</p>
+<p>总有$n$个解，这里$P(z)=a_0 +\cdots +a_n z^n ,a_n \neq 0$.但是，对“无穷高次多项式”，即对于整函数，这个结论不再成立，至少对某些$A$不再成立.这说明量变引起了质变，不能把代数基本定理原封不动地搬到整函数上去，必须做某些修正.不过，我们还是先把方程$\eqref{2.1} $弄清楚为好.既然$A=0$没有解，我们设$A\neq 0$.由复数$e^z$与$A$相等得出，它们的模相等，而辐角可以差$2\pi $的整数倍.所以</p>
+<p>$$\begin{cases}<br>e^x=\vert A\vert ,\\<br>y=\arg{A} +2n\pi ,(n=0,\pm 1,\pm 2,\cdots )<br>\end{cases} \label{2.2} \tag{2.2} $$</p>
+<p>因此</p>
+<p>$$x=\log{\vert A\vert } ,$$</p>
+<p>$$z=x+iy=\log{\vert A\vert } +i(\arg{A} +2n\pi ) \quad n=0,\pm 1,\pm 2,\cdots . \label{2.3} \tag{2.3} $$</p>
+<p>这样一来，方程$\eqref{2.1} $的任何一个根都包含在公式$\eqref{2.3} $中.反过来，形如$\eqref{2.3} $的每一数都是这个方程的根.事实上，</p>
+<p>$$\begin{align}<br>e^z &amp; =e^{\log{\vert A\vert } +\mathbb{i} (\arg{A} +2n\pi )} =e^{\log{\vert A\vert } } e^{\mathbb{i} (\arg{A} +2n\pi )} =\vert A\vert e^{\mathbb{i} \arg{A} } \\<br> &amp; =\vert A\vert [ \cos{(\arg{A} )} +\mathbb{i} \sin{(\arg{A} )} ] =A,\\<br>\end{align}$$</p>
+<p>这就证明了，方程$\eqref{2.1}$对于任何的复数$A$，除去一个例外值$A=0$，都有无穷多个根.换言之，无穷高次方程</p>
+<p>$$1+\dfrac{z}{1!} +\dfrac{z^2}{2!} +\cdots +\dfrac{z^n}{n!} +\cdots =A$$</p>
+<p>对任何复数$A\neq 0$有无穷多个根.</p>
+<p>自然地，方程$\eqref{2.1}$的每一个根叫做复数$A$的（自然）对数值.以$e$为底产生$A$的幂指数一般记为$\ln A$.由此，公式$\eqref{2.3} $可改写为下面的形式：</p>
+<p>$$\begin{align}<br>\ln A &amp; =\ln \vert A\vert +{\rm i\,Arg} A \\<br> &amp; =\ln \vert A\vert +\mathbb{i}(\arg{A} +2n\pi ) (n=0,\pm 1,\pm 2,\cdots ) .<br>\end{align} \label{2.4} \tag{2.4} $$</p>
+<p>由此得到，任何复数有无穷多个对数值，它们彼此相差$2\pi i$的整数值.而</p>
+<p>$$\ln A=\ln \vert A\vert +\mathbb{i}\arg{A} $$</p>
+<p>称为对数的主值.</p>
+<p>若把公式$\eqref{2.4} $中的$A$当作自变数，把它所对应的值$z$当作因变数，即当作$A$的函数来研究，那么，我们就得到函数$z=\ln A$，这个函数称为对数函数（以$e$为底）.它是指数函数$e^z$的反函数.这个函数的定义域是除去$A=0$以外的整个复平面.它是一个多值函数.</p>
+<h2 id="方程$\cos{z}_=A$">方程$\cos{z} =A$</h2><p>现在我们转而研究方程</p>
+<p>$$\cos{z} =A,\label{2.5} \tag{2.5} $$</p>
+<p>这里$A$是任意的复数.</p>
+<p>由欧拉公式$(1.12)$，我们得到</p>
+<p>$$\dfrac{e^{\mathbb{i}z} +e^{-\mathbb{i}z}}{2} =A,$$</p>
+<p>或</p>
+<p>$$e^{\mathbb{i}z} +e^{-\mathbb{i}z} -2A=0,$$</p>
+<p>乘$e^{\mathbb{i}z}$得</p>
+<p>$$e^{2\mathbb{i}z} -2Ae^{\mathbb{i}z} +1 =0.$$</p>
+<p>令$y=e^{\mathbb{i}z} $，则上述方程化为</p>
+<p>$$y^2 -2Ay+1=0,\label{2.6} \tag{2.6}$$</p>
+<p>这是一个一元二次方程，它的解为</p>
+<p>$$y=A\pm \sqrt{A^2 -1} .$$</p>
+<p>不难看出，对于任意的复数$A$，我们总有</p>
+<p>$$A+\sqrt{A^2 -1} \neq 0,A-\sqrt{A^2 -1} \neq 0.$$</p>
+<p>事实上，若</p>
+<p>$$A+\sqrt{A^2 -1} =0,$$</p>
+<p>则</p>
+<p>$$\sqrt{A^2-1} =-A,$$</p>
+<p>$$A^2-1=A^2 ,$$</p>
+<p>$$-1=0,$$</p>
+<p>这是不可能的.</p>
+<p>同理，$A-\sqrt{A^2 -1} \neq 0$.这样一来，方程</p>
+<p>$$e^{\mathbb{i}z} =A+\sqrt{A^2 -1} ,$$</p>
+<p>及</p>
+<p>$$e^{\mathbb{i}z} =A-\sqrt{A^2 -1} $$</p>
+<p>都有无穷多个解.</p>
+<p>$$\mathbb{i}z=\ln (A+\sqrt{A^2-1} ),$$</p>
+<p>或</p>
+<p>$$z=-\mathbb{i}\ln (A+\sqrt{A^2-1} ),\label{2.7} \tag{2.7}$$</p>
+<p>及</p>
+<p>$$\mathbb{i}z=\ln (A-\sqrt{A^2-1} ),$$</p>
+<p>或</p>
+<p>$$z=-\mathbb{i}\ln (A-\sqrt{A^2-1} ),\label{2.8} \tag{2.8} $$</p>
+<p>这就证明了，对任意的复数$A$，没有任何例外值，方程$\eqref{2.5}$都有无穷多个解.即无穷高次方程式</p>
+<p>$$1-\dfrac{z^2}{2!} +\dfrac{z^4}{4!} -\cdots +(-1)^n\dfrac{z^{2n}}{(2n)!} +\cdots =A$$</p>
+<p>对任意的复数$A$，都有无穷多个解.</p>
+<p>完全相同的方法可以证明，对任意的复数$A$，方程</p>
+<p>$$\sin{z} =A,$$</p>
+<p>或无穷高次方程</p>
+<p>$$z-\dfrac{z^3}{3!} +\dfrac{z^5}{5!} -\cdots +(-1)^{n-1}\dfrac{z^{2n-1}}{(2n-1)!} +\cdots =A$$</p>
+<p>都有无穷多个解.</p>
+<h2 id="毕卡小定理">毕卡小定理</h2><p>我们在上面证明了，对任意的复数$A$，方程</p>
+<p>$$\cos{z} =A ,\sin{z} =A$$</p>
+<p>都有无穷个根.换言之，$\cos{z}$、$\sin{z}$这两个整函数取复平面上的任何值无穷多次，并且没有一个例外值.另一方面，对任意的复数$A$，但要除去例外值零，方程</p>
+<p>$$e^z =A$$</p>
+<p>有无穷多个根.这就是说，在复平面上挖掉零点之后，整函数$e^z$取这个有洞的复平面上的每个值无穷多次.</p>
+<p>人们自然会问：别的整函数怎么样？存在不存在有两个、三个、甚至多个例外值的整函数？原来在方程</p>
+<p>$$\cos{z} =A,e^z =A$$</p>
+<p>中发现的规律对一切整函数具有普遍意义.所有的整函数最多只有一个例外值.这就是法国数学家毕卡（Charles Emile Picard,$1856-1941$）早在$1878$年就证明了的下述的著名定理：</p>
+<p>毕卡小定理$\quad $如果$f(z)$是一个非多项式的整函数，则对于任意的复数$A$，可能除去一个例外值，方程</p>
+<p>$$f(z)=A$$</p>
+<p>都有无穷多个根.</p>
+<p>这个定理的证明超出了本书的范围，故略去，但要做些说明.</p>
+<p>定理中的例外值是依赖函数的.有的整函数没有例外值，如$\sin{z} $、$\cos{z}$.有的整函数有例外值，如$e^z$以$0$为例外值.若整函数$f(z)$以$A$为例外值，则$f(z)=A$最多只有有限个根，甚至一个根也没有.</p>
+<p>整函数的值分布理论的研究是复变函数论的一个重要组成部分.我国数学家在这个领域中作出了许多重要的贡献.在老一辈数学家中有熊庆来教授和庄圻泰教授.在中青年数学家中有著名的数学家杨乐教授与张广厚教授.我国数学家在复变函数方向的研究工作受到了世界数学界的关注，并给出很高的评价.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/函数论/">函数论</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/函数论/">函数论</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/29/2015/12/ComplexNumbersComplexFunctionsandTheirApplicationS62/" data-title="《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/12/29/2015/12/ComplexNumbersComplexFunctionsandTheirApplicationS61/"  title="《复数、复函数及其应用》六 整函数与毕卡小定理 6.1 整函数">
+ <strong>下一篇：</strong><br/> 
+ <span>《复数、复函数及其应用》六 整函数与毕卡小定理 6.1 整函数
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方程$e^z=A$"><span class="toc-number">1.</span> <span class="toc-text">方程$e^z=A$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方程$\cos{z}_=A$"><span class="toc-number">2.</span> <span class="toc-text">方程$\cos{z} =A$</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#毕卡小定理"><span class="toc-number">3.</span> <span class="toc-text">毕卡小定理</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>18</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
