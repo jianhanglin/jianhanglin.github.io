@@ -1,0 +1,967 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第三章 导数及微分 4 高阶导数及高阶微分 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="高阶导数及高阶微分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第三章 导数及微分 4 高阶导数及高阶微分">
+<meta property="og:url" content="http://yoursite.com/2015/12/30/2015/12/weijifenxuejiaocheng134/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="高阶导数及高阶微分">
+<meta property="og:updated_time" content="2016-01-09T13:37:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第三章 导数及微分 4 高阶导数及高阶微分">
+<meta name="twitter:description" content="高阶导数及高阶微分">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/30/2015/12/weijifenxuejiaocheng134/" title="《微积分学教程(第一卷)》 第三章 导数及微分 4 高阶导数及高阶微分" itemprop="url">《微积分学教程(第一卷)》 第三章 导数及微分 4 高阶导数及高阶微分</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-30T11:08:37.000Z" itemprop="datePublished"> 發表於 2015-12-30</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶导数的定义"><span class="toc-number">1.</span> <span class="toc-text">高阶导数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任意阶导数的普遍公式"><span class="toc-number">2.</span> <span class="toc-text">任意阶导数的普遍公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#莱布尼茨公式"><span class="toc-number">3.</span> <span class="toc-text">莱布尼茨公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶微分"><span class="toc-number">5.</span> <span class="toc-text">高阶微分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶微分的形式不变性的破坏"><span class="toc-number">6.</span> <span class="toc-text">高阶微分的形式不变性的破坏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参变量微分法"><span class="toc-number">7.</span> <span class="toc-text">参变量微分法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有限差分"><span class="toc-number">8.</span> <span class="toc-text">有限差分</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="高阶导数的定义">高阶导数的定义</h2><p>若函数$y=f(x)$在某一区间$\mathcal{X}$内有有限导数$y’=f’(x)$，则后者本身就代表$x$的另一函数，于是可能遇到这函数在$\mathcal{X}$内的某一点$x_0 $处也有有限或无穷导数.它就称为函数$y=f(x)$在该点处的二阶导数，并以下列记号之一来表示：</p>
+<p>$$\dfrac{\mathrm{d}^2 y}{\mathrm{d}x^2} ,y’’,\mathrm{d}^2 y;\dfrac{\mathrm{d}^2 f(x_0 )}{\mathrm{d}x^2} ,f’’(x_0 ) ,\mathrm{d}^2 f(x_0 ).$$</p>
+<p>例如，我们已在$92$内已看到过，动点的速度$v$是它所经过的路程$s$关于时间$t$的导数：$v=\dfrac{\mathrm{d}s}{\mathrm{d}t} $，加速度$a$是速度$v$关于时间$t$的导数：$a=\dfrac{\mathrm{d}v}{\mathrm{d}t}$.这就是说，加速度是路程关于时间的二阶导数：$a=\dfrac{\mathrm{d}^2 s}{\mathrm{d}t^2} $.</p>
+<p>类似地，若函数$y=f(x)$在整个区间$\mathcal{X}$内（即在这区间内的每一点）有有限二阶导数，则它在$\mathcal{X}$内任意点$x_0 $处的有限或无穷导数就称为函数$y=f(x)$在这点处的三阶导数，并记成：</p>
+<p>$$\dfrac{\mathrm{d}^3 y}{\mathrm{d}x^3} ,y’’’,\mathrm{d}^3 y;\dfrac{\mathrm{d}^3 f(x_0 )}{\mathrm{d}x^3} ,f’’’(x_0 ) ,\mathrm{d}^3 f(x_0 ).$$</p>
+<p>用相似的方法由三阶导数可得出四阶导数，等等.若假定$(n-1)$阶导数的概念已定义过，且$(n-1)$阶导数在区间$\mathcal{X}$内存在而且是有限的，则它在这区间内某一点$x_0 $处的导数称为原来函数$y=f(x)$的$n$阶导数；它的表示法，采用记号</p>
+<p>$$\dfrac{\mathrm{d}^n y}{\mathrm{d}x^n} ,y^{(n)},\mathrm{d}^n y;\dfrac{\mathrm{d}^n f(x_0 )}{\mathrm{d}x^n} ,f^{(n)}(x_0 ) ,\mathrm{d}^n f(x_0 ).$$</p>
+<p>有时在应用拉格朗日或柯西的表示法时，可能需要指出依那种变量而取导数；那时它就写成下标的形式：</p>
+<p>$$y_{x^2}’’ ,D_{x^3}^3 y,f_{x^n}^{(n)} (x_0 ),$$</p>
+<p>余类推.</p>
+<p>其中$x^2 ,x^3 ,\cdots $是代替$xx ,xxx ,\cdots $的约定简写法.例如，可以写成$a=s_{t^2}’’$.</p>
+<p>（读者明白，此处的整个记号</p>
+<p>$$\dfrac{\mathrm{d}^n f}{\mathrm{d}x^n } ,f^{(n)} 或f_{x^n}^{(n)} ,\mathrm{d}^n f或\mathrm{d}_{x^n}^n f$$</p>
+<p>可以看成是函数记号.）</p>
+<p>用这种方法，从一阶导数依次推到后一导数，我们就“归纳地”定义了$n$阶导数的概念.确定$n$阶导数的关系式：</p>
+<p>$$y^{(n)} =[y^{(n-1)}]’$$</p>
+<p>也称为递推关系式，由于它可以使我们从$n$阶导数还原到$(n-1)$阶导数.</p>
+<p>$n$阶导数的求法，在已给定$n$时，就依读者所已经知道的法则及公式去进行.例如，若</p>
+<p>$$y=\dfrac12 x^4 -\dfrac16 x^3 +2x^2 +\dfrac43 x -\dfrac12 ,$$</p>
+<p>则</p>
+<p>$$y’=2x^3-\dfrac12 x^2 +4x +\dfrac43 ,y’’=6x^2 -x+4,y’’’=12x-1,y^{\rm IV} =12,$$</p>
+<p>于是以后的各阶导数都恒等于$0$.</p>
+<p>或设</p>
+<p>$$y=\ln (x+\sqrt{x^2 -1});$$</p>
+<p>则</p>
+<p>$$y’=\dfrac{1}{\sqrt{x^2+1}} ,y’’=-\dfrac{x}{(x^2+1)^{\frac32 }} ,y’’’=\dfrac{2x^2-1}{(x^2+1)^{\frac52}} ,$$</p>
+<p>等等.</p>
+<p>须指出，关于高阶导数亦可以归纳地建立单侧导数的概念[参阅$100$].若函数$y=f(x)$仅在某一区间$\mathcal{X}$内定义着，则当说及它在区间的端点的任意阶导数时，总是指的单侧导数.</p>
+<h2 id="任意阶导数的普遍公式">任意阶导数的普遍公式</h2><p>一般说来，要计算任何函数的$n$阶导数，必须预先求出前面一切阶的导数.然而在有许多情形，却能顺利地建立$n$阶导数的普遍式，它直接依赖着$n$，而不再包含前面各阶导数的记号.</p>
+<p>在推导这种普遍式时，下列公式有时是有用处的：</p>
+<p>$$(cu)^{(n)} =c\cdot u^{(n)} ,(u\pm v)^{(n)} =u^{(n)} \pm v^{(n)} ,$$</p>
+<p>它们是读者所已经知道的$97$中法则Ⅰ及Ⅱ推广到高阶导数时的结果.逐次地应用这些法则，就很容易得出它们.</p>
+<p>$1)$首先考察幂函数$y=x^{\mu}$，其中$\mu $是任何实数.我们依次有</p>
+<p>$$\begin{array}{l}<br>y’=\mu x^{\mu -1} ,y’’=\mu (\mu -1)x^{\mu -2} ,\\<br>y’’’=\mu (\mu -1)(\mu -2)x^{\mu -3} ,\cdots<br>\end{array}$$</p>
+<p>由此也很易看出普遍的规律：</p>
+<p>$$y^{(n)} =\mu (\mu -1)\cdots (\mu -n+1)x^{\mu -n } ,$$</p>
+<p>但严格说来，它必须再加证明.为此，可利用数学归纳法.假设在$n$的某一数值时这公式是对的，再微分它一次，我们就得到：</p>
+<p>$$\begin{align}<br>[y^{(n)}]’=y^{(n+1)} &amp; =\mu (\mu -1)\cdots (\mu -n+1)[x^{\mu -n}]’ \\<br>&amp; =\mu (\mu -1)\cdots  (\mu -n+1)(\mu -n)x^{\mu -(n+1)} ,<br>\end{align}$$</p>
+<p>因此，如果我们的公式对于$n$阶导数时是对的，则对于$(n+1)$阶导数也是对的.由此也就推得它对于一切自然数$n$的数值是正确的.</p>
+<p>例如，若取$\mu =-1$，则得</p>
+<p>$$\left( \dfrac{1}{x} \right)^{(n)} =(-1)(-2)\cdots (-n) x^{-1-n} =\dfrac{(-1)^n \cdot n!}{x^{n+1}} $$</p>
+<p>而在$\mu =-\dfrac12 $时，</p>
+<p>$$\left( \dfrac{1}{\sqrt{x}} \right)^{(n)} =\left( -\dfrac12 \right) \left( -\dfrac32 \right) \cdots \left( -\dfrac{2n-1}{2} \right) x^{-\frac12 -n} =\dfrac{(-1)^n(2n-1)!!}{(2x)^n\sqrt{x}} $$</p>
+<blockquote>
+<p>记号$n!!$表示自然数的连乘积，这些自然数不超过$n$并且每两数间的差都是二，例如</p>
+<p>$$7!!=1\cdot 3 \cdot 5\cdot 7,10!!=2\cdot 4\cdot 6\cdot 8 \cdot 10.$$</p>
+</blockquote>
+<p>余依次类推.</p>
+<p>当$\mu $本身自然数$m$时，则$x^m$的$m$阶导数已经就是常数$m!$，而一切以后的导数就是零.由此，明显可见，对于$m$次整多项式亦有相似的情况.</p>
+<p>$2)$对于略为普遍的一些式子</p>
+<p>$$y=(a+bx)^{\mu }\quad (a,b=常量)$$</p>
+<p>仍旧很容易求出：</p>
+<p>$$y^{(n)} =\mu (\mu -1)\cdots (\mu -n+1)\cdot b^n \cdot (a+bx)^{\mu -n} .$$</p>
+<p>特别情形，同上面那样，得出</p>
+<p>$$\left( \dfrac{1}{a+bx} \right)^{(n)} =\dfrac{(-1)^n n!b^n}{(a+bx)^{n+1}} ,\left( \dfrac{1}{\sqrt{a+bx}} \right)^{(n)} =\dfrac{(-1)^n(2n-1)!!b^n}{2^n (a+bx)^n \sqrt{a+bx}} .$$</p>
+<p>$3)$今设$y=\ln x$.首先有</p>
+<p>$$y’=(\ln x)’=\dfrac{1}{x} .$$</p>
+<p>由此式依$1)$内的对应公式取$(n-1)$阶导数，在它里面把$n$换成$n-1$；那时我们们亦就得出</p>
+<p>$$y^{(n)} =(y’)^{(n-1)} =\left( \dfrac{1}{x} \right)^{(n-1)} =\dfrac{(-1)^{n-1} (n-1)!}{x^n} .$$</p>
+<p>$4)$若$y=a^x $，则</p>
+<p>$$y’=a^x \cdot \ln a,y’’=a^x \cdot (\ln a)^2 ,\cdots $$</p>
+<p>普遍公式</p>
+<p>$$y^{(n)} =a^x \cdot (\ln a)^n $$</p>
+<p>很容易用数学归纳法证明.</p>
+<p>特别情形，显然有</p>
+<p>$$(e^x)^{(n)} =e^x .$$</p>
+<p>$5)$假定$y=\sin{x}$；则</p>
+<p>$$y’=\cos{x} ,y’’=-\sin{x} ,y’’’=-\cos{x} ,$$</p>
+<p>$$y^{\rm IV} =\sin{x} ,y^{\rm V} =\cos{x} ,\cdots .$$</p>
+<p>由这一途径去求$n$阶导数的普遍式是比较困难的.但若把一阶导数的公式改写成$y’=\sin{\left( x+\dfrac{\pi}{2} \right) } $，事情就立刻简单化了；很清楚的，每微分一次以后，就只要在变元上加一个$\dfrac{\pi }{2}$，于是</p>
+<p>$$(\sin{x})^{(n)} =\sin{\left( x+n\cdot \dfrac{\pi }{2} \right) } .$$</p>
+<p>类似地又得出公式</p>
+<p>$$(\cos{x})^{(n)} =\cos{\left( x+n\cdot \dfrac{\pi }{2} \right) } .$$</p>
+<p>$6)$考察函数$y=\dfrac{1}{x^2-a^2} $.把它表示成为</p>
+<p>$$y=\dfrac{1}{2a} \left( \dfrac{1}{x-a} -\dfrac{1}{x+a} \right) ,$$</p>
+<p>$7)$在函数$y=e^{ax}\sin{bx}$的情形，我们将利用更巧妙的方法.就是，有</p>
+<p>$$y’=ae^{ax} \sin{bx} +be^{ax} \cos{bx} ;$$</p>
+<p>若引入由下列条件所定义的辅助角$\varphi $</p>
+<p>$$\sin{\varphi } =\dfrac{b}{\sqrt{a^2+b^2}} ,\cos{\varphi } =\dfrac{b}{\sqrt{a^2+b^2}} ,$$</p>
+<p>则一阶导数的表达式就可以改写成</p>
+<p>$$\begin{align}<br>y’ &amp; =\sqrt{a^2+b^2} \cdot e^{ax} \cdot (\sin{bx} \cdot \cos{\varphi } +\cos{bx} \cdot \sin{\varphi }) \\<br> &amp; =\sqrt{a^2 +b^2 } \cdot e^{ax} \cdot \sin{(bx +\varphi )} .<br>\end{align}$$</p>
+<p>重复地微分，很易根据数学归纳法而建立普遍的规律</p>
+<p>$$y^{(n)} =(a^2+b^2)^{\frac{n}{2}} \cdot e^{ax} \cdot \sin{(bx+n\varphi )} .$$</p>
+<p>$8)$再讨论函数$y=\arctan{x}$.首先让我们设法用$y$表示$y^{(n)}$.因为$x=\tan{y}$，故</p>
+<p>$$y’=\dfrac{1}{x^2+1} =\cos{}^2 y=\cos{y} \cdot \sin{\left( y+\dfrac{\pi }{2}\right) } .$$</p>
+<p>再关于$x$而微分它（并记住$y$是$x$的函数），则得</p>
+<p>$$\begin{align}<br>y’’ &amp; =\left[ -\sin{y} \cdot \sin{\left( y+\dfrac{\pi }{2}\right) } +\cos{y} \cdot \cos{\left( y+\dfrac{\pi }{2}\right) } \right] \cdot y’ \\<br> &amp; =\cos{}^2 y\cdot \cos{\left( 2y+\dfrac{\pi}{2} \right) } =\cos{}^2 y\cdot \sin{2\left( y+\dfrac{\pi }{2} \right) } .\end{align}$$</p>
+<p>又一次的微分给出</p>
+<p>$$\begin{align}<br>y’’’ &amp; =\left[ -2\sin{y} \cdot \cos{y} \cdot \sin{2\left( y+\dfrac{\pi }{2}\right) } +2\cos{}^2 y \cdot \cos{2\left( y+\dfrac{\pi }{2}\right) } \right] \cdot y’ \\<br> &amp; =2\cos{}^3 y\cdot \cos{\left( 3y+2\cdot \dfrac{\pi}{2} \right) } =2\cos{}^3 y\cdot \sin{3\left( y+\dfrac{\pi }{2} \right) } .\end{align}$$</p>
+<p>普遍的公式</p>
+<p>$$y^{(n)} =(n-1)!\cos{}^n y\cdot \sin{n\left( y+\dfrac{\pi}{2} \right) }$$</p>
+<p>可由数学归纳法证明.</p>
+<p>若（在$x &gt; 0$时）引入角</p>
+<p>$$z=\arctan{\dfrac{1}{x}} =\dfrac{\pi }{2} -y,$$</p>
+<p>则这公式可以改写成</p>
+<p>$$y^{(n)} =(n-1)!\dfrac{1}{(1+x^2)^{\frac{n}{2}}} \cdot \sin{n(\pi -z)} ,$$</p>
+<p>或最后，</p>
+<p>$$y^{(n)} =(-1)^{n-1} (n-1)! \dfrac{1}{(1+x^2)^{\frac{n}{2}}} \sin{n\arctan{\dfrac{1}{x}}} .$$</p>
+<p>$9)$最后，可作为一个练习题来建立公式</p>
+<p>$$D^n (x^{n-1} e^{\frac{1}{x}}) =(-1)^n \dfrac{e^{\frac{1}{x}}}{x^{n+1}} \quad (n=1,2,\cdots ).$$</p>
+<p>它在$n=1$及$n=2$时的正确性可以直接验证.现在假设，它对于$n$的一切数值，直到$n\geqslant 2$的某一数值为止都是对的，要证明它当$n$换成$n+1$时仍旧也对.为这目的，考察表达式</p>
+<p>$$\begin{align}<br>D^{n+1} (x^n e^{\frac{1}{x}}) &amp; =D^n [D(x^n e^{\frac{1}{x}})] \\<br> &amp; =D^n [nx^{n-1} e^{\frac{1}{x}} -x^{n-2} e^{\frac{1}{x}}] \\<br> &amp; =n\cdot D^n (x^{n-1} e^{\frac{1}{x}}) -D[D^{n-1} (x^{n-2} e^{\frac{1}{x}})] .<br>\end{align}$$</p>
+<p>应用我们的假设，可以改写这表达式为</p>
+<p>$$D^{n+1} (x^n e^{\frac{1}{x}}) =n\cdot (-1)^n \dfrac{e^{\frac{1}{x}}}{x^{n+1}} -D[(-1)^{n-1} \dfrac{e^{\frac{1}{x}}}{x^n}] =(-1)^{n+1} \dfrac{e^{\frac{1}{x}}}{x^{n+2}} ,$$</p>
+<p>这就是我们所要证明的.</p>
+<p>因此，这公式对于一切自然数值$n$时都是对的.</p>
+<h2 id="莱布尼茨公式">莱布尼茨公式</h2><p>我们在前一目开始时曾指出$97$的法则Ⅰ及Ⅱ可以直接移用到任意阶导数的情形.但处理关于乘积的导数的法则Ⅲ却较为费事.</p>
+<p>假定$u,v$是$x$的函数，且各自有直到$n$阶为止的各阶导数；我们将证明这时它们的乘积$y=uv$亦有$n$阶导数，并将求出它的表达式.</p>
+<p>应用法则Ⅲ逐次微分这乘积；我们就求出：</p>
+<p>$$y’=u’v+uv’,y’’=u’’v+2u’v’+uv’’,y’’’=u’’’v+3u’’v’+3u’v’’+uv’’’ ,\cdots $$</p>
+<p>很易看出导出一切这些公式的规律：它们的右边使我们想起二项式的各次幂$u+v$，$(u+v)^2$，$(u+v)^3$，$\cdots $的展开式，只把$u,v$的各次幂换成对应阶的导数罢了.若在所得的公式内把$u,v$写成$u^{(0)} ,v^{(0)} $，其间的相似性就更为完全.推广这一规律到任意的$n$的情形，即得普遍的公式：</p>
+<p>$$\begin{align}<br>&amp; y^{(n)} \\<br>= &amp; (uv)^{(n)} =\sum_{i=0}^n C_n^i u^{(n-i)} v^{(i)} \\<br>= &amp; u^{(n)} v+nu^{(n-1)} v’ +\dfrac{n(n-1)}{1\cdot 2} u^{(n-2)} v’’ +\cdots +\dfrac{n(n-1)\cdots (n-i+1)}{1\cdot 2 \cdot \cdots \cdot i} u^{(n-i)} v^{(i)} +\cdots +uv^{(n)} .<br>\end{align}\label{1} \tag{1}$$</p>
+<p>要证明它的正确性，可再运用数学归纳法.假设对于某一$n$值上式是对的.若函数$u,v$的$(n+1)$阶导数也存在，则可以依$x$将上式再微分一次；我们就得：</p>
+<p>$$\begin{align}<br>y^{(n+1)} &amp; =\sum_{i=0}^n C_n^i [u^{(n-i)} v^{(i)}]’ \\<br> &amp; =\sum_{i=0}^n C_n^i u^{(n-i+1)} v^{(i)} +\sum_{i=0}^n C_n^i u^{(n-i)} v^{(i+1)} .<br>\end{align}$$</p>
+<p>今将合并在最后两个总和内含函数$u,v$的同阶导数的各个乘积（很易看出，在每一乘积内，导数的阶的总和始终是等于$n+1$）.乘积$u^{(n+1)} v^{(0)}$仅包含在第一个总和内（在$i=0$时）；在这总和内，它的系数是$C_n^0 =1$.完全与此相同，$u^{(0)} v^{(n+1)} $仅包含在第二个总和内（有序号$i=n$的项），它的系数是$C_n^n =1$.包含在这两个总和内的其他的一切乘积，它们的形式是$u^{(n+1-k)}v^{(k)}$，并且$1\leqslant k\leqslant n$.每一个这种的乘积，在第一个总和内能遇到（有序号$i=k$的项），在第二个总和内亦能遇到（有序号$i=k-1$的项）.对应的系数的和是$C_n^k +C_n^{k-1}$.大家都已经知道，</p>
+<p>$$C_n^k +C_n^{k-1} =C_{n+1}^k .$$</p>
+<p>这样，最后求出：</p>
+<p>$$\begin{align}<br>y^{(n+1)} &amp; =u^{(n+1)} v^{(0)} +\sum_{k=1}^n C_{n+1}^k u^{[(n+1)-k]} v^{(k)} +u^{(0)} v^{(n+1)} \\<br> &amp; =\sum_{k=0}^{n+1} C_{n+1}^k u^{[(n+1)-k]} v^{(k)} ,<br>\end{align}$$</p>
+<p>因为$C_{n+1}^0 =C_{n+1}^{n+1} =1$.</p>
+<p>我们已得到$y^{(n+1)}$的表达式，它完全类似于表达式$\eqref{1}$（仅$n$换成$n+1$）；这样就证明了公式$\eqref{1}$对于一切自然数值$n$的正确性.</p>
+<p>已建立的公式$\eqref{1}$，称为莱布尼茨公式.在推出$n$阶导数的普遍式时，它经常是有用处的.</p>
+<p>须指出对于许多因子的连乘积$y=uv\cdots t$的$n$阶导数，也可建立这样的公式；它与多项式的幂$(u+v+\cdots +t)^n $的展开式相类似.</p>
+<h2 id="例题">例题</h2><p>$1)$用莱布尼茨公式$\eqref{1}$求导数</p>
+<p>$$(x^2\cdot \cos{ax} )^{(50)} .$$</p>
+<p>令$v=x^2 ,u=\cos{ax} $.那时</p>
+<p>$$u^{(k)} =a^k \cdot \cos{\left( ax+k\dfrac{\pi }{2}\right) } ,v’=2x ,v’’=2 ,v’’’=v^{\rm IV} =\cdots =0.$$</p>
+<p>这样，在公式$\eqref{1}$内除去首三项外，其余各项都等于零，于是我们就得到</p>
+<p>$$\begin{align}<br>(uv)^{(50)} &amp; =x^2 \cdot a^{50} \cdot \cos{\left( ax+50\cdot \dfrac{\pi }{2} \right) } +\dfrac{50}{1} \cdot 2x \cdot a^{49} \cdot \cos{\left( ax+49\cdot \dfrac{\pi }{2} \right) } \\<br> &amp; +\dfrac{50\cdot 49}{1\cdot 2} \cdot 2 \cdot a^{48} \cdot \cos{\left( ax+48\cdot \dfrac{\pi }{2} \right) } \\<br> &amp; =a^{48} [(2450-a^2 x^2) \cos{ax} -100ax\cdot \sin{ax} ] .<br>\end{align}$$</p>
+<p>$2)$回到$116,7)$，现在我们就能够由莱布尼茨公式直接得出函数</p>
+<p>$$y=e^{ax} \sin{bx} $$</p>
+<p>的$n$阶导数的普遍式：</p>
+<p>$$y^{(n)} = e^{ax} \left[ \sin{bx} \left( a^n -\dfrac{n(n-1)}{1\cdot 2} a^{n-2} b^2 +\cdots \right)<br>+\cos{bx} \left( na^{n-1} b-\dfrac{n(n-1)(n-2)}{1\cdot 2\cdot 3} a^{n-3} b^3 +\cdots \right) \right] .$$</p>
+<p>$3)$求函数$y=\arcsin{x}$的$(n+1)$阶导数的表达式.</p>
+<p>首先，我们有</p>
+<p>$$y’=\dfrac{1}{\sqrt{1-x^2}} =\dfrac{1}{\sqrt{1+x}} \cdot \dfrac{1}{\sqrt{1-x}} ,$$</p>
+<p>于是依莱布尼茨公式，</p>
+<p>$$\begin{align}<br>y^{(n+1)} = &amp; \left( \dfrac{1}{\sqrt{1+x}} \cdot \dfrac{1}{\sqrt{1-x}} \right)^{(n)} \\<br>= &amp;\left( \dfrac{1}{\sqrt{1+x}} \right)^{(n)} \dfrac{1}{\sqrt{1-x}} +n\left( \dfrac{1}{\sqrt{1+x}} \right)^{(n-1)} \left( \dfrac{1}{\sqrt{1-x}} \right)’ \\<br> &amp; +\dfrac{n(n-1)}{1\cdot 2} \left( \dfrac{1}{\sqrt{1+x}} \right)^{(n-2)} \left( \dfrac{1}{\sqrt{1-x}} \right)’’ +\dfrac{n(n-1)(n-2)}{1\cdot 2\cdot 3} \left( \dfrac{1}{\sqrt{1+x}} \right)^{(n-3)} \left( \dfrac{1}{\sqrt{1-x}} \right)’’’+\cdots<br>\end{align}$$</p>
+<p>今若应用在$116,2)$内所得的公式去求$\dfrac{1}{\sqrt{1+x}} $及$\dfrac{1}{\sqrt{1-x}} $的各阶导数，就得结果</p>
+<p>$$y^{(n+1)} =\dfrac{(-1)^n}{2^n\sqrt{1-x^2}} \left\lbrace \dfrac{(2n-1)!!}{(1+x)^n} -n\dfrac{(2n-3)!!1!!}{(1+x)^{n-1} (1-x)} +\dfrac{n(n-1)}{1\cdot 2} \cdot \dfrac{(2n-5)!!3!!}{(1+x)^{n-2} (1-x)^2} +\cdots \right\rbrace .$$</p>
+<p>$4)$求函数$y=\arctan{x}$在$x=0$时的各阶导数的数值.</p>
+<p>因为$y’=\dfrac{1}{1+x^2}$，故$y’\cdot (1+x^2)=1$.在等式两端取$n$阶导数（应用莱布尼茨公式）：</p>
+<p>$$(1+x^2)y^{(n+1)} +2nx\cdot y^{(n)} +n(n-1) \cdot y^{(n-1)} =0.$$</p>
+<p>在此处令$x=0$；若以添加下标$0$来表示在$x=0$时的导数值，则得</p>
+<p>$$y_0^{(n+1)} =-n(n-1)\cdot y_0^{(n-1)} .$$</p>
+<p>在$x=0$时，导数$y’’=-\dfrac{2x}{(1+x^2)^2} $等于$0$；$y_0’’ =0$.由已求出的关系式易见恒有$y_0^{(2m)} =0$.至于奇阶导数，就有递推公式：</p>
+<p>$$y_0^{(2m+1)} =-(2m-1)\cdot 2m \cdot y_0^{(2m-1)} .$$</p>
+<p>注意$y_0’=1$，由此就得：</p>
+<p>$$y_0^{(2m+1)} =(-1)^m (2m)!.$$</p>
+<p>这一结果也可以从$116$例$8)$的普遍公式内得出.</p>
+<p>$5)$对函数$y=\arcsin{x}$也一样.</p>
+<p>提示$\quad $应用莱布尼茨公式于关系式：</p>
+<p>$$(1-x^2)\cdot y’’-x\cdot y’=0.$$</p>
+<p>答案：</p>
+<p>$$y_0^{(2m)} =0,y_0^{(2m-1)} =1^2 \cdot 3^2 \cdot \cdots \cdot (2m-1)^2 =[(2m-1)!!]^2 .$$</p>
+<p>要从$3)$的普遍式内得出这一结果，却没有这样简单.</p>
+<p>$6)$勒让德多项式</p>
+<p>最后，我们来考察以勒让德（A.M.Legendre）命名的重要多项式，它由下列等式</p>
+<p>$$X_n (x)=c_n \dfrac{\mathbb{d}^n (x^2-1)^n }{\mathbb{d} x^n } (n=1,2,\cdots )$$</p>
+<p>来定义，其中常系数$c_n $的值可看情形根据怎样能够方便的原则而给定.</p>
+<p>首先要证明：（$n$次）多项式$X_n (x)$有$n$个不同的实根，这些根都在$-1$与$+1$之间.为简便起见，暂设$c_n =1$.</p>
+<p>不难看出，多项式$(x^2-1)^n =(x-1)^n(x+1)^n$和它的$n-1$个相继各阶导数在$x=\pm 1$时变为零.于是根据罗尔定理$[111]$，它的一阶导数也将有根在$-1$与$+1$之间；依同一定理，二阶导数将有两个根在$-1$与$+1$之间，这样一直到$n-1$阶导数，它除了有根$-1$与$+1$外，还有$n-1$个根介于其间.再对这导数应用一次罗尔定理，便得到所要证的结论.</p>
+<p>仍令$c_n =1$，我们来确定多项式$X_n (x)$在$x=\pm 1$时的数值.</p>
+<p>把幂$(x^2-1)^n$看成$(x+1)^n $乘$(x-1)^n$的积，依莱布尼茨公式可以写成：</p>
+<p>$$X_n (x)=(x+1)^n \cdot \dfrac{\mathbb{d}^n (x-1)^n }{\mathbb{d} x^n } +C_n^1 \cdot \dfrac{\mathbb{d} (x+1)^n }{\mathbb{d} x } \cdot \dfrac{\mathbb{d}^{n-1} (x-1)^n }{\mathbb{d} x^{n-1} } +\cdots + \dfrac{\mathbb{d}^n (x+1)^n }{\mathbb{d} x^n } \cdot (x-1)^n .$$</p>
+<p>因为从第二项起的各项都含因式$x-1$，它们在$x=1$时都等于$0$，所以显然有：</p>
+<p>$$X_n (1) =2^n \cdot n!.$$</p>
+<p>类似地可得：</p>
+<p>$$X_n(-1) =(-1)^n \cdot 2^n \cdot n!.$$</p>
+<p>若在定义勒让德多项式$X_n (x)$的一般公式中设$c_n =\dfrac{1}{2^n \cdot n!} $，则得到特别常见的多项式，今后我们将把这多项式记为$P_n (x)$，其特征是在点$x=1$和$x=-1$处取值$P_n (1)=1$，$P_n (-1)=(-1)^n$.</p>
+<p>用莱布尼茨公式很易进一步证明勒让德多项式$X_n (x)$满足下列关系式：</p>
+<p>$$(x^2-1)X_n’’ +2x\cdot X_n’ -n(n+1)X_n =0,$$</p>
+<p>它在这类多项式的理论中担任着重要的角色.</p>
+<p>实际上，令$y=(x^2-1)^n $，就有</p>
+<p>$$y’=2nx\cdot (x^2-1)^{n-1} ,$$</p>
+<p>于是</p>
+<p>$$(x^2-1)\cdot y’=2nx\cdot y.$$</p>
+<p>今在最后的等式的两端各取$(n+1)$阶导数；依莱布尼茨公式，</p>
+<p>$$(x^2-1)y^{(n+2)} +(n+1)\cdot 2x \cdot y^{(n+1)} +\dfrac{n(n+1)}{2} \cdot 2\cdot y^{(n)} =2nx\cdot y^{(n+1)} +(n+1)\cdot 2n\cdot y^{(n)} ,$$</p>
+<p>由此</p>
+<p>$$(x^2-1)y^{(n+2)} +2xy^{(n+1)} -n(n+1)y^{(n)} =0,$$</p>
+<p>再以$c_n $乘之，就得到所要证明的关系式.</p>
+<h2 id="高阶微分">高阶微分</h2><p>今转而讨论高阶微分；它们也是归纳地来定义的.函数$y=f(x)$的（一阶）微分在某一点处的微分称为函数在这一点处的二阶微分；记为：</p>
+<p>$$\mathbb{d}^2 y=\mathbb{d} (\mathbb{d} y).$$</p>
+<p>二阶微分的微分称为三阶微分：</p>
+<p>$$\mathbb{d}^3 y=\mathbb{d} (\mathbb{d}^2 y).$$</p>
+<p>一般地说，函数$y=f(x)$的$(n-1)$阶微分的微分称为函数$y=f(x)$的$n$阶微分：</p>
+<p>$$\mathbb{d}^n y=\mathbb{d} (\mathbb{d}^{n-1} y).$$</p>
+<p>若应用函数记号，则各阶微分可以表示为：</p>
+<p>$$\mathbb{d}^2 f(x_0 ),\mathbb{d}^3 f(x_0 ),\cdots ,\mathbb{d}^n f(x_0 ),\cdots ,$$</p>
+<p>在这里我们还可以指出这些微分是在$x$的特别值$x=x_0 $处取值的.</p>
+<p>在求高阶微分时很重要的一件事，是要记住$\mathbb{d} x$是不依赖于$x$的任意的数，关于$x$而微分时必须把它看成常数因子.在这种情形，将有（始终假定对应的导数是存在的）：</p>
+<p>$$\mathbb{d}^2 y=\mathbb{d} (\mathbb{d} y)=\mathbb{d} (y’\cdot \mathbb{d} x)=\mathbb{d} y’ \cdot \mathbb{d} x =(y’’\cdot \mathbb{d} x)\cdot \mathbb{d} x =y’’\cdot \mathbb{d} x^2 ,$$</p>
+<p>$$\mathbb{d}^3 y=\mathbb{d} (\mathbb{d}^2 y) =\mathbb{d} (y’’\cdot \mathbb{d} x^2 )=\mathbb{d} y’’ \cdot \mathbb{d} x^2 =(y’’’ \cdot \mathbb{d} x )\cdot \mathbb{d} x^2 =y’’’\cdot \mathbb{d} x^3$$</p>
+<p>等等.很易猜出普遍规律是</p>
+<p>$$\mathbb{d}^n y=y^{(n)} \cdot \mathbb{d} x^n ,\label{2} \tag{2}$$</p>
+<p>这可以用数学归纳法来证明.由它就推得</p>
+<p>$$y^{(n)} =\dfrac{\mathbb{d}^n y}{\mathbb{d} x^n } ,$$</p>
+<p>于是从今以后，这记号就可以看成分数了.</p>
+<p>利用等式$\eqref{2}$，现在很容易改造莱布尼茨公式使适用于微分.只要在它的两边各乘以$\mathbb{d} (x^n) $，就可以得出</p>
+<p>$$\mathbb{d}^n (uv)=\sum_{i=0}^n C_n^i \mathbb{d}^{n-i} u \mathbb{d}^i v\quad (\mathbb{d}^0 u=u,\mathbb{d}^0 v=v).$$</p>
+<p>莱布尼茨当初所建立的公式，原来就是关于微分的.</p>
+<h2 id="高阶微分的形式不变性的破坏">高阶微分的形式不变性的破坏</h2><p>回想起函数的（一阶）微分具有形式不变的性质，自然就要问高阶微分是否也具有相似的性质.今将指出，即使二阶微分就已不具有这种性质了.</p>
+<p>因此，设$y=f(x)$而$x=\varphi (t)$，于是$y$可以看成$t$的复合函数：$y=f(\varphi (t))$.它关于$t$的（一阶）微分可以写成：$\mathbb{d} y=y_x’ \cdot \mathbb{d} x$，此处$\mathbb{d} x=x_t’ \cdot \mathbb{d} t$是$t$的函数.再求关于$t$的二阶微分$\mathbb{d}^2 y=\mathbb{d} (y_x’ \cdot \mathbb{d} x) =\mathbb{d} y_x’ \cdot \mathbb{d} x+y_x’ \cdot \mathbb{d} (\mathbb{d} x)$.微分$\mathbb{d} y_x’$可以再应用（一阶）微分形式的不变性，化为$\mathbb{d} y_x’ =y_{x^2}’’ \cdot \mathbb{d} x$，于是最后得</p>
+<p>$$\mathbb{d}^2 y=y_{x^2}’’ \cdot \mathbb{d} x^2 +y_x’ \cdot \mathbb{d}^2 x,\label{3} \tag{3}$$</p>
+<p>然而当$x$是自变量时，二阶微分的形式却是$\mathbb{d}^2 y=y_{x^2}’’ \cdot \mathbb{d} x^2 $.当然，表达式$\eqref{3}$是$\mathbb{d}^2 y$的更普遍的表达式：若在特别情形，$x$是自变量，则$\mathbb{d}^2 x=0$，于是仅留下第一项了.</p>
+<p>且举一例.设$y=x^2$，于是当$x$是自变量时：</p>
+<p>$$\mathbb{d} y=2x\mathbb{d} x,\mathbb{d}^2y=2\mathbb{d} x^2.$$</p>
+<p>今令$x=t^2$，则$y=t^4 $，而</p>
+<p>$$\mathbb{d} y=4t^3 \mathbb{d} t,\mathbb{d}^2y =12t^2 \mathbb{d} t^2.$$</p>
+<p>$\mathbb{d} y$的新表达式可以从原式得出，只要把$x=t^2$，$\mathbb{d} x=2t\mathbb{d} t$代入即得.但对于$\mathbb{d}^2 y$却并不如此：作同样的代换后，我们得到的是$8t^2 \mathbb{d} t^2$而不是$12t^2 \mathbb{d} t^2$.但若依$t$微分等式$\mathbb{d} y=2x\mathbb{d} x$，设想$x$是$t$的函数，则与$\eqref{3}$相似，得公式</p>
+<p>$$\mathbb{d}^2 y=2\mathbb{d} x^2 +2x\mathbb{d}^2 x.$$</p>
+<p>在此代入$x=t^2 $，$\mathbb{d} x=2t \mathbb{d} t$，$\mathbb{d}^2 x=2\mathbb{d} t^2 $，这才得出正确的结果：$12t^2 \mathbb{d} t^2 $.</p>
+<p>因此，若$x$不再是自变量时，二阶微分$\mathbb{d}^2 y$就要用$x$的微分的二项式$\eqref{3}$来表示.对于三阶以后各阶微分（在转变成新变量时）附加的项数还要增加.因此，在用微分表示高阶导数$y_{x^2}’’ ,y_{x^3}’’,\cdots $的表达式</p>
+<p>$$y_{x^2}’’ =\dfrac{\mathbb{d}^2 y}{\mathbb{d} x^2} ,y_{x^3}’’’ =\dfrac{\mathbb{d}^3 y}{\mathbb{d} x^3} ,\cdots \label{4} \tag{4}$$</p>
+<p>内，已不能依任意变量取微分，而仅能依变量$x$了.</p>
+<h2 id="参变量微分法">参变量微分法</h2><p>虽然如此，我们仍可以把关于$x$的导数用依任意变量$t$而取的微分写出来，只是它们将繁复得多.就是，设想一切下面所写的微分是依$t$而取的，则依次地有</p>
+<p>$$y_x’ =\dfrac{\mathbb{d} y}{\mathbb{d} x} ,y_{x^2}’’ =\left( \dfrac{\mathbb{d} y}{\mathbb{d} x} \right)_x’ =\dfrac{\mathbb{d} \left( \dfrac{\mathbb{d} y}{\mathbb{d} x} \right) }{\mathbb{d} x} =\dfrac{\dfrac{\mathbb{d} x\cdot \mathbb{d}^2 y-\mathbb{d}^2 x\cdot \mathbb{d} y}{\mathbb{d} x^2}}{\mathbb{d} x} ,$$</p>
+<p>即</p>
+<p>$$y_{x^2}’’ =\dfrac{\mathbb{d} x\cdot \mathbb{d}^2 y-\mathbb{d}^2 x\cdot \mathbb{d} y}{\mathbb{d} x^3 } ;\label{5} \tag{5}$$</p>
+<p>以后，</p>
+<p>$$\begin{align}<br>y_{x^3}’’’ &amp; =\left( \dfrac{\mathbb{d} x\cdot \mathbb{d}^2 y-\mathbb{d}^2 x\cdot \mathbb{d} y}{\mathbb{d} x^3 } \right)_x’ \\<br> &amp; =\dfrac{\mathbb{d} \left( \dfrac{\mathbb{d} x\cdot \mathbb{d}^2 y-\mathbb{d}^2 x\cdot \mathbb{d} y}{\mathbb{d} x^3 } \right) }{\mathbb{d} x} \\<br> &amp; =\dfrac{\dfrac{\mathbb{d} x^3(\mathbb{d} x\mathbb{d}^3 y-\mathbb{d}^3 x\mathbb{d} y)-3\mathbb{d} x^2 \mathbb{d}^2 x(\mathbb{d} x\mathbb{d}^2 y-\mathbb{d}^2 x\mathbb{d} y)}{\mathbb{d} x^6}}{\mathbb{d} x} ,<br>\end{align}$$</p>
+<p>而最后有：</p>
+<p>$$y_{x^3}’’’ =\dfrac{\mathbb{d} x(\mathbb{d} x\mathbb{d}^3 y-\mathbb{d}^3 x\mathbb{d} y)-3\mathbb{d}^2 x(\mathbb{d} x\mathbb{d}^2 y-\mathbb{d}^2 x\mathbb{d} y)}{\mathbb{d} x^5} ,\label{6} \tag{6}$$</p>
+<p>等等.公式$\eqref{5} ,\eqref{6} ,\cdots $是最普遍的公式；若在它里面设想$x$是自变量，则$\mathbb{d}^2 x,\mathbb{d}^3 x,\cdots $等于零，而我们就回到公式$\eqref{4}$.</p>
+<p>我们所得的$y$关于$x$的导数公式就实现了所谓参变量微分法.若$x$及$y$给定为参变量$t$的函数：</p>
+<p>$$x=\varphi (t),y=\psi (t),$$</p>
+<p>则如同我们在$106$内已看见过的，在已知条件下，由此定义$y$为$x$的函数：$y=f(x)$.当$x$及$y$关于$t$的各阶导数存在时，$y$关于$x$的对应的导数亦都存在，而且可用前述诸公式来表示.</p>
+<p>有时$y$关于$x$的导数用$x$及$y$关于$t$的导数（不是微分）来表示更为方便.它们可以很容易地从微分表达式内得出，只需分子及分母各除以$\mathbb{d} t,\mathbb{d} t^3 ,\mathbb{d} t^5,\cdots $.用这方法就得到公式：</p>
+<p>$$y_x’ =\dfrac{\dfrac{\mathbb{d} y}{\mathbb{d} t}}{\dfrac{\mathbb{d} x}{\mathbb{d} t}} =\dfrac{y_t’ }{x_t’ } ,$$</p>
+<p>$$y_{x^2}’’ =\dfrac{\dfrac{\mathbb{d} x}{\mathbb{d} t} \cdot \dfrac{\mathbb{d}^2 y}{\mathbb{d} t^2} -\dfrac{\mathbb{d}^2 x}{\mathbb{d} t^2} \cdot \dfrac{\mathbb{d} y}{\mathbb{d} t} }{\left( \dfrac{\mathbb{d} x}{\mathbb{d} t} \right)^3 } =\dfrac{x_t’ y_{t^2}’’ -x_{t^2}’’ y_t’ }{(x_t’ )^3 } ;$$</p>
+<p>类似地有$y_{x^3}’’’ =\dfrac{x_t’ (x_t’ y_{t^3}’’’ -x_{t^3}’’’ y_t’ )-3x_{t^2}’’ (x_t’ y_{t^2}’’ -x_{t^2}’’ y_t’ )}{(x_t’)^5}$等等.</p>
+<h2 id="有限差分">有限差分</h2><p>设函数$f(x)$定义在某区间$\mathcal{X}$上，并设以后所讲的$x$值都是属于这区间的.将自变量$x$的某增量$\Delta x$固定下来（为确定起见可设$\Delta x &gt; 0$，但是设$\Delta x &lt; 0$也毫无关系）之后，设</p>
+<p>$$\Delta f(x)=f(x+\Delta x)-f(x),$$</p>
+<p>并把此式称为函数$f(x)$的一阶差分.一阶差分的一阶差分称为二阶差分.</p>
+<p>$$\Delta^2 f(x)=\Delta [\Delta f(x)] =\Delta f(x+\Delta x)-\Delta f(x)=f(x+2\Delta x)-2f(x+\Delta x)+f(x).$$</p>
+<p>高阶差分可归纳地定义如下：</p>
+<p>$$\Delta^n f(x)=\Delta [\Delta^{n-1} f(x)].$$</p>
+<p>且可对$n$阶差分建立以下公式</p>
+<p>$$\begin{align}<br>\Delta^n f(x) &amp; =\sum_{i=0}^n (-1)^i C_n^i f(x+(n-i)\Delta x) \\<br> &amp; =f(x+n\Delta x)-\dfrac{n}{1} f(x+(n-1)\Delta x) +\dfrac{n(n-1)}{1\cdot 2} f(x+(n-2)\Delta x) -\cdots +(-1)^n f(x),<br>\end{align}$$</p>
+<p>它直接用函数本身在等距分点</p>
+<p>$$x,x+\Delta x,x+2\Delta x,\cdots ,x+n\Delta x$$</p>
+<p>表示出$n$阶差分.这公式很容易用数学归纳法来证明，读者可以自己去证.</p>
+<p>现在把这些有限差分跟导数和微分比较一下.</p>
+<p>设函数$f(x)$在闭区间$[x_0 ,x_0 +n\Delta x]$上有$n-1$阶连续函数</p>
+<p>$$f’(x) ,f’’(x) ,\cdots ,f^{(n-1)} (x),$$</p>
+<p>且至少在开区间$(x_0 ,x_0 +n\Delta x)$上有有限的$n$阶导数$f^{(n)} (x)$.于是我们有公式</p>
+<p>$$\Delta^n f(x_0 ) =f^{(n)} (\xi_n ) \cdot \Delta x^n ,x_0 &lt; \xi_n &lt; x_0 +n\Delta x.\label{7} \tag{7}$$</p>
+<p>当$n=1$时，这就是有限差分的公式，故有限差分公式是公式$\eqref{7}$的最简单情形.为了要用数学归纳法来证明我们的论断，先假定公式$\eqref{7}$的变形，即将$n$换为$n-1$且对假设作相应改变后所得的公式成立，然后证明在所作假定下，公式$\eqref{7}$成立.依这假定，可知函数$\Delta f(x)=f(x+\Delta x)-f(x)$在区间$[x_0 ,x_0 +(n-1)\Delta x]$上满足使$\eqref{7}$的变形公式得以成立的更多的条件，因此可写出</p>
+<p>$$\Delta^{n-1} [\Delta f(x_0 )] =\Delta^n f(x_0 )=[f^{(n-1)} (\xi_{n-1} +\Delta x) -f^{(n-1)} (\xi_{n-1} )] \Delta x^{n-1} ,\label{8} \tag{8}$$</p>
+<p>其中$x_0 &lt; \xi_{n-1} &lt; x_0 +(n-1)\Delta x$.对这公式的右边应用有限增量公式，便立即得到公式$\eqref{7}$，且</p>
+<p>$$x_0 &lt; \xi_{n-1} &lt; \xi_n &lt; \xi_{n-1} +\Delta x &lt; x_0 +n \Delta x.$$</p>
+<p>要注意的是，若导数$f^{(n)} x$在点$x_0 $也存在而且在该点连续，则自$\eqref{7}$式让$\Delta x\to 0$（其中$\xi_n \to x_0 $），得</p>
+<p>$$f^{(n)}(x_0 ) =\lim_{\Delta x\to 0} \dfrac{\Delta^n f(x_0 )}{\Delta x^n } .\label{9} \tag{9}$$</p>
+<p>这个有趣的公式给出了用一次极限步骤求得$n$阶导数的可能性，同时这公式是$n$阶导数在点$x_0 $本身存在这个唯一的假定下成立的.就是说，在点$x_0 $的某邻域内存在导数</p>
+<p>$$f’(x) ,f’’(x),\cdots ,f^{(n-1)} (x),$$</p>
+<p>于是在$\Delta x$足够小时，可应用公式$\eqref{8}$.由于导数$f^{(n)} (x_0 )$存在，应用[$96$目的公式$(2)$]，可写出</p>
+<p>$$f^{(n-1)} (\xi_{n-1} ) -f^{(n-1)} (x_0 ) =f^{(n)} (x_0 ) \cdot (\xi_{n-1} -x_0 ) +\alpha (\xi_{n-1} -x_0 )$$</p>
+<p>与</p>
+<p>$$f^{(n-1)} (\xi_{n-1} +\Delta x ) -f^{(n-1)} (x_0 ) =f^{(n)} (x_0 ) \cdot (\xi_{n-1} +\Delta x-x_0 ) +\beta (\xi_{n-1} +\Delta x-x_0 ),$$</p>
+<p>其中$\alpha $与$\beta $依赖于$\Delta x$且趋于零.由上式以及$\eqref{8}$可推出：</p>
+<p>$$\Delta^n f(x_0 ) =[f^{(n)} (x_0 )+\gamma ]\cdot \Delta x^n ,$$</p>
+<p>其中$\gamma $是新的无穷小.最后，用$\Delta x^n $除这等式的两边，并取$\Delta x\to 0$的极限，便得公式$\eqref{9}$.</p>
+<p>但必须指出$\eqref{9}$只有在导数$f^{(n)} (x_0 )$存在时才成立.但在这导数不存在时，右边的极限也可能存在.例如，我们考察如下定义的函数：</p>
+<p>$$f(x)=x^3 \cdot \sin{\dfrac{1}{x}} (x\neq 0),f(0)=0,$$</p>
+<p>而取$x_0 =0$.这函数有一阶导数</p>
+<p>$$f’(x)=3x^2 \cdot \sin{\dfrac{1}{x}} -x\cos{\dfrac{1}{x}} (x\neq 0),f’(0)=0,$$</p>
+<p>但在点$0$没有二阶导数，因此式</p>
+<p>$$\dfrac{f’(0+\Delta x) -f’(0)}{\Delta x} =\dfrac{3\Delta x^2 \cdot \sin{\dfrac{1}{\Delta x}} -\Delta x\cos{\dfrac{1}{\Delta x}} }{\Delta x} =3\Delta x \cdot \sin{\dfrac{1}{\Delta x}} -\cos{\dfrac{1}{\Delta x}} ,$$</p>
+<p>在$\Delta x\to 0$时无极限.但</p>
+<p>$$\begin{align}<br>\dfrac{\Delta ^2 f(0)}{\Delta x^2} &amp; =\dfrac{f(0+2\Delta x)-2f(0+\Delta x)+f(0)}{\Delta x^2} \\<br> &amp; =\dfrac{8\Delta x^3 \sin{\dfrac{1}{2\Delta x}} -2\Delta x^3 \cdot \sin{\dfrac{1}{\Delta x}}}{\Delta x^2} \\<br> &amp; =8\Delta x \sin{\dfrac{1}{2\Delta x}} -2\Delta x \sin{\dfrac{1}{\Delta x}} \to 0.<br>\end{align}$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/12/30/2015/12/weijifenxuejiaocheng134/" data-title="《微积分学教程(第一卷)》 第三章 导数及微分 4 高阶导数及高阶微分 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/01/04/2016/01/weijifenxuejiaocheng135/" title="《微积分学教程(第一卷)》 第三章 导数及微分 5 泰勒公式">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 第三章 导数及微分 5 泰勒公式</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/29/2015/12/ComplexNumbersComplexFunctionsandTheirApplicationS62/"  title="《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理">
+ <strong>下一篇：</strong><br/> 
+ <span>《复数、复函数及其应用》六 整函数与毕卡小定理 6.2 毕卡小定理
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶导数的定义"><span class="toc-number">1.</span> <span class="toc-text">高阶导数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任意阶导数的普遍公式"><span class="toc-number">2.</span> <span class="toc-text">任意阶导数的普遍公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#莱布尼茨公式"><span class="toc-number">3.</span> <span class="toc-text">莱布尼茨公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶微分"><span class="toc-number">5.</span> <span class="toc-text">高阶微分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶微分的形式不变性的破坏"><span class="toc-number">6.</span> <span class="toc-text">高阶微分的形式不变性的破坏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参变量微分法"><span class="toc-number">7.</span> <span class="toc-text">参变量微分法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有限差分"><span class="toc-number">8.</span> <span class="toc-text">有限差分</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>21</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
