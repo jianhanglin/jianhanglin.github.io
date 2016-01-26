@@ -1,0 +1,1429 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析习题集》第一章 分析引论 2. 数列理论 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题77-134">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析习题集》第一章 分析引论 2. 数列理论">
+<meta property="og:url" content="http://yoursite.com/2016/01/10/2016/01/jimiduoweiqishuxuefenxixitiji1123/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题77-134">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/2-1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/3.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/4.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/149.png">
+<meta property="og:updated_time" content="2016-01-24T13:28:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 2. 数列理论">
+<meta name="twitter:description" content="习题77-134">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/01/10/2016/01/jimiduoweiqishuxuefenxixitiji1123/" title="《数学分析习题集》第一章 分析引论 2. 数列理论" itemprop="url">《数学分析习题集》第一章 分析引论 2. 数列理论</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2016-01-10T08:04:03.000Z" itemprop="datePublished"> 發表於 2016-01-10</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#单调有界数列收敛定理"><span class="toc-number">1.</span> <span class="toc-text">单调有界数列收敛定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#柯西收敛准则"><span class="toc-number">2.</span> <span class="toc-text">柯西收敛准则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子列、聚点与上下极限"><span class="toc-number">3.</span> <span class="toc-text">子列、聚点与上下极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于上下极限的补充"><span class="toc-number">4.</span> <span class="toc-text">关于上下极限的补充</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#柯西命题和施托尔茨定理"><span class="toc-number">5.</span> <span class="toc-text">柯西命题和施托尔茨定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#迭代生成的数列"><span class="toc-number">6.</span> <span class="toc-text">迭代生成的数列</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="单调有界数列收敛定理">单调有界数列收敛定理</h2><p>利用关于单调有界数列极限存在的定理，证明数列$x_n (n=1,2,\cdots )$的收敛性：</p>
+<p>$77$.$x_n =p_0 +\dfrac{p_1 }{10} +\cdots +\dfrac{p_n }{10^n } (n=1,2,\cdots )$，其中$p_i (i=0,1,2,\cdots )$是非负整数，并且从$p_1 $起不大于$9$.</p>
+<p>证$\quad x_{n+1} =x_n +\dfrac{p_{n+1}}{10^{n+1}} $，由于$p_{n+1} &gt; 0$，所以，$x_{n+1} &gt; x_n $，因而，数列$x_n (n=1,2,\cdots )$是单调增加的.其次由于</p>
+<p>$$p_0 +\dfrac{1}{10} &lt; x_n \leqslant 9\left( \dfrac{1}{10} +\cdots +\dfrac{1}{10^n} \right) +p_0 &lt; 1+p_0 ,$$</p>
+<p>所以，数列$x_n (n=1,2,\cdots )$是有界的.</p>
+<p>因而，根据单调有界数列极限存在的定理，可知数列$\lbrace x_n \rbrace $是收敛的.</p>
+<p>$78$.$x_n =\dfrac{10}{1} \cdot \dfrac{11}{2} \cdots \dfrac{n+9}{2n-1} $.</p>
+<p>证$\quad $当$n\leqslant 10$时，虽然$\lbrace x_n \rbrace $单调增加；但当$n &gt; 10$时，由$\dfrac{n+9}{2n-1} &lt; 1$知数列$\lbrace x_n \rbrace $单调减少.注意有下界$x_n &gt; 0(n=1,2,\cdots )$.因而，数列$\lbrace x_n \rbrace $收敛.</p>
+<p>$79$.$x_n =\left( 1-\dfrac12 \right) \left( 1-\dfrac14 \right) \cdots \left( 1-\dfrac{1}{2^n} \right) $.</p>
+<p>证$\quad $因为$x_{n+1} =x_n \cdot \left( 1-\dfrac{1}{2^{n+1}} \right) &lt; x_n $，所以，数列$\lbrace x_n \rbrace $是单调减少的.又因$0 &lt; x_n &lt; 1$，所以，数列$\lbrace x_n \rbrace $是有界的.因而，数列$\lbrace x_n \rbrace $收敛.</p>
+<p>$80$.$x_n =\left( 1+\dfrac12 \right) \left( 1+\dfrac14 \right) \cdots \left( 1+\dfrac{1}{2^n} \right) $.</p>
+<p>证$1\quad $这是严格单调递增数列.取对数后可用习题$75(a)$的不等式估计其上界如下：</p>
+<p>$$\ln x_n =\ln \left( 1+\dfrac{1}{2} \right) +\ln \left( 1+\dfrac{1}{4} \right) +\cdots +\ln \left( 1+\dfrac{1}{2^n} \right) &lt; \dfrac{1}{2} +\dfrac{1}{4} +\cdots +\dfrac{1}{2^n} &lt; 1,$$</p>
+<p>可见数列$\lbrace x_n \rbrace $以$e$为上界，因此收敛.</p>
+<p>证$2\quad $估计其上界的另一个方法是利用$\left( 1+\dfrac{1}{2^n} \right)^{2^n} &lt; e,n=1,2,\cdots $，于是有</p>
+<p>$$x_n &lt; e^{\frac{1}{2} +\frac{1}{4} +\cdots +\frac{1}{2^n}} &lt; e^1 =e.$$</p>
+<p>$81$.$x_1 =\sqrt{2} ,x_2 =\sqrt{2+\sqrt{2}} ,\cdots ,x_n =\underbrace{\sqrt{2+\sqrt{2+\cdots +\sqrt{2}}}}_{n\;重根号} ,\cdots $.</p>
+<p>证$1\quad $数列$\lbrace x_n \rbrace $可以写成迭代形式：</p>
+<p>$$\begin{cases}<br>x_1 &amp; =\sqrt{2} ,\\<br>x_n &amp; =\sqrt{2+x_{n-1}} ,n=2,3,\cdots .\end{cases} \label{1.17} \tag{1.17}$$</p>
+<p>从几何上来观察迭代式$\eqref{1.17}$.如附图所示，在左边作出了较大范围上的函数$y=\sqrt{2+x} $和$y=x$的图像，其中我们关心的是用虚线围成的正方形部分，它在经过放大后画在附图的右方，其中还作出从$x_1 $到$x_2 $的迭代.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/2.png" alt=""></center>
+
+<p>由此猜想数列$\lbrace x_n \rbrace $单调递增且以$x=2$为上界.这些都可以用数学归纳法来证明.</p>
+<p>首先有$x_1 =\sqrt{2} &lt; 2$.若设$x_{n-1} &lt; 2$，则$x_n =\sqrt{2+x_{n-1}} &lt; \sqrt{2+2} =2$，可见$2$是$\lbrace x_n \rbrace $的上界.</p>
+<p>再证$\lbrace x_n \rbrace $是单调递增.先有$x_1 =\sqrt{2} &lt; x_2 =\sqrt{2+\sqrt{2}} $.现假设有$x_{n-1} &lt; x_n $，则可以推出</p>
+<p>$$x_n =\sqrt{2+x_{n-1}} &lt; \sqrt{2+x_n } =x_{n+1} ,$$</p>
+<p>可见成立.于是$\lbrace x_n \rbrace $单调递增，有上界，因此收敛.</p>
+<p>证$2\quad $用柯西收敛准则（见下一小节）.记$x_0 =0,x_1 =\sqrt{2+x_0 }$.令$q=\dfrac{1}{2\sqrt{2}} ( &lt; 1)$，用“有理化分子”的方法作如下估计（注意$x_n &gt; 0$）：</p>
+<p>$$\begin{align}<br>\vert x_k -x_{k-1} \vert &amp; =\vert \sqrt{2+x_{k-1}} -\sqrt{2+x_{k-2}} \vert =\dfrac{\vert x_{k-1} -x_{k-2} \vert }{\sqrt{2+x_{k-1}} +\sqrt{2+x_{k-2}}} \\<br> &amp; &lt; q\vert x_{k-1} -x_{k-2} \vert &lt; \cdots &lt; q^{k-1} \vert x_1 -x_0 \vert =\sqrt{2} \cdot q^{k-1} .\end{align}$$</p>
+<p>不妨设$m &gt; n$，由上式得</p>
+<p>$$\begin{align}<br> \vert x_m -x_n \vert &amp; \leqslant \vert x_m -x_{m-1} \vert +\vert x_{m-1} -x_{m-2} \vert +\cdots +\vert x_{n+1} -x_n \vert \\<br> &amp; &lt; \sqrt{2} (q^{m-1} +q^{m-2} +q^n) &lt; \dfrac{\sqrt{2} q^n}{1-q} \to 0\quad (n\to \infty ).\end{align}$$</p>
+<p>它是与$m$无关的无穷小量，柯西准则的条件满足，因此$\lbrace x_n \rbrace $收敛.</p>
+<p>证$3\quad $这个方法与前面不同，先设$\lbrace x_n \rbrace $收敛，求出它的极限值$a$.</p>
+<p>由$x_n =\sqrt{2+x_{n-1}} $平方后得到$x_n^2 =2+x_{n-1}$.两端对$n\to \infty$取极限，得$a^2=2+a$，解得$a=2$（舍去增根$a=-1$）.记$q=\dfrac{1}{\sqrt{2} +2} ( &lt; 1)$，然后直接估计</p>
+<p>$$\begin{align}<br>\vert x_n -2\vert &amp; =\vert \sqrt{2+x_{n-1}} -2\vert =\dfrac{\vert x_{n-1} -2 \vert }{\sqrt{2+x_{n-1}} +2} \\<br> &amp; &lt; q\vert x_{n-1} -2\vert &lt; \cdots &lt; q^{n-1} \vert \sqrt{2} -2\vert \to 0 \end{align}$$</p>
+<p>得$\displaystyle \lim_{n\to \infty } x_n =2$.</p>
+<p>证$4\quad $本题有一个特殊解法.这就是从$x_1 =\sqrt{2} =2\cos{\dfrac{\pi}{4}}$起，利用余弦函数的倍角公式，就不难用数学归纳法和迭代式$x_n =\sqrt{2+x_{n-1}}$证明，本题的数列有表达式</p>
+<p>$$x_n =2\cos{\dfrac{\pi }{2^{n+1}}} ,n=1,2,\cdots .$$</p>
+<p>由此可见，当$n\to \infty$时极限等于$2$.</p>
+<h2 id="柯西收敛准则">柯西收敛准则</h2><p>利用柯西准则，证明数列$x_n (n=1,2,\cdots )$的收敛性：</p>
+<p>$82$.$x_n =a_0 +a_1 q+\cdots +a_n q^n$，其中$\vert a_k \vert &lt; M(k=0,1,2,\cdots )$且$\vert q\vert &lt; 1$.</p>
+<p>证$\quad $在以下估计中不妨设$m &gt; n$.</p>
+<p>$$\begin{align}<br>\vert x_m -x_n \vert &amp; =\vert a_{n+1} q^{n+1} +\cdots +a_m q^m \vert \\<br> &amp; \leqslant M\vert q \vert^{n+1} (1+\vert q\vert +\cdots +\vert q\vert^{m-n-1}) &lt; \dfrac{M}{1-q} \cdot \vert q\vert^{n+1} .\end{align}$$</p>
+<p>由于$\vert q\vert &lt; 1$，最后一式当$n\to \infty $时是无穷小量，因此对$\varepsilon &gt; 0$，存在$N$，使得当$n,m &gt; N$时$\vert x_m -x_n \vert &lt; \varepsilon $.于是$\lbrace x_n \rbrace $收敛.</p>
+<p>$83$.$x_n =\dfrac{\sin{1}}{2} +\dfrac{\sin{2}}{2^2} +\cdots +\dfrac{\sin{n}}{2^n}$.</p>
+<p>证</p>
+<p>$$\begin{align} \vert x_m -x_n \vert &amp; =\left\vert \dfrac{\sin{(n+1)}}{2^{n+1}} +\cdots +\dfrac{\sin{m}}{2^m} \right\vert \\<br> &amp; \leqslant \dfrac{1}{2^{n+1}} \left( 1+\dfrac12 +\cdots +\dfrac{1}{2^{m-n-1}} \right) \\<br> &amp; &lt; \dfrac{1}{2^{n+1}} \cdot \dfrac{1}{1-\dfrac12 } \\<br> &amp; =\dfrac{1}{2^n} \quad (m &gt; n).\end{align}$$</p>
+<p>任给$\varepsilon &gt; 0$，取$N=\left[ \dfrac{\ln \frac{1}{\varepsilon}}{\ln 2} \right] $，则当$m &gt; n &gt; N$时，必有$\dfrac{1}{2^n} &lt; \varepsilon $，从而$\vert x_m -x_n \vert &lt; \varepsilon $，所以，数列$\lbrace x_n \rbrace $收敛.</p>
+<p>$84$.$x_n =\dfrac{\cos{1!}}{1\cdot 2} +\dfrac{\cos{2!}}{2\cdot 3} +\cdots +\dfrac{\cos{n!}}{n(n+1)}$.</p>
+<p>证$\quad $不妨设$m &gt; n$.在对每一项取绝对值后再用裂项相消法即可：</p>
+<p>$$\begin{align} \vert x_m -x_n \vert &amp; =\left\vert \dfrac{\cos{(n+1)!}}{(n+1)(n+2)} +\cdots +\dfrac{\cos{m!}}{m(m+1)} \right\vert \\<br> &amp; \leqslant \dfrac{1}{(n+1)(n+2)} +\dfrac{1}{(n+2)(n+3)} +\cdots +\dfrac{1}{m(m+1)} \\<br> &amp; =\left( \dfrac{1}{n+1} -\dfrac{1}{n+2} \right) +\left( \dfrac{1}{n+2} -\dfrac{1}{n+3} \right) +\cdots +\left( \dfrac{1}{m} -\dfrac{1}{m+1} \right) \\<br> &amp; &lt; \dfrac{1}{n+1} \to 0.<br>\end{align}$$</p>
+<p>$85$.$x_n =1+\dfrac{1}{2^2} +\dfrac{1}{3^2} +\cdots +\dfrac{1}{n^2}$.</p>
+<p>提示：利用不等式$\dfrac{1}{n^2} &lt; \dfrac{1}{n-1} -\dfrac{1}{n} (n=2,3,\cdots )$.</p>
+<p>证$\quad \vert x_m -x_n \vert =\dfrac{1}{(n+1)^2} +\cdots +\dfrac{1}{m^2} ,\quad (m &gt; n)$.</p>
+<p>以下与$84$题证法步骤相同，故知数列$\lbrace x_n \rbrace $收敛.</p>
+<p>$86$.对于数列$x_n (n=1,2,\cdots )$，若存在数$C$，使得</p>
+<p>$$\vert x_2 -x_1 \vert +\vert x_3 -x_3 \vert +\cdots +\vert x_n -x_{n-1} \vert &lt; C\quad (n=2,3,\cdots ),$$</p>
+<p>则称数列$x_n $具有有界变差.证明：具有有界变差的数列是收敛的.举出一个没有有界变差的收敛数列的例子.</p>
+<p>证$\quad $设$y_n =\vert x_2 -x_1 \vert +\vert x_3 -x_3 \vert +\cdots +\vert x_n -x_{n-1} \vert (n=2,3,\cdots )$，则数列$\lbrace y_n \rbrace $单调增加且有界，所以，它是收敛的.</p>
+<p>根据柯西准则，对于任给的$\varepsilon &gt; 0$，存在数$N$，使当$m &gt; n &gt; N$时，$\vert y_m -y_n \vert &lt; \varepsilon $，即</p>
+<p>$$\vert x_m -x_{m-1} \vert +\vert x_{m-1} -x_{m-2} \vert +\cdots +\vert x_{n+1} -x_n \vert &lt; \varepsilon .$$</p>
+<p>而对于数列$\lbrace x_n \rbrace $有</p>
+<p>$$\begin{align}<br>\vert x_m -x_n \vert &amp; =\vert x_m -x_{m-1} +x_{m-1} -x_{m-2} +\cdots +x_{n+1} -x_n \vert \\<br> &amp; \leqslant \vert x_m -x_{m-1} \vert +\vert x_{m-1} -x_{m-2} \vert +\cdots +\vert x_{n+1} -x_n \vert &lt; \varepsilon ,\end{align}$$</p>
+<p>所以，数列$\lbrace x_n \rbrace $是收敛的.</p>
+<p>数列：$1,-1,\dfrac12 ,-\dfrac12 ,\dfrac13 ,-\dfrac13 ,\cdots ,\dfrac{1}{n} ,(-1)\dfrac{1}{n} ,\cdots $，它是以零为极限的收敛数列.但它不是有有界变差的.事实上，</p>
+<p>$$\begin{align}<br> &amp; \vert x_2 -x_1 \vert +\vert x_3 -x_2 \vert +\vert x_4 -x3 \vert +\cdots +\vert x_{2n} -x_{2n-1} \vert \\<br>{&gt;} &amp; \vert x_2 -x_1 \vert +\vert x_4 -x_3 \vert +\cdots +\vert x_{2n} -x_{2n-1} \vert \\<br>= &amp; 2\left( 1+\dfrac12 +\dfrac13 +\dfrac14 +\cdots +\dfrac{1}{n} \right) ,\end{align}$$</p>
+<p>而数列$\omega_n = 1+\dfrac12 +\dfrac13 +\dfrac14 +\cdots +\dfrac{1}{n} $是发散的，又是递增的，故$\omega_n \to +\infty $.于是，</p>
+<p>$$\vert x_2 -x_1 \vert +\vert x_3 -x_2 \vert +\vert x_4 -x3 \vert +\cdots +\vert x_{2n} -x_{2n-1} \vert $$</p>
+<p>不是有界的，因而，收敛数列$\lbrace x_n \rbrace \colon 1,-1,\dfrac12 ,-\dfrac12 ,\cdots $无有界变差.</p>
+<blockquote>
+<p>若读者学过无穷级数的内容之后，就会发现这个概念只不过是与一个给定数列对应的无穷级数是绝对收敛的而已，而证明它收敛等价于证明无穷级数中的绝对收敛级数必定收敛的定理，因此本质上没有新东西.</p>
+</blockquote>
+<p>$87$.试述“柯西准则对给定数列不成立”的含义.</p>
+<p>解$\quad $数列$\lbrace x_n \rbrace $满足柯西准则为：</p>
+<p>“对每一个$\varepsilon &gt; 0$，存在$N$，对每一个$n &gt; N$和正整数$p$，成立$\vert x_n -x_{n+p} \vert &lt; \varepsilon $.”</p>
+<p>数列$\lbrace x_n \rbrace $不满足柯西准则为：</p>
+<p>“存在一个$\varepsilon_0 &gt; 0$，对任意一个$N$，存在$n &gt; N$和正整数$p$，使得$\vert x_n -x_{n+p} \vert \geqslant \varepsilon_0 $.”</p>
+<p>若用柯西准则的下列形式：</p>
+<p>“对每一个$\varepsilon &gt; 0$，存在$N$，对任意的$m,n &gt; N$，成立$\vert x_m -x_n \vert &lt; \varepsilon $.”</p>
+<p>则数列$\lbrace x_n \rbrace $不满足柯西准则为：</p>
+<p>“存在一个$\varepsilon_0 &gt; 0$，对任意一个$N$，存在$m,n &gt; N$，使得$\vert x_m -x_n \vert \geqslant \varepsilon_0 $.”</p>
+<p>$88$.利用柯西准则证明以下数列的发散性：</p>
+<p>$$x_n =1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{n} \quad (n=1,2,\cdots ).$$</p>
+<p>证$1\quad $由习题$87$知，问题是要找到一个特殊的$\varepsilon_0 &gt; 0$，欲使无论取多大的$N$，都存在$m,n &gt; N$（不妨设$m &gt; n$），使得$\vert x_m -x_n \vert \geqslant \varepsilon_0 $.在$x_m -x_n $中含有的项数为$m-n$.为了减少$m,n$的两个任意性，取$m=2n$试探之.由</p>
+<p>$$\vert x_{2n} -x_{n} \vert =\dfrac{1}{n+1} +\dfrac{1}{2n} &gt; \dfrac{n}{2n} =\dfrac12 .$$</p>
+<p>可见任取$\varepsilon_0 =\dfrac12 $，则不论如何取$N$，总可以取一个$n &gt; N$（例如令$n=N+1$），同时取$m=2n$，由上式得$\vert x_m -x_n \vert &gt; \dfrac12 $.因此这个数列不满足柯西准则，它是发散的.</p>
+<p>证$2\quad $本题是单调递增数列，因此不必用柯西准则，只要证明数列无上界就可以推出它发散.这有多种方法.比较简单的是观察以下求和计算：</p>
+<p>$$x_2 =1+\dfrac12 =1\dfrac12 ,$$</p>
+<p>$$x_4 =x_2 +\dfrac13 +\dfrac14 &gt; x_2 +2\cdot \left( \dfrac14 \right) =x_2 +\dfrac12 =2,$$</p>
+<p>$$x_8 =x_4 +\dfrac15 +\dfrac16 +\dfrac17 +\dfrac18 &gt; x_4 +4\cdot \left( \dfrac18 \right) =x_4 +\dfrac12 &gt; 2\dfrac12 ,$$</p>
+<p>$$\cdots \cdots \cdots \cdots $$</p>
+<p>从而可以猜测对每个正整数$n$成立以下不等式：</p>
+<p>$$x_{2^n} \geqslant 1+\dfrac{n}{2} .\label{1.18} \tag{1.18}$$</p>
+<p>现在用数学归纳法对此作出证明.如前所述，$\eqref{1.18}$对于$n=1,2,3$已成立.假设它对于$n=k$成立，则对于$n=k+1$有</p>
+<p>$$\begin{align}<br>x_{2^{k+1}} &amp; =x_{2^k} +\left( \dfrac{1}{2^k +1} +\dfrac{1}{2^k +2} +\cdots +\dfrac{1}{2^{k+1}} \right) \\<br> &amp; \geqslant 1+\dfrac{k}{2} +2^k \cdot \dfrac{1}{2^{k+1}} \\<br> &amp; =1+\dfrac{k+1}{2} ,\end{align}$$</p>
+<p>因此不等式$\eqref{1.18}$成立.由此可见数列$\lbrace x_n \rbrace $无上界，因此发散.</p>
+<p>证$3\quad $用反证法.</p>
+<p>由于$\lbrace x_n \rbrace $是单调递增的，若收敛，则存在常数$M$，使得每个$x_n &lt; M$.</p>
+<p>回忆习题$75(a)$提供的不等式，就有</p>
+<p>$$\begin{align}<br>\ln (n+1) &amp; =\ln \dfrac{n+1}{n} +\ln \dfrac{n}{n-1} +\cdots +\ln \dfrac21 \\<br>&amp; &lt; \dfrac{1}{n} +\dfrac{1}{n-1} +\cdots +1=x_n &lt; M,\end{align}$$</p>
+<p>于是对每一个正整数$n$成立不等式$n+1 &lt; e^M $，而这是不可能的.</p>
+<p>证$4\quad $从习题$146$的公式就知道$x_n $与对数$\ln n$只差一个欧拉常数和无穷小量，因此可见$\displaystyle \lim_{n\to \infty } x_n =+\infty $.</p>
+<h2 id="子列、聚点与上下极限">子列、聚点与上下极限</h2><p>$89$.证明：若数列$x_n (n=1,2,\cdots )$收敛，则它的任何子数列$x_{p_n} $也收敛且有同一极限：$\displaystyle \lim_{n\to \infty } x_{p_n} =\lim_{n\to \infty } x_n $.</p>
+<p>证$\quad $相对地说，把$\lbrace x_n \rbrace $看作“整体”，其子列$\lbrace x_{p_n} \rbrace $是它的一个“局部”.当“整体”$\lbrace x_n \rbrace $的$n &gt; N$时有$\vert x_n -a\vert &lt; \varepsilon $，则其“局部”$\lbrace x_{p_n} \rbrace $在$p_n &gt; N$时也满足同样的不等式.</p>
+<p>记$\displaystyle \lim_{n\to \infty } x_n =a$，则对$\varepsilon &gt; 0$，存在$N$，当$n &gt; N$时$\vert x_n -a\vert &lt; \varepsilon $.注意$p_n \geqslant n$，故对$\lbrace x_{p_n} \rbrace $取上述的$N$，则当$n &gt; N$时也有$p_n &gt; N$，于是$\vert x_{p_n} -a\vert &lt; \varepsilon $.这就是$\displaystyle \lim_{n\to \infty } x_{p_n} =a$.</p>
+<p>注$\quad $习题$89$有一个重要推广，即当$\displaystyle \lim_{n\to \infty } x_n =\pm \infty $时，$\lbrace x_n \rbrace $的每一个子列$\lbrace x_{p_n} \rbrace $也有$\displaystyle \lim_{n\to \infty } x_{p_n} =\pm \infty $.</p>
+<p>$90$.证明：若单调数列的某一子数列收敛，则此单调数列本身是收敛的.</p>
+<p>证$1\quad $不妨设$\lbrace x_n \rbrace $单调递增，于是$\lbrace x_{p_n} \rbrace $也单调递增，它收敛时必有上界$B$.而对每一个$n$，由$n \leqslant p_n $得$x_n \leqslant x_{p_n} \leqslant B$，故$\lbrace x_n \rbrace $也以$B$为其上界，从而$\lbrace x_n \rbrace $收敛.</p>
+<p>证$2\quad $实际上本题不需要用什么定理，从数列收敛的定义即可推出.</p>
+<p>不妨设数列$\lbrace x_n \rbrace $单调递增，且有某个子列$\lbrace x_{p_n} \rbrace $收敛于$a$，则对于给定的$\varepsilon &gt; 0$，存在$N$，使得当$n &gt; N$时成立$\vert x_{p_n} -a\vert &lt; \varepsilon $.</p>
+<p>由于该数列单调递增，因此其子列$\lbrace x_{p_n} \rbrace $也单调递增.于是当$n &gt; N$时就有</p>
+<p>$$a-\varepsilon &lt; x_{p_n} \leqslant a.$$</p>
+<p>可见只要取$N_1 =p_{N+1} $，就使得当$n &gt; N_1 $时，有$x_{p_{N+1}} \leqslant x_n $.另一方面，对每一个$n$，存在某个$p_{n’}$，使得$n &lt; p_{n’}$，从而又有$x_n \leqslant x_{p_{n’}}$.于是当$n &gt; N_1 $时就有</p>
+<p>$$a-\varepsilon &lt; x_{p_{N+1}} \leqslant x_n \leqslant x_{p_{n’}} \leqslant a,$$</p>
+<p>这就是$\vert x_n -a\vert &lt; \varepsilon $，即已经得到$\displaystyle \lim_{n\to \infty } x_n =a$.</p>
+<p>$91$.证明：若$\displaystyle \lim_{n\to \infty } x_n =a$，则$\displaystyle \lim_{n\to \infty } \vert x_n \vert =\vert a\vert $.</p>
+<p>证$\quad $用不等式$\left\vert \vert x_n \vert -\vert a\vert \right\vert \leqslant \vert x_n -a\vert $（见习题$21(a)$）即可证得.</p>
+<p>$92$.设$x_n \to a$，则关于极限$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n } $有何结论？</p>
+<p>解$\quad $当$a\neq 0$，利用商的极限运算法则，由$\displaystyle \lim_{n\to \infty } x_n =a$就推出$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} =\dfrac{a}{a} =1$.</p>
+<p>当$a=0$时，上述运算法则失效，$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $就是所谓$\dfrac00$型的不定式，需直接考虑通项为$\dfrac{x_{n+1}}{x_n}$的数列的性态.它可以发散，也可以收敛，而在收敛时可以有各种极限值.（这就是不定式这个名词的由来.）下面将举出各种情况的例子.</p>
+<p>调和数列$\lbrace \dfrac{1}{n} \rbrace $可作为$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $收敛的例子.</p>
+<p>下面先分析$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $存在的条件.</p>
+<p>若$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $存在，记为$b$，由习题$91$得$\displaystyle \lim_{n\to \infty } \left\vert \dfrac{x_{n+1}}{x_n} \right\vert =\vert b\vert $.若$\vert b\vert &gt; 1$，取$b’\colon \vert b\vert &gt; b’ &gt; 1$，则$n$充分大后$\left\vert \dfrac{x_{n+1}}{x_n} \right\vert &gt; b’ &gt; 1$.于是$\lbrace \vert x_n \vert \rbrace $严格单调递增.这与$x_n \to 0$矛盾.</p>
+<p>由此得到：在$\displaystyle \lim_{n\to \infty } x_n =0$的前提下，若$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $存在，则必有</p>
+<p>$$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} \leqslant 1.$$</p>
+<p>下述在$\displaystyle \lim_{n\to \infty } x_n =0$时$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $却不存在的例子.</p>
+<p>先作$y_n =q^n ，0 &lt; q &lt; 1$，再将它越过一位插入相邻两项之间：</p>
+<p>$$\begin{array}{l} y_n \colon q,q^2 ,q^3 ,q^4 ,q^5 ,\cdots ,\\<br>y_n \colon \quad q,\quad q^2 ,q^3 ,q^4 ,\cdots ,\end{array}$$</p>
+<p>将所得到的数列记为$\lbrace x_n \rbrace $，则有</p>
+<p>$$x_n \colon q,q^2 ,q,q^3 ,q^2 ,q^4 ,q^3 ,q^5 ,q^4,\cdots ,$$</p>
+<p>则$x_n \to 0$.注意到$\lbrace x_n \rbrace $中部分相邻两项的次序是它们在$\lbrace y_n \rbrace $中的次序的倒序：</p>
+<p>$$\dfrac{x_{2k+1}}{x_{2k}} =\dfrac{q^k}{q^{k+1}} =\dfrac{1}{q} $$</p>
+<p>于是若$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $存在则只可能等于$\dfrac{1}{q} ( &gt; 1)$.这与$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $存在的必要条件$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} \leqslant 1$矛盾，故$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $不存在.</p>
+<p>$93$.证明：收敛数列是有界的.</p>
+<p>证$\quad $设$\displaystyle \lim_{n\to \infty } x_n =a$.要证$\lbrace x_n \rbrace $有界.对于正数$\varepsilon =1$，存在正整数$N$，使当$n &gt; N$时，必有$\vert x_n -a\vert &lt; 1$，从而$\vert x_n \vert &lt; \vert a\vert +1 (n &gt; N)$.于是，令</p>
+<p>$$M=\max{\lbrace \vert x_1 \vert ,\vert x_2 \vert ,\cdots ,\vert x_N \vert ,\vert a\vert +1\rbrace }.$$</p>
+<p>则$\vert x_n \vert \leqslant M(n=1,2,\cdots )$.由此可知$\lbrace x_n \rbrace $有界.</p>
+<p>$94$.证明：收敛数列或达到其上确界，或达到其下确界，或两者都达到.举出这三类数列的例子.</p>
+<p>证$\quad $从习题$93$知道收敛数列有界，从习题$15$知道它一定有（有限的）上确界和下确界.一个数列达到自己的上确界，就表明它有最大数；达到自己的下确界，就表明它有最小数.</p>
+<p>由此本题等价于一个简单问题，即数列是否有最大数和最小数.对于有限个数组成的数列来说，显然都有.但这里的数列一般都有无限多项，这时的答案是什么？</p>
+<p>从本题的结论中所说的三种可能性来看，可以看出本题其实等于说：收敛数列不可能既无最大数，又无最小数.</p>
+<p>用反证法.设$\lbrace x_n \rbrace $收敛，但无最大数和最小数.记$\alpha =\inf{\lbrace x_n \rbrace }$和$\beta =\sup{\lbrace x_n \rbrace }$，则只能是$\alpha &lt; \beta $.（否则该数列只能是常值数列，每一项同时是最大数和最小数.）</p>
+<p>由于$x_n &lt; \beta $对每个$n$成立，根据上确界的定义，对于$\varepsilon_1 =1$，数列一定有某一项出现在区间$(\beta -\varepsilon_1 ,\beta )$中，将它记为$x_{p_1} $.然后记$\varepsilon_2 =\max{\lbrace x_1 ,\cdots ,x_{p_1} ,\beta -\dfrac12 \rbrace }$，数列也一定有某一项出现在区间$(\beta -\varepsilon_2 ,\beta )$中，将它记为$x_{p_2 }$（这时必定有$p_2 &gt; p_1 $），依此类推，这样就得到了一个子列$\lbrace x_{p_n} \rbrace $，且满足</p>
+<p>$$\beta -\dfrac{1}{n} &lt; x_{p_n} &lt; \beta .$$</p>
+<p>可见有$\displaystyle \lim_{n\to \infty } x_{p_n} =\beta $，这就是说有一个子列收敛于数列的上确界$\beta $.</p>
+<p>同理从数列不达到自己的最小数可以推出有一个子列收敛于数列的下确界$\alpha $.</p>
+<p>由于$\alpha &lt; \beta $，因此得到了有不同极限的两个子列.这对于收敛数列是不可能的（这里可以引用习题$89$的结论）.</p>
+<p>具体例子：数列$\lbrace \dfrac12 ,\dfrac{1}{2^2} ,\cdots ,\dfrac{1}{2^n} ,\cdots \rbrace $的上确界为$\dfrac12$，同时是数列的最大数.</p>
+<p>数列$\lbrace -\dfrac12 ,-\dfrac{1}{2^2} ,\cdots ,-\dfrac{1}{2^n} ,\cdots \rbrace $的下确界为$-\dfrac12$，同时是数列的最小数.</p>
+<p>数列$\lbrace \dfrac12 ,-\dfrac12 ,\dfrac{1}{2^2} ,-\dfrac{1}{2^2} ,\cdots ,\dfrac{1}{2^n} ,-\dfrac{1}{2^n} ,\cdots \rbrace $的上下确界为$\dfrac12 ,-\dfrac12$，都可达到.</p>
+<p>注$\quad $本题中的数列必须是收敛的.否则，如习题$118$中给出的如下数列</p>
+<p>$$\dfrac12 ,\dfrac13 ,\dfrac23 ,\dfrac14 ,\dfrac24 ,\dfrac34 ,\dfrac15 ,\dfrac25 ,\dfrac35 ,\dfrac45 ,\cdots ,$$</p>
+<p>$0$和$1$是它的下确界和上确界，但都不能达到.这就是说它没有最小数和最大数.</p>
+<p>$95$.证明：趋于$+\infty $的数列$x_n (n=1,2,\cdots )$必定达到其下确界.</p>
+<p>证$1\quad $可能想到如下证明，由条件$x_n \to +\infty (n\to \infty )$知，对任意的$K$，存在$N$，当$n &gt; N$时，$x_n &gt; K$.故取前$N$项的最小值$\min{\lbrace x_1 ,x_2 ,\cdots ,x_N \rbrace }$即得$\lbrace x_n \rbrace $的最小数.</p>
+<p>这个证法似是而非，因上述证明中只说$n &gt; N$时$x_n &gt; K$，并未顾及$n \leqslant N$时$x_n $的大小.若$n\leqslant N$时$x_n $也大于$K$，于是$\min{\lbrace x_1 ,x_2 ,\cdots ,x_N \rbrace }$就未必是$\lbrace x_n \rbrace $的下确界.</p>
+<p>为了弥补上述漏洞，可从$\lbrace x_n \rbrace $中先任取一项，例如$x_1 $（不论正负），作为$K$，则当$n &gt; N( &gt; 1)$时$x_n $都大于$x_1 $，因此都不可能是$\lbrace x_n \rbrace $的最小数.这样就保证了$\min{\lbrace x_1 ,x_2 ,\cdots ,x_N \rbrace }$的确是$\lbrace x_n \rbrace $的最小数.</p>
+<p>证$2$（证明概要）$\quad $首先需要如习题$89$后的注中所说，证明若数列$x_n \to +\infty $，则它的每一个子列也都如此.</p>
+<p>然后证明若$\inf{\lbrace x_n \rbrace } =-\infty $，则存在子列$x_{p_k} \to -\infty $，从而引出矛盾.</p>
+<p>最后证明若$\inf{\lbrace x_n \rbrace }$为有限数，但不可达到，则存在子列收敛于这个下确界，从而也引出矛盾.</p>
+<p>其中后两步的证明与证$1$中的内容类似.</p>
+<p>求数列$x_n (n=1,2,\cdots )$的最大项：</p>
+<p>$96$.$x_n =\dfrac{n^2}{2^n} $.</p>
+<p>解$\quad $当$n=3$时，$n^2 &gt; 2^n $；当$n\neq 3$时，$n^2 \leqslant 2^n $；所以，最大项为$x_3 =\dfrac98 $.</p>
+<p>$97$.$x_n =\dfrac{\sqrt{n}}{100+n}$.</p>
+<p>解$\quad x_n =\dfrac{1}{\left( \sqrt[4]{n} -\dfrac{10}{\sqrt[4]{n}} \right)^2 +20} \leqslant \dfrac{1}{20}$，其中$x_{100} =\dfrac{1}{20} $，所以，最大项为$x_{100} =\dfrac{1}{20} $.</p>
+<p>$98$.$x_n =\dfrac{1000^n}{n!}$.</p>
+<p>解$\quad \dfrac{x_{n+1}}{x_n} =\dfrac{1000}{n+1}$.当$n+1 &lt; 1000$时，$x_{n+1} &gt; x_n $；当$n+1 &gt; 1000$时，$x_{n+1} &lt; x_n $.</p>
+<p>所以，最大项为$x_{999} =x_{1000} =\dfrac{1000^{1000}}{1000!} $.</p>
+<p>求数列$x_n (n=1,2,\cdots )$的最小项：</p>
+<p>$99$.$x_n =n^2-9n-100$.</p>
+<p>解$\quad $若$n^2-9n \geqslant 0$，则$n \geqslant 9$；若$n^2 -9n &lt; 0$，则$0 &lt; n &lt; 9$.所以最小项从$x_1 $到$x_8$中去寻找，比较之，得$x_n $的最小项为$x_4 =x_5 =-120$.</p>
+<p>$100$.$x_n =n+\dfrac{100}{n}$.</p>
+<p>解$\quad x_n =\left( \sqrt{n} -\dfrac{10}{\sqrt{n}} \right)^2 +20 \geqslant 20$，其中$x_{10} =20$，所以，最小项为$x_{10} =20$.</p>
+<p>命题$1.2\quad $若数列$\lbrace x_n \rbrace $可分成$k$个收敛子列，其极限分别为$c_1 ,\cdots ,c_k $，则就有：</p>
+<p>$$\varliminf_{n\to \infty } x_n =\min{\lbrace c_1 ,c_2 ,\cdots ,c_k \rbrace } ,\varlimsup_{n\to \infty } x_n =\max{\lbrace c_1 ,c_2 ,\cdots ,c_k \rbrace }.$$</p>
+<p>证$\quad $为此只要证明数列的每个收敛子列的极限只能在$c_1 ,\cdots ,c_k $之中就够了.</p>
+<p>任取数列$\lbrace x_n \rbrace $的一个收敛子列$\lbrace x_{p_n} \rbrace $，由于$\lbrace x_n \rbrace $已经分成为$k$个子列，因此$\lbrace x_{p_n} \rbrace $至少与这$k$个子列中的某一个子列（假设是第$j$个子列）有无限多项是相同的.</p>
+<p>根据子列的基本定理（即习题$89$），这无限多项组成的子列一定收敛于$c_j $，同时又与收敛子列$\lbrace x_{p_n} \rbrace $有相同的极限，因此得到$\displaystyle \lim_{n\to \infty } x_{p_n} =c_j $.</p>
+<p>对于数列$x_n (n=1,2,\cdots )$，求$\inf x_n ,\sup x_n ,\varliminf_{n\to \infty } x_n  $及$\varlimsup_{n\to \infty } \colon $</p>
+<p>$101$.$(a)x_n =1-\dfrac{1}{n} $；$(b)x_n =(-1)^{n-1} \left( 2+\dfrac{3}{n} \right) $.</p>
+<p>解$\quad (a)\inf{\lbrace x_n \rbrace } =0;\sup{\lbrace x_n \rbrace } =1;\varliminf_{n\to \infty } x_n =1;\varlimsup_{n\to \infty } =1$.</p>
+<p>$(b)$求$\inf \lbrace x_n \rbrace ,\sup \lbrace x_n \rbrace $时时涉及$x_n$的大小及变化趋势.将$\lbrace x_n \rbrace $按$(-1)^{n-1}$的正负分成$\lbrace x_{2n-1} \rbrace ,\lbrace x_{2n} \rbrace $，它们分别为正值单调递减和负值单调递增.这样就得到</p>
+<p>$$\inf{\lbrace x_n \rbrace } =\inf{\lbrace x_{2n} \rbrace } =x_2 =-\dfrac72 ,\sup{\lbrace x_n \rbrace } =\sup{\lbrace x_{2n-1} \rbrace } =x_1 =5.$$</p>
+<p>由于子列$\lbrace x_{2n-1} \rbrace $和$\lbrace x_{2n} \rbrace $都收敛，极限分别为$2$和$-2$，因此用命题$1.2$就得到</p>
+<p>$$\varliminf_{n\to \infty } x_n =\lim_{n\to \infty } x_{2n} =-2,\varlimsup_{n\to \infty } x_n =\lim_{n\to \infty } x_{2n-1} =2.$$</p>
+<p>$102$.$x_n =\dfrac{(-1)^n}{n} +\dfrac{1+(-1)^n}{2} $.</p>
+<p>解$\quad \inf{\lbrace x_n \rbrace } =-1;\sup{\lbrace x_n \rbrace } =\dfrac32 ;\varliminf_{n\to \infty } x_n =0;\varlimsup_{n\to \infty } =1$.</p>
+<p>$103$.$x_n =1+\dfrac{n}{n+1} \cos{\dfrac{n\pi }{2}} $.</p>
+<p>解$1\quad $按$\cos{x}$的最小正周期$2\pi $将$\lbrace x_n \rbrace $分成$4$个收敛子列，</p>
+<p>$$x_n =\begin{cases}<br>1, &amp; n=4k+1,\\<br>1-\dfrac{4k+2}{4k+3} , &amp; n=4k+2 ,\\<br>1,&amp; n=4k+3 ,\\<br>1+\dfrac{4k+4}{4k+5} ,&amp; n=4k+4.\end{cases} $$</p>
+<p>这样就得到</p>
+<p>$$\inf{\lbrace x_n \rbrace } =\inf{\lbrace x_{4k+2} \rbrace } =\lim_{k\to \infty } x_{4k+2} =0,$$</p>
+<p>$$\sup{\lbrace x_n \rbrace } =\sup{\lbrace x_{4k+4} \rbrace } =\lim_{k\to \infty } x_{4k+4} =2.$$</p>
+<p>由于上述$4$个子列分别收敛于$1,0,1,2$，根据命题$1.2$得</p>
+<p>$$\varliminf_{n\to \infty } x_n =\min{\lbrace 1,0,2 \rbrace } =0,\varlimsup_{n\to \infty } x_n =\max{\lbrace 1,0,2\rbrace } =2.$$</p>
+<p>解$2\quad $由于因子$\dfrac{n}{n+1} \to 1$，只要先研究$\lbrace \cos{\dfrac{n\pi }{2}} \rbrace $的收敛子列即可.它只有$3$个常值子列：$\lbrace 0\rbrace ,\lbrace -1\rbrace ,\lbrace 1\rbrace $，因此有$\inf{\lbrace x_n \rbrace } =0$，$\sup{\lbrace x_n \rbrace } =2$，</p>
+<p>$$\varliminf_{n\to \infty } x_n =1+1\cdot \min{\lbrace 0,-1,1\rbrace } =0,$$</p>
+<p>$$\varlimsup_{n\to \infty } x_n =1+1\cdot \max{\lbrace 0,-1,1\rbrace } =2.$$</p>
+<p>$104$.$x_n =1+2\cdot (-1)^{n+1} +3\cdot (-1)^{\frac{n(n-1)}{2}} $.</p>
+<p>解</p>
+<p>$$x_{4k} =1-2+3=2,x_{4k+1} =1+2+3=6,$$</p>
+<p>$$x_{4k-2} =1-2-3=-4,x_{4k+3} =1+2-3=0(k=1,2,\cdots ).$$</p>
+<p>$$\inf{\lbrace x_n \rbrace } =-4;\sup{\lbrace x_n \rbrace } =6 ;\varliminf_{n\to \infty } x_n =-4;\varlimsup_{n\to \infty } =6.$$</p>
+<p>$105$.$x_n =\dfrac{n-1}{n+1} \cos{\dfrac{2n\pi }{3}} $.</p>
+<p>解</p>
+<p>$$x_1 =0,x_2 =\dfrac13 \left( -\dfrac12 \right) ,x_3 =\dfrac12 ,$$</p>
+<p>$$x_4 =\dfrac35 \left( -\dfrac12 \right) ,x_5 =\dfrac23 \left( -\dfrac12 \right) ,x_6 =\dfrac57 ,$$</p>
+<p>$$x_7 =\dfrac34 \left( -\dfrac12 \right) ,x_8 =\dfrac79 \left( -\dfrac12 \right) ,x_9 =\dfrac45 ,\cdots .$$</p>
+<p>$$\inf{\lbrace x_n \rbrace } =-\dfrac12 ;\sup{\lbrace x_n \rbrace } =1;\varliminf_{n\to \infty } x_n =-\dfrac12;\varlimsup_{n\to \infty } =1.$$</p>
+<p>$106$.$x_n =(-1)^n n$.</p>
+<p>解$\quad \inf{\lbrace x_n \rbrace } =-\infty ;\sup{\lbrace x_n \rbrace } =+\infty ;\varliminf_{n\to \infty } x_n =-\infty;\varlimsup_{n\to \infty } =+\infty $.</p>
+<p>$107$.$x_n =-n[2+(-1)^n]$.</p>
+<p>解$\quad \inf{\lbrace x_n \rbrace } =-\infty ;\sup{\lbrace x_n \rbrace } =-1 ;\varliminf_{n\to \infty } x_n =-\infty;\varlimsup_{n\to \infty } =-\infty $.</p>
+<p>$108$.$x_n =n^{(-1)^n} $.</p>
+<p>解$\quad \inf{\lbrace x_n \rbrace } =0 ;\sup{\lbrace x_n \rbrace } =+\infty ;\varliminf_{n\to \infty } x_n =0;\varlimsup_{n\to \infty } =+\infty $.</p>
+<p>$109$.$x_n =1+n\sin{\dfrac{n\pi }{2}} $.</p>
+<p>解$\quad x_1 =1+1,x_2 =1+0,x_3 =1-3,x_4 =1+0,x_5 =1+5,\cdots $.</p>
+<p>$$\inf{\lbrace x_n \rbrace } =-\infty ;\sup{\lbrace x_n \rbrace } =+\infty ;\varliminf_{n\to \infty } x_n =-\infty;\varlimsup_{n\to \infty } =+\infty .$$</p>
+<p>$110$.$x_n =\dfrac{1}{n-10.2} $.</p>
+<p>解$\quad $当$n$由$1$到$10$时，$x_n $由负数往下降；当$n$由$11$到$+\infty $时，$x_n $由正数往下降，所以，</p>
+<p>$$\inf{\lbrace x_n \rbrace } =x_{10} =-5;\sup{\lbrace x_n \rbrace } =x_{11} =-1.25 ;\varliminf_{n\to \infty } x_n =0;\varlimsup_{n\to \infty } =0.$$</p>
+<p>求$\varliminf_{n\to \infty } x_n $及$\varlimsup_{n\to \infty } x_n \colon $</p>
+<p>$111$.$x_n =\dfrac{n^2}{1+n^2} \cos{\dfrac{2n\pi }{3}} $.</p>
+<p>解$\quad \varliminf_{n\to \infty } x_n =-\dfrac12 ;\varlimsup_{n\to \infty } =1$.</p>
+<p>$112$.$x_n =\left( 1+\dfrac{1}{n} \right)^n \cdot (-1)^n +\sin{\dfrac{n\pi }{4} } $.</p>
+<p>解$\quad $注意到$\left\vert \left( 1+\dfrac{1}{n} \right)^n \cdot (-1)^n \right\vert =\left( 1+\dfrac{1}{n} \right)^n \geqslant 2 &gt; \left\vert \sin{\dfrac{n\pi }{4}} \right\vert $，$x_n$的符号由它的第一个项确定，即知$\lbrace x_{2n-1} \rbrace $恒负，$\lbrace x_{2n} \rbrace $恒正.</p>
+<p>这时下极限$\varliminf_{n\to \infty } x_n $可在$\lbrace x_{2n-1} \rbrace $中取得.由于$\left( 1+\dfrac{1}{2n-1} \right)^{2n-1} \cdot (-1) \to -e$，而$\sin{\dfrac{2n-1}{4} \pi }$可分为$4$个收敛子列，它们分别趋于$\dfrac{\sqrt{2}}{2} $，$\dfrac{\sqrt{2}}{2} $，$-\dfrac{\sqrt{2}}{2} $，$-\dfrac{\sqrt{2}}{2} $，因此由命题$1.2$可知$\varliminf_{n\to \infty } x_n =-\dfrac{\sqrt{2}}{2}$.</p>
+<p>类似地得到$\varlimsup_{n\to \infty } x_n =e+1$.</p>
+<p>$113$.$x_n =\dfrac{n}{n+1} \sin{}^2 \dfrac{n\pi }{4}$.</p>
+<p>解$\quad \varliminf_{n\to \infty } x_n =0 ;\varlimsup_{n\to \infty } =1$.</p>
+<p>$114$.$x_n =\sqrt[n]{1+2^{n(-1)^n}} $.</p>
+<p>解$\quad \varliminf_{n\to \infty } x_n =1 ;\varlimsup_{n\to \infty } =2$.</p>
+<p>$115$.$x_n =\cos{}^n \dfrac{2n\pi }{3}$.</p>
+<p>解$\quad \varliminf_{n\to \infty } x_n =0 ;\varlimsup_{n\to \infty } =1$.</p>
+<p>命题$1.3\quad $数$a$是数列$\lbrace x_n \rbrace $的聚点的充分必要条件是：在$a$的每一邻域中含有该数列中的无限多项.</p>
+<p>证$\quad $分两部分来证明.</p>
+<p>必要性$\quad $若$a$是$\lbrace x_n \rbrace $的聚点，则在该数列中有一个收敛子列$\lbrace x_{p_n} \rbrace $以$a$为极限.因此对每个$\varepsilon &gt; 0$，存在$N$，当$n &gt; N$时就有$x_{p_n} \in (a-\varepsilon ,a+\varepsilon )$，于是在邻域$O_{\varepsilon } (a)$中就含有数列$\lbrace x_n \rbrace $中的无限多项.</p>
+<p>充分性$\quad $只要找到$\lbrace x_n \rbrace $的一个收敛子列以$a$为极限即可.由于邻域$O_1 (a)$中有数列$\lbrace x_n \rbrace $中的无限多项，因此可在邻域中取到某一项，记为$x_{p_1} $.</p>
+<p>然后在$O_{\frac12 } (a)$中又有$\lbrace x_n \rbrace $中的无限多项，因此也可在该邻域中取到某一项，记为$x_{p_2}$，而且总可以使得$p_2 &gt; p_1 $.</p>
+<p>如上面那样继续下去，用数学归纳法就可以得到一个子列$\lbrace x_{p_n} \rbrace $，它满足$\vert x_{p_n} -a\vert &lt; \dfrac{1}{n} $，可见该子列收敛于$a$.</p>
+<p>推论$\quad $设数列$\lbrace a_n \rbrace $中的每一项都是数列$\lbrace x_n \rbrace $的聚点，则$\lbrace a_n \rbrace $的聚点也是$\lbrace x_n \rbrace $的聚点.</p>
+<p>求以下各数列的子列极限：</p>
+<p>$116$.$\dfrac{1}{2} ,\dfrac{1}{2} ,\dfrac{1}{4} ,\dfrac{3}{4} ,\dfrac{1}{8} ,\dfrac{7}{8} ,\cdots ,\dfrac{1}{2^n} ,\dfrac{2^n-1}{2^n} ,\cdots $.  </p>
+<p>解$\quad $聚点为$0$及$1$.</p>
+<p>$117$.$1,\dfrac{1}{2} ,1+\dfrac{1}{2} ,\dfrac{1}{3} ,1+\dfrac{1}{3} ,\dfrac{1}{2} +\dfrac{1}{3} ,\dfrac{1}{4} ,1+\dfrac{1}{4} ,\dfrac{1}{2} +\dfrac{1}{4} ,\dfrac{1}{3} +\dfrac{1}{4} ,\dfrac{1}{5} ,\cdots $,$\dfrac{1}{n} ,1+\dfrac{1}{n} ,\dfrac{1}{2} +\dfrac{1}{n} ,\cdots ,\dfrac{1}{n-1} +\dfrac{1}{n} ,\dfrac{1}{n+1} ,\cdots $.  </p>
+<p>解$\quad $聚点为$0,1,\dfrac12 ,\dfrac13 ,\cdots $.它们分别为子数列：$\left\lbrace \dfrac{1}{n} \right\rbrace $，$\left\lbrace 1+\dfrac{1}{n} \right\rbrace $，$\left\lbrace \dfrac12 +\dfrac{1}{n} \right\rbrace $，$\left\lbrace \dfrac13 +\dfrac{1}{n} \right\rbrace $，$\cdots $的极限.</p>
+<p>$118$.$\dfrac{1}{2} ,\dfrac{1}{3} ,\dfrac{2}{3} ,\dfrac{1}{4} ,\dfrac{2}{4} ,\dfrac{3}{4} ,\dfrac{1}{5} ,\dfrac{2}{5} ,\dfrac{3}{5} ,\dfrac{4}{5} ,\cdots $.</p>
+<p>解$\quad $观察这个数列的结构可见它实际上是由所有真分数组成的数列.从下面的证明可以看出它们的排列次序实际上是没有关系的.</p>
+<p>任取点$a\in [0,1]$，又任取它的一个邻域$O_{\varepsilon } (a)$.利用分母为$k$的$k-1$个真分数都在$(0,1)$内，相邻两个数的距离为$\dfrac{1}{k}$，因此在$O_{\varepsilon } (a)$中一定含有分母$k$充分大的真分数，即原数列的无限多项.具体来说，只要$k &gt; \dfrac{1}{2\varepsilon } $，就必定有一个分母为$k$的真分数落在邻域$O_{\varepsilon } (a)$中.用命题$1.3$就知道$a$是聚点.于是已经证明$[0,1]$中的点都是该数列的聚点.</p>
+<p>对于任意的数$b\notin [0,1]$，一定可以取$\delta &gt; 0$充分小，使得$O_{\delta } (b)$与$[0,1]$不相交.由此可见$b$不是$\lbrace x_n \rbrace $的聚点.</p>
+<p>$119$.$x_n =3\left( 1-\dfrac{1}{n} \right) +2(-1)^n$.</p>
+<p>解$\quad $因为$2(-1)^n $为$2$或$-2$.所以，聚点为$5$及$1$.</p>
+<p>$120$.$x_n =\dfrac{1}{2} [(a+b)+(-1)^n (a-b)]$.</p>
+<p>解$\quad $聚点为$a$及$b$.</p>
+<p>$121$.试举出以给定数</p>
+<p>$$a_1 ,a_2 ,\cdots ,a_p $$</p>
+<p>作为子列极限的数列的例子.</p>
+<p>解$\quad $数列</p>
+<p>$$a_1 -\dfrac12 ,a_2 -\dfrac12 ,\cdots ,a_p -\dfrac12 ,a_1 -\dfrac13 ,a_2 -\dfrac13 ,\cdots ,a_p -\dfrac13 ,\cdots ,a_1 -\dfrac1n ,a_2 -\dfrac1n ,\cdots ,a_p -\dfrac1n ,\cdots $$</p>
+<p>显然以$a_1 ,a_2 ,\cdots ,a_p $为聚点.</p>
+<p>$122$.试举出以给定数列</p>
+<p>$$a_1 ,a_2 ,\cdots ,a_n ,\cdots $$</p>
+<p>的所有各项作为子列极限的例子.所举数列必定还有怎样的子列极限？</p>
+<p>解$\quad $例如，数列</p>
+<p>$$a_1 +\dfrac12 ,a_2 +\dfrac12 ,a_1 +\dfrac13 ,a_2 +\dfrac13 ,a_3 +\dfrac13 ,a_1 +\dfrac14 ,a_2 +\dfrac14 ,a_3 +\dfrac14 ,a_4 +\dfrac14 ,\cdots ,$$</p>
+<p>$$a_1 +\dfrac1n ,a_2 +\dfrac1n ,a_3 +\dfrac1n ,\cdots ,a_n +\dfrac1n ,\cdots $$</p>
+<p>就以$a_1 ,a_2 ,a_3 ,\cdots ,a_n ,\cdots $为其聚点.</p>
+<p>此外，很明显，若$\lbrace x_n \rbrace $为一数列，使已知数列$\lbrace a_n \rbrace $的各项$a_1 ,a_2 ,a_3 ,\cdots $皆为$\lbrace x_n \rbrace $的聚点，则已知数列$\lbrace a_n \rbrace $本身的聚点也必为数列$\lbrace x_n \rbrace $的聚点.</p>
+<p>$123$.举出数列的例子：</p>
+<p>$(a)$没有极限的子列极限；</p>
+<p>$(b)$有唯一有限的子列极限，但不收敛；</p>
+<p>$(c)$有无穷多的子列极限；</p>
+<p>$(d)$以每一实数作为子列极限.</p>
+<p>解$\quad (a)$数列$x_n =n(n=1,2,\cdots )$没有极限的子列极限.</p>
+<p>$(b)$数列：$1,-1,\dfrac12 ,-2,\dfrac13 ,-3,\cdots ,\dfrac{1}{n} ,-n,\cdots $有唯一的有限的子列极限，但此数列却不收敛.</p>
+<p>$(c)$习题$118$的数列即有无穷多的子列极限.</p>
+<p>$(d)$我们按下述“对角线法则”来构造一个数列，使每一元素后面跟一个相应的负数，排列顺次如图$1.1$.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/2-1.png" alt=""></center>
+
+<p>$$x_1 =1,x_2 =-1,x_3 =\dfrac12 ,x_4 =-\dfrac12 ,x_5 =2,x_6 =-2,$$</p>
+<p>$$x_7 =3,x_8 =-3 ,x_9 =\dfrac22 ,x_{10} =-\dfrac22 ,x_{11} =\dfrac13 ,x_{12} =-\dfrac13 ,\cdots .$$</p>
+<p>此数列以每一实数作为其聚点，即聚点的集合为$(-\infty ,+\infty )$.</p>
+<p>$124$.证明：数列$x_n $和$y_n =x_n \sqrt[n]{n}(n=1,2,\cdots )$有相同的子列极限.</p>
+<p>证$\quad $因为$\sqrt[n]{n} \to 1$，所以，数列$\lbrace x_n \rbrace $的子数列$\lbrace x_{n_k} \rbrace $与$\lbrace y_n \rbrace $的对应子数列$\lbrace x_{n_k} \sqrt[n_k]{n_k} \rbrace $同时收敛，且具有相同的极限，此即数列$\lbrace x_n \rbrace $和$\lbrace y_n \rbrace $有相同的聚点.</p>
+<p>$125$.证明：从有界数列$x_n (n=1,2,\cdots )$中总可选出收敛子数列$x_{p_n} (n=1,2,\cdots )$.</p>
+<p>注$\quad $对于习题$125$的内容，有人将它描述为“从混乱中找出了秩序”，因为数列的有界性只告诉我们它落在一个有限区间内，其他什么也不知道.一旦找到一个收敛子列后，则就提供了一个聚点.</p>
+<p>证$\quad $因为数列$\lbrace x_n \rbrace $有界，故可设一切项满足不等式</p>
+<p>$$a\leqslant x_n \leqslant b,$$</p>
+<p>其中$a,b$为有限的实数，将区间$[a,b]$二等分之，得区间$\left[ a,\dfrac{a+b}{2} \right] $，$\left[ \dfrac{a+b}{2} ,b\right] $，其中必至少有一个包含所给数列的无限多项，将它记为$[a_1 ,b_1 ]$（若两者均含无穷多项，则任取其一作为$[a_1 ,b_1 ]$）.再将区间$[a_1 ,b_1 ]$等分之，又可得区间$[a_2 ,b_2 ]\subset [a_1 ,b_1 ]$，它包含所给数列的无限多项.依次类推，于是得一串区间：</p>
+<p>$$[a_1 ,b_1 ]\supset [a_2 ,b_2 ]\supset \cdots \supset [a_n ,b_n ]\supset \cdots ,$$</p>
+<p>其中每一$[a_n ,b_n ]$都包含所给数列$\lbrace x_n \rbrace $中的无限多项，且有</p>
+<p>$$b_n -a_n =\dfrac{b-a}{2^n} \to 0\quad (n\to \infty ),$$</p>
+<p>因此，根据区间套定理诸$[a_n ,b_n ]$具有唯一的公式点$c$，且</p>
+<p>$$\lim_{n\to \infty } a_n =\lim_{n\to \infty } b_n =c.$$</p>
+<p>现按下法选出$\lbrace x_n \rbrace $的一个子数列$\lbrace x_{p_k} \rbrace \colon $在包含于$[a_1 ,b_1 ]$内的诸$x_n $中任取一个作为$x_{p_1}$.然后，在包含于$[a_2 ,b_2 ]$内且在$x_{p_1}$后面的诸$x_n $中任取一个作为$x_{p_2}$，然后，又在包含于$[a_3 ,b_3 ]$内且在$x_{p_2}$后面的诸$x_n $中任取一个作为$x_{p_3}$.余类推（这是可能的，因为每个$[a_k ,b_k ]$中都包含有$x_n $无穷多项）.于是，我们得出$\lbrace x_n \rbrace $的一个子数列$\lbrace x_{p_k} \rbrace $，满足</p>
+<p>$$a_k \leqslant x_{p_k} \leqslant b_k \quad (k=1,2,\cdots ).$$</p>
+<p>由此，知$\vert x_{p_k} -c\vert \leqslant b_k -a_k (k=1,2,\cdots )$，故$\displaystyle \lim_{k\to \infty } x_{p_k} =c$.从而，$\lbrace x_{p_k} \rbrace $是$\lbrace x_n \rbrace $的一个收敛子数列.</p>
+<p>$126$.证明：若数列$x_n (n=1,2,\cdots )$无界，则存在子数列$x_{p_n} (n=1,2,\cdots )$，使得</p>
+<p>$$\lim_{n\to \infty } x_{p_n} =\infty .$$</p>
+<p>证$\quad $因$x_n (n=1,2,\cdots )$无界，故存在某项$x_{p_1} $满足$\vert x_{p_1} \vert &gt; 1$.由于数列$x_n (n=p_1 +1 ,p_1 +2 ,\cdots )$也无界，故又存在某项$x_{p_2} (p_2 &gt; p_1 )$，使$\vert x_{p_2} \vert &gt; 2$；又由于数列$x_n (n=p_2 +1 ,p_2 +2 ,\cdots )$无界，故又存在某项$x_{p_3} (p_3 &gt; p_2 )$，使$\vert x_{p_3} \vert &gt; 3$.余类推.于是，我们得$\lbrace x_n \rbrace $的一个子数列$\lbrace x_{p_k} \rbrace $，满足</p>
+<p>$$\vert x_{p_k } \vert &gt; k\quad (k=1,2,\cdots ).$$</p>
+<p>由此可知$\displaystyle \lim_{k\to \infty } x_{p_k} =\infty $.</p>
+<p>$127$.设数列$x_n (n=1,2,\cdots )$收敛，而数列$y_n (n=1,2,\cdots )$发散，则关于数列$(a)x_n +y_n $；$(b)x_n y_n $的收敛性有何结论？举出相应的例子.</p>
+<p>解$\quad (a)\lbrace x_n +y_n \rbrace $一定发散.如果$\lbrace x_n +y_n \rbrace $收敛，则由$(x_n +y_n )-x_n =y_n $，知$\lbrace y_n \rbrace $收敛，与题设矛盾.</p>
+<p>$(b)$数列$\lbrace x_n y_n \rbrace $可能收敛，也可能发散.例如：</p>
+<p>数列$x_n =\dfrac{1}{n} (n=1,2,\cdots )$收敛，数列$y_n =n(n=1,2,\cdots )$发散，而数列$x_n y_n =1(n=1,2,\cdots )$是收敛的.</p>
+<p>数列$x_n =\dfrac{1}{n} (n=1,2,\cdots )$收敛，数列$y_n =n^2(n=1,2,\cdots )$发散，而数列$x_n y_n =n(n=1,2,\cdots )$却是发散的.</p>
+<p>$128$.设数列$x_n $和$y_n $发散$(n=1,2,\cdots )$.可否断定数列$(a)x_n +y_n $；$(b)x_n y_n $也发散？</p>
+<p>解$\quad $不能.例如，数列</p>
+<p>$$x_n =\dfrac{1+(-1)^n}{2} $$</p>
+<p>及</p>
+<p>$$y_n =\dfrac{1-(-1)^n}{2} (n=1,2,\cdots )$$</p>
+<p>都发散，但数列</p>
+<p>$$x_n +y_n =1(n=1,2,\cdots )$$</p>
+<p>及</p>
+<p>$$x_n y_n =0(n=1,2,\cdots )$$</p>
+<p>却都是收敛的.</p>
+<p>$129$.设$\displaystyle \lim_{n\to \infty } x_n =0$，$y_n (n=1,2,\cdots )$为任意数列.能否断定</p>
+<p>$$\lim_{n\to \infty } x_n y_n =0?$$</p>
+<p>举出相应的例子.</p>
+<p>解$\quad $不能.例如，数列</p>
+<p>$$x_n =\dfrac{1}{n} \quad (n\to \infty )$$</p>
+<p>及</p>
+<p>$$y_n =n\quad (n=1,2,\cdots )$$</p>
+<p>的乘积$x_n y_n =1(n=1,2,\cdots )$，当$n\to \infty $时趋于$1$，不趋于$0$.</p>
+<p>$130$.设$\displaystyle \lim_{n\to \infty } x_n y_n =0$，是否由此可知：或者$\displaystyle \lim_{n\to \infty } x_n =0$，或者$\displaystyle \lim_{n\to \infty } y_n =0$？考虑例子：</p>
+<p>$$x_n =\dfrac{1+(-1)^n}{2} ,y_n =\dfrac{1-(-1)^n}{2} \quad (n=1,2,\cdots ).$$</p>
+<p>解$\quad $不能.例如，数列</p>
+<p>$$x_n =\dfrac{1+(-1)^n}{2} $$</p>
+<p>及</p>
+<p>$$y_n =\dfrac{1-(-1)^n}{2} \quad (n=1,2,\cdots ),$$</p>
+<p>则有$\displaystyle \lim_{n\to \infty } x_n y_n =0$，但$\displaystyle \lim_{n\to \infty } x_n $及$\displaystyle \lim_{n\to \infty } y_n $均不存在.</p>
+<p>当然，还可举例$x_n =\dfrac{1}{n^2} $，$y_n =n(n=1,2,\cdots )$，则$x_n y_n \to 0$，$x_n \to 0$，而$\lbrace y_n \rbrace $极限不存在（当$n\to \infty $）.</p>
+<p>注意，假若已知$x_n y_n \to 0$，而又已知$\lbrace x_n \rbrace$，$\lbrace y_n \rbrace $中至少有一个数列有极限的话，则：$\displaystyle \lim_{n\to \infty } x_n =0$或$\displaystyle \lim_{n\to \infty } y_n =0$至少有一个是成立的.</p>
+<p>$131$.证明：</p>
+<p>$$(a)\varliminf_{n\to \infty } x_n +\varliminf_{n\to \infty } y_n \leqslant \varliminf_{n\to \infty } (x_n +y_n )\leqslant \varliminf_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n ;$$</p>
+<p>$$(b)\varliminf_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n \leqslant \varlimsup_{n\to \infty } (x_n +y_n )\leqslant \varlimsup_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n .$$</p>
+<p>举出在这些关系式中严格不等式成立的例子.</p>
+<p>证$\quad (a)$左边和右边的和有意义就是不允许出现两个极限为异号无穷大的情况.</p>
+<p>$(1)$先证明左边的不等式$\varliminf_{n\to \infty } x_n +\varliminf_{n\to \infty } y_n \leqslant \varliminf_{n\to \infty } (x_n +y_n )$.</p>
+<p>先看式$\varliminf_{n\to \infty } x_n $为无穷大的两种情况.</p>
+<p>$(1.1)$若$\varliminf_{n\to \infty } x_n =-\infty $，则另一项不允许是$+\infty $，因此不等式左边为$-\infty $.这时无论右边如何，这个不等式总是成立的.</p>
+<p>若有$\varliminf_{n\to \infty } x_n =+\infty $，则就是$x_n \to +\infty $.这时不允许$\varliminf_{n\to \infty } y_n =-\infty $.这表明数列$\lbrace y_n \rbrace $下方有界，于是$\lbrace x_n +y_n \rbrace $仍为正无穷大量，即是有$ \varliminf_{n\to \infty } (x_n +y_n ) =\displaystyle \lim_{n\to \infty } (x_n +y_n )=+\infty $.于是不等式两边都等于$+\infty $.</p>
+<p>由于对称性，对$\varliminf_{n\to \infty } y_n$为$-\infty $和$+\infty $的两种情况的讨论是相同的，不再重复.</p>
+<p>$(1.2)$余下的情况是$A=\varliminf_{n\to \infty } x_n $和$B=\varliminf_{n\to \infty } y_n $都是有限实数的情况.这表明数列$\lbrace x_n \rbrace $和$\lbrace y_n \rbrace $都是下方有界，且都不是正无穷大量.</p>
+<p>若有$ \varliminf_{n\to \infty } (x_n +y_n ) =+\infty $，则不等式已经成立.否则数列$\lbrace x_n +y_n \rbrace $存在正常收敛的子列$\lbrace x_{p_n} +y_{p_n} \rbrace $，使得</p>
+<p>$$\lim_{n\to \infty } (x_{p_n} +y_{p_n} )=\varliminf_{n\to \infty } (x_n +y_n ) &lt; +\infty .$$</p>
+<p>由此可以看出$\lbrace x_{p_n} \rbrace $和$\lbrace y_{p_n} \rbrace $除了下方有界外，同时还都是上方有界的.否则$\lbrace x_{p_n} +y_{p_n} \rbrace $无上界，上式左边的极限就是正无穷大了.</p>
+<p>应用习题$125$于有界数列$\lbrace x_{p_n} \rbrace $，可见它有收敛子列.由于这个子列仍然是$\lbrace x_n \rbrace $的子列，因此不妨设$\lbrace x_{p_n} \rbrace $就已经是这个收敛子列了.由于此时的$\lbrace x_{p_n} +y_{p_n} \rbrace $收敛，于是可推出$\lbrace y_{p_n} \rbrace $也收敛.</p>
+<p>利用$\varliminf_{n\to \infty } x_n \leqslant \displaystyle \lim_{n \to \infty } x_{p_n} $，$\varliminf_{n\to \infty } y_n \leqslant \displaystyle \lim_{n \to \infty } y_{p_n} $，因此就得到所要求证的不等式：</p>
+<p>$$\varliminf_{n\to \infty } x_n +\varliminf_{n\to \infty } y_n \leqslant \lim_{n \to \infty } x_{p_n} +\lim_{n \to \infty } y_{p_n} =\lim_{n \to \infty } (x_{p_n} +y_{p_n} )=\varliminf_{n\to \infty } (x_n +y_n ).$$</p>
+<p>$(2)$现在证明右边的不等式$\varliminf_{n\to \infty } (x_n +y_n )\leqslant \varliminf_{n\to \infty } x_n+\varlimsup_{n\to \infty } y_n $.</p>
+<p>一种方法是模仿$(1)$中的证明（模仿法），另一种方法是将问题归结为$(1)$（归结法）.下面用第二种方法.</p>
+<p>根据上下极限定义可以推出$\varlimsup_{n\to \infty } y_n =-\varliminf_{n\to \infty } (-y_n )$.</p>
+<p>先从$(1)$中的不等式得到</p>
+<p>$$\varliminf_{n\to \infty } (-y_n) +\varliminf_{n\to \infty } (x_n +y_n )\leqslant \varliminf_{n\to \infty } [-y_n +(x_n +y_n )] =\varliminf_{n\to \infty } x_n ,$$</p>
+<p>然后将左边的第一项移到右边变成上极限，这样就得到所要求证的不等式.</p>
+<p>$(b)$左边和右边的和有意义就是不允许出现两个极限为异号无穷大的情况.</p>
+<p>$(1)$先证明右边的不等式$\varlimsup_{n\to \infty } (x_n +y_n ) \leqslant \varlimsup_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n $.</p>
+<p>先看式$\varlimsup_{n\to \infty } x_n $为无穷大的两种情况.</p>
+<p>$(1.1)$若$\varlimsup_{n\to \infty } x_n =+\infty $，则另一项不允许是$-\infty $，因此不等式右边为$+\infty $.这时无论右边如何，这个不等式总是成立的.</p>
+<p>若有$\varliminf_{n\to \infty } x_n =-\infty $，则就是$x_n \to -\infty $.这时不允许$\varliminf_{n\to \infty } y_n =+\infty $.这表明数列$\lbrace y_n \rbrace $上方有界，于是$\lbrace x_n +y_n \rbrace $仍为负无穷大量，即是有$ \varlimsup_{n\to \infty } (x_n +y_n ) =\displaystyle \lim_{n\to \infty } (x_n +y_n )=-\infty $.于是不等式两边都等于$-\infty $.</p>
+<p>由于对称性，对$\varlimsup_{n\to \infty } y_n$为$-\infty $和$+\infty $的两种情况的讨论是相同的，不再重复.</p>
+<p>$(1.2)$余下的情况是$A’=\varlimsup_{n\to \infty } x_n $和$B’=\varlimsup_{n\to \infty } y_n $都是有限实数的情况.这表明数列$\lbrace x_n \rbrace $和$\lbrace y_n \rbrace $都是上方有界，且都不是负无穷大量.</p>
+<p>若有$ \varlimsup_{n\to \infty } (x_n +y_n ) =-\infty $，则不等式已经成立.否则数列$\lbrace x_n +y_n \rbrace $存在正常收敛的子列$\lbrace x_{p_n} +y_{p_n} \rbrace $，使得</p>
+<p>$$\lim_{n\to \infty } (x_{p_n} +y_{p_n} )=\varlimsup_{n\to \infty } (x_n +y_n ) &gt; -\infty .$$</p>
+<p>由此可以看出$\lbrace x_{p_n} \rbrace $和$\lbrace y_{p_n} \rbrace $除了上方有界外，同时还都是下方有界的.否则$\lbrace x_{p_n} +y_{p_n} \rbrace $无下界，上式右边的极限就是负无穷大了.</p>
+<p>应用习题$125$于有界数列$\lbrace x_{p_n} \rbrace $，可见它有收敛子列.由于这个子列仍然是$\lbrace x_n \rbrace $的子列，因此不妨设$\lbrace x_{p_n} \rbrace $就已经是这个收敛子列了.由于此时的$\lbrace x_{p_n} +y_{p_n} \rbrace $收敛，于是可推出$\lbrace y_{p_n} \rbrace $也收敛.</p>
+<p>利用$\varlimsup_{n\to \infty } x_n \geqslant \displaystyle \lim_{n \to \infty } x_{p_n} $，$\varlimsup_{n\to \infty } y_n \geqslant \displaystyle \lim_{n \to \infty } y_{p_n} $，因此就得到所要求证的不等式：</p>
+<p>$$\varlimsup_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n \geqslant \lim_{n \to \infty } x_{p_n} +\lim_{n \to \infty } y_{p_n} =\lim_{n \to \infty } (x_{p_n} +y_{p_n} )=\varlimsup_{n\to \infty } (x_n +y_n ).$$</p>
+<p>$(2)$现在证明左边的不等式$\varliminf_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n \leqslant \varlimsup_{n\to \infty } (x_n +y_n )$.</p>
+<p>一种方法是模仿$(1)$中的证明（模仿法），另一种方法是将问题归结为$(1)$（归结法）.下面用第二种方法.</p>
+<p>根据上下极限定义可以推出$\varliminf_{n\to \infty } x_n =-\varlimsup_{n\to \infty } (-x_n )$.</p>
+<p>先从$(1)$中的不等式得到</p>
+<p>$$\varlimsup_{n\to \infty } (-x_n) +\varlimsup_{n\to \infty } (x_n +y_n )\geqslant \varlimsup_{n\to \infty } [-x_n +(x_n +y_n )] =\varlimsup_{n\to \infty } y_n ,$$</p>
+<p>然后将左边的第一项移到右边变成下极限，这样就得到所要求证的不等式.</p>
+<p>例子$\quad $取$\lbrace x_n \rbrace $为$0,1,0,1,\cdots $，$\lbrace y_n \rbrace $为$2,0,2,0,\cdots $，则$\lbrace x_n +y_n \rbrace $为$2,1,2,1,\cdots $.于是就有</p>
+<p>$$\varliminf_{n\to \infty } x_n =0,\varliminf_{n\to \infty } y_n =0,\varliminf_{n\to \infty } (x_n +y_n ) =1,\varlimsup_{n\to \infty } y_n =2.$$</p>
+<p>与之对应的不等式就是$0 &lt; 1 &lt; 2$，即都是以严格的不等号成立的不等式$(a)$.</p>
+<p>取$\lbrace x_n \rbrace $为$0,2,0,2,\cdots $，$\lbrace y_n \rbrace $为$1,0,1,0,\cdots $，则$\lbrace x_n +y_n \rbrace $为$1,2,1,2,\cdots $.于是就有</p>
+<p>$$\varlimsup_{n\to \infty } x_n =2,\varlimsup_{n\to \infty } y_n =1,\varlimsup_{n\to \infty } (x_n +y_n ) =2,\varliminf_{n\to \infty } x_n =0.$$</p>
+<p>与之对应的不等式就是$1 &lt; 2 &lt; 3$，即都是以严格的不等号成立的不等式$(b)$.</p>
+<p>$132$.设$x_n \geqslant 0$且$y_n \geqslant 0(n=1,2,\cdots )$，证明：</p>
+<p>$$(a)\varliminf_{n\to \infty } x_n \cdot \varliminf_{n\to \infty } y_n \leqslant \varliminf_{n\to \infty } (x_n y_n )\leqslant \varliminf_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n ;$$</p>
+<p>$$(b)\varliminf_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n \leqslant \varlimsup_{n\to \infty } (x_n y_n )\leqslant \varlimsup_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n .$$</p>
+<p>举出在这些关系式中严格不等式成立的例子.</p>
+<p>证$\quad (a)$在下面的证明中两个数列都是非负的条件是重要的.此外，左边和右边的极限的乘积有意义就是不允许出现$0\cdot \infty $.</p>
+<p>$(1)$先证明左边的不等式$\varliminf_{n\to \infty } x_n \cdot \varliminf_{n\to \infty } y_n \leqslant \varliminf_{n\to \infty } (x_n y_n )$.</p>
+<p>$(1.1)$先看$\varliminf_{n\to \infty } x_n $为$0$和$+\infty $的两种情况.若它为$0$，则另一个因子不允许是$+\infty $，因此不等式左边为$0$，而右边非负，这总是成立.</p>
+<p>若有$\varliminf_{n\to \infty } x_n =+\infty $，则就是$x_n \to +\infty $.这时不允许$\varliminf_{n\to \infty } y_n =0 $.这表明至少从某项起$y_n $有正下界.具体来说，即存在$\varepsilon_0 &gt; 0$和$N$，使得当$n &gt; N$时有$y_n &gt; \varepsilon_0 &gt; 0$.这样就有$\varliminf_{n\to \infty } (x_n y_n ) =\displaystyle \lim_{n\to \infty } (x_n y_n )=+\infty $.于是不等式两边相等，即都是$+\infty $.</p>
+<p>由于对称性，对$\varliminf_{n\to \infty } y_n $为$0$和$+\infty $的两种情况的讨论是相同的，不再重复.</p>
+<p>$(1.2)$余下的情况是从$0 &lt; A =\varliminf_{n\to \infty } x_n &lt; +\infty $，$0 &lt; B =\varliminf_{n\to \infty } y_n &lt; +\infty $.这表明数列$\lbrace x_n \rbrace $和$\lbrace y_n \rbrace $（至少从某项开始）都有正下界，且都不是正无穷大量.</p>
+<p>若有$\varliminf_{n\to \infty } (x_n y_n )=+\infty $，则不等式已经成立.否则数列$\lbrace x_n y_n \rbrace $存在正常收敛的子列$\lbrace x_{p_n} y_{p_n} \rbrace $使得</p>
+<p>$$\lim_{n\to \infty } (x_{p_n} y_{p_n} ) =\varliminf_{n\to \infty } (x_{p_n} y_{p_n} ) &lt; +\infty .$$</p>
+<p>由此可以看出$\lbrace x_{p_n} \rbrace $和$\lbrace y_{p_n} \rbrace $除了有正下界之外，同时还都是上方有界的.否则上式左边的极限就是正无穷大了.</p>
+<p>应用习题$125$于有正下界的有界数列$\lbrace x_{p_n} \rbrace $，可见它必有极限大于$0$的收敛子列.由于这个子列仍然是$\lbrace x_n \rbrace $的子列，因此不妨设$\lbrace x_{p_n} \rbrace $就已经是这个子列.由于其极限大于$0$，而子列$\lbrace x_{p_n} y_{p_n} \rbrace $收敛，于是可推出$\lbrace y_{p_n} \rbrace $也收敛，其极限也大于$0$.</p>
+<p>利用$0\leqslant \varliminf_{n\to \infty } x_n \leqslant \displaystyle  \lim_{n\to \infty } x_{p_n} $，$0\leqslant \varliminf_{n\to \infty } y_n \leqslant \displaystyle  \lim_{n\to \infty } y_{p_n} $，就得到所要求证的不等式：</p>
+<p>$$\varliminf_{n\to \infty } x_n \cdot \varliminf_{n\to \infty } y_n \leqslant \lim_{n\to \infty } x_{p_n} \cdot \lim_{n\to \infty } y_{p_n} =\lim_{n\to \infty } (x_{p_n} y_{p_n} )=\varliminf_{n\to \infty } (x_{p_n} y_{p_n} ).$$</p>
+<p>$(2)$现在证明右边的不等式$\varliminf_{n\to \infty } (x_n y_n )\leqslant \varliminf_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n $.与习题$131(a)$的证明$(2)$相同，用归结法来做.</p>
+<p>若非负数列$\lbrace y_n \rbrace $有无穷多项$0$，则就有$\varliminf_{n\to \infty} (x_n y_n )=0$，不等式成立.否则，就存在$N$，使得当$n &gt; N$时$y_n &gt; 0$.这时根据上下极限定义可以推出</p>
+<p>$$\varlimsup_{n\to \infty } y_n =\dfrac{1}{\varliminf_{n\to \infty } \dfrac{1}{y_n}} .$$</p>
+<p>先用$(1)$中的不等式得到</p>
+<p>$$\varliminf_{n\to \infty } \dfrac{1}{y_n} \cdot \varliminf_{n\to \infty} (x_n y_n ) \leqslant \varliminf_{n\to \infty} [\dfrac{1}{y_n} \cdot (x_n y_n )] =\varliminf_{n\to \infty } x_n ,$$</p>
+<p>然后将左边的第一个因子除到右边变为上极限，这样就得到所要求证的不等式.</p>
+<p>$(b)$在下面的证明中两个数列都是非负的条件是重要的.此外，左边和右边的极限的乘积有意义就是不允许出现$0\cdot \infty $.</p>
+<p>$(1)$先证明右边的不等式$\varlimsup_{n\to \infty } (x_n y_n ) \leqslant \varlimsup_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n $.</p>
+<p>$(1.1)$先看$\varlimsup_{n\to \infty } x_n $为$0$和$+\infty $的两种情况.若它为$0$，则另一个因子不允许是$+\infty $，因此不等式右边为$0$，而右边因非负数列$\lbrace x_n \rbrace $有无穷多项$0$，则就有$\varliminf_{n\to \infty} (x_n y_n )=0$，这总是成立.</p>
+<p>若有$\varlimsup_{n\to \infty } x_n =+\infty $，则就是$x_n \to +\infty $.这时不允许$\varlimsup_{n\to \infty } y_n =0 $.这表明至少从某项起$y_n $有正上界.具体来说，即存在$\varepsilon_0 &gt; 0$和$N$，使得当$n &gt; N$时有$y_n &gt; \varepsilon_0 &gt; 0$.这样就有$\varlimsup_{n\to \infty } (x_n y_n ) =\displaystyle \lim_{n\to \infty } (x_n y_n )=+\infty $.于是不等式两边相等，即都是$+\infty $.</p>
+<p>由于对称性，对$\varlimsup_{n\to \infty } y_n $为$0$和$+\infty $的两种情况的讨论是相同的，不再重复.</p>
+<p>$(1.2)$余下的情况是从$0 &lt; A’ =\varlimsup_{n\to \infty } x_n &lt; +\infty $，$0 &lt; B’ =\varlimsup_{n\to \infty } y_n &lt; +\infty $.这表明数列$\lbrace x_n \rbrace $和$\lbrace y_n \rbrace $（至少从某项开始）都有正上界，且都不是负无穷大量.</p>
+<p>若有$\varlimsup_{n\to \infty } (x_n y_n )=-\infty $，则不等式已经成立.否则数列$\lbrace x_n y_n \rbrace $存在正常收敛的子列$\lbrace x_{p_n} y_{p_n} \rbrace $使得</p>
+<p>$$\lim_{n\to \infty } (x_{p_n} y_{p_n} ) =\varlimsup_{n\to \infty } (x_{p_n} y_{p_n} ) &gt; -\infty .$$</p>
+<p>由此可以看出$\lbrace x_{p_n} \rbrace $和$\lbrace y_{p_n} \rbrace $除了有正上界之外，同时还都是下方有界的.否则上式右边的极限就是负无穷大了.</p>
+<p>应用习题$125$于有正上界的有界数列$\lbrace x_{p_n} \rbrace $，可见它必有极限大于$0$的收敛子列.由于这个子列仍然是$\lbrace x_n \rbrace $的子列，因此不妨设$\lbrace x_{p_n} \rbrace $就已经是这个子列.由于其极限大于$0$，而子列$\lbrace x_{p_n} y_{p_n} \rbrace $收敛，于是可推出$\lbrace y_{p_n} \rbrace $也收敛，其极限也大于$0$.</p>
+<p>利用$0\leqslant \displaystyle  \lim_{n\to \infty } x_{p_n}  \leqslant \varlimsup_{n\to \infty } x_n $，$0\leqslant \displaystyle  \lim_{n\to \infty } y_{p_n} \leqslant \varlimsup_{n\to \infty } y_n  $，就得到所要求证的不等式：</p>
+<p>$$\varlimsup_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n \geqslant \lim_{n\to \infty } x_{p_n} \cdot \lim_{n\to \infty } y_{p_n} =\lim_{n\to \infty } (x_{p_n} y_{p_n} )=\varlimsup_{n\to \infty } (x_{p_n} y_{p_n} ).$$</p>
+<p>$(2)$现在证明左边的不等式$\varliminf_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n \leqslant \varlimsup_{n\to \infty } (x_n y_n )$.与习题$131(b)$的证明$(2)$相同，用归结法来做.</p>
+<p>若非负数列$\lbrace y_n \rbrace $有无穷多项$0$，则就有$\varlimsup_{n\to \infty} (x_n y_n )=0$，不等式成立.否则，就存在$N$，使得当$n &gt; N$时$x_n &gt; 0$.这时根据上下极限定义可以推出</p>
+<p>$$\varliminf_{n\to \infty } x_n =\dfrac{1}{\varlimsup_{n\to \infty } \dfrac{1}{x_n}} .$$</p>
+<p>先用$(1)$中的不等式得到</p>
+<p>$$\varlimsup_{n\to \infty } \dfrac{1}{x_n} \cdot \varlimsup_{n\to \infty} (x_n y_n ) \geqslant \varlimsup_{n\to \infty} [\dfrac{1}{x_n} \cdot (x_n y_n )] =\varlimsup_{n\to \infty } y_n ,$$</p>
+<p>然后将左边的第一个因子除到右边变为下极限，这样就得到所要求证的不等式.</p>
+<p>例子$\quad $取$\lbrace x_n \rbrace $为$\dfrac12 ,2,\dfrac12 ,2,\cdots $，$\lbrace y_n \rbrace $为$3,\dfrac12 ,3,\dfrac12 ,\cdots $，则$\lbrace x_n y_n \rbrace $为$\dfrac32 ,1 ,\dfrac32 ,1,\cdots $，于是就有</p>
+<p>$$\varliminf_{n\to \infty } x_n =\dfrac12 ,\varliminf_{n\to \infty } y_n =\dfrac12 ,\varliminf_{n\to \infty } (x_n y_n ) =1,\varlimsup_{n\to \infty } y_n =3,$$</p>
+<p>于是对应的不等式就是$\dfrac14 &lt; 1 &lt; \dfrac32$，即都是以严格的不等号成立的不等式$(a)$.</p>
+<p>取$\lbrace x_n \rbrace $为$2,\dfrac14 ,2,\dfrac14 ,\cdots $，$\lbrace y_n \rbrace $为$\dfrac12 ,2,\dfrac12 ,2,\cdots $，则$\lbrace x_n y_n \rbrace $为$1,\dfrac12 ,1 ,\dfrac12 ,\cdots $，于是就有</p>
+<p>$$\varlimsup_{n\to \infty } x_n =2 ,\varlimsup_{n\to \infty } y_n =2,\varlimsup_{n\to \infty } (x_n y_n ) =1,\varliminf_{n\to \infty } x_n =\dfrac14 ,$$</p>
+<p>于是对应的不等式就是$\dfrac12 &lt; 1 &lt; 4$，即都是以严格的不等号成立的不等式$(b)$.</p>
+<p>$133$.证明：若$\displaystyle \lim_{n\to \infty } x_n $存在，则对于任何数列$y_n (n=1,2,\cdots )$均有：</p>
+<p>$$(a)\varlimsup_{n\to \infty } (x_n +y_n )=\lim_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n ;$$</p>
+<p>$$(b)\varlimsup_{n\to \infty } (x_n y_n )=\lim_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n \quad (x_n \geqslant 0).$$</p>
+<p>证$\quad (a)$由于$\displaystyle \lim_{n\to \infty } x_n $存在，故$\displaystyle \lim_{n\to \infty } x_n =\varliminf_{n\to \infty } x_n =\varlimsup_{n\to \infty } x_n $，从而，利用习题$131(b)$的结论可知</p>
+<p>$$\varlimsup_{n\to \infty } (x_n +y_n )\leqslant \varlimsup_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n =\lim_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n =\varliminf_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n \leqslant \varlimsup_{n\to \infty } (x_n +y_n ),$$</p>
+<p>故得</p>
+<p>$$\varlimsup_{n\to \infty } (x_n +y_n )=\lim_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n .$$</p>
+<p>$(b)$证$1\quad $若数列$\lbrace y_n \rbrace $中有无限多项非负（包括每项均为非负的情况在内），将所有这些非负项记为一个子列$\lbrace y_{p_n} \rbrace $，并注意到数列$\lbrace x_n \rbrace $非负，则就有</p>
+<p>$$\varlimsup_{n\to \infty } y_n =\varlimsup_{n\to \infty } y_{p_n} ,\varlimsup_{n\to \infty } (x_n y_n ) =\varlimsup_{n\to \infty } (x_{p_n} y_{p_n} ).$$</p>
+<p>应用习题$132(b)$的结论，就有</p>
+<p>$$\begin{align}<br>\lim_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n &amp; =\lim_{n\to \infty } x_{p_n} \cdot \varlimsup_{n\to \infty } y_{p_n} \\<br>&amp; \leqslant \varlimsup_{n\to \infty } (x_{p_n} y_{p_n} )=\varlimsup_{n\to \infty } (x_n y_n ) \\<br>&amp; \leqslant \lim_{n\to \infty } x_{p_n} \cdot \varlimsup_{n\to \infty } y_{p_n} =\lim_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n ,<br>\end{align}$$</p>
+<p>可见其中均成立等号.</p>
+<p>对于相反的情况，可以不妨设$y_n &lt; 0(n=1,2,\cdots )$.然后对于非负数列$\lbrace -y_n \rbrace $和$\lbrace x_n \rbrace $应用习题$132(a)$的结论，这样就有</p>
+<p>$$\begin{align}<br>\varliminf_{n\to \infty } y_n \cdot \lim_{n\to \infty } x_n  &amp; = -\varlimsup_{n\to \infty } y_n \cdot \lim_{n\to \infty } x_n \\<br>&amp; \leqslant \varliminf_{n\to \infty } (-y_n x_n )=-\varlimsup_{n\to \infty } (x_n y_n ) \\<br>&amp; \leqslant \varliminf_{n\to \infty } (-y_n )\cdot \lim_{n\to \infty } x_n =-\varlimsup_{n\to \infty } y_n \cdot \lim_{n\to \infty } x_n ,<br>\end{align}$$</p>
+<p>可见其中也都成立等号.</p>
+<p>证$2\quad $模仿习题$132(a)$的证就不难证明本题的$(b)$.记$A=\displaystyle \lim_{n\to \infty} x_n $，$B=\displaystyle \lim_{n\to \infty} y_n $.</p>
+<p>为观察方便起见将要证明的等式重新写出如下：</p>
+<p>$$\varlimsup_{n\to \infty } (x_n y_n )=\lim_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n =AB,\label{1.19} \tag{1.19}$$</p>
+<p>其中$\lbrace x_n \rbrace $为非负数列，且已有（常义或广义的）极限.先讨论$\eqref{1.19}$的右边出现因子$0$和$\infty $的情况.</p>
+<p>$(1)$若$A=+\infty $，则只能允许$B\neq 0$.这时$\eqref{1.19}$的两边都是无穷大，其符号与$B$的符号相同.</p>
+<p>若$B=\pm \infty $，则只能允许$A &gt; 0$，于是$\eqref{1.19}$两边都与$B$相同.</p>
+<p>$(2)$若$A=0$，则$B$必须是有限数.这时$y_{p_n} \to B$，因此也有$x_{p_n} y_{p_n} \to 0$.这表明$\varlimsup_{n\to \infty } (x_n y_n ) \geqslant 0$.由于上极限$B &lt; +\infty $表明$\lbrace y_n \rbrace $有上界，因此只能是$\varlimsup_{n\to \infty } (x_n y_n ) =0$.即$\eqref{1.19}$的两边等于$0$.</p>
+<p>若$B=0$，则只要看$0 &lt; A &lt; +\infty $的情况.这时只能有$\varlimsup_{n\to \infty } (x_n y_n )\leqslant 0$.又从$y_{p_n} \to 0$知道$x_{p_n} y_{p_n} \to 0$，因此$\varlimsup_{n\to \infty } (x_n y_n )=0$.即$\eqref{1.19}$的两边等于$0$.</p>
+<p>$(3)$余下的情况是$B$为非零有限数，$A$为正有限数.</p>
+<p>这时若有子列$x_{p_n} y_{p_n} \to C$，则就有$y_{p_n} \to \dfrac{C}{A} \leqslant B$，因此$C\leqslant AB$.</p>
+<p>另一方面存在$y_{p_n} \to B$，因此$x_{p_n} y_{p_n} \to AB$，因此只能是$\varlimsup_{n\to \infty } (x_n y_n ) =AB$.</p>
+<p>$134$.证明：若对于某数列$x_n (n=1,2,\cdots )$，无论数列$y_n (n=1,2,\cdots )$如何选取，以下两个等式中都至少有一个成立：</p>
+<p>$$(a)\varlimsup_{n\to \infty } (x_n +y_n )=\varlimsup_{n\to \infty } x_n +\varlimsup_{n\to \infty } y_n ;$$</p>
+<p>$$(b)\varlimsup_{n\to \infty } (x_n y_n )=\varlimsup_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } y_n \quad (x_n \geqslant 0),$$</p>
+<p>则数列$x_n $收敛或发散于$+\infty $.</p>
+<p>证$\quad $用反证法.若结论不成立，则只有两种可能性.</p>
+<p>第一种可能性是$\displaystyle \lim_{n\to \infty } x_n =-\infty $.这时条件$(b)$不能用.只要有$\varlimsup_{n\to \infty } y_n =+\infty $，则条件$(a)$的右边无意义，而左边可以等于任何有限数或$\pm \infty $，因此等式不能成立.</p>
+<p>第二种可能性是$\displaystyle \lim_{n\to \infty } x_n $无意义.记$\varliminf_{n\to \infty } x_n =\alpha $，$\varlimsup_{n\to \infty } x_n =\beta $，则有</p>
+<p>$$-\infty \leqslant \alpha =\varliminf_{n\to \infty } x_n &lt; \varlimsup_{n\to \infty } x_n =\beta \leqslant +\infty .$$</p>
+<p>这时分两种情况讨论.</p>
+<p>$(1)\lbrace x_n \rbrace $不是非负数列，这时只要检查条件$(a)$中的等式是否成立.</p>
+<p>令$y_n =-x_n (n=1,2,\cdots )$，则$\varlimsup_{n\to \infty } y_n =-\varliminf_{n\to \infty } x_n =-\alpha $，于是条件$(a)$的左边为$0$，右边为$\beta -\alpha \neq 0$（即为正数或$+\infty $），等式不能成立.</p>
+<p>$(2)\lbrace x_n \rbrace $为非负数列，这时$\alpha \geqslant 0$.设子列$x_{p_n} \to \alpha $，定义数列$\lbrace y_n \rbrace $如下：</p>
+<p>$$y_k =\begin{cases}<br>1,&amp; k=p_n ,n=1,2,\cdots ,\\<br>-x_k ,&amp; \mathrm{others.}<br>\end{cases}$$</p>
+<p>这样就有</p>
+<p>$$\varlimsup_{n\to \infty } y_n =1,\varlimsup_{n\to \infty } (x_n +y_n )=\alpha +1=\varliminf_{n\to \infty } x_n +1,\varlimsup_{n\to \infty } (x_n y_n )=\alpha .$$</p>
+<p>对于条件$(a)$得到$\alpha +1\neq \beta +1$，而对于条件$(b)$得到$\alpha \neq \beta $，因此都不能成立等式.</p>
+<h2 id="关于上下极限的补充">关于上下极限的补充</h2><p>上下极限是数列极限的必要组成部分，这里对其基本内容作一点补充.</p>
+<p>首先，上下极限有三种等价的描述方式，或者说有三种等价的定义.给定一种定义后，其余两种定义的内容可以命题或定理的形式得到证明.</p>
+<p>第一种定义就是《习题集》在$\S 1.2$开始时所采取的，即对于给定数列将上极限定义为其最大聚点，将下极限定义为其最小聚点.在一般的教科书中会证明它们的存在性.此外从这个定义可以推出：若$\varlimsup_{n\to \infty } x_n =-\infty $，则就是$\displaystyle \lim_{n\to \infty } x_n =-\infty $；又若$\varliminf_{n\to \infty } x_n =+\infty $，则就是$\displaystyle \lim_{n\to \infty } x_n =+\infty $.</p>
+<p>第二种定义就是用$\varepsilon -N$语言，也就是极限定义的推广.对于上下极限为有限数的情况可用逻辑记号较简短地表述如下（其中$\forall$读作“对每一个”，$\exists $读作“存在”）：</p>
+<p>$$(a)\beta =\varlimsup_{n\to \infty } x_n \Leftrightarrow \begin{cases}<br>(1) &amp; \forall \varepsilon &gt; 0 ,\exists N,\forall n &gt; N\colon x_n &lt; \beta +\varepsilon ;\\<br>(2) &amp; \forall \varepsilon &gt; 0,\forall N’,\exists n’ &gt; N’\colon \beta -\varepsilon &lt; x_{n’} &lt; \beta +\varepsilon .\end{cases}$$</p>
+<p>$$(b)\alpha =\varliminf_{n\to \infty } x_n \Leftrightarrow \begin{cases}<br>(1) &amp; \forall \varepsilon &gt; 0 ,\exists N,\forall n &gt; N\colon \alpha -\varepsilon &lt; x_n ;\\<br>(2) &amp; \forall \varepsilon &gt; 0,\forall N’,\exists n’ &gt; N’\colon \alpha -\varepsilon &lt; x_{n’} &lt; \alpha +\varepsilon .\end{cases}$$</p>
+<p>从聚点定义容易证明上述结论.对于以无穷大为上下极限的情况不难写出相应的结果并作出证明，读者可以作为练习来做.</p>
+<p>下面是上下极限为有限数时的几何示意图：</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/3.png" alt=""></center>
+
+<p>第三种定义就是下列表达式：</p>
+<p>$$\varlimsup_{n\to \infty } x_n =\lim_{n\to \infty } \sup{\lbrace x_n ,x_{n+1} ,\cdots \rbrace } ,\varliminf_{n\to \infty } x_n =\lim_{n\to \infty } \inf{\lbrace x_n ,x_{n+1} ,\cdots \rbrace } ,$$</p>
+<p>它们在证明上下极限的某些性质时往往可以将证明归结为上述定义右边的计算问题，有其方便之处.</p>
+<p>$135$.证明：若$x_n &gt; 0(n=1,2,\cdots )$及</p>
+<p>$$\varlimsup_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } \dfrac{1}{x_n } =1,$$</p>
+<p>则数列$x_n $是收敛的.</p>
+<p>证$1\quad $用第一种定义，即上下极限的聚点定义.由于等式左边的乘积不允许是不定式$0\cdot \infty $，而右边是$1$，因此可以推知两个上极限都是正有限数.</p>
+<p>这时$\varlimsup_{n\to \infty } \dfrac{1}{x_n} =\beta \in (0,+\infty )$是数列$\lbrace \dfrac{1}{x_n } \rbrace $的最大聚点，即有子列$\dfrac{1}{x_{p_n}} \to \beta $，于是就有$x_{p_n} \to \dfrac{1}{\beta }$，且可知这就是数列$\lbrace x_n \rbrace $的最小聚点.这样就得到</p>
+<p>$$\varliminf_{n\to \infty } x_n =\dfrac{1}{\varlimsup_{n\to \infty } \dfrac{1}{x_n}} ,\label{1.24} \tag{1.24}$$</p>
+<p>然后再利用题中的等式条件就得到所要求的$\varlimsup_{n\to \infty } x_n =\varliminf_{n\to \infty } x_n $.</p>
+<p>（以下几个解法只指出如何证明$\eqref{1.24}$.）</p>
+<p>证$2\quad $用第二种定义，即上下极限$\varepsilon -N$定义.记$\alpha =\varliminf_{n\to \infty } x_n \in (0,+\infty )$，则对任意的$\varepsilon \in (0,\alpha )$，存在$N$，使得当$n &gt; N$时有$x_n &gt; \alpha -\varepsilon $.由此可见同时有$\dfrac{1}{x_n } &lt; \dfrac{1}{\alpha -\varepsilon } $.因此上式右边可任意接近$\dfrac{1}{\alpha }$，因此就有</p>
+<p>$$\varlimsup_{n\to \infty } \dfrac{1}{x_n } \leqslant \dfrac{1}{\alpha } .$$</p>
+<p>又因有子列$x_{p_n} \to \alpha $，于是也有$\dfrac{1}{x_{p_n}} \to \dfrac{1}{\alpha } $，因此上述不等式成立等号，即得$\eqref{1.24}$.</p>
+<p>证$3\quad $用第三种定义.记</p>
+<p>$$\beta_n =\sup{\lbrace \dfrac{1}{x_n} ,\dfrac{1}{x_{n+1}} ,\cdots \rbrace } ,$$</p>
+<p>则根据上确界定义，对于$p=0,1,2,\cdots $有$\dfrac{1}{x_{n+p}} \leqslant \beta_n $，也就是$x_{n+p} \geqslant \dfrac{1}{\beta_n } $.同时对于任何$\varepsilon \in (0,\beta )$，存在某个非负整数$p_0 $，使得$\beta_n -\varepsilon &lt; \dfrac{1}{x_{n+p_0}}$，也就是$x_{n+p_0} &lt; \dfrac{1}{\beta_n -\varepsilon }$.这样就已经得到</p>
+<p>$$\inf{\lbrace x_n ,x_{n+1} ,\cdots \rbrace } =\dfrac{1}{\beta_n} =\dfrac{1}{\sup{\lbrace \dfrac{1}{x_n} ,\dfrac{1}{x_{n+1}} ,\cdots \rbrace }} .$$</p>
+<p>然后令$n\to \infty $，就得到所要求的公式$\eqref{1.24}$.</p>
+<p>证$4\quad $当然也可以将问题归结于习题$132$中的更一般的运算法则来解决.令$y_n =\dfrac{1}{x_n }$，则如前所说，所有出现的上下极限都是正有限数，因此就可以从习题$132(a),(b)$得到</p>
+<p>$$\varliminf_{n\to \infty } (x_n y_n ) =1\leqslant \varliminf_{n\to \infty } x_n \cdot \varlimsup_{n\to \infty } \dfrac{1}{x_n} \leqslant \varlimsup_{n\to \infty } (x_n y_n )=1,$$</p>
+<p>可见$\eqref{1.24}$成立.</p>
+<p>$136$.证明：若数列$x_n (n=1,2,\cdots )$有界，且</p>
+<p>$$\lim_{n\to \infty } (x_{n+1} -x_n )=0,$$</p>
+<p>则此数列的子列极限充满于下极限和上极限$l=\varliminf_{n\to \infty } x_n $和$L=\varlimsup_{n\to \infty } x_n $之间，即区间$[l,L]$中的任意一个数都是该数列的子列极限.</p>
+<p>证$\quad $若$l=L$则结论显然成立.</p>
+<p>设$l &lt; L$，则只要对于任意的$a\in (l,L)$，证明$a$是$\lbrace x_n \rbrace $的聚点即可.这等价于证明在$a$的任何$\varepsilon $邻域中存在数列$\lbrace x_n \rbrace $中的无穷多项.</p>
+<p>用反证法.设在$a$的某个$\varepsilon $邻域中只有$\lbrace x_n \rbrace $中的有限多项，记其中的最大下标为$N_0 $.又不妨设$\varepsilon $充分小，使得$a,l,L$的$\varepsilon $邻域都不相交（参看附图）.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/4.png" alt=""></center>
+
+<p>由于$x_{n+1} -x_n \to 0$，存在$N &gt; N_0 $，当$n &gt; N$时</p>
+<p>$$\vert x_{n+1} -x_n \vert &lt; \varepsilon .$$</p>
+<p>由于下极限$l$是聚点，存在$N_1 &gt; N$，使得$\vert x_{N_1} -l\vert &lt; \varepsilon $.</p>
+<p>现在我们来证明数列$\lbrace x_n \rbrace $中从$x_{N_1}$起的所有项都在点$a-\varepsilon $的左边.</p>
+<p>用数学归纳法.由于$O_{\varepsilon } (l) \cap O_{\varepsilon } (a)=\varnothing $，因此$x_{N_1} \leqslant a-\varepsilon $.</p>
+<p>设$n=k\geqslant N_1 $时有$x_k \leqslant a-\varepsilon $，则$x_{k+1} =x_k +(x_{k+1} -x_k ) &lt; a-\varepsilon +\varepsilon =a$.然而在$(a-\varepsilon ,a+\varepsilon )$中没有下标$n$大于$N_0 $的任何$x_n $，因此只能是$x_{k+1} \leqslant a-\varepsilon $.归纳法的证明结束.</p>
+<p>这表明在$(a-\varepsilon ,L]$中至多只有数列$\lbrace x_n \rbrace $中的有限多项.由于上极限$L$也是数列$\lbrace x_n \rbrace $的聚点，因此这是不可能的.</p>
+<p>$137$.设数列$x_1 ,x_2 ,\cdots ,x_n ,\cdots $满足条件</p>
+<p>$$0\leqslant x_{m+n} \leqslant x_m +x_n \quad (m,n=1,2,\cdots ),$$</p>
+<p>证明：$\displaystyle \lim_{n\to \infty } \dfrac{x_n }{n} $存在.</p>
+<p>证$\quad $先证$\lbrace \dfrac{x_n }{n} \rbrace $收敛的必要条件：有界性.因$\lbrace \dfrac{x_n }{n} \rbrace $非负，只要证明它有上界.</p>
+<p>为此需考察$x_n $的变化趋势.注意题设的条件是对下标作分解时的不等式估计.仿此作$x_n $的下标分解：暂取某个固定的正整数，将它记为$t$，用$t$除$n$得$n=qt+r(r=0,1,\cdots ,t-1)$.这样就将$n$分成$qt$与$r$两部分，它们都随$n$而变化.当$n\to \infty $时$r$是有界量，$qt$是无穷大量，$q$也是无穷大量.</p>
+<p>依此将$x_n $分成对应的两部分，得到如下估计（其中定义$x_0 =0$）：</p>
+<p>$$x_n =x_{qt+r} \leqslant x_{qt} +x_r \leqslant qx_t +x_r \leqslant qx_t +rx_1 ,$$</p>
+<p>其中最右边一式的第二项$rx_1 $为有界量.</p>
+<p>现在来估计$\dfrac{x_n }{n} $.用上述结果有</p>
+<p>$$\dfrac{x_n }{n} \leqslant \dfrac{qx_t +rx_1 }{n} =\dfrac{x_t}{t} \cdot \dfrac{qt}{n} +\dfrac{rx_1 }{n} \leqslant \dfrac{x_t}{t} +\dfrac{rx_1 }{n} ,$$</p>
+<p>其中$\dfrac{x_t}{t}$为常量，$\lbrace \dfrac{rx_1}{n} \rbrace $为无穷小量，于是知道$\lbrace \dfrac{x_n }{n} \rbrace $是非负有界数列.</p>
+<p>在上式中令$n\to \infty $取上极限得到</p>
+<p>$$\varlimsup_{n \to \infty } \dfrac{x_n }{n} \leqslant \dfrac{x_t}{t} +\varlimsup_{n \to \infty } \dfrac{rx_1 }{n} =\dfrac{x_t}{t} .$$</p>
+<p>由于上式左边是一个确定的数，而右边的$t$可取到任何正整数，对上式令$t \to \infty $取下极限，就得到</p>
+<p>$$\varlimsup_{n \to \infty } \dfrac{x_n }{n} \leqslant \varliminf_{t\to \infty } \dfrac{x_t}{t} =\varliminf_{n \to \infty } \dfrac{x_n }{n} .$$</p>
+<p>这表明上极限等于下极限.</p>
+<p>由于$\lbrace \dfrac{x_n }{n} \rbrace $为有界数列，它的上下极限相等就表明极限$\displaystyle \lim_{n\to \infty } \dfrac{x_n}{n} $存在.</p>
+<h2 id="柯西命题和施托尔茨定理">柯西命题和施托尔茨定理</h2><p>$138$（柯西命题）.证明：若数列$x_n (n=1,2,\cdots )$收敛，则算术平均值数列</p>
+<p>$$\xi_n =\dfrac{1}{n} (x_1 +x_2 +\cdots +x_n )\quad (n=1,2,\cdots ),$$</p>
+<p>也收敛，且</p>
+<p>$$\lim_{n\to \infty } \dfrac{x_1 +x_2 +\cdots +x_n }{n} =\lim_{n\to \infty } x_n .$$</p>
+<p>逆命题不成立，举例说明.</p>
+<p>证$1\quad $为了简化讨论，将$x_n \to a(n\to \infty )$记成$x_n =a+\alpha_n $，其中$\alpha_n \to 0$.考虑</p>
+<p>$$\xi_n -a =\dfrac{1}{n} (x_1 +x_2 +\cdots +x_n )-a=\dfrac{1}{n} (\alpha_1 +\cdots +\alpha_n ).$$</p>
+<p>把上式右端分成前后两段：$\dfrac{1}{n} (\alpha_1 +\cdots +\alpha_{N_1} )+\dfrac{1}{n} (\alpha_{N_1 +1} +\cdots +\alpha_n )$.先取充分大的$N_1 $，使后段分子各项都很小，从而后段很小.固定$N_1 $，则前段分子是定值，除以充分大的$n$后也可以很小.这就是证明的思路.</p>
+<p>以下将上述简略的分析用$\varepsilon -N$的语言写出如下.</p>
+<p>对给定的$\varepsilon &gt; 0$，存在$N_1 $，当$n &gt; N_1 $时，$\vert \alpha_n \vert &lt; \dfrac{\varepsilon }{2} $.于是有</p>
+<p>$$\dfrac{1}{n} \vert \alpha_{N_1 +1} +\cdots +\alpha_n \vert &lt; \dfrac{n-N_1 }{n} \cdot \dfrac{\varepsilon }{2} &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>固定$N_1 $，对同一$\varepsilon $，存在$N( &gt; N_1 )$，当$n &gt; N$时</p>
+<p>$$\dfrac{1}{n} \vert \alpha_1 +\cdots +\alpha_{N_1} \vert &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>于是当$n &gt; N$时以上两式同时成立，从而有</p>
+<p>$$\dfrac{1}{n} \vert \alpha_1 +\cdots +\alpha_n \vert \leqslant \dfrac{1}{n} \vert \alpha_1 +\cdots +\alpha_{N_1} \vert +\dfrac{1}{n} \vert \alpha_{N_1 +1} +\cdots +\alpha_n \vert &lt; \varepsilon .$$</p>
+<p>此即$\displaystyle \lim_{n\to \infty } \xi_n =a$.</p>
+<p>反之，结论不成立.例如取振荡数列$x_n =(-1)^{n-1}(n=1,2,\cdots )$，它是发散的.</p>
+<p>再看这个数列对应的的$\lbrace \xi_n \rbrace $.虽然$x_1 =1,x_1 +x_2 =0,x_1 +x_2 +x_3 =1,\cdots $也是振荡数列，但除以$n$所得的平均值$\xi_n $则是</p>
+<p>$$1,0,\dfrac13 ,0,\dfrac15 ,0,\cdots ,$$</p>
+<p>它是收敛于$0$的无穷小量.</p>
+<p>证$2$（用上下极限工具）$\quad $对给定的$\varepsilon &gt; 0$，存在$N$，当$n &gt; N$时，有$-\varepsilon &lt; \alpha_n &lt; \varepsilon $.于是如证$1$中那样可以估计得到</p>
+<p>$$\dfrac{1}{n} (\alpha_1 +\cdots +\alpha_N )-\dfrac{n-N}{n} \varepsilon &lt; \xi_n -a &lt; \dfrac{1}{n} (\alpha_1 +\cdots +\alpha_N )+\dfrac{n-N}{n} \varepsilon .$$</p>
+<p>固定$N$，对$n$取上下极限，得到</p>
+<p>$$-\varepsilon \leqslant \varliminf_{n\to \infty } (\xi_n -a) \leqslant \varlimsup_{n\to \infty } (\xi_n -a ) \leqslant \varepsilon .$$</p>
+<p>由于$\varepsilon &gt; 0$可取得任意小，故$\varliminf_{n\to \infty } (\xi_n -a) =\varlimsup_{n\to \infty } (\xi_n -a )=0$，即$\displaystyle \lim_{n\to \infty } \xi_n =a$.</p>
+<p>$139$.证明：若$\displaystyle \lim_{n\to \infty } x_n =+\infty $，则</p>
+<p>$$\lim_{n\to \infty } \dfrac{x_1 +x_2 +\cdots +x_n }{n} =+\infty .$$</p>
+<p>证$\quad$模仿上题的分段估计法.由条件知不妨设$x_n &gt; 0$.</p>
+<p>与上题比较可见，差别在于上题要求被估计式$&lt; \varepsilon $，而本题则要求被估计式$&gt; K$.</p>
+<p>对给定的$K &gt; 0$，存在$N_1 $，当$n &gt; N_1 $时，$x_n &gt; 2K$.于是这时</p>
+<p>$$\dfrac{1}{n} (x_{N_1 +1} +x_{N_1 +2} +\cdots +x_n ) &gt; \dfrac{n-N_1 }{n} \cdot 2K.$$</p>
+<p>固定$N_1 $，存在$N( &gt; N_1 )$，使得当$n &gt; N$时同时成立</p>
+<p>$$\dfrac{1}{n} \vert x_1 +x_2 +\cdots +x_{N_1} \vert &lt; \dfrac{K}{3} ,\dfrac{n-N_1}{n} &gt; \dfrac23 .$$</p>
+<p>于是当$n &gt; N$时就得到</p>
+<p>$$\begin{align}<br>\dfrac{1}{n} (x_1 +\cdots +x_n ) &amp; =\dfrac{1}{n} (x_1 +\cdots +x_{N_1} ) +\dfrac{1}{n} (x_{N_1 +1} +\cdots +x_n ) \\<br> &amp; &gt; -\dfrac{K}{3} +\dfrac23 \cdot 2K =K.<br>\end{align}$$</p>
+<p>$140$（乘积形式的柯西命题）.证明：若数列$x_n (n=1,2,\cdots )$收敛且$x_n &gt; 0$，则</p>
+<p>$$\lim_{n\to \infty } \sqrt[n]{x_1 x_2 \cdots x_n } =\lim_{n\to \infty } x_n .$$</p>
+<p>证$\quad $记$a=\displaystyle \lim_{n\to \infty } x_n $，则$a\geqslant 0$.</p>
+<p>若$a &gt; 0$，则也有$\displaystyle \lim_{n\to \infty } \dfrac{1}{x_n } =\dfrac{1}{a} $.用平均值不等式$H\leqslant G\leqslant A$（见命题$1.1$）：</p>
+<p>$$\dfrac{n}{\dfrac{1}{x_1 } +\cdots +\dfrac{1}{x_n } } =\dfrac{1}{\dfrac{\dfrac{1}{x_1 } +\cdots +\dfrac{1}{x_n } }{n}} \leqslant \sqrt[n]{x_1 \cdots x_n } \leqslant \dfrac{x_1 +\cdots +x_n }{n} ,$$</p>
+<p>令$n\to \infty $并在两边用柯西命题，可见它们都收敛于$a$，因此得到$\displaystyle \lim_{n\to \infty } \sqrt[n]{x_1 \cdots x_n } =a$.</p>
+<p>对于$a=0$的情况则只要如上写出右边的不等式的再用柯西命题即可.</p>
+<p>$141$.证明：若$x_n &gt; 0(n=1,2,\cdots )$且$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1}}{x_n} $存在，则</p>
+<p>$$\lim_{n\to \infty } \sqrt[n]{x_n } =\lim_{n\to \infty } \dfrac{x_{n+1}}{x_n } .$$</p>
+<p>证$\quad $将$x_n $写成乘积形式</p>
+<p>$$x_n =\left( \dfrac{x_n }{x_{n-1} } \right) \cdot \left( \dfrac{x_{n-1} }{x_{n-2} } \right) \cdot \cdots \cdot \left( \dfrac{x_2 }{x_1 } \right) \cdot x_1 ,$$</p>
+<p>然后对于正数列$x_1 ,\dfrac{x_2 }{x_1 } ,\cdots ,\dfrac{x_n }{x_{n-1}} ,\cdots $用习题$140$的结论即可.</p>
+<p>$142$.证明：</p>
+<p>$$\lim_{n\to \infty } \dfrac{n}{\sqrt[n]{n!}} =e.$$</p>
+<p>证$\quad $将数列通项写为$\dfrac{n}{\sqrt[n]{n!}} =\sqrt[n]{\dfrac{n^n}{n!}} $，然后记$x_n =\dfrac{n^n}{n!} $，则就有</p>
+<p>$$\dfrac{x_{n+1} }{x_n } =\dfrac{(n+1)^{n+1}}{(n+1)!} \cdot \dfrac{n!}{n^n} =\left( 1+\dfrac{1}{n} \right)^n \to e,$$</p>
+<p>然后用习题$141$的结论即可.</p>
+<p>$143$（施托尔茨定理）.证明施托尔茨定理：若</p>
+<p>$$(a)y_{n+1} &gt; y_n (n=1,2,\cdots );(b)\lim_{n\to \infty }y_n =+\infty ;(c) \lim_{n\to \infty } \dfrac{x_{n+1} -x_n }{y_{n+1} -y_n }$$</p>
+<p>存在，则</p>
+<p>$$\lim_{n\to \infty } \dfrac{x_n }{y_n } =\lim_{n\to \infty } \dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } .$$</p>
+<p>分析$\quad $令$y_n \equiv n$，它满足条件$(a)$和$(b)$.又令</p>
+<p>$$X_1 =x_1 ,X_2 =x_2 -x_1 ,\cdots ,X_n =x_n -x_{n-1} ,\cdots ,$$</p>
+<p>就可以将$(c)$改写为$\displaystyle \lim_{n\to \infty } X_{n+1} $存在，而结论成为</p>
+<p>$$\lim_{n\to \infty } \dfrac{X_1 +\cdots +X_n }{n} =\lim_{n\to \infty } X_{n+1} .$$</p>
+<p>可见这就是习题$138$的柯西命题.</p>
+<p>既然柯西命题是施托尔茨定理的特例，于是也有可能用证明柯西命题的方法来证明施托尔茨定理，这就是下列证明的指导思想.</p>
+<p>证$\quad $由题设的两个数列$\lbrace x_n \rbrace $和$\lbrace y_n \rbrace $引入两个新的数列$\lbrace X_n \rbrace $和$\lbrace Y_n \rbrace $，其中：</p>
+<p>$$X_1 =x_1 ,X_{n+1} =x_{n+1} -x_n ;Y_1 =y_1 ,Y_{n+1} =y_{n+1} -y_n ;n=1,2,\cdots ,$$</p>
+<p>于是习题中的条件$(a),(b),(c)$就依次转换为以下三个条件：</p>
+<p>$(1)Y_n &gt; 0(n=2,3,\cdots )$；</p>
+<p>$(2)\displaystyle \lim_{n\to \infty } (Y_1 +\cdots +Y_n )=+\infty $；</p>
+<p>$(3)\displaystyle \lim_{n\to \infty } \dfrac{X_n}{Y_n} $存在，</p>
+<p>而求证的结论则改变为：在条件$(1)-(3)$下，证明：</p>
+<p>$$\lim_{n\to \infty } \dfrac{X_1 +\cdots +X_n }{Y_1 +\cdots +Y_n } =\lim_{n\to \infty } \dfrac{X_n}{Y_n} .\label{1.20} \tag{1.20}$$</p>
+<p>以下的证明思路与柯西命题的证$1$相同.</p>
+<p>设条件$(3)$中的极限，即$\eqref{1.20}$的右边，为$a$.记</p>
+<p>$$\xi_n =\dfrac{X_1 +\cdots +X_n }{Y_1 +\cdots +Y_n } ,$$</p>
+<p>又将$\dfrac{X_n }{Y_n } \to a$改记为$\dfrac{X_n }{Y_n } =a+\alpha_n $，其中$\alpha_n \to 0$.于是$X_n =aY_n +\alpha_n Y_n $.</p>
+<p>对给定的$\varepsilon &gt; 0$，存在$N_1 $，当$n &gt; N_1 $时，有$\vert \alpha_n \vert &lt; \dfrac{\varepsilon }{2} $.于是当$n &gt; N_1 $时，可对$\vert \xi_n -a\vert $作分段估计如下：</p>
+<p>$$\begin{align}<br>\vert \xi_n -a\vert &amp; =\left\vert \dfrac{(X_1 -aY_1 )+\cdots +(X_n -aY_n )}{Y_1 +\cdots +Y_n } \right\vert \\<br> &amp; =\left\vert \dfrac{Y_1 \alpha_1 +\cdots +Y_n \alpha_n }{Y_1 +\cdots +Y_n } \right\vert \\<br> &amp; \leqslant \left\vert \dfrac{Y_1 \alpha_1 +\cdots +Y_{N_1} \alpha_{N_1} }{Y_1 +\cdots +Y_n } \right\vert +\left\vert \dfrac{Y_{N_1 +1} \alpha_{N_1 +1} +\cdots +Y_n \alpha_n }{Y_1 +\cdots +Y_n } \right\vert \\<br> &amp; \leqslant \left\vert \dfrac{Y_1 \alpha_1 +\cdots +Y_{N_1} \alpha_{N_1} }{Y_1 +\cdots +Y_n } \right\vert +\left\vert \dfrac{Y_{N_1 +1} \alpha_{N_1 +1} +\cdots +Y_n \alpha_n }{Y_{N_1 +1} +\cdots +Y_n } \right\vert \\<br> &amp; \leqslant \left\vert \dfrac{Y_1 \alpha_1 +\cdots +Y_{N_1} \alpha_{N_1} }{Y_1 +\cdots +Y_n } \right\vert +\dfrac{\varepsilon }{2} .<br>\end{align}$$</p>
+<p>这里对分段估计的第二段利用了其中的$Y_i &gt; 0(i=2,3,\cdots ,n)$和$\vert \alpha_i \vert &lt; \dfrac{\varepsilon }{2} (i=N_1 +1 ,\cdots ,n)$.</p>
+<p>固定$N_1 $，并利用条件$(3)$，即$Y_1 +\cdots +Y_n \to +\infty $，可见对同一$\varepsilon $，存在$N( &gt; N_1 )$，当$n &gt; N$时上式的第一段也小于$\dfrac{\varepsilon }{2} $.于是已经得到当$n &gt; N$时有$\vert \xi_n -a\vert &lt; \varepsilon $，即$\eqref{1.20}$成立.</p>
+<p>$144$.求：</p>
+<p>$$(a)\lim_{n\to +\infty } \dfrac{n^2}{a^n} (a &gt; 1);\quad (b) \lim_{n\to +\infty } \dfrac{\lg n}{n} .$$</p>
+<p>解$\quad (1)$设$x_n =n^2 ,y_n =a^n (a &gt; 1)$.则$y_{n+1} &gt; y_n ,y_n \to \infty $，且有</p>
+<p>$$\dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } =\dfrac{(n+1)^2 -n^2}{a^{n+1} -a^n } =\dfrac{2n+1}{a^n (a-1)} .$$</p>
+<p>再设$x_n’ =2n+1 ,y_n’ =a^n $，则$y_{n+1}’ &gt; y_n’ ,y_n’ \to +\infty $，且有</p>
+<p>$$\dfrac{x_{n+1}’ -x_n’ }{y_{n+1}’ -y_n’ } =\dfrac{2}{a^n (a-1)} \to 0,$$</p>
+<p>因而利用习题$143$的结果得$\displaystyle \lim_{n\to \infty } \dfrac{2n+1}{a^n } =0$，即$\displaystyle \lim_{n\to \infty } \dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } =0$.</p>
+<p>继续利用习题$143$的结果，得$\displaystyle \lim_{n\to \infty } \dfrac{x_n }{y_n } =0$，即$\displaystyle \lim_{n\to +\infty } \dfrac{n^2}{a^n} =0$.</p>
+<p>$(2)$设$x_n =\lg n$，$y_n =n$，则$y_{n+1} &gt; y_n $，$y_n \to +\infty $，且有</p>
+<p>$$\dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } =\lg \left( 1+\dfrac{1}{n} \right) \to 0,$$</p>
+<p>故$\displaystyle \lim_{n\to \infty } \dfrac{x_n }{y_n } =\lim_{n\to \infty } \dfrac{\lg n}{n} =0$.</p>
+<p>$145$.证明：若$p$为正整数，则</p>
+<p>$$(a)\lim_{n\to \infty } \dfrac{1^p +2^p +\cdots +n^p }{n^{p+1}} =\dfrac{1}{p+1} ,$$</p>
+<p>$$(b) \lim_{n\to \infty } \left( \dfrac{1^p +2^p +\cdots +n^p }{n^p} -\dfrac{n}{p+1} \right) =\dfrac{1}{2} ,$$</p>
+<p>$$(c) \lim_{n\to \infty } \dfrac{1^p +3^p +\cdots +(2n-1)^p }{n^{p+1}} =\dfrac{2^p}{p+1} .$$</p>
+<p>证$\quad (1)$令$x_n =1^p+2^p+\cdots +n^p $，$y_n =n^{p+1} $，则$y_{n+1} &gt; y_n $，$y_n \to \infty $，且有</p>
+<p>$$\dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } =\dfrac{(n+1)^p}{(n+1)^{p+1} -n^{p+1}} =\dfrac{(n+1)^p}{(p+1)n^p +\cdots } =\dfrac{\left( 1+\dfrac{1}{n} \right)^p }{p+1+o\left( \dfrac{1}{n} \right) } \to \dfrac{1}{p+1} ,$$</p>
+<p>式中$\displaystyle \lim_{n\to \infty } o\left( \dfrac{1}{n} \right) =0$为无穷小量，以下不再说明.</p>
+<p>故</p>
+<p>$$\lim_{n\to \infty } \dfrac{x_n }{y_n } =\lim_{n\to \infty } \dfrac{1^p+2^p+\cdots +n^p }{n^{p+1}} =\dfrac{1}{p+1} .$$</p>
+<p>$(2)$令$x_n =(p+1)(1^p+2^p+\cdots +n^p) -n^{p+1} $，$y_n =(p+1)n^p$，则$y_{n+1} &gt; y_n $，$y_n \to +\infty $，且有</p>
+<p>$$\dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } =\dfrac{(p+1)(n+1)^p+[n^{p+1} -(n+1)^{p+1}]}{(p+1)[(n+1)^p-n^p]} =\dfrac{\dfrac{p(p+1)}{2} n^{p-1} +\cdots }{p(p+1)n^{p-1} +\cdots } .$$</p>
+<p>当$n\to \infty $时，$\dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } \to \dfrac12 $，所以，</p>
+<p>$$\lim_{n\to \infty } \dfrac{x_n }{y_n } =\lim_{n\to \infty } \left( \dfrac{1^p+2^p+\cdots +n^p}{n^p} -\dfrac{n}{p+1} \right) =\dfrac12 .$$</p>
+<p>$(3)$令$x_n =1^p+3^p+\cdots +(2n-1)^p $，$y_n =n^{p+1}$，则$y_{n+1} &gt; y_n $，$y_n \to +\infty $，且有</p>
+<p>$$\dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } =\dfrac{(2n+1)^p}{(n+1)^{p+1} -n^{p+1}} =\dfrac{(2n+1)^p}{(p+1)n^p +\cdots } =\dfrac{\left( 2+\dfrac{1}{n} \right)^p }{p+1+o\left( \dfrac{1}{n} \right) } \to \dfrac{2^p}{p+1} ,$$</p>
+<p>所以，$\displaystyle \lim_{n\to \infty } \dfrac{x_n }{y_n } =\lim_{n\to \infty } \dfrac{1^p+3^p+\cdots +(2n-1)^p}{n^{p+1}} =\dfrac{2^p}{p+1} $.</p>
+<p>$146$.证明：数列</p>
+<p>$$x_n =1+\dfrac{1}{2} +\dfrac{1}{3} +\cdots +\dfrac{1}{n} -\ln n\quad (n=1,2,\cdots )$$</p>
+<p>收敛，从而有公式</p>
+<p>$$1+\dfrac{1}{2} +\dfrac{1}{3} +\cdots +\dfrac{1}{n} =C+\ln n+\varepsilon_n ,$$</p>
+<p>式中$C=0.577216\cdots $称为欧拉常数，且当$n\to \infty $时$\varepsilon_n \to 0$.</p>
+<p>证$\quad $因为$\ln \left( 1+\dfrac{1}{n} \right) &lt; \dfrac{1}{n} $，故$\ln (n+1) -\ln n &lt; \dfrac{1}{n} $，令$n=1,2,3,\cdots ,n$，得出</p>
+<p>$$\ln 2-\ln 1 &lt; 1 ,\ln 3-\ln 2 &lt; \dfrac12 ,\ln 4-\ln 3 &lt; \dfrac13 ,\cdots ,\ln (n+1) -\ln n &lt; \dfrac{1}{n} ,$$</p>
+<p>相加之，得$\ln (n+1) &lt; 1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{n} $.于是，</p>
+<p>$$x_{n+1} =1+\dfrac12 +\dfrac13 +\cdots +\dfrac{1}{n} +\dfrac{1}{n+1} -\ln (n+1) &gt; \dfrac{1}{n+1} &gt; 0,$$</p>
+<p>即$\lbrace x_n \rbrace $是一个有下界的数列.其次，</p>
+<p>$$x_n -x_{n+1} =-\dfrac{1}{n+1} +\ln (n+1) -\ln n=\ln \left( 1+\dfrac{1}{n} \right) -\dfrac{1}{n+1} ,$$</p>
+<p>因为$\dfrac{1}{n+1} &lt; \ln \left( 1+\dfrac{1}{n} \right) $，所以$x_n -x_{n+1} &gt; 0$，这就是说，$\lbrace x_n \rbrace $又是一个单调下降的数列.因而$\displaystyle \lim_{n\to \infty } x_n$存在，用$C$表示之，即</p>
+<p>$$C=\lim_{n\to \infty } (1+\dfrac{1}{2} +\dfrac{1}{3} +\cdots +\dfrac{1}{n} -\ln n),$$</p>
+<p>它的近似值为$0.577216$.或表成</p>
+<p>$$1+\dfrac{1}{2} +\dfrac{1}{3} +\cdots +\dfrac{1}{n} =C+\ln n+\varepsilon_n ,$$</p>
+<p>其中$\displaystyle \lim_{n\to \infty } \varepsilon_n =0$.</p>
+<p>$147$.求$\displaystyle \lim_{n\to \infty } \left( \dfrac{1}{n+1} +\dfrac{1}{n+2} +\cdots +\dfrac{1}{2n} \right) $.</p>
+<p>解$\quad $因为</p>
+<p>$$(1)1+\dfrac{1}{2} +\dfrac{1}{3} +\cdots +\dfrac{1}{n} =C+\ln n+\varepsilon_n ,$$</p>
+<p>$$(2)1+\dfrac{1}{2} +\dfrac{1}{3} +\cdots +\dfrac{1}{n} =C+\ln 2n+\varepsilon_{2n} ,$$</p>
+<p>其中$C$为欧拉常数，$\varepsilon_n \to 0,\varepsilon_{2n} \to 0(n\to \infty )$.</p>
+<p>$(2)$式减$(1)$得</p>
+<p>$$\dfrac{1}{n+1} +\dfrac{1}{n+2} +\cdots +\dfrac{1}{2n} =\ln 2n -\ln n+(\varepsilon_{2n} -\varepsilon_n ) =\ln 2 +(\varepsilon_{2n} -\varepsilon_n ) \to \ln 2\quad (n\to \infty ) ,$$</p>
+<p>所以，$\displaystyle \lim_{n\to \infty } \left( \dfrac{1}{n+1} +\dfrac{1}{n+2} +\cdots +\dfrac{1}{2n} \right) =\ln 2$.</p>
+<h2 id="迭代生成的数列">迭代生成的数列</h2><p>$148$.数列$x_n (n=1,2,\cdots )$由下列各式所确定：</p>
+<p>$$x_1 =a,x_2 =b,x_n =\dfrac{x_{n-1} +x_{n-2} }{2} \quad (n=3,4,\cdots ),$$</p>
+<p>求$\displaystyle \lim_{n\to \infty } x_n $.</p>
+<p>证$1$（从研究数列的分布规律着手）$\quad $不妨只讨论$a &lt; b$的情况.这时有$x_1 &lt; x_3 &lt; x_2 $，又有$x_3 &lt; x_4 &lt; x_2 $.用数学归纳法可以证明对每个$n$有$x_1 &lt; x_3 &lt; \cdots &lt; x_{2n-1} &lt; x_{2n} &lt; \cdots &lt; x_4 &lt; x_2 $.于是$\lbrace [x_{2n-1} ,x_{2n} ] \rbrace $成为一个区间套.这使得子列$\lbrace x_{2n-1} \rbrace $单调递增有上界，子列$\lbrace x_{2n} \rbrace $单调递减有下界，因此两个子列都收敛.</p>
+<p>写出$x_{2n} =\dfrac12 (x_{2n-1} +x_{2n-2} ) $和$x_{2n-1} =\dfrac12 (x_{2n-2} +x_{2n-3} )$，两式相减，则得到</p>
+<p>$$x_{2n } -x_{2n-1} =\dfrac12 (x_{2n-1} -x_{2n-3} )=\dfrac14 (x_{2n-2} -x_{2n-3} ).$$</p>
+<p>由此可见上述区间套的长度趋于$0$，因此，$\displaystyle \lim_{n\to \infty } x_{2n} =\lim_{n\to \infty } x_{2n-1} $.这样就证明了数列$\lbrace x_n \rbrace $收敛.记其极限为$A$.</p>
+<p>为计算极限$A$，我们来计算区间套左端点（或右端点）之间的距离的变化规律.从迭代式可见对每个$n$有</p>
+<p>$$x_{n+1} -x_n =\dfrac12 (x_n +x_{n-1} )-x_n =-\dfrac12 (x_n -x_{n-1} ).$$</p>
+<p>于是有</p>
+<p>$$x_{2n+1} -x_{2n-1} =\dfrac14 (x_{2n-1} -x_{2n-3} ).$$</p>
+<p>这样就可以得到</p>
+<p>$$\begin{align}<br>x_{2n+1} &amp; =[x_{2n+1} -x_{2n-1} ]+[x_{2n-1} -x_{2n-3} ]+\cdots +[x_3 -x_1 ]+x_1 \\<br> &amp; =a+[x_3 -x_1 ]\left( 1+\dfrac14 +\cdots +\dfrac{1}{4^n} \right) \\<br> &amp; =a+\dfrac{b-a}{2} \cdot \dfrac{1-\dfrac{1}{4^{n+1}}}{1-\dfrac{1}{4}} .\end{align}$$</p>
+<p>令$n\to \infty $就得到极限$A=a+\dfrac{4}{3} \cdot \dfrac{b-a}{2} =\dfrac{a+2b}{3} $.</p>
+<p>证$2$（“攻其一点”）$\quad $其实只要利用证$1$中的</p>
+<p>$$x_{n+1} -x_n =-\dfrac12 (x_n -x_{n-1} ),$$</p>
+<p>就知道增量$x_{n+1} -x_n (n=1,2,\cdots )$是公比为$-\dfrac12 $的几何数列.于是即有</p>
+<p>$$\begin{align}<br>\lim_{n\to \infty } x_n &amp; =\lim_{n\to \infty } [x_1 +(x_2 -x_1 )+\cdots +(x_n -x_{n-1} )] \\<br> &amp; =\lim_{n\to \infty } [a+(b-a)(1-\dfrac12 +\cdots +\dfrac{(-1)^{n-2}}{2^{n-2}} )] \\<br> &amp; =a+(b-a)\cdot \dfrac{1}{1+\dfrac12 } =a+(b-a)\cdot \dfrac23 =\dfrac{a+2b}{3} .\end{align}$$</p>
+<p>证$3$（线性差分方程方法）$\quad $本题的线性迭代可以看成为一个二阶线性齐次差分方程，它与常微分方程中的二阶线性齐次微分方程非常相似，有现成的解法.</p>
+<p>将迭代公式写为二阶线性齐次差分方程</p>
+<p>$$2x_n -x_{n-1} -x_{n-2} =0,\label{1.21} \tag{1.21}$$</p>
+<p>尝试求$x_n =\lambda^n $形式的非零解，其中底数$\lambda \neq 0$待定.</p>
+<p>将上述形式代入方程$\eqref{1.21}$，就得到关于$\lambda $的二次方程</p>
+<p>$$2\lambda^2 -\lambda -1=0,$$</p>
+<p>解得$\lambda_1 =-\dfrac12 ,\lambda_2 =1$.容易看出$\lambda_1 $为方程提供了解$\left( -\dfrac12 \right)^n $以及它的倍数，而$\lambda_2 $提供了方程的常数值.</p>
+<p>现在写出这两个解的线性组合</p>
+<p>$$x_n =A \left( -\dfrac12 \right)^n +B,\label{1.22} \tag{1.22}$$</p>
+<p>其中待定常数$A,B$的选取应当由方程$\eqref{1.21}$的初始条件$x_1 =a$和$x_2 =b$来决定.于是有线性齐次方程组</p>
+<p>$$-\dfrac12 A+B=a,\dfrac14 A+B=b.$$</p>
+<p>从公式$\eqref{1.22}$可见$\displaystyle \lim_{n\to \infty } x_n =B$，而只要从上述方程组消去$A$就得到$B=\dfrac{a+2b}{3}$.于是答案就是$\displaystyle \lim_{n\to \infty } x_n =B=\dfrac{a+2b}{3}$.</p>
+<p>证$4$（矩阵方法）$\quad $未学过矩阵的读者可在以后再看这个解法.</p>
+<p>考虑下列二维向量的线性迭代：</p>
+<p>$$\begin{pmatrix} x_n \\ x_{n-1} \end{pmatrix} =\begin{pmatrix} \dfrac12 &amp; \dfrac12 \\ 1 &amp; 0 \end{pmatrix} \begin{pmatrix} x_{n-1} \\ x_{n-2} \end{pmatrix} .$$</p>
+<p>求出右边的系数矩阵$A=\begin{pmatrix} \dfrac12 &amp; \dfrac12 \\ 1 &amp; 0 \end{pmatrix}$的特征值为$-\dfrac12 $和$1$，然后将它化为对角阵，即$A=S \begin{pmatrix} \dfrac12 &amp; \dfrac12 \\ 1 &amp; 0 \end{pmatrix} S^{-1}$，其中$S=\begin{pmatrix} 1 &amp; 1 \\ -2 &amp; 1 \end{pmatrix} $，$S=\dfrac13 \begin{pmatrix} 1 &amp; -1 \\ 2 &amp; 1 \end{pmatrix}$.于是就有</p>
+<p>$$\begin{pmatrix} x_n \\ x_{n-1} \end{pmatrix} =S\begin{pmatrix} -\dfrac12 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} S^{-1} \begin{pmatrix} x_{n-1} \\ x_{n-2} \end{pmatrix} =\cdots =S\begin{pmatrix} -\dfrac12 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}^{n-2} S^{-1} \begin{pmatrix} x_2 \\ x_1 \end{pmatrix}.$$</p>
+<p>令$n\to \infty $，就得到右边的极限为</p>
+<p>$$S\begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} S^{-1} \begin{pmatrix} b \\ a \end{pmatrix} =\begin{pmatrix} 1 &amp; 1 \\ -2 &amp; 1 \end{pmatrix} \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 1 \end{pmatrix} \begin{pmatrix} 1 &amp; -1 \\ 2 &amp; 1 \end{pmatrix} \dfrac13 \begin{pmatrix} b \\ a \end{pmatrix} =\dfrac{a+2b}{3}  \begin{pmatrix} 1 \\ 1 \end{pmatrix} ,$$</p>
+<p>这就是$\displaystyle \lim_{n\to \infty } x_n =\dfrac{a+2b}{3}$.</p>
+<p>$149$.设$x_n (n=1,2,\cdots )$为由以下各式所确定的数列：</p>
+<p>$$x_0 &gt; 0,x_{n+1} =\dfrac{1}{2} \left( x_n +\dfrac{1}{x_n } \right) \quad (n=0,1,2,\cdots ).$$</p>
+<p>求证：</p>
+<p>$$\lim_{n\to \infty } x_n =1.$$</p>
+<p>证$\quad $这是按照$x_{n+1} =f(x_n )$生成迭代数列的典型习题.先从几何上来观察.在右图中作出了$y=\dfrac12 \left( x+\dfrac{1}{x} \right) $和$y=x$的图像，以及从某个$x_0$生成$x_1 $和$x_2 $的过程.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/149.png" alt=""></center>
+
+<p>直观启示$\lbrace x_n \rbrace $单调递减有下界，证明如下.</p>
+<p>利用平均值不等式$A\geqslant G$得到</p>
+<p>$$x_{n+1} =\dfrac12 (x_n +\dfrac{1}{x_n } ) \geqslant 1.$$</p>
+<p>将上式左边除以$x_n $，并利用$x_n^2 \geqslant 1$，就有</p>
+<p>$$\dfrac{x_{n+1} }{x_n } =\dfrac12 (1+\dfrac{1}{x_n^2 } ) \geqslant 1,$$</p>
+<p>故$\lbrace x_n \rbrace $在有下界$1$，全单调递减.于是$\lbrace x_n \rbrace $存在极限，记极限为$C$.</p>
+<p>在迭代公式中令$n\to \infty $得$C=\dfrac12 (C+\dfrac{1}{C} )$，解得$C=1$，即$\displaystyle \lim_{n\to \infty } x_n =1$.</p>
+<p>$150$.证明：由下列各式</p>
+<p>$$x_1 =a,y_1 =b,x_{n+1} =\sqrt{x_n y_n } ,y_{n+1} =\dfrac{x_n +y_n }{2} ,$$</p>
+<p>确定的数列$x_n $和$y_n(n=1,2,\cdots )$有共同的极限</p>
+<p>$$\mu (a,b)=\lim_{n\to \infty } x_n =\lim_{n\to \infty } y_n$$</p>
+<p>（数$a$和$b$的算术几何平均值）.</p>
+<p>证$\quad $这是用迭代同时生成两个数列的问题.</p>
+<p>若$a,b$中有$0$，则从$n=2$起，所有$x_n =0$，则$y_{n+1} =\dfrac{y_n}{2} $，因此极限也是$0$.</p>
+<p>若$a,b$均不是$0$，则从题意可见只有当$a,b &gt; 0$时迭代才有意义.</p>
+<p>不失一般性，设$b\geqslant a &gt; 0$.由平均值不等式$A\geqslant G$及数学归纳法得$a\leqslant x_2 \leqslant y_2 \leqslant b$.继续下去就有</p>
+<p>$$a=x_1 \leqslant x_2 \leqslant x_3 \leqslant \cdots \leqslant x_n \leqslant y_n \leqslant \cdots \leqslant y_3 \leqslant y_2 \leqslant y_1 =b.$$</p>
+<p>由此可见数列$\lbrace x_n \rbrace $单调递增有上界，$\lbrace y_n \rbrace $单调递减有下界，因此都是收敛的.记它们的极限为$A=\displaystyle \lim_{n\to \infty } x_n $和$B=\displaystyle \lim_{n\to \infty } y_n $，并在迭代式（的任何一个）中取$n\to \infty $，就得到$A=B$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/01/10/2016/01/jimiduoweiqishuxuefenxixitiji1123/" data-title="《数学分析习题集》第一章 分析引论 2. 数列理论 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/01/19/2016/01/jimiduoweiqishuxuefenxixitiji113/" title="《数学分析习题集》第一章 分析引论 3. 函数的概念">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《数学分析习题集》第一章 分析引论 3. 函数的概念</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/01/07/2016/01/weijifenxuejiaocheng136/"  title="《微积分学教程(第一卷)》 第三章 导数及微分 6 插值法">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 第三章 导数及微分 6 插值法
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#单调有界数列收敛定理"><span class="toc-number">1.</span> <span class="toc-text">单调有界数列收敛定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#柯西收敛准则"><span class="toc-number">2.</span> <span class="toc-text">柯西收敛准则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子列、聚点与上下极限"><span class="toc-number">3.</span> <span class="toc-text">子列、聚点与上下极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于上下极限的补充"><span class="toc-number">4.</span> <span class="toc-text">关于上下极限的补充</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#柯西命题和施托尔茨定理"><span class="toc-number">5.</span> <span class="toc-text">柯西命题和施托尔茨定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#迭代生成的数列"><span class="toc-number">6.</span> <span class="toc-text">迭代生成的数列</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
