@@ -27,7 +27,7 @@
 <meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/175.png">
 <meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/176.png">
 <meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/177.png">
-<meta property="og:updated_time" content="2016-01-26T11:45:37.000Z">
+<meta property="og:updated_time" content="2016-01-27T13:37:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 3. 函数的概念">
 <meta name="twitter:description" content="习题151-236">
@@ -111,7 +111,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数概念的基本训练"><span class="toc-number">1.</span> <span class="toc-text">关于函数概念的基本训练</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拟合与插值"><span class="toc-number">2.</span> <span class="toc-text">拟合与插值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复合函数"><span class="toc-number">3.</span> <span class="toc-text">复合函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调性、反函数和奇偶性"><span class="toc-number">4.</span> <span class="toc-text">单调性、反函数和奇偶性</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数概念的基本训练"><span class="toc-number">1.</span> <span class="toc-text">关于函数概念的基本训练</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拟合与插值"><span class="toc-number">2.</span> <span class="toc-text">拟合与插值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复合函数"><span class="toc-number">3.</span> <span class="toc-text">复合函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调性、反函数和奇偶性"><span class="toc-number">4.</span> <span class="toc-text">单调性、反函数和奇偶性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#周期函数"><span class="toc-number">5.</span> <span class="toc-text">周期函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#补注"><span class="toc-number">6.</span> <span class="toc-text">补注</span></a></li></ol>
 		
 		</div>
 		
@@ -586,6 +586,8 @@
 <p>$$g(x)=\dfrac12 [f(x)+f(-x)],h(x)=\dfrac12 [f(x)-f(-x)].\label{1.28} \tag{1.28}$$</p>
 <p>最后从上述表达式可以看出$g$和$h$确实分别为偶函数和奇函数，而且它们的和就是$f$，即满足$\eqref{1.26}$.因此原来的存在性假设是正确的.</p>
 <p>证$\quad $对于在区间$(-l,l)$上给定的函数$f$用$\eqref{1.28}$定义两个函数$g$和$h$.从它们的表达式可见$g$为偶函数，$h$为奇函数，且满足所要求的等式$\eqref{1.26}$.</p>
+<h2 id="周期函数">周期函数</h2><p>这里的题不多，但其中有两个困难.第一是周期函数的最小周期问题，第二是如何判定某些函数是或不是周期函数.</p>
+<p>最小周期的存在性有很好的结果，则命题$1.5$，但还没有见到计算最小正周期的有效方法.</p>
 <p>$233$.若存在数$T &gt; 0$（函数的周期——在广义的意义上！），使定义于集合$E$的函数$f(x)$满足等式</p>
 <p>$$f(x\pm T)=f(x)\quad (x\in E),$$</p>
 <p>则函数$f(x)$称为周期函数.</p>
@@ -593,10 +595,37 @@
 <p>$(a)f(x)=A\cos{\lambda x} +B\sin{\lambda x} ;\quad (b)f(x)=\sin{x} +\dfrac12 \sin{2x} +\dfrac13 \sin{3x} $；</p>
 <p>$(c)f(x)=2\tan{\dfrac{x}{2}} -3\tan{\dfrac{x}{3}} ;\quad (d)f(x)=\sin{}^2 x$；</p>
 <p>$(e)f(x)=\sin{x^2} ;\quad (f)f(x)=\sqrt{\tan{x}} $；</p>
-<p>$(g)f(x)=\tan{\sqrt{x}} ;\quad (h)f(x)=\sin{x} +\sin{x\sqrt{2}} $.</p>
+<p>$(g)f(x)=\tan{\sqrt{x}} ;\quad (h)f(x)=\sin{x} +\sin{(x\sqrt{2})} $.</p>
 <p>解$\quad $对于$(a)$，由于</p>
 <p>$$f\left( x+\dfrac{2\pi }{\lambda } \right) =A\cos{\lambda \left( x+\dfrac{2\pi }{\lambda } \right) } +B\sin{ \lambda \left( x+\dfrac{2\pi }{\lambda } \right) } =A\cos{\lambda x} +B\sin{\lambda x} =f(x),$$</p>
-<p>故为周期函数，最小周期为$T=\dfrac{2\pi }{\lambda } (\lambda &gt; 0)$.同理可证：$(b)$、$(c)$、$(d)$和$(f)$也是周期函数，最小周期分别为$2\pi $、$6\pi $、$\pi $和$\pi $.对于$(e)$，若周期为$a$，即$\sin{(x+a)^2} =\sin{x^2} $.令$x=0$即得$a=\pm \sqrt{m\pi }$（$m$为某正整数），代入，又令$x=\sqrt{2m\pi }$，易得$\sin{(2\sqrt{2} m \pi )} =0$.但$2\sqrt{2} m$显然不是整数，得到矛盾.于是，$\sin{x^2}$不是周期函数，同时，$(g)$和$(h)$也不是周期函数.</p>
+<p>故为周期函数，最小周期为$T=\dfrac{2\pi }{\lambda } (\lambda &gt; 0)$.</p>
+<p>对于$(b)$，利用正弦函数$\sin{x}$的最小周期为$2\pi $，可见$f$也是以$2\pi $为周期的周期函数.问题是求它的最小周期.</p>
+<p>从$f(0)=0$可见若$p$是$f$的最小周期，则也有$f(p)=0$.下面我们将证明$f$在$[0,2\pi ]$中与$\sin{x}$一样只有$3$个零点，即$0,\pi ,2\pi $，而$\pi $显然不是$f$的周期（例如从$f\left( \dfrac{\pi }{2} \right) =\dfrac23 $而$f\left( \dfrac{3\pi }{2} \right) =-\dfrac23 $可知），因此$f$的最小周期就是$2\pi $.</p>
+<p>利用三角恒等式$\sin{2x} =2\sin{x} \cos{x}$和</p>
+<p>$$\sin{3x} =\sin{2x} \cos{x} +\cos{2x} +\sin{x} =2\sin{x} \cos{}^2 x+(2\cos{}^2 x -1)\sin{x} ,$$</p>
+<p>就可以将$f$改写如下：</p>
+<p>$$f(x)=\sin{x} +\dfrac12 \sin{2x} +\dfrac13 \sin{3x} =\sin{x} (\dfrac43 \cos{}^2 x+\cos{x} +\dfrac23 ).$$</p>
+<p>在最后一式的括号内令$t=\cos{x}$，将它写成$t$的二次三项式，就可以看出它始终大于$0$，因此$f$的零点与$\sin{x}$相同.</p>
+<p>同理可证：$(c)$、$(d)$和$(f)$也是周期函数，最小周期分别为$6\pi $、$\pi $和$\pi $.对于$(e)$，若周期为$a$，即$\sin{(x+a)^2} =\sin{x^2} $.令$x=0$即得$a=\pm \sqrt{m\pi }$（$m$为某正整数），代入，又令$x=\sqrt{2m\pi }$，易得$\sin{(2\sqrt{2} m \pi )} =0$.但$2\sqrt{2} m$显然不是整数，得到矛盾.于是，$\sin{x^2}$不是周期函数，同时，$(g)$也不是周期函数.</p>
+<p>$(h)(1)$记$f(x)=\sin{x} +\sin{\sqrt{2} x} $.因$f(0)=0$，我们可以考察$f$的零点全体所成集合，看它是否具有周期函数的零点应当具有的特性.</p>
+<p>由三角函数的和差化积公式得到$f(x)=2f_1 (x) f_2 (x)$，其中</p>
+<p>$$f_1 (x)=\sin{\dfrac{\sqrt{2} +1}{2} x} ,f_2 (x) =\cos{\dfrac{\sqrt{2} -1}{2} x} .$$</p>
+<p>由此可见$f$有无穷多个零点，将其全体记为数集$S$.</p>
+<p>由于$f$是$f_1 $和$f_2 $的乘积，即有$S=S_1 \cup S_2 $，其中</p>
+<p>$$S_1 =\lbrace x\vert f_1 (x)=0\rbrace =\lbrace x\vert \dfrac{\sqrt{2} +1}{2} x=j\pi ,j=0,\pm 1,\cdots \rbrace ,$$</p>
+<p>$$S_2 =\lbrace x\vert f_2 (x)=0\rbrace =\lbrace x\vert \dfrac{\sqrt{2} -1}{2} x=k\pi +\dfrac{\pi }{2} ,j=0,\pm 1,\cdots \rbrace .$$</p>
+<p>由于$\sqrt{2}$是无理数，可见$S_1 \cap S_2 =\varnothing $.</p>
+<p>由$f(0)=0$可见，若$f$有周期$p$，则$f(p)=f(0)=0$.因此$p\in S$.以下分两种情况.</p>
+<p>若$p\in S_1 $，则可任取某个$q\in S_2 $.这时有$f(p+q)=f(q)=f_2 (q)=0$.因此$p+q\in S$.利用$S_1 ,S_2 $的上述表达式可知，这时无论$p+q\in S_1 $或$p+q\in S_2 $都会导致$\sqrt{2}$成为两个整数的商，这是不可能的.</p>
+<p>若$p\in S_2 $，则可任取某个$q\in S_1 $.这时有$f(p+q)=f(q)=f_1 (q)=0$，因此也有$p+q\in S$.以下同上.</p>
+<p>综合以上分析可知$f(x)$不是周期函数.</p>
+<p>$(2)$若设$f$有周期$p$，则就成立</p>
+<p>$$\sin{(x+p)} +\sin{\sqrt{2} (x+p)} =\sin{x} +\sin{\sqrt{2} x} .$$</p>
+<p>称项得到$\sin{(x+p)} -\sin{x} =\sin{\sqrt{2} x} -\sin{\sqrt{2} (x+p)}$，然后对两边用三角函数的和差化积公式得到（已约去公因子$2$）：</p>
+<p>$$\cos{(x+\dfrac{p}{2} )} \sin{\dfrac{p}{2}} =-\cos{\sqrt{2} (x+\dfrac{p}{2} )} \sin{\dfrac{\sqrt{2} p}{2} } .$$</p>
+<p>取$x$使得$x+\dfrac{p}{2} =\dfrac{\pi }{2} $，则左边为$0$.由于$\sqrt{2}$是无理数，右边的第一个因子不等于零，因此只能有$\sin{\dfrac{\sqrt{2} p}{2}} =0$.于是$\sqrt{2} p=2\pi $的整数倍.</p>
+<p>同样取$x$使得$\sqrt{2} (x+\dfrac{p}{2} ) =\dfrac{\pi }{2} $，则同理推出$\sin{\dfrac{p}{2}}=0$，于是$p$又是$2\pi $的整数倍.</p>
+<p>由于$\sqrt{2}$是无理数，以上两个结论不能相容，可见$f(x)$不是周期函数.</p>
 <p>$234$.证明：对于狄利克雷函数</p>
 <p>$$\mathcal{X} (x)=\begin{cases} 1, &amp; x为有理数,\\ 0, &amp; x为无理数, \end{cases}$$</p>
 <p>任何有理数皆为其周期.</p>
@@ -619,10 +648,49 @@
 <p>$$\begin{align}<br>f(x+2T) &amp; =f(x+T+T)\\<br> &amp; =-f(x+T) \\<br> &amp; =-(-f(x)) \\<br> &amp; =f(x) \end{align}$$</p>
 <p>故此函数是以$2T$为周期的函数.</p>
 <p>$236$.证明：若函数$f(x)(-\infty &lt; x &lt; +\infty $）满足等式$f(x+T)=kf(x)$，式中$k$和$T$为正的常数，则$f(x)=a^x \varphi (x)$，式中$a$为常数，而$\varphi (x)$为以$T$为周期的函数.</p>
-<p>证$\quad $由假定$k &gt; 0$，$T &gt; 0$，令$a=k^{\frac{1}{T}} &gt; 0$，则$a^T =k$.于是有$f(x+T)=a^T f(x)$.</p>
-<p>今定义函数$\varphi (x)$如下：$\varphi (x)=a^{-x} f(x)$.易知$\varphi (x)$是周期为$T$的函数.事实上，</p>
-<p>$$\varphi (x+T)=a^{-(x+T)} f(x+T)=a^{-x} a^{-T} a^T f(x)=a^{-x} f(x) =\varphi (x).$$</p>
-<p>于是，$f(x)=a^x \varphi (x)$，其中$\varphi (x)$是周期为$T$的函数.</p>
+<p>证$\quad (1)$（分析法）假设结论成立，则就有</p>
+<p>$$f(x+T)=a^{x+T} \varphi (x+T) =kf(x)=ka^x \varphi (x).$$</p>
+<p>利用$\varphi (x+T)=\varphi (x)$，又在两边约去$a^x $，就得到$a^T =k$.于是解出$a=a^{\frac{1}{T} }$.然后从$f(x)=a^x \varphi (x)$可以确定出</p>
+<p>$$\varphi (x)=f(x)k^{-\frac{x}{T}} ,$$</p>
+<p>以下只要验证如此确定的$a$和$\varphi (x)$是否合乎要求.</p>
+<p>$(2)$（综合法）取$a=k^{\frac{1}{T}} $和$\varphi (x)= f(x)k^{-\frac{x}{T}} $，则已有$f(x)=\varphi (x)a^x $.又从</p>
+<p>$$\varphi (x+T)=f(x+T)k^{-\frac{x+T}{T}} =kf(x)\cdot k^{-\frac{x+T}{T}}=f(x)k^{-\frac{x}{T}} =\varphi (x).$$</p>
+<p>可见$\varphi $是周期为$T$的周期函数.</p>
+<h2 id="补注">补注</h2><p>在周期函数的研究中会遇到许多困难的问题.在这一小节中将以两个命题形式回答与前面的习题有关的两个理论问题.</p>
+<p>注意：周期函数的定义域不一定是整个实数轴.例如中学数学中的$6$个周期函数，它们都是周期函数，但除了正弦和余弦函数之外，其余$4$个都不是以$(-\infty ,+\infty )$为定义域的.其中特别要注意，正切和余切函数的最小正周期是$\pi $.</p>
+<p>第一个问题是：最小正周期的存在性问题.</p>
+<p>如习题$234$所示，狄利克雷函数$\mathcal{X} (x)$以任意有理数为其周期，可见非常值的周期函数也未必有最小正周期.那么什么条件下能够保证一个周期函数有最小正周期呢？下面以命题的形式给出这方面的一个常用结论.同时可知非常值的无最小正周期的周期函数一定是处处不连续的.</p>
+<p>命题$1.5\quad $设$f$是非常值周期函数，且至少有一个连续点，则$f$有最小正周期.</p>
+<p>证$\quad $用反证法.若$f$无最小正周期，即有无穷多个越来越小的正周期.由于任何两个周期之差仍为周期，因此$f$必有任意小的正周期.</p>
+<p>取趋于$0$的一列正周期$\alpha_n ,n=1,2,\cdots $.又设$f$于点$x_0 $连续.则对于任何点$x$，存在分解式$x=x_0 +k_n \alpha_n +\beta_n $，其中$k_n $为整数，$0\leqslant \beta_n &lt; \alpha_n $.于是有</p>
+<p>$$f(x)=f(x_0 +k_n \alpha_n +\beta_n )=f(x_0 +\beta_n ).$$</p>
+<p>令$n\to \infty $并利用$f$于点$x_0 $处连续，就得到$f(x)=f(x_0 )$.因此$f$是恒等于$f(x_0 )$的常值函数，与假设条件相矛盾.</p>
+<p>第二个问题是：两个周期函数之和是否是周期函数.</p>
+<p>如习题$235.1$所示，定义域相同的两个周期函数，如果它们的周期可公度，也就是两者之比为有理数，那么它们的和与积也是周期函数.其证明并不困难.</p>
+<p>另一方面，习题$233(h)$则表明不可公度的两个周期函数之和可以不是周期函数.这是否具有一般意义？</p>
+<p>命题$1.6\quad $设$f_1 $和$f_2 $是定义在同一集合上的周期函数，它们的周期不可公度.若$f_1 $，$f_2 $中至少有一个界，又至少有一个连续，则$f=f_1 +f_2 $不是周期函数.</p>
+<p>证$\quad $用反证法.设$f$有周期$p &gt; 0$，则从</p>
+<p>$$0=f(x+p)-f(x)=f_1 (x+p)+f_2 (x+p)-f_1 (x)-f_2 (x) $$</p>
+<p>得到恒等式</p>
+<p>$$f_1 (x+p)-f_1 (x)\equiv -f_2 (x+p)+f_2 (x).$$</p>
+<p>利用这个恒等式定义一个新的函数$F$如下：</p>
+<p>$$F(x)=f_1 (x+p)-f_1 (x)=-f_2 (x+p)+f_2 (x).\label{101} \tag{*} $$</p>
+<p>设$T_1 ,T_2 $分别是$f_1 $和$f_2 $的周期.从定义$\eqref{101}$可见$F$同时以$T_1 ,T_2 $为周期.不妨设$T_1 &gt; T_2 &gt; 0$，则$F$又以$T_1 -T_2 $为周期.利用辗转相除法，可见$F$有无穷多个越来越小的正周期，从而有任意小的正周期.</p>
+<p>取$F$的一列趋于$0$的正周期$\alpha_n ,n=1,2,\cdots $.设$x_0 $在定义域中，则对于定义域中任意其他点$x$，有分解$x=x_0 +k_n \alpha_n +\beta_n $，$n=1,2,\cdots $，其中$k_n $为整数，$0\leqslant \beta_n &lt; \alpha_n $.</p>
+<p>不妨设$f_1 $和$f_2 $中的$f_1 $为其定义域上的连续函数，于是有</p>
+<p>$$F(x)=F(x_0 +\beta_n ) =f_1 (x_0 +\beta_n +p)-f_1 (x_0 +\beta_n ),$$</p>
+<p>令$n\to \infty $，并记上式右边的极限为$c$，就得到</p>
+<p>$$F(x)=F(x_0 )=f_1 (x_0 +p)-f_1 (x_0 ) =c.$$</p>
+<p>于是对所有$x$成立</p>
+<p>$$F(x)=f_1 (x+p)-f_1 (x)=-f_2 (x+p)+f_2 (x)=c.$$</p>
+<p>这时对一切整数$n$有</p>
+<p>$$f_1 (x_0 +np)=f_1 (x_0 ) +nc,f_2 (x_0 +np)=f_2 (x_0 )-nc.$$</p>
+<p>由于$f_1 ,f_2 $中至少有一个有界，因此只能有$c=0$.</p>
+<p>于是就证明了$F\equiv 0$，同时也就证明了$p$是$f_1 $和$f_2 $的共有周期，引出矛盾.</p>
+<p>举一个例子.</p>
+<p>例题$\quad $设$f_1 (x)=\tan{\alpha \pi x}$，$\alpha &gt; 0$，$f_2 (x)=\mathcal{X} (x)$（即狄利克雷函数），证明，$f(x)=f_1 (x)+f_2 (x)$为周期函数的充分必要条件是$\alpha $为有理数》</p>
+<p>解$\quad $若$\alpha $为有理数，则$f_1 $与$f_2 $的周期可度，根据习题$235.1$知道$f=f_1 +f_2 $为周期函数；若$\alpha $为无理数，则可以根据$f_1 $连续，$f_2 $有界，然后用命题$1.6$知道$f=f_1 +f_2 $不是周期函数.</p>
+<p>最后，不易想到的是周期不可公度的两个周期函数之和仍然可能是周期函数.</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -681,7 +749,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数概念的基本训练"><span class="toc-number">1.</span> <span class="toc-text">关于函数概念的基本训练</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拟合与插值"><span class="toc-number">2.</span> <span class="toc-text">拟合与插值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复合函数"><span class="toc-number">3.</span> <span class="toc-text">复合函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调性、反函数和奇偶性"><span class="toc-number">4.</span> <span class="toc-text">单调性、反函数和奇偶性</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数概念的基本训练"><span class="toc-number">1.</span> <span class="toc-text">关于函数概念的基本训练</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拟合与插值"><span class="toc-number">2.</span> <span class="toc-text">拟合与插值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复合函数"><span class="toc-number">3.</span> <span class="toc-text">复合函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调性、反函数和奇偶性"><span class="toc-number">4.</span> <span class="toc-text">单调性、反函数和奇偶性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#周期函数"><span class="toc-number">5.</span> <span class="toc-text">周期函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#补注"><span class="toc-number">6.</span> <span class="toc-text">补注</span></a></li></ol>
  
   </div>
 
