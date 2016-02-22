@@ -1,0 +1,1131 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析习题集》第一章 分析引论 1. 实数 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题1-40">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析习题集》第一章 分析引论 1. 实数">
+<meta property="og:url" content="http://yoursite.com/2015/03/22/2015/03/jimiduoweiqishuxuefenxixitiji111/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题1-40">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/cover.jpg">
+<meta property="og:updated_time" content="2015-10-20T13:32:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 1. 实数">
+<meta name="twitter:description" content="习题1-40">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/03/22/2015/03/jimiduoweiqishuxuefenxixitiji111/" title="《数学分析习题集》第一章 分析引论 1. 实数" itemprop="url">《数学分析习题集》第一章 分析引论 1. 实数</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-03-22T08:09:34.000Z" itemprop="datePublished"> 發表於 2015-03-22</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数学归纳法"><span class="toc-number">1.</span> <span class="toc-text">数学归纳法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数集的分割"><span class="toc-number">2.</span> <span class="toc-text">有理数集的分割</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#确界的定义与性质"><span class="toc-number">3.</span> <span class="toc-text">确界的定义与性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#含有绝对值的不等式"><span class="toc-number">4.</span> <span class="toc-text">含有绝对值的不等式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绝对误差和相对误差"><span class="toc-number">5.</span> <span class="toc-text">绝对误差和相对误差</span></a></li></ol>
+		
+		</div>
+		
+		<p><strong><a href="http://book.douban.com/subject/4902598/" target="_blank" rel="external">数学分析习题集（根据2010年俄文版翻译）</a></strong> <a href="http://pan.baidu.com/s/1gdCeO75" target="_blank" rel="external">在线阅读</a> Б.П.吉米多维奇 高等教育出版社</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/cover.jpg" alt=""></center>
+
+<p>$1$.<strong>数学归纳法</strong>. 为了证明某定理对任意的自然数$n$为真，只需证明下面两点即可：（$1$）此定理对$n=1$为真，（$2$）若此定理对任何的一个自然数$n$为真，则它对下一个正整数$n+1$也为真.</p>
+<p>$2$.<strong>分割</strong>. 若分有理数为$A$和$B$两类，使其满足于下列条件：（$1$）两类均非空集；（$2$）每一个有理数必属于一类，且仅属于一类；（$3$）属于$A$类（下类）的任一数小于属于$B$类（上类）的任意一个数，则这样的一个分类法称为分割.分割$A/B$确定一个数：（$a$）若或是下类$A$有最大的数，或是上类$B$有最小的数，则该分割确定一个有理数；（$b$）若$A$类无最大数，而$B$类亦无最小数，则该分割确定一个无理数.有理数和无理数统称为<strong>实数</strong>.</p>
+<p>$3$.<strong>绝对值（或模）</strong>. 若$x$为实数，则下列条件所确定的非负数$\vert x\vert $称为$x$的绝对值（模）：</p>
+<p>$$\vert x\vert =\begin{cases} -x, &amp; x &lt; 0, \\ x, &amp; x \geq 0. \end{cases} $$</p>
+<p>对于任何的实数$x$和$y$，以下不等式成立：</p>
+<p>$$\vert x\vert -\vert y\vert \leq \vert x+y\vert \leq \vert x\vert +\vert y\vert .$$</p>
+<p>$4$<strong>上确界和下确界</strong>. 设$X=\lbrace x\rbrace $为实数的有界集合.若：</p>
+<p>（$1$）每一个$x\in X$满足不等式</p>
+<p>$$x\geq m;$$</p>
+<p>（$2$）对于任何的$\varepsilon &gt; 0$，存在有$x’\in X$，使</p>
+<p>$$x’ &lt; m+\varepsilon ,$$</p>
+<p>则数</p>
+<p>$$m=\inf \lbrace x\rbrace $$</p>
+<p>称为集合$X$的下确界.</p>
+<p>类似地，若：</p>
+<p>（$1$）每一个$x\in X$满足不等式</p>
+<p>$$x\leq M;$$</p>
+<p>（$2$）对于任何的$\varepsilon &gt; 0$，存在有$x’’\in X$使</p>
+<p>$$x’’ &gt; M-\varepsilon ,$$</p>
+<p>则数</p>
+<p>$$M=\sup \lbrace x\rbrace $$</p>
+<p>称为集合$X$的上确界.</p>
+<p>若集合$X$下方无界，则通常说</p>
+<p>$$\inf \lbrace x\rbrace =-\infty ;$$</p>
+<p>若集合$X$上方无界，则认为</p>
+<p>$$\sup \lbrace x\rbrace =+\infty .$$</p>
+<p>$5$.<strong>绝对误差和相对误差</strong>. 设$a(a\neq 0)$是被测量的准确数值，而$x$是这个量的近似值，则</p>
+<p>$$\Delta =\vert x-a\vert $$</p>
+<p>称为被测量的绝对误差，而</p>
+<p>$$\delta =\dfrac{\Delta }{\vert a\vert }$$</p>
+<p>称为相对误差.</p>
+<p>若$x$的绝对误差不超过它的第$n$个有效数字所对应的位数的单位的一半，则说$x$有$n$位精确数字.</p>
+<h2 id="数学归纳法">数学归纳法</h2><p>利用数学归纳法证明下列等式对任何正整数$n$皆成立：</p>
+<p>$1$.$1+2+\cdots +n=\dfrac{n(n+1)}{2} $.</p>
+<p>证：当$n=1$时，等式成立.</p>
+<p>设对于$n=k$（正整数）时，等式成立，即</p>
+<p>$$1+2+\cdots +k=\dfrac{k(k+1)}{2} ,$$</p>
+<p>则对于$n=k+1$时，有</p>
+<p>$$1+2+\cdots +k+(k+1)=\dfrac{k(k+1)}{2} +k+1 =\dfrac{(k+1)[(k+1)+1]}{2} .$$</p>
+<p>即对于$n=k+1$时等式也成立.</p>
+<p>于是，由数学归纳法知，对于任何正整数$n$，有$1+2+\cdots +n =\dfrac{n(n+1)}{2} $.</p>
+<p>$2$.$1^2+2^2+\cdots +n^2=\dfrac{n(n+1)(2n+1)}{6} $.</p>
+<p>证：当$n=1$时，等式成立.</p>
+<p>设$n=k$时，等式成立，即$1^2+2^2+\cdots +k^2=\dfrac{k(k+1)(2k+1)}{6} $,则对于$n=k+1$时，有</p>
+<p>$$\begin{align}<br> &amp; 1^2+2^2+\cdots +k^2+(k+1)^2 \\<br>= &amp; \dfrac{k(k+1)(2k+1)}{6} +(k+1)^2 \\<br>= &amp; \dfrac16 (k+1)[k(2k+1)+6(k+1)] \\<br>= &amp; \dfrac{(k+1)(2k^2+7k+6)}{6} \\<br>= &amp; \dfrac{(k+1)(k+2)(2k+3)}{6} \\<br>= &amp; \dfrac{(k+1)[(k+1)+1] [2(k+1)+1]}{6} ,<br>\end{align}$$</p>
+<p>即对于$n=k+1$时，等式也成立.</p>
+<p>于是，对于任何正整数$n$，有$1^2+2^2+\cdots +n^2=\dfrac{n(n+1)(2n+1)}{6} $.</p>
+<p>$3$.$1^3+2^3+\cdots +n^3 =(1+2+\cdots +n)^2 $.</p>
+<p>证：当$n=1$时，等式成立.</p>
+<p>设$n=k$时，等式成立，即$1^3+2^3+\cdots +k^3 =(1+2+\cdots +k)^2 $,则对于$n=k+1$时，有</p>
+<p>$$\begin{align}<br> &amp; 1^3+2^3+\cdots +k^3 +(k+1)^3 \\<br>= &amp; (1+2+\cdots +k)^2+(k+1)^3 \\<br>= &amp; \dfrac{k^2(k+1)^2}{4} +(k+1)^3 \\<br>= &amp; \dfrac{(k+1)^2(k+2)^2}{4} \\<br>= &amp; \left\lbrace \dfrac{(k+1) [(k+1)+1]}{2} \right\rbrace ^2 \\<br>= &amp; [1+2+\cdots +(k+1)]^2 ,\\<br>\end{align} $$</p>
+<p>即对于$n=k+1$时，等式也成立.</p>
+<p>于是，对于任何正整数$n$，有$1^3+2^3+\cdots +n^3 =(1+2+\cdots +n)^2 $.</p>
+<p>$4$.$1+2+2^2+\cdots +2^{n-1} =2^n -1$.</p>
+<p>证：当$n=1$时，等式成立.</p>
+<p>设$n=k$时，等式成立，即$1+2+2^2+\cdots +2^{k-1} =2^k -1$,则对于$n=k+1$时，有</p>
+<p>$$1+2+2^2+\cdots +2^{k-1}+2^k =(2^k-1)+2^k=2^{k+1} -1,$$</p>
+<p>即对于$n=k+1$时，等式也成立.</p>
+<p>于是，对于任何正整数$n$，有$1+2+2^2+\cdots +2^{n-1} =2^n-1$.</p>
+<p>$5$.设$a^{[n]} =a(a-h)\cdots [a-(n-1)h]$及$a^{[0]} =1$，求证</p>
+<p>$$\displaystyle (a+b)^{[n]} =\sum_{m=0}^n C_n^m a^{[n-m]} b^{[m]} ,$$</p>
+<p>其中$C_n^m$是由$n$个元素中选取$m$个的组合数，由此推出牛顿的二项式公式.</p>
+<p>证：当$n=1$时，由于$(a+b)^{[1]} =a+b $及$\displaystyle =\sum_{m=0}^1 C_1^m a^{[1-m]} b^{[m]} =a+b$,所以等式成立.</p>
+<p>设$n=k$时，等式成立，即</p>
+<p>$$\displaystyle (a+b)^{[k]} =\sum_{m=0}^k C_k^m a^{[k-m]} b^{[m]},\label{1} \tag{1}$$</p>
+<p>则对于$n=k+1$时，有</p>
+<p>$$(a+b)^{[k+1]} =(a+b)^{[k]} \cdot (a+b-kh).\label{2} \tag{2}$$</p>
+<p>将$\eqref{1}$式代入$\eqref{2}$式得</p>
+<p>$$\begin{align}<br> &amp; (a+b)^{[k+1]} \\<br>= &amp; (a+b-kh)\cdot \displaystyle \sum_{m=0}^k C_k^m a^{[k-m]} b^{[m]} \\<br>= &amp; (a+b-kh)\left\lbrace C_k^0 a^{[k]} b^{[0]} +C_k^1 a^{[k-1]} b^{[1]} +\cdots +C_k^k a^{[0]} b^{[k]} \right\rbrace \\<br>= &amp; \left\lbrace (a-kh)+b \right\rbrace C_k^0 a^{[k]} b^{[0]} +\left\lbrace [a-(k-1)h]+(b-h)\right\rbrace C_k^1 a^{[k-1]} b^{[1]} +\cdots + \left\lbrace a+(b-kh)\right\rbrace C_k^k a^{[0]} b^{[k]} \\<br>= &amp; C_k^0 a^{[k+1]} b^{[0]}+C_k^0 a^{[k]} b^{[1]} +C_k^1 a^{[k]} b^{[1]} +C_k^1 a^{[k-1]} b^{[2]} +\cdots +C_k^k a^{[1]} b^{[k]} +C_k^k a^{[0]} b^{[k+1]} \\<br>= &amp; C_{k+1}^0 a^{[k+1]} b^{[0]} +(C_k^0 +C_k^1 )a^{[k]} b^{[1]}+\cdots +(C_k^{k-1} +C_k^k )a^{[1]} b^{[k]} +C_{k+1}^{k+1} a^{[0]} b^{[k+1]} \\<br> &amp; \left( \because C_n^m =C_n^{n-m} =C_{n-1}^{m-1} +C_{n-1}^m \right) \\<br>= &amp; C_{k+1}^0 a^{[k+1]} b^{[0]} +C_{[k+1]}^1 a^{[k]} b^{[1]} +\cdots +C_{k+1}^k a^{[1]} b^{[k]} +C_{k+1}^{k+1} a^{[0]} b^{[k+1]} \\<br>= &amp; \sum_{m=0}^{k+1} C_{k+1}^m a^{[k+1-m]} b^{[m]} ,<br>\end{align}$$</p>
+<p>故由$(a+b)^{[k]} =\displaystyle \sum_{m=0}^k C_k^m a^{[k-m]} b^{[m]} $可推得下式成立：</p>
+<p>$$(a+b)^{[k+1]} =\displaystyle \sum_{m=0}^{k+1} C_{k+1}^m a^{[k+1-m]} b^{[m]} ,$$</p>
+<p>即对于$n=k+1$时，等式也成立.</p>
+<p>于是，对于任何正整数$n$，有</p>
+<p>$$(a+b)^{[n]} =\displaystyle \sum_{m=0}^n C_n^m a^{[n-m]} b^{[m]} .\label{3} \tag{3} $$</p>
+<p>在式子$a^{[n]} =a(a-h)\cdots [a-(n-1)h]$中，令$h=0$，即得</p>
+<p>$$a^{[n]} =a^n .\label{4} \tag{4} $$</p>
+<p>将$\eqref{4}$式代入$\eqref{3}$式，得牛顿二项式公式$(a+b)^n =\displaystyle \sum_{m=0}^n C_n^m a^{n-m} b^m $.</p>
+<p>$6$.证明贝努里不等式</p>
+<p>$$(1+x_1 )(1+x_2 )\cdots (1+x_n ) \geq 1+x_1 +x_2 +\cdots +x_n ,$$</p>
+<p>式中$x_1 ,x_2 ,\cdots ,x_n $是符号相同且大于$-1$的数.</p>
+<p>证：当$n=1$时，此式取等号.</p>
+<p>设$n=k$时，不等式成立，即</p>
+<p>$$(1+x_1 )(1+x_2 )\cdots (1+x_k ) \geq 1+x_1 +x_2 +\cdots +x_k ,$$</p>
+<p>则对于$n=k+1$时，由于$x_i (i=1,2,\cdots ,n)$大于$-1$，所以$1+x_i &gt; 0$.因而有</p>
+<p>$$\begin{align}<br> &amp; (1+x_1 )(1+x_2 )\cdots (1+x_k )(1+x_{k+1} )\\<br>\geq &amp; (1+x_1 +x_2 +\cdots +x_k )(1+x_{k+1} )\\<br>= &amp; (1+x_1 +x_2 +\cdots +x_k )+(x_{k+1} +x_1 x_{k+1} +\cdots +x_k x_{k+1} ) .\\<br>\end{align}$$</p>
+<p>由于$x_i x_j \geq 0$，所以</p>
+<p>$$(1+x_1 )(1+x_2 )\cdots (1+x_{k+1} )\geq 1+x_1 +x_2 +\cdots +x_{k+1} ,$$</p>
+<p>即对于$n=k+1$时，不等式也成立，</p>
+<p>于是，对于任何自然数$n$，有</p>
+<p>$$(1+x_1 )(1+x_2 )\cdots (1+x_n )\geq 1+x_1 +x_2 +\cdots +x_n .$$</p>
+<p>$7$.证明若$x &gt; -1$，则不等式</p>
+<p>$$(1+x)^n \geq 1+nx \quad (n &gt; 1)$$</p>
+<p>为真，且仅当$x=0$时，等号成立.</p>
+<p>证：对于$n=2$，有</p>
+<p>$$(1+x)^2=1+2x+x^2 \geq 1+2x,$$</p>
+<p>当且仅当$x=0$时等号成立.</p>
+<p>现设$n=k$时不等式成立，则当$n=k+1$时有</p>
+<p>$$\begin{align}<br>(1+x)^{k+1} = &amp; (1+x)^k (1+x) \\<br>\geq &amp; (1+kx)(1+x)=1+(k+1)x+kx^2 \\<br>\geq &amp; 1+(k+1)x,<br>\end{align} $$</p>
+<p>同样从归纳假设和上式推导可知当且仅当$x=0$时等号成立.</p>
+<blockquote>
+<p>这里有一个意外，当$-2\leq x\leq -1$时本题的伯努利不等式仍然成立.</p>
+<p>证：令$\psi _n (x)=(1+x)^n -1-nx$，其中$x\leq -1$.</p>
+<p>如果$n$为偶数，因为$x\leq -1$，所以$-nx\geq 1$.这时，</p>
+<p>$$\psi _n (x)=(1+x)^n -1-nx\geq (1+x)^n-1+1=(1+x)^n \geq 0.$$</p>
+<p>如果$n$为奇数，对$\psi _n (x)$求关于$x$的一阶导，并令</p>
+<p>$$\psi’ _n (x) =n(1+x)^{n-1} =n[(1+x)^{n-1} -1]=0,$$</p>
+<p>可解出$x=-2$.可知，</p>
+<p>当$x\in (-\infty ,-2)$，$\psi’ _n (x) &gt; 0$，$\psi _n (x)$单调递增$\nearrow$；</p>
+<p>当$x\in (-2 ,-1)$，$\psi’ _n (x) &lt; 0$，$\psi _n (x)$单调递减$\searrow$；</p>
+<p>因此，当$x\in (-2 ,-1)$时，有</p>
+<p>$$\psi _n (x) &gt; \psi _n (-1) =[1+(-1)]^n-1-(-1)n\geq 0.$$</p>
+<p>特别地，当$x=-1$时，$\psi _n (-1)=n-1 \geq 0$；</p>
+<p>当$x=-2$时，</p>
+<p>$$\psi _n (-2) =[1+(-2)]^n -1-(-2)n=(-1)^n-1+2n \geq (-1)^n +1 \geq 0.$$</p>
+<p>综上所述，当$x\in [-2,-1]$时，都有$\psi _n (x)\geq 0$成立，即对于任意的自然数$n$，有</p>
+<p>$$(1+x)^n\geq 1+nx.$$</p>
+</blockquote>
+<p>$8$.证明不等式：</p>
+<p>$$n! &lt; \left( \dfrac{n+1}{2} \right) ^n \quad (n &gt; 1).$$</p>
+<p>提示：利用不等式</p>
+<p>$$\left( \dfrac{n+2}{n+1} \right) ^{n+1} =\left( 1+\dfrac{1}{n+1} \right) ^{n+1} &gt; 2\quad (n=1,2,\cdots ).$$</p>
+<p>证：当$n=2$时，因为$\left( \dfrac{2+1}{2} \right) ^2 =\dfrac94 &gt; 2=2!$，故不等式成立.</p>
+<p>设$n=k$时，不等式成立，则</p>
+<p>$$k! &lt; \left( \dfrac{k+1}{2} \right) ^k ,$$</p>
+<p>则对于$n=k+1$时，有</p>
+<p>$$(k+1)! &lt; \left( \dfrac{k+1}{2} \right) ^k (k+1) =2\left( \dfrac{k+1}{2} \right) ^{k+1} .$$</p>
+<p>由于</p>
+<p>$$\left( \dfrac{k+2}{k+1} \right) ^{k+1} =\left( 1+\dfrac{1}{k+1} \right) ^{k+1} &gt; 2(k=1,2,\cdots ),$$</p>
+<p>从而有</p>
+<p>$$(k+1)! &lt; \left[ \dfrac{(k+1)+1}{2} \right] ^{k+1} ,$$</p>
+<p>即对于$n=k+1$时，不等式也成立.</p>
+<p>于是，对于任何自然数$n$，有</p>
+<p>$$n! &lt; \left( \dfrac{n+1}{2} \right) ^n .$$</p>
+<p>$9$.证明如下不等式：</p>
+<p>$(a)\;2!\cdot 4!\cdots (2n)! &gt; [(n+1)!]^n \;(n &gt; 1)$;</p>
+<p>$(b)\;\dfrac12 \cdot \dfrac34 \cdots \dfrac{2n-1}{2n} &lt; \dfrac{1}{\sqrt{2n+1} } $.</p>
+<p>证：$(a)\;$当$n=2$时，因为$2!\cdot 4! =48$，及$[(2+1)!]^2 =36$，所以$2!\cdot 4! &gt; [(2+1)!]^2$，故不等式成立.</p>
+<p>设$n=k$时，不等式成立，即</p>
+<p>$$2!\cdot 4!\cdots (2k)! &gt; [(k+1)!]^k,$$</p>
+<p>则对于$n=k+1$时，有</p>
+<p>$$\begin{align}<br> &amp; 2!\cdot 4!\cdots (2k+2)! \\<br>\,&gt; &amp; [(k+1)!]^k (2k+2)! \\<br>= &amp; [(k+1)!]^{k+1} (k+2)(k+3)\cdots (2k+2) \\<br>\,&gt; &amp; [(k+1)!]^{k+1} (k+2)^{k+1} \\<br>= &amp; [(k+2)!]^{k+1} ,<br>\end{align} $$</p>
+<p>即对于$n=k+1$时，不等式也成立.于是，由数学归纳法原理，本题证毕.</p>
+<p>$(b)\;$证$1\quad $当$n=1$时，因为$\dfrac12 &lt; \dfrac{1}{\sqrt{3} }$，不等式显然成立.</p>
+<p>设$n=k$时，不等式成立，即$\dfrac12 \cdot \dfrac34 \cdots \dfrac{2k-1}{2k} &lt; \dfrac{1}{\sqrt{2k+1} } $.</p>
+<p>对于$n=k+1$而言，由于</p>
+<p>$$\dfrac12 \cdot \dfrac34 \cdots \dfrac{2k+1}{2k+2} &lt; \dfrac{1}{\sqrt{2k+1} } \cdot \dfrac{2k+1}{2k+2} =\dfrac{\sqrt{2k+1} }{2k+2} .$$</p>
+<p>故只要证$\dfrac{\sqrt{2k+1} }{2k+2} &lt; \dfrac{1}{\sqrt{2k+3} } $，即证$(2k+1)(2k+3) &lt; (2k+2)^2 $，而上述不等式由于</p>
+<p>$$4k^2 +8k+3 &lt; 4k^2 +8k+4,$$</p>
+<p>因而是成立的.于是，最后得</p>
+<p>$$\dfrac12 \cdot \dfrac34 \cdots \dfrac{2k+1}{2k+2} &lt; \dfrac{1}{\sqrt{2k+3} } ,$$</p>
+<p>即对于$n=k+1$时，不等式也成立.于是，由数学归纳法，本题证毕.</p>
+<p>证$2\quad $利用不等式</p>
+<p>$$\dfrac{\sqrt{(2k-1)(2k+1)}}{2k} &lt; 1,$$</p>
+<p>令$k=1,2,\cdots ,n$，并将所得的不等式边相乘得到</p>
+<p>$$\dfrac{\sqrt{1\cdot 3}}{2} \cdot \dfrac{\sqrt{3\cdot 5}}{4} \cdot \cdots \cdot \dfrac{\sqrt{(2n-1)(2n+1)}}{2n} =\dfrac12 \cdot \dfrac34 \cdot \cdots \cdot \dfrac{2n-1}{2n} \cdot \sqrt{2n+1} &lt; 1,$$</p>
+<p>整理后即得.</p>
+<p>证$3\quad $记$x_n =\dfrac{1\cdot 3\cdot \cdots \cdot (2n-1)}{2\cdot 4\cdot \cdots \cdot (2n)}$.利用$\dfrac{2k-1}{2k} &lt; \dfrac{2k}{2k+1}$，$k=1,2,\cdots ,n$，就有</p>
+<p>$$x_n^2 &lt; x_n \cdot \dfrac{2\cdot 4\cdot \cdots \cdot (2n)}{3\cdot 5\cdot \cdots \cdot (2n+1)} =\dfrac{1}{2n+1} ,$$</p>
+<p>两边开平方即得.</p>
+<p>$10$.证明如下不等式：</p>
+<p>$(a)\;1+\dfrac{1}{\sqrt{2}} +\dfrac{1}{\sqrt{3}} +\cdots +\dfrac{1}{\sqrt{n}} &gt; \sqrt{n} \;(n\geq 2)$；</p>
+<p>$(b)\;n^{n+1} &gt; (n+1)^n \;(n\geq 3)$；</p>
+<p>$(c)\;$ $\displaystyle \Bigg| \sin{\left( \sum_{k=1}^n x_k \right) } \Bigg| \leq \sum_{k=1}^n \sin{x_k } \;(0\leq x_k \leq \pi ,k=1,2,\cdots ,n)$；</p>
+<p>$(d)\;(2n)! &lt; 2^{2n} (n!)^2$.</p>
+<p>证：$(a)\;$证$1\quad $对于$n=2$可以从</p>
+<p>$$1+\dfrac{1}{\sqrt{2}} &gt; \sqrt{2} \iff \sqrt{2} +1 &gt; 2$$</p>
+<p>直接看出成立.</p>
+<p>现设$n=k$时成立，则对$n=k+1$就有</p>
+<p>$$\begin{align}<br> &amp; 1+\dfrac{1}{\sqrt{2}} +\cdots +\dfrac{1}{\sqrt{k}}  +\dfrac{1}{\sqrt{k+1}} \\<br>\,&gt; &amp; \sqrt{k} +\dfrac{1}{\sqrt{k+1}} \\<br>= &amp; \dfrac{1}{\sqrt{k+1}} \cdot (\sqrt{k(k+1)} +1) \\<br>\,&gt; &amp; \dfrac{1}{\sqrt{k+1}} \cdot (\sqrt{k^2} +1) \\<br>= &amp; \sqrt{k+1} .<br>\end{align} $$</p>
+<p>证$2\quad $在$n\geq 2$时将每一项换为$\dfrac{1}{\sqrt{n}}$即得所求：</p>
+<p>$$1+\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{3}}+\cdots +\dfrac{1}{\sqrt{n}} &gt; \dfrac{1}{\sqrt{n}}+\dfrac{1}{\sqrt{n}}+\cdots +\dfrac{1}{\sqrt{n}} =\dfrac{n}{\sqrt{n}} =\sqrt{n} .$$</p>
+<p>证$3\quad $利用裂项消去法.从</p>
+<p>$$\dfrac{1}{\sqrt{k}} =\dfrac{2}{2\sqrt{k}} &gt; \dfrac{2}{\sqrt{k} +\sqrt{k+1} } =2(\sqrt{k+1} -\sqrt{k} )$$</p>
+<p>出发，令其中的$k=1,2,\cdots ,n$，将所得的不等式边边相加得到</p>
+<p>$$1+\dfrac{1}{\sqrt{2}}+\cdots +\dfrac{1}{\sqrt{n}} &gt; 2(\sqrt{n+1} -1).$$</p>
+<p>对于$n=2$上式右边已大于$\sqrt{2}$，对于$n\geq 3$则可以从</p>
+<p>$$2(\sqrt{n+1} -1)=\sqrt{n+1} +(\sqrt{n+1} -2) \geq \sqrt{n+1} &gt; \sqrt{n}$$</p>
+<p>得到.</p>
+<p>$(b)\;$证$1\quad $对$n=3$即是$3^4 =81 &gt; 4^3 =64$（对$n=2$不等式不成立）.</p>
+<p>现设$n=k$时不等式成立，于是我们需要证明的是$n=k+1$时成立不等式</p>
+<p>$$(k+1)^{k+2} &gt; (k+2)^{k+1} .\label{5} \tag{5} $$</p>
+<p>为了利用归纳假设$k^{k+1} &gt; (k+1)^k$，将$\eqref{5}$的左边乘除$k^{k+1}$，即可推导如下：</p>
+<p>$$\begin{align}<br>(k+1)^{k+2} =  &amp; \dfrac{(k+1)^{k+2} }{k^{k+1}} \cdot k^{k+1}\\<br>\,&gt; &amp; \dfrac{(k+1)^{k+2} }{k^{k+1}} \cdot (k+1)^k = \left( \dfrac{(k+1)^2}{k} \right) ^{k+1} \\<br>\,&gt; &amp; \left( \dfrac{k^2+2k}{k} \right) ^{k+1} = (k+2)^{k+1} .\\<br>\end{align} $$</p>
+<p>证$2\quad $首先将不等式改写为等价的$\left( 1+\dfrac{1}{n} \right) ^n &lt; n$，然后利用已知数列$\left\lbrace \left( 1+\dfrac{1}{n} \right) ^n \right\rbrace $是单调递增数列，且收敛于$e\approx 2.718\;28 &lt; 3$，可见，当$n \geq 3$时不等式成立.</p>
+<p>$(c)\;$对于$n=1$由于$0\leq x_1 \leq \pi $，因此$\sin{x_1 } \geq 0$，不等式以等号成立.</p>
+<p>现设$n$时不等式成立，则当$n+1$时就有</p>
+<p>$$\begin{align}<br>\displaystyle \Bigg| \sin{\left( \sum_{k=1}^{n+1} x_k \right) } \Bigg| =  &amp; \Bigg| \sin{\left( \sum_{k=1}^n x_k +x_{n+1} \right) } \Bigg| \\<br>= &amp; \Bigg| \sin{\left( \sum_{k=1}^n x_k  \right) } \cos{x_{n+1} } +\cos{\left( \sum_{k=1}^n x_k  \right) } \sin{x_{n+1}} \Bigg| \\<br>\leq &amp; \Bigg| \sin{\left( \sum_{k=1}^n x_k  \right) } \cos{x_{n+1} } \Bigg| +\Bigg| \cos{\left( \sum_{k=1}^n x_k  \right) } \sin{x_{n+1}} \Bigg| \\<br>\leq &amp; \Bigg| \sin{\left( \sum_{k=1}^n x_k  \right) } \Bigg| +\Bigg| \sin{x_{n+1}} \Bigg| \leq \sum_{k=1}^{n+1} \sin{x_k } .<br>\end{align} $$</p>
+<p>这里最后一步利用了$n=k$时的归纳假设，还利用了$0\leq x_{n+1} \leq \pi $时$\sin{x_{n+1}} \geq 0$.</p>
+<p>$(d)\;$证$1\quad $对$n=1$不等式就是$2 &lt; 4$.</p>
+<p>现设$n=k$时不等式成立，则对$n=k+1$就有</p>
+<p>$$\begin{align}<br>(2(k+1))! =  &amp; (2k)!\cdot (2k+1)(2k+2) \\<br>&lt; &amp; 2^{2k}(k!)^2\cdot (2k+1)(2k+2) \\<br>&lt; &amp; 2^{2k}(k!)^2\cdot (2k+2)^2 \\<br>= &amp; 2^{2(k+1)}[(k+1)!]^2 .<br>\end{align} $$</p>
+<p>证$2\quad $将左边作如下分解即可证出所要的不等式</p>
+<p>$$(2n)!=(2n)!!(2n-1)!! &lt; [(2n)!!]^2 =2^{2n} (n!)^2.$$</p>
+<blockquote>
+<p>科普读物：<a href="https://drive.google.com/a/ljh.tbst.edu.au/file/d/0ByBe9fIy963UTmV6am1nMENTOVk/view?usp=sharing" target="_blank" rel="external">华罗庚.数学归纳法.//华罗庚.华罗庚科普著作选集.上海：上海教育出版社，1984</a><br><a href="https://drive.google.com/a/ljh.tbst.edu.au/file/d/0ByBe9fIy963UUU5xVWxhTVJteGc/view?usp=sharing" target="_blank" rel="external">Соминскии И С.Математической Индукции.Москва:ТЕХГИЗ,1952(中译本：索明斯基.数学归纳法.北京：中国青年出版社,1953)</a></p>
+</blockquote>
+<h2 id="有理数集的分割">有理数集的分割</h2><p>$11$.设$c$为正整数，而不为整数的平方，且$A/B$为确定实数$\sqrt{c}$的分割，其中$B$类包含所有满足$b^2 &gt; c$的正有理数$b$，而$A$类包含所有其余的有理数.求证：在$A$类中无最大数，而在$B$类中无最小数.</p>
+<p>证明：设$a\in A$.若$a\leq 0$，则显然存在$a’ &gt; a(a’ &gt; 0)$且$a’ \in A$.故可设$a &gt; 0$，于是$a^2 \leq c$.但不可能有$a^2 =c$.因若$a^2=c$，设$a=\dfrac{p}{q} $，$p$与$q$为互素的正整数，则$\dfrac{p^2}{q^2} =c$.由于$c$是正整数，而$p^2$与$q^2$也是互素的，故必$q^2=1$，从而$c=p^2$，此与假定矛盾，故必$a^2 &lt; c$.下面我们证明，存在正整数$n$，使</p>
+<p>$$\left( a+\dfrac{1}{n} \right) ^2 &lt; c,$$</p>
+<p>于是$a+\dfrac{1}{n}$也属于$A$.</p>
+<p>上述不等式相当于：$a^2 +\dfrac{2a}{n} +\dfrac{1}{n^2} &lt; c$，$\dfrac{2a}{n} +\dfrac{1}{n^2} &lt; c-a^2$，若$n$满足不等式$\dfrac{2a+1}{n} &lt; c-a^2$，则上面的第二个不等式也自然能满足了.</p>
+<blockquote>
+<p>$$a^2 +\dfrac{2a}{n} +\dfrac{1}{n^2} &lt; a^2 +\dfrac{2a}{n} +\dfrac{1}{n} &lt; c$$</p>
+</blockquote>
+<p>为此，只要取$n &gt; \dfrac{2a+1}{c-a^2} $，而这是恒为可能的.因此，不论$a$为$A$类内怎样的数，在$A$类内总能找到大于它的数，故$A$类中无最大数.</p>
+<p>同法可证$B$类中无最小数.</p>
+<p>设正整数$b\in B$.下面我们证明，存在正整数$m$，使</p>
+<p>$$\left( b-\dfrac{1}{m} \right) ^2 &gt; c,$$</p>
+<p>于是$b-\dfrac{1}{m}$也属于$B$.</p>
+<p>上述不等式相当于：$b^2 -\dfrac{2b}{m} +\dfrac{1}{m^2} &gt; c$，$-\dfrac{2b}{m} +\dfrac{1}{m^2} &gt; c-b^2$，若$m$满足不等式$-\dfrac{2b}{m} &gt; c-b^2$，则上面的第二个不等式也自然能满足了.</p>
+<p>为此，只要取$m &gt; \dfrac{2b}{b^2-c} $，就足够了.因此，不论$b$为$B$类内怎样的数，在$B$类只要取</p>
+<p>$$m &gt; \max{\left\lbrace \dfrac{1}{b} ,\dfrac{2b}{b^2-c} \right\rbrace } $$</p>
+<p>就足以保证有$b-\dfrac{1}{m} \in B$.故$B$类中无最小数.</p>
+<p>实质上，此处分割$A/B$确定了一个无理数$\sqrt{c}$.</p>
+<p>$12$.确定数$\sqrt[3]{2}$的分割$A/B$用下面的方法建立：$A$类包含所有满足$a^3 &lt; 2$的有理数$a$，$B$类包含所有其余的有理数.证明：在$A$类中无最大数，而在$B$类无最小数.</p>
+<p>证明：设$a\in A$，即$a^3 &lt; 2$.下证必可取正整数$n$，使</p>
+<p>$$\left( a+\dfrac{1}{n} \right) ^3 &lt; 2.$$</p>
+<p>事实上，上式相当于$\dfrac{3a^2}{n} +\dfrac{3a}{n^2} +\dfrac{1}{n^3} &lt; 2-a^3$.若$a\leq 0$，取$n=1$即可.若$a &gt; 0$，注意到$n \leq 1$，即知若取$n$充分大，使$n &gt; \dfrac{3a^2 +3a+1}{2-a^3} $，则上列各式均成立.从而$a+\dfrac{1}{n} \in A$.故$A$中无最大数.</p>
+<p>下证$b\in B$，则$b^3 \geq 2$.下证不可能有$b^3 =2$.事实上，若$b^3 =2$，设$b=\dfrac{p}{q}$，$p$与$q$为互素的正整数，则$\dfrac{p^3}{q^3} =2$，$p^3 =2q^3$，从而$p^3$为偶数，因此$p$必为偶数：$p=2r$，$r$为正整数.由于$p$与$q$是互素的，故$q$必为奇数，从而$q^3$也为奇数，但$q^3 =4r^3$，故$q^3$又必是偶数，因此矛盾.由此可知必有$b^3 &gt; 2$.仿前面的证明，可取正整数$n$，使$\left( b-\dfrac{1}{n} \right) ^3 &gt; 2$，从而$b-\dfrac{1}{n} \in B$.由此可知$B$类中无最小数.实质上，此处分割$A/B$确定了一个无理数$\sqrt[3]{2}$.</p>
+<p>$13$.作出适当的分割，然后证明等式：</p>
+<p>$(a)\;\sqrt{2} +\sqrt{8} =\sqrt{18} $；$(b)\;\sqrt{2} \sqrt{3} =\sqrt{6} $.</p>
+<p>证明：$(a)\;$作确定$\sqrt{2}$的分割$A/B$：一切有理数$a\leq 0$以及满足$a^2 &lt; 2$的正有理数$a$都归于$A$类，一切满足$b^2 &gt; 2$的正有理数$b$归入$B$类.又作确定$\sqrt{8}$的分割$A’/B’$：一切有理数$a’ \leq 0$以及满足${a’}^2 &lt; 8$的正有理数$a’$归入$A’$类，一切满足${b’}^2 &gt; 8$的正有理数$b’$归入$B’$类.我们知道，根据实数加法的定义，满足不等式：</p>
+<p>$$a+a’ &lt; c &lt; b+b’(\forall a \in A ,b\in B ,a’\in A’ ,b’\in B’)$$</p>
+<p>的唯一实数$c$就是$\sqrt{2} +\sqrt{8}$.因此，如果我们能证明恒有$(a+a’)^2 &lt; 18$（当$a+a’ &gt; 0$时），$(b+b’)^2 &gt; 18$，则有$a+a’ &lt; \sqrt{18} &lt; b+b’$.于是得知$\sqrt{18} =c=\sqrt{2} +\sqrt{8} $.</p>
+<p>若$a+a’ &gt; 0$，则$a$与$a’$中至少有一个为正，从而由$a^2{a’}^2 &lt; 16$知$aa’ &lt; 4$，</p>
+<p>$$(a+a’)^2 =a^2 +{a’}^2 +2aa’ &lt; 2+8+8 =18;$$</p>
+<p>同样，因$b^2 &gt; 2$，${b’}^2 &gt; 8$，$b &gt; 0$，$b’ &gt; 0$，故$b^2{b’}^2 &gt; 16 $，$bb’ &gt; 4$，</p>
+<p>$$(b+b’)^2=b^2+{b’}^2+2bb’ &gt; 2+8+8 =18.$$</p>
+<p>于是证毕.</p>
+<p>$(b)\;$作确定$\sqrt{2}$的分割$A/B$如$(a)$中所示，再作确定$\sqrt{3}$的分割$A_1 /B_1 $：一切有理数$a_1 \leq 0$以及满足$a_1^2 &lt; 3$的正有理数$a_1 $归入$A_1 $类，一切满足$b_1^2 &gt; 3$的正有理数$b_1 $归入$B_1 $类，根据实数乘法的定义，满足</p>
+<p>$$aa_1 &lt; c_1 &lt; bb_1 (\forall a\in A ,a &gt; 0 ,a_1 \in A_1 ,a_1 &gt; 0 ,b\in B ,b_1 \in B_1 )$$</p>
+<p>的（正）实数$c_1$存在唯一，它就是$\sqrt{2} \cdot \sqrt{3}$.但由于当$a\in A ,a &gt; 0,a_1 \in A_1 ,a_1 &gt; 0$时$(aa_1 )^2 &lt; 6$，而当$b\in B ,b_1 \in B_1 $时，$(bb_1 )^2 &gt; 6$，故恒有$aa_1 &lt; \sqrt{6} &lt; bb_1 $.由此可知$\sqrt{6} =c_1 =\sqrt{2} \cdot \sqrt{3} $.证毕.</p>
+<p>$14$.建立确定数$2^{\sqrt{2}}$的分割.</p>
+<p>解：设$A’/B’$是确定$\sqrt{2}$的有理数系中的一个分割.定义如下的两个有理数集：</p>
+<p>$$A=\lbrace a\in \mathbb{Q} \mid a\leq 0 或存在 \dfrac{p}{q} \in A’,p,q都是正整数，使得a^q &lt; 2^p \rbrace ,$$</p>
+<p>$$B=\lbrace b\in \mathbb{Q} \mid b &gt; 0 ,存在 \dfrac{p’}{q’} \in B’,p’,q’都是正整数，使得b^{q’} &lt; 2^{p’} \rbrace ,$$</p>
+<p>则当$a\in A$和$b\in B$时，由于$A,B$的定义可知有$a &lt; 2^{\frac{p}{q}} $和$2^{\frac{p’}{q’}} &lt; b$，而从分割$A’/B’$知道有$\dfrac{p}{q} &lt; \dfrac{p’}{q’} $，因此$a &lt; b$.</p>
+<p>如果我们再能够证明$A\cup B =\mathbb{Q}$，则$A/B$就是有理数系中的一个戴德金分割.用反证法.</p>
+<p>设存在一个有理数$x$，它既不属于$A$，也不属于$B$,于是对于任何$\dfrac{p}{q} \in A’$和$\dfrac{p’}{q’} \in B’$，就有</p>
+<p>$$2^{\frac{p}{q}} &lt; x &lt; 2^{\frac{p’}{q’}} .$$</p>
+<p>由于$A’$中没有最大数，$B’$中没有最小数，因此上述两个不等号都只能是严格的$&lt;$号.</p>
+<p>于是如分析中所说，这个有理数$x$只能是数$2^{\sqrt{2}}$本身.根据希尔伯特第七问题的答案，这样的有理数$x$是不存在的.于是就证明了上述$A/B$确实是定义$2^{\sqrt{2}}$的戴德金分割.</p>
+<p>若不考虑希尔伯特第七问题的结论，则可以解答如下.</p>
+<p>情况一.如果$2^{\sqrt{2}}$不是有理数，则上面的推理已经证明了$A/B$就是确定它的分割.</p>
+<p>情况二.如果$2^{\sqrt{2}}$是有理数，则将它加入$A$或$B$之后，也就得到确定这个有理数的两个可能的分割.</p>
+<h2 id="确界的定义与性质">确界的定义与性质</h2><p>$15$.求证：任何非空且下方有界的数集有下确界，而任何非空且上方有界的数集有上确界.</p>
+<p>证：$(1)\;$设$X$是有下界的数集，于是集合</p>
+<p>$$A=\lbrace x\in \mathbb{R} \mid x是X的一个上界\rbrace $$</p>
+<p>非空，且以$X$中的任何一个数为其上界.然后定义</p>
+<p>$$B=\lbrace x\in \mathbb{R} \mid x\notin A\rbrace .$$</p>
+<p>不难看出这样定义的$A,B$满足戴德金分割中的前两个条件.下面验证它也满足第三个条件.若$a\in A $，$b\in B$，则由于$b$不是$X$的下界，因此存在某个$x\in X$，使得$x &lt; b$.于是就有$a \leq x &lt; b$成立.</p>
+<p>这时的一种可能性是$A$有最大数，也就是$X$有最大下界，即已经证明存在$\inf{X}$.</p>
+<p>另一种可能性是$B$有最小数.将它记为$\beta $.这时可以证明每一个$x\in X$都有$x\geq \beta $，否则，若有某个$x_0 \in X$，且$x_0 &lt; \beta $，则$x_0$和$\dfrac{x_0 +\beta }{2}$都只能属于$A$.另一方面从$x_0 &lt; \dfrac{x_0 +\beta }{x} $且$x_0 \in X$可见$\dfrac{x_0 +\beta }{2}$不是$X$的下界，因此与它属于$A$相矛盾.</p>
+<p>于是我们已经证明：若$B$有最小数，则这个最小数也是$X$的下界.这表明它也属于$A$.这与$B$是$A$的补集相矛盾.因此这种情况不可能发生.</p>
+<p>于是按照上述方式定义的数集$A$一定有最大数，因此$X$一定有最大下界，即$X$存在下确界.</p>
+<p>$(2)\;$设$X$是有上界的数集，于是集合</p>
+<p>$$B=\lbrace x\in \mathbb{R} \mid x是X的一个上界\rbrace $$</p>
+<p>非空，且以$X$中的任何一个数为其下界.然后定义</p>
+<p>$$A=\lbrace x\in \mathbb{R} \mid x\notin B\rbrace .$$</p>
+<p>不难看出这样定义的$A,B$满足戴德金分割中的前两个条件.下面验证它也满足第三个条件.若$a\in A $，$b\in B$，则由于$a$不是$X$的上界，因此存在某个$x\in X$，使得$a &lt; x$.于是就有$a &lt; x \leq b$成立.</p>
+<p>这时的一种可能性是$B$有最小数，也就是$X$有最小上界，即已经证明存在$\sup{X}$.</p>
+<p>另一种可能性是$A$有最大数.将它记为$\alpha $.这时可以证明每一个$x\in X$都有$x\leq \alpha $，否则，若有某个$x_0 \in X$，且$x_0 &gt; \alpha $，则$x_0$和$\dfrac{x_0 +\alpha }{2}$都只能属于$B$.另一方面从$\dfrac{x_0 +\alpha }{x} &lt; x_0 \in X$可见$\dfrac{x_0 +\alpha }{2}$不是$X$的上界，因此与它属于$B$相矛盾.</p>
+<p>于是我们已经证明：若$A$有最大数，则这个最大数也是$X$的上界.这表明它也属于$B$.这与$A$是$B$的补集相矛盾.因此这种情况不可能发生.</p>
+<p>于是按照上述方式定义的数集$B$一定有最小数，因此$X$一定有最小上界，即$X$存在上确界.</p>
+<p>$16$.证明：一切有理真分数$\dfrac{m}{n}$（式中$m$及$n$为正整数，且$0 &lt; m &lt; n$）的集合无最小及最大的元素.求此集合的上确界及下确界.</p>
+<p>证明：由不等式：</p>
+<p>$$\dfrac{1}{n} \leq \dfrac{m}{n} \leq \dfrac{n-1}{n} =1-\dfrac{1}{n} .$$</p>
+<p>由此可见只要增大分母，例如取分母为$n+1$，就有$\dfrac{1}{n+1} &lt; \dfrac{m}{n}$，同时又有$\dfrac{m}{n} &lt; \dfrac{n}{n+1}$.因此可知真分数全体的集合中没有最小的数，也没有最大的数.</p>
+<p>由于真分数在$0$到$1$之间，对任意给定的$0 &lt; b &lt; c &lt; 1$，只要$n$充分大，就可使$\dfrac{1}{n} &lt; b $，$\dfrac{n-1}{n} =1-\dfrac{1}{n} &gt; c$，因此可知所有真分数集合的下确界为$0$，上确界为$1$.</p>
+<p>$17$.求满足不等式</p>
+<p>$$r^2 &lt; 2$$</p>
+<p>的有理数$r$的下确界和上确界.</p>
+<p>解：用$E$表所有满足$r^2 &lt; 2$的有理数$r$所成的集合.我们知道，分割$A/B$确定无理数$\sqrt{2}$，这里$A$表示由一切非正有理数以及满足$r^2 &lt; 2$的正有理数$r$所成的类，$B$表其余有理数构成的类，并且已证$A$中无最大数，于是</p>
+<p>$$\sup{E} =\sup{A} =\sqrt{2} .$$</p>
+<p>同样，分割$A’/B’$确定无理数$-\sqrt{2}$，这里$B’$表由所有非负有理数以及满足$r^2 &lt; 2$的负有理数$r$构成的类，$A’$表其余有理数构成的类，并且$B’$中无最小数.于是，显然有</p>
+<p>$$\inf{E} =\inf{B’} =-\sqrt{2}.$$</p>
+<p>$18$.设$\lbrace -x\rbrace $为数$x\in \lbrace x\rbrace $的相反数的集合，证明：</p>
+<p>$(a)\;\inf{\lbrace -x\rbrace } =-\sup{\lbrace x\rbrace } ;(b)\;\sup{\lbrace -x\rbrace } =-\inf{\lbrace x\rbrace } $.</p>
+<p>证明：$(a)\;$设$\inf{\lbrace -x\rbrace } =m’$，则有：</p>
+<p>（Ⅰ）当$-x \in \lbrace -x\rbrace $时，$-x \geq m’$；（Ⅱ）对于任何的正数$\varepsilon $，存在有$-x’\in \lbrace -x\rbrace $，使$-x’ &lt; m’+\varepsilon $.</p>
+<p>由（Ⅰ）及（Ⅱ）推得：</p>
+<p>（Ⅲ）当$x\in \lbrace x\rbrace $时，$x \leq -m’$；（Ⅳ）对于任何的正数$\varepsilon $，存在有$x’\in \lbrace x\rbrace $，使$x’ &gt; -m’-\varepsilon $.</p>
+<p>由（Ⅲ）及（Ⅳ）知数$-m’=\sup{\lbrace x\rbrace } $，即$m’=-\sup{\lbrace x\rbrace } $，所以，$\inf{\lbrace -x\rbrace } =-\sup{\lbrace x\rbrace } $.</p>
+<p>$(b)\;$设$\sup{\lbrace -x\rbrace } =M’$，则有：</p>
+<p>（Ⅴ）当$-x \in \lbrace -x\rbrace $时，$-x \leq M’$；（Ⅵ）对于任何的正数$\varepsilon $，存在有$-x’\in \lbrace -x\rbrace $，使$-x’ &gt; M’-\varepsilon $.</p>
+<p>由（Ⅴ）及（Ⅵ）推得：</p>
+<p>（Ⅶ）当$x\in \lbrace x\rbrace $时，$x \geq -M’$；（Ⅷ）对于任何的正数$\varepsilon $，存在有$x’\in \lbrace x\rbrace $，使$x’ &lt; -M’+\varepsilon $.</p>
+<p>由（Ⅶ）及（Ⅷ）知数$-M’=\inf{\lbrace x\rbrace } $，即$M’=-\inf{\lbrace x\rbrace } $，所以，$\sup{\lbrace -x\rbrace } =-\inf{\lbrace x\rbrace } $.</p>
+<p>$19$.设$\lbrace x+y\rbrace $为所有的和$x+y$的集合，其中$x\in \lbrace x \rbrace $及$y\in \lbrace y\rbrace $，证明等式：</p>
+<p>$(a)\;\inf{\lbrace x+y\rbrace } =\inf{\lbrace x\rbrace } +\inf{\lbrace y\rbrace } ;(b)\;\sup{\lbrace x+y\rbrace } =\sup{\lbrace x\rbrace } +\sup{\lbrace y\rbrace }$.</p>
+<p>证明：$(a)\;$设$\inf{\lbrace x\rbrace } =m_1 ,\inf{\lbrace y\rbrace } =m_2 $，则有</p>
+<p>（Ⅰ）当$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $时，$x\geq m_1 ,y\geq m_2 $；</p>
+<p>（Ⅱ）对于任何的正数$\varepsilon $，存在有数$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $，使$x’ &lt; m_1 +\dfrac{\varepsilon }{2} ,y’ &lt; m_2 +\dfrac{\varepsilon }{2}$.</p>
+<p>由（Ⅰ）及（Ⅱ）推得：</p>
+<p>（Ⅲ）当$x+y \in \lbrace x+y\rbrace $时（其中$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $），$x+y \geq m_1 +m_2 $；</p>
+<p>（Ⅳ）对于任何的正数$\varepsilon $，存在有数$x’+y’ \in \lbrace x+y\rbrace $（其中$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $），使$x’+y’ &lt; (m_1 +m_2 )+\varepsilon $.</p>
+<p>由（Ⅲ）及（Ⅳ）知数$m_1 +m_2 =\inf{\lbrace x+y\rbrace } $，即$\inf{\lbrace x+y\rbrace } =\inf{\lbrace x\rbrace } +\inf{\lbrace y\rbrace } $.</p>
+<p>$(b)\;$设$\sup{\lbrace x\rbrace } =M_1 ,\sup{\lbrace y\rbrace } =M_2 $，则有</p>
+<p>（Ⅰ）当$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $时，$x\leq M_1 ,y\leq M_2 $；</p>
+<p>（Ⅱ）对于任何的正数$\varepsilon $，存在有数$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $，使$x’ &gt; M_1 -\dfrac{\varepsilon }{2} ,y’ &gt; M_2 -\dfrac{\varepsilon }{2}$.</p>
+<p>由（Ⅰ）及（Ⅱ）推得：</p>
+<p>（Ⅲ）当$x+y \in \lbrace x+y\rbrace $时（其中$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $），$x+y \leq M_1 +M_2 $；</p>
+<p>（Ⅳ）对于任何的正数$\varepsilon $，存在有数$x’+y’ \in \lbrace x+y\rbrace $（其中$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $），使$x’+y’ &gt; (M_1 +M_2 )-\varepsilon $.</p>
+<p>由（Ⅲ）及（Ⅳ）知数$M_1 +M_2 =\sup{\lbrace x+y\rbrace } $，即$\sup{\lbrace x+y\rbrace } =\sup{\lbrace x\rbrace } +\sup{\lbrace y\rbrace } $.</p>
+<p>$20$.设$\lbrace xy\rbrace $为所有的乘积$xy$的集合，其中$x\in \lbrace x \rbrace $及$y\in \lbrace y\rbrace $，且$x\geq 0$及$y\geq 0$.证明等式：</p>
+<p>$(a)\;\inf{\lbrace xy\rbrace } =\inf{\lbrace x\rbrace } \inf{\lbrace y\rbrace } ;(b)\;\sup{\lbrace xy\rbrace } =\sup{\lbrace x\rbrace } \sup{\lbrace y\rbrace }$.</p>
+<p>证明：$(a)\;$设$\inf{\lbrace x\rbrace } =m_1 ,\inf{\lbrace y\rbrace } =m_2 $，由于恒有$x \geq 0$，$y\geq 0$，故必$m_1 \geq 0,m_2 \geq 0$.于是，</p>
+<p>（Ⅰ）当$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $时，$x\geq m_1 \geq 0,y\geq m_2 \geq 0$；</p>
+<p>（Ⅱ）对于任何的正数$\varepsilon $，存在有数$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $，使$0\leq x’ &lt; m_1 +\varepsilon ,0\leq y’ &lt; m_2 +\varepsilon $.</p>
+<p>由（Ⅰ）及（Ⅱ）推得：</p>
+<p>（Ⅲ）当$xy \in \lbrace xy\rbrace $，其中$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $，$xy \geq m_1 m_2 $；</p>
+<p>（Ⅳ）对于任何的正数$\varepsilon $，存在有数$x’y’ \in \lbrace xy\rbrace $（其中$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $），使</p>
+<p>$$0\leq x’y’ &lt; (m_1 +\varepsilon )(m_2 +\varepsilon ) =m_1 m_2 +\varepsilon’ ,$$</p>
+<p>其中$\varepsilon’ =(m_1 +m_2 )\varepsilon +\varepsilon ^2 $.</p>
+<p>由（Ⅲ）及（Ⅳ）知数$m_1 m_2 =\inf{\lbrace xy\rbrace } $，即$\inf{\lbrace xy\rbrace } =\inf{\lbrace x\rbrace } \inf{\lbrace y\rbrace } $.</p>
+<p>$(b)\;$设$\sup{\lbrace x\rbrace } =M_1 ,\sup{\lbrace y\rbrace } =M_2 $，由于恒有$x \geq 0$，$y\geq 0$，故必$M_1 \geq 0,M_2 \geq 0$.于是，</p>
+<p>（Ⅰ）当$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $时，$0\leq x\leq M_1 ,0\leq y\leq M_2 $；</p>
+<p>（Ⅱ）对于任何的正数$\varepsilon $，存在有数$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $，使$x’ &gt; M_1 -\varepsilon \geq 0,y’ &gt; M_2 -\varepsilon \geq 0$.</p>
+<p>由（Ⅰ）及（Ⅱ）推得：</p>
+<p>（Ⅲ）当$xy \in \lbrace xy\rbrace $，其中$x\in \lbrace x\rbrace ,y\in \lbrace y\rbrace $，$xy \leq M_1 M_2 $；</p>
+<p>（Ⅳ）对于任何的正数$\varepsilon $，存在有数$x’y’ \in \lbrace xy\rbrace $（其中$x’\in \lbrace x\rbrace ,y’\in \lbrace y\rbrace $），使</p>
+<p>$$x’y’ &gt; (M_1 -\varepsilon )(M_2 -\varepsilon ) =M_1 M_2 +\varepsilon’ \geq 0,$$</p>
+<p>其中$\varepsilon’ =(M_1 -M_2 )\varepsilon +\varepsilon ^2 $.</p>
+<p>由（Ⅲ）及（Ⅳ）知数$M_1 M_2 =\sup{\lbrace xy\rbrace } $，即$\sup{\lbrace xy\rbrace } =\sup{\lbrace x\rbrace } \sup{\lbrace y\rbrace } $.</p>
+<h2 id="含有绝对值的不等式">含有绝对值的不等式</h2><p>$21$.求证不等式：</p>
+<p>$$(a)\;\vert x-y\vert \geq \big| \vert x\vert -\vert y\vert \big| ;(b)\;\vert x+x_1 +\cdots +x_n \vert \geq \vert x\vert -(\vert x_1 \vert +\cdots +\vert x_n \vert ).$$</p>
+<p>证明：$(a)\;$由三点不等式$\vert x+y\vert \leq \vert x\vert +\vert y+\vert $有$\vert x\vert =\vert x-y+y \vert \leq \vert x-y\vert +\vert y\vert $，然后移项得到</p>
+<p>$$\vert x-y\vert \geq \vert x\vert -\vert y\vert .$$</p>
+<p>交换$x$与$y$后又得到$\vert x-y\vert =\vert y-x\vert \geq \vert y\vert -\vert x\vert $.合并即可.</p>
+<p>$(b)\;$用三点不等式$\vert x+y\vert \leq \vert x\vert +\vert y+\vert $可以有</p>
+<p>$$\begin{align}<br>\vert x\vert =  &amp; \vert (x+x_1 +\cdots +x_n ) -(x_1 +\cdots +x_n )\vert \\<br>\leq &amp; \vert x+x_1 +\cdots +x_n \vert -\vert x_1 +\cdots +x_n \vert \\<br>\leq &amp; \vert x+x_1 +\cdots +x_n \vert -\vert x_1 \vert +\cdots +\vert x_n \vert ,<br>\end{align} $$</p>
+<p>移项即可.</p>
+<p>解不等式：</p>
+<p>$22$.$\vert x+1\vert &lt; 0.01.$</p>
+<p>解：由$\vert x+1\vert &lt; 0.01$推得$-0.01 &lt; x+1 &lt; 0.01 $，所以，$-1.01 &lt; x &lt; -0.99$.</p>
+<p>$23$.$\vert x-2 \vert \geq 10$.</p>
+<p>解：由$\vert x-2 \vert \geq 10$推得$x-2\geq 10$或$x-2\leq -10$，所以，$x\geq 12$或$x\leq -8$.</p>
+<p>$24$.$\vert x\vert &gt; \vert x+1\vert $.</p>
+<p>解：两边平方，即得$x^2 &gt; (x+1)^2$或$2x+1 &lt; 0$，于是，有$x &lt; -\dfrac{1}{2} $.</p>
+<p>$25$.$\vert 2x-1\vert &lt; \vert x-1\vert $.</p>
+<p>解：两边平方，即得$(2x-1)^2 &lt; (x-1)^2 $或$3x^2 -2x &lt; 0$，解之，得$0 &lt; x &lt; \dfrac{2}{3}$.</p>
+<p>$26$.$\vert x+2\vert +\vert x-2\vert \leq 12$.</p>
+<p>解：利用不等式左边在绝对值号下的两个线性函数的零点为$-2$和$2$，就可以将实数全体分成为三个区间</p>
+<p>$$(-\infty ,-2],(-2,2),[2,+\infty ).$$</p>
+<p>然后在三个区间上分别求解不等式.这时在每个区间上都可以去掉绝对值号.</p>
+<p>对第一个区间$(-\infty ,-2]$，不等式变成</p>
+<p>$$-x-2+2-x=-2x\leq 12,$$</p>
+<p>即得到$x\geq -6$.于是解为$[-6,-2]$.</p>
+<p>同样可以在$(-2,2)$上解不等式</p>
+<p>$$x+2+2-x=4\leq 12,$$</p>
+<p>即当$x\in (-2,2)$时不等式总是成立的.</p>
+<p>最后在$[2,+\infty )$上不等式变成</p>
+<p>$$x+2+x-2=2x\leq 12,$$</p>
+<p>这样得到解为$[2,6]$.</p>
+<p>合并以上讨论，得到答案为$-6\leq x \leq 6$.</p>
+<p>$27$.$\vert x+2 \vert -\vert x\vert &gt; 1$.</p>
+<p>解：$1+\vert x\vert &lt; \vert x+2\vert $，将此式两端平方，化简得$2\vert x\vert &lt; 4x+3$.再平方之，化简得$4x^2 +8x+3 &gt;0$.于是，有</p>
+<p>$$x &gt; -\dfrac12 \;or \;x&lt; -\dfrac32.$$</p>
+<p>后者不适合，所以，$x &gt; -\dfrac12$.</p>
+<p>$28$.$\big| \vert x+1\vert -\vert x-1\vert \big| &lt; 1$.</p>
+<p>解：两端平方，化简得$x^2 +\dfrac12 &lt; \vert x^2-1\vert $，即</p>
+<p>$$x^2-1 &gt; x^2+\dfrac12 \;or \;x^2-1 &lt; -\left( x^2+\dfrac12 \right) .$$</p>
+<p>前者不可能，所以，$x^2-1 &lt; -\left( x^2+\dfrac12 \right) $，即$x^2 &lt; \dfrac14$，解之得$\vert x\vert &lt; \dfrac12$.</p>
+<p>$29$.$\vert x(1-x)\vert &lt; 0.05$.</p>
+<p>解：由$\vert x-x^2 \vert &lt; \dfrac{1}{20}$得$x^2-x+\dfrac{1}{20} &gt; 0$或$x^2-x-\dfrac{1}{20} &lt; 0$，解之得</p>
+<p>$$\begin{cases} \dfrac{5-\sqrt{30}}{10} &lt; x &lt; \dfrac{5+\sqrt{30}}{10} \\ \dfrac{5+\sqrt{20}}{10} &lt; x\;or \; x &lt; \dfrac{5-\sqrt{20}}{10} ,\end{cases} $$</p>
+<p>即</p>
+<p>$$\dfrac{5-\sqrt{30}}{10} &lt; x &lt; \dfrac{5-\sqrt{20}}{10} \;or \; \dfrac{5+\sqrt{20}}{10} &lt; x &lt; \dfrac{5+\sqrt{30}}{10} .$$</p>
+<p>$30$.证明恒等式：</p>
+<p>$$\left( \dfrac{x+\vert x\vert }{2} \right) ^2 +\left( \dfrac{x-\vert x\vert }{2} \right) ^2 =x^2.$$</p>
+<p>证明：$\left( \dfrac{x+\vert x\vert }{2} \right) ^2 +\left( \dfrac{x-\vert x\vert }{2} \right) ^2 =\dfrac12 x^2 +\dfrac12 x\vert x\vert +\dfrac12 x^2 -\dfrac12 x\vert x\vert =x^2.$</p>
+<h2 id="绝对误差和相对误差">绝对误差和相对误差</h2><p>$31$.设当测量$10\;\text{cm}$的长度时，绝对误差为$0.5\;\text{mm}$；当测量$500\;\text{km}$的距离时，绝对误差等于$200\;\text{m}$.那种测量较为精确？</p>
+<p>解：用相对误差$\delta =\dfrac{\Delta }{\vert a\vert }$进行比较，其中$a$为测量的精确值，而$\Delta $是绝对误差.</p>
+<p>对于前者，$\delta =\dfrac{0.5\times 0.1}{10} =0.5\%$；对于后者，$\delta =\dfrac{200}{500\times 1000} =0.04\%$.</p>
+<p>所以，后者测量较为精确.</p>
+<p>$32$.设数$x=2.3752$的相对误差为$1\%$.试确定此数包含多少位精确数字？</p>
+<p>解：因为$\dfrac{\Delta }{2.3752} =0.01$，所以$\Delta =0.023752 $.</p>
+<p>因而，此数包含两位精确数字.</p>
+<p>$33$.设数$x=12.125$包含$3$位精确数字，试求此数的相对误差.</p>
+<p>解：因为$x$包含三位精确数字，所以$\Delta &lt; 0.05$.于是得相对误差</p>
+<p>$$\delta =\dfrac{\Delta }{\vert x\vert } &lt; \dfrac{0.05}{12.125} &lt; 0.42\%$$</p>
+<p>即$\delta &lt; 0.42\%$.</p>
+<p>$34$.一个矩形的边长等于：</p>
+<p>$$x=2.50\;\text{cm} \pm 0.01\;\text{cm} ,\quad y=4.00\;\text{cm} \pm 0.02\;\text{cm} .$$</p>
+<p>此矩形的面积$S$介于什么范围内?当其边长取平均值时，矩形面积的绝对误差$\Delta $和相对误差$\delta $是多少？</p>
+<p>解：$S_{\min } =(2.50-0.01)(4.00-0.02)=9.9102(\text{cm} ^2)$，</p>
+<p>$S_{\max }=(2.50+0.01)(4.00+0.02)=10.0902(\text{cm} ^2)$，</p>
+<p>$S_{\min} \leq S\leq S_{\max } $，$S_{平均} =2.50\times 4.00 =10(\text{cm}^2)$，</p>
+<p>$\Delta _1 =10.0902-10 =0.0902(\text{cm} ^2) $，$\Delta _2=10-9.9102=0.0898(\text{cm}^2)$，</p>
+<p>$\Delta \leq \max{(\Delta _1 ,\Delta _2 )}$，$\delta =\dfrac{\Delta }{10} \leq \dfrac{0.0902}{10} &lt; 0.91\%$.</p>
+<p>$35$.一个物体的质量$m=12.59\;\text{g} \pm 0.01\;\text{g}$，其体积$V=3.2\;\text{cm}^3 \pm 0.2\;\text{cm}^3 $.若对物体的质量和体积都取其平均值，试求物体的密度，并估计密度的绝对误差和相对误差.</p>
+<p>解：密度$C=\dfrac{12.59}{3.2} \;\text{g/cm}^3 =3.93\;\text{g/cm}^3$.</p>
+<p>$C_{\max} =\dfrac{12.60}{3.0}\;\text{g/cm}^3 =4.20\;\text{g/cm}^3$，$C_{\min} =\dfrac{12.58}{3.4}\;\text{g/cm}^3 =3.70\;\text{g/cm}^3$，$C_{\min} \leq C\leq C_{\max }$，</p>
+<p>$\Delta _1 =C_{\max} -C=0.27\;\text{g/cm} ^3 $，$\Delta _2=C-C_{\min} =0.23\;\text{g/cm}^3$；$\Delta \leq \max{(\Delta _1 ,\Delta _2 ) } =0.27\;\text{g/cm} ^3$；</p>
+<p>一般地，密度为$(3.93\pm 0.27)\;\text{g/cm} ^3 $；$\delta \leq \dfrac{0.27}{3.70} &lt; 7.3\%$.</p>
+<p>$36$.设圆半径$r=7.2\;\text{m} \pm 0.1\;\text{m} $.若取$\pi =3.14$，则求出的圆面积的最小相对误差是多少？</p>
+<p>解：圆面积$A=\pi \times 7.2^2 \approx 51.84\pi(\text{m}^2)$</p>
+<p>$$\Delta _1 =\pi (7.2+0.1)^2 -\pi \cdot 7.2^2 =1.45\pi .$$</p>
+<p>$$\Delta _2 =\vert \pi(7.2-0.1)^2 -\pi \cdot 7.2^2 \vert =1.43\pi .$$</p>
+<p>$$\Delta \leq \max{(\Delta _1 ,\Delta _2 )} =1.45\pi (\text{m}^2 )$$</p>
+<p>即一般的圆面积$A$为$(51.84\pm 1.45)\pi (\text{m} ^2)$，故</p>
+<p>$$\delta \leq \dfrac{1.45\pi }{50.41\pi} &lt; 2.88\% .$$</p>
+<p>$37$.已测得长方体各边长为</p>
+<p>$$x=24.7\;\text{m} \pm 0.2\;\text{m} ,\quad y=6.5\;\text{m} \pm 0.1\;\text{m} ,\quad z=1.2\;\text{m} \pm 0.1\;\text{m} .$$</p>
+<p>此长方体的体积$V$介于什么范围内？若各测量结果都取其平均值，则能够以什么样的绝对误差和相对误差来计算该长方形的体积？</p>
+<p>解：$24.5\times 6.4\times 1.1\leq V\leq 24.9\times 6.6\times 1.3$，即$172.480\;\text{m}^3 \leq V \leq 213.642\;\text{m}^3 $.</p>
+<p>当$x,y,z$均取平均值时，</p>
+<p>$$V=24.7\times 6.5\times 1.2 =192.660(\text{m}^3).$$</p>
+<p>$$\Delta _1 =213.642-192.660=20.982(\text{m}^3),$$</p>
+<p>$$\Delta _2 =192.660-172.480=20.180(\text{m}^3).$$</p>
+<p>于是，$\Delta \leq 20.982(\text{m}^3)$；$\delta \leq \dfrac{20.982}{172.480} \approx 12.2\%$.</p>
+<p>$38$.设正方形的边长$x$满足$2\;\text{m} &lt; x &lt; 3\;\text{m}$.为了计算此正方形的面积时能够精确到$0.001\;\text{m}^2$，应当以什么样的误差来测量边长？</p>
+<p>解：按题设我们有$0 &lt; x^2-4 &lt; 0.001$或$0 &lt; 9-x^2 &lt; 0.001 $，解之得</p>
+<p>$$2.99983 &lt; x &lt; 3\;or \; 2 &lt; x &lt; 2.00024.$$</p>
+<p>因此，$\Delta $取二者中误差较小者，即</p>
+<p>$$\Delta \leq 0.00017(\text{m})=0.17(\text{mm}),$$</p>
+<p>故当边长$x$的绝对误差不超过$0.17\;\text{mm}$时，就能使此正方形的面积精确到$0.001\;\text{m}^2$.</p>
+<p>$39$.设矩形每边的长皆不超过$10\;\text{m}$.为了在计算其面积时精确到$0.01\;\text{m}^2$，以什么样的绝对误差$\Delta $来测量矩形的边$x$与$y$才是足够的？</p>
+<p>解：按题设我们有$(x+\Delta )(y+\Delta )-xy\leq 0.01$，即$\Delta ^2 +(x+y)\Delta \leq 0.01$，由于$x\leq 10$及$y\leq 10$，所以只要$\Delta ^2 +20\Delta \leq 0.01$或$\Delta ^2 +20\Delta -0.01 \leq 0$即可.解之，得</p>
+<p>$$\Delta \leq \dfrac{-20+\sqrt{20^2+0.04}}{2} =-10+\dfrac{20.00099}{2} =0.000499 &lt; 0.0005(\text{m}).$$</p>
+<p>$40$.设$\delta (x)$及$\delta (y)$为数$x$和$y$的相对误差，$\delta (xy)$为数$xy$的相对误差.求证：</p>
+<p>$$\delta (xy)\leq \delta (x) +\delta (y) +\delta (x)\delta (y) .$$</p>
+<p>证明：设$x=a+\Delta _x ,y=b+\Delta _y $，其中$a$及$b$分别是$x$及$y$的精确值，$\Delta _x $及$\Delta _y$是绝对误差，则有</p>
+<p>$$xy-ab=b\Delta _x +a\Delta _y +\Delta _x \cdot \Delta _y .$$</p>
+<p>于是，</p>
+<p>$$\Delta =\vert xy-ab\vert \leq \vert b\vert \cdot \Delta _x +\vert a\vert \cdot \Delta _y +\Delta _x \cdot \Delta _y .$$</p>
+<p>最后得</p>
+<p>$$\delta (xy) =\dfrac{\Delta }{\vert ab\vert } \leq \dfrac{\Delta _x}{\vert a\vert } +\dfrac{\Delta _y }{\vert b\vert } +\dfrac{\Delta _x }{\vert a\vert } \cdot \dfrac{\Delta _y }{\vert b\vert } ,$$</p>
+<p>此即</p>
+<p>$$\delta (xy) \leq \delta (x) +\delta (y) +\delta (x) \delta (y) .$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/03/22/2015/03/jimiduoweiqishuxuefenxixitiji111/" data-title="《数学分析习题集》第一章 分析引论 1. 实数 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/03/25/2015/03/kaoyanshiti6/" title="浙江大学2010年攻读硕士学位研究生入学考试试卷">
+  <strong>上一篇：</strong><br/>
+  <span>
+  浙江大学2010年攻读硕士学位研究生入学考试试卷</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/03/07/2015/03/weijifenxuejiaocheng121/"  title="《微积分学教程(第一卷)》 第二章 一元函数 1 函数概念">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 第二章 一元函数 1 函数概念
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数学归纳法"><span class="toc-number">1.</span> <span class="toc-text">数学归纳法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数集的分割"><span class="toc-number">2.</span> <span class="toc-text">有理数集的分割</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#确界的定义与性质"><span class="toc-number">3.</span> <span class="toc-text">确界的定义与性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#含有绝对值的不等式"><span class="toc-number">4.</span> <span class="toc-text">含有绝对值的不等式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绝对误差和相对误差"><span class="toc-number">5.</span> <span class="toc-text">绝对误差和相对误差</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

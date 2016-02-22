@@ -1,0 +1,1003 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第二章 一元函数 5 连续函数的性质 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="连续函数的性质">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第二章 一元函数 5 连续函数的性质">
+<meta property="og:url" content="http://yoursite.com/2015/07/01/2015/07/weijifenxuejiaocheng125/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="连续函数的性质">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu35.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu36.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu37.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu38.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu39.png">
+<meta property="og:updated_time" content="2015-10-20T14:21:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第二章 一元函数 5 连续函数的性质">
+<meta name="twitter:description" content="连续函数的性质">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/07/01/2015/07/weijifenxuejiaocheng125/" title="《微积分学教程(第一卷)》 第二章 一元函数 5 连续函数的性质" itemprop="url">《微积分学教程(第一卷)》 第二章 一元函数 5 连续函数的性质</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-07-01T08:16:30.000Z" itemprop="datePublished"> 發表於 2015-07-01</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数取零值的定理"><span class="toc-number">1.</span> <span class="toc-text">关于函数取零值的定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用于解方程"><span class="toc-number">2.</span> <span class="toc-text">应用于解方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#介值定理"><span class="toc-number">3.</span> <span class="toc-text">介值定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反函数的存在"><span class="toc-number">4.</span> <span class="toc-text">反函数的存在</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数的有界性的定理"><span class="toc-number">5.</span> <span class="toc-text">关于函数的有界性的定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的最大值及最小值"><span class="toc-number">6.</span> <span class="toc-text">函数的最大值及最小值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一致连续的概念"><span class="toc-number">7.</span> <span class="toc-text">一致连续的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#康托定理"><span class="toc-number">8.</span> <span class="toc-text">康托定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博雷尔引理"><span class="toc-number">9.</span> <span class="toc-text">博雷尔引理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本定理的新证明"><span class="toc-number">10.</span> <span class="toc-text">基本定理的新证明</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="关于函数取零值的定理">关于函数取零值的定理</h2><p>今着手研究在某一区间内连续的函数的基本性质.这些性质是很有趣的，而且在以后的叙述中，经常要用它们作为各种论断的根据.</p>
+<p>先从下面的布尔查诺（$\text{B.Bolzano}$）和柯西（$\text{A.L.Cauchy}$）的简单定理开始.</p>
+<p><strong>布尔查诺-柯西第一定理</strong>$\quad $设函数$f(x)$是闭区间$[a,b]$内定义着并且连续的，又在这区间的两端点处取得异号的数值.则在$a$与$b$之间必能求出一点$c$，在这点处函数等于零：</p>
+<p>$$f(c)=0\quad (a &lt; c &lt; b).$$</p>
+<p>这定理有很简单的几何意义：若连续的曲线从$x$轴的一方转移到另一方，则它必与这轴相交（图$31$）.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu35.png" alt=""></center>
+
+<p><strong>第一种证明</strong>$\quad $我们将依布尔查诺的方法进行<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[布尔查诺-魏尔斯特拉斯(B.Bolzano-C.Weierstrass)引理]</a>——即用逐次等分区间的方法.为着确定起见，令$f(a) &lt; 0$，$f(b) &gt; 0$.我们用点$\dfrac{a+b}{2}$把区间$[a,b]$分成两半.可能偶然地遇到函数$f(x)$恰在这点处等于零，那么令$c=\dfrac{a+b}{2}$，定理就已得到证明.次设$f\left( \dfrac{a+b}{2} \right) \neq 0$；则两区间$\left[ a,\dfrac{a+b}{2} \right] $，$\left[ \dfrac{a+b}{2} ,b\right] $中必有一个，在它的两端点处函数取得异号的数值（且这时在左端为负值，在右值为正值）.用$[a_1 ,b_1 ]$表示这区间，就有</p>
+<p>$$f(a_1 ) &lt; 0,\quad f(b_1 ) &gt; 0.$$</p>
+<p>再把区间$[a_1 ,b_1 ]$分成两半，且仍丢开当$f(x)$在这区间的中点$\dfrac{a_1 +b_1 }{2}$处等于零的情形，因为那时定理已得到证明.再用$[a_2 ,b_2 ]$表示那半个区间，它使</p>
+<p>$$f(a_2 ) &lt; 0,\quad f(b_2 ) &gt; 0.$$</p>
+<p>继续进行这种构成区间的步骤.这时，或则在有限次步骤以后，我们碰到作为分点的某一点，在该处函数等于零，而定理的证明就完成了；或则我们得出内含区间（依次地一个包含一个）的无穷序列.我们就来讨论这最后的情形.对于第$n$个区间$[a_n ,b_n ] (n=1,2,\cdots )$必有</p>
+<p>$$f(a_n ) &lt; 0,\quad f(b_n ) &gt; 0,\label{1} \tag{1} $$</p>
+<p>并且它的长度显然等于</p>
+<p>$$b_n -a_n =\dfrac{b-a}{2^n} .\label{2} \tag{2} $$</p>
+<p>易见这些区间所构成的序列满足内含区间的引理<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[单调整序变量]</a>中所列的条件，因为，由于$\eqref{2}$，$\lim (b_n -a_n )=0$；因此，在区间$[a,b]$内存在着一点$c$，满足</p>
+<p>$$\lim a_n =\lim b_n =c.$$</p>
+<p>兹证明这点恰好能满足定理的要求.</p>
+<p>将不等式$\eqref{1}$取极限，同时并应用函数的连续性（特别是，在点$x=c$处），就同时得出</p>
+<p>$$f(c)=\lim f(a_n )\leq 0$$</p>
+<p>及</p>
+<p>$$f(c)=\lim f(b_n )\geq 0,$$</p>
+<p>因此，实际上，必有$f(c)=0$.定理证明完毕.</p>
+<p>以下我们将给出柯西定理的第二种证明，它是依据另一种观念的.预先叙述下面的明显的命题：</p>
+<p><strong>引理</strong>$\quad $若函数$f(x)$在点$x=x_0 $处为连续，且$f(x_0 )$的数值异于$0$，则对于充分接近于$x_0 $的一切$x$的数值，函数$f(x)$仍保持着在点$x_0 $处的符号.</p>
+<p>这可由<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[极限理论的拓广，1]</a>的论点$2°$推得，不过在本题的情形，函数的极限$A$这一角色（由于连续性）由$f(x_0 )$担任.</p>
+<p><strong>第二种证明</strong>$\quad $考察区间$[a,b]$内使$f(\bar{x} ) &lt; 0$的一切点$x=\bar{x} $.在这些点之中显然应有点$a$以及（根据引理）接近于$a$的许多点.集$\lbrace \bar{x} \rbrace $被数$b$上有界.今令$c=\sup{\lbrace \bar{x} \rbrace }$<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">[数集的界]</a>，我们要证$f(c)=0$.</p>
+<p>事实上，假设情形与此相反，那么或则$f(c) &lt; 0$，或则$f(c) &gt; 0$.若是$f(c) &lt; 0$（则显知$c &lt; b$，因为我们给定$f(b) &gt; 0$），则依引理，在$c$的稍右处将能找出数值$\bar{x}$，使$f(\bar{x} ) &lt; 0$，而这就违反了$c$是$\lbrace x\rbrace $的上界的定义.又若$f(c) &gt; 0$，则——仍根据引理——在$c$的左方的近处，就是在某一充分小的区间$(c-\delta ,c)$内，全部成立$f(x) &gt; 0$，于是在那里就根本不能有数值$\bar{x}$.但这同样是不可能的，因为按照定义，$c$是$\lbrace x\rbrace $的上确界.</p>
+<p>定理证明完毕.</p>
+<p>须注意，函数$f(x)$在闭区间$[a,b]$内连续的要求很重要：函数只要在一点处有间断，就可以从负值转变为正值而并不等于零.例如，$f(x)=E(x)-\dfrac12 $就是这样的函数，虽然$f(0)=-\dfrac{1}{2}$，而$f(1)=\dfrac12 $（在$x=1$时有跃度），但它并不在任何一点等于零.</p>
+<h2 id="应用于解方程">应用于解方程</h2><p>已证明的定理在解方程时是有用处的.</p>
+<p>首先，用它来确定根的存在.例如，对于方程</p>
+<p>$$2^x =4x,$$</p>
+<p>根$x=4$是很明显的，但要指出再有一个根存在就较为困难了.而其实，函数$f(x)=2^x-4x$在$x=0$时取值$f(0)=1 &gt; 0$，而在$x=\dfrac12 $时取值$f\left( \dfrac12 \right) =\sqrt{2} -2 &lt; 0$，因此（因为它是连续的）它必在$0$与$\dfrac12 $之间的某一点等于零.</p>
+<p>另一例子：考察一般奇次幂（实系数）的代数方程</p>
+<p>$$f(x)\equiv a_0 x^{2n+1} +a_1 x^{2n} +\cdots +a_{2n} x +a_{2n+1} =0.$$</p>
+<p>当$x$的绝对值充分大时，多项式的符号全视最高次幂的项的符号而定，即当$x$为正时与$a_0 $同号，当$x$为负时与$a_0 $异号.因为多项式是连续函数，既然要变号，则它在区间内某一点外必然要等于$0$.由此：一切奇次（实系数）代数方程至少必有一个实根.</p>
+<p>柯西定理不仅可以应用于确定实根的存在，并且可以用来计算它的近似值.用例题来说明.设$f(x)=x^4-x-1$.因为$f(1)=-1$，$f(2)=13$，所以多项式在$1$与$2$之间必有一根.把区间$[1,2]$分成$10$等分，各分点为$1.1;1.2;1.3;\cdots$并逐个计算：</p>
+<p>$$f(1.1)=-0.63\cdots ;f(1.2)=-0.12\cdots ;f(1.3)=+0.55\cdots ;\cdots $$</p>
+<p>就看出在$1.2$与$1.3$之间包含着一个根.再把这区间$10$等分，求出：</p>
+<p>$$f(1.21)=-0.06\cdots ;f(1.22)=-0.004\cdots ;f(1.23)=+0.058\cdots ;\cdots $$</p>
+<p>现在很清楚，可知这根位于$1.22$与$1.23$之间；这样，我们已经知道根的数值准确度达$0.01$，余类推.</p>
+<blockquote>
+<p>可是，实际上这方法是不方便的.在第四章（$\S 5$）内将指出远比它更为有效的方法.</p>
+</blockquote>
+<p>有了这些事实以后，现在再来把同一定理的上述两种证明比较一下该是很有趣味的.第二种证明仅是方程$f(x)=0$的根的“存在的证明”，并没有说及怎样求出这根.而第一种证明却指出了实际求根的确定方法：用两半两半地逐次等分区间的方法（我们限于分成两半是为了简便），在实际上可以把所求的根包含于长度任意小的区间内，即可以计算这根至任意的准确度.</p>
+<h2 id="介值定理">介值定理</h2><p>在[关于函数取零值的定理]内已证明的定理可以如下直接地加以普遍化：</p>
+<p><strong>布尔查诺-柯西第二定理</strong>$\quad $设函数$f(x)$是在某一区间$\mathcal{X}$（闭的或不闭的，有限的甚至无穷的都可以）内定义着并且连续的.若在这区间内的两点$x=a$及$x=b(a &lt; b)$处函数具有不相等的数值</p>
+<p>$$f(a)=A$$</p>
+<p>及</p>
+<p>$$f(b)=B,$$</p>
+<p>则对于$A$与$B$之间的任意数$C$必能求出$a$与$b$之间的点$x=c$，使</p>
+<p>$$f(c)=C.$$</p>
+<blockquote>
+<p>显然，布尔查诺-柯西第一定理是这定理的特殊情形：若$A$与$B$异号，则可取$0$当作$C$.</p>
+</blockquote>
+<p><strong>证明</strong>$\quad $假如，我们设</p>
+<p>$$A &lt; B,$$</p>
+<p>于是</p>
+<p>$$A &lt; C &lt; B.$$</p>
+<p>在区间$[a,b]$内考察辅助函数$\varphi (x)=f(x)-C$.这函数在区间$[a,b]$内是连续的，且在这区间的两端点处有异号：</p>
+<p>$$\varphi (a)=f(a)-C=A-C &lt; 0,\quad \varphi (b)=f(b)-C=B-C &gt; 0.$$</p>
+<p>依布尔查诺-柯西第一定理，在$a$与$b$之间必能求出点$x=c$，使$\varphi (c)=0$，即</p>
+<p>$$f(c)-C=0$$</p>
+<p>或</p>
+<p>$$f(c)=C,$$</p>
+<p>此即所要证的.</p>
+<p>这样，我们已建立了在区间内连续的函数$f(x)$的重要性质：当函数从一个数值转变到另一个数值时，它必经过每一中间值至少一次.</p>
+<p>换句话说，这性质又可以如此表达：当$x$在任何区间$\mathcal{X}$内变动时，连续函数$f(x)$所取得的数值完全充满某一区间$\mathcal{Y}$.</p>
+<p>事实上，设</p>
+<p>$$m=\inf{\lbrace f(x)\rbrace } ,\quad M=\sup{\lbrace f(x)\rbrace } ,$$</p>
+<blockquote>
+<p>提醒读者，若集$\lbrace f(x)\rbrace $不是上（下）有界，则（在<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">[数集的界]</a>内）我们约定令$M=+\infty (m=-\infty )$.</p>
+</blockquote>
+<p>又$y_0 $是在$m$与$M$之间的任意数：</p>
+<p>$$m &lt; y_0 &lt; M.$$</p>
+<p>则必能求出函数值$y_1 =f(x_1 )$及$y_2 =f(x_2 )$（$x_1 $及$x_2 $取自区间$\mathcal{X}$），使</p>
+<p>$$m\leq y_1 &lt; y_0 &lt; y_2 \leq M;$$</p>
+<p>这是由数集的确界的定义推得的.但依已证明的定理，在$x_1 $与$x_2 $之间必存在着数值$x=x_0 $（显然亦属于$\mathcal{X}$），使得$f(x_0 )$恰巧等于$y_0 $；因此，这数$y_0 $也属于$\mathcal{Y}$.</p>
+<p>这样$\mathcal{Y}$就是以$m$及$M$为两端点的区间（两端点本身可否属于这区间要看情形而定；参阅[关于函数的有界性的定理]）.</p>
+<p>在<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">[单调函数的连续性及间断，2°]</a>内我们已看到，在单调函数的情形，由上述的性质可以反转来推出函数的连续性.然而不应认为在任何时候都可以这样倒推；很容易做出一个具有这种的性质的间断函数.例如，函数<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">[间断函数的例题，4）]</a>：</p>
+<p>$$f(x)=\sin{\dfrac{1}{x} } (x\neq 0),\quad f(0)=0,$$</p>
+<p>当$x$在任何含有间断点$x=0$的区间内变动时，其值还是完全充满了区间$[-1,+1]$.</p>
+<h2 id="反函数的存在">反函数的存在</h2><p>现在应用前面一目内所研究过的连续函数的性质来解决反函数在何种假定之下始为单值且连续的问题（参阅<a href="http://jianhanglin.github.io/blog/2015/03/weijifenxuejiaocheng121/" target="_blank" rel="external">[反函数的概念]</a>）.</p>
+<p><strong>定理</strong>$\quad $设函数$y=f(x)$是在某一区间$\mathcal{X}$内定义的，它连续而且单调增大（减小）.</p>
+<blockquote>
+<p>用狭义的说法（这在此处是很重要的）.</p>
+</blockquote>
+<p>则在对应的函数值所成的区间$\mathcal{Y}$内必存在单值的反函数$x=g(y)$，也是连续而且单调增大（减小）.</p>
+<p><strong>证明</strong>$\quad $暂限于增函数的情形.在上面我们看到，连续函数$f(x)$的函数值完全充满于某一区间$\mathcal{Y}$，于是对于这区间内的每一数值$y_0 $，至少必能求出一个数值$x_0 $（$\mathcal{X}$内的），使</p>
+<p>$$f(x_0 )=y_0 .$$</p>
+<p>但由于这函数的单调性，所以这种数值只能求出一个：即若$x_1 &gt;$或$&lt; x_0 $，则对应地，亦必有$f(x_1 ) &gt; $或$&lt; f(x_0 )$.</p>
+<p>就把这数值$x_0 $与从$\mathcal{Y}$内任意取的$y_0 $一一对照起来，我们便得出单值函数</p>
+<p>$$x=g(y),$$</p>
+<p>它是函数$y=f(x)$的反函数.</p>
+<p>很易看出，这函数$g(y)$与$f(x)$相似，也是单调增大的.因若</p>
+<p>$$y’ &lt; y’’$$</p>
+<p>又</p>
+<p>$$x’=g(y’) ,x’’=g(y’’);$$</p>
+<p>则依函数$g(y)$本身的定义，必同时有</p>
+<p>$$y’=f(x’)$$</p>
+<p>及</p>
+<p>$$y’’=f(x’’).$$</p>
+<p>若是$x’ &gt; x’’$，则根据函数$f(x)$的增大性，必$y’ &gt; y’’$，违反原来的假设.其次，亦不可能有$x’=x’’$，因为那时也必有$y’=y’’$，也是违反原来的假设的.因此，只有不等式$x’ &lt; x’’$是可能的.于是知$g(y)$确实是增大的.</p>
+<p>最后，要证明函数$x=g(y)$的连续性，只要引用<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">[单调函数的连续性及间断，2°]</a>的定理就够了，该定理的条件是满足的：函数$g(y)$为单调，并且它的数值显然完全充满于区间$\mathcal{X}$.</p>
+<blockquote>
+<p>不论怎样从$\mathcal{X}$内取$x$，只要假定$y=f(x)$，则对于这$y$，函数$g(y)$的数值就恰好是所取的$x$.</p>
+</blockquote>
+<p>定理的一切论点在几何上是很明显的，读者很容易照着图$32$去“阅读”它们.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu36.png" alt=""></center>
+
+<p>用已证明的定理可以重新建立一系列我们已经知道的结果.</p>
+<p>若把它应用于区间$\mathcal{X} =[0,+\infty )$内所定义的函数$x^n$（$n$是自然数），则当$y$在$\mathcal{Y} =[0,+\infty )$内时得出（算术的）根$x=\sqrt[n]{y}$的存在及连续性.从区间$\mathcal{X} =(-\infty ,+\infty )$内所定义的函数$y=a^x$出发，就可证明对数函数$x=\log_ay$在区间$\mathcal{Y} =(0,+\infty )$内的存在及连续性.最后，考察函数$y=\sin{x}$及$y=\tan{x}$，第一个在区间$\mathcal{X}_1 =\left[ -\dfrac{\pi }{2} ,\dfrac{\pi }{2} \right]$内，而第二个在开区间$\mathcal{X}_2 =\left( -\dfrac{\pi }{2} ,\dfrac{\pi }{2} \right) $内，就可证明它们的反函数$x=\arcsin{y}$及$x=\arctan{y}$各在区间$\mathcal{Y}_1 =[-1,+1]$及$\mathcal{Y}_2 =(-\infty ,+\infty )$内是存在而且连续的.</p>
+<p>（在这时我们假定函数$x^n ,a^x ,\sin{x} ,\tan{x} $的连续性已经预先证明，且并未引用它们的反函数的存在——否则，就将得出循环推理.这种证明已在<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">[连续函数的例题]</a>内给出；至于<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">[初等函数的连续性]</a>内的那种考虑在此处显然是不适宜的.）</p>
+<p>再考察这样的命题.</p>
+<p>设$x$在$\mathcal{X} =(-\infty ,+\infty )$内时</p>
+<p>$$y=x-\varepsilon \cdot \sin{x} ,式中0 &lt; \varepsilon &lt; 1.\label{3} \tag{3} $$</p>
+<p>很易指出这函数是单调增大的（狭义的）.即若$x’’ &gt; x’$，而对应的$y$的数值各为$y’’,y’$，则</p>
+<p>$$y’’-y’=(x’’-x’)-\varepsilon (\sin{x’’} -\sin{x’} ).$$</p>
+<p>但[参阅[<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">连续函数的例题，（2）</a>]]</p>
+<p>$$\vert \sin{x’’} -\sin{x’} \vert \leq x’’-x’,$$</p>
+<p>由此就推得</p>
+<p>$$y’’-y’ &gt; 0,$$</p>
+<p>即</p>
+<p>$$y’’ &gt; y’.$$</p>
+<p>把定理应用于这种情形，就可证明$x$亦是$y$的单值函数，等等.</p>
+<p>引入的例题值得注意的是已经接触到一个理论天文学的问题.方程</p>
+<p>$$E=M+\varepsilon \cdot \sin{E} \label{31} \tag{3a}$$</p>
+<p>就是著名的开普勒方程，它表出行星的平均近点角（mean anomaly）$M$与其偏近点角（excentric anomaly）$E$间的关系（$\varepsilon $是行星轨道的离心率）.这样，我们已证明，不论平近点角是怎样的数值，实际上，开普勒方程单值地确定了偏近点角的数值.</p>
+<h2 id="关于函数的有界性的定理">关于函数的有界性的定理</h2><p>如果函数$f(x)$对于某一有限区间内一切$x$的数值都有定义（因此，函数必取有限的数值），我们并不能立刻由此推出函数必须为有界，即函数数值所成的集$\lbrace f(x)\rbrace $的有界性.例如，设函数$f(x)$是这样定义的：</p>
+<p>$$f(x)=\dfrac{1}{x} ,\quad 若0 &lt; x\leq 1,又f(0)=0.$$</p>
+<p>这函数仅取有限数值，但它却不是有界的，因为当$x$接近于$0$时，它可以取任意大的数值.顺便指出，在半开区间$(0,1]$内它是连续的，但在点$x=0$处有间断.</p>
+<p>但对于闭区间内连续的函数情形就不同了.</p>
+<p><strong>魏尔斯特拉斯第一定理</strong>$\quad $若函数$f(x)$是在闭区间$[a,b]$内定义且连续的，则它必是有界的，即必存在着有限的常数$m$及$M$，使当$a\leq x\leq b$时</p>
+<p>$$m\leq f(x)\leq M.$$</p>
+<p><strong>证明</strong>$\quad $由反证法来证明：设函数$f(x)$当$x$在区间$[a,b]$内变动时为无界的.</p>
+<p>在这种情形，对于每一个自然数$n$，在区间$[a,b]$内必能求出数值$x=x_n$，使</p>
+<p>$$\vert f(x_n )\vert \geq n.\label{4} \tag{4} $$</p>
+<p>依布尔查诺-魏尔斯特拉斯引理<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[布尔查诺-魏尔斯特拉斯(B.Bolzano-C.Weierstrass)引理]</a>，由序列$\lbrace x_n \rbrace$中可以分出部分序列$\lbrace x_{n_k} \rbrace$收敛于有限极限：</p>
+<p>$$x_{n_k} \to x_0 \quad (k\to +\infty 时),$$</p>
+<p>并且显然$a\leq x_0 \leq b$.由于函数在点$x_0 $处的连续性，则亦应该有</p>
+<p>$$f(x_{n_k} ) \to f(x_0 ),$$</p>
+<p>而这是不可能的，因为由$\eqref{4}$推得</p>
+<p>$$\vert f(x_{n_k} ) \vert \to \infty .$$</p>
+<p>所得的矛盾就证明了本定理.</p>
+<h2 id="函数的最大值及最小值">函数的最大值及最小值</h2><p>我们知道，一个无穷数集，即使是有界的，其中也可能没有最大的（最小的）元素.因此，若函数$f(x)$是在$x$的某一变动区间内定义着而且甚至是有界的，但在函数数值所成的集$\lbrace f(x)\rbrace $中仍可能不出现最大的（最小的）数值.这时函数$f(x)$的数值在该区间内不能达到它们的上（下）确界.例如，函数</p>
+<p>$$f(x)=x-E(x)$$</p>
+<p>就是这样（它的图像画在图$33$中）.当$x$在任意区间$[0,b] (b\geq 1)$内变动时，函数值的上确界是$1$，但它不能被达到，因此函数无最大值.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu37.png" alt=""></center>
+
+<p>读者也许已明白，与此有关的是所考察的函数在$x$取自然数值时有间断存在，实际上，对于在闭区间内连续的函数成立着：</p>
+<p><strong>魏尔斯特拉斯第二定理</strong>$\quad $若函数$f(x)$是在闭区间$[a,b]$内定义着而且连续的，则它在这区间内必能达到自己的上确界及下确界.</p>
+<p>换言之，在区间$[a,b]$内必能求出$x=x_0 $及$x=x_1 $，使$f(x_0 )$及$f(x_1 )$依次为$f(x)$的一切数值中的最大者及最小者.</p>
+<p><strong>第一种证明</strong>$\quad $令</p>
+<p>$$M=\sup{\lbrace f(x)\rbrace } ;$$</p>
+<p>依前一定理这数是有限数.假定（与需要证明的相反）恒有$f(x) &lt; M$，即限界不能被达到.在这种情形可以考察辅助函数</p>
+<p>$$\varphi (x)=\dfrac{1}{M-f(x)} .$$</p>
+<p>因为依假定，此处分母不能等于零，故函数是连续的，因此（依前一定理）是有界的：$\varphi (x)\leq \mu (\mu &gt; 0)$.但由此很易得出</p>
+<p>$$f(x)\leq M-\dfrac{1}{\mu } ,$$</p>
+<p>即有一小于$M$的$M-\dfrac{1}{\mu } $成为$f(x)$的函数值所成之集的上界，这是不可能的，因为$M$是这数集的上确界.所得的矛盾就证明了定理：在区间$[a,b]$内必能求出数值$x_0 $，使得$f(x_0 )=M$是$f(x)$的一切数值中的最大者.</p>
+<p>仿此又可以证明关于最小者的论点.</p>
+<p><strong>第二种证明</strong>$\quad $在这里亦可从布尔查诺-魏尔斯特拉斯引理<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[布尔查诺-魏尔斯特拉斯(B.Bolzano-C.Weierstrass)引理]</a>出发.且限于最大值来证明.同刚才一样，若</p>
+<p>$$M=\sup{\lbrace f(x)\rbrace } ,$$</p>
+<p>则依上确界的性质<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng101/" target="_blank" rel="external">[数集的界]</a>，对于任何$n$必能在$[a,b]$内求出$x=x_n $，使</p>
+<p>$$f(x_n ) &gt; M-\dfrac{1}{n} .\label{5} \tag{5} $$</p>
+<p>于是从序列$\lbrace x_n \rbrace $内可以分出部分序列$\lbrace x_{n_k} \rbrace$收敛于$[a,b]$内某一数值$x_0 :x_{n_k } \to x_0$，由于函数的连续性亦有</p>
+<p>$$f(x_{n_k} ) \to f(x_0 ).$$</p>
+<p>同时由$\eqref{5}$有</p>
+<p>$$f(x_{n_k} ) &gt; M-\dfrac{1}{n_k } ,$$</p>
+<p>取极限，得</p>
+<p>$$f(x_0 ) \geq M.$$</p>
+<p>但$f(x_0 )$不能大于函数值集的上界$M$，因此</p>
+<p>$$f(x_0 )=M$$</p>
+<p>此即所要证的.</p>
+<p>须注意，刚才所进行的两种证明都是纯粹的“存在的证明”，并没有给出任何求数值$x=x_0 $的方法.以后[第四章$\S 1$内]，在关于函数作更多的假定下，我们将学会实际求函数达到最大或最小值时的自变数的数值.</p>
+<p>若函数$f(x)$当$x$在任何区间$\mathcal{X}$内变动时是有界的，则差</p>
+<p>$$\omega =M-m$$</p>
+<p>称为函数在这区间内的<strong>振幅</strong>.</p>
+<p>此外，振幅$\omega $也可以定义为一切可能的差$f(x’’)-f(x’)$所成的集的上确界，其中$x’$及$x’’$是在区间$\mathcal{X} $内的互不相关的任意数值；</p>
+<p>$$\omega =\underset{x’,x’’在\mathcal{X} 内}{\sup{}} \lbrace f(x’’)-f(x’)\rbrace .$$</p>
+<p>当论及在有限闭区间$\mathcal{X} =[a,b]$内的连续函数$f(x)$时，则由已证明的定理可知，振幅不过是函数在这区间内的最大值与最小值之差罢了.</p>
+<p>在这种情形，函数值的区间$\mathcal{Y}$就是闭区间$[m,M]$，而振幅就是这区间的长.</p>
+<h2 id="一致连续的概念">一致连续的概念</h2><p>若函数$f(x)$是在某一区间$\mathcal{X}$（闭的或不闭的，有限的或无穷的）内定义着而且在这区间内的一点$x_0 $处是连续的，则</p>
+<p>$$\lim_{x\to x_0 } f(x)=f(x_0 ),$$</p>
+<p>或[用“$\varepsilon -\delta $的语言”，[<a href="http://jianhanglin.github.io/blog/2015/06/weijifenxuejiaocheng124/" target="_blank" rel="external">函数在一点处的连续性的定义</a>]]：对于任一数$\varepsilon &gt; 0$必能求出数$\delta &gt; 0$，使由</p>
+<p>$$\vert x-x_0 \vert &lt; \delta $$</p>
+<p>能推出</p>
+<p>$$\vert f(x)-f(x_0 )\vert &lt; \varepsilon .$$</p>
+<p>今假定函数$f(x)$在全区间$\mathcal{X}$内是连续的，即在这区间的每一点$x_0 $处是连续的.则对于$\mathcal{X}$内的任一点$x_0 $，必能依给定的$\varepsilon $而各别地求出合于上述意义的对应的$\delta $.当$x_0 $在$\mathcal{X}$的范围内变动时，即使$\varepsilon $不变动，数$\delta $一般地说也是要变动的.要相信这事，只要一看图$34$就够了.图中在函数变动得很慢的地区（图像表示为平斜的曲线）所适用的$\delta $比在函数变动得很快的地区（在那里图像峻峭地上升或下降）所适用的$\delta $要大得多，换句话说，数$\delta $一般地不仅依赖于$\varepsilon $，并且亦依赖于$x_0 $.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu38.png" alt=""></center>
+
+<p>若只论及$x_0 $的有限个数值（当$\varepsilon $不变动时），则由有限个与它对应的数$\delta $内可以选出最小的一个，而这$\delta $显然同时可适用于一切被考察的点$x_0 $.</p>
+<p>但关于包含在区间$\mathcal{X} $内的无穷多个数值$x_0 $却不能这样去推断：（当$\varepsilon $不变动时）与它们对应的是无数个的$\delta $，其中可能会有任意小的.这样，关于区间$\mathcal{X} $内的连续函数$f(x)$就发生一个问题：对于已给的$\varepsilon $是否存在这样的$\delta $，能适用于这区间内的一切点$x_0 $？</p>
+<p>若对于任一数$\varepsilon &gt; 0$能求出数$\delta &gt; 0$，使</p>
+<p>$$\vert x-x_0 \vert &lt; \delta $$</p>
+<p>就能推出</p>
+<p>$$\vert f(x)-f(x_0 )\vert &lt; \varepsilon ,$$</p>
+<p>不论点$x_0 $及$x$是在区间$\mathcal{X}$内的什么地位，则函数$f(x)$称为区间$\mathcal{X}$内是一致连续的.</p>
+<p>在这种情形，数$\delta $仅依赖于$\varepsilon $，而且可以在选定点$x_0 $以前就指出来：$\delta $同时适用于一切$x_0 $.</p>
+<p>一致连续表示：在区间的任何部分只要变元的两个数值达到一定的接近程度，就足以使对应的函数值达到所需的接近程度.</p>
+<p>可以举例说明，函数在区间内一切点处的连续性不能必然地推出它在这区间内的一致连续性.例如，设$f(x)=\sin{\dfrac{1}{x} } $，$x$包含于$0$及$\dfrac{2}{\pi} $之间，但$0$除外.在这种情形，$x$的变动区域是非闭区间$\left( 0,\dfrac{2}{\pi} \right] $，且在它在每一点处函数是连续的.今令$x_0 =\dfrac{2}{(2n+1)\pi } ,x=\dfrac{1}{n\pi }$（式中$n$是任意的自然数）；则</p>
+<p>$$f(x_0 )=\sin{(2n+1)\dfrac{\pi }{2} } =\pm 1,\quad f(x)=\sin{n\pi }=0,$$</p>
+<p>于是</p>
+<p>$$\vert f(x)-f(x_0 )\vert =1,$$</p>
+<p>虽然$\vert x-x_0 \vert =\dfrac{1}{n(2n+1)\pi } $可以随$n$的增大而成为任意小.在这里，对于$\varepsilon =1$不能求出$\delta $使同时适用于$\left( 0,\dfrac{2}{\pi} \right] $内的一切点$x_0 $，虽然对于其中每一个别的数值$x_0 $，由于函数的连续性，这种$\delta $是存在的！</p>
+<p>非常值得注意的是在闭区间$[a,b]$内已不再有与此类似的情况，这由下面的康托（G.Cantor）的定理可以明白.</p>
+<h2 id="康托定理">康托定理</h2><p>若函数$f(x)$是闭区间$[a,b]$内定义着而且连续，则它在这区间内也是一致连续的.</p>
+<p><strong>证明</strong>$\quad $我们用反证法来证明.设对于某一确定的数$\varepsilon &gt; 0$，在一致连续性的定义内所论及的那种数$\delta &gt; 0$并不存在.在这种情形，不论取怎样的数$\delta &gt; 0$，在区间$[a,b]$内必可求出这样的两个数值$x’_0 $及$x’$，虽然</p>
+<p>$$\vert x’-x’_0 \vert &lt; \delta $$</p>
+<p>但仍然</p>
+<p>$$\vert f(x’)-f(x’_0 ) \vert \geq \varepsilon .$$</p>
+<p>今取正数的序列$\lbrace \delta _n \rbrace $，且$\delta _n \to 0$.</p>
+<p>根据已讲过的，对于每一$\delta _n $可在$[a,b]$内求出数值$x_n^{(n)}$及$x^{(n)}$（它们担任着$x’_0$及$x’$的角色），虽然（对$n=1,2,\cdots $）</p>
+<p>$$\vert x^{(n)}-x_0^{(n)} \vert &lt; \delta _n ,$$</p>
+<p>但仍然</p>
+<p>$$\vert f(x^{(n)})-f(x_0^{(n)} ) \vert \geq \varepsilon .$$</p>
+<p>依布尔查诺-魏尔斯特拉斯引理<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[布尔查诺-魏尔斯特拉斯(B.Bolzano-C.Weierstrass)引理]</a>，由有界序列$\lbrace x^{(n)} \rbrace $内可以取出部分序列，收敛于区间$[a,b]$内的某一点$x_0 $.为着不使记法繁复，就算序列$\lbrace x^{(n)} \rbrace $本身已收敛于$x_0 $.</p>
+<p>因为$x^{(n)} -x_0^{(n)} \to 0 $（因$\vert x^{(n)} -x_0^{(n)} \vert &lt; \delta _n $，而$\delta _n \to 0$），所以序列$\lbrace x_0^{(n)} \rbrace $也同时收敛于$x_0 $.由于函数在点$x_0 $处的连续性，应该有</p>
+<p>$$f(x^{(n)}) \to f(x_0 )\quad 及\quad f(x_0^{(n)} )\to f(x_0 ),$$</p>
+<p>于是</p>
+<p>$$f(x^{(n)}) -f(x_0^{(n)} ) \to 0,$$</p>
+<p>但这违反了在一切数值$n$时</p>
+<p>$$\vert f(x^{(n)}) -f(x_0^{(n)} ) \vert \geq \varepsilon $$</p>
+<p>的事实.定理证明完毕.</p>
+<p>由已证明的定理直接得出在以后对我们有用的推论：</p>
+<p><strong>推论</strong>$\quad $设函数$f(x)$是在闭区间$[a,b]$内定义着而且连续的.则依给定的$\varepsilon &gt; 0$能求出这样的$\delta &gt; 0$，若把区间任意分成长度小于$\delta $的部分区间，则在每一个部分区间内函数$f(x)$的振幅将小于$\varepsilon $.</p>
+<p>事实上，若依给定的$\varepsilon $而取在一致连续性的定义内所说及的那种数作为$\delta $，则在长度小于$\delta $的部分区间内，任意两函数值之差的绝对值就小于$\varepsilon $.特别，若取这两函数值为函数在部分区间内的最大值与最小值，则它们的差就给出函数在该部分区间内的振幅[函数的最大值及最小值].</p>
+<h2 id="博雷尔引理">博雷尔引理</h2><p>现在我们将证明一个有趣的辅助命题，它与布尔查诺-魏尔斯特拉斯引理相似，在进行细致的讨论时常是有用处的，它属于博雷尔（E.Borel）.</p>
+<p>在考察区间$[a,b]$时，同时再考察诸开区间$\sigma $所成的系$\Sigma $，其中开区间的个数可以是有限的也可以是无穷的.若对于区间$[a,b]$内的每一点$x$必有$\Sigma $内的区间$\sigma $包含它，就约定说系$\Sigma $覆盖区间$[a,b]$（或这区间被系$\Sigma $所覆盖，等等）这种说法将简化我们对于上述命题的叙述及证明.</p>
+<p><strong>博雷尔引理</strong>$\quad $若闭区间$[a,b]$被一个开区间的无穷系$\Sigma =\lbrace \sigma \rbrace $所覆盖，则恒能从$\Sigma $里面选出有限子系</p>
+<p>$${\Sigma }^{\ast } =\lbrace \sigma _1 ,\sigma _2 ,\cdots ,\sigma _n \rbrace ,$$</p>
+<p>它同样能覆盖全区间$[a,b]$.</p>
+<p><strong>第一种证明</strong>$\quad $应用布尔查诺的方法<a href="http://jianhanglin.github.io/blog/2015/01/weijifenxuejiaocheng114/" target="_blank" rel="external">[布尔查诺-魏尔斯特拉斯(B.Bolzano-C.Weierstrass)引理]</a>从反面进行.假设区间$[a,b]$不能被$\Sigma $内的有限个区间$\sigma $所覆盖.把区间等分为两半.那时至少两半之一不能被有限个$\sigma $所覆盖；事实上，若某一半可以被（$\Sigma $内的）区间$\sigma _1 ,\sigma _2 ,\cdots ,\sigma _m$所覆盖，而另一半可以被（$\Sigma $内的）区间$\sigma _{m+1} ,\sigma _{m+2} ,\cdots ,\sigma _n$所覆盖，则由这些区间全体所组成的有限系${\Sigma }^{\ast }$就已能覆盖全区间$[a,b]$了，这是违反假设的.今用$[a_1 ,b_1 ]$表示那不能被有限个$\sigma $所覆盖的半区间（若两者都是如此，则任取其中之一个）.再把这区间等分为两半，并且用$[a_2 ,b_2 ]$表示那不能被有限个$\sigma $所覆盖的半区间，余依次类推.</p>
+<p>继续不断进行这种步骤，我们将得出内含区间$[a_n ,b_n ] (n=1,2,\cdots )$的无穷序列，其中每一区间是前一区间的一半.所有这些区间都是这样选取的，它们之中没有一个可以被有限个区间$\sigma $所覆盖.依内含区间的引理<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng113/" target="_blank" rel="external">[关于区间套的引理]</a>，它们有一个公共点$c$，端点$a_n ,b_n $都趋向于这点为极限.</p>
+<p>这点$c$，像区间$[a,b]$内的任一点一样，必位于某一区间$\sigma $内，就说是在$\sigma _0 =(\alpha ,\beta )$内，于是$\alpha &lt; c &lt; \beta $.但趋向于$c$的整序变量$a_n $及$b_n $从某一序号开始它们本身就将包含在$\alpha $与$\beta $之间<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>，于是由它们决定的区间$[a_n ,b_n ]$显然只用一个区间$\sigma _0 $就可全部被覆盖信，违反了这些区间$[a_n ,b_n ]$的选法，所得的矛盾就证明这引理.</p>
+<p>再引入一种证明，它建立在新的观念上；它属于勒贝格（H.Lebesgue）.</p>
+<p><strong>第二种证明</strong>$\quad $考察区间$[a,b]$内具有那种性质的点$x^{\ast }$，使得区间$[a,x^{\ast}]$能用有限个区间$\sigma $来覆盖.这种点$x^{\ast}$，一般地说，是存在的：因为，例如，点$a$位于某一个$\sigma $内，则一切接近于它的点就都含在这$\sigma $内，因此，就都成为点$x^{\ast}$.</p>
+<p>我们的任务是要证明点$b$亦属于点$x^{\ast}$之列.</p>
+<p>因为一切$x^{\ast} \leq b$，故亦存在着<a href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" target="_blank" rel="external">[数集的界]</a></p>
+<p>$$\sup{\lbrace x^{\ast} \rbrace } =c\leq b.$$</p>
+<p>像区间$[a,b]$内的任一点那样，$c$必属于某一$\sigma _0 =(\alpha ,\beta ),\alpha &lt; c &lt; \beta $.但依上确界的性质，就能求出$x_0^{\ast} $使$\alpha &lt; x_0^{\ast} \leq c$.区间$[a,x_0^{\ast} ]$已能用有限个区间$\sigma $来覆盖（依点$x^{\ast}$的定义）现在只要再把$\sigma _0 $加入这些区间去，他们就能覆盖住全区间$[a,c]$了，因此$c$也属于点$x^{\ast}$之列.</p>
+<p>而且很明显地，$c$不能小于$b$，因为否则在$c$与$\beta $之间将能再求出点$x^{\ast}$，违反数$c$是一切$x^{\ast}$的上确界的定义.这样，必须$b=c$；意即$b$是$x^{\ast}$中的一点，即区间$[a,b]$能用有限个区间$\sigma $来覆盖，这就是我们所要证明的.</p>
+<p>必须注意，基本区间$[a,b]$是闭区间以及$\Sigma $中的区间$\sigma $是开区间这两个假定对于引理的结论的真实性是同等重要的.例如，开区间</p>
+<p>$$\left( \dfrac12 ,\dfrac32 \right) ,\left( \dfrac14 ,\dfrac34 \right) ,\left( \dfrac18 ,\dfrac38 ,\right) ,\cdots ,\left( \dfrac{1}{2^n} ,\dfrac{3}{2^n} \right) ,\cdots $$</p>
+<p>的全体覆盖区间$(0,1]$，但从它们中间就不能选出具有同样性质的有限子系.类似于此，闭区间</p>
+<p>$$\left[ 0,\dfrac12 \right] ,\left[ \dfrac12 ,\dfrac34 \right] ,\left[ \dfrac34 ,\dfrac78 \right] ,\cdots ,\left[ \dfrac{2^n-1}{2^n} ,\dfrac{2^{n+1}-1}{2^{n+1}} \right] ,\cdots 及[1,2]$$</p>
+<p>覆盖住区间$[0,2]$，但也不能从它们中间选出具有同样性质的有限子系.</p>
+<h2 id="基本定理的新证明">基本定理的新证明</h2><p>今将指出博雷尔引理怎样被应用着去证明连续函数的基本定理——布尔查诺-柯西，魏尔斯特拉斯及康托的定理.</p>
+<p>$1°\quad $<strong>布尔查诺-柯西第一定理</strong>[关于函数取零值的定理]</p>
+<p>这次的证明将要从反面着手.设——在遵守定理的假定之下——函数$f(x)$始终不在任何一点等于零.则依[关于函数取零值的定理]的引理，区间$[a,b]$内的每一点$x’$可以用这样的邻域$\sigma’=(x’-\delta’ ,x’+\delta’ )$盖住，使$f(x)$在这范围内保持确定的符号.</p>
+<blockquote>
+<p>即在这邻域与区间$[a,b]$的公共部分，因$x$仅能在它里面变动.</p>
+</blockquote>
+<p>这种邻域所成的无穷系$\Sigma =\lbrace \sigma \rbrace $自然就覆盖信全部给定区间$[a,b]$.因此，依博雷尔引理，只要其中有限个区间所成的子系${\Sigma }^{\ast} $也就够用了.</p>
+<p>给定区间的左端点$a$属于系${\Sigma }^{\ast} $中的某一个邻域内，就说是邻域$\sigma _1 =(x_1 -\delta _1 ,x_1 +\delta _1 )$.这邻域的右端$x_1 +\delta _1 $又属于${\Sigma}^{\ast}$中的另一邻域$\sigma _2 =(x_2 -\delta _2 ,x_2 +\delta _2 )$，点$x_2 +\delta _2 $又属于${\Sigma}^{\ast}$中的邻域$\sigma _3 =(x_3 -\delta _3 ,x_3 +\delta _3 )$，等等（图$35$）.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu39.png" alt=""></center>
+
+<p>经过有限次向右移动的步骤以后，我们将到达${\Sigma }^{\ast}$中的邻域$\sigma _n =(x_n -\delta _n ,x_n +\delta _n )$，在它里面已经含有给定区间的右端点$b$.若除去区间</p>
+<p>$$\sigma _1 ,\sigma _2 ,\cdots ,\sigma _n \label{6} \tag{6} $$</p>
+<p>以外${\Sigma }^{\ast}$还包含任何旁的区间，则显然可以把它们省略去了.</p>
+<p>在邻域$\sigma _1 $内函数保持着确定的符号，就是$f(a)$的符号.但在$\sigma _2 $内函数亦有确定的符号，它也应当和$f(a)$的符号一致，因为$\sigma _1 $与$\sigma _2 $有互相重叠的部分.同样可知，函数在次一邻域$\sigma _3 $也将保持与$f(a)$同样的符号，因为$\sigma _3$与$\sigma _2 $也有互相重叠的部分，等等.最后达到结论，在最后的邻域$\sigma _n $内函数亦有与$f(a)$同样的符号，于是$f(b)$与$f(a)$的符号一致，这就违反了假定.定理证明完毕.</p>
+<p>$2°\quad $<strong>魏尔斯特拉斯第一定理</strong>[关于函数的有界性的定理]</p>
+<p>由于函数$f(x)$的连续性，不论在区间$[a,b]$内取怎样的点$x’$，当给定了$\varepsilon &gt; 0$以后，可以用适当小的邻域$\sigma’=(x’-\sigma’ ,x’+\sigma’ )$盖住这点，使得对于一切属于这邻域的$x$成立不等式</p>
+<p>$$\vert f(x)-f(x’)\vert &lt; \varepsilon $$</p>
+<p>或</p>
+<p>$$f(x’)-\varepsilon &lt; f(x) &lt; f(x’)+\varepsilon .$$</p>
+<p>这样，在每一个这种邻域的范围内，函数$f(x)$显然是有界的：它以$f(x’)-\varepsilon $为下界，以$f(x’)+\varepsilon $为上界.</p>
+<p>读者一定明白，在这里对于具有上述性质的邻域的无穷系$\Sigma $也必须应用博雷尔引理.从这引理推得，在$\Sigma $内存在有限个邻域$\eqref{6}$，其全体亦同样能覆盖住全区间$[a,b]$.若</p>
+<p>在$\sigma _1 $内</p>
+<p>$$m_1 \leq f(x)\leq M_1 ,$$</p>
+<p>在$\sigma _2 $内</p>
+<p>$$m_2 \leq f(x)\leq M_2 ,$$</p>
+<p>$$\cdots \cdots \cdots \cdots \cdots $$</p>
+<p>在$\sigma _n $内</p>
+<p>$$m_n \leq f(x)\leq M_n ,$$</p>
+<p>则从数$m_1 ,m_2 ,\cdots ,m_n $内取出最小者当作$m$，从数$M_1 ,M_2 ,\cdots ,M_n $内取出最大者当作$M$，显然在全区间$[a,b]$内将有</p>
+<p>$$m\leq f(x)\leq M.$$</p>
+<p>这就是我们所要证明的.</p>
+<p>$3°\quad $<strong>康托定理</strong>[康托定理]</p>
+<p>给定的任意数$\varepsilon &gt; 0$.在这次对于区间$[a,b]$内的每一点$x’$我们用这样的邻域$\sigma’ =(x’-\delta’ ,x’+\delta’ )$来盖住它，使得在它的范围内成立不等式</p>
+<p>$$\vert f(x)-f(x’)\vert &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>若$x_0 $同样是这邻域中的点，则同时也必有</p>
+<p>$$\vert f(x’)-f(x_0 )\vert &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>这样，对于$\sigma’$内的任意两点$x$及$x_0 $将有</p>
+<p>$$\vert f(x)-f(x_0 ) \vert &lt; \varepsilon .$$</p>
+<p>把每一邻域$\sigma’$向中心缩短一半，即不考察邻域$\sigma’$而考察邻域</p>
+<p>$$\overline{\sigma’} =\left( x’-\dfrac{\sigma’}{2} ,x’+\dfrac{\sigma’}{2} \right) .$$</p>
+<p>由这些邻域同样能组成覆盖全区间$[a,b]$的系$\overline{\Sigma }$，而且我们正是要对$\overline{\Sigma }$来应用博雷尔引理.这样，区间$[a,b]$就能用$\overline{\Sigma }$内的有限个区间</p>
+<p>$$\overline{\sigma _i} =\left( x_i -\dfrac{\sigma _i }{2} ,x_i +\dfrac{\sigma _i}{2} \right) \quad (i=1,2,\cdots ,n)$$</p>
+<p>来覆盖.</p>
+<p>今设$\delta $是一切数$\dfrac{\delta _i}{2} $中的最小者，而$x_0 ,x$是给定区间内满足条件，</p>
+<p>$$\vert x-x_0 \vert &lt; \delta \label{7} \tag{7} $$</p>
+<p>的任意两点.点$x_0 $应当属于某一个被选出的邻域，设为</p>
+<p>$$\overline{\sigma _{i_0} } =\left( x_{i_0} -\dfrac{\sigma _{i_0} }{2} ,x_{i_0} +\dfrac{\sigma _{i_0} }{2} \right) ,$$</p>
+<p>于是$\vert x_0 -x_{i_0} \vert &lt; \dfrac{\delta _{i_0}}{2}$.</p>
+<p>因为$\delta \leq \dfrac12 \delta _{i_0}$，故由$\eqref{7}$，$\vert x-x_0 \vert &lt; \dfrac{\delta _{i_0}}{2}$，由此$\vert x-x_{i_0} \vert &lt; \delta _{i_0}$，即点$x$（点$x_0 $当然也是）属于那最初取出的邻域</p>
+<p>$$(x_{i_0} -\delta _{i_0} ,x_{i_0} +\delta _{i_0} ),$$</p>
+<p>该邻域收缩了以后就得出邻域$\overline{\sigma _{i_0 }}$，这时，依那些最初取出的邻域的性质，有</p>
+<p>$$\vert f(x)-f(x_0 )\vert &lt; \varepsilon .$$</p>
+<p>由于选取$\delta $并不依赖于点$x_0 $的地位，函数$f(x)$的一致连续性就已证明.</p>
+<p>由上述论证很易看出，当个别点的邻域的“局部”性质必须扩充到全部所考察的区间时，博雷尔引理就常能很成功地用来达到这目的.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/07/01/2015/07/weijifenxuejiaocheng125/" data-title="《微积分学教程(第一卷)》 第二章 一元函数 5 连续函数的性质 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/07/08/2015/07/daishuxueyinlun141/" title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 1 具有代数运算的集合">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第4章 群.环.域 1 具有代数运算的集合</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/06/21/2015/06/daishuxueyinlun134/"  title="《代数学引论(第一卷)基础代数》 第3章 行列式 4 行列式的公理化构造">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第3章 行列式 4 行列式的公理化构造
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数取零值的定理"><span class="toc-number">1.</span> <span class="toc-text">关于函数取零值的定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用于解方程"><span class="toc-number">2.</span> <span class="toc-text">应用于解方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#介值定理"><span class="toc-number">3.</span> <span class="toc-text">介值定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反函数的存在"><span class="toc-number">4.</span> <span class="toc-text">反函数的存在</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于函数的有界性的定理"><span class="toc-number">5.</span> <span class="toc-text">关于函数的有界性的定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的最大值及最小值"><span class="toc-number">6.</span> <span class="toc-text">函数的最大值及最小值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一致连续的概念"><span class="toc-number">7.</span> <span class="toc-text">一致连续的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#康托定理"><span class="toc-number">8.</span> <span class="toc-text">康托定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博雷尔引理"><span class="toc-number">9.</span> <span class="toc-text">博雷尔引理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本定理的新证明"><span class="toc-number">10.</span> <span class="toc-text">基本定理的新证明</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

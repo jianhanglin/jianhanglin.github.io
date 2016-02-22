@@ -1,0 +1,1175 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第二章 一元函数 4 函数的连续性及间断 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="函数的连续性及间断">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第二章 一元函数 4 函数的连续性及间断">
+<meta property="og:url" content="http://yoursite.com/2015/06/10/2015/06/weijifenxuejiaocheng124/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="函数的连续性及间断">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu33.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu34.png">
+<meta property="og:updated_time" content="2015-10-20T14:18:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第二章 一元函数 4 函数的连续性及间断">
+<meta name="twitter:description" content="函数的连续性及间断">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/06/10/2015/06/weijifenxuejiaocheng124/" title="《微积分学教程(第一卷)》 第二章 一元函数 4 函数的连续性及间断" itemprop="url">《微积分学教程(第一卷)》 第二章 一元函数 4 函数的连续性及间断</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-06-10T08:15:51.000Z" itemprop="datePublished"> 發表於 2015-06-10</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数在一点处的连续性的定义"><span class="toc-number">1.</span> <span class="toc-text">函数在一点处的连续性的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连续函数的算术运算"><span class="toc-number">2.</span> <span class="toc-text">连续函数的算术运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连续函数的例题"><span class="toc-number">3.</span> <span class="toc-text">连续函数的例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单侧连续·间断的分类"><span class="toc-number">4.</span> <span class="toc-text">单侧连续·间断的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#间断函数的例题"><span class="toc-number">5.</span> <span class="toc-text">间断函数的例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调函数的连续性及间断"><span class="toc-number">6.</span> <span class="toc-text">单调函数的连续性及间断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初等函数的连续性"><span class="toc-number">7.</span> <span class="toc-text">初等函数的连续性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连续函数的叠置"><span class="toc-number">8.</span> <span class="toc-text">连续函数的叠置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一个函数方程的解"><span class="toc-number">9.</span> <span class="toc-text">一个函数方程的解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指数函数、对数函数及幂函数的函数特性"><span class="toc-number">10.</span> <span class="toc-text">指数函数、对数函数及幂函数的函数特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三角余弦及双曲余弦的函数特性"><span class="toc-number">11.</span> <span class="toc-text">三角余弦及双曲余弦的函数特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的连续性在计算极限时的应用"><span class="toc-number">12.</span> <span class="toc-text">函数的连续性在计算极限时的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#幂指数式"><span class="toc-number">13.</span> <span class="toc-text">幂指数式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">14.</span> <span class="toc-text">例题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="函数在一点处的连续性的定义">函数在一点处的连续性的定义</h2><p>与函数的极限概念密切联系着的是数学分析中另一重要概念——函数的连续性的概念.</p>
+<p>考察定义在以$x_0$为聚点的某个区域$\mathcal{X} =\lbrace x\rbrace $内的函数$f(x)$；并设点$x_0$本身属于$\mathcal{X}$，于是在这点函数有确定的数值$f(x_0 )$.</p>
+<p>当建立函数在$x$趋于$x_0$时的极限概念<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[函数的极限的定义，变成整序变量的情形]</a></p>
+<p>$$\lim_{x\to x_0 } f(x)$$</p>
+<p>时，曾不止一次地着重指出，变数$x$并不取数值$x_0$；这数值甚至可以不属于函数的定义域，即使它属于这定义域，但在研究上述极限时数值$f(x_0)$也不考虑在内.</p>
+<p>然而，正是当</p>
+<p>$$\lim_{x\to x_0 } f(x)=f(x_0 )\label{1} \tag{1}$$</p>
+<p>的情形才有着特殊的重要性.常说，函数$f(x)$当$x=x_0 $时（或在点$x=x_0 $处）是连续的，只要关系式$\eqref{1}$能成立；又若它不成立，就说当$x$取这数值时（或在这点）函数有间断.</p>
+<blockquote>
+<p>这术语是与曲线的连续及间断的直观看法有关的；若函数的图像是连续的，函数就是连续的；函数的间断点就对应于图像上的间断点.然而事实上，曲线的连续概念本身就需要有所根据，而作为根据的最简单的方法，刚好就是函数的连续性！</p>
+</blockquote>
+<p>当函数$f(x)$在点$x_0 $处为连续的场合（显然，只限于这种场合）若要计算$f(x)$当$x\to x_0$时的极限，我们就可以不管$x$在本身趋向于$x_0$的过程中是否特殊地取过数值$x_0 $.</p>
+<p>函数的连续性的定义也可以用其他的术语来叙述.由数值$x_0$过渡到旁的数值$x$，可以想象为给数值$x_0$加上一个增量$\Delta x_0 =x-x_0$.函数的新值$y=f(x)=f(x_0 +\Delta x_0 )$与原值$y_0 =f(x_0 )$相差一个增量</p>
+<p>$$\Delta y_0 =f(x)-f(x_0 )=f(x_0 +\Delta x_0 ) -f(x_0 ).$$</p>
+<blockquote>
+<p>在分析上照例把量$x,y,t,\cdots $的增量各记成$\Delta x,\Delta y,\Delta t,\cdots $.这些记法必须看作是整个符号，不要把$\Delta $与$x$及$y$等拆开.</p>
+</blockquote>
+<p>要使函数$f(x)$在点$x_0 $处是连续的，其充要条件是：在这点函数的增量$\Delta y_0$与自变量的增量$\Delta x_0$一同趋向于零.换句话说：连续函数的特性就是，对应于变元的无穷小增量，函数的增量也是无穷小.</p>
+<p>回到基本定义$\eqref{1}$，试用“$\varepsilon -\delta $的语言”<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[函数的极限定义]</a>显示它的内容，函数$f(x)$在点$x_0 $处的连续性的意义可归结如下：对于不论怎样的数$\varepsilon &gt; 0$必能求出数$\delta &gt; 0$，使由</p>
+<p>$$\vert x-x_0 \vert &lt; \delta $$</p>
+<p>可以引出</p>
+<p>$$\vert f(x)-f(x_0 )\vert &lt; \varepsilon .$$</p>
+<p>这样，最后的不等式在点$x_0 $的充分小的领域$(x_0 -\delta ,x_0 +\delta )$内就应该成立.</p>
+<p>最后，用“序列的语言”表达连续性：在$\mathcal{X}$内任意取收敛于$x_0 $的$x$的序列：</p>
+<p>$$x_1 ,x_2 ,\cdots ,x_n ,\cdots $$</p>
+<p>则对应于的函数值的序列</p>
+<p>$$f(x_1 ),f(x_2 ),\cdots ,f(x_n ),\cdots $$</p>
+<p>必收敛于$f(x_0 )$.</p>
+<p><strong>附注</strong>$\quad $设点$x=x_0 $是函数$f(x)$的定义区域$\mathcal{X}$的聚点，但本身不属于$\mathcal{X}$，于是函数在这点是没有定义的.然若存在着有限极限</p>
+<p>$$\lim_{x\to x_0 } f(x),$$</p>
+<p>那么只要补充函数的定义，令$f(x_0 )$等于这极限，$f(x)$就在$x=x_0 $处是连续的了.在类似于此的情形我们以后经常就是这样来理解的.</p>
+<p>反之，若所说的极限并不存在，那么即使函数在这一点$x=x_0 $没有确也好，我们总是说，函数在这一点遭受间断：这时不论函数在$x=x_0$补取什么数值，它在此处还是有间断！</p>
+<p>我们以后通常要考察在区间$\mathcal{X}$内确定的函数；区间中的一切点都是它的聚点，于是对于其中的任何一点都可以提出有关连续性的问题.为着讲述的简化，我们约定，若函数在区间$\mathcal{X}$内的每一点都是连续的，就说函数在区间$\mathcal{X}$内是连续的.</p>
+<h2 id="连续函数的算术运算">连续函数的算术运算</h2><p>在列举连续函数的例题以前，先建立下面的简单的命题，它使我们极容易地扩大了连续函数的数目.</p>
+<p><strong>定理</strong>$\quad $若二函数$f(x)$及$g(x)$是在同一区间$\mathcal{X}$内定义着的，且都在点$x_0 $处连续，则函数</p>
+<p>$$f(x)\pm g(x) ,f(x)\cdot g(x),\dfrac{f(x)}{g(x)}$$</p>
+<p>也在那一点连续，最后一式须附以条件$g(x_0 )\neq 0$.</p>
+<p>这可以直接从各有极限的二函数的和，差，积及商的极限定理<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[极限理论的拓广]</a>推得.</p>
+<p>且讨论二函数的商作为例子.函数$f(x)$及$g(x)$在点$x_0 $处为连续的假定等于说存在着等式</p>
+<p>$$\lim_{x\to x_0 } f(x)=f(x_0 ),\lim_{x\to x_0 } g(x)=g(x_0 ).$$</p>
+<p>但由此依商的极限的定理（因为分母的极限不是零），就有：</p>
+<p>$$\lim_{x\to x_0 } \dfrac{f(x)}{g(x)} =\dfrac{f(x_0 )}{g(x_0 )} ,$$</p>
+<p>而这等式亦就表示函数$\dfrac{f(x)}{g(x)}$在点$x_0 $处是连续的.</p>
+<h2 id="连续函数的例题">连续函数的例题</h2><p>$1°$有理整函数及分式函数</p>
+<p>函数$f(x)=x$显然在全区间$(-\infty ,+\infty )$内是连续的：若$x_n \to x_0$，则$f(x_n )=x_n \to x_0 =f(x_0 )$.完全与此相同，恒等于常数的函数亦是连续的.</p>
+<p>由此，根据前段的定理，已可推得任何单项式</p>
+<p>$$ax^m =a\cdot \overbrace{x\cdot x\cdot \cdots \cdot x}^{m~次} $$</p>
+<p>的连续性，因为它可视为连续函数的积.再者多项式（有理整函数）</p>
+<p>$$a_0 x^n +a_1 x^{n-1} +\cdots +a_{n-1} x+a_n $$</p>
+<p>可视为连续函数的和，所以也是连续的.在上面所讲的各场合连续的范围都是在全区间$(-\infty ,+\infty )$内.</p>
+<p>最后，两多项式的商（有理分式函数）：</p>
+<p>$$\dfrac{a_0 x^n +a_1 x^{n-1} +\cdots +a_{n-1} x+a_n }{b_0 x^m +b_1 x^{m-1} +\cdots +b_{m-1} x+b_m } $$</p>
+<p>显然亦是同样地在任一数值$x$时是连续的，但须除去使分母等于零的那些数值.</p>
+<p>$2°$指数函数</p>
+<p>我们将证明指数函数$a^x$对于任何数值$x=x_0 $都是连续的，换句话说，即证明</p>
+<p>$$\lim_{x\to x_0 } a^x =a^{x_0} .$$</p>
+<p>（同时只需限于$a &gt; 1$就够了.）</p>
+<p>我们在<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">例题，6)</a>内已看到</p>
+<p>$$\lim_{x\to 0} a^x =1 .$$</p>
+<p>因为函数$a^0$的数值恰好是$1$，所以这等式就表示着指数函数在点$x=0$处是连续的.由此已很容易转而证明它在任何点都是连续的；实际上，</p>
+<p>$$a^x -a^{x_0 } =a^{x_0 } (a^{x-x_0 } -1),$$</p>
+<p>但当$x\to x_0 $时，显然$x-x_0 \to 0$，于是，依照已证明的，</p>
+<p>$$a^{x-x_0 } \to 1,$$</p>
+<p>因而</p>
+<p>$$a^x \to a^{x_0 } ,$$</p>
+<p>此即需证者.</p>
+<p>$3°$双曲函数</p>
+<p>依已经讲过的定理，它们的连续性可以直接从已证明的指数函数的连续性中推得，因为它们全是函数$e^x $的有理表达式.</p>
+<p>$4°$三角函数</p>
+<p>先讨论函数$\sin{x} $.它也是在任何数值$x=x_0 $时是连续的，即有等式</p>
+<p>$$\lim_{x\to x_0 } \sin{x} =\sin{x_0 } .$$</p>
+<p>要证明它，注意到<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">例题，9)</a>内（对于$0 &lt; x &lt; \dfrac{\pi }{2} $）已建立的不等式</p>
+<p>$$\sin{x} &lt; x,$$</p>
+<p>从它很易推得不等式</p>
+<p>$$\vert \sin{x} \vert \leq \vert x\vert ,$$</p>
+<p>对于一切数值$x$都是真实的（当$\vert x\vert \geq \dfrac{\pi }{2} &gt; 1$时，立刻由$\vert \sin{x} \vert \leq 1$推得）.其次有</p>
+<p>$$\sin{x} -\sin{x_0 } =2\sin{\dfrac{x-x_0 }{2}} \cdot \cos{\dfrac{x+x_0 }{2}} ,$$</p>
+<p>于是</p>
+<p>$$\begin{align}<br>\vert \sin{x} -\sin{x_0 } \vert &amp; =2\cdot \left| \sin{\dfrac{x-x_0 }{2}} \right| \cdot \left| \cos{\dfrac{x+x_0 }{2}} \right| \\<br>&amp; \leq 2\left| \sin{\dfrac{x-x_0 }{2}} \right| \leq 2\cdot \dfrac{\vert x-x_0 \vert }{2} ,<br>\end{align}$$</p>
+<p>即</p>
+<p>$$\vert \sin{x} -\sin{x_0 } \vert \leq \vert x-x_0 \vert \label{2} \tag{2} $$</p>
+<p>不论$x$及$x_0 $是怎样的数值.</p>
+<p>若给定任何$\varepsilon &gt; 0$，则令$\delta =\varepsilon $；当$\vert x-x_0 \vert &lt; \delta $时就有</p>
+<p>$$\vert \sin{x} -\sin{x_0 } \vert &lt; \varepsilon ,$$</p>
+<p>这就证明了$\sin{x}$的连续性.类似于此，可以确定函数$\cos{x}$同样对于任何数值$x$也是连续的.</p>
+<p>由此，依前面一目的定理，已可推出函数</p>
+<p>$$\tan{x} =\dfrac{\sin{x} }{\cos{x} } ,\sec{x} =\dfrac{1}{\cos{x} } ,\cot{x} =\dfrac{\cos{x} }{\sin{x} } ,\csc{x} =\dfrac{1}{\sin{x} } $$</p>
+<p>的连续性.但对于前面二函数要除去使$\cos{x}$等于$0$的形如$(2k+1)\dfrac{\pi }{2}$的数值；对于后面二函数要除去使$\sin{x}$等于$0$的形如$k\pi $的数值.</p>
+<h2 id="单侧连续·间断的分类">单侧连续·间断的分类</h2><p>上面我们用等式$\eqref{1}$定义了函数$f(x)$在点$x_0 $处的连续性的概念.在这时，要计算极限$\eqref{1}$，我们既可以使$x$从右方，也可以使$x$从左方接近于$x_0$.今将建立函数在所给点为单侧连续或单侧间断的概念.</p>
+<p>常说：函数$f(x)$在点$x_0 $处是右（左）连续的，只需能满足极限关系式：</p>
+<p>$$\left.<br>\begin{array}{c}<br>f(x_0 +0)=\displaystyle \lim_{x\to x_0 +0} f(x)=f(x_0 ) \\<br>[f(x_0 -0)=\displaystyle \lim_{x\to x_0 -0} f(x)=f(x_0 )] .<br>\end{array}<br>\right\rbrace \label{3} \tag{3} $$</p>
+<p>若这关系式内的一式或另一式并不成立，则函数$f(x)$在点$x_0 $处有右间断或左间断.</p>
+<p>仅论及函数的定义区间$\mathcal{X}$的左（右）端时.</p>
+<blockquote>
+<p>假定这端点是有限的数.</p>
+</blockquote>
+<p>显然只能说右（左）连续或右（左）间断.又若$x_0 $是区间$\mathcal{X}$的内点，即并不重合于某一端点，则若要使等式$\eqref{1}$，即函数在点$x_0 $为连续的常义表达式成立，其充要条件为等于$\eqref{3}$的两式同时成立<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[函数的极限的定义]</a>.换言之，说函数在点$x_0 $处连续就等于说它在这一点同时是右连续及左连续.</p>
+<p>让我们来详细地讨论函数$f(x)$在点$x_0 $处之右连续或右间断的问题.假定函数$f(x)$在$x_0 $的右方某区间$[x_0 ,x_0 +h] (h &gt; 0)$内是有意义的，我们看到，连续之充要条件为：首先，当$x$从右趋向于$x_0 $时函数$f(x)$的极限$f(x_0 +0)$要存在，且第二，这极限应等于函数在点$x_0 $处的数值$f(x_0 )$.</p>
+<p>因此，在怎样的情况下，函数$f(x)$在点$x_0 $处出现右间断是很很容易认清的.可能碰到，即使有限的极限$f(x_0 +0)$存在，但它不等于数值$f(x_0 )$，这种间断称为<strong>普通间断</strong>或<strong>第一类间断</strong>.</p>
+<blockquote>
+<p>在这种场合也说函数$f(x)$在点$x_0 $的右方有<strong>跃度</strong>，它在数量上等于$f(x_0 +0) -f(x_0 )$.</p>
+</blockquote>
+<p>但亦可能碰到，极限$f(x_0 +0)$是无穷或根本不存在，则称为<strong>第二类间断</strong>.</p>
+<p>在下一目内我们将引入这些间断的例子.</p>
+<p><strong>附注</strong>$\quad $若函数$f(x)$在点$x=x_0 $处没有意义（参阅[函数在一点外的连续性的定义]内的附注），则函数在这点要恢复连续性仅当有限极限$f(x_0 +0),f(x_0 -0)$两者都存在并相等时才有可能.</p>
+<p>若这两极限之一是无穷或根本不存在，则说在对应的那一方有第二类间断存在.</p>
+<h2 id="间断函数的例题">间断函数的例题</h2><p>$1)\;$考察函数$y=E(x)$（它的图像表示在图$8$中）.若$x_0 $不是整数，又$E(x_0 )=m$.即$m &lt; x_0 &lt; m+1 $，则对于在区间$(m,m+1)$内的一切$x$的数值都有$E(x)=m$，由此显然可知函数在$x_0 $是连续的.</p>
+<p>但若$x_0$等于整数$m$，情形就不同了.函数在这点为右连续，因为在$x=m$的右方，即对$(m,m+1)$中的$x$值，有$E(x)=m$，于是$E(m+0)=m=E(m)$.反之，在$x=m$的左方，对于在$(m-1,m)$内的$x$数值，显然有$E(x)=m-1$；由此，又有$E(m-0)=m-1$，它不等于数值$E(m)$，因此在点$x=m$的左方函数有普通间断或跃度！</p>
+<p>$2)\;$取在<a href="http://jianhanglin.github.io/blog/2015/03/weijifenxuejiaocheng121/" target="_blank" rel="external">[函数的解析表示法]</a>内已考察过的函数：</p>
+<p>$$y=f(x)=\lim_{n\to \infty } \dfrac{x^{2n} -1}{x^{2n} +1}$$</p>
+<p>（它的图像画在图$28$中）.它在点$x=\pm 1$处有普通右间断和左间断，因为：</p>
+<p>$$f(\pm 1) =0,f(-1-0)=f(1+0)=1,$$</p>
+<p>$$f(-1+0)=f(1-0)=-1.$$</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu33.png" alt=""></center>
+
+<p>$3)\;$对于函数</p>
+<p>$$f(x)=\dfrac{1}{x^3} \quad (x\neq 0),$$</p>
+<p>从左右两方看来点$x=0$都是第二类间断点；就是在这点函数从右方或左方都趋于$\infty $：</p>
+<p>$$f(+0)=\lim_{x\to 0+} \dfrac{1}{x^3} =+\infty ,f(-0)=\lim_{x\to -0} \dfrac{1}{x^3} =-\infty .$$</p>
+<p>$4)\;$<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，9）]</a>内已考察过的函数</p>
+<p>$$f(x)=\sin{\dfrac{1}{x} } \quad (x\neq 0),$$</p>
+<p>在点$x=0$处有第二类的两方间断点，因为不论$x$从右或者从左趋向于$0$，这函数的极限都不存在.</p>
+<p>$5)\;$反之，若取函数<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，10）]</a></p>
+<p>$$f(x)=x\cdot \sin{\dfrac{1}{x} } \quad (x\neq 0),$$</p>
+<p>我们已看到，它的极限存在，</p>
+<p>$$\lim_{x\to 0} f(x)=0,$$</p>
+<p>因此，根据[函数在一点处的连续性的定义]的附注，令$f(0)=0$，我们就恢复了函数在$x=0$的连续性.</p>
+<p>$6)\;$当$x\neq 0$时用等式：</p>
+<p>$$f_1 (x)=e^{\frac{1}{x} } ,f_2 (x) =\arctan{\dfrac{1}{x}}$$</p>
+<p>定义二函数，此外，又令$f_1 (0)=f_2 (0)=0$.</p>
+<p>对于第一个函数有</p>
+<p>$$f_1 (+0) =\lim_{x\to +0 } e^{\frac{1}{x}} =\lim_{z\to +\infty } e^z =+\infty ,$$</p>
+<p>$$f_1 (-0) =\lim_{x\to -0} e^{\frac{1}{x}} =\lim_{z\to -\infty } e^z =0.$$</p>
+<p>于是在点$x=0$有第二类右方间断，但却是左方连续.对于第二个函数则有</p>
+<p>$$f_2 (+0)=\lim_{x\to +0} \arctan{\dfrac{1}{x} } =\lim_{z\to +\infty } \arctan{z} =\dfrac{\pi }{2} ,$$</p>
+<p>$$f_2 (-0)=\lim_{x\to -0} \arctan{\dfrac{1}{x} } =\lim_{z\to -\infty } \arctan{z} =-\dfrac{\pi }{2} ,$$</p>
+<p>因此在点$x=0$的两方都有跃度.这些函数的图像画在图$29$及$30$中.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu34.png" alt=""></center>
+
+<p>$7)\;$再回想狄利克雷函数<a href="http://jianhanglin.github.io/blog/2015/03/weijifenxuejiaocheng121/" target="_blank" rel="external">[函数的解析表示法]</a>：</p>
+<p>$$\mathcal{X} =1,若x是有理数,$$</p>
+<p>$$\mathcal{X} =0,若x是无理数.$$</p>
+<p>因为在有理点的任意近处总有无理点，反过来也如此，所以不论$x_0 $是区间$(-\infty ,+\infty )$内怎样的点，当$x\to x_0 $时$\mathcal{x} (x)$没有极限存在，因此函数在任一点处有第二类的两方间断.</p>
+<p>$8)\;$最后，在区间$[0,1]$内定义函数$f(x)$：若$x$是有理数而表示为不可通约分数$\dfrac{p}{q}$，则$f(x)=\dfrac{1}{q}$；对于无理数$x$则令$f(x)=0$.</p>
+<blockquote>
+<p>这函数是黎曼（$\text{B.Riemann}$）考察过的.</p>
+</blockquote>
+<p>我们可以肯定函数在任一有理点有普通间断，同时在任一无理点它是连续的.</p>
+<p>事实上，设$x_0 $是所考察的区间内的任意一点.若指定任意数$\varepsilon &gt; 0$，则不超过$\dfrac{1}{\varepsilon }$的自然数$q$仅只有限个数存在，意即在区间内只能找出有限个有理点$\dfrac{p}{q}$使$f(\dfrac{p}{q} )=\dfrac{1}{q} \geq \varepsilon $.点$x_0 $可以用不含任一个这种点在内（或许要除去点$x_0 $本身）的邻域$(x_0 -\delta ,x_0 +\delta )$来包围住.那么，只要$\vert x-x_0 \vert &lt; \delta (x\neq x_0 )$，不论$x$是否有理数，在任何情形常有$\vert f(x)\vert &lt; \varepsilon $.意即，对于任意点$x_0 $存在着</p>
+<p>$$f(x_0 +0)=f(x_0 -0)=0.$$</p>
+<p>若$x_0 $是无理点，则又有$f(x_0 )=0$，即函数在这点为连续；又若$x_0 $是有理点，则$f(x_0 )$异于$0$，故有两方的普通间断.</p>
+<h2 id="单调函数的连续性及间断">单调函数的连续性及间断</h2><p>考察函数$f(x)$，当$x$在区间$\mathcal{X}$内变动时它单调增大（减小）着，可能是广义的<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[单调函数的极限]</a>.</p>
+<blockquote>
+<p>这区间可是是有限的，也可以是无穷的，闭的或开的（一端开或两端都开）.</p>
+</blockquote>
+<p>关于这种函数有下面的定理：</p>
+<p>$1°\quad $单调增（减）函数$f(x)$在$\mathcal{X} $内若有间断，只能有第一种间断，即跃度.</p>
+<p>取区间$\mathcal{X} $内的任意点$x_0 $，并设它不是这区间的左端.考察在$x_0 $左方的部分区间.并应用<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[单调函数的极限]</a>内关于单调函数的极限定理.由于$x &lt; x_0 $时，显然$f(x)\leq f(x_0 )$，因此存在着有限的极限</p>
+<p>$$f(x_0 -0) =\lim_{x\to x_0 -0} f(x)\leq f(x_0 ).$$</p>
+<p>若它重合于数值$f(x_0 )$，则函数在点$x_0 $为左方连续；在相反的场合，函数有跃度.</p>
+<p>同时类似地可证函数在区间$\mathcal{X} $内的任一点$x_0 $（不是区间的右端）为右方连续或跃度.</p>
+<p>用已证明的定理很容易建立在实用上极为方便的单调函数的连续性的检定法：</p>
+<p>$2°\quad $若在区间$\mathcal{X}$内为单调增大（减小）的函数$f(x)$的数值都包含在区间$\mathcal{Y}$内，且把它全部填满（使$\mathcal{Y}$内的每一数值$y$至少有一次被取作函数数值），则这函数在$\mathcal{X}$内是连续的.</p>
+<blockquote>
+<p>$f(x)$的数值完全填满区间$\mathcal{Y}$在这里是单调函数连续的充分条件；以后[介值定理]我们将证明它也是必要条件.</p>
+</blockquote>
+<p>试设函数$f(x)$在$\mathcal{X}$内的任何一点$x_0 $处有间断，例如在左方；我们已看到，这间断只能跃度.在这场合存在着极限$f(x_0 -0)$，但它小于数值$f(x_0 )$.因为当$x &lt; x_0 $时必有$f(x)\leq f(x_0 -0)$，而当$x &gt; x_0 $时显然有$f(x) \geq f(x_0 )$，所以函数不可能取以属于区间$\mathcal{Y}$而位于$f(x_0 -0)$与$f(x_0 )$之间的数值$y$，这就违反了定理的条件.所以，函数$f(x)$事实上不会有间断.</p>
+<p>在下一目内读者将遇到一系列的例题，它们是这有用定理的应用.</p>
+<h2 id="初等函数的连续性">初等函数的连续性</h2><p>一系列初等函数的连续性已在[连续函数的例题]内用例题的形式证明了.现再应用前一目的定理$2$，首先，很容易重新建立函数$a^x$或$\sin{x}$的连续性.</p>
+<p>当$x$在区间$\mathcal{X} =(-\infty ,+\infty )$内变动时函数$y=a^x(a &gt; 1)$单调增大.它的数值全是正的，且充满全区间$\mathcal{Y} =(0,+\infty )$，这由对数$x=\log_a y$对于任何$y &gt; 0$都存在<a href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng104/" target="_blank" rel="external">[对数]</a>的事实立刻可知.因此，指数函数在任何$x$的数值时是连续的.</p>
+<p>类似于此，当$x$在区间$\mathcal{X} =\left[ -\dfrac{\pi }{2} ,\dfrac{\pi }{2} \right] $内变动时函数$y=\sin{x}$的连续性可由它在这区间内的单调性，以及它取到$-1$与$+1$之间每一数值的事实（几何上确定的事实）立刻推得.论及任意形如</p>
+<p>$$\left[ k\pi -\dfrac{\pi }{2} ,k\pi +\dfrac{\pi }{2} \right] \quad (k=0.\pm 1,\pm 2, \cdots )$$</p>
+<p>的区间时，亦有同样的话可说.</p>
+<p>但是使我们更感兴趣的是，新的结果也可应用前一目的定理很容易地得出.我们现在要继续列举在[连续函数的例题]已开始的基本初等函数.</p>
+<p>$5°$对数函数$\quad y=\log_a x(a &gt; 0,a\neq 1)$.</p>
+<p>限于$a &gt; 1$的场合，我们就看到，当$x$在区间$\mathcal{X} =(0,+\infty )$内变动时这函数是增函数.在这时它显然也取到区间$\mathcal{Y} =(-\infty ,+\infty )$内的任何数值$y$，就是适合$x=a^y$的$y$.由此已看出它的连续性.</p>
+<p>$6°$幂函数$\quad y=x^{\mu } (\mu \gtrless 0)$.</p>
+<p>当$x$由$0$增大至$+\infty $，若$\mu &gt; 0$，则函数增大着，若$\mu &lt; 0$，则函数减小着.在这时它取到任何正的数值$y$（适合$x=y^{\frac{1}{\mu }}$），因此，它也是连续的.</p>
+<blockquote>
+<p>若$\mu &gt; 0$，则数值$0$既包括在$x$的变动区间内，也包括在$y$的变动区间内；当$\mu &lt; 0$时数值$0$不包括在内.再则，若$\mu $是整数$\pm n$或带有奇数分母的分数$\pm \dfrac{q}{p}$，则也可以在$x &lt; 0$时考察$x^{\mu }$，这时它的连续性可以类似地证明.</p>
+</blockquote>
+<p>$7°$反三角函数</p>
+<p>$$y=\arcsin{x} ,y=\arccos{x} ,y=\arctan{x} ,y=\text{arccot} \;x.$$</p>
+<p>首二函数在区间$[-1,+1]$是连续的，而末二函数在区间$(-\infty ,+\infty )$是连续的.证明留给读者.</p>
+<p>这样，可以总括起来说，基本初等函数在一切使它们有意义的点（即在它们的自然定义域内）都是连续的.</p>
+<h2 id="连续函数的叠置">连续函数的叠置</h2><p>将已知的连续函数加以叠置<a href="http://jianhanglin.github.io/blog/2015/03/weijifenxuejiaocheng121/" target="_blank" rel="external">[函数的叠置.总结]</a>，可以构成更多的连续函数.</p>
+<p>这是以下面的定理为基础.</p>
+<p><strong>定理</strong>$\quad $设函数$\varphi (y)$定义于区间$\mathcal{Y}$内，而函数$f(x)$定义于区间$\mathcal{X}$之内，并且当$x$在$\mathcal{X}$内变动时后一函数的数值永不越出$\mathcal{Y}$的范围.若$f(x)$在$\mathcal{X}$内的一点$x_0 $是连续的，又$\varphi (y)$在$\mathcal{Y}$内与它对应的点$y_0 =f(x_0 )$是连续的，则复合函数$\varphi (f(x))$在点$x_0 $亦是连续的.</p>
+<p><strong>证明</strong>$\quad $指定任意数$\varepsilon &gt; 0$.因为$\varphi (y)$在$y=y_0 $为连续，故依$\varepsilon $必能求出$\sigma &gt; 0$，使由</p>
+<p>$$\vert y-y_0 \vert &lt; \sigma $$</p>
+<p>可以推得</p>
+<p>$$\vert \varphi (y)-\varphi (y_0 )\vert &lt; \varepsilon .$$</p>
+<p>另一方面，由于$f(x)$在$x=x_0 $为连续，依$\sigma $必能求出$\delta &gt; 0$，使由</p>
+<p>$$\vert x-x_0 \vert &lt; \delta $$</p>
+<p>可以推得</p>
+<p>$$\vert f(x)-f(x_0 )\vert =\vert f(x)-y_0 \vert &lt; \sigma .$$</p>
+<p>依原来选定$\delta $的方法，由此再推得</p>
+<p>$$\vert \varphi (f(x)) -\varphi (y_0 ) \vert =\vert \varphi (f(x))-\varphi (f(x_0 )) \vert &lt; \varepsilon .$$</p>
+<p>这样，函数$\varphi (f(x))$在点$x_0$处的连续性已用“$\varepsilon -\delta $的语言”证明了.</p>
+<p>例如，若将幂函数$x^{\mu } (x &gt; 0)$表示为复合函数的形式，如：</p>
+<p>$$x^{\mu } =e^{\mu \ln x}$$</p>
+<p>它由叠置对数函数及指数函数而得，则由后二函数的连续性已可推得幂函数的连续性.</p>
+<h2 id="一个函数方程的解">一个函数方程的解</h2><p>为着要使下段的叙述简化起见，今研究下面的问题（它本身也很有趣）.</p>
+<p>求对区间$(-\infty ,+\infty )$内的任何$x$及$y$常能满足条件</p>
+<p>$$f(x+y)=f(x)+f(y) \label{111} \tag{A}$$</p>
+<p>的一切连续函数$f(x)$.</p>
+<p>方程$\eqref{111}$就是所谓函数方程的最简单的例子，它表述出所求函数的某一性质，依着这性质应能求出那个未知函数.我们的任务是要求出方程$\eqref{111}$的一切<strong>连续解</strong>.</p>
+<p>很易看出，线性齐次函数</p>
+<p>$$f(x)=cx \quad (c=常数)\label{112} \tag{a} $$</p>
+<p>满足这方程：</p>
+<p>$$c(x+y)=cx+cy.$$</p>
+<p>但现在的问题却是：它是否就是具有性质$\eqref{111}$的<strong>唯一的</strong>连续函数？</p>
+<p>为着要证明确实这样，我们先假定某一连续函数$f(x)$满足方程$\eqref{111}$，然后指出那时它必须具有形式$\eqref{112}$.</p>
+<p>首先，用数学归纳法很易推广关系式$\eqref{111}$至任意个$(=n)$加数的情形：</p>
+<p>$$f(\overbrace{x+y+\cdots +z}^{n} )=f(x)+f(y)+\cdots +f(z).\label{4} \tag{4}$$</p>
+<p>实际上，若假定它在任何$n\geq 2$项相加时为真，则它在$n+1$项相加时亦为真：</p>
+<p>$$f(\overbrace{x+y+\cdots +z}^{n} +u)=f(\overbrace{x+y+\cdots +z}^{n} )+f(u)=[f(x)+f(y)+\cdots +f(z)]+f(u).$$</p>
+<p>假定在$\eqref{4}$内令$x=y=\cdots =z$，就得出：</p>
+<p>$$f(nx)=n\cdot f(x).\label{5} \tag{5}$$</p>
+<p>在此处把$x$换成$\dfrac{1}{n} x$，则得</p>
+<p>$$f(\dfrac{1}{n} x)=\dfrac{1}{n} f(x),$$</p>
+<p>而后，若把$x$换成$mx$（$m$是自然数）并应用前面的等式，就得出关系式</p>
+<p>$$f(\dfrac{m}{n} x)=\dfrac{m}{n} \cdot f(x).\label{6} \tag{6} $$</p>
+<p>今在基本方程$\eqref{111}$中令$x=y=0$，则得</p>
+<p>$$f(0)=2f(0),$$</p>
+<p>于是</p>
+<p>$$f(0)=0.\label{7} \tag{7}$$</p>
+<p>若又取$y=-x$,则利用$\eqref{7}$，就得出：</p>
+<p>$$f(-x)=-f(x),$$</p>
+<p>因此函数$f(x)$在$x$变号时亦变号.然后，由$\eqref{5}$及$\eqref{6}$很易引出：</p>
+<p>$$f(-nx)=-f(nx)=-n\cdot f(x).\label{8} \tag{8}$$</p>
+<p>而类似地可证成立更一般的式子：</p>
+<p>$$f(-\dfrac{m}{n} x)=-\dfrac{m}{n} f(x).\label{9} \tag{9}$$</p>
+<p>所得的关系式$\eqref{5} \sim \eqref{9}$可以联合成为等式</p>
+<p>$$f(rx)=r\cdot f(x),$$</p>
+<p>在任何实数值$x$时，不论$r$是怎样的有理数，它总是真实的.</p>
+<p>若在这里取$x=1$，并用$c$表示$f(1)$，则得</p>
+<p>$$f(r)=cr.$$</p>
+<p>这样，就本质上说来，我们已确定函数的形式$f$，但迄今仅适用于变元的有理数值，并且迄今为止，我们仅应用函数满足条件$\eqref{111}$这一事实，而并未考虑它的连续性.</p>
+<p>今设$\rho $是变元的任意无理数值.很易做一趋向于它的有理数序列</p>
+<p>$$r_1 ,r_2 ,\cdots ,r_n ,\cdots $$</p>
+<p>（例如，可以取对应于$\rho $的无穷十进小数的诸段）.我们立即看到</p>
+<p>$$f(r_n )=cr_n \quad (n=1,2,\cdots ).$$</p>
+<p>由上式求$n\to +\infty $时的极限；在右方我们得到$c\rho $，而在左方，由于函数$f$的连续性的假定，得</p>
+<p>$$\lim f(r_n )=f(\rho ),$$</p>
+<p>于是，最后</p>
+<p>$$f(\rho )=c\rho .$$</p>
+<p>这样，实际上，我们的函数对于变元的一切实数值都可借公式$\eqref{112}$来表示.这公式就给出方程$\eqref{111}$的最普遍的连续函数解.</p>
+<h2 id="指数函数、对数函数及幂函数的函数特性">指数函数、对数函数及幂函数的函数特性</h2><p>$1°$如果</p>
+<p>$$f(x)=a^x\quad (a &gt; 0),\label{113} \tag{б}$$</p>
+<p>则对于两个不论是怎样的实数$x$及$y$，恒有等式</p>
+<p>$$f(x+y)=f(x)\cdot f(y) \label{114} \tag{Б}$$</p>
+<p>成立，它们表示着大家都知道的乘幂法则：</p>
+<p>$$a^{x+y} =a^x \cdot a^y .$$</p>
+<p>事实上，函数的性质$\eqref{114}$再加上连续性就完全确定了指数函数.再准确地说：</p>
+<p>指数函数（若除去恒等于$0$的函数以外）是确定于全区间$(-\infty ,+\infty )$内，并且满足条件$\eqref{114}$的唯一连续函数.</p>
+<p>换句话说，公式$\eqref{113}$——除去已指出的例外——给出函数方程$\eqref{114}$的最普遍的连续函数解.</p>
+<p>为着证明，我们考察任意确定于$(-\infty ,+\infty )$内并且满足条件$\eqref{114}$的连续函数$f(x)$，除去$f(x)\equiv 0$的那种平凡的情形.</p>
+<p>因此，在某一数值$x=x_0 $时函数必异于$0$.在$\eqref{114}$内令$y=x_0 -x$则得</p>
+<p>$$f(x)\cdot f(x_0 -x)=f(x_0 )\neq 0;$$</p>
+<p>由此很清楚地，$f(x)$在任一$x$时异于$0$.再次，在$\eqref{114}$内把$x$及$y$都换成$\dfrac{x}{2}$，就求得：</p>
+<p>$$f(x)=\left[ f\left( \dfrac{x}{2} \right) \right] ^2 ,$$</p>
+<p>于是$f(x)$永远严格地是正的.</p>
+<p>再利用这些事实，把等式$\eqref{114}$取对数（例如，用数$e$做底）得：</p>
+<p>$$\ln f(x+y)=\ln f(x)+\ln f(y) .$$</p>
+<p>若令</p>
+<p>$$\varphi (x)=\ln f(x),$$</p>
+<p>我们就得出一个用$\varphi (x)$表示的函数，连续（作为连续函数叠置的结果，[连续函数的叠置]）而且满足类似于$\eqref{111}$的条件：</p>
+<p>$$\varphi (x+y)=\varphi (x)+\varphi (y).$$</p>
+<p>我们已证过，在这情形必须有</p>
+<p>$$\varphi (x)=\ln f(x)=cx\quad (c=常数),$$</p>
+<p>由此，最后（若令$a=e^c$）即得</p>
+<p>$$f(x)=e^{cx} =a^x,$$</p>
+<p>此即所要证的.</p>
+<p>$2°$若</p>
+<p>$$f(x)=\log_ax\quad (a &gt; 0,a\neq 1),\label{115} \tag{в} $$</p>
+<p>则在$x$及$y$为任意正值时，必有</p>
+<p>$$f(xy)=f(x)+f(y).\label{116} \tag{В} $$</p>
+<p>这就是积的对数法则，</p>
+<p>$$\log_a{xy} =\log_ax +\log_ay .$$</p>
+<p>而在这里，这等式连同连续性恰好就是对数函数的全部特征性质：</p>
+<p>对数函数（除去前述的例外）是确定于区间$(0,+\infty )$内并且满足条件$\eqref{116}$的唯一连续函数，于是公式$\eqref{115}$就给出函数方程$\eqref{116}$的最普遍的连续函数解.</p>
+<p>为着证明，就取在$x &gt; 0$时满足这方程的任意连续函数$f(x)$.引入在区间$(-\infty ,+\infty )$内变动着的新变量$\xi$，并令</p>
+<p>$$x=e^{\xi } ,\varphi (\xi ) =f(e^{\xi }),$$</p>
+<p>由此</p>
+<p>$$\xi =\ln x,f(x)=\varphi (\ln x).$$</p>
+<p>连续函数$\varphi (\xi )$（根据[连续函数的叠置]）满足$\eqref{111}$型的条件[参阅$\eqref{115}$]</p>
+<p>$$\varphi (\xi +\eta )=f(e^{\xi +\eta }) =f(e^{\xi }\cdot e^{\eta }) =f(e^{\xi}) +f(e^{\eta }) =\varphi (\xi ) +\varphi (\eta ).$$</p>
+<p>因此</p>
+<p>$$\varphi (\xi )=c\xi $$</p>
+<p>而</p>
+<p>$$f(x)=c\cdot \ln x,$$</p>
+<p>若除去$c=0$的情形（那时$f(x)\equiv 0$），则所得的结果又可以写成</p>
+<p>$$f(x)=\log_ax,$$</p>
+<p>式中$a=e^{\frac{1}{c} }$.由此一切都已证明.</p>
+<p>$3°$最后，转而讨论函数</p>
+<p>$$f(x)=x^{\mu },\label{117} \tag{г}$$</p>
+<p>显然，在$x$及$y$为任何正数值时它满足函数方程</p>
+<p>$$f(xy)=f(x)\cdot f(y),\label{118} \tag{Г}$$</p>
+<p>因为</p>
+<p>$$(xy)^{\mu } =x^{\mu } \cdot y^{\mu } .$$</p>
+<p>这方程再加上连续性，在本题的情形，同样可以作为幂函数的全部特征性质.就是说：</p>
+<p>幂函数（除去普通的例外）是确定于区间$(0,+\infty )$内，并满足条件$\eqref{118}$的唯一连续函数.</p>
+<p>事实上，若给定在$x &gt; 0$时满足条件$\eqref{118}$的连续函数$f(x)$，则可利用在$2°$内曾用过的同一代换式.于是函数$\varphi (\xi )$将满足条件[参阅（$\eqref{118}$）]</p>
+<p>$\varphi (\xi +\eta )=f(e^{\xi +\eta }) =f(e^{\xi } \cdot e^{\eta }) =f(e^{\xi }) \cdot f(e^{\eta }) =\varphi (\xi ) \cdot \varphi (\eta ) .$$</p>
+<p>我们已经知道（若除去恒等于零情形），必有</p>
+<p>$$\varphi (\xi )=a^{\xi } \quad (a &gt; 0).$$</p>
+<p>由此，若令$\mu =\ln a $，则</p>
+<p>$$f(x)=a^{\ln x} =x^{\mu },$$</p>
+<blockquote>
+<p>$\mu =\ln x \cdot \log_x a =\log_x a^{\ln x} $.</p>
+</blockquote>
+<p>此即需证者.</p>
+<h2 id="三角余弦及双曲余弦的函数特性">三角余弦及双曲余弦的函数特性</h2><p>$4°$若</p>
+<p>$$f(x)=\cos{ax} \quad 或\quad \cosh{ax} \quad (a\geq 0),\label{119} \tag{д}$$</p>
+<p>则对于$x$及$y$的任何实数值满足关系式</p>
+<p>$$f(y+x)+f(y-x)=2f(x)\cdot f(y).\label{120} \tag{Д}$$</p>
+<p>这可从两种余弦的加法定理推出来：</p>
+<p>$$\cos{(y\pm x)} =\cos{x} \cos{y} \mp \sin{x} \sin{y} ,$$</p>
+<p>$$\cosh{y\pm x} =\cosh{x} \cosh{y} \pm \sinh{x} \sinh{y} $$</p>
+<p><a href="http://jianhanglin.github.io/blog/2015/03/weijifenxuejiaocheng121/" target="_blank" rel="external">[几类最重要的函数，6°]</a>.这里，函数方程$\eqref{120}$以及函数须为连续的条件，便完全确定了两种余弦：</p>
+<p>三角余弦及双曲余弦$\eqref{119}$是确定于区间$(-\infty ,+\infty )$上并在其上满足条件$\eqref{120}$的唯一连续函数（如果，跟以前一样，不把恒等于零的函数算在内的话）.</p>
+<p>所以，设$f(x)$是满足条件$\eqref{120}$且对所有$x$都连续的函数.令$x=0$，并取使$f(y)\neq 0$的任一值作为$y$，则可知</p>
+<p>$$f(0)=1.\label{10} \tag{10} $$</p>
+<p>在这种情形下，当$y=0$时便得到</p>
+<p>$$f(-x)=f(x) \label{11} \tag{11} $$</p>
+<p>故$f(x)$是偶函数.</p>
+<p>由于连续函数$f(x)$在$x=0$是正的，故可找到这样的一个正数$c$，使$f(x)$在全区间$[0,c]$上是正的.这以后，要看是$(\alpha )f(c) \leq 1$还是$(\beta )f(c) &gt; 1$，而分两路来作研究.先研究情形$(\alpha )$.</p>
+<p>因$0 &lt; f(c)\leq 1$，故可找到这样的$\theta \left( 0\leq \theta &lt; \dfrac{\pi }{2} \right) $，使</p>
+<p>$$f(c)=\cos{\theta } .\label{12} \tag{12} $$</p>
+<p>然后把基本关系式$\eqref{120}$改写为</p>
+<p>$$f(y+x)=2f(x)\cdot f(y)-f(y-x),$$</p>
+<p>并在该式中依次设</p>
+<p>$$\begin{align}<br>x=c, &amp; y=c; \\<br>x=c, &amp; y=2c; \\<br>x=c, &amp; y=3c; \\<br>\end{align}$$</p>
+<p>等等.我们便得到[利用$\eqref{10}$及$\eqref{12}$]</p>
+<p>$$\begin{align}<br> &amp; f(2c)=2\cos{} ^2 \theta -1 =\cos{2\theta } ,\\<br> &amp; f(3c)=2\cos{\theta } \cos{2\theta } -\cos{\theta } = \cos{3\theta } ,\\<br> &amp; f(4c)=2\cos{\theta } \cos{3\theta } -\cos{2\theta } =\cos{4\theta } ,<br>\end{align}$$</p>
+<p>等等.利用数学归纳法，不难证明，对任何自然数$m$，有公式</p>
+<p>$$f(mc)=\cos{m\theta } .\label{13} \tag{13} $$</p>
+<p>若在$\eqref{120}$中设$x=y=\dfrac12 c $，则得[仍利用$\eqref{10}$及$\eqref{12}$]：</p>
+<p>$$\left[ f\left( \dfrac12 c\right) \right] ^2 =\dfrac{f(0)+f(c)}{2} =\dfrac{1+\cos{\theta }}{2} =\left[ \cos{\dfrac{\theta }{2}} \right] ^2 ;$$</p>
+<p>而由于$f(x)$在$0$与$c$之间为正，函数$\cos{x}$在$0$与$\theta $间为正，故在两边取正根，便得等式</p>
+<p>$$f(\dfrac{c}{2} )=\cos{\dfrac{\theta }{2}} .$$</p>
+<p>完全一样地，若在$\eqref{120}$中设$x=y=\dfrac{c}{2^2} $，则得</p>
+<p>$$f(\dfrac{c}{2^2} )=\cos{\dfrac{\theta }{2^2}} ,$$</p>
+<p>等等.这样，相继地（用数学归纳法！），便得到一般关系式</p>
+<p>$$f(\dfrac{c}{2^n} )=\cos{\dfrac{\theta }{2^n } } \quad (n=1,2,\cdots ).\label{14} \tag{14} $$</p>
+<p>最后，把从$\eqref{12}$得出$\eqref{13}$的推理过程再重复一遍，便可从$\eqref{14}$得出等式</p>
+<p>$$f(\dfrac{m}{2^n} c)=\cos{\dfrac{m}{2^n} \theta } .$$</p>
+<p>于是，对$\dfrac{m}{2^n}$型的正的$x$值，有：</p>
+<p>$$f(cx)=\cos{\theta x} .\label{15} \tag{15} $$</p>
+<p>但由于任何正数$x$可表示为$\dfrac{m}{2^n}$型的极限，因此利用极限过程（根据函数$f(x)$与$\cos{x}$的连续性）便可知公式$\eqref{15}$对所有$x &gt; 0$都成立.由于$\eqref{11}$，这公式对$x &lt; 0$也成立，而由于$\eqref{10}$，公式对$x=0$也成立.若在$\eqref{15}$中把$x$换为$\dfrac{x}{c}$，并令$\dfrac{\theta }{c} =a$，则最后便得：</p>
+<p>$$f(x)=\cos{ax} .$$</p>
+<p>在情形$(\beta )$，我们有：$f(c) &gt; 1$；于是可求得这样的$\theta $，使</p>
+<p>$$f(c)=\cosh{\theta } .$$</p>
+<p>把上述推理再逐字重复一遍，并依据双曲余弦的关系式（与三角余弦的关系式相似），便在所论的情形下得出</p>
+<p>$$f(x)=\cosh{ax} \quad (a &gt; 0).$$</p>
+<p>当$a=0$时，从两个公式都得出：$f(x)\equiv 1$.</p>
+<p>函数方程$\eqref{111}$，$\eqref{114}$，$\eqref{116}$，$\eqref{118}$与$\eqref{120}$最先是柯西研究的，他并且给出了这些方程的连续函数解.</p>
+<h2 id="函数的连续性在计算极限时的应用">函数的连续性在计算极限时的应用</h2><p>函数的连续性在极限计算时可以有各种各样的应用.</p>
+<blockquote>
+<p>事实上我们在别处早已这样做过了；如在<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题]</a>例$3)$内我们顺便确定$\sqrt[m]{x}$在$x=1$的连续性并利用着它，而在例$5)(Б)$内又利用过$\cos{x}$在$x=0$的连续性.</p>
+</blockquote>
+<p>我们在本目内就讲一些这类的例题.</p>
+<p>$1)$在$x$为任何实数值时我们有</p>
+<p>$$\lim_{n\to +\infty } \left( 1+\dfrac{x}{n} \right) ^n =e^x .$$</p>
+<p>事实上，所考察的式子（设想$x\neq 0$）可以改写为</p>
+<p>$$\left[ \left( 1+\dfrac{x}{n} \right) ^{\frac{n}{x} } \right] ^x $$</p>
+<p>的形式.因为$\dfrac{x}{n} \to 0$，故在方括号内的整序变量趋于$e$<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题(13)]</a>，然后利用幂函数的连续性（此处$x=$常数），全式就以$e^x$为极限.</p>
+<p>$2)$求极限</p>
+<p>$$\lim_{x\to \infty } [\sqrt[k]{(x+a_1 )(x+a_2 )\cdots (x+a_k )} -x]\quad (\infty -\infty ),$$</p>
+<p>式中$a_1 ,a_2 ,\cdots ,a_k $是给定的常数.</p>
+<p>应用恒等式</p>
+<p>$$y-z=\dfrac{y^k -z^k}{y^{k-1} +y^{k-2}z+\cdots +z^{k-1}} ,$$</p>
+<p>并用代换式</p>
+<p>$$y=\sqrt[k]{(x+a_1 )\cdots (x+a_k )} $$</p>
+<p>及</p>
+<p>$$z=x.$$</p>
+<p>则所考察的式子就可表示为</p>
+<p>$$\begin{align}<br> &amp; \dfrac{(x+a_1 )\cdots (x+a_k )-x^k}{(\sqrt[k]{\cdots } )^{k-1} +x(\sqrt[k]{\cdots })^{k-2} +\cdots +x^{k-1} } \\<br>= &amp; \dfrac{(a_1 +\cdots +a_k )+\dfrac{a_1 a_2 +\cdots +a_{k-1} a_{k} }{x} +\cdots }{\left( \sqrt[k]{\left( 1+\dfrac{a_1 }{x} \right) \cdots \left( 1+\dfrac{a_k }{x} \right) } \right) ^{k-1} +\cdots +1}<br>\end{align}$$</p>
+<p>的形式.在$x\to +\infty $时被开方式趋向于$1$，因此，据根式的连续性（因为根式可作为幂函数的特例），根式本身的极限为$\sqrt[k]{1} =1$.因为分母中的（根式的）$(k-1)$次多项式也是连续函数，所以分母趋于$k$，而整个分式的极限是</p>
+<p>$$\dfrac{a_1 +a_2 +\cdots +a_k }{k} .$$</p>
+<p>$3)$回到<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[斯托尔茨(O.Stolz)定理及其应用，13)]</a>内的命题.设$a_n &gt; 0$且$a_n \to a$；暂设$0 &lt; a &lt; +\infty $.应用该命题于序列$\lbrace \ln a_n \rbrace $.</p>
+<p>因为$\ln a_n \to \ln a$（根据对数函数的连续性），所以</p>
+<p>$$\lim \ln \sqrt[n]{a_1 \cdots a_n } =\lim \dfrac{\ln a_1 +\cdots +\ln a_n }{n} =\ln a.$$</p>
+<p>此时，依指数函数的连续性，</p>
+<p>$$\sqrt[n]{a_1 \cdots a_n } =e^{\ln \sqrt[n]{a_1 \cdots a_n } } \to e^{\ln a } =a.$$</p>
+<p>用<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题]</a>，极限$1)$及$2)$，这结果也可以推广到$a=0$及$a=+\infty $的情形.</p>
+<p>这样，我们就得到该命题的下列变换：</p>
+<p>若正的整序变量$a_n $有极限（有限或否），则整序变量</p>
+<p>$$b_n =\sqrt[n]{a_1 \cdot a_2 \cdots a_n } $$</p>
+<p>也必有同一极限.</p>
+<p>$4)$应用这命题于序列</p>
+<p>$$a_1 ,\dfrac{a_2 }{a_1} ,\dfrac{a_3 }{a_2 } ,\cdots ,\dfrac{a_n }{a_{n-1} } ,\dfrac{a_{n+1} }{a_n } ,\cdots $$</p>
+<p>引出有趣的推论：</p>
+<p>$$\lim \sqrt[n]{a_n } =\lim \dfrac{a_{n+1} }{a_n } ,$$</p>
+<p>只要假定其中的第二个极限存在便行.</p>
+<p>为着示例，试求极限</p>
+<p>$$\lim \dfrac{\sqrt[n]{n!} }{n} .$$</p>
+<p>令$a_n =\dfrac{n!}{n^n} $，就有</p>
+<p>$$\dfrac{a_{n+1} }{a_n } =\dfrac{(n+1)!}{(n+1)^{n+1}} :\dfrac{n!}{n^n} =\dfrac{1}{\left( 1+\dfrac{1}{n} \right) ^n } \to \dfrac{1}{e} .$$</p>
+<p>故所求极限是$\dfrac{1}{e}$.</p>
+<p>$5)$再来确定下面一系列重要的极限，它们在下一章内是极有用的：</p>
+<p>$$\begin{align}<br>(а) &amp; \lim_{\alpha \to 0} \dfrac{\log_a(1+\alpha ) }{\alpha } =\log_ae &amp; \left( \dfrac{0}{0} \right) ,\\<br>(б) &amp; \lim_{\alpha \to 0} \dfrac{a^{\alpha } -1}{\alpha } =\ln a &amp; \left( \dfrac{0}{0} \right) ,\\<br>(в) &amp; \lim_{\alpha \to 0} \dfrac{(1+\alpha )^{\mu } -1}{\alpha } =\mu &amp; \left( \dfrac{0}{0} \right) .\\<br>\end{align}$$</p>
+<p>我们有</p>
+<p>$$\dfrac{\log_a(1+\alpha )}{\alpha } =\log_a(1+\alpha )^{\frac{1}{\alpha } } ;$$</p>
+<p>因为右端对数符号后面的式子当$\alpha \to 0$时趋于$e$<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，(13)]</a>，故（由对数函数的连续性）它的对数必趋于$\log_ae$，此即所要证的.</p>
+<p>注意已证明的公式的特例，当论及自然对数$(a=e)$时：</p>
+<p>$$\lim_{\alpha \to 0} \dfrac{\ln (1+\alpha )}{\alpha } =1.$$</p>
+<p>这结果很简便，而自然对数制所表出的优点在本质上即根源于此.</p>
+<p>转向公式$(б)$，令$a^{\alpha } -1=\beta $；则当$\alpha \to 0$时（由指数函数的连续性）也有$\beta \to 0$.</p>
+<p>再则，因$\alpha =\log_a(1+\beta )$，于是应用刚才所证明的结果：</p>
+<p>$$\lim_{\alpha \to 0} \dfrac{a^{\alpha } -1}{\alpha } =\lim_{\beta \to 0} \dfrac{\beta }{\log_a(1+\beta )} =\dfrac{1}{\log_ae} =\ln a,$$</p>
+<p>此即所要证的.</p>
+<p>特别是，若取$\alpha =\dfrac{1}{n} (n=1,2,\cdots )$，则得有趣的公式：</p>
+<p>$$\lim_{n\to +\infty } n(\sqrt[n]{a} -1) =\ln a \quad (\infty \cdot 0).$$</p>
+<p>最后，要证明公式$(в)$，可令$(1+\alpha )^{\mu } -1=\beta $；当$\alpha \to 0$时（由幂函数的连续性）必有$\beta \to 0$.在等式$(1+\alpha )^{\mu } =1+\beta $的两边取对数，则得</p>
+<p>$$\mu \cdot \ln (1+\alpha )=\ln (1+\beta ).$$</p>
+<p>利用这一关系式，所给式就变形为</p>
+<p>$$\dfrac{(1+\alpha )^{\mu} -1}{\alpha } =\dfrac{\beta }{\alpha } =\dfrac{\beta }{\ln (1+\beta )} \cdot \mu \cdot \dfrac{\ln (1+\alpha )}{\alpha } .$$</p>
+<p>前已证明关系式</p>
+<p>$$\dfrac{\beta }{\ln (1+\beta )} $$</p>
+<p>及</p>
+<p>$$\dfrac{\ln (1+\beta )}{\beta } $$</p>
+<p>两者都趋向于$1$，于是总的乘积就以$\mu $为极限.此即所要证的.</p>
+<p>在<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，3)]</a>内考察过的极限可作为$\mu =r$时的特例而由此得出.</p>
+<h2 id="幂指数式">幂指数式</h2><p>今考察幂指数式$u^{\upsilon }$，式中的$u$及$\upsilon $是同一变量$x$的函数，$x$的变动区域$\mathcal{X}$具有聚点$x_0 $；在特殊情形，他们可以是两个整序变是$u_n $及$\upsilon _n $.</p>
+<p>设存在着有限极限：</p>
+<p>$$\lim_{x\to x_0 } u=a$$</p>
+<p>及</p>
+<p>$$\lim_{x\to x_0 } \upsilon =b$$</p>
+<p>而且$a &gt; 0$.现在要求幂指数式$u^{\upsilon } $的极限.</p>
+<p>把它表示为形式</p>
+<p>$$u^{\upsilon } =e^{\upsilon \cdot \ln u} .$$</p>
+<p>函数$\upsilon $及$\ln u$各有极限</p>
+<p>$$\lim_{x\to x_0 } \upsilon =b,\quad \lim_{x\to x_0 } \ln u=\ln a$$</p>
+<p>（此处应用对数函数的连续性），于是</p>
+<p>$$\lim_{x\to x_0 } \upsilon \ln u=b\ln a.$$</p>
+<p>由此，由指数函数的连续性，最后即得：</p>
+<p>$$\lim_{x\to x_0 } u^{\upsilon } =e^{b\cdot \ln a} =a^b.$$</p>
+<p>在别的情形，当已知乘积$\upsilon \ln u$的极限$c$时，有限的或确定符号的无穷，表达式$u^{\upsilon }$的极限亦可以确定.对于有限数$c$时所求极限显然是$e^c$；若$c=-\infty $或$+\infty $，则这极限各为$0$或$+\infty $<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">[例题，1)]</a>.</p>
+<p>该极限$c=\lbrace \upsilon \ln u\rbrace $的确定——仅由给定的极限$a$及$b$——问题可能的，但须除去当这积（在$x\to x_0$时）表示为$\infty \cdot 0$型的不定式的那些情形.很易判断，例外的情形必对应于数值$a$及$b$的下列几种结合：</p>
+<p>$$\begin{align}<br>a=1, &amp; b=\infty ;\\<br>a=0, &amp; b=0; \\<br>a=+\infty , &amp; b=0.<br>\end{align}$$</p>
+<p>在这些情形就说，幂指数式$u^{\upsilon }$分别是$1^{\infty } ,0^0 ,{\infty }^0 $型不定式.这时，关于幂指数式$u^{\upsilon }$的极限的问题，若只知道函数$u$及$\upsilon $的极限，就很少解决的办法，要想求$u^{\upsilon }$的极限就必须直接研究它们趋于自己的极限时的规律.</p>
+<p>整序变量$\left( 1+\dfrac{1}{n} \right) ^n $在$n\to \infty $时，或更普遍地说幂指数式$(1+\alpha )^{\alpha }$在$\alpha \to 0$时，以$e$为极限，给出$1^{\infty }$型不定式的一个例子，上面，在[函数的连续性在计算极限时的应用，3）]内我们曾考察整序变量$\sqrt[n]{\dfrac{n!}{n^n} } =\left( \dfrac{n!}{n^n} \right) ^{\frac{1}{n} } $，它就表示$0^0$型不定式.最后，在<a href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" target="_blank" rel="external">[极限求法的例题，10)]</a>内的$\sqrt[n]{n} $也是${\infty }^0$型不定式.</p>
+<p>再举几个新类型的不定式的定值法的例子.</p>
+<h2 id="例题">例题</h2><p>$1)$求$\displaystyle \lim_{x\to +\infty } (\ln x)^{\frac{1}{x} } \quad ({\infty }^0)$.</p>
+<p>用$y$表示所给的幂指数式，就有<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">参阅[[例题，2)、5)]</a>]</p>
+<p>$$\ln y=\dfrac{\ln (\ln x)}{x} =\dfrac{\ln (\ln x)}{\ln x} \cdot \dfrac{\ln x}{x} \to 0\left( \dfrac{\infty }{\infty } \right) ,$$</p>
+<p>于是</p>
+<p>$$y\to e^{0} =1.$$</p>
+<p>$2)$求$\displaystyle \lim_{x\to 0} x^{\sin{x} } \quad (0^0).$</p>
+<p>此处<a href="http://jianhanglin.github.io/blog/2015/04/weijifenxuejiaocheng122/" target="_blank" rel="external">例题，7）及5）</a></p>
+<p>$$\ln y=\sin{x} \cdot \ln x =\dfrac{\sin{x} }{x} \cdot x\ln x \to 0,$$</p>
+<p>因此仍得$y\to 1$.</p>
+<p>$3)$现在很容易用下列方法普遍地推广[函数的连续性在计算极限时的应用]的例$1)$：若整序变量$x_n \to x$（此处</p>
+<p>$x$是有限数），则</p>
+<p>$$\lim_{n\to +\infty } =\left( 1+\dfrac{x_n }{n} \right) ^n =e^x \quad (1^{\infty }).$$</p>
+<p>为要证明，把所举的幂指数式表示为如下的形式</p>
+<p>$$\left[ \left( 1+\dfrac{x_n }{n} \right) ^{\frac{n}{x_n } } \right] ^{x_n } $$</p>
+<p>就够了；幂的底趋于$e$，同时指数趋于$x$.</p>
+<p>$4)$可以变成这结果的又有例题</p>
+<p>$$\lim_{n\to +\infty } \left( \cos{\dfrac{x}{n} } +\lambda \sin{\dfrac{x}{n} } \right) ^n =e^{\lambda x} \quad (1^{\infty }).$$</p>
+<p>令括号内的式子等于$1+\dfrac{x_n }{n} $，就有</p>
+<p>$$x_n =n\cdot \left[ \cos{\dfrac{x}{n} } -1+\lambda \sin{\dfrac{x}{n} } \right] =\lambda x\cdot \dfrac{\sin{\dfrac{x}{n} } }{\dfrac{x}{n} } -x\cdot \dfrac{1-\cos{\dfrac{x}{n} } }{\dfrac{x}{n} } \to \lambda x,$$</p>
+<p>余类推.</p>
+<p>$5)$类似地解决了例题$(a,b &gt; 0)$</p>
+<p>$$\displaystyle \lim_{n\to +\infty } \left( \dfrac{\sqrt[n]{a} +\sqrt[n]{b} }{2} \right) ^n =\sqrt{ab} \quad (1^{\infty }).$$</p>
+<p>此处</p>
+<p>$$x_n =n\cdot \left[ \dfrac{\sqrt[n]{a} +\sqrt[n]{b} }{2} -1\right]=\dfrac12 [n(\sqrt[n]{a} -1)+n(\sqrt[n]{b} -1)],$$</p>
+<p>于是，根据[函数的连续性在计算极限时的应用，5）（б）]的公式的一个特殊推论：</p>
+<p>$$x_n \to \dfrac12 (\ln a+\ln b)=\ln \sqrt{ab} ,$$</p>
+<p>而所求极限，实际上，就等于$e^{\ln \sqrt{ab} } =\sqrt{ab} $.</p>
+<p>$6)$最后，考察极限</p>
+<p>$$\lim_{x\to 0} (\cos{x} )^{\frac{1}{\sin{} ^2 x} } =\lim_{x\to 0} \left[ (1-2\sin{} ^2 \dfrac{x}{2} ) ^{-\frac{1}{2\sin{} ^2 \frac{x}{2} } } \right] ^{-\frac{1}{2\cos{} ^2 \frac{x}{2} } } =e^{-\frac12 } =\dfrac{1}{\sqrt{e} } \quad (1^{\infty }).$$</p>
+<p>读者可以看到在$1^{\infty }$型不定式的情形将问题直接引导到$e$是很便利的.</p>
+<p>我们已经说过，确定一切类型的不定式的普遍方法将在第四章$(\S 4)$内讲到.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/06/10/2015/06/weijifenxuejiaocheng124/" data-title="《微积分学教程(第一卷)》 第二章 一元函数 4 函数的连续性及间断 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/06/21/2015/06/daishuxueyinlun134/" title="《代数学引论(第一卷)基础代数》 第3章 行列式 4 行列式的公理化构造">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第3章 行列式 4 行列式的公理化构造</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/05/24/2015/05/daishuxueyinlun133/"  title="《代数学引论(第一卷)基础代数》 第3章 行列式 3 行列式的应用">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第3章 行列式 3 行列式的应用
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数在一点处的连续性的定义"><span class="toc-number">1.</span> <span class="toc-text">函数在一点处的连续性的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连续函数的算术运算"><span class="toc-number">2.</span> <span class="toc-text">连续函数的算术运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连续函数的例题"><span class="toc-number">3.</span> <span class="toc-text">连续函数的例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单侧连续·间断的分类"><span class="toc-number">4.</span> <span class="toc-text">单侧连续·间断的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#间断函数的例题"><span class="toc-number">5.</span> <span class="toc-text">间断函数的例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单调函数的连续性及间断"><span class="toc-number">6.</span> <span class="toc-text">单调函数的连续性及间断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初等函数的连续性"><span class="toc-number">7.</span> <span class="toc-text">初等函数的连续性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连续函数的叠置"><span class="toc-number">8.</span> <span class="toc-text">连续函数的叠置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一个函数方程的解"><span class="toc-number">9.</span> <span class="toc-text">一个函数方程的解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指数函数、对数函数及幂函数的函数特性"><span class="toc-number">10.</span> <span class="toc-text">指数函数、对数函数及幂函数的函数特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三角余弦及双曲余弦的函数特性"><span class="toc-number">11.</span> <span class="toc-text">三角余弦及双曲余弦的函数特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的连续性在计算极限时的应用"><span class="toc-number">12.</span> <span class="toc-text">函数的连续性在计算极限时的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#幂指数式"><span class="toc-number">13.</span> <span class="toc-text">幂指数式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">14.</span> <span class="toc-text">例题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

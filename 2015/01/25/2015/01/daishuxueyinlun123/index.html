@@ -1,0 +1,1067 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="线性映射. 矩阵的运算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算">
+<meta property="og:url" content="http://yoursite.com/2015/01/25/2015/01/daishuxueyinlun123/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="线性映射. 矩阵的运算">
+<meta property="og:image" content="http://yoursite.com/assets/img/daishuxueyinlun1/tu16.png">
+<meta property="og:updated_time" content="2015-11-08T07:32:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算">
+<meta name="twitter:description" content="线性映射. 矩阵的运算">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/01/25/2015/01/daishuxueyinlun123/" title="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算" itemprop="url">《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-01-25T08:07:17.000Z" itemprop="datePublished"> 發表於 2015-01-25</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵和映射"><span class="toc-number">1.</span> <span class="toc-text">矩阵和映射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的乘积"><span class="toc-number">2.</span> <span class="toc-text">矩阵的乘积</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的转置"><span class="toc-number">3.</span> <span class="toc-text">矩阵的转置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵乘积的秩"><span class="toc-number">4.</span> <span class="toc-text">矩阵乘积的秩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方阵"><span class="toc-number">5.</span> <span class="toc-text">方阵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的等价类"><span class="toc-number">6.</span> <span class="toc-text">矩阵的等价类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逆矩阵的计算"><span class="toc-number">7.</span> <span class="toc-text">逆矩阵的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解空间"><span class="toc-number">8.</span> <span class="toc-text">解空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">9.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="矩阵和映射">矩阵和映射</h2><p>设$\mathbb{R}^n$和$\mathbb{R}^m$分别为高为$n,m$的列向量空间.设$A=(a_{ij})$是一个$m\times n$阶矩阵.定义一个映射$\varphi _A :\mathbb{R}^n \to \mathbb{R}^m$，将任意向量$X=[x_1 ,x_2 ,\cdots ,x_n ]\in \mathbb{R}^n$，对应到</p>
+<p>$$\varphi _A (X)=x_1 A^{(1)} +x_2 A^{(2)} +\cdots +x_n A^{(n)} .\label{1} \tag{1}$$</p>
+<p>其中$A^{(1)} ,\cdots ,A^{(n)} $是矩阵$A$的列(与$\S 2(1)$相比较).由于它们的高是$m$，$\eqref{1}$式的右边给出了一个列向量$Y=[y_1 ,y_2 ,\cdots ,y_m ]\in \mathbb{R}^m$.更详尽地，$\eqref{1}$式可写成如下形式</p>
+<p>$$y_i =\sum_{j=1}^n a_{ij} x_j ,i=1,2,\cdots ,m. \label{111} \tag{1′} $$</p>
+<p>如果$X=X’+X’’ =[x’_1 +x’’_1 ,x’_2 +x’’_2 ,\cdots ,x’_n +x’’_n ]$，则</p>
+<p>$$\varphi _A (X’+X’’) =\sum_{i=1}^n (x’_i +x’’_i )A^{(i)} =\sum_{i=1}^n x’_i A^{(i)} +\sum_{i=1}^n x’’_i A^{(i)} =\varphi _A (X’) +\varphi _A (X’’).$$</p>
+<p>类似地，</p>
+<p>$$\varphi _A (\lambda X)=\sum_{i=1}^n \lambda x_i A^{(i)} =\lambda \sum_{i=1}^n x_i A^{(i)} =\lambda \varphi _A (X) ,\lambda \in \mathbb{R} .$$</p>
+<p>反之，设$\varphi :\mathbb{R}^n \to \mathbb{R}^m$是第$1$章$\S 5$意义下的映射，具有下述两条性质：</p>
+<p>$i) \varphi (X’+X’’) =\varphi (X’)+\varphi (X’’),\quad \forall X’,X’’\in \mathbb{R}^n $；</p>
+<p>$ii) \varphi (\lambda X) =\lambda \varphi (X),\quad \forall X\in \mathbb{R}^n ,\lambda \in \mathbb{R} $.</p>
+<p>我们知道(见$\S 1$第$3$段)，$\mathbb{R}^n =\langle E^{(1)} ,\cdots ,E^{(n)} \rangle $是列向量的标准基的线性包，则</p>
+<p>$$X=[x_1 ,x_2 ,\cdots ,x_n ]=\sum_{j=1}^n x_j E^{(j)} .$$</p>
+<p>运用性质$i),ii)$得到</p>
+<p>$$\varphi (X) =\varphi \left( \sum_{j=1}^n x_j E^{(j)} \right) =\sum_{j=1}^n x_j \varphi (E^{(j)}).\label{2} \tag{2} $$</p>
+<p>关系式$\eqref{2}$表明，映射$\varphi $由它在列向量基上的取值完全确定.令</p>
+<p>$$\varphi (E^{(j)}) =[a_{1j} ,a_{2j} ,\cdots ,a_{mj} ]=A^{(j)} \in \mathbb{R}^m ,\label{3} \tag{3} $$</p>
+<p>我们发现，给出$\varphi $等价于给出列为$A^{(1)} ,\cdots ,A^{(n)} $的$m\times n$阶长方阵$A=(a_{ij})$.关系式$\eqref{1}$和$\eqref{2}$实质上是一致的.我们可以写$\varphi =\varphi _A $.</p>
+<p><strong>定义</strong> 满足性质$i),ii)$的映射$\varphi =\varphi _A :\mathbb{R}^n \to \mathbb{R}^m $叫作从$\mathbb{R}^n $到$\mathbb{R}^m$的<strong>线性映射</strong>.特别地当$m=n$时叫作<strong>线性变换</strong>.矩阵$A$叫作<strong>线性映射$\varphi _A$的矩阵</strong>.</p>
+<p>设$\varphi _A ,\varphi _{A’}$是$\mathbb{R}^n \to \mathbb{R}^m $的两个线性映射，分别有矩阵$A=(a_{ij})$和$A’=(a’_{ij})$.等式$\varphi _A =\varphi _{A’}$成立，当且仅当任取$X\in \mathbb{R}^n $，值$\varphi _A (X) =\varphi _{A’} (X)$.特别地，</p>
+<p>$${A’}^{(j)} =\varphi _{A’} (E^{(j)}) =\varphi _A (E^{(j)}) = A^{(j)} ,1\leq j \leq n,$$</p>
+<p>所以$a’_{ij} =a_{ij}$，故$A’=A$.</p>
+<p>将我们的结果概括如下.</p>
+<p><strong>定理$1$</strong> 从$\mathbb{R}^n$到$\mathbb{R}^m$的线性映射与$m\times n$阶矩阵之间存在着一一对应.</p>
+<p>这里强调指出，谈论任意集合$S$到$T$的线性映射$S\to T$是没有意义的.条件$i)$和$ii)$预先假定了$S$和$T$分别是$\mathbb{R}^n$和$\mathbb{R}^m$中的线性包.</p>
+<p>我们注意到$m=1$的特殊情况，这样的线性映射$\varphi :\mathbb{R}^n \to \mathbb{R}$通常称为$n$变元<strong>线性函数</strong>，由给定的$n$个纯量$a_1 ,a_2 ,\cdots ,a_n $给出：</p>
+<p>$$\varphi (X)=\varphi (x_1 ,x_2 ,\cdots ,x_n ) =a_1 x_1 +a_2 x_2 +\cdots +a_n x_n .\label{4} \tag{4} $$</p>
+<p><strong>注记</strong> 我们这里的线性函数和中学时的概念有所区别，那时的线性函数是指$x\mapsto ax+b$(只谈单变元$x$的情况).</p>
+<p>线性函数$\eqref{4}$，如同任意的线性映射：$\mathbb{R}^n \to \mathbb{R}^m $一样；可以做加法和纯量乘法.事实上，设$\varphi _A ,\varphi _B :\mathbb{R}^n \to \mathbb{R}^m $是两个线性映射.映射</p>
+<p>$$\varphi =\alpha \varphi _A +\beta \varphi _B :\mathbb{R}^n \to \mathbb{R}^m ,\quad \alpha ,\beta \in \mathbb{R} $$</p>
+<p>在$X$上取值定义为</p>
+<p>$$\varphi (X)=\alpha \varphi _A (X) +\beta \varphi _B (X).$$</p>
+<p>右边是通常的列向量的线性组合.</p>
+<p>因为</p>
+<p>$$\begin{align}<br>\varphi (X’+X’’) &amp; =\alpha \varphi _A (X’+X’’) +\beta \varphi _B (X’+X’’) \\<br> &amp; =\alpha \lbrace \varphi _A (X’) +\varphi _A (X’’) \rbrace +\beta \lbrace \varphi _B (X’) +\varphi _B (X’’)\rbrace \\<br> &amp; =\lbrace \alpha \varphi _A (X’) +\beta \varphi _B (X’) \rbrace + \lbrace \alpha \varphi _A (X’’) +\beta \varphi _B (X’’) \rbrace \\<br> &amp; =\varphi (X’) +\varphi (X’’) ;\\<br>\varphi (\lambda X) &amp; =\alpha \varphi _A (\lambda X) +\beta \varphi _B (\lambda X) \\<br> &amp; =\alpha \lambda \varphi _A (X) +\beta \lambda \varphi _B (X) \\<br> &amp; =\lambda \lbrace \alpha \varphi _A (X) +\beta \varphi _B (X) \rbrace \\<br> &amp; =\lambda \varphi (X),<br>\end{align}$$</p>
+<p>所以$\varphi $是一个线性映射(在这里，我们未加说明地使用了$\S 1$的法则$\text{VS}_1 -\text{VS}_8 $).根据定理$1$，我们有线性变换的矩阵$C$，使得$\varphi =\varphi _C $.为了求出$C$，按照公式$\eqref{3}$写出第$j$个列向量：</p>
+<p>$$\begin{align}<br>[c_{ij} ,c_{2j} ,\cdots ,c_{mj} ] &amp; =C^{(j)} \\<br> &amp; =\varphi _C (E_n^{(j)} ) \\<br> &amp; =\alpha \varphi _A (E_n^{(j)}) +\beta \varphi _B (E_n^{(j)}) \\<br> &amp; =\alpha A^{(j)} +\beta B^{(j)} \\<br> &amp; =[\alpha a_{1j} +\beta b_{1j} ,\alpha a_{2j} +\beta b_{2j} ,\cdots ,\alpha a_{mj} +\beta b_{mj} ].<br>\end{align}$$</p>
+<p>很自然地，将矩阵$C=(c_{ij})$，其中元素$c_{ij} =\alpha a_{ij} +\beta b_{ij}$，叫作矩阵$A$和$B$的以$\alpha $和$\beta $为系数的线性组合：</p>
+<p>$$\alpha \begin{pmatrix} a_{11} &amp; \cdots &amp; a_{1n} \\ \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; \cdots &amp; a_{mn} \end{pmatrix} +\beta \begin{pmatrix} b_{11} &amp; \cdots &amp; b_{1n} \\ \cdots &amp; \cdots &amp; \cdots \\ b_{m1} &amp; \cdots &amp; b_{mn} \end{pmatrix} =\begin{pmatrix} \alpha a_{11} +\beta b_{11} &amp; \cdots &amp; \alpha a_{1n} +\beta b_{1n} \\ \cdots &amp; \cdots &amp; \cdots \\ \alpha a_{m1} +\beta b_{m1}  &amp; \cdots &amp; \alpha a_{mn} +\beta b_{mn} \end{pmatrix} .\label{5} \tag{5}$$</p>
+<p>于是</p>
+<p>$$\alpha \varphi _A +\beta \varphi _B =\varphi _{\alpha A+\beta B} .\label{6} \tag{6}$$</p>
+<p>我们将经常运用下述事实：线性函数的线性组合也是一个线性函数.</p>
+<p>最后，我们指出，如果把所有的行向量$X,Y,Z$换成$m\times n$阶矩阵，对应的运算由公式$\eqref{5}$确定，并且将$\S 1$中对向量空间的法则$\text{VS}_1 -\text{VS}_8 $重写一遍，就得到了法则$\text{VSM}_1 -\text{VSM}_8 $，因而我们可以定义$m\times n$阶矩阵的向量空间.如果方便，它也可看作是密集写法的长度为$m\cdot n$的行向量空间$\mathbb{R}^{m\cdot n}$(将行折断为长度为$n$的段，一个排在另一个的下面).</p>
+<h2 id="矩阵的乘积">矩阵的乘积</h2><p>公式$\eqref{5}$和$\eqref{6}$给出了$m\times n$矩阵的集合以及从$\mathbb{R}^n$到$\mathbb{R}^m$的线性变换的集合之间加法和数乘运算的一致性.在考虑任意集合时，还有一个重要的运算概念，即映射的合成(见第$1$章$\S 5$，第$2$段).有理由期望，两个线性映射的合成应当与矩阵的合成方式一致.我们来看如何做到这一点.</p>
+<p>设$\varphi _B :\mathbb{R}^n \to \mathbb{R}^s ,\varphi _A :\mathbb{R}^s \to \mathbb{R}^m $是线性映射，$\varphi _C =\varphi _A \circ\varphi _B $是它们的合成：</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu16.png" alt=""></center>
+
+<p>一般来说，在把乘积$\varphi =\varphi _A \circ \varphi _B $写成$\varphi _C $之前，需要验证$\varphi $是线性变换，这是很清楚的：</p>
+<p>$$\begin{align}<br>(i)\quad \varphi (X’+X’’) &amp; = \varphi _A (\varphi _B (X’+X’’)) \\<br> &amp; =\varphi _A (\varphi _B (X’)+\varphi _B (X’’)) \\<br> &amp; =\varphi _A (\varphi _B (X’)) +\varphi _A (\varphi _B (X’’)) \\<br> &amp; =\varphi (X’) +\varphi (X’’);<br>\end{align} $$</p>
+<p>$$ (ii)\quad \varphi (\lambda X)= \varphi _A (\varphi _B (\lambda X))=\varphi _A (\lambda \varphi _B (X))=\lambda \varphi _A (\varphi _B (X))=\lambda \varphi (X);$$</p>
+<p>所以根据定理$1$，$\varphi $由某个矩阵$C$完全确定.</p>
+<p>假定映射在列上的作用为</p>
+<p>$$[x_1 ,\cdots ,x_n ]\overset{\varphi _B }{\longrightarrow } [y_1 ,\cdots ,y_s ]\overset{\varphi _A }{\longrightarrow } [z_1 ,\cdots ,z_m ],$$</p>
+<p>按照公式$\eqref{111}$的显式表达：</p>
+<p>$$z_i =\sum_{k=1}^s a_{ik} y_k =\sum_{k=1}^s a_{ik} \sum_{j=1}^n b_{kj} x_j =\sum_{j=1}^n \left( \sum_{k=1}^s a_{ik} b_{kj} \right) x_j .$$</p>
+<p>另一方面，</p>
+<p>$$z_i =\sum_{j=1}^n c_{ij} x_j ,\quad i=1,2,\cdots ,m.$$</p>
+<p>比较所得的表达式并注意到$x_j$是任意实数$(j=1,2,\cdots ,n)$，我们得到</p>
+<p>$$c_{ij} =\sum_{k=1}^s a_{ik} b_{kj} ,\quad 1\leq i \leq m ,1\leq j\leq n.\label{7} \tag{7}$$</p>
+<p>矩阵$C=(a_{ij})$叫作矩阵$A$乘以矩阵$B$得到的结果.记作</p>
+<p>$$C=AB.$$</p>
+<p>这样，一个$m\times s$阶长方阵$(a_{ik})$与$s\times n$阶长方阵$(b_{kj} )$的乘积是一个$m\times n$阶长方阵$(c_{ij} )$，其元素$c_{ij}$由公式$\eqref{7}$给出.</p>
+<p>我们证明了</p>
+<p><strong>定理$2$</strong> 由矩阵$A$和$B$确定的两个线性变换的乘积$\varphi _A \cdot \varphi _B$是由矩阵$C=AB$确定的线性变换.换言之，</p>
+<p>$$\varphi _A \varphi _B =\varphi _{AB} .\label{8} \tag{8}$$</p>
+<p>公式$\eqref{8}$是对公式$\eqref{6}$的自然的补充.</p>
+<p>我们可以忘记线性变换去求任意两个矩阵$A$和$B$的乘积$AB$，但必须记住，符号$AB$有意义，当且仅当矩阵$A$的列数等于矩阵$B$的行数.在这一条件下，等式$\eqref{7}$给出了乘积的$(i,j)$元是$A$的第$i$行$A_{(i)}$与$B$的第$j$列$B^{(j)}$的乘积，</p>
+<p>$$c_{ij} =(a_{i1} ,\cdots ,a_{is} )[b_{1j} ,\cdots ,b_{sj} ]=A_{(i)} B^{(j)}.\label{9} \tag{9}$$</p>
+<p>矩阵$AB$的行数等于矩阵$A$的行数，而$AB$的列数等于矩阵$B$的列数.特别地，同阶方阵的乘积总是有定义的，但即使在这种情况下，一般来说，$AB\neq BA$，例如：</p>
+<p>$$\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix} =\begin{pmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \neq \begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix} =\begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix} \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{pmatrix} .$$</p>
+<p>当然还可以有许多其他的方式定义矩阵的乘积(例如行与行相乘)，但是没有一种方式能够与上述定义的重要性相比.这并不奇怪，因为我们是通过映射的自然合成得到矩阵乘法的，而映射当属现代数学最基本的概念.</p>
+<p><strong>推论</strong> 矩阵的乘法满足结合律：</p>
+<p>$$A(BC)=(AB)C.$$</p>
+<p><strong>证明</strong> 矩阵的乘积对应于线性映射的乘积(见定理$2$和公式$\eqref{8}$)，根据第$1$章$\S 5$定理$1$，任意映射的乘积是结合的，也可以根据公式$\eqref{7}$直接计算进行验证.$\quad \square $</p>
+<p>再来看<strong>分配律</strong>：</p>
+<p>$$(A+B)C=AC+BC ,D(A+B)=DA+DB,\label{10} \tag{10}$$</p>
+<p>其中$A,B,C,D$分别是阶数为$m\times s ,m\times s ,s\times n ,n\times m$的任意矩阵.</p>
+<p>事实上，令$A=(a_{ij}) ,B=(b_{ij}) ,C=(c_{ij})$，对任意$i,j$有等式(根据$\mathbb{R}$的分配律)</p>
+<p>$$\sum_{k=1}^n (a_{ik} +b_{ik} )c_{kj} =\sum_{k=1}^n a_{ik} c_{kj} +\sum_{k=1}^n b_{ik} c_{kj}$$</p>
+<p>左边给出了矩阵$(A+B)C$的元素$g_{ij}$，而右边分别给出了$AC$的元素$h_{ij}$和$BC$的元素$h’_{ij}$.$\eqref{10}$中的第二个分配律法则可类似得到.</p>
+<h2 id="矩阵的转置">矩阵的转置</h2><p>阶数分别为$m\times n$与$n\times m$的两个矩阵</p>
+<p>$$A=\begin{pmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} \end{pmatrix} ,\sideset{^t}{}A=\begin{pmatrix} a_{11} &amp; a_{21} &amp; \cdots &amp; a_{m1} \\ a_{12} &amp; a_{22} &amp; \cdots &amp; a_{m2} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{1n} &amp; a_{2n} &amp; \cdots &amp; a_{mn} \end{pmatrix}$$</p>
+<p>叫作<strong>互为转置</strong>，其中的任意一个都是由另一个将行变为列，列变为行得到的(细心的读者会注意到，转置的概念已经在$\S 2$第$1$段遇到过了).易见</p>
+<p>$$\sideset{^t}{}(\sideset{^t}{}A) =A,\sideset{^t}{}(A+B)=\sideset{^t}{}A+\sideset{^t}{}B,\sideset{^t}{}(\lambda A)=\lambda \sideset{^t}{}A.$$</p>
+<p>矩阵乘积的转置满足一个更有趣的规律.如果</p>
+<p>$$A=\begin{pmatrix} a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1s} \\ a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2s} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{ms} \end{pmatrix} ,B=\begin{pmatrix} b_{11} &amp; b_{12} &amp; \cdots &amp; b_{1n} \\ b_{21} &amp; b_{22} &amp; \cdots &amp; b_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ b_{s1} &amp; b_{s2} &amp; \cdots &amp; b_{sn} \end{pmatrix}$$</p>
+<p>且</p>
+<p>$$\sideset{^t}{}A=(a’_{ki}) ,\sideset{^t}{}B=(b’_{jk}),$$</p>
+<p>那么</p>
+<p>$$a’_{ki} =a_{ik} ,b’_{jk} =b_{kj} .$$</p>
+<p>计算下述矩阵的元素</p>
+<p>$$C=AB=\begin{pmatrix} c_{11} &amp; c_{12} &amp; \cdots &amp; c_{1n} \\ c_{21} &amp; c_{22} &amp; \cdots &amp; c_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ c_{m1} &amp; c_{m2} &amp; \cdots &amp; c_{mn} \end{pmatrix} ,D=\sideset{^t}{}B \sideset{^t}{}A =\begin{pmatrix} d_{11} &amp; d_{12} &amp; \cdots &amp; d_{1m} \\ d_{21} &amp; d_{22} &amp; \cdots &amp; d_{2m} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ d_{n1} &amp; d_{n2} &amp; \cdots &amp; d_{nm} \end{pmatrix}$$</p>
+<p>根据公式$\eqref{7}$：</p>
+<p>$$c_{ij} =\sum_{k=1}^n a_{ik} b_{kj} ,d_{ji} =\sum_{k=1}^n b’_{jk} a’_{ki} =\sum_{k=1}^n a_{ik} b_{kj} ,$$</p>
+<p>表明$d_{ji} =c_{ij}$对一切$1\leq i \leq m,1\leq j\leq n$成立.因而$\sideset{^t}{}C =D$，或用原来的记法，</p>
+<p>$$\sideset{^t}{}(AB)=\sideset{^t}{}B \sideset{^t}{}A .$$</p>
+<p>更一般地，如果矩阵$A_1 ,A_2 ,\cdots ,A_r$的乘积有定义，则</p>
+<p>$$\sideset{^t}{} (A_1 A_2 \cdots A_r) =\sideset{^t}{_r} A \cdots  \sideset{^t}{_2} A \sideset{^t}{_1} A .$$</p>
+<p>由于$\S 2$定理$1$，性质$\text{rank} \sideset{^t}{} A =\text{rank} A$成立.</p>
+<h2 id="矩阵乘积的秩">矩阵乘积的秩</h2><p>设$A$和$B$是阶分别为$m\times s$和$s\times n$的任意两个矩阵.关于$\text{rank} AB$可以知道些什么呢？</p>
+<p><strong>定理$3$</strong> 不等式</p>
+<p>$$\text{rank} AB \leq \min{\lbrace \text{rank} A,\text{rank} B\rbrace }$$</p>
+<p>成立.</p>
+<p><strong>证明</strong> 公式$\eqref{7}$给出了矩阵$C=AB$的行$C_{(i)}$和列$C^{(j)}$的表达式</p>
+<p>$$C_{(i)} =A_{(i)} B,C^{(j)} =A B^{(j)} .\label{11} \tag{11}$$</p>
+<p>矩阵$A$的秩可解释成</p>
+<p>$$r_1 =\text{rank} A =\text{dim} \langle A_{(1)} ,A_{(2)} ,\cdots ,A_{(m)} \rangle ,$$</p>
+<p>不失一般性，我们把$A_{(1)} \cdots ,A_{(r_1 )}$当作行向量基，因为$A$当中行的变换，附带引起了$C$中行的变换.但这种变换(Ⅰ型初等变换)既不改变$\text{rank} A$，也不改变$\text{rank} C$.于是</p>
+<p>$$A_{(k)} =\sum_{i=1}^{r_1 } \lambda_{ki} A_{(i)} ,r_1 &lt; k\leq m,$$</p>
+<p>我们(运用分配律$\eqref{10}$)得到</p>
+<p>$$C_{(k)} =A_{(k)} B =\left( \sum_{i=1}^{r_1 } \lambda_{ki} A_{(i)} \right) B =\sum_{i=1}^{r_1 }\lambda_{ki} (A_{(i)} B)=\sum_{i=1}^{r_1} \lambda_{ki}C_{(i)} ,$$</p>
+<p>于是</p>
+<p>$$\langle C_{(1)} ,\cdots ,C_{(m) } \rangle =\langle C_{(1)} ,\cdots ,C_{(r_1 ) } \rangle .$$</p>
+<p>这时</p>
+<p>$$\text{rank} C=\text{dim} \langle C_{(1)} ,\cdots ,C_{(m) } \rangle \leq r_1 =\text{rank} A.$$</p>
+<p>类似地将矩阵$B$的秩看作</p>
+<p>$$r_2 =\text{rank} B =\text{dim} \langle B^{(1)} ,B^{(2)} ,\cdots ,B^{(n)} \rangle ,$$</p>
+<p>并不失一般性将$B^{(1)} ,B^{(2)} ,\cdots ,B^{(r_2 )}$作为列向量基，我们有</p>
+<p>$$B^{(k)} =\sum_{j=1}^{r_2} \mu _{kj} B^{(j)},r_2 &lt; k \leq n,$$</p>
+<p>$$C^{(k)} =AB^{(k)}=A\left( \sum_{j=1}^{r_2 }  \mu_{kj} B^{(j)} \right) =\sum_{j=1}^{r_2 }  \mu_{kj} AB^{(j)} =\sum_{j=1}^{r_2 }  \mu_{kj} C^{(j)} ,$$</p>
+<p>从而</p>
+<p>$$\text{rank} C=\text{dim} \langle C_{(1)} ,\cdots ,C_{(n) } \rangle \leq r_2 =\text{rank} B.\quad \square $$</p>
+<p>我们指出，在某些情况下，定理$3$中的不等式可以是严格的.例如当$A\neq 0,B\neq 0$时，可能有$AB=0$(见第$2$段例$2$).一般来说，定理$3$只能简单地断定，矩阵乘积的秩不会增大.</p>
+<h2 id="方阵">方阵</h2><p>全体$n$阶实方阵$(a_{ij})$的集合通常记作$M_n (\mathbb{R})$(或$M_n$).我们在第$1$段结尾处已经指出，亦可称这一集合为向量空间$M_n (\mathbb{R})$.根据第$2$段，$M_n (\mathbb{R})$中任意两个矩阵的乘积仍在$M_n (\mathbb{R})$中，且满足结合律和分配律.</p>
+<p><strong>定义</strong> 称$n$阶方阵的集合构成一个<strong>(结合)环</strong>.</p>
+<p>不难验证纯量乘法满足$\lambda AB =(\lambda A)B=A(\lambda B)$，其中$\lambda \in \mathbb{R} $，考虑到这一点，集合$M_n (\mathbb{R})$也叫作一个$\mathbb{R}$上的<strong>代数</strong>.</p>
+<p>我们要逐步习惯于使用这些名词(关于术语化新对象的分类见第$4$章)，现在我们转到单位矩阵$E=(\delta _{kj})$，此处</p>
+<p>$$\delta _{kj} =\begin{cases} 1, &amp; 若 &amp; k=j ,\\ 0, &amp; 若 &amp; k\neq j ,\end{cases}$$</p>
+<p>叫作<strong>克罗内克符号</strong>.显然$\text{rank}E =n$.用$\delta _{kj}$代替$b_{kj}$，矩阵相乘的法则$\eqref{7}$给出了下述关系式：</p>
+<p>$$EA=A=AE ,\quad A\in M_n (\mathbb{R}).$$</p>
+<p>更一般地：</p>
+<p>$$\text{diag}_n (\lambda )A=\lambda A=A\text{diag}_n (\lambda ),\label{12} \tag{12}$$</p>
+<p>其中</p>
+<p>$$\text{diag}_n (\lambda )=\lambda E=\begin{vmatrix} \lambda &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \lambda &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; \lambda \end{vmatrix} $$</p>
+<p>是我们已经知道的纯量矩阵(见第$1$章$\S 3$).所以矩阵$A$与纯量$\lambda $的乘积等于$A$与纯量阵的乘积.</p>
+<p>等式$\eqref{12}$给出了一个显而易见的事实，纯量阵$\text{diag}_n (\lambda )$与任意矩阵$A$可交换.它的逆命题在应用中十分重要.</p>
+<p><strong>定理$4$</strong> 在$M_n$中，与任意矩阵可交换的矩阵是纯量阵.</p>
+<p><strong>证明</strong> 引入矩阵$E_{ij}$，它在第$i$行第$j$列的交战处取值$1$，而所有其他的元素均为零.如果$Z=(z_{ij})$是定理中要求的矩阵，则特别地，$Z$与所有的$E_{ij}$可交换：</p>
+<p>$$ZE_{ij} =E_{ij} Z,\quad i,j=1,2,\cdots ,n.$$</p>
+<p>在这一等式的左右两边做矩阵乘法，我们得到矩阵</p>
+<p>$$\begin{matrix} \begin{pmatrix} 0 &amp; \cdots &amp; z_{1i} &amp; \cdots &amp; 0 \\ 0 &amp; \cdots &amp; z_{2i} &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; z_{ni} &amp; \cdots &amp; 0 \end{pmatrix} \\ (j) \end{matrix}和\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ z_{j1} &amp; z_{j2} &amp; \cdots &amp; z_{jn} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix}(i)$$</p>
+<p>它们分别有唯一非零的第$j$列和唯一非零的第$i$行.比较两个矩阵，立即得关系式$z_{ki} =0$若$k\neq i$，以及$z_{ii} =z_{jj}$.改变$i$和$j$，定理得证.$\quad \square $</p>
+<p>对给定矩阵$A\in M_n (\mathbb{R} )$，可以试着去找一个矩阵$A’\in M_n (\mathbb{R} )$，满足关系式$AA’=E=A’A$.易见</p>
+<p>$$AA’=E=A’’A \Rightarrow A’’=A.\label{13} \tag{13}$$</p>
+<p>事实上，$A’’=A’’E=A’’(AA’)=(A’’A)A’=EA’=A’$.这样，若矩阵$A’$存在，必定唯一.它叫作矩阵$A$的<strong>逆矩阵</strong>，记作$A^{-1}$：</p>
+<p>$$AA^{-1}=E=A^{-1}A.\label{14} \tag{14}$$</p>
+<p>如果$\eqref{14}$式满足，称矩阵$A$是<strong>可逆的</strong>.</p>
+<p><strong>定义</strong> 矩阵$A\in M_n (\mathbb{R} )$叫作<strong>非退化的</strong>，如果它的行(同样地列)向量组是线性无关的，即$\text{rank}A=n$.如果$\text{rank} A &lt; n$，则$A$叫作<strong>退化的</strong>.</p>
+<p><strong>定理$5$</strong> 矩阵$A\in M_n (\mathbb{R} )$是可逆的，当且仅当$A$是非退化的.</p>
+<p><strong>证明</strong> $1)$如果$AB=E$(或$BA=E$)，则由定理$3$有</p>
+<p>$$n=\text{rank} E = \text{rank} AB\leq \min{\lbrace \text{rank} A,\text{rank} B\rbrace } \leq n,$$</p>
+<p>从而$\text{rank} A=n$.</p>
+<p>$2)$如果$\text{rank} A=n$，则</p>
+<p>$$\langle E^{(1)} ,\cdots ,E^{(n)} \rangle =\mathbb{R}^n =\langle A^{(1)} ,\cdots ,A^{(n)} \rangle ,$$</p>
+<p>于是</p>
+<p>$$E^{(j)} =\sum_{i=1}^n a’_{ij} A^{(i)} ,\quad 1\leq j\leq n,\label{15} \tag{15}$$</p>
+<p>并且元素$a’_{ij}$组成的矩阵$A’=(a’_{ij} )\in M_n (\mathbb{R} )$是唯一确定的.根据$\S 2$第$1$段(见那里的等式$(1)$和$(2)$)，关系式$\eqref{15}$可以写成</p>
+<p>$$E^{(j)} =(A^{(1)},A^{(2)},\cdots ,A^{(1)})[a’_{1j} ,a’_{2j} ,\cdots ,a’_{nj} ]=A{A’}^{(j)},\quad 1\leq j\leq n,$$</p>
+<p>所以</p>
+<p>$$E=(E^{(1)},\cdots ,E^{(n)})=(A{A’}^{(1)} ,\cdots ,A{A’}^{(n)})=AA’.$$</p>
+<p>此处我们将矩阵$E$和$AA’$都用它们的列来表示.</p>
+<p>我们指出(见第$3$段)$A$的转置矩阵$\sideset{^t}{}A$也与$A$一样是非退化的.因而可以找到矩阵$B$，使$\sideset{^t}{}A\cdot B=E$.回到第$3$段并令$A’’=\sideset{^t}{}B$，我们有</p>
+<p>$$E=\sideset{^t}{}E =\sideset{^t}{}(\sideset{^t}{}AB)=\sideset{^t}{t}B(\sideset{^t}{}A)=A’’A.$$</p>
+<p>于是</p>
+<p>$$AA’=E=A’’A.$$</p>
+<p>根据$\eqref{13}$式，$A’’=A’$，所以按照$\eqref{14}$式，$A’=A^{-1}$，即矩阵$A$是可逆的.$\square $</p>
+<p><strong>推论$1$</strong> 如果$B$和$C$分别是$m$阶和$n$阶的非退化方阵，而$A$是任意的$m\times n$矩阵，则</p>
+<p>$$\text{rank}BAC =\text{rank}A.$$</p>
+<p><strong>证明</strong> 由于定理$3$和$5$，我们有</p>
+<p>$$\text{rank}BAC \leq \text{rank}BA =\text{rank}BA(CC^{-1}) =\text{rank}(BAC)C^{-1} \leq \text{rank}BAC,$$</p>
+<p>得到$\text{rank}BAC =\text{rank}BA$.类似地可建立等式</p>
+<p>$$\text{rank}BA=\text{rank}A .\quad \square $$</p>
+<p><strong>推论$2$</strong> 如果$A,B\in M_n (\mathbb{R} )$且$AB=E$或$BA=E$，则$B=A^{-1}$.</p>
+<p><strong>证明</strong> 见定理$5$证明的第$1)$部分，$AB=E\Rightarrow \text{rank}A =n$，即$A$是非退化的，从而是可逆的. $\quad \square $</p>
+<p><strong>推论$3$</strong> 如果$A,B,\cdots ,C,D$是非退化的$n\times n$矩阵，则乘积$AB\cdots CD$也是非退化的，且</p>
+<p>$$(AB\cdots CD)^{-1} =D^{-1} C^{-1} \cdots B^{-1} A^{-1} .$$</p>
+<p><strong>证明</strong> 矩阵$G=AB\cdots CD$的非退化性由推论$1$给出，而等式$G^{-1} =D^{-1}C^{-1} \cdots B^{-1} A^{-1}$可直接验证：</p>
+<p>$$G(D^{-1}C^{-1} \cdots B^{-1} A^{-1}) =AB\cdots C(DD^{-1})C^{-1} \cdots B^{-1} A^{-1} =AB\cdots (CC^{-1})\cdots B^{-1} A^{-1}=\cdots =E.\square $$</p>
+<p>实际计算逆矩阵的常用方法将在第$7$段给出.在那里也同时得到了定理$5$的另一种证明.</p>
+<p>我们将在第$3$章给出$A^{-1}$的一个显式.现在仅仅指出，给定实系数矩阵$A$，实际计算$A^{-1}$，或者计算两个矩阵的乘积，需要完成大量的运算.在应用中会遇到阶数$n=100$或更大的矩阵.如果$A$和$B$是这样的两个矩阵，计算$C=AB$需要按照公式$\eqref{7}$(或$\eqref{9}$)找到$n^2$个元素$c_{ij}$，每找一个元素要做$(n+(n-1)=2n-1)$次乘法或加法.共需进行$(2n-1)n^2$次运算，也就是说当$n=100$时要做约二百万次运算.对于现代的计算机，这个问题不难，但如果我们想找到矩阵$A$的方幂$A^m$，且$m \geq 1000$，计算机实现就会发生困难.根据定义，$A^m =A\cdot A^{m-1}$；但由结合律(见定理$2$的推论)易见$A^m =A^k A^{m-k}$，$0\leq k\leq m$，这将在第四章中在更一般的背景下进行说明.为了计算$A^m$，人们使用各种附加的手段，它们或者基于矩阵$A$的特殊性质，或者借用于线性代数课程作为解释.我们来看三个例子.</p>
+<p><strong>例$1$</strong> 如果</p>
+<p>$$A=\text{diag}(\alpha _1 ,\cdots ,\alpha _n )=\begin{pmatrix} \alpha _1 &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; \alpha _n \end{pmatrix} ,$$</p>
+<p>则显然</p>
+<p>$$A^m=\text{diag}(\alpha _1^m ,\cdots ,\alpha _n^m )=\begin{pmatrix} \alpha _1^m &amp; \cdots &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; \cdots &amp; \alpha _n^m \end{pmatrix} .$$</p>
+<p><strong>例$2$</strong> 设</p>
+<p>$$A=\begin{pmatrix} a &amp; c \\ 0 &amp; b \end{pmatrix} .$$</p>
+<p>对$m$作归纳表明，有</p>
+<p>$$A^m=\begin{pmatrix} a^m &amp; c\dfrac{a^m-b^m}{a-b} \\ 0 &amp; b^m \end{pmatrix} ,$$</p>
+<p>此处</p>
+<p>$$\dfrac{a^m-b^m}{a-b} =a^{m-1} +a^{m-2}b+\cdots +ab^{m-2}+b^{m-1} .$$</p>
+<p>特别地，若$a=b$，有</p>
+<p>$$\begin{pmatrix} a &amp; c \\ 0 &amp; a \end{pmatrix} ^m =\begin{pmatrix} a^m &amp; ma^{m-1}c \\ 0 &amp; a^m \end{pmatrix}.$$</p>
+<p><strong>例$3$</strong> 对$m$用归纳法，不难证明矩阵</p>
+<p>$$A=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 1 \end{pmatrix} $$</p>
+<p>的$m$次方幂形如</p>
+<p>$$A^m=\begin{pmatrix} f_{m-1} &amp; f_m \\ f_m &amp; f_{m+1} \end{pmatrix} ,\label{16} \tag{16}$$</p>
+<p>其中整数$f_0 =0 ,f_1 =1,f_2 =1,f_3 =2,\cdots $，它们是用递归关系式</p>
+<p>$$f_{m+1} =f_m +f_{m-1} $$</p>
+<p>定义的.这些正是斐波那契数(见第$1$章$\S 3$末的例$2$).</p>
+<p>引进行列式为$1$的矩阵(见第$1$章$\S 4$)</p>
+<p>$$B=\begin{pmatrix} -\dfrac{\lambda _2 }{5} &amp; \dfrac15 \\ -\sqrt{5} \lambda _1 &amp; \sqrt{5} \end{pmatrix} ,$$</p>
+<p>其中$\lambda _1 =\dfrac{1+\sqrt{5} }{2} ,\lambda _2 =\dfrac{1-\sqrt{5} }{2}$.</p>
+<p>不难计算，</p>
+<p>$$B^{-1}=\begin{pmatrix} \sqrt{5} &amp; -\dfrac15 \\ \sqrt{5} \lambda _1 &amp; -\dfrac{\lambda _2 }{5} \end{pmatrix} ,A=B^{-1}\cdot \begin{pmatrix} \lambda _1 &amp; 0 \\ 0 &amp; \lambda _2 \end{pmatrix} \cdot B.$$</p>
+<p>但是如果三个$n\times n$矩阵$A,B,C$，其中$B$是非退化的，满足关系式$A=B^{-1}CB$，则</p>
+<p>$$A^m =B^{-1}CB\cdot B^{-1}CB \cdot B^{-1}CB\cdots B^{-1}CB=B^{-1}C^mB$$</p>
+<p>(其中的因子$BB^{-1}$等于$E$约去)在这种情况下，考虑到例$1$和关系式$\eqref{16}$有</p>
+<p>$$\begin{align}<br>\begin{pmatrix} f_{m-1} &amp; f_m \\ f_m &amp; f_{m+1} \end{pmatrix} &amp; =A^m \\<br> &amp; =B^{-1}\begin{pmatrix} \lambda _1 &amp; 0 \\ 0 &amp; \lambda _2 \end{pmatrix}^mB \\<br> &amp; =B^{-1}\begin{pmatrix} \lambda _1^m &amp; 0 \\ 0 &amp; \lambda _2^m \end{pmatrix}B \\<br> &amp; =\begin{pmatrix} \sqrt{5} &amp; -\dfrac15 \\ \sqrt{5} \lambda _1 &amp; -\dfrac{\lambda _2 }{5} \end{pmatrix} \begin{pmatrix} \lambda _1^m &amp; 0 \\ 0 &amp; \lambda _2^m \end{pmatrix}B \\<br> &amp; =\begin{pmatrix} \sqrt{5}\lambda _1^m &amp; -\dfrac{1}{5}\lambda _2^m \\ \sqrt{5} \lambda _1^{m+1} &amp; -\dfrac{1}{5} \lambda _2^{m+1} \end{pmatrix} \begin{pmatrix} -\dfrac{\lambda _2 }{5} &amp; \dfrac15 \\ -\sqrt{5} \lambda _1 &amp; \sqrt{5} \end{pmatrix} \\<br> &amp; =\begin{pmatrix} \ast &amp; \dfrac{1}{\sqrt{5}} (\lambda _1^m -\lambda _2^m ) \\ \ast &amp; \ast \end{pmatrix}<br>\end{align} $$</p>
+<p>($\ast $代表我们不感兴趣的数).</p>
+<p>比较这些等式中第一个和最后一个右上角的元素，得到第$m$个斐波那契数的公式</p>
+<p>$$f_m =\dfrac{\lambda _1^m -\lambda _2^m }{\sqrt{5} } =\dfrac{1}{\sqrt{5}}\begin{Bmatrix} \left( \dfrac{1+\sqrt{5} }{2} \right) ^m -\left( \dfrac{1-\sqrt{5} }{2} \right) ^m \end{Bmatrix}.$$</p>
+<p>因为$\lim_{m\to \infty } \left( \dfrac{1-\sqrt{5} }{2} \right) ^m =0$，我们看到当$m$充分大时，$f_m \sim \dfrac{1}{\sqrt{5}}\lambda _1^m$(近似于几何级数).</p>
+<h2 id="矩阵的等价类">矩阵的等价类</h2><p>如同定理$4$的证明中所述，我们用$E_{st}$记$m\times m$矩阵，其中第$s$行与第$t$列交叉处的元素为$1$，所有其他的元素为$0$(这样的矩阵叫作<strong>矩阵单位</strong>).研究$M_m (\mathbb{R} )$中下述形式的<strong>初等矩阵</strong>：</p>
+<p>$$\begin{align}<br> &amp; F_{s,t} \\<br>= &amp; E-E_{s,s} -E_{t,t} +E_{s,t} +E_{t,s} \\<br>= &amp; \begin{pmatrix} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; 0 &amp; &amp; &amp; &amp; 1 &amp; &amp; \\ &amp; &amp; &amp; \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; 1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; \ddots &amp; &amp; &amp; \\ &amp; &amp; 1 &amp; &amp; &amp; &amp; 0 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 \\ \end{pmatrix} ,s\neq t;\label{61} \tag{Ⅰ}<br>\end{align} $$</p>
+<p>$$F_{s,t} (\lambda )=E+\lambda E_{s,t} =\begin{pmatrix} 1 &amp; &amp; &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; &amp; &amp; \\ &amp; \cdots &amp; 1 &amp; \cdots &amp; \lambda &amp; \cdots \\ &amp; &amp; &amp; \ddots &amp; &amp; \\ &amp; &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; 1 \end{pmatrix} ,s\neq t;\label{62} \tag{Ⅱ} $$</p>
+<p>$$F_s (\lambda )=E+(\lambda -1)E_{s,s} =\text{diag} \lbrace  1,\cdots ,1,\lambda ,1,\cdots ,1 \rbrace ,\lambda \neq 0.\label{63} \tag{Ⅲ}$$</p>
+<p>设$A$是任意的$m\times n$矩阵.直接验证可知，如果$F=F_{s,t}$或$F=F_{s,t} (\lambda )$，矩阵$A’=FA$是从$A$通过施行对行的$\eqref{61}$型或$\eqref{62}$型初等变换得到的.</p>
+<p>如果$F=F_s (\lambda )$，我们有$\eqref{63}$型初等变换(用$\lambda $乘以$A$的第$s$行$A_{(s)}$).类似地，矩阵$A’’=AF$可以从$A$施行初等列变换得到.我们从$\S 2$第$2$段和$\S 2$习题$2$知道，对行和列施行$\eqref{61}$型和$\eqref{62}$型初等变换，$A$可以化成一个左上角为$r\times r$非退化对角子阵的矩阵，此处$r=\text{rank}A$(当$r=0$时，$A$是零矩阵).因为</p>
+<p>$$\begin{pmatrix} a_1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; a_2 &amp; &amp; &amp; &amp; 0 &amp; \\ &amp; &amp; \ddots &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; a_r &amp; &amp; &amp; \\ &amp; 0 &amp; &amp; &amp; 0 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; 0 \\ \end{pmatrix} =F_1 (a_1 )F_2 (a_2 )\cdots F_r (a_r )\begin{pmatrix} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; 1 &amp; &amp; &amp; &amp; 0 &amp; \\ &amp; &amp; \ddots &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; 1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; 0 &amp; &amp; \\ &amp; &amp; 0 &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; 0 \\ \end{pmatrix},$$</p>
+<p>允许施行$\eqref{63}$型初等变换，便可以从$A$得到下述形状的矩阵</p>
+<p>$$\begin{pmatrix} E_r &amp; 0 \\ 0 &amp; 0 \end{pmatrix} \label{17} \tag{17}$$</p>
+<p>(这里$E_r$是$M_r (\mathbb{R} )$中的单位矩阵；三个零分别表示阶为$r\times (n-r)$，$(m-r)\times r$以及$(m-r)\times (n-r)$的零矩阵).这样</p>
+<p>$$P_k P_{k-1} \cdots P_1 A Q_1 Q_2 \cdots Q_l =\begin{pmatrix} E_r &amp; 0 \\ 0 &amp; 0 \end{pmatrix} ,\label{18} \tag{18}$$</p>
+<p>其中$P_i (Q_i )$是$m$阶(相应地$n$阶)初等矩阵.</p>
+<p>多次提及初等变换是可逆的.这与初等矩阵的可逆性是一致的：</p>
+<p>$$(F_{s,t})^{-1} =F_{s,t} ,F_{s,t}(\lambda )^{-1} =F_{s,t}(-\lambda ),F_s (\lambda )^{-1} =F_s (\lambda ^{-1} ).$$</p>
+<p>根据定理$5$的推论$3$，矩阵$P=P_k P_{k-1} \cdots P_1$和$Q=Q_1 Q_2 \cdots Q_l$也可逆：</p>
+<p>$$P^{-1} =P_1^{-1} \cdots P_{k-1}^{-1} P_k^{-1} ,Q^{-1} =Q_l^{-1} \cdots Q_2^{-1} Q_1^{-1} .$$</p>
+<p>注意$P_i^{-1} ,Q_j^{-1}$都是初等矩阵.</p>
+<p>称两个$m\times n$阶矩阵$A,B$是<strong>等价的</strong>，并记作$A\sim B$，如果能够找到非退化的$m$阶和$n$阶矩阵$P,Q$，使得$B=PAQ$.</p>
+<p>易见$\sim $是一个等价关系：</p>
+<p>$i)$ $A\sim A(P=E_m ,Q=E_n)$；</p>
+<p>$ii)$ $A\sim B \Rightarrow B\sim A$，因为$B=PAQ \Rightarrow A=P^{-1}BQ^{-1}$；</p>
+<p>$iii)$ $B=P’AQ’,C=P’’BQ’’ \Rightarrow C=PAQ$，其中$P=P’’P’ ,Q=Q’Q’’$.</p>
+<p>根据一般原则(见第$1$章$\S 6$)，所有的$m\times n$矩阵的集合按照关系$\sim $划分成互不相交的等价矩阵类.因为等价矩阵的秩相等(见定理$5$的推论$1$)，等式$\eqref{18}$的论证表明，可以选择矩阵$\eqref{17}$作为等价类的代表元.</p>
+<p>我们得到了下述论断.</p>
+<p><strong>定理$6$</strong> $m\times n$矩阵的集合划分成$p=\min{\lbrace m,n \rbrace } +1$个等价类.所有秩为$r$的矩阵都和代表元$\eqref{17}$在同一类中.</p>
+<p><strong>推论</strong> 每一个非退化的$n\times n$矩阵都可以写成初等矩阵的乘积.</p>
+<p><strong>证明</strong> 所有非退化的$n$阶矩阵都和单位矩阵在同一个等价类中，因为它们的秩等于$n$.将关系式$\eqref{18}$</p>
+<p>$$P_k P_{k-1} \cdots P_1 AQ_1 Q_2 \cdots Q_l =E,$$</p>
+<p>改写成</p>
+<p>$$A=P_1^{-1} \cdots P_{k-1}^{-1}P_k^{-1} Q_l^{-1} \cdots Q_2^{-1} Q_1^{-1} ,\label{19} \tag{19}$$</p>
+<p>推论得证.</p>
+<p>不能断定将$A$写成初等矩阵的乘积时写法是唯一的，但这种写法的存在性本身就已经非常有用.特别地，它可以用来求逆矩阵.事实上，从公式$\eqref{19}$我们得到</p>
+<p>$$A^{-1}=Q_1 Q_2 \cdots Q_l P_k P_{k-1} \cdots P_1 =QP.$$</p>
+<h2 id="逆矩阵的计算">逆矩阵的计算</h2><p>在上一段的推论中，如果只做行变换，当$A\in M_n (\mathbb{R} )$非退化时，从$n\times 2n$阶的扩展矩阵$(A\mid E)$开始，就会得到一系列变换</p>
+<p>$$(A\mid E) \overset{P_1 }{\longrightarrow } (P_1 A\mid P_1 E) \overset{P_2 }{\longrightarrow } \cdots \overset{P_k }{\longrightarrow } (P_k \cdots P_2 P_1 A\mid P_k \cdots P_2 P_1 E) =(E\mid A’).$$</p>
+<p>这个序列在第$k$步中止，直到$n\times 2n$阶矩阵左半边的$A$换成了单位矩阵$E$.这时右半边得到了唯一的矩阵：$A’=A^{-1}$.如果矩阵$A$退化，这个过程可能中断得早些，我们将$A$化成了阶梯形并得到了秩$r=\text{rank} A$.</p>
+<p>在第$6$节开头，取$n=3$，我们有初等矩阵的实例</p>
+<p>$$F_{1,2} (-3)=\begin{pmatrix} 1 &amp; -3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ \end{pmatrix} ,F_{3,2} (4)=\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 4 &amp; 1 \\ \end{pmatrix},F_{1,3} =\begin{pmatrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ \end{pmatrix}.$$</p>
+<p>左乘$n\times n$初等矩阵$P_i $的作用未加阐述.事实上，它可以看作一个指令，完成与之相应的初等行变换.</p>
+<p>再次提醒读者注意下述符号的含义：</p>
+<p>$1$.$P_i =F_{s,t}$——将矩阵的第$s$和$t$行交换位置；</p>
+<p>$2$.$P_i =F_{s,t} (\lambda )$——将矩阵的第$t$行乘以$\lambda $加到第$s$行上；</p>
+<p>$3$.$P_i =F_s (\lambda )$——将矩阵的第$s$行乘以$\lambda $.</p>
+<p><strong>例$4$</strong> 设</p>
+<p>$$A=\begin{pmatrix} 0 &amp; 2 &amp; 0 \\ 1 &amp; 1 &amp; -1 \\ 2 &amp; 1 &amp; -1 \\ \end{pmatrix} $$</p>
+<p>我们有</p>
+<p>$$\begin{align}<br>(A\mid E)= &amp; \begin{pmatrix} \begin {array}{ccc|ccc} 0 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 1 &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 2 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \overset{F_{1,2} }{\longrightarrow } \begin{pmatrix} \begin {array}{ccc|ccc} 1 &amp; 1 &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \overset{F_{3,1}(-2) }{\longrightarrow } \\<br> &amp; \begin{pmatrix} \begin {array}{ccc|ccc} 1 &amp; 1 &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; -2 &amp; 1 \end{array} \end{pmatrix} \overset{F_2 (\dfrac{1}{2}) }{\longrightarrow } \begin{pmatrix} \begin {array}{ccc|ccc} 1 &amp; 1 &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; \dfrac{1}{2} &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; -2 &amp; 1 \end{array} \end{pmatrix} \overset{F_{1,2}(-1) }{\longrightarrow } \\<br> &amp; \begin{pmatrix} \begin {array}{ccc|ccc} 1 &amp; 0 &amp; -1 &amp; -\dfrac{1}{2} &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; \dfrac{1}{2} &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; -2 &amp; 1 \end{array} \end{pmatrix} \overset{F_{3,2} (1) }{\longrightarrow } \begin{pmatrix} \begin {array}{ccc|ccc} 1 &amp; 0 &amp; -1 &amp; -\dfrac{1}{2} &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; \dfrac{1}{2} &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; \dfrac{1}{2} &amp; -2 &amp; 1 \end{array} \end{pmatrix} \overset{F_{3,1}(1) }{\longrightarrow } \\<br> &amp; \begin{pmatrix} \begin {array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; \dfrac{1}{2} &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; \dfrac{1}{2} &amp; -2 &amp; 1 \end{array} \end{pmatrix}.<br>\end{align}$$</p>
+<p>所以</p>
+<p>$$A^{-1}=\begin{pmatrix}  0 &amp; -1 &amp; 1 \\ \dfrac{1}{2} &amp; 0 &amp; 0 \\ \dfrac{1}{2} &amp; -2 &amp; 1 \end{pmatrix} .$$</p>
+<p>为了书写简便，我们可以适当地将同类型的变换同时进行.</p>
+<p><strong>例$5$</strong> 设</p>
+<p>$$A=\begin{pmatrix} -1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -1 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -1 \end{pmatrix} .$$</p>
+<p>我们有</p>
+<p>$$\begin{align}<br>(A\mid E)= &amp; \begin{pmatrix} \begin {array}{cccc|cccc} -1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; -1 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\xrightarrow[F_{1,2}(1)]{\begin{matrix}  F_{1,4} (1) \\ F_{1,3} (1) \end{matrix} } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 2 &amp; 2 &amp; 2 &amp; 2 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\overset{F_1 (\dfrac12 ) }{\longrightarrow } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 1 &amp; 1 &amp; 1 &amp; \dfrac12 &amp; \dfrac12 &amp; \dfrac12 &amp; \dfrac12 \\ 1 &amp; -1 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 1 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \end{pmatrix} \\<br>\xrightarrow[F_{2,1}(-1)]{\begin{matrix}  F_{4,1} (-1) \\ F_{3,1} (-1) \end{matrix} } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 1 &amp; 1 &amp; 1 &amp; \dfrac12 &amp; \dfrac12 &amp; \dfrac12 &amp; \dfrac12 \\ 0 &amp; -2 &amp; 0 &amp; 0 &amp; -\dfrac12 &amp; \dfrac12 &amp; -\dfrac12 &amp; -\dfrac12 \\ 0 &amp; 0 &amp; -2 &amp; 0 &amp; -\dfrac12 &amp; -\dfrac12 &amp; \dfrac12 &amp; -\dfrac12 \\ 0 &amp; 0 &amp; 0 &amp; -2 &amp; -\dfrac12 &amp; -\dfrac12 &amp; -\dfrac12 &amp; \dfrac12 \end{array} \end{pmatrix} \\<br>\xrightarrow[F_2(-\dfrac12 )]{\begin{matrix}  F_4 (-\dfrac12 ) \\ F_3 (-\dfrac12 ) \end{matrix} } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 1 &amp; 1 &amp; 1 &amp; \dfrac12 &amp; \dfrac12 &amp; \dfrac12 &amp; \dfrac12 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; \dfrac14 &amp; -\dfrac14 &amp; \dfrac14 &amp; \dfrac14 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; \dfrac14 &amp; \dfrac14 &amp; -\dfrac14 &amp; \dfrac14 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; \dfrac14 &amp; \dfrac14 &amp; \dfrac14 &amp; -\dfrac14 \end{array} \end{pmatrix} \\<br>\xrightarrow[F_{1,2}(-1)]{\begin{matrix}  F_{1,4} (-1) \\ F_{1,3} (-1) \end{matrix} } &amp; \begin{pmatrix} \begin {array}{cccc|cccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\dfrac14 &amp; \dfrac14 &amp; \dfrac14 &amp; \dfrac14 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; \dfrac14 &amp; -\dfrac14 &amp; \dfrac14 &amp; \dfrac14 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; \dfrac14 &amp; \dfrac14 &amp; -\dfrac14 &amp; \dfrac14 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; \dfrac14 &amp; \dfrac14 &amp; \dfrac14 &amp; -\dfrac14 \end{array} \end{pmatrix} .\\<br>\end{align}$$</p>
+<p>所以，$A^{-1} =\dfrac14 A$.</p>
+<p>在上例中，计算亦可避免.注意到退化矩阵与任意矩阵的乘积都是退化的(定理$3$)，但我们有</p>
+<p>$$A^2=\begin{pmatrix} 4 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 4 \end{pmatrix} =4E;$$</p>
+<p>因而$A$非退化，$A^{-1}$是存在的.</p>
+<p>$$A=A^2 A^{-1} =4E\cdot A^{-1} =4A^{-1}\Longrightarrow A^{-1} =\dfrac14 A.$$</p>
+<p><strong>注记</strong> 在施行系列初等行变换时，应当避免一个典型的错误——将前一个变换中改变了的行加到未改变的行上.例如算法</p>
+<p>$$A\xrightarrow[F_{1,2}(1)]{F_{2,1}(1)} A’$$</p>
+<p>是模棱两可的：不清楚其中作用的顺序，先$F_{1,2}(1)$，后$F_{2,1}(1)$；先$F_{2,1}(1)$，后$F_{1,2}(1)$，或同时进行？不同的方式得到了行$A’_{(1)} ,A’_{(2)}$的不同表达.在例$5$中，我们合并的只是同类型的变换，而如果我们打算按照上述方法用计算机进行计算，那么线性调整初等变换的序列是自然的.</p>
+<p>上述求矩阵的秩以及逆矩阵的方法，叫作<strong>$P$约化</strong>，或更一般地，矩阵到标准型$\eqref{17}$的$(P,Q)$<strong>约化</strong>.</p>
+<h2 id="解空间">解空间</h2><p>从$\S 2$和$\S 3$开头的导言得知，带有$m\times n$阶系数矩阵$A$和自由项$B\in \mathbb{R}^m$的线性方程组可以写成</p>
+<p>$$AX=B \label{20} \tag{20}$$</p>
+<p>(其中$X=[x_1 ,\cdots ,x_n ]$是高度为$n$的列).假设$m=n$且方阵$A$非退化(见第$5$段)，用$A^{-1}$左乘矩阵等式的两端：$X=EX=(A^{-1}A)X =A^{-1}(AX)=A^{-1}B$，我们得到方程组$\eqref{20}$的解，并且该解是唯一的.解的这种方便的写法并没有使我们免去必要的计算，因为$A^{-1}$并未预先给定.但我们仍然满意地指出，矩阵工具的运用至少使人得到了美学上的快感.现在我们运用这一工具来求齐次线性方程组</p>
+<p>$$AX=0 \label{21} \tag{21}$$</p>
+<p>的全部解.先来看一个基本事实，若$X^{(1)},X^{(2)}$是齐次线性方程组$\eqref{21}$的解，则它们的任意线性组合也是$\eqref{21}$的解：</p>
+<p>$$A(\alpha _1 X^{(1)} +\alpha _2 X^{(2)} )=\alpha _1 AX^{(1)} +\alpha _2 AX^{(2)} =0.$$</p>
+<p>因而可以谈论齐次线性方程组的解空间——线性包：</p>
+<p>$$V_A =\langle X\in \mathbb{R}^n \mid AX=0 \rangle \subset \mathbb{R}^n .$$</p>
+<p>设$s=\text{dim} V_A ,r=\text{rank}A$.根据定义$s\leq n$，$r \leq \min{\lbrace m,n\rbrace } $.那么$s$与$r$之间存在什么联系呢？</p>
+<p><strong>定理$7$</strong> 等式$r+s =n$成立.</p>
+<p><strong>证明</strong> 选择线性包$V_A$的一组基$X^{(1)} ,\cdots ,X^{(s)}$，并扩充成全空间$\mathbb{R}^n$的基$X^{(1)} ,\cdots ,X^{(s)} ,X^{(s+1)} ,\cdots ,X^{(n)}$.如同$\S 1$定理$2$的证明(或$\S 1$习题$6$)所指出的，这件事总能办到，任取向量$X=\sum_{i=1}^n \alpha _i X^{(i)} \in \mathbb{R}^n$，有</p>
+<p>$$AX=\sum_{i=1}^n \alpha _i AX^{(i)} =\alpha _{s+1} AX^{(s+1)} +\cdots +\alpha _n AX^{(n)} ,$$</p>
+<p>所以$\S 2$定义的线性包，称之为矩阵$A$的列空间，</p>
+<p>$$V_c (A)=\langle A^{(1)} ,\cdots ,A^{(n)} \rangle =\langle x_1 A^{(1)} +\cdots +x_n A^{(n)} \mid x_i \in \mathbb{R}^n \rangle =\langle AX\mid X \in \mathbb{R}^n \rangle \subset \mathbb{R}^m ,$$</p>
+<p>与线性包$\langle AX^{(s+1)} ,\cdots ,AX^{(n)} $重合.</p>
+<p>特别地，$r=\text{dim} V_c (A)\leq n-s$.但是向量$AX^{(s+1)} ,\cdots ,AX^{(n)}$是线性无关的，因为从</p>
+<p>$$0=\sum_{k\geq s+1} \beta _k AX^{(k)} =A\left( \sum_{k\geq s+1} \beta _k X^{(k)} \right) $$</p>
+<p>得到$\sum_{k\geq s+1} \beta _k X^{(k)} \in V_A$，而由于$X^{(s+1)} ,\cdots ,X^{(n)} $的选择，仅有的可能性为$\beta _{s+1} =\cdots =\beta _n =0$.于是$r=n-s$.$\quad \square $</p>
+<p><strong>注记</strong> 如果使用线性变换的语言(见$\S 3$第$1$段)，显然有</p>
+<p>$$V_A =\text{ker} \varphi _A ,\quad V_c (A) =\text{Im} \varphi _A ,$$</p>
+<p>即由$A$确定的线性变换$\varphi _A : \mathbb{R}^n \to \mathbb{R}^m$的核与像.对于我们来说，这种方法只是作为引入矩阵概念的一个说明.</p>
+<p>为了找到空间$V_c (A)$的一组基，我们要在$A$中选择$r$个列向量基，方法之一是将$A$化为阶梯形，或者用第$3$章指出的方法置换矩阵的列，或等价地，重排未知量，可以使前$r$列$A^{(1)} ,\cdots ,A^{(r)}$成为列向量基.这里，在关于未知量$x’_1 ,x’_2 ,\cdots ,x’_n $的新方程组中，$x’_1 ,\cdots ,x’_r $成为主未知量.任意$r+1$个列向量$A^{(1)} ,\cdots ,A^{(r)},A^{(r+k)} ,k &gt; 0$，都是线性相关的，根据$\S 1$的定理$1\; v)$，可以写出关系式</p>
+<p>$$x_1^{(k)} A^{(1)}+x_2^{(k)} A^{(2)}+\cdots +x_r^{(k)} A^{(r)}+A^{(r+k)} =0,k=1,2,\cdots ,n-r .$$</p>
+<p>$(n-r)$个列向量</p>
+<p>$$\begin{matrix} X^{(1)} =\left[ x_1^{(1)} ,x_2^{(1)} ,\cdots ,x_r^{(1)} ,1,0,\cdots ,0 \right] ,\\ X^{(2)} =\left[ x_1^{(2)} ,x_2^{(2)} ,\cdots ,x_r^{(2)} ,0,1,\cdots ,0 \right] ,\\ \cdots \cdots \cdots \cdots \cdots  \\ X^{(n-r)} =\left[ x_1^{(n-r)} ,x_2^{(n-r)} ,\cdots ,x_r^{(n-r)} ,0,0,\cdots ,1 \right]  \end{matrix} \label{22} \tag{22}$$</p>
+<p>显然是线性无关的(根据后$n-r$个分量的特殊形式)，它们是齐次线性方程组$\eqref{22}$的解，根据定理$7$，构成解空间$V_A$的一组基.显然，若(带撇的)新自由未知量取值</p>
+<p>$$x’_{r+1} =0,\cdots ,x’_{r+k} =1,\cdots ,x’_n =0,$$</p>
+<p>则得到解$X^{(k)}$.</p>
+<p>秩$r$齐次线性方程组$AX=0$的解空间的任意一组基称为一个<strong>基础解系</strong>.向量组$\eqref{22}$也叫作<strong>规范</strong>基础解系.根据$\S 2$定理$1$的推论，它的秩$s=\text{dim} V_A =n-r$，等于该方程组的自由未知量的个数.</p>
+<h2 id="习题">习题</h2><p>$1$.在下述映射中，哪些是线性映射：</p>
+<p>$$\begin{align}<br>a) &amp; [x_1 ,x_2 ,\cdots ,x_n ]\mapsto [x_n ,\cdots ,x_2 ,x_1 ]; \\<br>b) &amp; [x_1 ,x_2 ,\cdots ,x_n ]\mapsto [x_1 ,x_2^2 ,\cdots ,x_n^n ]; \\<br>c) &amp; [x_1 ,x_2 ,\cdots ,x_n ]\mapsto [x_1 ,x_1 +x_2 ,\cdots ,x_1 +x_2 +\cdots +x_n ].<br>\end{align}$$</p>
+<p>$2$.证明</p>
+<p>$$\begin{pmatrix} 1 &amp; a &amp; c \\ 0 &amp; 1 &amp; b \\ 0 &amp; 0 &amp; 1 \end{pmatrix} ^m =\begin{pmatrix} 1 &amp; ma &amp; \dfrac{m(m-1)}{2}ab+mc \\ 0 &amp; 1 &amp; mb \\ 0 &amp; 0 &amp; 1 \end{pmatrix} .$$</p>
+<p>求矩阵</p>
+<p>$$\begin{pmatrix} 1 &amp; a &amp; c \\ 0 &amp; 1 &amp; b \\ 0 &amp; 0 &amp; 1 \end{pmatrix}$$</p>
+<p>的逆矩阵.</p>
+<p>$3$.验证$\begin{pmatrix} 0 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} ^3 =E$.</p>
+<p>$4$.马尔可夫(或随机)矩阵在应用中十分重要：</p>
+<p>$$P=(p_{ij}),p_{ij} \geq 0,\sum_{j=1}^n p_{ij} =1 ,i=1,2,\cdots ,n.$$</p>
+<p>由马尔可夫矩阵确定的线性变换$\varphi _P$通常作用于概率列向量：</p>
+<p>$$X=[x_1 ,\cdots ,x_n ],x_i \geq 0,\sum_{i=1}^n x_i =1.$$</p>
+<p>从下述论断可见，这些来自于自然科学问题的定义是协调的论断，即便对$n=2$，也需要证明.</p>
+<p>$a)$矩阵$P\in M_n (\mathbb{R} )$是马尔可夫的，当且仅当对任意概率向量$X$，$PX$仍然是概率向量(此处$PX=\varphi _P (X)$).</p>
+<p>$b)$如果$P$是正的马尔可夫矩阵(即$\forall i,j,\; p_{ij} &gt; 0$)，那么任意概率向量$X$对应到正的概率向量$PX$(所有的分量严格大于$0$).</p>
+<p>$c)$如果$P$和$Q$都是马尔可夫矩阵，那么矩阵$PQ$也是马尔可夫矩阵.特别地，马尔可夫矩阵的任意次方幂$P^k$是马尔可夫矩阵.</p>
+<p>$5$.若</p>
+<p>$$H=\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} ,$$</p>
+<p>求$\sideset{^t}{}H\cdot H$.</p>
+<p>$6$.由$S_n$中的$n$阶循环(见第$1$章$\S 8$)确定的置换矩阵(行单位阵$E_n$)为</p>
+<p>$$P=\begin{pmatrix} 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0\end{pmatrix} ,$$</p>
+<p>验证$P^n =E$.</p>
+<p>$7$.对于任意两个$m\times n$矩阵$A$和$B$，证明</p>
+<p>$$\text{rank}(A+B) \leq \text{rank}A +\text{rank}B.$$</p>
+<p>$8$.对于任意的$m\times s$矩阵$A$和$s\times n$矩阵$B$，证明</p>
+<p>$$\text{rank}A +\text{rank}B -s\leq \text{rank}AB.$$</p>
+<p>$9$.设$A,B,C$是$n$阶方阵，若$ABC=0$，则</p>
+<p>$$\text{rank}A +\text{rank}B +\text{rank}C \leq 2n.$$</p>
+<p>$10$.求矩阵</p>
+<p>$$A=\begin{pmatrix} x_1 y_1 &amp; x_1 y_2 &amp; \cdots &amp; x_1 y_n \\ x_2 y_1 &amp; x_2 y_2 &amp; \cdots &amp; x_2 y_n \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ x_n y_1 &amp; x_n y_2 &amp; \cdots &amp; x_n y_n \end{pmatrix} $$</p>
+<p>的秩.</p>
+<p>提示：$A=[x_1 ,\cdots ,x_n ] (y_1 ,\cdots ,y_n )$.</p>
+<p>$11$.若$A=(a_{ij})$是非退化对称矩阵(即$a_{ij} =a_{ji}$)，证明$A^{-1}$也是对称矩阵.</p>
+<p>$12$.设</p>
+<p>$$A=\begin{pmatrix} 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 \\ 4 &amp; 8 &amp; 6 &amp; 4 &amp; 2 \\ 3 &amp; 6 &amp; 9 &amp; 6 &amp; 3 \\ 2 &amp; 4 &amp; 6 &amp; 8 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \end{pmatrix} ,F=\begin{pmatrix} 2 &amp; 3 &amp; 2 &amp; 1 \\ 3 &amp; 6 &amp; 4 &amp; 2 \\ 4 &amp; 8 &amp; 6 &amp; 3 \\ 2 &amp; 4 &amp; 3 &amp; 2 \end{pmatrix} ,$$</p>
+<p>求$A^{-1}$和$F^{-1}$.</p>
+<p>$13$.验证</p>
+<p>$$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} ,ad-bc\neq 0\Rightarrow A^{-1}=\dfrac{1}{ad-bc}\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>特别地，</p>
+<p>$$ad-bc=1\Rightarrow A^{-1}=\begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix} .$$</p>
+<p>如果$ad-bc=0$，$A^{-1}$存在吗？</p>
+<p>$14$.证明任意矩阵</p>
+<p>$$A=\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} $$</p>
+<p>满足关系式</p>
+<p>$$A^2 =(a+d)A-(ad-bc)E \label{23} \tag{23}$$</p>
+<p>(换言之，$A$是二次方程$x^2-(a+d)x+(ad-bc)=0$的一个“根”).</p>
+<p>$15$.如果$ad-bc\neq 0$，运用关系$\eqref{23}$求逆矩阵$A^{-1}$.</p>
+<p>$16$.证明若$\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} ^m =0$，则$\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} ^2 =0$.</p>
+<p>$17$.阐明下述论断：设$m\times s$矩阵$X$被水平线和竖直线划分为块(或长方块)，</p>
+<p>$$X=\begin{pmatrix} X_{11} &amp; X_{12} &amp; \cdots &amp; X_{1k} \\ X_{21} &amp; X_{22} &amp; \cdots &amp; X_{2k} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ X_{l1} &amp; X_{l2} &amp; \cdots &amp; X_{lk} \\ \end{pmatrix} $$</p>
+<p>这里$X_{i1} ,\cdots ,X_{ik}$都是$m_i$行矩阵$(m_1 +\cdots +m_i =m)$，而$X_{1j} ,\cdots ,X_{lj}$，都是$s_j$列矩阵$(s_1 +\cdots +s_k =s)$.</p>
+<p>如果</p>
+<p>$$Y=\begin{pmatrix} Y_{11} &amp; Y_{12} &amp; \cdots &amp; Y_{1r} \\ Y_{21} &amp; Y_{22} &amp; \cdots &amp; Y_{2r} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ Y_{k1} &amp; Y_{k2} &amp; \cdots &amp; Y_{kr} \\ \end{pmatrix} $$</p>
+<p>是一个$s\times n$矩阵，它的块$Y_{ij}$的阶是$s_i \times n_j$($n_1 +\cdots +n_r =n$)，则乘积$Z=XY$是有意义的，并且矩阵$Z=(z_{ij})$可以分块计算，它的块$Z_{ij}$可按公式$\eqref{7}$形式地写出：</p>
+<p>$$Z_{ij} =X_{i1} Y_{1j} +X_{i2} Y_{2j} +\cdots +X_{ik} Y_{kj} .$$</p>
+<p>由于矩阵$X_{i\nu } ,Y_{\nu j}$的阶所满足的条件，乘积$X_{i\nu } Y_{\nu j}$也是有意义的.矩阵的分块法即便在最简单的情况下也会带来方便，例如</p>
+<p>$$\begin{pmatrix} E &amp; A \\ 0 &amp; E \end{pmatrix} \begin{pmatrix} A &amp; 0 \\ -E &amp; B \end{pmatrix} =\begin{pmatrix} 0 &amp; AB \\ -E &amp; B \end{pmatrix} ，$$</p>
+<p>此处$A,B,E,0\in M_n(\mathbb{R} )$($E$是单位矩阵，$0$是零矩阵).</p>
+<p>$18$.令矩阵</p>
+<p>$$X=(x_{ij}) \in M_n (\mathbb{R} ) ,T=(t_{ij}) \in M_n (\mathbb{R} ).$$</p>
+<p>证明$T$左乘$X$得到行$X_{(1)} ,\cdots ,X_{(n)}$的线性组合，而右乘得到列$X^{(1)} ,\cdots ,X^{(n)}$的线性组合，特别注意到如果</p>
+<p>$$T=\begin{pmatrix} 1 &amp; t_{12} &amp; t_{13} &amp; \cdots &amp; t_{1n} \\ &amp; 1 &amp; t_{23} &amp; \cdots &amp; t_{2n} \\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 \end{pmatrix} \begin{pmatrix} A &amp; 0 \\ -E &amp; B \end{pmatrix} =\begin{pmatrix} 0 &amp; AB \\ -E &amp; B \end{pmatrix} $$</p>
+<p>是上三角矩阵，则</p>
+<p>$$TX=\begin{pmatrix} X_{(1)} + t_{12} &amp; X_{(2)} &amp; +\cdots + t_{1n} &amp; X_{(n)} \\  &amp; X_{(2)} &amp; +\cdots + t_{2n} &amp; X_{(n)} \\ &amp; &amp; &amp; \cdots \\ &amp; &amp;  &amp; X_{(n)} \end{pmatrix} $$</p>
+<p>是从$X$经过一系列(Ⅱ)型初等变换得到的矩阵.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数数论/">代数数论</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/抽象代数/">抽象代数</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/01/25/2015/01/daishuxueyinlun123/" data-title="《代数学引论(第一卷)基础代数》 第2章 矩阵 3 线性映射. 矩阵的运算 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/01/27/2015/01/shuxuezhenbao11/" title="《数学珍宝-历史文献精选》I 古代与中世纪的东方 1. 埃及纸草书中的数学问题">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《数学珍宝-历史文献精选》I 古代与中世纪的东方 1. 埃及纸草书中的数学问题</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/01/23/2015/01/kaoyanshiti5/"  title="浙江大学2010年攻读硕士学位研究生入学考试试题">
+ <strong>下一篇：</strong><br/> 
+ <span>浙江大学2010年攻读硕士学位研究生入学考试试题
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵和映射"><span class="toc-number">1.</span> <span class="toc-text">矩阵和映射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的乘积"><span class="toc-number">2.</span> <span class="toc-text">矩阵的乘积</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的转置"><span class="toc-number">3.</span> <span class="toc-text">矩阵的转置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵乘积的秩"><span class="toc-number">4.</span> <span class="toc-text">矩阵乘积的秩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方阵"><span class="toc-number">5.</span> <span class="toc-text">方阵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#矩阵的等价类"><span class="toc-number">6.</span> <span class="toc-text">矩阵的等价类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逆矩阵的计算"><span class="toc-number">7.</span> <span class="toc-text">逆矩阵的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解空间"><span class="toc-number">8.</span> <span class="toc-text">解空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">9.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

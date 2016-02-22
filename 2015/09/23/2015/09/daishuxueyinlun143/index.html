@@ -1,0 +1,909 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="环和域">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域">
+<meta property="og:url" content="http://yoursite.com/2015/09/23/2015/09/daishuxueyinlun143/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="环和域">
+<meta property="og:updated_time" content="2015-10-21T11:35:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域">
+<meta name="twitter:description" content="环和域">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/09/23/2015/09/daishuxueyinlun143/" title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域" itemprop="url">《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2015-09-23T08:19:17.000Z" itemprop="datePublished"> 發表於 2015-09-23</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环的定义和一般性质"><span class="toc-number">1.</span> <span class="toc-text">环的定义和一般性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式-剩余类环"><span class="toc-number">2.</span> <span class="toc-text">同余式.剩余类环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#环的同态"><span class="toc-number">3.</span> <span class="toc-text">环的同态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#环的类型-域"><span class="toc-number">4.</span> <span class="toc-text">环的类型.域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#域的特征"><span class="toc-number">5.</span> <span class="toc-text">域的特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于线性方程组的注记"><span class="toc-number">6.</span> <span class="toc-text">关于线性方程组的注记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">7.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="环的定义和一般性质">环的定义和一般性质</h2><p>代数结构$(\mathbb{Z} ,+),(\mathbb{Z} ,\cdot )$是最先进入我们视线的幺半群的例子.后来看到$(\mathbb{Z} ,+)$是阿贝尔群（事实上是循环群）.但人们经常把这两个结构合并在一起，得到一个在数学上称之为环的代数结构.初等算术最重要的两种运算的关系依赖于分配律$(a+b)c=ac+bc$，表面看来它很平凡，那是因为我们已经习惯于它的存在.如果我们试图，例如，将代数结构$(\mathbb{Z} ,+),(\mathbb{Z} ,\circ )$联系在一起，其中$n\circ m=n+m+nm$，就会发现找不到两个二元运算之间如此之好的协调性.在列举更多的例子之前，先给出环的精确定义.</p>
+<p><strong>定义</strong>$\quad $设$R$是一个非空集合，在$R$上定义了两种（二元代数）运算$+$（加法）和$\cdot $乘法，满足下述条件：</p>
+<p>$\mathrm{R} 1)\;(R,+)$是阿贝尔群；</p>
+<p>$\mathrm{R} 2)\;(R,\cdot )$是半群；</p>
+<p>$\mathrm{R} 3)\;$加法和乘法运算以分配律相联系（换言之，乘法对加法的分配律），即</p>
+<p>$$(a+b)c=ac+bc,c(a+b)=ca+cb$$</p>
+<p>对任意的$a,b,c\in R$成立.</p>
+<p>则称$(R,+,\cdot )$是一个<strong>环</strong>.</p>
+<p>$(R,+)$叫作<strong>环的加法群</strong>，而$(R,\cdot )$叫作它的<strong>乘法群</strong>.如果$(R,\cdot )$是一个幺半群，则称$(R,+,\cdot )$是<strong>有单位元的环</strong>.</p>
+<p>环的单位元通常简记作$1$.$1$的存在性有时列入环的定义中，但我们不这样做.</p>
+<p>在应用中和广义环论中（这一理论正在蓬勃发展），人们有时研究另外的代数结构.其中条件$\mathrm{R} 2)\;$或是取消，或是视具体问题代之以其他条件.在这种情况下，称它为<strong>非结合环</strong>.但我们在这里只考虑通常的（结合）环.这就意味着我们可以根据$\S 1$的定理$1$，不必在意环中任意$k$个元素的乘积中括号的位置.</p>
+<p>环$R$的子集$L$叫作一个<strong>子环</strong>，如果</p>
+<p>$$\forall x,y\in L\Rightarrow x-y\in L 和xy \in L,$$</p>
+<p>也就是说，$L$是环的加法群的子群和乘法半群的子半群.</p>
+<p>显然，环$R$的任意一簇子环的交仍然是一个子环（证法与$\S 2 $的习题$1$同），于是谈论由子集$T\subset R$生成的子环$\langle T\rangle \subset R$是有意义的.根据定义，$\langle T\rangle $是$R$中包含有$T$的所有的子环之交.如果$T$自身已经是一个子环，则$\langle T\rangle =T$.</p>
+<p>如果任取$x,y\in R$，有$xy=yx$，则环$R$叫作<strong>交换的</strong>（与群不同，交换环通常不称作阿贝尔的）.</p>
+<p>环的概念是非常广泛的.不仅如此，初看起来非常特殊的交换环类是几十年来强有力的研究课题，并且交换环论目前已与代数几何交织在一起，后者是界于代数、几何和拓扑之间的一个漂亮的数学分支.</p>
+<p><strong>例1</strong>$\quad (\mathbb{Z} ,+,\cdot )$是带有通常的加法和乘法运算的<strong>整数环</strong>.能被$m$整除的整数集$m\mathbb{Z} $是$\mathbb{Z} $中的一个子环（当$m &gt; 1$时没有单位元）.类似地，$\mathbb{Q} $和$\mathbb{R} $也是有单位元的环，且包含关系$\mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} $给出了环$\mathbb{R} $中的一个子环列.</p>
+<p><strong>例2</strong>$\quad $我们在第$2$章中引进并详细讨论过$M_n (\mathbb{R} )$，$n$阶方阵加法和乘法的性质表明，$M_n (\mathbb{R} )$是一个有单位元$1=E$的环.称之为$\mathbb{R} $上的全矩阵环，也叫作$\mathbb{R} $上的$n$阶方阵环（或$\mathbb{R} $上$n\times n$阶的矩阵环）.因为当$n &gt; 1$时，矩阵的乘法是不交换的，$M_n (\mathbb{R} )$是一个非交换环.元素取自$\mathbb{Q} $和$\mathbb{Z} $的同样阶数的方阵$M_n (\mathbb{Q} )$和$M_n (\mathbb{Z} )$分别是$M_n (\mathbb{R} )$的子环.一般地，$M_n (\mathbb{R} )$中饱含着各种各样的子环.它们将不断地以自然的方式出现在我们的教程中.我们进一步指出，也可考察任意交换环$R$上的$n$阶方阵环$M_n (R)$，因为任意两个矩阵$A,B\in M_n (R)$在相加和相乘后仍然是元素取自$R$的矩阵，$M_n (R)$中的分配律可由$R$的分配律得到.这些都可以从第$2$章$\S 3$的第$3$段和第$5$段所列的矩阵运算法则中直接推导出来.</p>
+<p><strong>例3</strong>$\quad $除矩阵环外，在各个数学领域中，<strong>函数环</strong>亦有广泛的应用.设$X$是任意集合，$R$是做任意环.进一步设$R^X =\lbrace X\to R\rbrace $是所有函数（或映射）$f\colon X\to R$组成的集合，如下定义两个二元运算——逐点相加$f+g$和逐点相乘$fg$，</p>
+<p>$$(f+g)(x)=f(x)\oplus g(x),$$</p>
+<p>$$(fg)(x)=f(x)\odot g(x)$$</p>
+<p>（其中$\oplus $和$\odot $分别表示$R$当中的加法和乘法运算）.显然，这不是函数的合成，在线性映射的情况下，全成法则导致了环$M_n $.而我们在这里建立的逐点相加和逐点相乘，反映了数学分析的观点，例如当$X=\mathbb{R} ,R=\mathbb{R} $时，函数$\tan{} $和$\sin{} $的乘积为$\tan{} \cdot \sin{} \colon x\mapsto \tan{x} \cdot \sin{x} $，而不是$\tan{} \circ \sin{} \colon x\mapsto \tan{(\sin{x} )} $.</p>
+<p>容易验证$R^X$满足环的所有条件.比如根据$R$中运算的分配律，我们有</p>
+<p>$$[f(x)\oplus g(x)]\odot h(x)=f(x)\odot h(x)\oplus g(x)\odot h(x)$$</p>
+<p>对任意三个函数$f,g,h\in R^X $和任意$x\in X$成立，根据逐点运算的定义，这就给出了$(f+g)h=fh+gh$.第二个分配律的正确性可类似建立.若$0,1$是$R$中的零元和单位元，则常函数</p>
+<p>$$0_X \colon x\mapsto 0,1_X \colon x\mapsto 1$$</p>
+<p>分别是$R^X$中的零元和单位元.如果环$R$是交换的，则函数环$R^X$也是交换的.</p>
+<p>环$R^X$中包含各类子环，它们可以用函数的各种特殊性质来定义.例如，设$X=[0,1]$是$\mathbb{R} $中的一个闭区间，且$R=\mathbb{R} $，令$\mathbb{R} ^{[0,1]}$是定义在$[0,1]$区间上的所有实值函数环，它包含有有界函数组成的子环$\mathbb{R}_b^{[0,1]} $，连续函数的子环$\mathbb{R}_c^{[0,1]} $，连续可微函数的子环$\mathbb{R}_d^{[0,1]} $，等等，因为所列举的性质都在函数的加法（减法）和乘法下保持下来.</p>
+<p>任取$a\in \mathbb{R} $，定义一个常函数$a_X \colon x\mapsto a,\forall x\in X$，那么嵌入映射$a\mapsto a_x $使我们可以将$\mathbb{R} $看作$\mathbb{R} ^X$的一个子环.总之，几乎每一个自然的函数类都对应于$\mathbb{R} ^X$中的一个子环.</p>
+<p><strong>例4</strong>$\quad $令$(A,+)$是一个加法阿贝尔群，任取$x,y\in A$，法则$xy=0$建立了$A$的一个<strong>零乘法环结构</strong>.</p>
+<p>环的很多性质平行于群的对应的性质，更一般地说，平行于带有结合运算的集合的性质.例如对所有的非负整数$m,n$和$a\in R,a^m a^n=a^{m+n} $，$(a^m)^n=a^{mn} $（与$\S 1$的公式$(2)$相比较）.而由环的定义中的三个条件导出的环的其他更特殊的性质可以从$\mathbb{Z} $的性质得到启示.我们列举其中的几条.首先对任意$a\in R$，</p>
+<p>$$a\cdot 0=0\cdot a=0.\label{1} \tag{1} $$</p>
+<p>事实上，$a+0=a\Rightarrow a(a+0)=aa\Rightarrow a^2+a\cdot 0=a^2\Rightarrow a^2+a\cdot 0=a^2+0\Rightarrow a\cdot 0=0$（类似地，$0\cdot a=0$）.</p>
+<p>现在假定$0=1$，则任取$a\in R$我们得到$a=a\cdot 1=a\cdot 0=0$，即$R$中仅有零元，因而在非平凡的环中，永远有$0\neq 1$，其次我们有</p>
+<p>$$(-a)\cdot b=a(-b)=-(ab),\label{2} \tag{2} $$</p>
+<p>这是因为，例如，从$\eqref{1} $和分配律推出</p>
+<p>$$0=a\cdot 0=a(b-b)=ab+a(-b)\Rightarrow a(-b)=-(ab).\label{3} \tag{3} $$</p>
+<p>因为$-(-a)=a$，由$\eqref{2} $得到等式$(-a)(-b)=ab$（例如$(-1)(-1)=1$），和$-a=(-1)\cdot a$.</p>
+<p>从分配律可以得到<strong>广义分配律</strong></p>
+<p>$$(a_1 +\cdots +a_n )(b_1 +\cdots +b_m ) =\sum_{i=1}^n \sum_{j=1}^m a_i b_j \label{4} \tag{4} $$</p>
+<p>证明并不困难，先令$m=1$对$n$作归纳，然后再对$m$作归纳.现在利用$\eqref{1} $，$\eqref{2} $和$\eqref{3} $式得到</p>
+<p>$$n(ab)=(na)b=a(nb)$$</p>
+<p>对任意$n\in \mathbb{Z} $和$a,b\in R$成立.</p>
+<p>最后我们指出，任取$a,b\in R$，牛顿二项式公式</p>
+<p>$$(a+b)^n=\sum_{i=0}^n {n\choose i} a^i b^{n-i} \label{5} \tag{5} $$</p>
+<p>仅当$R$是交换环时成立.在$\eqref{5} $式的证明中需要用到$\eqref{4} $，类似于在第$1$章$\S 7$中对特殊情况$R=\mathbb{Z} $的处理.</p>
+<h2 id="同余式-剩余类环">同余式.剩余类环</h2><p>设$m$是给定的自然数，$m &gt; 1$.集合$m\mathbb{Z} $显然不仅在加法运算下封闭，也在乘法运算下封闭，并满足环的定义中的三个条件.</p>
+<p>现在我们来利用子环$m\mathbb{Z} \subset \mathbb{Z} $，构造一个只含有限个元素的非零环.为此引入</p>
+<p><strong>定义</strong>$\quad $两个整数$n,n’$称为<strong>模</strong>$m$<strong>同余</strong>，若用$m$去除它们时余数相等.记作$n\equiv n’(m)$或$n\equiv n’\pmod m$，这个式子叫作<strong>模</strong>$m$<strong>的同余式</strong>.</p>
+<p>这样$\mathbb{Z} $就被划分为数的类，每一类中的数模$m$同余，称之为模$m$的<strong>剩余类</strong>.每个剩余类形如</p>
+<p>$$\lbrace r\rbrace_m =r+m\mathbb{Z} =\lbrace r+mk\vert k\in \mathbb{Z} \rbrace ,$$</p>
+<p>因而</p>
+<p>$$\mathbb{Z} =\lbrace 0\rbrace_m \bigcup \lbrace 1\rbrace_m \bigcup \cdots \bigcup \lbrace m-1\rbrace_m .\label{6} \tag{6} $$</p>
+<p>根据定义，$n\equiv n’(m)\Leftrightarrow n-n’$被$m$整除.将关系式$m\vert (n-n’)$写成同余式$n\equiv n’(m)$更加方便，这些同余式可以进行通常的等式运算.若$k\equiv k’(m)$，且$l\equiv l’(m)$，则$k\pm l\equiv k’\pm l’(m)$，$kl\equiv k’l’(m)$.特别地$k\equiv k’(m)\Rightarrow ks\equiv k’s(m)$对任意$s\in \mathbb{Z} $成立.</p>
+<p>这样，可以对任意两个类$\lbrace k\rbrace_m $和$\lbrace l\rbrace_m $定义和或积，所得结果是与代表元$k,l$的选取无关的类，也就是说，在模$m$的剩余类的集合$\mathbb{Z}_m =\mathbb{Z} /m\mathbb{Z} $上诱导了唯一确定的运算$\oplus $和$\odot \colon $</p>
+<p>$$\begin{align}<br>\lbrace k\rbrace_m \oplus \lbrace l\rbrace_m &amp; =\lbrace k+l\rbrace_m ,\\<br>\lbrace k\rbrace_m \odot \lbrace l\rbrace_m &amp; =\lbrace kl\rbrace_m . \\<br>\end{align} \label{7} \tag{7} $$</p>
+<p>由于这些运算归结为对取自剩余类中的数的相应运算，即在$\mathbb{Z} $的元素上的运算，故$\lbrace \mathbb{Z}_m ,\oplus ,\odot \rbrace $也是一个带有单位元$\lbrace 1\rbrace_m =1+m\mathbb{Z} $的交换环.称为<strong>模</strong>$m$<strong>的剩余类环</strong>.当下标$m$固定时，习惯于用$\overline{k} $代替$\lbrace k\rbrace_m $，故</p>
+<p>$$\begin{align}<br>\overline{k} \oplus \overline{l} &amp; =\overline{k+l} ,\\<br>\overline{k} \odot \overline{l} &amp; =\overline{kl} . \\<br>\end{align}$$</p>
+<p>在$\mathbb{Z}_m $当中用代表元代替剩余类乍看起来是不严肃的，但它的明显的技术上的优势在于，放弃上横线和花括号，仅依赖于模$m$代表元的某个确定集合，通常取集合$\lbrace 0,1,2,\cdots ,m-1\rbrace $，称之为<strong>模</strong>$m$<strong>的剩余类的导出集</strong>.在这一约定下，我们有比如$-k=m-k$，$2(m-1)=-2=m-2$.</p>
+<p>于是，有限环是存在的.我们给出三个简单的例子，指明它们的加法表和乘法表：</p>
+<p>$$<br>\mathbb{Z}_2 \colon \quad \begin{array}{c|cc}<br>{+} &amp; 0 &amp; 1 \\<br>\hline<br>0 &amp; 0 &amp; 1 \\<br>1 &amp; 1 &amp; 0 \\<br>\end{array} \quad<br>\begin{array}{c|cc}<br>\cdot &amp; 0 &amp; 1 \\<br>\hline<br>0 &amp; 0 &amp; 0 \\<br>1 &amp; 0 &amp; 1 \\<br>\end{array}<br>$$</p>
+<p>$$<br>\mathbb{Z}_3 \colon \quad \begin{array}{c|ccc}<br>{+} &amp; 0 &amp; 1 &amp; 2\\<br>\hline<br>0 &amp; 0 &amp; 1 &amp; 2\\<br>1 &amp; 1 &amp; 2 &amp; 0\\<br>2 &amp; 2 &amp; 0 &amp; 1\\<br>\end{array} \quad<br>\begin{array}{c|ccc}<br>\cdot &amp; 0 &amp; 1 &amp; 2\\<br>\hline<br>0 &amp; 0 &amp; 0 &amp; 0\\<br>1 &amp; 0 &amp; 1 &amp; 2\\<br>2 &amp; 0 &amp; 2 &amp; 1\\<br>\end{array}<br>$$</p>
+<p>$$<br>\mathbb{Z}_4 \colon \quad \begin{array}{c|cccc}<br>{+} &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>\hline<br>0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>1 &amp; 1 &amp; 2 &amp; 3 &amp; 0\\<br>2 &amp; 2 &amp; 3 &amp; 0 &amp; 1\\<br>3 &amp; 3 &amp; 0 &amp; 1 &amp; 2\\<br>\end{array} \quad<br>\begin{array}{c|cccc}<br>\cdot &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>\hline<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\<br>1 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>2 &amp; 0 &amp; 2 &amp; 0 &amp; 2\\<br>3 &amp; 0 &amp; 3 &amp; 2 &amp; 1\\<br>\end{array}<br>$$</p>
+<p>剩余类环$\mathbb{Z} $很久以来就是数论学家感兴趣的对象，而在代数中，它是各类一般概念的出发点.</p>
+<h2 id="环的同态">环的同态</h2><p>根据$\eqref{7} $，映射$f\colon n\mapsto \lbrace n\rbrace_m $有下述性质：</p>
+<p>$$f(k+l)=f(k)\oplus f(l),f(kl)=f(k)\odot f(l).$$</p>
+<p>这就使得我们可以在下述的一般定义下称环$\mathbb{Z} $与$\mathbb{Z}_m $为同态.</p>
+<p><strong>定义</strong>$\quad $设$(R,+,\cdot )$和$(R’,\oplus ,\odot )$是两个环.映射$f\colon R\to R’$称为<strong>同态</strong>，若$f$保持环的两种运算，即</p>
+<p>$$\begin{align}<br>f(a+b) &amp; =f(a)\oplus f(b) ,\\<br>f(ab) &amp; =f(a)\odot f(b). \\<br>\end{align}$$</p>
+<p>这时易见，$f(0)=0’$，且$f(na)=nf(a),n\in \mathbb{Z} $.</p>
+<p>集合</p>
+<p>$$\ker f=\lbrace a\in R\vert f(a)=0’\rbrace $$</p>
+<p>叫作同态$f$的<strong>核</strong>.显然$\ker f$是$R$的一个子环.</p>
+<p>与群的情况一样（见$\S 2$第$5$段的术语），同态</p>
+<p>$$f\colon R\to R’$$</p>
+<p>称为：</p>
+<p><strong>单同态</strong>，若$\ker f=0$；</p>
+<p><strong>满同态</strong>，若像与$R’$重合，即</p>
+<p>$$\mathrm{Im} f=f(R)=\lbrace a’\in R’\vert a’=f(a)\rbrace =R’;$$</p>
+<p><strong>同构</strong>，若映射$f$既单且满.</p>
+<p>两个环同构这一事实简短地记作$R\cong R’$.</p>
+<p>考察前面给出的映射$f\colon n\mapsto \lbrace n\rbrace_m $，$f$显然是一个核为$\ker f=m\mathbb{Z} $的满同态$\mathbb{Z} \to m\mathbb{Z} $.</p>
+<p>如果仅仅考察带有单位元的环，那么需要在同态$f\colon R\to R’$中合理地加入条件</p>
+<p>$$f(1)=1’.$$</p>
+<p>在满同态和同构的情况下，这个条件是自然满足的.</p>
+<p>同构的环具有相同的代数性质，而数学上的真正兴趣在于环的那些在同构映射上保持不变的性质.因此环$\mathbb{Z}_m $既可看作模$m$的剩余类集，也可看作这些类的代表元集.</p>
+<h2 id="环的类型-域">环的类型.域</h2><p>在我们熟知的数环$\mathbb{Z} ,\mathbb{Q} $和$\mathbb{R} $中，从$ab=0$可得$a=0$或$b=0$.但在任何上述环上的方阵环中，却没有这个性质.利用矩阵$E_{ij}$（见第$2$章$\S 3$定理$4$的证明），当$j\neq k$时，我们有等式$E_{ij} E_{ki} =0$，尽管$E_{ij} \neq 0$，且$E_{ki} \neq 0$.我们指出$E_{ik} E_{kj} =E_{ij} \neq 0$.人们可能会认为，如此不正常是由于环$M_n $的非交换性，但事实并非如此.我们在第$2$段中已经看到，在交换环$\mathbb{Z}_4 $中有等式$2\odot 2=0$，与人们所共知的真理“$2$乘以$2$等于$4$”相违背.再给出两个例子.</p>
+<p><strong>例5</strong>$\quad $数对$(a,b)$（此处可设$a,b$取自$\mathbb{Z} ,\mathbb{Q} $或$\mathbb{R} $）,连同如下定义的加法和乘法显然构成一个环：</p>
+<p>$$\begin{align}<br>(a_1 ,b_1 )+(a_2 ,b_2 ) &amp; =(a_1 +a_2 ,b_1 +b_2 ) ,\\<br>(a_1 ,b_1 )\cdot (a_2 ,b_2 ) &amp; =(a_1 a_2 ,b_1 b_2 ), \\<br>\end{align}$$</p>
+<p>这个环是交换的，带有单位元$(1,1)$.我们再遇到了同样的现象：$(1,0)\cdot (0,1)=(0,0)=0$.</p>
+<p><strong>例6</strong>$\quad $在实函数环$\mathbb{R}^{\mathbb{R} } $中（见第$1$段的例$3$），函数$f\colon x\mapsto \vert x\vert +x $和$g\colon x\mapsto \vert x\vert -x$具有这样的性质：当$x\leq 0$时，$f(x)=0$，而当$x\geq 0$时$g(x)=0$.所以它们的逐点乘积$fg$是零函数，尽管$f\neq 0$且$g\neq 0$.</p>
+<p><strong>定义</strong>$\quad $在环$R$中，如果$a\neq 0,b\neq 0$，但$ab=0$，则$a$叫作<strong>左零因子</strong>，而$b$叫作<strong>右零因子</strong>（在交换环$R$中简称为零因子）.在非零环$R$中，零本身叫作平凡零因子.如果环$R$除$0$外没有其他的零因子，则$R$叫作<strong>无零因子环</strong>.如果一个交换环$R$含有$1\neq 0$，并且无零因子，则称$R$为<strong>整环</strong>（<strong>整性环</strong>或<strong>具有整性</strong>）.</p>
+<p><strong>定理1</strong>$\quad $有单位元的非平凡交换环$R$是整环，当且仅当在$R$中消去律成立，即对任意$a,b,c\in R$，</p>
+<p>$$ab=ac,a\neq 0\Rightarrow b=c.$$</p>
+<p><strong>证明</strong>$\quad $若在$R$中有消去律，那么从$ab=0=a\cdot 0$推出或者$a=0$，或者$a\neq 0$但$b=0$.反之:如果$R$是整环，则</p>
+<p>$$ab=ac,a\neq 0\Rightarrow a(b-c)=0\Rightarrow b-c=0\Rightarrow b=c.$$</p>
+<p>在有单位元的环$R$中自然要考察可逆元素的集合.元素$a$称为<strong>可逆的</strong>（或<strong>单位</strong>），若存在元素$a^{-1} $，使得$aa^{-1}=1=a^{-1}a$.准确地说，应该谈元素是<strong>右可逆的</strong>或<strong>左可逆的</strong>（它们分别指存在元素$b$，使$ab=1$或$ba=1$），但在交换环或无零因子环中，这两个概念是一致的.事实上，在无零因子环中从$ab=1$得到$aba=a,a(ba-1)=0$，由于$a\neq 0$，故$ba-1=0$，即$ba=1$.</p>
+<p>我们知道，例如，在环$M_n $中，可逆元素恰为行列式不为零的矩阵.一个可逆元素$a$不可能是零因子：</p>
+<p>$$ab=0\Rightarrow a^{-1}(ab)=0\Rightarrow (a^{-1}a)b=0\Rightarrow 1\cdot b=0\Rightarrow b=0$$</p>
+<p>（类似地，$ba=0\Rightarrow b=0$）.所以毫不奇怪，成立如下的</p>
+<p><strong>定理2</strong>$\quad $设$R$是有单位元的环，则环$R$中的全体可逆元素构成一个乘法群$U(R)$.</p>
+<p><strong>证明</strong>$\quad $事实上，$U(R)$包含单位元，$a\in U(R)\Rightarrow a^{-1}\in U(R)$，且$R$中的乘法满足结合律，因而我们只需验证$U(R)$对于乘法封闭，即从$U(R)$中任取两个元素$a$和$b$，乘积$ab$也在$U(R)$中.但这是显然的，因为</p>
+<p>$$(ab)^{-1} =b^{-1}a^{-1} \quad (ab\cdot b^{-1} a^{-1}=a(bb^{-1})a^{-1}=a\cdot 1\cdot a^{-1}=aa^{-1}=1),$$</p>
+<p>表明$ab$是可逆的.</p>
+<p>不难看到，$U(\mathbb{Z} )=\lbrace \pm 1\rbrace $是一个$2$阶循环群.</p>
+<p>如果将环的定义中的公理$\mathrm{R} 2)$换成更强的条件，我们可以得到一类非常有趣的环称为<strong>除环</strong>或<strong>斜环</strong>.</p>
+<p>$\mathrm{R} 2’)\;R^{\ast } =R\backslash \lbrace 0\rbrace $关于乘法运算构成一个群.</p>
+<p>除环永远没有零因子，其中的每一个非零元素都可逆，在交换除环中，加法和乘法运算几乎是完全对称的，这种环叫作<strong>域</strong>.</p>
+<p>我们再次强调</p>
+<p><strong>定义</strong>$\quad $设$P$是一个有单位元$1\neq 0$的交换环，如果$P$的每一个非零元素都可逆，则称$P$为一个<strong>域</strong>.群$P^{\ast } =U(P)$叫作<strong>域的乘法群</strong>.</p>
+<p>域是自身的两个阿贝尔群，加法群和乘法群的混合物，它们用分配律联系在一起（现在由于交换性，只用一个分配律就够了）.</p>
+<p>乘积$ab^{-1}$一般写成<strong>分式</strong>的形式$\dfrac{a}{b} $（或<strong>比例式，商</strong>），为了节省篇幅，有时借助斜线写成$a/b$.分式$a/b$仅当$b\neq 0$时有意义，它是方程$bx=a$的唯一解.</p>
+<p>分式的运算遵循下述法则：</p>
+<p>$$\begin{array}{l}<br>\dfrac{a}{b} =\dfrac{c}{d} \Leftrightarrow ad=bd,\quad b,d\neq 0,\\<br>\dfrac{a}{b} +\dfrac{c}{d} =\dfrac{ad+bc}{bd} ,\quad b,d\neq 0,\\<br>-\dfrac{a}{b} =\dfrac{-a}{b} =\dfrac{a}{-b} ,\quad b\neq 0,\\<br>\dfrac{a}{b} \cdot \dfrac{c}{d} =\dfrac{ac}{bd} ,\quad b,d\neq 0,\\<br>\left( \dfrac{a}{b} \right) ^{-1} =\dfrac{b}{a} ,\quad a,b\neq 0.\\<br>\end{array} \label{8} \tag{8} $$</p>
+<p>这是在中学就已经知道的通常的法则，但我们不仅需要记住它，也要从域的公理出发推导它，这样做并不困难.我们来看一下法则$\eqref{8} $中第二个式子的推导就足够了.设$x=a/b$，且$y=c/d$分别是方程$bx=a$和$dy=c$的解.从这两个方程得到</p>
+<p>$$dbx=da,bdy=bc\Rightarrow bd(x+y)=da+bc\Rightarrow t=x+y=\dfrac{da+bc}{bd} $$</p>
+<p>是方程$bdt=da+bc$的唯一解.</p>
+<p>如果域$P$中的子环$F$自身也是一个域，则称$F$为$P$的<strong>子域</strong>.例如有理数域$\mathbb{Q} $是实数域$\mathbb{R} $的子域.</p>
+<p>当域$F\subset P$时，我们也称$P$是$F$的一个<strong>扩域</strong>.由子域的定义易见，域$P$的零元和单位元属于$F$，并且也是$F$的零元和单位元.若某元素$a\in P$，但$a\notin F$，取域$P$中包含有$F$和元素$a$的所有子域的交$F_1 $，则$F_1 $是包含有集合$\lbrace F,a\rbrace $最小的子域（论证与群的情况类似，见$\S 2 $习题$1$）.</p>
+<p>我们称$F_1 $是由域$F$添加元素$a$得到的扩域，记作$F_1 =F(a)$.类似地，域$P$的子域$F_1 =F(a_1 ,\cdots ,a_n )$是由$F$添加$n$个元素$a_1 ,\cdots ,a_n $得到的.</p>
+<p>易见$\mathbb{Q} (\sqrt{2} )$由形如$a+b\sqrt{2} $的数组成，此处$a,b\in \mathbb{Q} $，这是因为$(\sqrt{2} )^2=2$，当$a+b\sqrt{2} \neq 0$时，$\dfrac{1}{a+b\sqrt{2} } =\dfrac{a}{a^2-2b^2} -\dfrac{b}{a^2-2b^2} \sqrt{2} $.对于域$\mathbb{Q} (\sqrt{3} ),\mathbb{Q} (\sqrt{5} )$等等有类似的结果.</p>
+<p>域$P$与$P’$称为<strong>同构的</strong>，若它们作为环是同构的.根据定义，对于任意同构映射$f$，$f(0)=0’,f(1)=1’$.谈域的同态意义不大，因为</p>
+<p>$$\begin{align}<br>\ker f\neq 0 &amp; \Rightarrow f(a)=0,a\neq 0\Rightarrow f(1)=f(aa^{-1})=f(a)f(a^{-1})=0\cdot f(a^{-1})=0\\<br> &amp; \Rightarrow \forall b,f(b)=f(1\cdot b)=f(1)f(b)=0\cdot f(b)=0\Rightarrow \ker f=P. \\<br>\end{align}$$</p>
+<p>但是，域的<strong>自同构</strong>，即域$P$到自身的同构映射与域的最本质的性质紧密相联，也是在伽罗瓦理论中研究这些本质性质的强有力的工具.</p>
+<p>域扩张的概念源自人类扩大数的范围的愿望.这一漫长的历史过程可以粗略地体现在下图中：</p>
+<p>$$\begin{align}<br>\lbrace 1\rbrace \rightsquigarrow \lbrace 1+1=2\rbrace &amp; \rightsquigarrow \mathbb{N} \rightsquigarrow \lbrace \mathbb{N} ,0\rbrace \rightsquigarrow \\<br> &amp; \rightsquigarrow \mathbb{Z} \rightsquigarrow \mathbb{Q} \rightsquigarrow \mathbb{Q} (\sqrt{2} )\rightsquigarrow \mathbb{R} \\<br>\end{align}$$</p>
+<p>这个过程延续至今，形成了分支众多的域系，已经远离了人们所熟悉的通常的数系.在这一过程中，并非每个阶段都是纯代数的.例如从有理数过渡到实数时，使用了连续性和完备性的概念（柯西序列极限的存在性），这件事已在数学分析课程中讲过了.用完全类似的方法可以构造$p-\mathrm{adic} $数域，我们在这里不对它展开讨论，在此基础上引出的现代$p-\mathrm{adic} $分析是数学的三个分支：数论、代数和分析的杰出产物.</p>
+<h2 id="域的特征">域的特征</h2><p>我们在第$2$段中构造了有限剩余类环$\mathbb{Z}_m $，其元素为</p>
+<p>$$\overline{0} ,\overline{1} ,\overline{2} ,\cdots ,\overline{m-1} ,$$</p>
+<p>加法运算是$\overline{k} +\overline{l} =\overline{k+l} $，乘法运算是$\overline{k} \cdot \overline{l} =\overline{kl} $（我们不再使用符号$\oplus $和$\odot $）.如果$m=st$，$s &gt; 1,t &gt; 1$，则$\overline{s} \cdot \overline{t} =\overline{m} =\overline{0} $，即$\overline{s} $和$\overline{t} $是$\mathbb{Z}_m $中的零因子.</p>
+<p>现在设$m=p$是一个素数.我们断言，$\mathbb{Z}_p $是一个域（它包含$p$个元素）.当$p=2,3$时，从第$2$段中的乘法表可直接看出这一点.在一般情况下，只要对任意$\overline{s} \in \mathbb{Z}_p^{\ast } $，指出逆元$\overline{s}’$的存在性就可以了（整数$s$和$s’$显然不能被$p$整除）.</p>
+<p>考察元素</p>
+<p>$$\overline{s} ,\overline{2s} ,\cdots ,\overline{(p-1)s} .\label{9} \tag{9} $$</p>
+<p>它们都不等于零，这是因为当$k=1,2,\cdots ,p-1$时</p>
+<p>$${s\not\equiv 0\pmod p } \Rightarrow {ks\not\equiv 0\pmod p },$$</p>
+<p>这里用到了$p$是素数.同理可证，$\eqref{9} $式中的元素两两不等：若$k &lt; l$，而$\overline{ks} =\overline{ls} $，则$\overline{(l-k)s} =\overline{0} $，这是不可能的.于是除了排列的顺序，$\eqref{9} $中元素的序列与序列</p>
+<p>$$\overline{1} ,\overline{2} ,\cdots ,\overline{p-1} $$</p>
+<p>重合.特别地，可以找到整数$s’$，$1\leq s’\leq p-1 $，使得$\overline{s’s} =\overline{1} $.这就表明$\overline{s’} \overline{s} =\overline{1} $，即$\overline{s’} $是$\overline{s} $的逆元.这样我们就证明了下述的</p>
+<p><strong>定理3</strong>$\quad $剩余类环$\mathbb{Z}_m $是一个域，当且仅当$m=p$是一个素数.</p>
+<p><strong>推论</strong>（费马小定理）$\quad $设$p$是素数，$m$是一个不能被$p$整除的整数，则有同余式</p>
+<p>$${m^{p-1} \equiv 1\pmod p} .$$</p>
+<p><strong>证明</strong>$\quad $我们已经看到，两个集合</p>
+<p>$$\lbrace \overline{m} ,\overline{2} \overline{m} ,\cdots ,\overline{(p-1)} \overline{m} \rbrace =\lbrace \overline{1} ,\overline{2} ,\cdots ,\overline{p-1} \rbrace .$$</p>
+<p>（在$\eqref{9} $式中将$s$换成$m$，并注意到等式$\overline{km} =\overline{k} \overline{m} ,k=1,\cdots ,p-1$）.将左右两个集合的全体元素分别连乘，我们得到</p>
+<p>$$\left( \prod_{k=1}^{p-1} \overline{k} \right) \overline{m}^{p-1} =\prod_{k=1}^{p-1} \overline{k} .$$</p>
+<p>因为$\mathbb{Z}_p $是无零因子环，根据定理$1$，乘积$\displaystyle \prod_{k=1}^{p-1} \overline{k} \neq 0$，故可约去，得到$\overline{m}^{p-1} \equiv \overline{1} $.换成同余的语言，即得到所需的式子.</p>
+<p>比费马小定理更一般的欧拉定理成立，但该定理的必要性只有在$[BAII]$中给出.</p>
+<p>尽管域$\mathbb{Z}_2 ,\mathbb{Z}_3 ,\mathbb{Z}_5 ,\cdots $与我们已知的域$\mathbb{Q} ,\mathbb{Q} (\sqrt{2} ) ,\mathbb{R} $如此不同，但它们在域论中占据的地位与我们熟知的$\mathbb{Q} $的相应地位是一致的.这件事可作如下说明.设$P$是域.我们已经知道任取子域族$\lbrace P_i \vert i\in I\rbrace $，其交集$\displaystyle \underset{i}{\bigcap} P_i $仍是$P$的子域.</p>
+<p><strong>定义</strong>$\quad $一个域如果不包含任意真子域，则称之为<strong>素域</strong>.</p>
+<p><strong>定理4</strong>$\quad $任意一个域$P$包含一个素域$P_0 $.$P_0 $同构于$\mathbb{Q} $或$\mathbb{Z}_p $，其中$p$是一个素数.</p>
+<p><strong>证明</strong>$\quad $假设存在两个不同的素域$P’,P’’\subset P$，则它们的交$P’\cap P’’$是不同于$P’$和$P’’$的一个域（交是非空的，因为$0$和$1$既包含在$P’$中，也包含在$P’’$中）.根据$P’$和$P’’$的素性，这是不可能的.因而素域$P_0 \subset P$如果存在，必须是唯一的.</p>
+<p>域$P$中包含有元素$1$以及$1$的任意倍数$n\cdot 1=1+1+\cdots +1$.根据在一个环中元素的加法与乘法的运算性质（见第$1$段最后），</p>
+<p>$$s\cdot 1+t\cdot 1=(s+t)\cdot 1,(s\cdot 1)(t\cdot 1)=(st)\cdot 1;s,t\in \mathbb{Z} .$$</p>
+<p>我们来定义一个映射$f\colon \mathbb{Z} \to P$，由$f(n)=n\cdot 1$给出，易见$f$是一个同态，其核为$\ker f=m\mathbb{Z} $，如果$m=0$，则$f$是单同态，分式$(s\cdot 1)/(t\cdot 1),s,t\in \mathbb{Z} ,t\neq 0$，在$P$中有意义（因为$P$是域），它们组成与$\mathbb{Q} $同构的域$P_0 $.即为$P$的素子域.</p>
+<p>如果$m &gt; 0$，那么显然如下定义的映射</p>
+<p>$$f^{\ast } \colon \overline{k} =\lbrace k\rbrace_m \mapsto f(k) $$</p>
+<p>是一个嵌入$\mathbb{Z}_m \to P$.根据定理$3$，当且仅当$m=p$为素数是才有可能.这时$f^{\ast } (\mathbb{Z}_p )$是$P$的素子域.</p>
+<p><strong>定义</strong>$\quad $称域$P$有特征零，若$P$的素子域$P_0 $同构于$\mathbb{Q} $；称域$P$有素（或有限）特征$p$，若$P_0 \simeq \mathbb{Z}_p $.分别记作$\mathrm{char} P=0$或$\mathrm{char} P=p &gt; 0$.</p>
+<p>通常用$\mathbb{F}_p $或$\mathrm{GF} (p)$（伽罗瓦域）作为$p$元“抽象”域的符号代替$\mathbb{Z} $.令$p$是素数，$n$是任意正整数，$q=p^n $，存在$q$元有限域$\mathrm{GF} (q)$.我们将在$[BAII]$中回到这个有趣的问题上来，现在仅给出一个例子，描述带有$4$个元素$\lbrace 0,1,\alpha ,\beta \rbrace $的域：</p>
+<p>$$<br>\mathrm{GF} (4) \colon \quad \begin{array}{c|cccc}<br>{+} &amp; 0 &amp; 1 &amp; \alpha &amp; \beta \\<br>\hline<br>0 &amp; 0 &amp; 1 &amp; \alpha &amp; \beta \\<br>1 &amp; 1 &amp; 0 &amp; \beta &amp; \alpha \\<br>\alpha &amp; \alpha &amp; \beta &amp; 0 &amp; 1 \\<br>\beta &amp; \beta &amp; \alpha &amp; 1 &amp; 0 \\<br>\end{array} \quad<br>\begin{array}{c|cccc}<br>\cdot &amp; 0 &amp; 1 &amp; \alpha &amp; \beta \\<br>\hline<br>0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\<br>1 &amp; 0 &amp; 1 &amp; \alpha &amp; \beta \\<br>\alpha &amp; 0 &amp; \alpha &amp; \beta &amp; 1\\<br>\beta &amp; 0 &amp; \beta &amp; 1 &amp; \alpha \\<br>\end{array}<br>$$</p>
+<p>$\alpha $和$\beta $是什么并不重要.读者不妨自行验证加法和乘法满足分配律.</p>
+<p>特征零表明在域$P$的加法群中，元素$1$的阶是<strong>无限的</strong>.类似地，有限特征$p$表明，在域$P$的加法群中，任意非零元素的阶是$p$：</p>
+<p>$$px=x+\cdots +x=1\cdot x+\cdots +1\cdot x=(1+\cdots +1)\cdot x=(p\cdot 1)x=0.$$</p>
+<h2 id="关于线性方程组的注记">关于线性方程组的注记</h2><p>现在将目光转向前几章的线性方程组和行列式理论.我们讨论过的线性方程组的系数和矩阵中的元素是数（有理数或实数），但并未用到这些数的特性.因而用指定域$P$中的元素代替数不会有任何障碍.这时结果应当用域$P$的术语来阐述：线性方程组解的分量和函数$\det $的值均在$P$中.解线性方程组的高斯算法，行列式理论，克拉默法则对任意域$P$仍然有效（即没有变化）.</p>
+<p><strong>例7</strong>$\quad $设给定一个齐次线性方程组$AX=0$，系数矩阵为</p>
+<p>$$<br>A=(a_{ij} )=\begin{pmatrix}<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>-10 &amp; 13 &amp; 14 &amp; 15 \\<br>12 &amp; -9 &amp; 14 &amp; 15 \\<br>12 &amp; 13 &amp; -8 &amp; 15 \\<br>\end{pmatrix}<br>$$</p>
+<p>未知数所成的列向量为$X=[x_1 ,x_2 ,x_3 ,x_4 ]$，直接计算可得$\det A=2^3 \cdot 11^3 $.从而令$P$是任意特征零或特征$p\neq 2,11$的域（这时整数$1,2,3,4,-10,\cdots ,15$可由相应的剩余类代替），$a_{ij} ,x_k \in P$，则方程组是确定的，仅有唯一的平凡解$X=0$.</p>
+<p>如果$\mathrm{char} P=2$（例如$P=\mathbb{Z}_2 $），那么根据同余式</p>
+<p>$$<br>\begin{pmatrix}<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>-10 &amp; 13 &amp; 14 &amp; 15 \\<br>12 &amp; -9 &amp; 14 &amp; 15 \\<br>12 &amp; 13 &amp; -8 &amp; 15 \\<br>\end{pmatrix} \equiv \begin{pmatrix}<br>1 &amp; 0 &amp; 1 &amp; 0 \\<br>0 &amp; 1 &amp; 0 &amp; 1 \\<br>0 &amp; 1 &amp; 0 &amp; 1 \\<br>0 &amp; 1 &amp; 0 &amp; 1 \\<br>\end{pmatrix} \pmod 2<br>$$</p>
+<p>我们得知系数矩阵的秩为$2$，方程组有两个线性无关的解$X_1 =[1,0,1,0],X_2 =[0,1,0,1]$.为避免混淆，本应写成$X_1 =[\overline{1} ,\overline{0} ,\overline{1} ,\overline{0} ],X_2 =[\overline{1} ,\overline{0} ,\overline{1} ,\overline{0} ]$，但是我们已经有充分的准备去领会简化的记法.</p>
+<p>如果$\mathrm{char} P=11$，则同余式</p>
+<p>$$<br>\begin{pmatrix}<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>-10 &amp; 13 &amp; 14 &amp; 15 \\<br>12 &amp; -9 &amp; 14 &amp; 15 \\<br>12 &amp; 13 &amp; -8 &amp; 15 \\<br>\end{pmatrix} \equiv \begin{pmatrix}<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>1 &amp; 2 &amp; 3 &amp; 4 \\<br>\end{pmatrix} \pmod {11}<br>$$</p>
+<p>得到，方程组有$3$个线性无关的解</p>
+<p>$$X_1 =[9,1,0,0],X_2 =[8,0,1,0],X_3 =[7,0,0,1].$$</p>
+<p>正如我们已经看到那样，方程组解的个数依赖于域$P$，但解方程组的过程与平常没有任何不同.从$\mathbb{Q} $和$\mathbb{R} $过渡到一般域的好处之一是避免了论述中的重复.但还有更重要的原因.</p>
+<p>直到现在当我们谈到一般线性群时，总是指系数取自$\mathbb{Q} $或$\mathbb{R} $的全体非退化矩阵组成的群.系数取自域$P$的$n$阶方阵的全体构成矩阵环$M_n (P)$，而所有非退化矩阵$A\in M_n (P)$（$\det A\neq 0$的矩阵）构成域$P$上的一般线性群$\mathrm{GL}_n (P)$.改变域$P$，例如取$P=F_p $，就可以自然地得到一系列重要的群（见$[BAII]$）.</p>
+<p>形如$\mathbb{R} ,\mathbb{Q} ,\mathbb{Q} (\sqrt{2} )$的域通常称为<strong>数域</strong>.域$\mathbb{F}_p $是一个非数域的例子：不正规地称其元素为数，仅仅基于这些元素可与整数集$\lbrace 0,1,\cdots ,p-1\rbrace $等同看待.</p>
+<p>在第$1$章$\S 2$中我们提到过有限域在编码理论中的应用（问题$3$）.现在给出这个课题的一个小例子.</p>
+<p><strong>例8</strong>$\quad $为了传送$PEACE$一词，原则上利用四个基本信息单元</p>
+<p>$$P=(0,0),\quad E=(1,0),\quad A=(0,1),\quad C=(1,1)$$</p>
+<p>就够了，我们的译码可看作二元域$\mathbb{F}_2 \cong \mathbb{Z}_2 =\lbrace 0,1\rbrace $上的二维向量空间$\mathbb{F}_2^2 $的行向量.但是在传送过程中，可能发生干扰（将$0$变为$1$或$1$变为$0$），结果终端得到的可能是，例如$APACE$，根据香农（$\mathrm{Shannon} $）的基本定理，增加基本信息单元的长度（即增加传送的行向量的长度）可以清除干扰.假设根据传送条件知道，在每个长为$5$的基本信息单元中最多出现一个失真.那么在向量空间$S=\mathbb{F}_2^5 $中取子集</p>
+<p>$$S_0 =\lbrace P=(0,0,1,1,0),E=(1,0,0,1,1),A=(0,1,1,0,1),C=(1,1,0,0,0)\rbrace ,$$</p>
+<p>称之为<strong>编码向量</strong>.</p>
+<p>$$<br>\begin{array}{c|c|c|c|c}<br>\hline<br>编码向量 &amp; 00110 &amp; 10011 &amp; 01101 &amp; 11000 \\<br>\hline<br> &amp; 00010 &amp; 00011 &amp; 00101 &amp; 01000 \\<br>编码向量失真后 &amp; 00100 &amp; 10001 &amp; 01001 &amp; 10000 \\<br>得到的向量 &amp; 00111 &amp; 10010 &amp; 01100 &amp; 11100 \\<br> &amp; 01110 &amp; 10111 &amp; 01111 &amp; 11001 \\<br> &amp; 10110 &amp; 11011 &amp; 11101 &amp; 11010 \\<br>\end{array}<br>$$</p>
+<p>从表中可以看到，不同列中的失真向量的集合交为空，因此正确的结果是可能得到的，也就是说，可以恢复真实的信息.</p>
+<p>我们得到了可以纠正一个错误的编码$S_0 $，对于充分大的维数$n$，利用向量空间$\mathbb{F}_2^n $，可以构造类似的编码，没有错误地传送所有的字母，从而准确地传送任何文章，为了避免过长和过于缓慢的译码，$S_0 $要经过专门的选择.有许多办法可以做到这一点，其中包括利用有限域$\mathbb{F}_q $的纯代数方法.</p>
+<h2 id="习题">习题</h2><p>$1$.拓展$\S 1$例$2$的想法，证明集合$\mathcal{P} (\Omega )$在运算</p>
+<p>$$A+B=(A\cup B)\setminus (A\cap B),AB=A\cap B,A,B\in \Omega $$</p>
+<p>之下是一个有单位元的环，其加法群的元素阶为$2$.</p>
+<p>$2$.如果环中的任意元素$x$满足方程$x^2 =x$，证明该环是交换环.若条件改为$x^3 =x$，结论还成立吗？</p>
+<p>$3$.域$\mathbb{Q} (\sqrt{2} )$和$\mathbb{Q} (\sqrt{5} )$同构吗？</p>
+<p>$4$.证明交换环的满同态像仍是交换环.</p>
+<p>$5$.证明任意有限整环$R$是一个域.</p>
+<p>证明：设$R$是有限整环.对于任一$a\in R,a\neq 0$，由整环的乘法消去律知映射</p>
+<p>$$\begin{align}<br>\varphi \colon &amp; R\to R, \\<br> &amp; x\mapsto ax \\<br>\end{align}$$</p>
+<p>是单射.而$R$有限，故$\varphi $是满射.于是存在$b\in R$满足$ab=1$，即$a$可逆.所以$R$是域.</p>
+<p>$6$.设$p$是素数，$R$是有单位元的交换环，使得任取$x\in R ,px=0$.证明</p>
+<p>$$(x+y)^{p^m} =x^{p^m} +y^{p^m} ,m=1,2,\cdots .$$</p>
+<p>提示：对$m$作归纳，注意到二项系数$\displaystyle {p \choose k} $当$0 &lt; k &lt; p$是被$p$整除.</p>
+<p>$7$.证明含有$5$个元素的环或同构于$\mathbb{Z}_5 $，或是带有零乘法的环.</p>
+<p>$8$.环$R$的非零元素$x$称为<strong>幂零</strong>的，若存在$n\in \mathbb{N} $，使得$x^n =0$.证明：</p>
+<p>$1)$若$R$是任意有单位元的环，$x$是幂元，则$1-x$是可逆元；</p>
+<p>$2)$环$\mathbb{Z}_m =\mathbb{Z} /m\mathbb{Z} $包含有幂零元，当且仅当$m$可以被一个大于$1$的整数的平方整除.</p>
+<p>证明：$1)$由$(1+x+x^2+\cdots +x^{n-1} )(1-x)=(1-x)(1+x+x^2+\cdots +x^{n-1} )=1$，可知$1-x$是可逆元.</p>
+<p>$9$.若环$R$有单位元，且基数$\vert R\vert $是无限的，则非零不可逆元素的个数不可能是一个有限整数.</p>
+<p>提示：用反证法.设$N=\lbrace a_1 ,\cdots ,a_n \rbrace $是环$R$中所有的非$0$不可逆元素的集合.对任意$x\in R\setminus (N\cup \lbrace 0\rbrace )$，映射$\rho_x \colon a_i \mapsto xa_i $是$N\to N$的一个双射映射$\rho \colon x\mapsto \rho_x $的核$\ker \rho $是无限的.</p>
+<p>$10$.设$R$是任意有单位元$1$的结合环，$a,b$是$R$的元素.证明</p>
+<p>$$(1-ab)c=1=c(1-ab)\Rightarrow (1-ba)d=1=d(1-ba),$$</p>
+<p>其中$d=1+bca$，即$1-ab$在$R$中可逆意味着$1-ba$也可逆.元素$1+adb$等于什么？</p>
+<p>$11$.证明矩阵$\begin{pmatrix} a &amp; b \\ -b &amp; a \end{pmatrix}$，其中$a,b\in \mathbb{Z}_3 $，构成一个$9$元域，而这个域的乘法群是$8$阶循环群.</p>
+<p>$12$.在本节最后的例$2$中构造的编码$S_0 $能否纠正两个错误？</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2015/09/23/2015/09/daishuxueyinlun143/" data-title="《代数学引论(第一卷)基础代数》 第4章 群.环.域 3 环和域 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/10/02/2015/10/weijifenxuejiaocheng133/" title="《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 第三章 导数及微分 3 微分学的基本定理</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/09/21/2015/09/boliyajishudingli12/"  title="《波利亚计数定理》一 几个问题 1.2 涂色的积木">
+ <strong>下一篇：</strong><br/> 
+ <span>《波利亚计数定理》一 几个问题 1.2 涂色的积木
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环的定义和一般性质"><span class="toc-number">1.</span> <span class="toc-text">环的定义和一般性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式-剩余类环"><span class="toc-number">2.</span> <span class="toc-text">同余式.剩余类环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#环的同态"><span class="toc-number">3.</span> <span class="toc-text">环的同态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#环的类型-域"><span class="toc-number">4.</span> <span class="toc-text">环的类型.域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#域的特征"><span class="toc-number">5.</span> <span class="toc-text">域的特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于线性方程组的注记"><span class="toc-number">6.</span> <span class="toc-text">关于线性方程组的注记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">7.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

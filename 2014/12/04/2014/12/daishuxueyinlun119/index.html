@@ -1,0 +1,800 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="简述整数的初等可除性质.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术">
+<meta property="og:url" content="http://yoursite.com/2014/12/04/2014/12/daishuxueyinlun119/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="简述整数的初等可除性质.">
+<meta property="og:updated_time" content="2015-11-08T07:29:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术">
+<meta name="twitter:description" content="简述整数的初等可除性质.">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/12/04/2014/12/daishuxueyinlun119/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术" itemprop="url">《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-12-04T07:54:16.000Z" itemprop="datePublished"> 發表於 2014-12-04</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#算术基本定理"><span class="toc-number">1.</span> <span class="toc-text">算术基本定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$\mathbb{Z}_$中的最大公约数和最小公倍数"><span class="toc-number">2.</span> <span class="toc-text">$\mathbb{Z} $中的最大公约数和最小公倍数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$\mathbb{Z}_$中的带余除法"><span class="toc-number">3.</span> <span class="toc-text">$\mathbb{Z} $中的带余除法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<p>本节的目的是简述整数的初等可除性质，以便在后面的章节中引用.进一步的结果将在第$5$章给出，在那里，整除性理论被推广到更一般的代数系统中.</p>
+<h2 id="算术基本定理">算术基本定理</h2><p>若存在某个$t\in \mathbb{Z} $，使得$n=st$，则整数$s$叫作整数$n$的<strong>因数</strong>(或<strong>因子</strong>)，$n$本身叫作$s$的<strong>倍数</strong>.$n$被$s$整除记作$s\mid n$，而$n$不能被$s$整除记作$s\nmid n$.整除性是$\mathbb{Z} $上的传递关系.如果$m\mid n$且$n\mid m$，则$n=\pm m$，而整数$n,m$叫作<strong>相伴的</strong>.如果整数$p$的全部因子为$\pm p$，$\pm 1$(非真因子)，则称$p$为<strong>素数</strong>.通常约定素数是正的且大于$1$.</p>
+<p>下述定理表现出素数的基础作用.</p>
+<p><strong>算术基本定理</strong> 每一个正整数$n\neq 1$都可以分解成素数的乘积$n=p_1 p_2 \cdots p_s $.这一写法除因子的次序外是唯一的.</p>
+<p>将相同因子收集到一起并改变记法，我们得到</p>
+<p>$$ n=p_1^{\varepsilon _1 } p_2^{\varepsilon _2 } \cdots p_k^{\varepsilon _k } ,\quad \varepsilon _i &gt; 0 ,1\leq i\leq k.$$</p>
+<p>任意有理数$a=\dfrac{n}{m} \in \mathbb{Q} $也有类似的分解，但指数$\varepsilon _i $有正数也有负数.</p>
+<p>我们指出，全体素数的集合</p>
+<p>$$P=\lbrace 2,3,5,7,11,13,\cdots \rbrace $$</p>
+<p>是<strong>无限集</strong>(欧几里得定理).事实上，如果仅有有限个素数，设为$p_1 ,p_2 ,\cdots ,p_t $，那么根据基本定理，整数$c=p_1 p_2 \cdots p_t +1$至少被某一个$p_i $除尽.不失一般性，设$c=p_1 c’$.则$p_1 (c’-p_2 \cdots p_t )=1$，这是不可能的，因为单位元在$\mathbb{Z} $中的因子只有$\pm 1$.$\quad \quad\quad \square$</p>
+<p>基本定理的证明将延迟至第$5$章给出.一眼看来，定理似乎是显然的，以至不需要证明.但事实并非如此，尽管所谈问题仅涉及整数乘法的性质(整除性)，基本定理的证明却必须同时用到$\mathbb{Z} $中的乘法和加法运算.</p>
+<p>为了说明定理的非平凡性，考察$\mathbb{N} $中的子集</p>
+<p>$$S=\lbrace 4k+1 \mid k=0,1,2,\cdots \rbrace .$$</p>
+<p>$S$关于乘法封闭：</p>
+<p>$$(4k_1 +1)(4k_2 +1)=4k_3 +1.$$</p>
+<p>对$n\in S$作归纳不难证明分解的存在性(类似于基本定理的第一部分)，即$n$可以分解成：$n=q_1 \cdots q_t $，其中$q_i $不能用$S$中的元素做进一步分解.称之为<strong>拟素数</strong>.$5,9,13,17,21,49$都是这种拟素数的例子.</p>
+<p>基本定理的第二部分对$S$不真，例如数$441\in S$就有两种不同的到拟素数的分解：$441=9\cdot 49 ={21}^2$.</p>
+<h2 id="$\mathbb{Z}_$中的最大公约数和最小公倍数">$\mathbb{Z} $中的最大公约数和最小公倍数</h2><p>如果允许使用零方幂(永远认为$p_i^0 =1$)，任意两个整数$n$和$m$都可以写成同一组两两不等的素数方幂的乘积：</p>
+<p>$$ n=\pm p_1^{\alpha _1 } p_2^{\alpha _2 } \cdots p_k^{\alpha _k } ,m=\pm p_1^{\beta _1 } p_2^{\beta  _2 } \cdots p_k^{\beta  _k } .$$</p>
+<p>引入两个整数</p>
+<p>$$\begin{matrix} g.c.d(n,m)=p_1^{\gamma _1 } p_2^{\gamma _2 } \cdots p_k^{\gamma _k }, \\  l.c.m(n,m)=p_1^{\delta _1 } p_2^{\delta _2 } \cdots p_k^{\delta _k }, \\ \end{matrix} \label{1} \tag{1}$$</p>
+<p>其中$\gamma _i =\min \lbrace \alpha _i ,\beta _i \rbrace $，$\delta _i =\max \lbrace \alpha _i ,\beta _i \rbrace $，$i=1,2,\cdots ,k$.</p>
+<p>因为$d\mid n \Rightarrow d=\pm p_1^{\alpha’ _1 } \cdots p_k^{\alpha’ _k },0\leq \alpha’ _i \leq \alpha _i $，所以从$\eqref{1} $式可得下述论断.</p>
+<p>$i) \\ g.c.d(n,m)\mid n ,g.c.d(n,m)\mid m$，并且若$d\mid n,d\mid m$，则$d\mid g.c.d(n,m)$.</p>
+<p>$ii) \\ n\mid l.c.m(n,m) ,m\mid l.c.m(n,m)$，并且若$n\mid u,m\mid u$，则$l.c.m(n,m)\mid u$.</p>
+<p>性质$i)$和$ii)$证实了记号$g.c.d$和$l.c.m$分别是整数$n,m$的最大公因数和最小公倍数.当$n &gt; 0,m &gt; 0$时，它们满足关系</p>
+<p>$$g.c.d(n,m)\cdot l.c.m(n,m)=nm.\label{2} \tag{2} $$</p>
+<p>若$g.c.d(n,m)=1$，则称整数$n,m$为<strong>互素的</strong>.这时$\eqref{2} $式具有形式$l.c.m(n,m)=nm$.</p>
+<h2 id="$\mathbb{Z}_$中的带余除法">$\mathbb{Z} $中的带余除法</h2><p>给定$a,b\in \mathbb{Z} ,b &gt; 0$，总可以找到$q,r \in \mathbb{Z} $，使得</p>
+<p>$$a=bq+r ,\quad 0\leq r &lt; b$$</p>
+<p>(如果仅仅假设$b\neq 0$，那么有不等式$0\leq r &lt; \mid b\mid $).</p>
+<p><strong>证明</strong> 事实上，集合</p>
+<p>$$S=\lbrace a-bs\mid s\in \mathbb{Z} ,a-bs \geq 0\rbrace $$</p>
+<p>显然不空(例如$a-b(-a^2) &gt; 0$).于是$S$包含一个最小元素，记作$r=a-bq$.根据条件，$r\geq 0$.假如$r \geq b$，我们得到元素$r-b=a-b(q+1)\in S$，它小于$r$.这一矛盾说明，$r$必须小于$b$.</p>
+<p>上述简单的论证给出了一个算法，可以通过有限步找到<strong>商数</strong>$q$和<strong>余数</strong>$r$，$\mathbb{Z} $中的带余除法可以用来给出$g.c.d$的另一种定义，如果注意到关系式$\eqref{2} $，还有$l.c.m$的另一种定义.</p>
+<p>作法如下，给定不全为零的整数$n$和$m$，令</p>
+<p>$$J=\lbrace nu+mv\mid u,v\in \mathbb{Z} \rbrace \label{3} \tag{3} $$</p>
+<p>选出$J$中的最小正数$d=nu_0 +mv_0$.运用带余除法将$n$写作$n=dq+r,0\leq r &lt; d$.我们有</p>
+<p>$$r=n-dq=n-(nu_0 +mv_0 )q=n(1-u_0 q)+m(-v_0 q)\in J,$$</p>
+<p>从$d$的选取得到$r=0$.因而$d\mid n$.类似地，$d\mid m$.现在假设$d’$是数$n$和$m$的任意一个公因子.这时</p>
+<p>$$d’\mid n,d’\mid m\Rightarrow d’\mid nu_0 ,d’\mid mv_0 \Rightarrow d’\mid (nu_0 +mv_0 )\Rightarrow d’\mid d.$$</p>
+<p>这样$d$具备最大公因数的一切性质，所以$d=g.c.d(n,m)$.我们证明了下述论断.</p>
+<p><strong>命题</strong> 两个不全为零的整数的最大公因数总可以写成下述形式：</p>
+<p>$$g.c.d(n,m)=nu+mv ,\quad u,v\in \mathbb{Z} \label{4} \tag{4} $$</p>
+<p>特别地，整数$n,m$互素，当且仅当存在某对$u,v\in \mathbb{Z} $，使得</p>
+<p>$$nu+mv=1. \label{41} \tag{4′} $$</p>
+<p><strong>证明</strong> 我们已经验证过，互素的整数$n,m$满足关系式$\eqref{41} $.反之，如果$n,m$满足$\eqref{41} $，则</p>
+<p>$$d\mid n,d\mid m\Rightarrow d\mid nu,d\mid mv\Rightarrow d\mid (nu+mv)\Rightarrow d\mid 1\Rightarrow d=\pm 1. \quad \quad \square $$</p>
+<p>关系式$\eqref{4} $和$\eqref{41} $的证明是非常有用的.只需从集合$J$中取出任意一个正数(见$\eqref{3} $式)，然后借助带余除法找到$J$中越来越小的正数，直到得出最小的正数，这就是最大公因数.</p>
+<h2 id="习题">习题</h2><p>$1$.每一个不等于$2$的素数都可以写成$4k+1$或$4k-1$的形式.运用在第$1$段给出的集合$S$的乘法证明，形如$4k-1$的素数有无穷多个.</p>
+<p>证明：假设形如$4k-1$的素数是有限的，$p$是其中最大的一个数.令</p>
+<p>$$N=2^2\cdot 3\cdot 5\cdots p-1,$$</p>
+<p>显然$N$是$4k-1$型的，并且$N &gt; p$，根据假设知素数是有限的，且$p$最大的，故其余剩下的数，如$N$就应该是一个合数.</p>
+<p>由于$2,3,5,\cdots ,p$均不是$N$的因数，所以$N$的所有素因数应该都大于$p$的.</p>
+<p>因为$N$的因数有以下四种：$4k$，$4k+1$，$4k+2$，$4k+3$，其中$4k$与$4k+2$不是素数，所以$N$的素因数只能是$4k+1$与$4k+3$这两类.</p>
+<p>因为$(4a+1)(4b+1)=4(4ab+a+b)+1$，知两个$4k+1$型的数相乘还是$4k+1$型的数，但是$N$是$4k-1$型（即$4k+3$型）的，所以$N$至少有一个$4k+3$型的素因数，记为$q$，$q$却大于$p$，即与假设产生矛盾.故假设不成立，即形如$4k-1$的素数有无穷多个.</p>
+<p>$2$.下述论断是非平凡的.</p>
+<p>若$n,m\in \mathbb{Z} ,g.c.d(n,m)=1$,如果$p$是整除$n^2+m^2$的一个素数，则$p=4k+1$.</p>
+<p>试用该论断证明存在无穷多个形如$4k+1$的素数.</p>
+<p>证明：事实上可以转化证明：存在无穷多个形如$8k+5$的素数.</p>
+<p>假设形如$8k+5$的素数是有限的，$p$是其中最大的一个数.令</p>
+<p>$$q=3^25^27^2\cdots p^2 +2^2,$$</p>
+<p>这是两个没有公约数的平方数之和.又因为$3\times 5\times \cdots \times p$是奇数，记为奇数$2m+1$，其平方是$4m(m+1)+1$，这是一个形如$8k+1$的数，故而$q$是一个形如$8k+5$的数.根据论断，$q$的任何素因数均形如$4k+1$，也即均形如$8k+1$或者$8k+5$，而形如$8k+1$的两个数的乘积仍然是一个形如$8k+1$的数，所以$q$的素因数中至少有一个$8k+5$型的素数.而这个素数又不能在$2,3,\cdots ,p$当中，所以原假设不成立.即存在无穷多个形如$8k+5$的素数.因为形如$8k+5=4(2k+1)+1$的素数都是$4k+1$型的，故存在无穷多个形如$4k+1$的素数.</p>
+<p>$3$.如果自然数$n$恰可被$r$个不同的素数$p_1 ,\cdots ,p_r $整除，则小于$n$且与$n$互素的整数的个数</p>
+<p>$$\varphi (n)=n(1-\dfrac{1}{p_1 } )\cdots (1-\dfrac{1}{p_r } ).$$</p>
+<p>函数$\varphi :\mathbb{N} \to \mathbb{N} $叫作<strong>欧拉函数</strong>.</p>
+<p>证明公式当$n\leq 25$时，以及当$n=p^m$时成立.</p>
+<p>证明：$(1)\;$当$n=p^m$时，不大于$p^m$之$p^m$个正整数中，有$p,2p,\cdots ,p^{m-1}p$共$p^{m-1}$个为$p$之倍数，其他皆与$p$互素.故</p>
+<p>$$\varphi (p^m) =p^m -p^{m-1} =p^m (1-\dfrac{1}{p} ).$$</p>
+<p>$(2)\;a$.引理.设$a,b,c\in \mathbb{N} $，则$(a,bc)=1\Leftrightarrow (a,b)=1$且$(a,c)=1$.</p>
+<p>证明：若$(a,bc)=1$，记$(a,b)=d$，则$d\mid a$且$d\mid b$，从而$d\mid bc$，可知$1=(a,bc) \geq d$，故$d=1$，即$(a,b)=1$.</p>
+<p>同理可证$(a,c)=1$.</p>
+<p>若$(a,b)=1$且$(a,c)=1$，记$(a,bc)=d’ &gt; 1$，则存在素因数$p\mid d’$，由于$d’\mid a$且$d’\mid bc $，另外$p &gt; 1$，故$p\mid bc $且$p\mid a(p &gt; 1)$，那么$p\mid b$或$p\mid c(p &gt; 1)$.</p>
+<p>如果$p\mid b$，因为$p\mid a$，所以$(a,b)\geq p &gt; 1$，这与$(a,b)=1$矛盾.故$p\nmid b$.</p>
+<p>同理，如果$p\mid c $，则$(a,c)\geq p &gt; 1$，这也与$(a,c) =1$矛盾，故$p\nmid c$.</p>
+<p>结合上面两个讨论，知原假设$d’ &gt; 1$不成立，即$d’=1$，$(a,bc)=1$.</p>
+<p>$b\;$若$(m,n)=1$，则$\varphi (m\cdot n)=\varphi (m)\cdot \varphi (n)$.</p>
+<p>证明：首先注意到$\varphi (1)=1$，故$m,n$中有一个数为$1$时，$\varphi (m\cdot n)=\varphi (m)\cdot \varphi (n)$显然成立.现假设$m &gt; 1$且$n &gt; 1$，并把从$1$到$mn$的自然数排成一个$n\times m$的方阵：</p>
+<p>$$\begin{matrix}<br>1 &amp; 2 &amp; \cdots &amp; r &amp; \cdots &amp; m \\<br>m+1 &amp; m+2 &amp; \cdots &amp; m+r &amp; \cdots &amp; 2m \\<br>2m+1 &amp; 2m+2 &amp; \cdots &amp; 2m+r &amp; \cdots &amp; 3m \\<br>\cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots \\<br>(n-1)m+1 &amp; (n-1)m+2 &amp; \cdots &amp; (n-1)m+r &amp; \cdots &amp; nm \\<br>\end{matrix} $$</p>
+<p>那么$\varphi (m\cdots n)$为上面这组数中与$mn$互素的自然数的个数，由$a$引理知它等于这组数中同时与$m,n$都互素的自然数的个数.</p>
+<p>注意到$(km+r,m)=(r,m)$，所以当$(r,m)=1$时，第$r$列中的每一个数都与$m$互素，从而这$m$列数中共有$\varphi (m)$列数与$m$互素.</p>
+<p>下面再证明这$\varphi (m)$列的每列数中，恰好有$\varphi (m)$个自然数与$n$互素，这样就能证明共有$\varphi (m)\cdot \varphi (n)$个数，既与$m$互素，又与$n$互素，得出定理为真.</p>
+<p>事实上，从第$r$列看，因为数$(r,m)=1$，故这列数中的$n$个数中，任意两个数被$n$除时，所得余数都不会相同.若不然，假设$im+r$的$jm+r$被$n$除同余，则$(im+r)-(jm+r)=kn$，其中$0\leq j \leq i\leq n$，$k\in \mathbb{N}$，于是有$(i-j)m=kn$.因为题设已有$(m,n)=1$，故$n\mid (i-j)$，但这是不可能的.</p>
+<p>可见这第$r$列中的$n$个数被$n$除的余数分别是$0,1,2,\cdots ,(n-1)$（不计顺序），而这$n$个数中与$n$互素的自然数个数正是$\varphi (n)$，即第$r$列中存在$\varphi (n)$个与$n$互素的数.</p>
+<p>这就证明了$\varphi (m\cdot n)=\varphi (m)\cdot \varphi (n)$.</p>
+<p>$(3)\;$当$n\leq 25$时，因为素因数的个数$r\in \mathbb{N} $，故可考虑采用数学归纳法（下设$n_k $表有$k$个素因数的自然数$n$）.</p>
+<p>当$r=1$时，由$(1)$知$\varphi (n)=n(1-\dfrac{1}{p} )$成立；</p>
+<p>设$r=k$时，$\varphi (n_k )=n_k (1-\dfrac{1}{p_1 } )\cdots (1-\dfrac{1}{p_k } ) $成立；注意到加入第$k+1$个素因数$p_{k+1} $后，有</p>
+<p>$$(p_1^{a_1 } ,p_2^{a_2 } ,\cdots ,p_k^{a_k } ,p_{k+1}^{a_{k+1} } ) =1,$$</p>
+<p>且利用$(2)\;b$的结论：当$(m,n)=1$时，有$\varphi (m\cdot n)=\varphi (m)\cdot \varphi (n)$；于是由归纳假设就有</p>
+<p>$$\begin{align}<br>\varphi (n_{k+1} ) &amp; =\varphi [(p_1^{a_1 } \cdot p_2^{a_2 } \cdots p_k^{a_k } )\cdot p_{k+1}^{a_{k+1} } ] \\<br> &amp; =\varphi (p_1^{a_1 } \cdot p_2^{a_2 } \cdots p_k^{a_k } )\cdot \varphi (p_{k+1}^{a_{k+1} } )\\<br> &amp; =n_k (1-\dfrac{1}{p_1 } )\cdots (1-\dfrac{1}{p_k } ) \cdot p_{k+1}^{a_{k+1} } (1-\dfrac{1}{p_{k+1} } ) \\<br> &amp; =n_k \cdot p_{k+1}^{a_{k+1} } (1-\dfrac{1}{p_1 } )\cdots (1-\dfrac{1}{p_{k+1} } ) \\<br> &amp; =n_{k+1} (1-\dfrac{1}{p_1 } )\cdots (1-\dfrac{1}{p_{k+1} } ),<br>\end{align}$$ </p>
+<p>从而$r=k+1$时，定理成立.</p>
+<p>综上，对任意$r\in \mathbb{N} $，都有</p>
+<p>$$\varphi (n) =n(1-\dfrac{1}{p_1 } )\cdots (1-\dfrac{1}{p_r } ).$$</p>
+<p>$4$.运用二项式定理，对$n$作归纳证明，若$p$是素数，则$n^p-n$对任意$n\in \mathbb{Z} $可以被$p$整除.</p>
+<p>证明：当$n=0$及$n=1$时显然成立，因为$p\mid 0^p-0$且$p\mid 1^p-1$.假设当$a$为某正整数时$p\mid n^p -n$，我们考虑$(n+1)^p-(n+1)$是否可以被$p$整除.由二项式定理可知</p>
+<p>$$(n+1)^p =n^p+{p \choose 1}a^{p-1} +\cdots +{p \choose p-1}a^1 +1$$</p>
+<p>上式等号右边除了头尾之外的每一项都是$p$的倍数，因此，有</p>
+<p>$$p\mid (n+1)^p-n^p-1.$$</p>
+<p>又由于我们假设$p\mid n^p-n$，所以由上式可得</p>
+<p>$$p\mid (n+1)^p-n-1,$$</p>
+<p>因此$(n+1)^p-(n+1)$可以被$p$整除.数学归纳法的证明于此完成.</p>
+<p>故若$p$是素数，则$n^p-n$对任意$n\in \mathbb{Z} $可以被$p$整除.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/代数学/">代数学</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数学/">代数学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2014/12/04/2014/12/daishuxueyinlun119/" data-title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/12/09/2014/12/weijifenxuejiaocheng112/" title="《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/11/26/2014/11/kaoyanshiti2/"  title="华南理工大学2010年攻读硕士学位研究生入学考试试卷">
+ <strong>下一篇：</strong><br/> 
+ <span>华南理工大学2010年攻读硕士学位研究生入学考试试卷
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#算术基本定理"><span class="toc-number">1.</span> <span class="toc-text">算术基本定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$\mathbb{Z}_$中的最大公约数和最小公倍数"><span class="toc-number">2.</span> <span class="toc-text">$\mathbb{Z} $中的最大公约数和最小公倍数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$\mathbb{Z}_$中的带余除法"><span class="toc-number">3.</span> <span class="toc-text">$\mathbb{Z} $中的带余除法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

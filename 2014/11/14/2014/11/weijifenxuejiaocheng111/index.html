@@ -1,0 +1,938 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="整序变量及其极限">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限">
+<meta property="og:url" content="http://yoursite.com/2014/11/14/2014/11/weijifenxuejiaocheng111/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="整序变量及其极限">
+<meta property="og:image" content="http://yoursite.com/assets/img/weijifenxuejiaocheng/1/tu2.png">
+<meta property="og:updated_time" content="2015-11-08T07:28:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限">
+<meta name="twitter:description" content="整序变量及其极限">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/11/14/2014/11/weijifenxuejiaocheng111/" title="《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限" itemprop="url">《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-11-14T07:52:53.000Z" itemprop="datePublished"> 發表於 2014-11-14</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于有极限的整序变量的一些定理"><span class="toc-number">5.</span> <span class="toc-text">关于有极限的整序变量的一些定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷大量"><span class="toc-number">6.</span> <span class="toc-text">无穷大量</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="变量、整序变量">变量、整序变量</h2><p>在物理学及其他自然科学内读者曾经遇到各种不同的<strong>量</strong>：时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为<strong>变量</strong>，在第二种情形称它为<strong>常量</strong>.</p>
+<p>但在数学上我们不顾所考察的量的物理意义，仅关心于表示这量的<strong>数字</strong>；量的物理意义仅当数学被应用时，始再获得重要性.这样，对于我们来说，变量仅为赋予数值的符号(例如，字母$x$)而已.[对整个数学分析来说，(在历史上)原来的、十分一般的变量概念与其说是纯数学性质的，不如说是自然科学性质的.给这个概念一个完全形式的定义，实际上不可能.有两种更为特殊的变量在今后的叙述中将起到关键的作用，它们是严格定义的，一种称为(自)变量，另一种称为整序变量(或称为整序型变量).所说这两类变量的严格定义靠如下方式实现：对它们要补充描述其指定过程，即确切地指出认为变量或整序变量已经给定的条件.特别是下面的一段正文乃是变量的定义.]</p>
+<p>若变量所能取值的集合$\chi =\lbrace x \rbrace $已经指定，则这变量就当作是已给定了.常量可以当作变量的特殊情形来看待，它相当于$\chi =\lbrace x \rbrace $只有一个元素的情形.[这样一来，首先是给定(自)变量，等价于给定某个数集；其次，说法“$x$-变量”事实上等价于“$x$-数集的类元(或任意元)”.我们指出，上面所说的不适用于“整序型的变量”(对于它，给定的手续另行说明).在本质上，刚才所说的一类变量(即自变量)，仅在第二章开头才会遇到并且用到.]</p>
+<p>在建立变量$x$的极限概念时，仅知道这变量所取值的数集$\chi$还是不够的；必须再知道.它所取的到底是些怎样的数值(在它们中间，可能有重复的)，以及它取这些值的次序.关于<strong>有序变量</strong>及其极限的问题的一般讨论，这里暂时搁下不提，放在下一卷的末尾[参阅第二卷的附录：《极限的一般观点》.] (那时，读者将已累积着对于这一方面的充分的经验).在本章内我们且讲述一种最简单同时也是最重要的特殊类型的变量.</p>
+<p>今从建立<strong>数列</strong>的概念开始.设有自然数的序列：</p>
+<p>$$1,2,\cdots ,n,\cdots ,n’ ,\cdots \label{1}\tag{1}$$</p>
+<p>在序列内数字依由小而大的顺序排列着，较大的数$n’$在较小的数$n$的后面(或较小的数$n$在较大的数$n’$的前面).若在序列$\eqref{1}$内，按照任何规律，将每一自然数$n$换成实数$x_n$，则得数列：</p>
+<p>$$x_1 ,x_2 ,x_3 ,\cdots ,x_n ,\cdots ,x_{n’} ,\cdots \label{2}\tag{2}$$</p>
+<p>其项或元素$x_n$有一切自然数作为序号，并依序号增大的次序排列着.当$n’ &gt; n$时，$x_{n’}$就在$x_n$的后面($x_n$在$x_{n’}$的前面)，不管$x_{n’}$本身的数值大于、小于或等于$x_n$.[仿此，可以定义直线上点的序列或自然界任何其他物体的序列的概念.]</p>
+<p>取值成序列$\eqref{2}$的变量$x$，我们——依照梅雷($Ch.~M\acute{e} ray$)——称之为<strong>整序变量</strong>.我们在这里就限于考察这种类型的变量.[虽然从直观上看，序列与整序变量两个概念有某些不同，但在本质上两者是等价的.实际上，为了确定序列$x_1 ,x_2 ,\cdots ,x_n ,\cdots $和为了给定依次具有值$x_1 ,x_2 ,\cdots ,x_n ,\cdots $的变量$x$，我们做的量同样的事——指出某个规则，使每一个自然数$n$对应着完全确定的实数$x_n$(这个取决于我们意愿的数，我们可称之为序列的第$n$项或整序变量的第$n$个值).序列与整序变量这两个概念的等价性反映在表示上：对于二者，形如$x_n$的符号是标准的表示.读者今后可以毫无顾虑地把序列与整序变量两个概念看成是等同的，而认为这两个术语是可以互换的同义词(确定整序变量总是等同于确定序列所遍历的值).我们要指出，更为普遍的术语“序列”现已远比术语“整序变量”更为通行，后者几乎不再使用.]</p>
+<p>在中学的数学教程内读者遇到过的变量即是整序型的变量.例如，大家所熟悉的序列</p>
+<p>$$\underset{1}{\large a} ,\underset{2}{\large a+d} ,\underset{3}{\large a+2d} ,\cdots ,\underset{n}{\large a+(n-1)d},\cdots \quad (算术序列)$$</p>
+<p>或</p>
+<p>$$\underset{1}{\large a} ,\underset{2}{\large aq} ,\underset{3}{\large aq^2} ,\cdots ,\underset{n}{\large aq^{n-1}},\cdots \quad (几何序列);$$</p>
+<p>每一序列中的变项就是整序变量.</p>
+<p>在定义圆周的长度时，通常考察圆内接正多边形的可变周长，由六边形起，将边数依次增加一倍；这样，这整序变量所取的数值便成一序列：</p>
+<p>$$P_6 \underset{1}{=} 6R ,\quad P_12 \underset{2}{=} 12R\sqrt{2-\sqrt{3}},$$</p>
+<p>$$P_{24} \underset{3}{=} 24R\sqrt{2-\sqrt{2+\sqrt{3}}} ,\quad \underset{4}{P_{48}},\cdots $$</p>
+<p>再说到$\sqrt{2}$的十进小数近似值(所说的是亏近似值)，使准确度继续增大，它们便成一序列：</p>
+<p>$$\underset{1}{\large 1.4},\underset{2}{\large 1.41},\underset{3}{\large 1.414},\underset{4}{\large 1.4142},\cdots $$</p>
+<p>这也是一个整序变量.</p>
+<p>取值成序列$\eqref{2}$的变量$x$常记成$x_n$，就是以序列中的变项(或普通项)，来记这个变量.</p>
+<p>有时，整序变量$x$直接由$x_n$的表达式所给定.如在算术序列及几何序列时各为$x_n =a+(n-1)d$及$x_n =aq^{n-1}$.利用这表达式便可以依已给序号立即算出整序变量的对应数值，而不必知道在这以前它取过一些什么数值.</p>
+<p>对于内接正多边形的周长，要写出一般的表达式，仅在引用数$\pi$后始为可能；内接正$m$边形的周长$p_m$，一般地表示为公式</p>
+<p>$$p_m =2mR\sin{\dfrac{\pi}{m}}.$$</p>
+<p>有时，序列$\eqref{2}$的普通项$x_n$的表达式可能无法知道.然若我们能掌握某种规则，只要知道整序变量的任一序号时，便能按照这规则算出其对应的数值，则序列$\eqref{2}$以及由它所决定的整序变量都算作是已给定了.因此，既然我们已知道根的近似算法，我们就可以算作$\sqrt{2}$的一切十进位近似值所成的序列是已经给定了，虽然这序列的普通项的表达式不得而知.</p>
+<p>若整序变量——在上述的意义下——已给定，则不仅它所取值的集合已整个地确定，并且它取这些值的次序亦确定；对应于每一序号，整序变量必有一个数值，又在两数值中，序号较大的当作是在后面的.</p>
+<p>再着重指出，整序变量的各个数值不一定要互不相同.例如，由下列公式之一所给定的整序变量：</p>
+<p>$$x_n =1;x_n =(-1)^{n+1};x_n =\dfrac{1+(-1)^n}{n},$$</p>
+<p>其对应的数列各为：</p>
+<p>$$\begin{array}{ccccccc}<br>     \underset{1}{\large 1}, &amp; \underset{2}{\large 1}, &amp; \underset{3}{\large 1}, &amp; \underset{4}{\large 1}, &amp; \underset{5}{\large 1}, &amp; \underset{6}{\large 1}, &amp; \cdots \\<br>     \underset{1}{\large 1}, &amp; \underset{2}{\large -1}, &amp; \underset{3}{\large 1}, &amp; \underset{4}{\large -1}, &amp; \underset{5}{\large 1}, &amp; \underset{6}{\large -1}, &amp; \cdots\\<br>     \underset{1}{\large 0}, &amp; \underset{2}{\large 1}, &amp; \underset{3}{\large 0}, &amp; \underset{4}{\large \frac{1}{2}}, &amp; \underset{5}{\large 0}, &amp; \underset{6}{\large \frac{1}{3}}, &amp; \cdots \\<br>    \end{array} $$</p>
+<p>在第一种情形，整序变量根本是一个常量，它所取值的集合只有一个元素$1$.在第二种情形，这集由整序变量所交错地取着的两个值$1$及$-1$所组成.最后，在第三种情形，变量的值是无限集，但这并不影响变量每隔一次取一个等于$0$的数值这一回事；在第三项的数值$0$，我们当作不仅是在第二项的数值$1$以后，且亦在第一项的数值$0$以后.</p>
+<h2 id="整序变量的极限">整序变量的极限</h2><p>读者从中学的教程内应该已熟悉这概念了.这里是它的严格的定义：</p>
+<p>若对于每一正数$\varepsilon$，不论它怎样小，恒有序号$N$，使在$n &gt; N$时，一切$x_n$的值满足不等式</p>
+<p>$$\mid x_n -a \mid &lt; \varepsilon ,\label{3}\tag{3}$$</p>
+<p>则常数$a$称为<strong>整序变量$x=x_n$的极限</strong>.</p>
+<p>$a$是整序变量的极限这一事实，记成：</p>
+<p>$$\lim x_n =a \quad 或\quad \lim x=a$$</p>
+<p>($\lim$是拉丁文$\text{limes}$的简写，即指“极限”).我们也说，变量趋于$a$，并写成</p>
+<p>$$ x_n \to a \quad 或\quad x\to a.$$</p>
+<p>有时称数$a$为序列$\eqref{2}$的极限，并说，这序列收敛于$a$.</p>
+<p>上述定义可以简短地叙述成：</p>
+<p>数$a$是整序变量$x=x_n$的极限，若$x$的数值$x_n$从某项开始都与$a$相差任意小.</p>
+<p>含任意$\varepsilon$的不等式$\eqref{3}$就是$x_n$可以与$a$“相差任意小”这一句话的准确记法，而序号$N$恰好就指示着上述定义中“从某项开始”那个“某项”的位置.</p>
+<p>最重要的是要认识到，序号$N$一般地说来，并不是一经指定后就永远不变的：它是由我们所选的数$\varepsilon$来决定的.为着要重视这件事.我们有时不写$N$而写成$N_{\varepsilon}$.当$\varepsilon$减小时，与它对应的序数$N=N_{\varepsilon}$，一般地说来，将会增大：要使整序变量$x_n$的值与$a$的接近程度愈大，则我们在序列$\eqref{2}$内所要考察的数值便必须愈远.</p>
+<p>整序变量$x_n$的一切数值都等于常量$a$的这情形是例外：显然，这时$a=\lim x_n$，但这时对于任何$\varepsilon &gt; 0$，不等式$\eqref{3}$能同时对于$x_n$的一切值都成立.[对于从某项起开始都等于$a$的整序变量$x_n$，有与此类似的情况.]</p>
+<p>我们已从[$3$实数的算术运算-绝对值]中知道，不等式$\eqref{3}$相当于下列不等式</p>
+<p>$$-\varepsilon &lt; x_n -a &lt; \varepsilon$$</p>
+<p>或</p>
+<p>$$a-\varepsilon &lt; x_n &lt; a+\varepsilon ;\label{4}\tag{4}$$</p>
+<p>以后我们经常要用到这些不等式.</p>
+<p>若把我们的整序变量$x_n$的值及数$a,a\pm \varepsilon$表示为数轴上的点[$4$实数的其他性质及应用-线段的度量] (图$2$)，则得整序变量的极限的显明的几何解释.以$a$点为中心的线段不论取得怎样小(其长为$2\varepsilon$)，一切点$x_n$，从某点起，必全部落在这线段之内(这样，在线段之外一定只有有限个点了).表示极限的点$a$就是表示整序变量的数值的点的<strong>凝聚中心</strong>.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu2.png" alt=""></center>
+
+<h2 id="无穷小量">无穷小量</h2><p>当整序变量趋向于零时：$x_n \to 0$，这情形特别值得注意.</p>
+<p>极限为零的整序变量$x_n$称为<strong>无穷小量</strong>，或简称<strong>无穷小</strong>.</p>
+<p>若在整序变量的极限的定义内使$a=0$，则不等式$\eqref{3}$成为</p>
+<p>$$\mid x_n -0 \mid =\mid x_n \mid &lt; \varepsilon \quad (n &gt; N_{\varepsilon}).$$</p>
+<p>这样，上面的无穷小的定义可以不用术语“极限”而更详细地叙述成：</p>
+<p>若整序变量$x_n$的绝对值，自某项起，成为而且永远保持小于预先指定的任意小数$\varepsilon &gt; 0$，则它称为无穷小.</p>
+<p>由于历史性所形成的术语“无穷小”量是不十分恰当的，希望不要引起读者的误解，这量的任何个别数值，只要它不是零，就不能当作是“很小的”量.事实上，无穷小是这样一个变量[除去当它恒等于零的那种平凡情形以外]，它仅在自己变化过程中，可以变为小于任意选取的数$\varepsilon$.</p>
+<p>回到一般情形，设整序变量$x_n$以$a$为极限，则此变量与其极限的差</p>
+<p>$$\alpha _n =x_n -a$$</p>
+<p>显然将为无穷小：因依$\eqref{3}$，</p>
+<p>$$\mid \alpha _n \mid =\mid x_n -a \mid &lt; \varepsilon \quad (n &gt; N_{\varepsilon}).$$</p>
+<p>反之，若$\alpha _n$是无穷小，则$x_n \to a$.这使我们导出下列命题：</p>
+<p>整序变量$x_n$以常数$a$为极限的必要而且充分的条件是：它们的差$ \alpha _n = x_n -a $是无穷小.</p>
+<p>因此，可以给予“极限”的概念以另一定义(和旧定义完全相当)：</p>
+<p>若常数$a$与整序变量$x_n$的差是无穷小量，则$a$称为整序变量$x_n$的极限.</p>
+<p>自然而然地，若以这定义为极限论的出发点，则对于无穷小必须应用上述的第二定义.否则便得循环推理：极限由无穷小确定，而无穷小又由极限确定！</p>
+<p>因此，若整序变量$x_n \to a$，则可以表示为</p>
+<p>$$x_n =a +\alpha _n ,$$</p>
+<p>式中$\alpha _n$为无穷小.反之，若整序变量满足这表示式，则它有极限$a$.在实用时常用这式子以建立变量的极限.</p>
+<h2 id="例题">例题</h2><p>$1)$ 考察整序变量</p>
+<p>$$x_n =\dfrac{1}{n},x_n =-\dfrac{1}{n}, x_n =\dfrac{(-1)^{n+1}}{n};$$</p>
+<p>与它们对应的数列为</p>
+<p>$$\begin{array}{ccccc}<br>     1, &amp; \dfrac{1}{2}, &amp; \dfrac{1}{3}, &amp; \dfrac{1}{4}, &amp; \cdots \\<br>     -1, &amp; -\dfrac{1}{2}, &amp; -\dfrac{1}{3}, &amp; -\dfrac{1}{4}, &amp; \cdots \\<br>     1, &amp; -\dfrac{1}{2}, &amp; \dfrac{1}{3}, &amp; -\dfrac{1}{4}, &amp; \cdots \\<br>    \end{array} $$</p>
+<p>三个变量都是无穷小，即有极限$0$.事实上，要使</p>
+<p>$$\mid x_n \mid =\dfrac{1}{n} &lt; \varepsilon ,$$</p>
+<p>仅需$n &gt; \dfrac{1}{\varepsilon}$便能成立.这样，便可取，例如，包含在$\dfrac{1}{\varepsilon}$内的最大的整数，即$E\left( \dfrac{1}{\varepsilon} \right)$[一般地，用$E(p)$表示不超过$p$的最大整数，或简称数$p$的整数部分；$E$是法文$\text{Entier}$的起首字母，表示“整”.]，作为$N_{\varepsilon}$.</p>
+<p>注意到，第一个变量常大于其极限$0$；第二个常小于它；第三个则交迭地忽大于忽小于它.</p>
+<p>$2)$若设</p>
+<p>$$x_n =\dfrac{2+(-1)^n}{n},$$</p>
+<p>则变量依次取下列数列中的数值</p>
+<p>$$\begin{array}{ccccccc} 1, &amp; \dfrac{3}{2}, &amp; \dfrac{1}{3}, &amp; \dfrac{3}{4}, &amp; \dfrac{1}{5}, &amp; \dfrac{3}{6}, &amp; \cdots \\ \end{array} $$</p>
+<p>在这情形同样有$x_n \to 0$，因</p>
+<p>$$\mid x_n \mid \leq \dfrac{3}{n} &lt; \varepsilon ,$$</p>
+<p>当$n &gt; \dfrac{3}{\varepsilon}$，故$N_{\varepsilon}$可以取为$E\left( \dfrac{3}{\varepsilon} \right)$.</p>
+<p>我们在此地碰到稀奇的特性：变量交迭地忽而接近于其极限$0$，忽而离去它.</p>
+<p>$3)$今设</p>
+<p>$$x_n =\dfrac{1+(-1)^n}{n};$$</p>
+<p>这整序变量我们已在[变量、整序变量]末遇到它过.在这里，亦同样地有$x_n \to 0$，因</p>
+<p>$$\mid x_n \mid \leq \dfrac{2}{n} &lt; \varepsilon ,$$</p>
+<p>仅需$N &gt; N_{\varepsilon}=E\left( \dfrac{2}{\varepsilon} \right)$.</p>
+<p>注意到，对于$n$的一切奇数值变量都等于它的极限.</p>
+<p>这些简单的例子是很有趣的，由于它们表现出包含在上述整序变量的极限定义中的各种各样的可能性.变量的值是否均在极限值的一方；变量是否每一步都向其极限接近；最近，变量是否能达到其极限，即是否具有等于极限的数值；这些都不关紧要.重要的仅是定义中所说的：变量在最后，即项数充分远时的数值，与极限值之差要是任意小.</p>
+<p>$4)$ 取整序变量的更复杂的例：</p>
+<p>$$x_n =\dfrac{n^2-n+2}{3n^2+2n-4};$$</p>
+<p>我们要证明它的极限是$\dfrac13$.</p>
+<p>为此目的，考察差</p>
+<p>$$x_n -\dfrac13 =\dfrac{-5n+10}{3(3n^2+2n-4)},$$</p>
+<p>估计其绝对值，当$n &gt; 2$时，有</p>
+<p>$$\mid x_n -\dfrac13 \mid =\dfrac{5n-10}{3(3n^2+2n-4)} &lt; \dfrac{5n}{3(3n^2-4)} &lt; \dfrac{5n}{3\cdot 2n^2} &lt; \dfrac{1}{n},$$</p>
+<p>因此，若$n &gt; N_{\varepsilon}=E\left( \dfrac{1}{\varepsilon} \right)$，这表达式便小于$\varepsilon$.这就证明了$x_n \to \dfrac13$.</p>
+<p>$5)$ 整序变量由公式</p>
+<p>$$x_n =a^{\frac{1}{n}} =\sqrt[n]{a}(a &gt; 1)$$</p>
+<p>所确定.要证$x_n \to 1$.</p>
+<p>若应用[以任意实数为指数的幂]的不等式$(3)$，则可以写成：</p>
+<p>$$\mid x_n -1 \mid =\sqrt[n]{a}-1 &lt; \dfrac{a-1}{n} &lt; \varepsilon ,仅需 n &gt; N_{\varepsilon}=E\left( \dfrac{a-1}{\varepsilon} \right).$$</p>
+<p>但亦可用另外方法证明.不等式</p>
+<p>$$\mid x_n -1 \mid =a^{\frac{1}{n}}-1 &lt; \varepsilon ,$$</p>
+<p>相当于</p>
+<p>$$\dfrac{1}{n} &lt; \log_a(1+\varepsilon ) 或 n &gt; \dfrac{1}{\log_a(1+\varepsilon ) },$$</p>
+<p>这样，在$n &gt; N_{\varepsilon}=E\left( \dfrac{1}{\log_a(1+\varepsilon) } \right)$时，它就成立了.</p>
+<p>由于所选的推论方法不同，我们便得出不同的$N_{\varepsilon}$的表达式.例如，在$a=10,\varepsilon =0.01$时，依第一种方法得$N_{0.01}=\dfrac{9}{0.01}=900$，而依第二种方法得$N_{0.01}=E\left( \dfrac{1}{0.00432\cdots } \right) =231$.依第二种方法我们得出$N_{0.01}$的一切可能的数值中的最小者，因为$10^{\frac{1}{231}}=1.010017\cdots $与$1$的差已大于$\varepsilon =0.01$.在一般情形也是如此，因为，很容易看出，当$n \leq \dfrac{1}{\log_a(1+\varepsilon ) }$时必有$a^{\frac{1}{n}}-1 \geq \varepsilon $.</p>
+<p>注意：如果只是要证明极限存在，则在这种场合我们总不关心于$N_{\varepsilon}$的最小可能的数值.只需保证不等式$\eqref{3}$能成立就好了，至于从哪一项开始，位置远些的抑近些的，可以不必去管它.</p>
+<p>$6)$ 整序变量</p>
+<p>$$a_n =q^n ,式中 \mid q\mid &lt; 1$$</p>
+<p>是无穷小的一个重要的例题.要证明$a_n \to 0$，试考察不等式</p>
+<p>$$\mid a_n \mid ={\mid q\mid }^n &lt; \varepsilon ,$$</p>
+<p>它相当于</p>
+<p>$$n\cdot \lg{\mid q\mid } &lt; \lg{\varepsilon } 或 n &gt; \dfrac{\lg{\varepsilon }}{\lg{\mid q\mid }}.$$</p>
+<p>[这里(和以后)$\lg x$都理解为$\log_{10}x$.由于$\mid q\mid &lt; 1$，故$\lg{\mid q\mid} &lt; 0$；因此，在用这数除不等式的两边时，不等号应换成相反的方向.]</p>
+<p>这样，若假定(设$\varepsilon &lt; 1$)</p>
+<p>$$ N_{\varepsilon } =E\left( \dfrac{\lg{\varepsilon }}{\lg{\mid q\mid }} \right) ,$$</p>
+<p>则在$n &gt; N_{\varepsilon }$时，上述不等式一定成立.</p>
+<p>仿此，很易证明整序变量</p>
+<p>$$\beta _n =A \cdot q^n$$</p>
+<p>亦是无穷小，其中$\mid q \mid &lt; 1$，而$A$是常数.</p>
+<p>$7)$ 再考察无穷递减几何序列</p>
+<p>$$a ,aq ,aq^2 ,\cdots ,aq^{n-1},\cdots (\mid q\mid &lt; 1)$$</p>
+<p>并提出关于其和的定义问题.</p>
+<p>大家知道所谓无穷序列各项的和，自然应该是，当$n$无限增大时，其首$n$项的和$s_n$所趋向的极限.但</p>
+<p>$$s_n =\dfrac{a-aq^n}{1-q}=\dfrac{a}{1-q}-\dfrac{a}{1-q}\cdot q^n ,$$</p>
+<p>因此这整序变量$s_n$与常数$\dfrac{a}{1-q}$之差为$a_n =-\dfrac{a}{1-q}\cdot q^n$，我们刚才已看出它是无穷小量.因此，依极限的第二定义，所求序列各项的和为</p>
+<p>$$s=\lim s_n =\dfrac{a}{1-q}.$$</p>
+<p>因此，这个数就是几何序列的无穷多项的和，把它写成为：</p>
+<p>$$a+aq+aq^2+\cdots +aq^{n-1}+\cdots =\dfrac{a}{1-q}.$$</p>
+<p>$8)$ 设已给二数$a$及$b$.假定$x_0 =a,x_1 =b$，而整序变量$x_n$以后的数值则由等式</p>
+<p>$$x_n =\dfrac{x_{n-2} +x_{n-1}}{2}(n \geq 2)$$</p>
+<p>来决定.</p>
+<p>这些$x_n$实际上都已给定，因为，这里令$n=2,3,4,\cdots $，就可以依序地求出它的一切数值至任何项.</p>
+<p>若从上述等式的两边各减去$x_{n-1}$，则得</p>
+<p>$$x_n -x_{n-1}=-\dfrac{1}{2}(x_{n-1}-x_{n-2})(n=2,3,\cdots ).$$</p>
+<p>这样，序列</p>
+<p>$$ x_1 -x_0 =b-a ,x_2 -x_1 ,\cdots ,x_{n-1}-x_{n-2},x_n -x_{n-1}$$</p>
+<p>中，任一个差(由第二个开始)都可以由前面一个差乘以$-\dfrac{1}{2}$而得到.就是说，我们有乘以$-\dfrac{1}{2}$为公比的几何数列.因为它的$n$项和是$x_n -a$，所以利用我们已知的(参看$7)$)几何序列和的公式，立即得出</p>
+<p>$$\lim (x_n -a)=\dfrac{b-a}{1-\left( -\dfrac{1}{2} \right)}=\dfrac{2}{3}(b-a).$$</p>
+<p>由此不难得出</p>
+<p>$$\lim x_n =a+\dfrac{2}{3}(b-a)=\dfrac{a+2b}{3}.$$</p>
+<p>$9)$ 与几何序列相似，可以考查任意数列</p>
+<p>$$a_1 ,a_2 ,\cdots ,a_n ,\cdots $$</p>
+<p>并且把它们依次相加，作成“部分和”</p>
+<p>$$A_1 =a_1 ,A_2 =a_1 +a_2 ,A_3 =a_1 +a_2 +a_3 ,\cdots $$</p>
+<p>$$A_n =a_1 +a_2 +\cdots + a_n ,\cdots $$</p>
+<p>如果当$n$无限增大时，$A_n$趋于(有限或无穷)极限$A$，则数$A$就叫做所取一切数$a_n$的和，并且写成</p>
+<p>$$a_1 +a_2 +\cdots + a_n +\cdots =A.$$</p>
+<p>等式左边记号叫做<strong>无穷级数</strong>，数$A$叫做它的和.具有有限和的级数，我们说它是收敛的.</p>
+<p>例如，设已知级数</p>
+<p>$$\dfrac{1}{1\cdot 2}+\dfrac{1}{2\cdot 3}+\dfrac{1}{3\cdot 4}+\cdots +\dfrac{1}{n(n+1)}+\cdots$$</p>
+<p>这里</p>
+<p>$$a_1 =\dfrac{1}{1\cdot 2}=1-\dfrac{1}{2},a_2 =\dfrac{1}{2\cdot 3}=\dfrac{1}{2}-\dfrac{1}{3},\cdots$$</p>
+<p>$$a_n =\dfrac{1}{n(n+1)}=\dfrac{1}{n}-\dfrac{1}{n+1},\cdots $$</p>
+<p>因此，在这个情形</p>
+<p>$$A_n =\left( 1-\dfrac{1}{2} \right) +\left( \dfrac{1}{2}-\dfrac{1}{3} \right) +\cdots +\left( \dfrac{1}{n}-\dfrac{1}{n+1} \right) =1-\dfrac{1}{n+1}.$$</p>
+<p>显然$A_n \to 1$，因此，所说的级数收敛，并且和为$1$.</p>
+<p>如果级数没有有限和，这时我们就说这个级数发散：例如，</p>
+<p>$$1+1+\cdots +1+1+\cdots $$</p>
+<p>就是这样的级数.</p>
+<h2 id="关于有极限的整序变量的一些定理">关于有极限的整序变量的一些定理</h2><p>设整序变量有极限$a$.对于任一$p &lt; a$(或$q &gt; a$)很易选取数$\varepsilon &gt; 0$，使</p>
+<p>$$a-\varepsilon &gt; p\quad (或a+\varepsilon &lt; q);$$</p>
+<p>为此目的，只需取$\varepsilon$小于差$a-p$(或$q-a$)就是.但依极限的定义[整序变量的极限]，恒能求出这样的序号$N$，使当$n &gt; N$时不等式[参阅($\eqref{4}$)]</p>
+<p>$$ x_n &gt; a -\varepsilon \quad (x_n &lt; a+\varepsilon)$$</p>
+<p>能满足.因此，自然也成立不等式</p>
+<p>$$ x_n &gt; p \quad (或 x_n &lt; q).$$</p>
+<p>$1°$若整序变量$x_n$趋于极限$a$，又$a &gt; p(a &lt; q)$，则一切变量的数值，从某项开始，亦将$&gt; p( &lt; q)$.</p>
+<p>这一简单的命题包含一系列有用的推论.</p>
+<p>$2°$若整序变量$x_n$趋于极限$a &gt; 0( &lt; 0)$，则变量本身从某项开始亦必有$x_n &gt; 0( &lt; 0)$.</p>
+<p>要证明此论点，只需在上述命题中取$p=0(q=0)$就行了.</p>
+<p>要准确的结果是：</p>
+<p>$3°$若整序变量$x_n$趋于异于零的极限$a$，则必有充分远的$x_n$的值，其绝对值得超过某正数$r$：</p>
+<p>$$\mid x_n \mid &gt; r &gt; 0\quad (n &gt; N).$$</p>
+<p>实际上，当$a &gt; 0( &lt; 0)$时，可以取</p>
+<p>$$0 &lt; p &lt; a \quad (a &lt; q &lt; 0),$$</p>
+<p>并假定$r=p(r=\mid q\mid )$.</p>
+<p>$4°$另一方面，若整序变量$x_n$有极限$a$，则$x_n$必定是有界的，意即，它的一切值在绝对值上不超过某一有限的界：</p>
+<p>$$\mid x_n \mid \leq M \quad (M=常数；n=1,2,\cdots ).$$</p>
+<p>取数$M’ &gt; \mid a\mid $，即$-M’ &lt; a &lt; M’$，并假定$p=-M’,q=M’$.求出这样的序号$N$.使当$n &gt; N$时，有</p>
+<p>$$-M’ &lt; x_n &lt; M’\quad 或\quad \mid x_n \mid &lt; M’.$$</p>
+<p>这不等式当$n=N+1,N+2,\cdots$时，自然能满足，因此它只可能对于整序变量的前$N$项(或它们之中的某几项)不满足.</p>
+<p>因此，若假定$M$等于数</p>
+<p>$$\mid x_1 \mid ,\mid x_2 \mid ,\cdots ,\mid x_N \mid ,M’$$</p>
+<p>中的最大者，则一切$x_n$的值都将满足$\mid x_n \mid \leq M$，此即需证者.</p>
+<p><strong>附注</strong> Ⅰ.$x_n$为有界变量的定义也可以用不等式</p>
+<p>$$k\leq x_n \leq g \quad (n=1,2,\cdots )$$</p>
+<p>来表示，式中$k$及$g$为二有限数.实际上，由这些不等式，若令$M$等于$\mid k\mid $及$\mid g\mid $中的最大数，则得$\mid x_n \mid \leq M$；反之，若先有最后的不等式，则可以把它写成$-M\leq x_n \leq M$，这样$-M$就可当作是$k$，$M$就可当作是$g$.</p>
+<p>Ⅱ.命题$4°$不能逆述.并非一切有界的整序变量都有极限.例如，若设$x_n=(-1)^{n+1}$，则这个整序变量当然是有界的：$\mid x_n \mid \leq 1$，但它却并无极限，总是在$+1$和$-1$间振动着.</p>
+<p>最后，根据命题$1°$，证明极限的唯一性.</p>
+<p>$5°$整序变量$x_n$不能同时趋于两个相异的极限.</p>
+<p>事实上，假定其逆：设同时有$x_n \to a$和$x_n \to b$，又$a &lt; b$.取出$a$与$b$间的任一数$r$，</p>
+<p>$$a &lt; r &lt; b.$$</p>
+<p>因$x_n \to a$及$a &lt; r$，必能求得序号$N’$，使当$n &gt; N’$时不等式$x_n &lt; r$能满足.由另一方面，因$x_n \to b$及$b &gt; r$，必能求得序号$N’’$，使当$n &gt; N’’$时成立$x_n &gt; r$.若取大于$N’$及$N’’$的序数$n$，则变量$x_n$的对应值将同时既$&lt; r$又$&gt; r$，这是不可能的.</p>
+<p>这矛盾便证明了我们的命题.</p>
+<h2 id="无穷大量">无穷大量</h2><p>无穷大量(或简称无穷在)，在某种意义上是与无穷小量相反的.</p>
+<p>若整序变量$x_n$，由某项开始，其绝对值变成且保持着大于预先指定的任意大数$E &gt; 0$，</p>
+<p>$$\mid x_n \mid &gt; E \quad (当n &gt; N_E 时),$$</p>
+<p>$x_n$便称为无穷大.</p>
+<p>如同在无穷小的情形一样，这里亦需着重指出，无穷大量的任一个别数值都不能当作“大量”看待.我们这里所讨论的是这样的变量，它仅在本身改变的过程中可以大于任意选取的数$E$.</p>
+<p>无穷大的例，如整序变量</p>
+<p>$$x_n =n; x_n =-n ,x_n =(-1)^{n+1}n,$$</p>
+<p>它们都依次在整数的序列中取值，但第一种带正号，第二种带负号，第三种带交迭的符号.</p>
+<p>再举一个无穷大量的例子：</p>
+<p>$$x^n =Q^n ,\quad 当\mid Q \mid &gt; 1时.$$</p>
+<p>事实上，不论怎样的$E &gt; 0$，不等式</p>
+<p>$$\mid x^n \mid  ={\mid Q \mid }^n  &gt; E$$</p>
+<p>总能满足，仅需</p>
+<p>$$n\cdot \lg{\mid Q\mid } &gt; \lg{E}\quad 或\quad n &gt; \dfrac{\lg{E}}{\lg{\mid Q\mid }}.$$</p>
+<p>因$\mid Q\mid &gt; 1$，故$\lg{\mid Q\mid } &gt; 0$.</p>
+<p>因此，可以取数</p>
+<p>$$E\left( \dfrac{\lg{E}}{\lg{\mid Q\mid }} \right)$$</p>
+<p>当作$N_E$.</p>
+<p>若整序变量$x_n$成为无穷大，并且(至少在充分大的$n$时)保持着一定的符号($+$或$-$)，这时，按照符号的正或负，我们说$x_n$有极限$+\infty$或$-\infty$，并写成：</p>
+<p>$$\lim x_n =+\infty ,x\to +\infty \quad 或\quad \lim x_n =-\infty ,x\to -\infty .$$</p>
+<p>在这些情形时，可以分别用不等式</p>
+<p>$$x_n &gt; E \quad 或 \quad x_n &lt; -E$$</p>
+<p>来代替不等式$\mid x_n \mid &gt; E$，以作为每种特殊无穷大量的定义式.由此已可推得必有$x_n &gt; 0$或$x_n &lt; 0$.</p>
+<p>在一般情形无穷大量表示关系：$\mid x_n \mid \to + \infty .$</p>
+<p>在前面所举的无穷大量的例中，显然，整序变量$x_n =n$趋向$+\infty$，$x_n =-n$趋向$-\infty$.至于第三个：$x_n =(-1)^{n+1}n$，对于它我们既不能说它趋向$+\infty$，也不能说它趋向$-\infty$.</p>
+<p>最后，关于整序变量$x_n =Q^n$，当$Q &gt; 1$时，可以说它趋向$+\infty$，而当$Q &lt; -1$时，仅能说极限不存在.</p>
+<p>关于“广义的数”$\pm \infty$，我们在[数集的界]内已讨论过它；必须记住，它们的应用，在意义上完全是有条件的，对这些“数”进行算术运算时要特别小心.常常简单写$\infty$来代替$+\infty$.</p>
+<p>引入无穷极限并不破坏在前一段(参阅$5°$)内所建立的极限的唯一性的定理；实际上，有如在($4°$)已指出过的，有一有限极限$a$的整序变量必为有界，因此，无论如何不能同时又趋向无穷极限.</p>
+<p>最后，讲一讲无穷大量与无穷小量间的简单关系：</p>
+<p>若整序变量$x_n$是无穷大，则它的倒数$\alpha _n =\dfrac{1}{x_n }$将成无穷小.</p>
+<p>取任意数$\varepsilon &gt; 0$.因$x_n \to \infty $，故对于数$E= \dfrac{1}{\varepsilon }$可以求得序号$N$，使</p>
+<p>$$\mid x_n \mid &gt; \dfrac{1}{\varepsilon },仅需 n &gt; N.$$</p>
+<p>于是对于这种$n$，显然将有</p>
+<p>$$\mid \alpha \mid &lt; \varepsilon ,$$</p>
+<p>这就证明了我们的命题.</p>
+<p>仿此，可以证明逆命题：</p>
+<p>若整序变量$\alpha _n$(不等于零)是无穷小，则它的倒数$ x_n =\dfrac{1}{\alpha _n }$将成无穷大.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微分学/">微分学</a><a href="/tags/积分学/">积分学</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2014/11/14/2014/11/weijifenxuejiaocheng111/" data-title="《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/11/18/2014/11/daishuxueyinlun118/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 8 置换">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第1章 代数的起源 8 置换</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/11/11/2014/11/weijifenxuejiaocheng104/"  title="《微积分学教程(第一卷)》 绪论 实数 4 实数的其他性质及应用">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 绪论 实数 4 实数的其他性质及应用
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于有极限的整序变量的一些定理"><span class="toc-number">5.</span> <span class="toc-text">关于有极限的整序变量的一些定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷大量"><span class="toc-number">6.</span> <span class="toc-text">无穷大量</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>23</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
