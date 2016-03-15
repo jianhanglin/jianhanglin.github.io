@@ -1,0 +1,922 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="集与集的初等运算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算">
+<meta property="og:url" content="http://yoursite.com/2016/02/14/2016/02/shuxuefengxizhuoliqi112/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="集与集的初等运算">
+<meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1121.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1122.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1123.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1124.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1125.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1126.jpg">
+<meta property="og:updated_time" content="2016-03-15T12:12:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算">
+<meta name="twitter:description" content="集与集的初等运算">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/02/14/2016/02/shuxuefengxizhuoliqi112/" title="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算" itemprop="url">《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2016-02-14T13:23:16.000Z" itemprop="datePublished"> 發表於 2016-02-14</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合的概念"><span class="toc-number">1.</span> <span class="toc-text">集合的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#包含关系"><span class="toc-number">2.</span> <span class="toc-text">包含关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最简单的集合运算"><span class="toc-number">3.</span> <span class="toc-text">最简单的集合运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习"><span class="toc-number">4.</span> <span class="toc-text">练习</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="集合的概念">集合的概念</h2><p>从$19$世纪末到$20$世纪初，集合论语言成为最通用的数学语言.这甚至表现在对数学所下的一种定义中，它说：数学就是研究集合上各种结构（关系）的科学.</p>
+<p>“所谓集合，是我们直观感到或意识到的，由确定的、彼此不同的对象联合成的整体”；集合论的奠基人乔治$\cdot $康托尔就是这样描述集合概念的.</p>
+<blockquote>
+<p>康托尔$(\mathrm{G.Cantor} )(1845-1918)$—德国数学家，无穷集理论的创始人，在数学中使用集合论语言的鼻祖.</p>
+</blockquote>
+<p>康托尔的描述，当然不能叫做定义，因为它诉诸于可能比集合概念本身更复杂且从未定义过的概念.这种描述的目的是把这个概念与其他概念联系起来加以说明.</p>
+<p>康托尔的（或叫做“朴素的”）集合论的基本前提可归结为：</p>
+<p>$1^{\circ }$集合可由任意不同的事物组成；</p>
+<p>$2^{\circ }$集合由构成它的事物集聚而唯一确定；</p>
+<p>$3^{\circ }$任何性质都定义一个具有该性质的事物的集合.</p>
+<p>若$x$是一事物，$P$是一性质，$P(x)$表示$x$有性质$P$.用$\lbrace x\vert P(x)\rbrace $表示具有性质$P$的一切事物的类.组成类或集合的事物，叫做类或集合的元素.</p>
+<p>由元素$x_1 ,\cdots ,x_n $组成的集合用$\lbrace x_1 ,\cdots ,x_n \rbrace $表示.当不致引起混淆时，为了书写简单，我们直接用$a$表示单元素集合$\lbrace a\rbrace $.</p>
+<p>“类”，“族”，“集体”，“组”等字，在朴素集合论中作“集合”的同义词来使用.</p>
+<p>下面的例子说明这些术语的应用：</p>
+<p>在词“ᴙ”中的字母“$a$”的集合；</p>
+<p>阿达马的妻子的集合；</p>
+<p>十个数码所成的组；</p>
+<p>豆科植物族；</p>
+<p>地球上沙粒的集合；</p>
+<p>平面上与其上二已知点等距离的点的全体；</p>
+<p>集合的族；</p>
+<p>所有集合的集合.</p>
+<p>集合课题的确定性在程度上可能具有的差别，向我们提示，集合这个概念，可不是那么简单和不出麻烦的概念.</p>
+<p>事实上，例如一切集合的集合这个概念，就会产生矛盾.</p>
+<p>$\blacktriangleleft $设$M$为一集合，用$P(M)$表示“$M$是不以自己作为元素的集”这样一种性质.</p>
+<p>考察具有性质$P$的集合的类$K=\lbrace M\vert P(M)\rbrace $.</p>
+<p>如果$K$是集合，那么，或者$P(K)$为真，或者$\neg P(K)$为真.然而，二者择一对于$K$是不可能的.实际上，$P(K)$不成立，因为由$K$的定义推知$K$包含着$K$，即$\neg P(K)$为真；另一方面，$\neg P(K)$也不可能真，因为这就表示$K$包含着$K$，而这与$K$的定义，亦即，它是不含自身的那样的集的类，相矛盾.</p>
+<p>因此，$K$不是集合$\blacktriangleright $</p>
+<p>这是经典的罗素悖论，它是朴素集合论所导致的悖论之一.</p>
+<blockquote>
+<p>罗素$(\mathrm{B.Russell} )(1872-1970)$—英国逻辑学家，哲学家，社会学者，社会活动家.</p>
+</blockquote>
+<p>在近代数理逻辑中，集合的概念受到了精细的推敲（我们会看到，这并不是无根据的）.但是，我们不去进行这种深入的分析.我们仅指出，在现行的公理化理论中，集合被定义为有一套确定性质的数学对象.</p>
+<p>描述这些性质构成了公理.集合论公理系统的核心是假定了一些规则，根据这些规则可以从一些集合构成新的集合.总之，现行的任何公理体系，一方面，要避免朴素理论中众所周知的矛盾，另一方面，要保证适应于各种具体的集合，这些集合来源于数学的不同部门，首先是数学分析，当然是按广义理解下的数学分析.</p>
+<p>我们对集合的概念，暂时就给出这些注释，并转而描述在分析中最常用的集合性质.</p>
+<p>希望对集合概念作更详细地了解的读者，可参看本章$\S 4$的第二段，或查阅专门文献.</p>
+<h2 id="包含关系">包含关系</h2><p>已经说过，组成集合的事物，叫做该集合的元素.我们尽量地用大写拉丁字母表示集合，而用对应的小写字母表示集合的元素.</p>
+<p>命题“$x$是集合$X$的元素”用符号简单地记作</p>
+<p>$$x\in X(或X\ni x),$$</p>
+<p>它的否命题用符号</p>
+<p>$$x\notin X(或X\not\ni x)$$</p>
+<p>来记.</p>
+<p>在书写有关集合的命题时，经常运用逻辑运算$\exists $（“存在”或“找到”）与$\forall $（“任何的”或“对于任何的”），分别称之为存在量词与全称量词.</p>
+<p>例如写法$\forall x((x\in A)\Leftrightarrow (x\in B))$表示的是，对于任何事物$x$，关系$x\in A$与$x\in B$是等价的.因为一个集合完全被它的元素所确定，所以，上述命题可以简记为</p>
+<p>$$A=B,$$</p>
+<p>读作“$A$等于$B$”，它表示集合$A$与集合$B$完全一致.</p>
+<p>这样，当二集合由同样的元素构成时，它们相等.</p>
+<p>否定相等就写成$A\neq B$.</p>
+<p>若集合$A$的任何元素都是集合$B$的元素，就记作$A\subset B$或$B\supset A$，并说，集合$A$是集合$B$的子集，或说$B$包含$A$，或说$B$把$A$包含于自己内.因此，集合$A,B$间的关系$A\subset B$叫做包含关系（图$1$）.</p>
+<center><img src="/assets/img/shuxuefengxizhuoliqi/01/1121.png" alt=""></center>
+
+<p>于是，</p>
+<p>$$(A\subset B)\colon =\forall x((x\in A)\Rightarrow (x\in B)).$$</p>
+<p>如果$A\subset B$且$A\neq B$，就说包含关系$A\subset B$是严格的，或说$A$是$B$的真子集.利用所引进的定义，可推知</p>
+<p>$$(A=B)\Leftrightarrow (A\subset B)\land (B\subset A).$$</p>
+<p>如果$M$是集合，$P$是任一性质，那么，就能从$M$中分出一个子集</p>
+<p>$$\lbrace x\in M\vert P(x)\rbrace ,$$</p>
+<p>它是由$M$中具有这一性质的一切元素组成的子集.</p>
+<p>例如，显然有</p>
+<p>$$M=\lbrace x\in M \vert x\in M \rbrace .$$</p>
+<p>另一方面，如果$P$是$M$中任何元素都不具有的一个性质，比如说，$P(x)\colon =(x\neq x)$，则我们得到集合</p>
+<p>$$\varnothing =\lbrace x\in M\vert x\neq x\rbrace ,$$</p>
+<p>它叫做$M$的空子集.</p>
+<h2 id="最简单的集合运算">最简单的集合运算</h2><p>设$A$与$B$都是集合$M$的子集.</p>
+<p>$a$.集合</p>
+<p>$$A\cup B\colon =\lbrace x\in M\vert (x\in A)\lor (x\in B)\rbrace ,$$</p>
+<p>由$M$中的那些元素组成，它至少属于$A,B$中之一（图$2$），称此集为$A,B$的并集.</p>
+<center><img src="/assets/img/shuxuefengxizhuoliqi/01/1122.png" alt=""></center>
+
+<p>$b$.集合</p>
+<p>$$A\cap B \colon =\lbrace x\in M\vert (x\in A)\lor (x\in B)\rbrace ,$$</p>
+<p>由$M$中那些元素组成，它同时属于$A$和$B$（图$3$），称此集为$A,B$的交集.</p>
+<center><img src="/assets/img/shuxuefengxizhuoliqi/01/1123.png" alt=""></center>
+
+<p>$c$.集合</p>
+<p>$$A\setminus B\colon =\lbrace x\in M\vert (x\in A)\land (x\notin B)\rbrace ,$$</p>
+<p>由$M$中那些元素组成，它属于$A$但不属于$B$（图$4$），称此集为$A$，$B$的差集.</p>
+<center><img src="/assets/img/shuxuefengxizhuoliqi/01/1124.png" alt=""></center>
+
+<p>集$M$与$M$的子集$A$之差通常叫做$A$在$M$中的补集，记作$C_M A$，如果前后文能明显地知道$A$是哪个集中的补集时，就记作$CA$（图$5$）.</p>
+<center><img src="/assets/img/shuxuefengxizhuoliqi/01/1125.png" alt=""></center>
+
+<p>例$\quad $为了说明引进的这些概念的相互作用，我们验证下面的关系式（称之为德$\cdot $摩根规则）：</p>
+<blockquote>
+<p>德$\cdot $摩根$(\mathrm{De.Morgan} )(1806-1871)$—英格兰数学家.</p>
+</blockquote>
+<p>$$C_M (A\cup B)=C_M A \cap C_M B,\label{1} \tag{1}$$</p>
+<p>$$C_M (A\cap B)=C_M A\cup C_M B.\label{2} \tag{2}$$</p>
+<p>$\blacktriangleleft $例如我们来证明第一个等式：</p>
+<p>$$\begin{align}<br>(x\in C_M (A\cup B)) &amp; \Rightarrow (x\notin A\cup B) \\<br> &amp; \Rightarrow ((x\notin A)\land (x\notin B)) \\<br> &amp; \Rightarrow (x\in C_M A)\land (x\in C_M B) \\<br> &amp; \Rightarrow (x\in (C_M A\cap C_M B)).<br>\end{align}$$</p>
+<p>因此，得到</p>
+<p>$$C_M (A\cup B)\subset (C_M A\cap C_M B).\label{3} \tag{3} $$</p>
+<p>另一方面，</p>
+<p>$$\begin{align}<br>(x\in (C_M A\cap C_M B)) &amp; \Rightarrow ((x\in C_M A)\land (x\in C_M B)) \\<br> &amp; \Rightarrow ((x\notin A)\land (x\notin B)) \\<br> &amp; \Rightarrow (x\notin (A\cup B)) \\<br> &amp; \Rightarrow (x\in C_M (A\cup B)) ,<br>\end{align}$$</p>
+<p>即</p>
+<p>$$C_M (A\cup B)\supset (C_M A\cap C_M B).\label{4} \tag{4} $$</p>
+<p>由$\eqref{3}$与$\eqref{4}$即得到$\eqref{1}$.$\blacktriangleright $</p>
+<p>$d$.集合的直积（笛卡儿积）.对于任意两个集合$A,B$，可构造出新的集合——对$\lbrace A,B\rbrace =\lbrace B,A\rbrace $，它的元素只有集合$A$和$B$.如果$A\neq B$，它有两个元素，而当$A=B$时，它只有一个元素.</p>
+<p>这个新集合叫做$A$，$B$的无序对，以区别于序对$(A,B)$.在序对$(A,B)$中，元素$A,B$被赋予一种附加的特征，根据它分辨对$\lbrace A,B\rbrace $中的第一个元素和第二个元素.按定义，序对等式</p>
+<p>$$(A,B)=(C,D),$$</p>
+<p>表示$A=C$且$B=D$.特别地，如果$A\neq B$，那么$(A,B)\neq (B,A)$.</p>
+<p>现设$X,Y$是任意两个集.按定义，由一切序对$(x,y)$（其第一项是$X$中的元素，而第$2$项是$Y$中的元素）所构成的集合</p>
+<p>$$X\times Y\colon =\lbrace (x,y)\vert (x\in X)\land (y\in Y)\rbrace ,$$</p>
+<p>叫做集合$X,Y$（按这样的次序！）的直积或笛卡儿积.</p>
+<p>由直积的定义及上面关于序对所做的注释，一般来说，$X\times Y\neq Y\times X$.只有当$X=Y$时，等式才成立.这时我们把$X\times X$简记作$X^2 $.</p>
+<p>直积又叫做笛卡儿积，以纪念笛卡儿，他曾与费马各自独立地通过坐标系引进了几何的分析语言.众所周知的平面笛卡儿坐标系，恰好把平面变成了两个数轴的直积.笛卡儿与它的因子的次序有关这一点，在这个熟知的情形是非常显然的.例如，序对$(0,1)$和$(1,0)$对应于平面上两个不同的点.</p>
+<blockquote>
+<p>笛卡儿$(\mathrm{Descartes} )(1596-1650)$—著名的法国哲学家，数学家与物理学家.他在科学思想法和认识论方面作出了重大贡献.</p>
+<p>费马$(\mathrm{Fermat} )(1601-1665)$—卓越的法国数学家，职业法学家.费马在分析，解析几何，概率论，数论等一系列现代数学领域中，都居于创始的地位.</p>
+</blockquote>
+<p>设序对$z=(x_1 ,x_2 )$是集合$X_1 ,X_2 $的直积$X_1 \times X_2 $中的元素，$x_1 $叫做序对$z$的第一射影，记作$\mathrm{pr_1 }z$；而$x_2 $叫做序对$z$的第二射影，记作$\mathrm{pr_2 } z$.</p>
+<h2 id="练习">练习</h2><p>在问题$1,2,3$中用$A,B,C$表示某集$M$的子集.</p>
+<p>$1$.验证下面诸关系式：</p>
+<p>$(a)\quad (A\subset C)\land (B\subset C)\Leftrightarrow ((A\cup B)\subset C)$；</p>
+<p>$(b)\quad (C\subset A)\land (C\subset B)\Leftrightarrow (C\subset (A\cap B))$；</p>
+<p>$(c)\quad C_M (C_M A)=A$；</p>
+<p>$(d)\quad (A\subset C_M B)\Leftrightarrow (B\subset C_M A)$；</p>
+<p>$(e)\quad (A\subset B)\Leftrightarrow (C_M A\supset C_M B)$.</p>
+<p>证$\quad (a)$先证$(A\subset C)\land (B\subset C)\Rightarrow ((A\cup B)\subset C)$.任取$x,y$，$x\in A$，$y\in B$，$x\in A\land y\in B\Rightarrow x\in C\land y\in C\Rightarrow x,y\in C$，从而得到$((A\cup B)\subset C)$.</p>
+<p>再证$((A\cup B)\subset C)\Rightarrow (A\subset C)\land (B\subset C)$.这可以由$A\subset (A\cup B)\subset C$，$B\subset (A\cup B)\subset C$得到.</p>
+<p>故成立$(a)(A\subset C)\land (B\subset C)\Leftrightarrow ((A\cup B)\subset C)$.</p>
+<p>$(b)$先证$(C\subset A)\land (C\subset B)\Rightarrow (C\subset (A\cap B))$.任取$x$，$x\in C\Rightarrow x\in C\land x\in C\Rightarrow x\in A\land x\in B\Rightarrow x\in A\cap B$，从而得到$(C\subset (A\cap B))$.</p>
+<p>再证$(C\subset (A\cap B))\Rightarrow (C\subset A)\land (C\subset B)$.这可以由$C\subset A\cap B\subset A$，$C\subset A\cap B\subset B$得到.</p>
+<p>故成立$(C\subset A)\land (C\subset B)\Leftrightarrow (C\subset (A\cap B))$.</p>
+<p>$(c)$由于$x\in C_M (C_M A)\Rightarrow x\notin C_M A\Rightarrow x\in A$.因此，得到$C_M (C_M A)\subset A$.</p>
+<p>另一方面，$x\in A\Rightarrow x\notin C_M A\Rightarrow x\in C_M (C_M A) $.即$C_M (C_M A)\supset A$.</p>
+<p>故$C_M (C_M A)=A$.</p>
+<p>$(d)$先证$(A\subset C_M B)\Rightarrow (B\subset C_M A)$.任取$x$，$x\in A\Rightarrow x\in C_M B\Rightarrow x\notin B$，故$A\cap B=\varnothing $.于是，任取$y$，$y\in B\Rightarrow y\notin A\Rightarrow y\in C_M A$，从而得到$(B\subset C_M A)$.</p>
+<p>同理可证$(B\subset C_M A)\Rightarrow (A\subset C_M B)$.综上所述，$(A\subset C_M B)\Leftrightarrow (B\subset C_M A)$.</p>
+<p>$(e)$根据$(d)$式结论，用$C_M B$代替$(d)$式子里的$B$，得$(A\subset C_M (C_M B))\Leftrightarrow ((C_M B)\subset C_M A)$成立.根据$(c)$式，知$C_M (C_M B)=B$，代入上式，得到$(A\subset B)\Leftrightarrow ((C_M B)\subset C_M A)$成立，该式等价于$(A\subset B)\Leftrightarrow (C_M A\supset C_M B)$.</p>
+<p>$2$.试证</p>
+<p>$(a)\quad A\cup (B\cup C)=(A\cup B)\cup C=\colon A\cup B\cup C$；</p>
+<p>$(b)\quad A\cap (B\cap C)=(A\cap B)\cap C=\colon A\cap B\cap C$；</p>
+<p>$(c)\quad A\cap (B\cup C)=(A\cap B)\cup (A\cap C)$；</p>
+<p>$(d)\quad A\cup (B\cap C)=(A\cup B)\cap (A\cup C)$.</p>
+<p>证$\quad (a)$根据定义，成立</p>
+<p>$$B\cup C\colon =\lbrace x\in M\vert (x\in B)\lor (x\in C)\rbrace ,$$</p>
+<p>$$A\cup B\colon =\lbrace x\in M\vert (x\in A)\lor (x\in B)\rbrace .$$</p>
+<p>因此，有以下两式成立</p>
+<p>$$A\cup (B\cup C)\colon =\lbrace x\in M\vert (x\in A)\lor (x\in B)\lor (x\in C)\rbrace ,$$</p>
+<p>$$(A\cup B)\cup C\colon =\lbrace x\in M\vert (x\in A)\lor (x\in B)\lor (x\in C)\rbrace .$$</p>
+<p>另一方面，根据定义，又有</p>
+<p>$$A\cup B\cup C\colon =\lbrace x\in M\vert (x\in A)\lor (x\in B)\lor (x\in C)\rbrace ,$$</p>
+<p>结合上面三式，可得$A\cup (B\cup C)=(A\cup B)\cup C=\colon A\cup B\cup C$.</p>
+<p>$(b)$根据定义，成立</p>
+<p>$$B\cap C\colon =\lbrace x\in M\vert (x\in B)\land (x\in C)\rbrace ,$$</p>
+<p>$$A\cap B\colon =\lbrace x\in M\vert (x\in A)\land (x\in B)\rbrace .$$</p>
+<p>因此，有以下两式成立</p>
+<p>$$A\cap (B\cap C)\colon =\lbrace x\in M\vert (x\in A)\land (x\in B)\land (x\in C)\rbrace ,$$</p>
+<p>$$(A\cap B)\cap C\colon =\lbrace x\in M\vert (x\in A)\land (x\in B)\land (x\in C)\rbrace .$$</p>
+<p>另一方面，根据定义，又有</p>
+<p>$$A\cap B\cap C\colon =\lbrace x\in M\vert (x\in A)\land (x\in B)\land (x\in C)\rbrace ,$$</p>
+<p>结合上面三式，可得$A\cap (B\cap C)=(A\cap B)\cap C=\colon A\cap B\cap C$.</p>
+<p>$(c)$我们将通过说明等式的每一边是另一边的子集来证明这个恒等式.</p>
+<p>假定$x\in A\cap (B\cup C)$，那么$x\in A$且$x\in  (B\cup C)$.根据集合并的定义，可得$x\in A$且$x\in B$或$x\in C$；因此，$x\in A$且$x\in B$或$x\in A$且$x\in C$.根据交的定义，可知$x\in A\cap B$或$x\in A\cap C$；使用并的定义，可得$x\in (A\cap B)\cup (A\cap C)$；由此$A\cap (B\cup C)\subset (A\cap B)\cup (A\cap C)$.</p>
+<p>现在假定$x\in (A\cap B)\cup (A\cap C)$，那么，由并的定义，$x\in A\cap B$或$x\in A\cap C$；由交的定义，可得$x\in A$且$x\in B$或$x\in A$且$x\in C$；由此可知，$x\in A$，$x\in B$或$x\in C$；因此，由并的定义可知，$x\in A$且$x\in B\cup C$.而且，由交的定义，可得$x\in A\cap (B\cup C)$；最终得出$(A\cap B)\cup (A\cap C)\subset A\cap (B\cup C)$.这便完成了恒等式的证明.</p>
+<p>$(d)$我们将通过说明等式的每一边是另一边的子集来证明这个恒等式.</p>
+<p>假定$x\in A\cup (B\cap C)$，那么$x\in A$或$x\in  (B\cap C)$.根据集合交的定义，可得$x\in A$或$x\in B$且$x\in C$；因此，$x\in A$或$x\in B$且$x\in A$或$x\in C$.根据并的定义，可知$x\in A\cup B$且$x\in A\cup C$；使用交的定义，可得$x\in (A\cup B)\cap (A\cup C)$；由此$A\cup (B\cap C)\subset (A\cup B)\cap (A\cup C)$.</p>
+<p>现在假定$x\in (A\cup B)\cap (A\cup C)$，那么，由交的定义，$x\in A\cup B$且$x\in A\cup C$；由并的定义，可得$x\in A$或$x\in B$且$x\in A$或$x\in C$；由此可知，$x\in A$或$x\in B$且$x\in C$；因此，由交的定义可知，$x\in A$或$x\in B\cap C$.而且，由并的定义，可得$x\in A\cup (B\cap C)$；最终得出$(A\cup B)\cap (A\cup C)\subset A\cup (B\cap C)$.这便完成了恒等式的证明.</p>
+<p>$3$.验证并与交运算的对偶关系：</p>
+<p>$(a)\quad C_M (A\cup B)=C_M A\cap C_M B$；</p>
+<p>$(b)\quad C_M (A\cap B)=C_M A\cup C_M B$.</p>
+<p>证$\quad (a)$首先，</p>
+<p>$$\begin{align}<br>(x\in C_M (A\cup B)) &amp; \Rightarrow (x\notin A\cup B) \\<br> &amp; \Rightarrow ((x\notin A)\land (x\notin B)) \\<br> &amp; \Rightarrow (x\in C_M A)\land (x\in C_M B) \\<br> &amp; \Rightarrow (x\in (C_M A\cap C_M B)).<br>\end{align}$$</p>
+<p>因此，得到</p>
+<p>$$C_M (A\cup B)\subset (C_M A\cap C_M B).$$</p>
+<p>另一方面，</p>
+<p>$$\begin{align}<br>(x\in (C_M A\cap C_M B)) &amp; \Rightarrow ((x\in C_M A)\land (x\in C_M B)) \\<br> &amp; \Rightarrow ((x\notin A)\land (x\notin B)) \\<br> &amp; \Rightarrow (x\notin (A\cup B)) \\<br> &amp; \Rightarrow (x\in C_M (A\cup B)) ,<br>\end{align}$$</p>
+<p>即</p>
+<p>$$C_M (A\cup B)\supset (C_M A\cap C_M B).$$</p>
+<p>综上所述，得到$C_M (A\cup B)= (C_M A\cap C_M B)$.</p>
+<p>$(b)$首先，</p>
+<p>$$\begin{align}<br>(x\in C_M (A\cap B)) &amp; \Rightarrow (x\notin A\cap B) \\<br> &amp; \Rightarrow ((x\notin A)\lor (x\notin B)) \\<br> &amp; \Rightarrow (x\in C_M A)\lor (x\in C_M B) \\<br> &amp; \Rightarrow (x\in (C_M A\cup C_M B)).<br>\end{align}$$</p>
+<p>因此，得到</p>
+<p>$$C_M (A\cap B)\subset (C_M A\cup C_M B).$$</p>
+<p>另一方面，</p>
+<p>$$\begin{align}<br>(x\in (C_M A\cup C_M B)) &amp; \Rightarrow ((x\in C_M A)\lor (x\in C_M B)) \\<br> &amp; \Rightarrow ((x\notin A)\lor (x\notin B)) \\<br> &amp; \Rightarrow (x\notin (A\cap B)) \\<br> &amp; \Rightarrow (x\in C_M (A\cap B)) ,<br>\end{align}$$</p>
+<p>即</p>
+<p>$$C_M (A\cap B)\supset (C_M A\cup C_M B).$$</p>
+<p>综上所述，得到$C_M (A\cap B)= (C_M A\cup C_M B)$.</p>
+<p>$4$.对下列集合的笛卡儿积作出几何解释：</p>
+<p>$(a)\quad $二线段（矩形）；</p>
+<p>$(b)\quad $二直线（平面）；</p>
+<p>$(c)\quad $直线与圆周（圆柱面）；</p>
+<p>$(d)\quad $直线与圆面（圆柱体）；</p>
+<p>$(e)\quad $二圆周（圆环面）；</p>
+<p>$(f)\quad $圆周与圆面（实圆环）.</p>
+<p>解$\quad (a)$设集合$X=\lbrace x\in M_1 \vert M_1 =[a,b]\rbrace $位于$x$轴，集合$Y=\lbrace y\in M_2 \vert M_1 =[c,d]\rbrace $位于$y$轴，则</p>
+<p>$$X\times Y=\lbrace (x,y)\in M_1 \times M_2 \vert M_1 \times M_2 =[a,b]\times [c,d]\rbrace ,$$</p>
+<p>即二线段的笛卡儿积作成一矩形.</p>
+<p>$(b)$由$(a)$可知，当$a,b\to -\infty $，$c,d\to +\infty $时，即无限延长线段$M_1 $和$M_2 $时，二直线的笛卡儿积应作成一无边界的矩形，即平面.</p>
+<p>$(c)$在空间直角坐标系中，取任一经过圆周$l_2 $边界的直线$l_1 $上的点$x$且$l_1 $与轴$Oz$平行，并取与底面$Oxy$平行且半径为$r$的圆周$l_2 $上的点$y $，满足$X=\lbrace x \in l_1 \vert l_1 \in (-\infty ,+\infty )\rbrace $且$Y=\lbrace y\in (c,d) \vert c^2 +d^2 =r^2 \rbrace $，则直线与圆周的直积</p>
+<p>$$X\times Y=\lbrace (s,c,d)\in l_1 \times (c,d)\vert s\in l_1 ,c^2+d^2 =r^2 \rbrace $$</p>
+<p>构成空间中的一个圆柱圆.</p>
+<p>$(d)$在空间直角坐标系中，取任一经过圆周$l_2 $边界的直线$l_1 $上的点$x$且$l_1 $与轴$Oz$平行，并取与底面$Oxy$平行且半径为$r$的圆周$l_2 $内的点$y $，满足$X=\lbrace x \in l_1 \vert l_1 \in (-\infty ,+\infty )\rbrace $且$Y=\lbrace y\in (c,d) \vert c^2 +d^2 \leqslant r^2 \rbrace $，则直线与圆周的直积</p>
+<p>$$X\times Y=\lbrace (s,c,d)\in l_1 \times (c,d)\vert s\in l_1 ,c^2+d^2 \leqslant r^2 \rbrace $$</p>
+<p>构成空间中的一个圆柱体.</p>
+<p>$(e)$根据拓扑学定义，一个圆沿着另一圆的圆周旋转一周，可知两个圆周的直积是圆环面.如图所示.</p>
+<center><img src="/assets/img/shuxuefengxizhuoliqi/01/1126.jpg" alt=""></center>
+
+<p>$(f)$根据$(e)$的说明，可知圆周与圆面的直积是一个实圆环.</p>
+<p>$5$.集合$\Delta =\lbrace (x_1 ,x_2 )\in X^2 \vert x_1 =x_2 \rbrace $叫做集合$X$的笛卡儿正方形$X^2 $的对角线.对第$4$题的$a),b),e)$所得之集的对角线做出几何解释.</p>
+<p>解$\quad (a)$如果矩形经过直线$y=x$，那么$(a)$所得之集的对角线的几何解释应是一线段$L=\lbrace (x,x)\in L\vert (x,x)\in X\times Y\rbrace $.</p>
+<p>$(b)$所得之集的对角线从几何角度看，明显是一条直线$L$，其方程为$L\colon y=x$.</p>
+<p>$(e)$所得之集的对角线从几何角度看应是一个椭圆面或两个圆面，是由第$4$题$(e)$所得之集即圆环面与在空间直角坐标系中垂直于底面$Oxy$的对角线的平面所成的截面.在空间直角坐标系中，随着圆环面的不同位置，所成的截面是不同的.</p>
+<p>$6$.试证：</p>
+<p>$(a)\quad (X\times Y=\varnothing )\Leftrightarrow (X=\varnothing )\lor (Y=\varnothing )$，</p>
+<p>而如系$X\times Y\neq \varnothing $，则</p>
+<p>$(b)\quad (A\times B\subset X\times Y)\Leftrightarrow (A\subset X)\land (B\subset Y)$.</p>
+<p>$(c)\quad (X\times Y)\cup (Z\times Y)=(X\cup Z)\times Y$.</p>
+<p>$(d)\quad (X\times Y)\cap (X’ \times Y’)=(X\cap X’ )\times (Y\cap Y’)$.</p>
+<p>这里$\varnothing $表空集，即不包含任何元素的集合.</p>
+<p>证$\quad (a)$先证$(X\times Y=\varnothing )\Rightarrow (X=\varnothing )\lor (Y=\varnothing )$，任取$x\in X$，$y\in Y$，$\langle x,y\rangle \in X\times Y$，这时$x\in X\land y\in Y $.由于$X\times Y=\varnothing $，故$x\in X=\varnothing $或$y\in Y=\varnothing $成立，即$\langle x,y\rangle \in (X=\varnothing )\lor (Y=\varnothing )$.</p>
+<p>再证$(X=\varnothing )\lor (Y=\varnothing )\Rightarrow (X\times Y=\varnothing )$，明显的，由定义知，若$X$或$Y$之一有一个是空集，则$X$与$Y$的直积也是空集.</p>
+<p>$(b)$先证$(A\times B\subset X\times Y)\Rightarrow (A\subset X)\land (B\subset Y)$.任取$a\in A,b\in B$，则</p>
+<p>$$\begin{align}<br> &amp; \langle a,b\rangle \in A\times B\Rightarrow \langle a,b\rangle \in X\times Y \\<br>\Rightarrow &amp; a\in A\land b\in B \Rightarrow a\in X\land b\in Y \\<br>\Rightarrow &amp; (a\in A\Rightarrow a\in X)\land (b\in B\Rightarrow b\in Y) \\<br>\Rightarrow &amp; \langle a,b\rangle \in (A\subset X)\land (B\subset Y)<br>\end{align}$$</p>
+<p>$(c)$任取$\langle x,y\rangle $，有</p>
+<p>$$\begin{align}<br> &amp; \langle x,y\rangle \in (X\cup Z)\times Y \\<br>\Leftrightarrow &amp; x\in X\cup Z \land y\in Y \\<br>\Leftrightarrow &amp; (x\in X\lor x\in Z )\land y\in Y \\<br>\Leftrightarrow &amp; (x\in X\land y\in Y)\lor (x\in Z\land y\in Y) \\<br>\Leftrightarrow &amp; \langle x,y\rangle \in X\times Y\lor \langle x,y\rangle \in Z \times Y \\<br>\Leftrightarrow &amp; \langle x,y\rangle \in (X\times Y)\cup (Z \times Y)<br>\end{align}$$</p>
+<p>$(d)$任取$\langle x,y\rangle $，有</p>
+<p>$$\begin{align}<br> &amp; \langle x,y\rangle \in (X\cap X’ )\times (Y\cap Y’) \\<br>\Leftrightarrow &amp; x\in X\cap X’ \land y\in Y\cap Y’ \\<br>\Leftrightarrow &amp; x\in X\land x\in X’ \land y\in Y\land y\in Y’ \\<br>\Leftrightarrow &amp; (x\in X\land y\in Y)\land (x\in X’\land y\in Y’) \\<br>\Leftrightarrow &amp; \langle x,y\rangle \in X\times Y\land \langle x,y\rangle \in X’ \times Y’ \\<br>\Leftrightarrow &amp; \langle x,y\rangle \in (X\times Y)\cap (X’ \times Y’)<br>\end{align}$$</p>
+<p>$7$.将问题$3$中的关系与$\S 1$练习$2$中的关系$a),b)$比较，建立对于命题的逻辑运算$\neg ,\land ,\lor $与对于集合的运算$C,\cap ,\cup $之间的关系.</p>
+<p>解$\quad $由“且”$\land $的含义，我们可以用“且”$\land $来定义集合$A$和集合$B$的交集$\cap $</p>
+<p>$$A\cap B=\lbrace x\vert (x\in A)\land (x\in B)\rbrace .$$</p>
+<p>由“或”$\lor $的含义，我们可以用“或”$\lor $来定义集合$A$和集合$B$的并集$\cup $</p>
+<p>$$A\cup B=\lbrace x\vert (x\in A)\lor (x\in B)\rbrace .$$</p>
+<p>由“非”$\neg $的含义，我们可以用“非”$\neg $来定义集合$A$在全集$M$中的补集$C_M A$</p>
+<p>$C_M A=\lbrace x\in U\vert \neg (x\in A)\rbrace =\lbrace x\in U\vert x\notin A\rbrace .$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/02/14/2016/02/shuxuefengxizhuoliqi112/" data-title="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/02/11/2016/02/shuxuefengxizhuoliqi111/"  title="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 1.逻辑符号">
+ <strong>下一篇：</strong><br/> 
+ <span>《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 1.逻辑符号
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合的概念"><span class="toc-number">1.</span> <span class="toc-text">集合的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#包含关系"><span class="toc-number">2.</span> <span class="toc-text">包含关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最简单的集合运算"><span class="toc-number">3.</span> <span class="toc-text">最简单的集合运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习"><span class="toc-number">4.</span> <span class="toc-text">练习</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>27</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
