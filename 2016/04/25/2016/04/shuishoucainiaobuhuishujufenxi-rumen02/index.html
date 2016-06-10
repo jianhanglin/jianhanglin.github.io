@@ -1,0 +1,877 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="结构为王——确定分析思路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路">
+<meta property="og:url" content="http://yoursite.com/2016/04/25/2016/04/shuishoucainiaobuhuishujufenxi-rumen02/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="结构为王——确定分析思路">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-1.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-2.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-3.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-4.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-5.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-6.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-7.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-8.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-9.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-10.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-11.jpg">
+<meta property="og:updated_time" content="2016-06-10T02:03:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路">
+<meta name="twitter:description" content="结构为王——确定分析思路">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/04/25/2016/04/shuishoucainiaobuhuishujufenxi-rumen02/" title="《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路" itemprop="url">《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2016-04-24T22:12:36.000Z" itemprop="datePublished"> 發表於 2016-04-25</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析方法论"><span class="toc-number">1.</span> <span class="toc-text">数据分析方法论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析方法论与数据分析法的区别"><span class="toc-number">1.1.</span> <span class="toc-text">数据分析方法论与数据分析法的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析方法论的重要性"><span class="toc-number">1.2.</span> <span class="toc-text">数据分析方法论的重要性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用的数据分析方法论"><span class="toc-number">2.</span> <span class="toc-text">常用的数据分析方法论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PEST分析法"><span class="toc-number">2.1.</span> <span class="toc-text">PEST分析法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5W2H分析法"><span class="toc-number">2.2.</span> <span class="toc-text">5W2H分析法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑树分析法"><span class="toc-number">2.3.</span> <span class="toc-text">逻辑树分析法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$4P$营销理论"><span class="toc-number">2.4.</span> <span class="toc-text">$4P$营销理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户行为理论"><span class="toc-number">2.5.</span> <span class="toc-text">用户行为理论</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本章小结"><span class="toc-number">3.</span> <span class="toc-text">本章小结</span></a></li></ol>
+		
+		</div>
+		
+		<p>第二天早上一上班，小白就揣着笔记本来到Mr.林办公桌前：Mr.林，早上好呀！我又来了，今天学什么呢？</p>
+<p>Mr.林：早上好！小白，你好勤奋呀！学习态度真不错.</p>
+<p>小白：那当然，有您这样的好老师，我不勤奋点，就太对不起您啦！</p>
+<p>Mr.林：那我们开始今天的课程吧！昨天已经向你介绍了什么是数据分析、数据分析的作用、数据分析六步曲等知识，让你对数据分析有个整体认识，今天我们就来学习如何开展数据分析.首先要学的就是如何确定分析思路，这是非常关键的一步，如果分析思路不明确或者错误，那么后续的数据分析工作也无从开展了.</p>
+<p>小白：好的.</p>
+<h1 id="数据分析方法论">数据分析方法论</h1><p>Mr.林：昨天提到确定分析思路需要以营销、管理等理论为指导，我们把这些跟数据分析相关的营销、管理等理论统称为数据分析方法论.今天我们先学习数据分析方法论.</p>
+<p>小白：方法论？听起来好高深哦！</p>
+<p>Mr.林：小白，不要一听到方法就觉得它深不可测，我先跟你讲一件亲身经历的事.</p>
+<p>在我刚开始从事数据分析工作时，经常需要做一些专题分析，例如对公司的某个业务问题进行专项研究.每当完成专题分析向老板汇报分析结果时，老板首先就问：“你的分析方法论是什么？说来听听，我看分析报告就先看你的分析方法论，如果分析方法论不正确或不合理，后面的分析结果也就没有必要看了，在一个不正确或不合理的方法论的指导下，得到的分析结果是不可能正确的.”</p>
+<p>当年老板的这番话对我触动很深，在后续的专题分析中，我养成了在分析方法论指导下开展分析的习惯，以确保分析结果具有指导意义.</p>
+<p>小白点点头：明白了.方法论就是指南针，南辕北辙是很难到达目的地的.</p>
+<h2 id="数据分析方法论与数据分析法的区别">数据分析方法论与数据分析法的区别</h2><p>Mr.林：刚开始我对方法论的概念也比较模糊，学校里老师没教过，相关的书籍中也没介绍过，只好自己琢磨研究.经过一段时间的思考、研究，以及老板的点拨，我终于参透了其中的奥秘：数据分析方法论主要用来指导数据分析师进行一次完整的数据分析，它更多的是指数据分析思路，比如主要从哪几方面开展数据分析？各方面包含什么内容和指标？</p>
+<p>所以，数据分析方法论主要从宏观角度指导如何进行数据分析，它就像是一个数据分析的前期规划，指导着后期数据分析工作的开展.而数据分析法则是指具体的分析方法，例如我们常见的对比分析、交叉分析、相关分析、回归分析、聚类分析等数据分析法.数据分析法主要从微观角度指导如何进行数据分析.</p>
+<p>Mr.林看小白似懂非懂的样子，就想到结合小白的喜好，以吸引她的兴趣及注意力：这样，我给你打个比方，数据分析方法论与数据分析法的关系就好比服装制作.</p>
+<p>小白还没等Mr.林说完就抢道：数据分析跟服装制作都能扯上关系？有意思，Mr.林，你继续讲.</p>
+<p>Mr.林假装生气地说：我正要说呢，明明是你把话抢过去了，你叫我如何往下说？</p>
+<p>小白笑嘻嘻地说道：Mr.林别生气，我这不是一听到做衣服就激动嘛.您大人不计小人过咯！</p>
+<p>Mr.林见小白已经认错了：好吧，谁让我心太软呢.</p>
+<p>服装制作首先需要进行服装设计，设计服装样式，并画出服装设计图，然后裁缝师就按着设计好的服装设计图制作服装.</p>
+<p>服装制作期间涉及如裁剪、缝纫、熨烫等工序，都需要用到不同的专业工具及技术.</p>
+<ul>
+<li><p>专业工具有剪刀、缝纫机、电熨斗等.</p>
+</li>
+<li><p>裁剪专业的技术有平面裁剪、包缝、骑缝等.</p>
+</li>
+<li><p>缝纫专业的技术有合缝、包缝、骑缝等.</p>
+</li>
+</ul>
+<p>-熨烫专业的技术有压烫、吸烫、坐烫等.</p>
+<p>数据分析方法论好比服装设计图，它为我们的数据分析工作指引方向，数据分析法好比服装制作的技术，它为完成各个数据的分析提供技术保障与支持，如图$2-1$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-1.jpg" alt=""></center>
+
+<p>小白：Mr.林，经您这么打比方，我对这个数据分析方法论有了更进一步的理解了，基本上已明白是怎么回事，这个比方真是恰如其分.</p>
+<h2 id="数据分析方法论的重要性">数据分析方法论的重要性</h2><p>Mr.林：很多人在做数据分析时，经常遇到这几个问题：不知从哪方面入手开展分析；分析的内容和指标常常被质疑是否合理、完整，而自己也说不出个所以然后来.对这些问题常常感到困扰.</p>
+<p>这就是我为什么强调数据分析方法论的原因，刚才也说过数据分析方法论主要用来指导数据分析师进行一次完整的数据分析，而只有在营销、管理等方法和理论的指导下，结合实际业务情况，才能确保数据分析维度的完整性，分析结果的有效性及正确性.</p>
+<p>数据分析方法论主要有以下几个作用.</p>
+<ul>
+<li><p>理顺分析思路，确保数据分析结构体系化.</p>
+</li>
+<li><p>把问题分解成相关联的部分，并显示它们之间的关系.</p>
+</li>
+<li><p>为后续数据分析的开展指引方向.</p>
+</li>
+<li><p>确保分析结果的有效性及正确性.</p>
+</li>
+</ul>
+<p>如果没有数据分析方法论的指导，整个数据分析报告虽然各方面都涵盖到，但会给人感觉还缺点什么.其实就是报告主线不明，各部分的分析逻辑不清.</p>
+<p>在第一节课的时候我就跟你说过，一份好的分析报告，首先需要有好的分析框架，并且图文并茂，层次明晰，能够让阅读者一目了然.结构清晰、主次分明可以使阅读者正确理解报告内容；图文并茂，可以令数据更加生动活泼，提高视觉冲击力，有助于阅读者更形象、直观地看清楚问题和结论，从而产生思考.</p>
+<p>小白：确实是这样的，就跟我们写毕业论文一个道理，都需要结构清晰，从提出问题、分析问题到解决问题，始终围绕核心问题展开论述.</p>
+<p>Mr.林：对，一样的道理.我们接下来重点介绍数据分析方法论，也就是如何用数据分析方法论指导我们确定分析思路，进而确定需要分析的内容或指标.</p>
+<h1 id="常用的数据分析方法论">常用的数据分析方法论</h1><h2 id="PEST分析法">PEST分析法</h2><p>Mr.林：小白，首先要考考你，你知道有哪些营销管理模型吗？</p>
+<p>小白为难地说道：不好意思，我不太了解这方面的知识.</p>
+<p>Mr.林：好吧，那我来告诉你几个重要的理论.营销方面的理论模型有$4P$、用户使用行为、$STP$理论、$SWOT$等，而管理方面的理论模型有$PEST$、$5W2H$、时间管理、生命周期、逻辑树、金字塔、$SMART$原则等.这些都是经典的营销、管理方面的理论，需要在工作中不断实践应用，你才能体会其强大的作用.</p>
+<p>我们就挑选其中的$PEST$、$5W2H$、逻辑树、$4P$、用户使用行为这五个比较经典实用的理论，谈谈如何在建立数据分析框架时应用它们作指导.</p>
+<p>Mr.林：首先介绍的是$PEST$分析法.</p>
+<p>$PEST$分析法用于对宏观环境的分析.宏观环境又称一般环境，是指影响一切行业和企业的各种宏观力量.对宏观环境因素作分析时，由于不同行业和企业有其自身特点和经营需要，分析的具体内容会有差异，但一般都应对政治（Political）、经济（Economic）、技术（Technological）和社会（Social）这四大类影响企业的主要外部环境因素进行分析，如图$2-2$所示，这种方法简称为$PEST$分析法.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-2.jpg" alt=""></center>
+
+<ul>
+<li>政治环境</li>
+</ul>
+<p>政治环境包括一个国家的社会制度，执政党的性质，政府的方针、政策、法令等.不同的国家有不同的社会性质，不同的社会制度对组织活动有不同的限制和要求.即使社会制度不变的同一国家，在不同时期，由于执政党的不同，其政府的方针特点、政策倾向对组织活动的态度和影响也是不断变化的.</p>
+<p>构成政治环境的关键指标有：政治体制、经济体制、财政政策、税收政策、产业政策、投资政策、专利数量、国防开支水平、政府补贴水平、民众对政治的参与度等.</p>
+<ul>
+<li>经济环境</li>
+</ul>
+<p>经济环境主要包括宏观和微观两个方面的内容.宏观经济环境主要指一个国家的国民收入、国民生产总值及其变化情况，以及通过这些指标反映的国民经济发展水平和发展速度.</p>
+<p>微观经济环境主要指企业所在地区或所服务地区的消费者的收入水平、消费偏好、储蓄情况、就业程度等因素，这些因素直接决定着企业目前及未来的市场大小.</p>
+<p>构成经济环境的关键指标有：GDP及增长率、进出品总额及增长率、利率、汇率、通货膨胀率、消费价格指数、居民可支配收入、失业率、劳动生产率等.</p>
+<ul>
+<li>社会环境</li>
+</ul>
+<p>社会环境包括一个国家或地区的居民受教育程度和文化水平、宗教信仰、风俗习惯、审美观点、价值观念等.文化水平会影响居民的需求层次；宗教信仰和风俗习惯会禁止或抵制某些活动的进行；价值观念会影响居民对组织目标、组织活动以及组织存在本身的认可；审美观点会影响人们对组织活动内容、活动方式以及活动成果的态度.</p>
+<p>构成社会文化环境的关键指标有：人口规模、性别比例、年龄结构、出生率、死亡率、种族结构、妇女生育率、生活方式、购买习惯、教育状况、城市特点、宗教信仰状况等因素.</p>
+<ul>
+<li>技术环境</li>
+</ul>
+<p>技术环境除了要考察与企业所处领域直接相关的技术手段的发展变化外，还应及时了解：</p>
+<p>国家对科技开发的投资和支持重点.</p>
+<p>该领域技术发展动态和研究开发费用总额.</p>
+<p>技术转移和技术商品化速度.</p>
+<p>专利及其保护情况等.</p>
+<p>构成技术环境的关键指标有：新技术的发明和进展、折旧和报废速度、技术更新速度、技术传播速度、技术商品化速度、国家重点支持项目、国家投入的研发费用、专利个数、专利保护情况等因素.</p>
+<p>现在我们以中国互联网行业分析为例，采用$PEST$分析法整理分析思路，构建中国互联网行业分析框架.如图$2-3$所示，根据$PEST$分析法列出了进行中国互联网分析所需要了解的一些背景，如中国网民与中国公民在人口规模、性别比例、年龄结构、人口分布、生活方式、购买习惯、教育状况、城市特征、宗教信仰状况等方面是否有区别.此处仅为方法使用示例，并不代表互联网行业分析只需要作这几方面的分析，还可根据实际情况进一步调整和细化相关分析指标.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-3.jpg" alt=""></center>
+
+<h2 id="5W2H分析法">5W2H分析法</h2><p>Mr.林：第二个分析理论就是$5W2H$分析法.</p>
+<p>在职场中，有很多人逻辑思路很清晰，但是也有些人说话老是抓不住重点，费口舌讲了半天，大家还是听不懂他在说什么，这种人就是缺乏逻辑训练.在所有逻辑思考方法中，$5W2H$分析法可以说是最容易学习和操作的方法之一.</p>
+<p>$5W2H$分析法是以五个$W$开头的英语单词和两个$H$开头的英语单词进行提问，从回答中发现解决问题的线索，即何因（Why）、何事（What）、何人（Who）、何时（When）、何地（Where）、如何做（How）、何价（How much），这就构成了$5W2H$分析法的总框架，如图$2-4$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-4.jpg" alt=""></center>
+
+<p>该方法简单、方便，易于理解和使用，富有启发意义，广泛用于企业营销、管理活动，对于决策和执行性的活动措施非常有帮助，也有助于弥补考虑问题的疏漏.其实对任何事情都可以从这七大方面去思考，对于不善于分析问题的人，只要多练习即可上手，所以同样它也适用于指导建立数据分析框架.</p>
+<p>现在以用户购买行为分析来例，来学习$5W2H$分析法.例如我们需要了解公司产品的用户购买行为是怎样的.这时可在$5W2H$分析法的指导下整理分析用户购买行为的思路，建立用户购买行为分析框架.如图$2-5$所示，根据$5W2H$分析法列出了对用户购买行为的分析所需要了解的一些情况，比如用户购买的目的是什么，公司产品在什么方面吸引了用户等问题.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-5.jpg" alt=""></center>
+
+<p>确定了分析框架后，我们再根据分析框架中的这些问题形成可量化的指标进行衡量和评价，例如月均购买次数、人均购买量、再次购买平均间隔时长等.</p>
+<p>Mr.林：小白，$5W2H$分析法是不是让你觉得分析某个问题变得简单多了？</p>
+<p>小白：是的，这个方法在分析问题的时候真好用，有了它的指导，我就知道从哪几个方面思考、分析问题了.</p>
+<p>Mr.林：同$PEST$分析法一样，这里举的例子并不代表用户购买行为就只有图$2-5$所示的这些内容，要做到具体问题具体分析，在使用的时候根据实际情况进行应用.此处举例只是起到抛砖引玉的作用，开拓你的分析思路.</p>
+<h2 id="逻辑树分析法">逻辑树分析法</h2><p>Mr.林：逻辑树又称问题树、演绎树或分解树等.</p>
+<p>逻辑树是分析问题最常使用的工具之一，它是将问题的所有子问题分层罗列，从最高层开始，并逐步向下扩展.</p>
+<p>把一个已知问题当成树干，然后开始考虑这个问题和哪些相关问题有关.每想到一点，就给这个问题所在的树干加一个“树枝”，并标明这个“树枝”代表什么问题，如图$2-6$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-6.jpg" alt=""></center>
+
+<p>一个大的“树枝”上还可以有小的“树枝”，如此类推，找出与问题相关联的所有项目.逻辑树的作用主要是帮助你理清自己的思路，避免进行重复和无关的思考.</p>
+<p>逻辑树能保证解决问题的过程的完整性，它能将工作细分为便于操作的任务，确定各部分的优先顺序，明确地把责任落实到个人.</p>
+<p>逻辑树的使用必须遵循以下三个原则.</p>
+<ul>
+<li><p>要素化：把相同问题总结归纳成要素.</p>
+</li>
+<li><p>框架化：将各个要素组织成框架，遵守不重不漏的原则.</p>
+</li>
+<li><p>关联化：框架内的各要素保持必要的相互关系，简单而不孤立.</p>
+</li>
+</ul>
+<p>利用逻辑树分析法，同样可以理清分析思路.例如我们需要进行公司利润下降的专题研究，可采用图$2-7$所示的框架进行数据分析.当然，要根据自己公司的实际情况进行调整，也就是具体问题具体分析.</p>
+<p>不过逻辑树分析法也有它的缺点，就是涉及的相关问题可能有遗漏，虽然可以用头脑风暴法把涉及的问题总结归纳出来，但还是难以避免存在考虑不周全的地方.所以在使用逻辑树的时候，尽量把涉及的问题或要素考虑周全.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-7.jpg" alt=""></center>
+
+<h2 id="$4P$营销理论">$4P$营销理论</h2><p>Mr.林：$4P$营销理论产生于$20$世纪$60$年代的美国，它是随着营销组合理论的提出而出现的.营销组合实际上有几十个要素，这些要素可以概括为$4$类：产品（Product）、价格（Price）、渠道（Place）、促销（Promotion），即著名的$4P$营销理论，如图$2-8$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-8.jpg" alt=""></center>
+
+<ul>
+<li><p>产品（Product）：从市场营销的角度来看，产品是指能够提供给市场，被人们使用和消费并满足人们某种需要的任何东西，包括有形产品、服务、人员、组织、观念或它们的组合.</p>
+</li>
+<li><p>价格（Price）：是指顾客购买产品时的价格，包括基本价格、折扣价格、支付期限等.价格或价格决策关系到企业的利润、成本补偿，以及是否有利于产品销售、促销等问题.影响定价的主要因素有三个：需要、成本与竞争.最高价格取决于市场需要，最低价格取决于该产品的成本费用，在最高价格与最低价格的幅度内，企业能所这种产品价格定多高则取决于竞争者的同种产品的价格.</p>
+</li>
+<li><p>渠道（Place）：是指产品从生产企业流转到用户手上的全过程中所经历的各个环节.</p>
+</li>
+<li><p>促销（Promotion）：是指企业通过销售行为的改变来刺激用户消费，以短期的行为（比如让利，买一送一，营销现场气氛等等）促成消费的增长，吸引其他品牌的用户或导致提前消费来促进销售的增长.广告、宣传推广、人员推销、销售促进是一个机构促销组合的四大要素.</p>
+</li>
+</ul>
+<p>如果需要了解公司的整体运营情况，就可以采用$4P$营销理论对数据分析进行指导，这样就可以较为全面地了解到公司的整体运营情况.现在就以$4P$营销理论为指导，搭建公司业务分析框架.</p>
+<p>搭建好的公司业务分析框架如图$2-9$所示.同样，根据这些确定的问题，可再将它们细化为数据分析指标.比如公司提供哪些产品或服务，我们就可用公司产品构成来表示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-9.jpg" alt=""></center>
+
+<p>Mr.林：小白，还是那句话，具体问题具体分析.不是所有公司业务分析的内容都仅限于图$2-9$列出的这些，这里只是通过举例说明$4P$营销理论的指导作用，而在做公司业务分析的时候，需要根据实际业务情况进行调整，灵活运用，切忌生搬硬套.只有深刻理解公司业务的同时才能较好地进行业务方面的数据分析，否则将脱离业务实际，得出无指导意义的结论，犹如纸上谈兵，甚至贻笑大方.</p>
+<p>小白连连点头并在职场日记中写下：具体问题具体分析，灵活运用，切忌生搬硬套.</p>
+<h2 id="用户行为理论">用户行为理论</h2><p>Mr.林：网站分析的发展已经较为成熟，有一套成熟的分析指标.比如IP、PV、页面停留时间、跳出率、回访者、新访问者、回访次数、回访相隔天数、流失率、关键字搜索、转化率、登录率，等等.遇到这么多指标，所有的指标都要采用吗？什么指标该采用？什么指标又不该采用？各指标之间有何联系？哪个指标先分析？哪个指标后分析？</p>
+<p>小白做晕菜状：这么多问题！不行了，彻底晕了！</p>
+<p>Mr.林：所以我们需要梳理它们之间的逻辑关系，比如利用用户使用行为理论进行梳理.小白，这就是我们要学习的另外一个理论，即用户使用行为理论，也是非常实用的数据分析指导理论之一.</p>
+<p>用户使用行为是指用户为获取、使用物品或服务所采取的各种行动，用户对产品首先需要有一个认知、熟悉的过程，然后试用，再决定是否继续消费使用，最后成为忠诚用户.用户使用行为的完整过程，如图$2-10$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-10.jpg" alt=""></center>
+
+<p>现在我们可利用用户使用行为理论，梳理网站分析的各关键指标之间的逻辑关系，构建符合公司实际业务的网站分析指标体系，如图$2-11$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2-11.jpg" alt=""></center>
+
+<p>Mr.林：小白，这个方法同样需针对具体问题再具体分析，灵活运用，此处就不再赘述了.</p>
+<p>小白：好的.</p>
+<h1 id="本章小结">本章小结</h1><p>Mr.林缓了缓，接着说：我们前面讲解了的几种数据分析方法论，你可以根据实际情况选择所需的方法论.下面和昨天一样，我们一起作个简要的回顾.</p>
+<ul>
+<li><p>PEST分析理论主要用于行业分析.</p>
+</li>
+<li><p>$4P$分析理论主要用于公司整体经营情况分析.</p>
+</li>
+<li><p>逻辑树分析理论可用于业务问题专题分析.</p>
+</li>
+<li><p>用户行为理论的用途较单一，就是用于用户行为研究分析.</p>
+</li>
+<li><p>$5W2H$分析理论的用途相对广泛，可用于用户行为分析、业务问题专题分析等.</p>
+</li>
+</ul>
+<p>当然，这些方法论也可以相互嵌套使用.例如，用逻辑树分析法搭建分析框架，而下一层级的问题可以从$4P$的角度分析，也可以用$5W2H$法分解问题.记住根据实际情况灵活选择使用，切勿生搬硬套.</p>
+<p>方法论不限于刚才介绍的几种，除此之外，还有金字塔、生命周期理论等，对于这些方法的应用，需要你根据自己所在的行业特征在实践中摸索，前提是需要了解行业知识、公司业务，以及相关的营销管理模型，只有把它们有机地结合使用，才能指导数据分析工作有序开展，才能确保数据分析结果具有指导意义.</p>
+<p>小白：太棒了，经您这么一介绍，理论指导实践不再那么飘渺虚幻，再多多复习，我就可以自己“设计服装图纸”了.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数据分析/">数据分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数据分析/">数据分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/04/25/2016/04/shuishoucainiaobuhuishujufenxi-rumen02/" data-title="《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/05/02/2016/05/jimiduoweiqishuxuefenxixitiji116/" title="《数学分析习题集》第一章 分析引论 6.符号$O$">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《数学分析习题集》第一章 分析引论 6.符号$O$</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/04/24/2016/04/shuishoucainiaobuhuishujufenxi-rumen01/"  title="《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿">
+ <strong>下一篇：</strong><br/> 
+ <span>《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析方法论"><span class="toc-number">1.</span> <span class="toc-text">数据分析方法论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析方法论与数据分析法的区别"><span class="toc-number">1.1.</span> <span class="toc-text">数据分析方法论与数据分析法的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析方法论的重要性"><span class="toc-number">1.2.</span> <span class="toc-text">数据分析方法论的重要性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用的数据分析方法论"><span class="toc-number">2.</span> <span class="toc-text">常用的数据分析方法论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PEST分析法"><span class="toc-number">2.1.</span> <span class="toc-text">PEST分析法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5W2H分析法"><span class="toc-number">2.2.</span> <span class="toc-text">5W2H分析法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑树分析法"><span class="toc-number">2.3.</span> <span class="toc-text">逻辑树分析法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$4P$营销理论"><span class="toc-number">2.4.</span> <span class="toc-text">$4P$营销理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户行为理论"><span class="toc-number">2.5.</span> <span class="toc-text">用户行为理论</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本章小结"><span class="toc-number">3.</span> <span class="toc-text">本章小结</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>30</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据分析/" title="数据分析">数据分析<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 15.71px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18.57px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.86px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 17.14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 14.29px;">数学史</a> <a href="/tags/数据分析/" style="font-size: 11.43px;">数据分析</a> <a href="/tags/积分学/" style="font-size: 18.57px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.86px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

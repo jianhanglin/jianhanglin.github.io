@@ -1,0 +1,1001 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析习题集》第一章 分析引论 6.符号$O$ | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题645-661">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析习题集》第一章 分析引论 6.符号$O$">
+<meta property="og:url" content="http://yoursite.com/2016/05/02/2016/05/jimiduoweiqishuxuefenxixitiji116/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题645-661">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/645.jpg">
+<meta property="og:updated_time" content="2016-06-10T03:57:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 6.符号$O$">
+<meta name="twitter:description" content="习题645-661">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/05/02/2016/05/jimiduoweiqishuxuefenxixitiji116/" title="《数学分析习题集》第一章 分析引论 6.符号$O$" itemprop="url">《数学分析习题集》第一章 分析引论 6.符号$O$</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2016-05-02T13:01:48.000Z" itemprop="datePublished"> 發表於 2016-05-02</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			
+		
+		</div>
+		
+		<p>$1$.记号当$x\in X$时$\varphi (x)=O(\psi (x))$表示：存在常数$A$，使得当$x\in X$时</p>
+<p>$$\vert \varphi (x)\vert \leqslant A\vert \psi (x)\vert .\label{1} \tag{1} $$</p>
+<p>若在点$a(x\neq a)$的某个邻域$U_a $内不等式$\eqref{1}$成立，类似地可写出当$x\to a$时</p>
+<p>$$\varphi (x)=O(\psi (x)).\label{2} \tag{2} $$</p>
+<p>特别地，若当$x\in U_a (x\neq a)$时$\psi (x)\neq 0$，则只要存在有限的$\displaystyle \lim_{x\to a} \dfrac{\varphi (x)}{\psi (x)} \neq 0$，关系式$\eqref{2}$就显然成立.在这种情形下，我们写出</p>
+<p>$$\varphi (x)=O^{\ast } (\psi (x)).$$</p>
+<p>若</p>
+<p>$$\lim_{x\to 0} \dfrac{\varphi (x)}{x^p} =k\neq 0(p &gt; 0),$$</p>
+<p>则称$\varphi (x)$为关于无穷小量$x$的$p$阶无穷小量.类似地，若</p>
+<p>$$\lim_{x\to \infty } \dfrac{\psi (x)}{x^p} =k\neq 0(p &gt; 0),$$</p>
+<p>则称$\psi (x)$为关于无穷大量$x$的$p$阶无穷大量.</p>
+<p>$2$.记号当$x\to a$时$\varphi (x)=o(\psi (x))$表示</p>
+<p>$$\varphi (x)=\alpha (x)\psi (x)\quad (x\in U_a ,x\neq a),\label{3} \tag{3}$$</p>
+<p>其中当$x\to a$时$\alpha (x)\to 0$.若当$x\in U_a ,x\neq a$时$\psi (x)\neq 0$，则等式$\eqref{3}$等价于</p>
+<p>$$\lim_{x\to a} \dfrac{\varphi (x)}{\psi (x)} =0.$$</p>
+<p>$3$.若当$x\to a$时</p>
+<p>$$\varphi (x)-\psi (x)=o(\psi (x)),\label{4} \tag{4}$$</p>
+<p>则称函数$\varphi (x)$与$\psi (x)$当$x\to a$时是等价的，即</p>
+<p>$$\varphi (x)\sim \psi (x).$$</p>
+<p>若当$x\in U_a ,x\neq a$时$\psi (x)\neq 0$，则由$\eqref{4}$有</p>
+<p>$$\lim_{x\to a} \dfrac{\varphi (x)}{\psi (x)} =1.$$</p>
+<p>当$x\to 0$时成立下列等价关系：</p>
+<p>$$\sin{x} \sim x;\tan{x} \sim x;a^x -1\sim x\ln a(a &gt; 0);$$</p>
+<p>$$\ln (1+x)\sim x;\sqrt[n]{1+x} -1\sim \dfrac{x}{n} .$$</p>
+<p>一般而言，$\varphi (x)+o(\varphi (x))\sim \varphi (x)$.</p>
+<p>在计算当$x\to a$时两个无穷小（或无穷大）函数之比的极限时，可用等价函数所给函数.</p>
+<p>内容简介$\quad $在这一节中对大$O$，小$o$，等价记号$\sim$等给出定义，并提出了等价量代换法.如前所说，这种方法的大量应用实例就是上一节的极限计算题.本节的习题数量很少，其中也只有最后一题（习题$661$）有一点困难，因此下面只举少量的例子来说明其中的问题.</p>
+<p>在新版中增加了一个符号$O^{\ast}$，即当$x\in U_a (x\neq a)$时$\psi (x)\neq 0$，且存在有限的$\displaystyle \lim_{x\to a} \dfrac{\varphi (x)}{\psi (x)} \neq 0$时，记为</p>
+<p>$$\varphi (x)=O^{\ast} (\psi (x))(x\to a).$$</p>
+<p>与大$O$记号相比，在$\varphi (x)$与$\psi (x)$为关于$x\to a$的无穷小量（或无穷大量）时，$\varphi (x)=O^{\ast} (\psi (x))$表明二者为真正的同阶无穷小量（或无空大量），而$\varphi (x)=O(\psi (x))$只表明$\varphi (x)$的阶数不低于（不高于）$\psi (x)$的阶数.例如</p>
+<p>$$x^3 =O(x^2)(x\to 0)$$</p>
+<p>是正确的，但$x^3 =O^{\ast} (x^2)(x\to 0)$是错误的.同样，</p>
+<p>$$x=O(x^2)(x\to +\infty )$$</p>
+<p>是正确的，但$x=O^{\ast}(x^2)(x\to +\infty )$是错误的.</p>
+<p>对于以下习题中将大$O$称为同阶都应当作以上理解.</p>
+<p>此外，我们还经常用O(1)$代表（关于某种极限过程的）有界量，用$o(1)$代表无穷小量.这些记号中的大$O$与小$o$与一般的定义完全一致.</p>
+<p>第一个习题用具体的几何图形给出了非常具体的无穷小量的例子，而且具有从一阶到三阶的不同阶数，这对于理解抽象的数学概念很有帮助.</p>
+<p>$645$.认为圆心角$AOB=x$（图$4$）是$1$阶无穷小量，求下列各无穷小量的阶：</p>
+<p>$(a)$弦$AB$；</p>
+<p>$(b)$矢（拱高）$CD$；</p>
+<p>$(c)$扇形$AOB$的面积；</p>
+<p>$(d)$三角形$ABC$的面积；</p>
+<p>$(e)$梯形$ABB_1 A_1 $的面积；</p>
+<p>$(f)$弓形$ABC$的面积.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/645.jpg" alt=""></center>
+
+<p>解$\quad $本题只要写出有关量的表达式后即可求出阶数，答案如下.（其中$R=OA=OC=OB$.）</p>
+<p>$(a)$弦$AB=2R\sin{\dfrac{x}{2} } \sim Rx(x\to 0)$，为一阶无穷小量.</p>
+<p>$(b)$矢$CD=R-R\cos{\dfrac{x}{2} } \sim R\cdot \dfrac{1}{2} \cdot \dfrac{x^2}{4} =\dfrac{R}{8} x^2 (x\to 0)$，为二阶无穷小量.</p>
+<p>$(c)$扇形$AOB$的面积是$\dfrac{1}{2} R^2 x$，为一阶无穷小量.</p>
+<p>$(d)$三角形$ABC$的面积等于三角形$OAC$和$OBC$的面积之和减去三角形$OAB$的面积，也等于弦$AB$乘矢$CD$除$2$：</p>
+<p>$$\begin{align}<br> &amp; 2\cdot \dfrac{1}{2} R^2 \sin{\dfrac{x}{2} } -\dfrac{1}{2} R^2 \sin{x} \\<br>= &amp; R^2 \sin{\dfrac{x}{2} } -R^2 \sin{\dfrac{x}{2} } \cos{\dfrac{x}{2} } \\<br>= &amp; R^2 \sin{\dfrac{x}{2} } \left( 1-\cos{\dfrac{x}{2} } \right) \\<br>\sim &amp; \dfrac{R^2}{16} x^3 (x\to 0),<br>\end{align}$$</p>
+<p>为三阶无穷小量.</p>
+<p>$(e)$梯形$ABB_1 A_1 $的面积等于$\dfrac{1}{2} (AB+A_1 B_1 )\times CD$，即是</p>
+<p>$$\dfrac{R}{2} (2\sin{\dfrac{x}{2} } +2\tan{\dfrac{x}{2} } )\cdot R(1-\cos{\dfrac{x}{2} } )\sim \dfrac{R^2}{8} x^3 (x\to 0),$$</p>
+<p>为三阶无穷小量.</p>
+<p>$(f)$弓形$ABC$的面积是$\dfrac{1}{2} R^2 x-\dfrac{1}{2} R^2 \sin{x} $，为三阶无穷小量.</p>
+<p>这里可以利用在$\S 1.5$的命题$1.8(1)$中已经证明的不等式</p>
+<p>$$0 &lt; \dfrac{x-\sin{x}}{x^3} &lt; \dfrac{1}{2} (0 &lt; x &lt; \dfrac{\pi }{2} ).$$</p>
+<p>这样就已经有$x-\sin{x} =O(x^3)(x\to 0)$，即至少是不低于三阶的无穷小量.在今后我们将会证明有</p>
+<p>$$\lim_{x\to 0} \dfrac{x-\sin{x}}{x^3} =\dfrac{1}{6} ,$$</p>
+<p>从而就可以说，当$x\to 0$时$x-\sin{x} =O^{\ast} (x^3)(x\to 0)$，即恰好是三阶无穷小量.</p>
+<p>下面对于等号两边出现大$O$和小$o$记号的等式作一点说明.这里要注意，它们不是普通的等式，而经常称为渐近等式，又将导出这类等式的分析称为渐近分析，因为它们反映的是在极限意义上的关系式.在一般情况下这类等式只能从左往右读，而不能反方向读.例如等式</p>
+<p>$$o(1)=O(1)$$</p>
+<p>的意思是：关于某个极限过程的无穷小量一定是有界量.这确实成立.关于数列这是收敛数列的有界性定理的特例，关于$x\to a$（设$a$为有限数）的极限过程，这就是函数于点$a$有极限则一定在该点的某个去心邻域上有界的特例.然而上述等式不能从右往左读，因为有界量当然不一定是无穷小量.</p>
+<p>下面给出习题$646$中两个小题的解答.其中设$o(f(x))$是当$x\to a$时比函数$f(x)$有较低阶的任意无穷小量，而$O(f(x))$是当$x\to a$时与函数$f(x)(f(x) &gt; 0)$同阶的无穷大量.此外为简明起见，总是假设分母上的函数非零.</p>
+<p>$646$.设$o(f(x))$是当$x\to a$时比函数$f(x)$更低阶增长的任意函数，$O(f(x))$是当$x\to a$时与函数$f(x)$同阶增长的任意函数，其中$f(x) &gt; 0$.证明：</p>
+<p>$(a)o(o(f(x))) =o(f(x))$；</p>
+<p>$(b)O(o(f(x)))=o(f(x))$；</p>
+<p>$(c)o(O(f(x)))=o(f(x))$；</p>
+<p>$(d)O(O(f(x)))=O(f(x))$；</p>
+<p>$(e)O(f(x))+o(f(x))=O(f(x))$.</p>
+<p>证$\quad (a)$因为</p>
+<p>$$\lim_{x\to a} \dfrac{o(o(f(x)))}{f(x)} =\lim_{x\to a} \left\lbrace \dfrac{o(o(f(x)))}{o[f(x)]} \cdot \dfrac{o[f(x)]}{f(x)} \right\rbrace =0,$$</p>
+<p>故$o(o(f(x))) =o(f(x))$.</p>
+<p>$(b)$设$g(x)=o(f(x))$，即有$\displaystyle \lim_{x\to a} \dfrac{g(x)}{f(x)} =0$，又设$h(x)=O(g(x))$，即存在$M &gt; 0$，$\delta &gt; 0$，使得当$0 &lt; \vert x-a\vert &lt; \delta $时成立$\left\vert \dfrac{h(x)}{g(x)} \right\vert &lt; M$.不妨设$\delta &gt; 0$已经充分小，使得$f$在$0 &lt; \vert x-a\vert &lt; \delta $时有定义.</p>
+<p>于是在$0 &lt; \vert x-a\vert &lt; \delta $时就可以如下估计</p>
+<p>$$\left\vert \dfrac{h(x)}{f(x)} \right\vert =\left\vert \dfrac{h(x)}{g(x)} \right\vert \cdot \left\vert \dfrac{g(x)}{f(x)} \right\vert \leqslant M\cdot \left\vert \dfrac{g(x)}{f(x)} \right\vert \to 0(x\to a),$$</p>
+<p>这就表明$h(x)=o(f(x))(x\to a)$.</p>
+<p>$(c)$设$g(x)=O(f(x))$关于$x\to a$成立，即有$M &gt; 0$和$\delta &gt; 0$，使得当$0 &lt; \vert x-a\vert &lt; \delta $时有$\left\vert \dfrac{g(x)}{f(x)} \right\vert &lt; M$，又设有$h(x)=o(g(x))(x\to a)$，即有$\dfrac{h(x)}{g(x)} \to 0 (x\to a)$.</p>
+<p>于是在$0 &lt; \vert x-a\vert &lt; \delta $时可以估计如下：</p>
+<p>$$\left\vert \dfrac{h(x)}{f(x)} \right\vert =\left\vert \dfrac{h(x)}{g(x)} \right\vert \cdot \left\vert \dfrac{g(x)}{f(x)} \right\vert \leqslant M\cdot \left\vert \dfrac{h(x)}{g(x)} \right\vert \to 0(x\to a),$$</p>
+<p>这就是$h(x)=o(f(x))(x\to a)$.</p>
+<p>注$\quad $虽然在习题$646$的题意中说明它是对无穷大量来讨论的，但从上面的证明可见这些等式对于无穷小量也同样成立.此外，这两个题最后都转化为有界量与无穷小量的乘积仍为无穷小量，即$O(1)\cdot o(1)=o(1)$.</p>
+<p>$(d)$设$g(x)=O(f(x))$关于$x\to a$成立，即有$M &gt; 0$和$\delta &gt; 0$，使得当$0 &lt; \vert x-a\vert &lt; \delta $时有$\left\vert \dfrac{g(x)}{f(x)} \right\vert &lt; M$，又设有$h(x)=O(g(x))(x\to a)$，即有$M’ &gt; 0$，$\delta’ &gt; 0$，使得当$0 &lt; \vert x-a\vert &lt; \delta’ $时，$\left\vert \dfrac{g(x)}{f(x)} \right\vert &lt; M’(x\to a)$.</p>
+<p>于是在$0 &lt; \vert x-a\vert &lt; \min{\lbrace \delta ,\delta’ \rbrace } $时可以估计如下：</p>
+<p>$$\left\vert \dfrac{h(x)}{f(x)} \right\vert =\left\vert \dfrac{h(x)}{g(x)} \right\vert \cdot \left\vert \dfrac{g(x)}{f(x)} \right\vert \leqslant M\cdot M’ (x\to a),$$</p>
+<p>这就是$h(x)=O(f(x))(x\to a)$.</p>
+<p>$(e)$因为存在$M &gt; 0$和$\delta &gt; 0$，使得当$0 &lt; \vert x-a\vert &lt; \delta $时有</p>
+<p>$$\left\vert \dfrac{O(f(x))+o(f(x))}{f(x)} \right\vert \leqslant \left\vert \dfrac{O(f(x))}{f(x)} \right\vert + \left\vert \dfrac{o(f(x))}{f(x)} \right\vert \to M (x\to a),$$</p>
+<p>故$O(f(x))+o(f(x))=O(f(x))$.</p>
+<p>$647$.设$x\to 0,n &gt; 0$.证明：</p>
+<p>$(a)CO(x^n )=O(x^n)$（$C\neq 0$为常数）；</p>
+<p>$(b)O(x^n) +O(x^m)=O(x^n) (n &gt; m)$；</p>
+<p>$(c)O(x^n ) O(x^m )=O(x^{n+m}) $.</p>
+<p>证$\quad (a)$设$g(x)=O(x^n)$关于$x\to 0$成立，即有$M &gt; 0$和$\delta &gt; 0$，使得当$0 &lt; \vert x\vert &lt; \delta $时有$\left\vert \dfrac{g(x)}{x^n} \right\vert &lt; M$.</p>
+<p>于是在$0 &lt; \vert x\vert &lt; \delta $时可以估计如下：</p>
+<p>$$\left\vert \dfrac{Cg(x)}{x^n} \right\vert \leqslant \vert C\vert \cdot \left\vert \dfrac{g(x)}{x^n} \right\vert \to \vert C\vert \cdot M(x\to 0),$$</p>
+<p>这就是$Cg(x)=O(x^n)(x\to 0)$.</p>
+<p>$(b)$因为存在$M &gt; 0$和$\delta &gt; 0$，使得当$0 &lt; \vert x\vert &lt; \delta $时有</p>
+<p>$$\left\vert \dfrac{O(x^n)+O(x^m)}{x^n} \right\vert \leqslant \left\vert \dfrac{O(x^n)}{x^n} \right\vert + \left\vert \dfrac{O(x^m)}{x^m} \cdot x^{m-n} \right\vert \to M (x\to 0),$$</p>
+<p>故$O(x^n) +O(x^m)=O(x^n)$.</p>
+<p>$(c)$因为存在$M &gt; 0$和$\delta &gt; 0$，使得当$0 &lt; \vert x\vert &lt; \delta $时有</p>
+<p>$$\left\vert \dfrac{O(x^n)O(x^m)}{x^{n+m}} \right\vert \leqslant \left\vert \dfrac{O(x^n)}{x^n} \right\vert \cdot \left\vert \dfrac{O(x^m)}{x^m} \right\vert \to M^2 (x\to 0),$$</p>
+<p>故$O(x^n ) O(x^m )=O(x^{n+m})$.</p>
+<p>$648$.设$x\to +\infty ,n &gt; 0$.证明：</p>
+<p>$(a)CO(x^n )=O(x^n)$（$C\neq 0$为常数）；</p>
+<p>$(b)O(x^n) +O(x^m)=O(x^n) (n &gt; m)$；</p>
+<p>$(c)O(x^n ) O(x^m )=O(x^{n+m}) $.</p>
+<p>证$\quad (a)$设$g(x)=O(x^n)$关于$x\to +\infty $成立，即有$M &gt; 0$和$N &gt; 0$，使得当$x &gt; N$时有$\left\vert \dfrac{g(x)}{x^n} \right\vert &lt; M$.</p>
+<p>于是在$x &gt; N$时可以估计如下：</p>
+<p>$$\left\vert \dfrac{Cg(x)}{x^n} \right\vert \leqslant \vert C\vert \cdot \left\vert \dfrac{g(x)}{x^n} \right\vert \to \vert C\vert \cdot M(x\to +\infty ),$$</p>
+<p>这就是$Cg(x)=O(x^n)(x\to +\infty )$.</p>
+<p>$(b)$因为存在$M &gt; 0$和$N &gt; 0$，使得当$x &gt; N$时有</p>
+<p>$$\left\vert \dfrac{O(x^n)+O(x^m)}{x^n} \right\vert \leqslant \left\vert \dfrac{O(x^n)}{x^n} \right\vert + \left\vert \dfrac{O(x^m)}{x^m} \cdot x^{m-n} \right\vert \to M (x\to +\infty ),$$</p>
+<p>故$O(x^n) +O(x^m)=O(x^n)$.</p>
+<p>$(c)$因为存在$M &gt; 0$和$N &gt; 0$，使得当$x &gt; N$时有</p>
+<p>$$\left\vert \dfrac{O(x^n)O(x^m)}{x^{n+m}} \right\vert \leqslant \left\vert \dfrac{O(x^n)}{x^n} \right\vert \cdot \left\vert \dfrac{O(x^m)}{x^m} \right\vert \to M^2 (x\to +\infty ),$$</p>
+<p>故$O(x^n ) O(x^m )=O(x^{n+m})$.</p>
+<p>$649$.证明符号$\sim $具有如下性质：</p>
+<p>$(1)$自反性：$\varphi (x)\sim \varphi (x)$；</p>
+<p>$(2)$对称性：若$\varphi (x)\sim \psi (x)$，则$\psi (x)\sim \varphi (x)$；</p>
+<p>$(3)$传递性：若$\varphi (x)\sim \psi (x)$及$\psi (x)\sim \chi (x)$，则$\varphi (x)\sim \chi (x)$.</p>
+<p>证$\quad (1)$因为$\dfrac{\varphi (x)}{\varphi (x)} \equiv 1\to 1$，所以，$\varphi (x)\sim \varphi (x)$.</p>
+<p>$(2)$因为$\dfrac{\varphi (x)}{\psi (x)} \to 1$，所以，$\dfrac{\psi (x)}{\varphi (x)} \to 1$.即若$\varphi (x)\sim \psi (x)$，则$\psi (x)\sim \varphi (x)$.</p>
+<p>$(3)$因为$\dfrac{\varphi (x)}{\psi (x)} \to 1$，$\dfrac{\psi (x)}{\chi (x)} \to 1$，所以，$\dfrac{\varphi (x)}{\chi (x)} = \dfrac{\varphi (x)}{\psi (x)} \cdot \dfrac{\psi (x)}{\chi (x)} \to 1$，即$\varphi (x)\sim \chi (x)$.</p>
+<p>下面是关于一些具体函数的渐近分析，我们只对其中涉及对数函数的习题给出解答.</p>
+<p>$650$.设$x\to 0$.证明下列等式：</p>
+<p>$(a)2x-x^2=O(x)$；</p>
+<p>$(b)x\sin{\sqrt{x}} =O(x^{\frac{3}{2} })$；</p>
+<p>$(c)x\sin{\dfrac{1}{x} } =O(\vert x\vert )$；</p>
+<p>$(d)\ln x=o(\dfrac{1}{x^{\varepsilon }} ) (\varepsilon &gt; 0)$；</p>
+<p>$(e)\sqrt{x+\sqrt{x+\sqrt{x}}} \sim \sqrt[8]{x} $；</p>
+<p>$(f)\arctan{\dfrac{1}{x} } =O(1)$；</p>
+<p>$(g)(1+x)^n=1+nx+o(x)$.</p>
+<p>证明$\quad $由题设$x\to 0$，于是，</p>
+<p>$(a)$因为$\dfrac{2x-x^2}{x} \to 2$，所以，$2x-x^2=O(x)$.</p>
+<p>$(b)$因为$\dfrac{x\sin{\sqrt{x}}}{x\sqrt{x} } \to 1$，所以，$x\sin{\sqrt{x}} =O(x^{\frac{3}{2} })$.</p>
+<p>$(c)$因为$\left\vert x\sin{\dfrac{1}{x} } \right\vert  \leqslant \vert x\vert (x\neq 0)$，所以，$x\sin{\dfrac{1}{x} } =O(\vert x\vert )$.</p>
+<p>$(d)$当$x\to +0$时$\ln x$和$\dfrac{1}{x^{\varepsilon }} $都是无穷大量.如果取这时的$\dfrac{1}{x}$为（标准的）一阶无穷大量，而称$\dfrac{1}{x^{\varepsilon }} =\left( \dfrac{1}{x} \right)^{\varepsilon }$为$\varepsilon $阶的无穷大量，则本题表明这时的$\ln x$的无穷大量的阶数一定低于任何正数$\varepsilon $.（但并不能对于$x\to +0 $时的无穷大量$\ln x$确定其阶数.）</p>
+<p>令$t=-\ln x$，即有$x=e^{-t}$.于是有$x\to +0 \Leftrightarrow t\to +\infty $.于是就有</p>
+<p>$$\dfrac{\ln x}{\dfrac{1}{x^{\varepsilon }}} =x^{\varepsilon } \ln x=-\dfrac{t}{(e^{\varepsilon })^t}=-\dfrac{t}{a^t} ,$$</p>
+<p>其中$a=e^{\varepsilon } &gt; 1$.下面只要用$\S 1.2.2$的习题$60$即可证明$\displaystyle \lim_{t\to +\infty } \dfrac{t}{a^t} =0$.</p>
+<p>为此取$t$的整数部分$[t]$，则$[t]\leqslant t &lt; [t]+1$，因此有</p>
+<p>$$0 &lt; \dfrac{t}{a^t} \leqslant \dfrac{[t]+1}{a^{[t]}} .$$</p>
+<p>利用$\displaystyle \lim_{n\to \infty } \dfrac{n+1}{a^n} =0(a &gt; 1)$，可见对任意的$\delta &gt; 0$，存在$N$，当$n &gt; N$时有$0 &lt; \dfrac{n+1}{a^n} &lt; \delta $.于是当$t\geqslant N$时也就有$0 &lt; \dfrac{t}{a^t} &lt; \delta $.这就证明了$\displaystyle \lim_{t\to +\infty } \dfrac{t}{a^t} =0$，也就是$\displaystyle \lim_{x\to +0} x^{\varepsilon } \ln x=0$.</p>
+<p>注$1\quad $类似的习题在$\S 1.5$中有习题$591(b)$，其中$\varepsilon =1$.</p>
+<p>注$2\quad $若观察这时的无穷小量$\dfrac{1}{\ln x}$与$x^{\varepsilon } (\varepsilon &gt; 0)$的比较，则就得到习题$654$中的结论，即$\dfrac{1}{\ln x}$是比任何$x^{\varepsilon }(\varepsilon &gt; 0)$还要低阶的无穷小量.</p>
+<p>$(e)$因为$\displaystyle \lim_{x\to +0} \dfrac{\sqrt{x+\sqrt{x+\sqrt{x}}} }{x^{\frac{1}{8} }} =\lim_{x\to +0} \sqrt{x^{\frac{3}{4} } +\sqrt{x^{\frac{1}{2} } +1} }  =1$，所以，$\sqrt{x+\sqrt{x+\sqrt{x}}} \sim \sqrt[8]{x} $.</p>
+<p>$(f)$因为$\left\vert \arctan{\dfrac{1}{x} } \right\vert  \leqslant \dfrac{\pi }{2} (x\neq 0)$，所以，$\arctan{\dfrac{1}{x} } =O(1)$.</p>
+<p>$(g)$因为$\dfrac{(1+x)^n-1-nx}{x} =\dfrac{1}{2} n(n-1)x+\cdots \to 0$，所以，$(1+x)^n-1-nx=o(x)$，即$(1+x)^n=1+nx+o(x)$.</p>
+<p>$651$.设$x\to +\infty $.证明下列等式：</p>
+<p>$(a)2x^3-3x^2+1=O(x^3)$；</p>
+<p>$(b)\dfrac{x+1}{x^2+1} =O(\dfrac{1}{x} )$；</p>
+<p>$(c)x+x^2\sin{x} =O(x^2 )$；</p>
+<p>$(d)\dfrac{\arctan{x} }{1+x^2} =O(\dfrac{1}{x^2} ) $；</p>
+<p>$(e)\ln x=o(x^{\varepsilon })(\varepsilon &gt; 0)$；</p>
+<p>$(f)x^p e^{-x} =o(\dfrac{1}{x^2} )$；</p>
+<p>$(g)\sqrt{x+\sqrt{x+\sqrt{x}} } \sim \sqrt{x} $；</p>
+<p>$(h)x^2+x\ln^{100} x \sim x^2 $.</p>
+<p>证：由题设$x\to +\infty $，于是，</p>
+<p>$(a)$因为$\dfrac{2x^3-3x^2+1}{x^3} \to 2$，所以，$2x^3-3x^2+1=O(x^3)$.</p>
+<p>$(b)$因为$\dfrac{\dfrac{x+1}{x^2+1} }{\dfrac{1}{x} } =\dfrac{x(x+1)}{x^2+1} \to 1$，所以，$\dfrac{x+1}{x^2+1} =O(\dfrac{1}{x} )$.</p>
+<p>$(c)$因为$\left\vert \dfrac{x+x^2\sin{x} }{x^2} \right\vert =\left\vert \dfrac{1}{x} +\sin{x} \right\vert \leqslant 1 (x\to +\infty )$，所以，$x+x^2\sin{x} =O(x^2)$.</p>
+<p>$(d)$因为$\dfrac{\dfrac{\arctan{x} }{1+x^2} }{\dfrac{1}{x^2} } =\dfrac{x^2\arctan{x} }{1+x^2} \to \dfrac{\pi }{2} $，所以，$\dfrac{\arctan{x} }{1+x^2} =O(\dfrac{1}{x^2} )$.</p>
+<p>$(e)$当$x\to +\infty$时$\ln x$和$x^{\varepsilon }$都是正无穷大量.如果取这时的$x$为（标准的）一阶无穷大量，而称$x^{\varepsilon}$为$\varepsilon $阶的无穷大量，则本题表明，这时的$\ln x$的无穷大量的阶数一定低于任何正数$\varepsilon $.（但并不能对$x\to +\infty $时的无穷大量$\ln x$确定其阶数）.</p>
+<p>令$\ln x=t$，则$x=e^t $，以下证明可模仿上题来做.或者也可以令$y=\dfrac{1}{x} $，于是有</p>
+<p>$$\dfrac{\ln x}{x^{\varepsilon }} =-\dfrac{\ln y}{\dfrac{1}{y^{\varepsilon }} } ,$$</p>
+<p>且$x\to +\infty \Leftrightarrow y\to +0$，因此问题已经归结为上题.</p>
+<p>$(f)$因为$\dfrac{x^p e^{-x} }{\dfrac{1}{x^2} } =\dfrac{x^{p+2}}{e^x} \to 0 $，所以，$x^p e^{-x} =o(\dfrac{1}{x^2} )$.</p>
+<p>$(g)$因为$\dfrac{\sqrt{x+\sqrt{x+\sqrt{x}} } }{\sqrt{x} } =\sqrt{1+\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x^3} } } } \to 1 $，所以，$\sqrt{x+\sqrt{x+\sqrt{x}} } \sim \sqrt{x}$.</p>
+<p>$(h)$因为$\dfrac{x^2+x\ln^{100} x }{x^2 } =1+\dfrac{\ln^{100} x}{x} \to 1 $，所以，$x^2+x\ln^{100} x \sim x^2 $.</p>
+<p>$652.1$证明：当$x$充分大时，下面的不等式成立：</p>
+<p>$(a)x^2+10x+100 &lt; 0.001x^3$；</p>
+<p>$(b)\ln^{1000} x &lt; \sqrt{x} $；</p>
+<p>$(c)x^{10} e^x &lt; e^{2x} $.</p>
+<p>证$\quad (a)$因为当$x\to +\infty $时，$\dfrac{x^2+10x+100 }{0.001x^3} \to 0$所以，当$x$充分大以后，有$\dfrac{x^2+10x+100 }{0.001x^3} &lt; 1$，即</p>
+<p>$$x^2+10x+100 &lt; 0.001x^3.$$</p>
+<p>$(b)$因为当$x\to +\infty $时，$\dfrac{\ln^{1000} x}{\sqrt{x} } \to 0$所以，当$x$充分大以后，有$\dfrac{\ln^{1000} x}{\sqrt{x} } &lt; 1$，即</p>
+<p>$$\ln^{1000} x &lt; \sqrt{x} .$$</p>
+<p>$(c)$因为当$x\to +\infty $时，$\dfrac{x^{10} e^x}{e^{2x} } =\dfrac{x^{10}}{e^x} \to 0$所以，当$x$充分大以后，有$\dfrac{x^{10} e^x}{e^{2x} } &lt; 1$，即</p>
+<p>$$x^{10} e^x &lt; e^{2x} .$$</p>
+<p>$652.2$证明渐近公式：当$x\to +\infty $时，</p>
+<p>$$\sqrt{x^2+px+q} =x+\dfrac{p}{2} +O(\dfrac{1}{x} ).$$</p>
+<p>证$\quad $因为当$x\to +\infty $时，</p>
+<p>$$\begin{align}<br> &amp; \dfrac{\sqrt{x^2+px+q} -x-\dfrac{p}{2} }{\dfrac{1}{x} } \\<br>= &amp; \dfrac{x^2+px+q -(x+\dfrac{p}{2} )^2}{\dfrac{1}{x} (\sqrt{x^2+px+q} +x+\dfrac{p}{2})} \\<br>= &amp; \dfrac{q-\dfrac{p^2}{4} }{\sqrt{1+\dfrac{p}{x} +\dfrac{q}{x^2} } +1+\dfrac{p}{2x} } \\<br>\to &amp; q-\dfrac{p^2}{4} ,<br>\end{align}$$</p>
+<p>所以，$\sqrt{x^2+px+q} =x+\dfrac{p}{2} +O(\dfrac{1}{x} )$.</p>
+<p>习题$653$，$655-658$是一系列确定无穷小量和无穷大量的阶数及其主项的计算，它们完全依赖于$\S 1.5$中的极限计算.下面只举一个例子以说明如何解此类问题，它同时也是对于$\S 1.5$中有关极限计算的复习.</p>
+<p>$653$.设$x\to 0$.分出下列函数的主部，其形式为$Cx^n $（$C$为常数），并求出它对无穷小量$x$的阶：</p>
+<p>$(a)2x-3x^3+x^5$；</p>
+<p>$(b)\sqrt{1+x} -\sqrt{1-x} $；</p>
+<p>$(c)\sqrt{1-2x} -\sqrt[3]{1-3x} $；</p>
+<p>$(d)\tan{x} -\sin{x} $.</p>
+<p>解$\quad $所谓函数$f(x)$的主部$g(x)$，即满足</p>
+<p>$$\dfrac{f(x)}{g(x)} \to 1$$</p>
+<p>或$f(x)=g(x)+o(x)\quad (x\to 0)$.</p>
+<p>$(a)$因为$\dfrac{2x-3x^3+x^5}{2x} \to 1(x\to 0)$，故其主部为$2x$，它对于无穷小量$x$是一阶的.</p>
+<p>$(b)$因为$\dfrac{\sqrt{1+x} -\sqrt{1-x} }{x} =\dfrac{2}{\sqrt{1+x} +\sqrt{1-x} } \to 1(x\to 0)$，故其主部为$x$，它对于$x$是一阶的.</p>
+<p>$(c)$利用$\S 1.5$中的命题$1.7$，即公式$(1.30’)$，就得到</p>
+<p>$$(1-2x)^{\frac{1}{2} } =1-x-\dfrac{1}{8} (2x)^2 +o(x^2)=1-x-\dfrac{1}{2} x^2+o(x^2)(x\to 0),$$</p>
+<p>$$(1-3x)^{\frac{1}{3} } =1-x-\dfrac{1}{9} (3x)^2 +o(x^2)=1-x- x^2+o(x^2)(x\to 0),$$</p>
+<p>于是就得到</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 0} \dfrac{f(x)}{x^2} \\<br>= &amp; \lim_{x\to 0} \dfrac{\sqrt{1-2x} -\sqrt[3]{1-3x} }{x^2} \\<br>= &amp; \lim_{x\to 0} \dfrac{[1-x-\dfrac{1}{2} x^2+o(x^2)]-[1-x- x^2+o(x^2)]}{x^2} \\<br>= &amp; \dfrac{1}{2} ,<br>\end{align}$$</p>
+<p>即得到$f(x)\sim \dfrac{1}{2} x^2(x\to 0)$，它在$x\to 0$时是二阶无穷小量.</p>
+<p>注$\quad $从无穷小量的阶数分析就可以知道关键在于应用命题$1.7$写出二阶项，并由此知道$f(x)$为二阶无穷小量，从而只要计算$f(x)$除以$x^2$的极限即可求得主项.</p>
+<p>当然如$\S 1.5.4$中关于无理函数的极限计算所说，这里也完全可以用初等代数来做，读者不妨一试.</p>
+<p>$(d)$因为$\tan{x} -\sin{x} =\dfrac{2}{\cos{x} } \sin{x} \sin{}^2 \dfrac{x}{2} $，于是，$\dfrac{\tan{x} -\sin{x} }{\dfrac{x^3}{2} } \to 1(x\to 0)$，故其主部为$\dfrac{x^3}{2} $，它对于$x$是三阶的.</p>
+<p>$654$.设$x\to 0$.证明：无穷小量</p>
+<p>$$(a)f(x)=\dfrac{1}{\ln x} ;\quad (b)f(x)=e^{-\frac{1}{x^2} } $$</p>
+<p>无论对任何的$n$，也无法与无穷小量$x^n (x &gt; 0)$相比.即，对于任何的$n$，等式</p>
+<p>$$\lim_{x\to 0} \dfrac{f(x)}{x^n} =k$$</p>
+<p>都不成立，式中$k$为异于零的有限量.</p>
+<p>证$\quad (a)$因为$\displaystyle \lim_{x\to +0} x^n \ln x=0(n &gt; 0)$，于是，</p>
+<p>$$\lim_{x\to +0} \dfrac{\dfrac{1}{\ln x} }{x^n} =\infty ,$$</p>
+<p>即$\dfrac{1}{\ln x}$不能与无穷小量$x^n $作比较$(x\to +0)$.</p>
+<p>$(b)$因为$\displaystyle \lim_{x\to +0} \dfrac{e^{-\frac{1}{x^2} } }{x^n} =0(n &gt; 0)$，所以，$e^{-\frac{1}{x^2} } $不能与无穷小量$x^n$相比较$(x\to 0)$.</p>
+<p>$655$.设$x\to 1$.分出下列函数的主部，其形式为$C(x-1)^n$，并求出它对无穷小量$x-1$的阶：</p>
+<p>$(a)x^3-3x+2$；</p>
+<p>$(b)\sqrt[3]{1-\sqrt{x} } $；</p>
+<p>$(c)\ln x$；</p>
+<p>$(d)e^x-e$；</p>
+<p>$(e)x^x-1$.</p>
+<p>解$\quad (a)$因为$x^3-3x+2 =(x-1)^2(x+2)$，又</p>
+<p>$$\dfrac{x^3-3x+2}{3(x-1)^2} \to 1(x\to 1),$$</p>
+<p>故其主部为$3(x-1)^2$，它对于$(x-1)$是二阶无穷小.</p>
+<p>$(b)$因为$\sqrt[3]{1-\sqrt{x} } =-\dfrac{\sqrt[3]{x-1} }{\sqrt[3]{1+\sqrt{x} } } $，又</p>
+<p>$$\dfrac{\sqrt[3]{1-\sqrt{x} } }{-\dfrac{\sqrt[3]{x-1} }{\sqrt[3]{2} } } \to 1(x\to 1),$$</p>
+<p>故其主部为$-\dfrac{\sqrt[3]{x-1} }{\sqrt[3]{2} } $，它对于$(x-1)$是$\dfrac{1}{3}$阶无穷小.</p>
+<p>$(c)$因为$\dfrac{\ln x}{x-1} =\dfrac{\ln [1+(x-1)]}{x-1} \to 1(x\to 1)$，</p>
+<p>故其主部为$x-1$，它对于$(x-1)$是一阶无穷小.</p>
+<p>$(d)$因为$e^x-e= e(e^{x-1} -1)$，又</p>
+<p>$$\dfrac{e^{x-1} -1}{x-1} \to 1(x\to 1),$$</p>
+<p>故其主部为$e(x-1)$，它对于$(x-1)$是一阶无穷小.</p>
+<p>$(e)$因为$x^x-1= e^{x\ln x} -1$，又</p>
+<p>$$\dfrac{e^{x\ln x} -1}{x-1} =\dfrac{e^{x\ln x} -1}{x\ln x} \cdot \dfrac{x\ln [1+(x-1)]}{x-1} \to 1(x\to 1),$$</p>
+<p>故其主部为$x-1$，它对于$(x-1)$是一阶无穷小.</p>
+<p>$655$.设$x\to +\infty $.分出下列函数的主部，其形式为$Cx^n $，并求出它对无穷大量$x$的阶：</p>
+<p>$(a)x^2+100x+10000$；</p>
+<p>$(b)\dfrac{2x^5}{x^3-3x+1} $；</p>
+<p>$(c)\sqrt[3]{x^2-x} +\sqrt{x} $；</p>
+<p>$(d)\sqrt{1+\sqrt{1+\sqrt{x}}} $.</p>
+<p>解$\quad (a)$因为$x^2+100x+10000\sim x^2 (x\to +\infty  )$，故其主部为$x^2$，它对于无穷大量$x$是二阶的.</p>
+<p>$(b)$因为$\dfrac{\dfrac{2x^5}{x^3-3x+1} }{2x^2} =\dfrac{2x^5}{2x^5-6x^3+2x^2} \to 1(x\to +\infty )$，故其主部为$2x^2$，它对于无穷大量$x$是二阶的.</p>
+<p>$(c)\sqrt[3]{x^2-x} +\sqrt{x} =x^{\frac{2}{3} } \left( \sqrt[3]{1-\dfrac{1}{x} } +\sqrt[6]{\dfrac{1}{x} } \right) $，于是，$\dfrac{\sqrt[3]{x^2-x} +\sqrt{x} }{x^{\frac{2}{3} } } =\sqrt[3]{1-\dfrac{1}{x} } +\sqrt[6]{\dfrac{1}{x} } \to 1(x\to +\infty )$，故其主部为$x^{\frac{2}{3} }$，它对于无穷大量$x$是$\dfrac{2}{3}$阶的.</p>
+<p>$(d)$因为$\dfrac{\sqrt{1+\sqrt{1+\sqrt{x}}} }{\sqrt[8]{x} } \to 1(x\to +\infty )$，故其主部为$\sqrt[8]{x} $，它对于无穷大量$x$是$\dfrac{1}{8}$阶的.</p>
+<p>$657$.设$x\to +\infty $.分出下列函数的主部，其形式为$C\left( \dfrac{1}{x} \right)^n $，并求出它对无穷小量$\dfrac{1}{x} $的阶：</p>
+<p>$(a)\dfrac{x+1}{x^4+1} $；</p>
+<p>$(b)\sqrt{x+1} -\sqrt{x} $；</p>
+<p>$(c)\sqrt{x+2} -2\sqrt{x+1} +\sqrt{x} $；</p>
+<p>$(d)\dfrac{1}{x} \sin{\dfrac{1}{x} } $.</p>
+<p>解$\quad (a)$因为$\dfrac{\dfrac{x+1}{x^4+1} }{\left( \dfrac{1}{x} \right)^3 } =\dfrac{x^3(x+1)}{x^4} \to 1(x\to +\infty )$，故其主部为$\left( \dfrac{1}{x} \right)^3 $，它对于无穷大量$\dfrac{1}{x} $是$3$阶的.</p>
+<p>$(b)$因为$\dfrac{\sqrt{x+1} -\sqrt{x} }{\dfrac{1}{2\sqrt{x}} } =\dfrac{2\sqrt{x} }{\sqrt{x+1} +\sqrt{x} } \to 1(x\to +\infty )$，故其主部为$\dfrac{1}{2} \left( \dfrac{1}{x} \right)^{\frac{1}{2} } $，它对于无穷大量$\dfrac{1}{x} $是$\dfrac{1}{2} $阶的.</p>
+<p>$(c)$</p>
+<p>$$\begin{align}<br> &amp; \sqrt{x+2} -2\sqrt{x+1} +\sqrt{x} \\<br>= &amp; \dfrac{2\sqrt{x(x+2)} -2(x+1)}{\sqrt{x+2} +\sqrt{x} +2\sqrt{x+1} } \\<br>= &amp; \dfrac{-2}{\left( \sqrt{x+2} +\sqrt{x} +2\sqrt{x+1} \right) \left( \sqrt{x(x+2)} +x+1\right) } .<br>\end{align}$$</p>
+<p>于是，由此得</p>
+<p>$$\begin{align}<br> &amp; \dfrac{\sqrt{x+2} -2\sqrt{x+1} +\sqrt{x} }{-\dfrac{1}{4} \left( \dfrac{1}{x} \right)^{\frac{3}{2} } } \\<br>= &amp; \dfrac{8}{\left( \sqrt{1+\dfrac{2}{x} } +1+2\sqrt{1+\dfrac{1}{x} } \right) \left( \sqrt{1+\dfrac{2}{x} } +1+\dfrac{1}{x} \right) } \\<br>\to &amp; 1(x\to +\infty ),<br>\end{align}$$</p>
+<p>故其主部为$-\dfrac{1}{4} \left( \dfrac{1}{x} \right)^{\frac{3}{2} } $，它对于无穷大量$\dfrac{1}{x} $是$\dfrac{3}{2} $阶的.</p>
+<p>$(d)$因为$\dfrac{\dfrac{1}{x} \sin{\dfrac{1}{x} } }{\dfrac{1}{x^2} } =\dfrac{\sin{\dfrac{1}{x} } }{\dfrac{1}{x} } \to 1(x\to +\infty )$，故其主部为$\left( \dfrac{1}{x} \right)^2 $，它对于无穷大量$\dfrac{1}{x} $是$2$阶的.</p>
+<p>$658$.设$x\to 1$.分出下列函数的主部，其形式为$C\left( \dfrac{1}{x-1} \right)^n $，并求它对无穷大量$\dfrac{1}{x-1} $的阶：</p>
+<p>$(a)\dfrac{x^2}{x^2-1}$；</p>
+<p>$(b)\sqrt{\dfrac{1+x}{1-x} } $；</p>
+<p>$(c)\dfrac{x}{\sqrt[3]{1-x^3}} $；</p>
+<p>$(d)\dfrac{1}{\sin{\pi x}} $；</p>
+<p>$(e)\dfrac{\ln x}{(1-x)^2} $.</p>
+<p>解$\quad (a)\dfrac{x^2}{x^2-1} =\dfrac{x^2}{(x-1)(x+1)} $，于是，</p>
+<p>$$\dfrac{\dfrac{x^2}{x^2-1} }{\dfrac{1}{2(x-1)} } = \dfrac{2x^2}{x+1} \to 1 (x\to 1),$$</p>
+<p>故其主部为$\dfrac{1}{2(x-1)} $，它对于无穷大量$\dfrac{1}{x-1} $是一阶的.</p>
+<p>$(b)$因为$\dfrac{\sqrt{\dfrac{1+x}{1-x} } }{\sqrt{2} \dfrac{1}{\sqrt{1-x} } } =\dfrac{\sqrt{1+x} }{\sqrt{2} } \to 1(x\to 1)$，故其主部为$\sqrt{2} \left( \dfrac{1}{1-x} \right)^{\frac{1}{2} } $，它对于无穷大量$\dfrac{1}{x-1} $是$\dfrac{1}{2} $阶的.</p>
+<p>$(c)$因为$\dfrac{x}{\sqrt[3]{1-x^3}} =\dfrac{x}{\sqrt[3]{1-x}} \cdot \dfrac{1}{\sqrt[3]{1+x+x^2} } $，于是，</p>
+<p>$$\dfrac{\dfrac{x}{\sqrt[3]{1-x^3}} }{\dfrac{1}{\sqrt[3]{3} \sqrt[3]{1-x} } } \to 1 (x\to 1),$$</p>
+<p>故其主部为$\dfrac{1}{\sqrt[3]{3} } \left( \dfrac{1}{1-x }\right)^{\frac{1}{3} } $，它对于无穷大量$\dfrac{1}{x-1} $是$\dfrac{1}{3} $阶的.</p>
+<p>$(d)$因为$\dfrac{\dfrac{1}{\sin{\pi x}} }{\dfrac{1}{\pi (1-x)} } =\dfrac{\pi (1-x) }{\sin{\pi (1-x)} } \to 1(x\to 1)$，故其主部为$\dfrac{1}{\pi } \left( \dfrac{1}{1-x} \right) $，它对于无穷大量$\dfrac{1}{x-1} $是一阶的.</p>
+<p>$(e)$因为$\dfrac{\dfrac{\ln x}{(1-x)^2} }{\dfrac{1}{x-1} } =\dfrac{\ln [1+(x-1)] }{x-1} \to 1(x\to 1)$，故其主部为$\dfrac{1}{x-1} $，它对于无穷大量$\dfrac{1}{x-1} $是一阶的.</p>
+<p>$659$.设$x\to +\infty ,f_n (x)=x^n (n=1,2,3,\cdots )$.证明：</p>
+<p>$(1)$每一个函数$f_n (x)$都比其前面的一个函数$f_{n-1} (x)$增加得快；</p>
+<p>$(2)$函数$e^x $比函数$f_n (x)(n=1,2,\cdots )$中的每一个都增加得快.</p>
+<p>证$\quad (1)$因为$\dfrac{f_n (x)}{f_{n-1} (x)} =x\to +\infty $，所以，$f_n (x)$比$f_{n-1} (x)$增加较快.</p>
+<p>$(2)$因为$\dfrac{e^x}{x^n} \to +\infty (x\to +\infty )$，$n$为任一固定的正整数，所以，$e^x$比$f_n (x)$中的每一个都增加得较快.</p>
+<p>$660$.设$x\to +\infty ,f_n (x)=\sqrt[n]{x} (n=1,2,3,\cdots )$.证明：</p>
+<p>$(1)$每一个函数$f_n (x)$都比其前面的一个函数$f_{n-1 } (x)$增加得慢；</p>
+<p>$(2)$函数$f(x)=\ln x$比函数$f_n (x)(n=1,2,\cdots )$中的每一个都增加得慢.</p>
+<p>证$\quad (1)$因为$\dfrac{f_n (x)}{f_{n-1} (x)} =x^{-\frac{1}{n(n-1)} } \to 0(x\to +\infty )$，所以，$f_n (x)$比$f_{n-1} (x)$增加得较慢.</p>
+<p>$(2)$因为$\dfrac{\ln x}{\sqrt[n]{x} } \to 0(x\to +\infty )$，所以，$\ln x$比$f_n (x)$中的每一个增加得较慢.</p>
+<p>下面是本节的最后一题.它表明，不存在增长速度最快的无穷大量.</p>
+<p>$661$.证明：对于任意的函数序列</p>
+<p>$$f_1 (x),f_2 (x),\cdots ,f_n (x),\cdots (x_0 &lt; x &lt; +\infty ),$$</p>
+<p>可举出一函数$f(x)$，当$x\to +\infty $时它比函数$f_n (x)(n=1,2,\cdots )$中的每一个都增加得快.</p>
+<p>解（分析法）$\quad $本题的目的是根据给定的函数序列$\lbrace f_n (x)\rbrace $构造一个函数$f(x)$，使得对于每一个$n$成立</p>
+<p>$$\lim_{x\to +\infty } \left\vert \dfrac{f_n (x)}{f(x)} \right\vert =0.$$</p>
+<p>可以设想，如果给定的是有限个函数$f_1 ,\cdots ,f_k $，那么只要简单地令</p>
+<p>$$f(x)=x\cdot (\max{\lbrace \vert f_1 (x)\vert ,\cdots ,\vert f_k (x)\vert \rbrace } +1),$$</p>
+<p>问题已经解决.（当然这时的方法很多，读者不妨自己考虑其他合乎要求的$f$.）</p>
+<p>现在作一个跳跃，即对于给定的无限多个函数$\lbrace f_n \rbrace $，采用分段构造方法来定义合乎要求的$f$.为简明起见，不妨将题中的定义域改取为$[1,+\infty )$，然后定义</p>
+<p>$$f(x)=n\cdot (\max{\lbrace \vert f_1 (x)\vert ,\cdots ,\vert f_n (x)\vert \rbrace } +1),n\leqslant x &lt; n+1 (n=1,2,\cdots ).$$</p>
+<p>于是其中的$n=[x]$，即自变量$x$的整数部分.</p>
+<p>这时对于每一个$f_n (x)$，可以如下计算$f_n $与$f$之比的绝对值当$x\to +\infty $的极限.由于当$x &gt; n$时有$[x] \geqslant n$，因此有$\vert f_n (x)\vert \leqslant \max{\lbrace \vert f_1 (x)\vert ,\cdots ,\vert f_{[x]} (x)\vert \rbrace }$，又利用$x-1 &lt; [x]\leqslant x$，于是有</p>
+<p>$$\left\vert \dfrac{f_n (x)}{f(x)} \right\vert =\dfrac{\vert f_n (x)\vert }{[x]\cdot (\max{\lbrace \vert f_1 (x)\vert ,\cdots ,\vert f_{[x]} (x)\vert \rbrace } +1)} &lt; \dfrac{1}{[x]} &lt; \dfrac{1}{x-1} ,$$</p>
+<p>可见满足要求$\displaystyle \lim_{x\to +\infty } \left\vert \dfrac{f_n (x)}{f(x)} \right\vert =0$.</p>
+<p>注$\quad $在$f$的定义中对于$\max{\lbrace \vert f_1 (x)\vert ,\cdots ,\vert f_{[x]} (x)\vert \rbrace } $还要加上$1$，这样可以保证对于任何$\lbrace f_n (x)\rbrace $，所构造的$f(x)$都满足$\displaystyle \lim_{x\to +\infty } f(x)=+\infty$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/05/02/2016/05/jimiduoweiqishuxuefenxixitiji116/" data-title="《数学分析习题集》第一章 分析引论 6.符号$O$ | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/05/02/2016/05/shuishoucainiaobuhuishujufenxi-rumen04/" title="">
+  <strong>上一篇：</strong><br/>
+  <span>
+  (no title)</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/04/25/2016/04/shuishoucainiaobuhuishujufenxi-rumen02/"  title="《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路">
+ <strong>下一篇：</strong><br/> 
+ <span>《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>30</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据分析/" title="数据分析">数据分析<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 15.71px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18.57px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.86px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 17.14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 14.29px;">数学史</a> <a href="/tags/数据分析/" style="font-size: 11.43px;">数据分析</a> <a href="/tags/积分学/" style="font-size: 18.57px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.86px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

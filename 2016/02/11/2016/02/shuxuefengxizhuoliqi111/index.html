@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Jianhang's Blog">
 <meta property="og:description" content="逻辑符号">
 <meta property="og:image" content="http://yoursite.com/assets/img/shuxuefengxizhuoliqi/01/1111.png">
-<meta property="og:updated_time" content="2016-03-15T12:15:52.000Z">
+<meta property="og:updated_time" content="2016-04-10T09:13:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 1.逻辑符号">
 <meta name="twitter:description" content="逻辑符号">
@@ -124,7 +124,7 @@
 <p>伽利略$(\mathrm{Galileo} )(1564-1642)$是意大利学者，伟大的自然科学家.他的工作成为后来关于空间和时间的全部物理概念的基础.他是现代物理学之父.</p>
 </blockquote>
 <p>于是，根据上述记号，有下页开头表的写法.</p>
-<p>$$\begin{array}{c|c} \hline 写法 &amp; 表示 \\ L\Rightarrow P &amp; L蕴含P \\ L\Leftrightarrow P &amp; L与P等价 \\ ((L\Rightarrow P)\land (\neg P)) \Rightarrow (\neg L) &amp; 若P由L推出，而P不真，则L不真. \\ \neg ((L\Leftrightarrow G)\lor (P\Leftrightarrow G)) &amp; G既不等价于L，也不等价于P \\ \hline \end{array}$$</p>
+<p>$$\begin{array}{c|c} \hline 写法 &amp; 表示 \\ L\Rightarrow P &amp; L蕴含P \\ L\Leftrightarrow P &amp; L与P等价 \\ ((L\Rightarrow P)\land (\neg P)) \Rightarrow (\neg L) &amp; 若P由L推出，而P不真，则L不真. \\ \neg ((L\Leftrightarrow G)\lor (P\Leftrightarrow G)) &amp; G既不等价于L，也不等价于P \\  \hline \end{array}$$</p>
 <p>我们将会看到，只使用形式化记号，回避普通语言，并非总是明智的.</p>
 <p>另外，我们发现，由较简单的命题构成复杂命题时，使用了括号，正像写代数式那样，它们起着有关结构层次的作用.同代数中一样，为了节省括号，可以约定“运算次序”.为此目的，我们对符号规定如下的优先次序：</p>
 <p>$$\neg ,\land ,\lor ,\Rightarrow ,\Leftrightarrow .$$</p>
@@ -163,12 +163,25 @@
 <center><img src="/assets/img/shuxuefengxizhuoliqi/01/1111.png" alt=""></center>
 
 <p>$1$.验证这些表中所指示的一切是否都与你关于相应的逻辑运算的通常观念相符号（要特别注意若$A$不真，则$A\Rightarrow B$总是真的.）</p>
+<p>解$\quad $对关于相应的逻辑运算的通常观念汇总列表如下：</p>
+<p>$$\begin{array}{cc|c|c|c|c} \hline A &amp; B &amp; \neg A &amp; A\land B &amp; A\lor B &amp; A\Rightarrow B \\ \hline 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ \hline \end{array}$$</p>
+<p>经比较，关于相应的逻辑运算的通常观念与上述所画的四个表中所指示的一切都相符合.</p>
 <p>$2$.试证下面的简单关系成立，它们在数学的论证中极为重要且有广泛的应用.</p>
 <p>$(a)\neg (A\land B)\Leftrightarrow \neg A\lor \neg B$；</p>
 <p>$(b)\neg (A\lor B)\Leftrightarrow \neg A\land \neg B$；</p>
 <p>$(c)(A\Rightarrow B)\Leftrightarrow (\neg B\Rightarrow \neg A)$；</p>
 <p>$(d)(A\Rightarrow B)\Leftrightarrow \neg A\lor B$，</p>
 <p>$(e)\neg (A\Rightarrow B)\Leftrightarrow A\land \neg B$.</p>
+<p>解$\quad (a)$用真值表法判断$\neg (A\land B)\leftrightarrow \neg A\lor \neg B$是否为重言式.此等价式的真值表如下所示，从表可知它是重言式，因而$\neg (A\land B)$与$\neg A\lor \neg B$等值，即$\neg (A\land B)\Leftrightarrow \neg A\lor \neg B$.</p>
+<p>$$\begin{array}{cc|c|c|c|c|c|c} \hline A &amp; B &amp; \neg A &amp; \neg B &amp; A\land B &amp; \neg (A\land B) &amp; \neg A\lor \neg B &amp; \neg (A\land B)\leftrightarrow \neg A\lor \neg B \\ \hline 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ \hline \end{array}$$</p>
+<p>$(b)$用真值表法判断$\neg (A\lor B)\leftrightarrow \neg A\land \neg B$是否为重言式.此等价式的真值表如下所示，从表可知它是重言式，因而$\neg (A\lor B)$与$\neg A\land \neg B$等值，即$\neg (A\lor B)\Leftrightarrow \neg A\land \neg B$.</p>
+<p>$$\begin{array}{cc|c|c|c|c|c|c} \hline A &amp; B &amp; \neg A &amp; \neg B &amp; A\lor B &amp; \neg (A\lor B) &amp; \neg A\land \neg B &amp; \neg (A\lor B)\leftrightarrow \neg A\land \neg B \\ \hline 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1\\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ \hline \end{array}$$</p>
+<p>$(c)$用真值表法判断$(A\Rightarrow B)\leftrightarrow (\neg B\Rightarrow \neg A)$是否为重言式.此等价式的真值表如下所示，从表可知它是重言式，因而$(A\Rightarrow B)$与$(\neg B\Rightarrow \neg A)$等值，即$(A\Rightarrow B)\Leftrightarrow (\neg B\Rightarrow \neg A)$.</p>
+<p>$$\begin{array}{cc|c|c|c|c|c} \hline A &amp; B &amp; \neg B &amp; \neg A &amp; A\Rightarrow B &amp; \neg B\Rightarrow \neg A &amp; (A\Rightarrow B)\leftrightarrow (\neg B\Rightarrow \neg A) \\ \hline 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ \hline \end{array}$$</p>
+<p>$(d)$用真值表法判断$(A\Rightarrow B)\leftrightarrow \neg A\lor B$是否为重言式.此等价式的真值表如下所示，从表可知它是重言式，因而$(A\Rightarrow B)$与$\neg A\lor B$等值，即$(A\Rightarrow B)\Leftrightarrow \neg A\lor B$.</p>
+<p>$$\begin{array}{cc|c|c|c|c} \hline A &amp; B &amp; \neg A &amp; A\Rightarrow B &amp; \neg A\lor B &amp; (A\Rightarrow B)\leftrightarrow \neg A\lor B \\ \hline 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ \hline \end{array}$$</p>
+<p>$(e)$用真值表法判断$\neg (A\Rightarrow B)\leftrightarrow A\land \neg B$是否为重言式.此等价式的真值表如下所示，从表可知它是重言式，因而$\neg (A\Rightarrow B)$与$A\land \neg B$等值，即$\neg (A\Rightarrow B)\Leftrightarrow A\land \neg B$.</p>
+<p>$$\begin{array}{cc|c|c|c|c|c} \hline A &amp; B &amp; \neg B &amp; A\Rightarrow B &amp; \neg (A\Rightarrow B) &amp; A\land \neg B &amp; \neg (A\Rightarrow B)\leftrightarrow A\land \neg B \\ \hline 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\ \hline \end{array}$$</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -265,11 +278,15 @@
 		  
 		
 		  
-			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>27</sup></a></li>
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>30</sup></a></li>
 		  
 		
 		  
-			<li><a href="/categories/数学史/" title="数学史">数学史<sup>1</sup></a></li>
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据分析/" title="数据分析">数据分析<sup>2</sup></a></li>
 		  
 		
 		  
@@ -284,7 +301,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">標簽雲</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 16px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 10px;">数学史</a> <a href="/tags/积分学/" style="font-size: 18px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12px;">高等代数</a>
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 15.71px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18.57px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.86px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 17.14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 14.29px;">数学史</a> <a href="/tags/数据分析/" style="font-size: 11.43px;">数据分析</a> <a href="/tags/积分学/" style="font-size: 18.57px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.86px;">高等代数</a>
     </div>
   </div>
 

@@ -1,0 +1,1061 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="数据分析那些事儿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿">
+<meta property="og:url" content="http://yoursite.com/2016/04/24/2016/04/shuishoucainiaobuhuishujufenxi-rumen01/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="数据分析那些事儿">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-1.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-2.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-3.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-4.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-5.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-6.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-7.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/3.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-8.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/4.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/5.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/6.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/7.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/8.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/9.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-9.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-10.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-11.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-12.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-13.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-14.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-15.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-16.jpg">
+<meta property="og:updated_time" content="2016-06-10T02:00:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿">
+<meta name="twitter:description" content="数据分析那些事儿">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/04/24/2016/04/shuishoucainiaobuhuishujufenxi-rumen01/" title="《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿" itemprop="url">《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2016-04-24T01:13:50.000Z" itemprop="datePublished"> 發表於 2016-04-24</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析是“神马”"><span class="toc-number">1.</span> <span class="toc-text">数据分析是“神马”</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#何谓数据分析"><span class="toc-number">1.1.</span> <span class="toc-text">何谓数据分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析的作用"><span class="toc-number">1.2.</span> <span class="toc-text">数据分析的作用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析六部曲"><span class="toc-number">2.</span> <span class="toc-text">数据分析六部曲</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#明确分析目的和思路"><span class="toc-number">2.1.</span> <span class="toc-text">明确分析目的和思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据收集"><span class="toc-number">2.2.</span> <span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理"><span class="toc-number">2.3.</span> <span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析"><span class="toc-number">2.4.</span> <span class="toc-text">数据分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据展现"><span class="toc-number">2.5.</span> <span class="toc-text">数据展现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#报告撰写"><span class="toc-number">2.6.</span> <span class="toc-text">报告撰写</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析的三大误区"><span class="toc-number">3.</span> <span class="toc-text">数据分析的三大误区</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析师的职业发展"><span class="toc-number">4.</span> <span class="toc-text">数据分析师的职业发展</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析的广阔前景"><span class="toc-number">4.1.</span> <span class="toc-text">数据分析的广阔前景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析师的职业要求"><span class="toc-number">4.2.</span> <span class="toc-text">数据分析师的职业要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析师的基本素质"><span class="toc-number">4.3.</span> <span class="toc-text">数据分析师的基本素质</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用指标和术语"><span class="toc-number">5.</span> <span class="toc-text">几个常用指标和术语</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本章小节"><span class="toc-number">6.</span> <span class="toc-text">本章小节</span></a></li></ol>
+		
+		</div>
+		
+		<p>小白过五关斩六将，通过严格的面试，最终从众多优秀毕业生中脱颖而出，成为公司的一员.在报到的第一天，公司HR向小白介绍了她的职位—公司牛董的助理，负责文秘工作，可能需要做一些数据分析之类的活儿.小白一听到数据分析这个词，就感觉头皮发麻，这时，她的脑子里幻想出一些穿白大褂的科研人员在实验室的计算机前不断忙碌的场景.虽然在上大学时也使用过Excel，但是如果要做数据分析工作，她还真的有些不知如何下手。无数个问号涌到她的脑海中：数据分析到底要做什么呢？我要怎么做数据分析？老板想要看什么样的结果呢？$\cdots \cdots $唉，只好边走边干了.</p>
+<p>HR看出小白的心事，说道：关于数据分析你不用太担心，如果遇到难题，你可以请教我们公司的Mr.林，他在这方面可是专家喔！</p>
+<p>小白一听有救星，立马兴奋起来，好像抓到救命稻草一样，想赶紧找到这位大师级人物，然后一脑把疑问全倒出来.</p>
+<p>HR：小白，你跟我来吧，我给你引荐下Mr.林.</p>
+<p>小白：好的.</p>
+<p>说着小白跟HR来到了Mr.林的办公桌旁，HR说道：Mr.林，这是我们公司新来的同事，叫小白，现担任牛董的助理，其中部分工作涉及数据分析，到时候有问题还要麻烦您多多指点.</p>
+<p>小白紧跟着说道：Mr.林，您好，请多多指教.</p>
+<p>Mr.林：别客气，有问题直接来找我就可以了.</p>
+<p>小白趁机说道：我现在就有问题，您现在是否有时间帮我解答下？数据分析是干什么的，具体要怎么做？</p>
+<p>Mr.林听完笑了起来：你还真是不客气呀.好吧，你刚进公司，我就先给你做个简单的培训，带你入个门吧，以后的修行可就靠你自己努力了.</p>
+<p>小白用力点着头，HR见这“师徒”二人颇有一见如故之感，大致交待一番后就离开了.</p>
+<h1 id="数据分析是“神马”">数据分析是“神马”</h1><p>Mr.林接着说道：小白，既然要学习数据分析，借用现在网络流行语，你能说说数据分析是“神马”么？</p>
+<p>小白：呵呵，数据分析肯定不是“浮云”.从字面上理解，数据分析就是对数据进行分析.Mr.林，我只理解到这一层面，专业的解释就需要您来指教了.</p>
+<h2 id="何谓数据分析">何谓数据分析</h2><p>Mr.林：简单来说，数据分析就是你刚才讲的—对数据进行分析.较为专业的说法，数据分析是指用适当的统计分析方法对收集来的大量数据进行分析，将它们加以汇总和理解并消化，以求最大化地开发数据的功能，发挥数据的作用.数据分析是为了提取有用信息和形成结论而对数据加以详细研究和概括总结的过程.这里的数据也称观测值，是通过实验、测量、观察、调查等方式获取的结果，常常以数量的形式展现出来.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1.jpg" alt=""></center>
+
+<p>数据分析的目的是把隐藏在一大批看似杂乱无章的数据背后的信息集中和提炼出来，总结出所研究对象的内存规律.在实际工作中，数据分析能够帮助管理者进行判断和决策，以便采取适当策略与行动.例如，企业的高层希望通过市场分析和研究，把握当前产品的市场动向，从而制订合理的产品研发和销售计划，这就必须依赖数据分析才能完成.</p>
+<p>在统计学领域，有些学者将数据分析划分为描述性数据分析、探索性数据分析以及验证性数据分析（参见图$1-1$）.其中，探索性数据分析侧重于在数据之中发现新的特征，而验证性数据分析则侧重于验证已有假设的真伪证明.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-1.jpg" alt=""></center>
+
+<p>从另一个角度看，描述性数据分析属于初级数据分析，常见的分析方法有对比分析法、平均分析法、交叉分析法等.而探索性数据分析以及验证性数据分析属于高级数据分析，常见的分析方法有相关分析、因子分析、回归分析等.我们日常学习和工作中涉及的数据分析主要昌描述性分析，也就是大家常用的初级数据分析.</p>
+<h2 id="数据分析的作用">数据分析的作用</h2><p>Mr.林：了解了数据分析是“神马”后，那么小白，你能想到数据分析在对企业日常经营状况的分析工作中具体有哪些作用，体现在哪几方面呢？</p>
+<p>小白：您刚才说过，数据分析就是把隐藏在一大批看似杂乱无章的数据背后的信息集中和提炼出来，总结出所研究对象的内在规律，帮助管理者进行有效的判断和决策.我觉得它就好比是从矿山中挖掘出金子.</p>
+<p>Mr.林：没错，但刚才说的是数据分析的最终目的，要达到这些目的，我们在日常工作中该做些什么呢？比如日常通报、专题分析等，这些都是数据分析具体工作的体现.而什么时候做通报，什么时候该开展专题分析，则需要我们根据实际情况做出选择.很多我经常做这些工作，但不知为何而做，只是为做而做，没有想清楚做的目的，所以常常不得要领被数据所湮没.只有当你对数据分析目的及工作有了足够清晰的认识，开展数据分析时才会如鱼得水，游刃有余.</p>
+<p>数据分析在企业的日常经营分析中主要有三个作用，如图$1-2$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-2.jpg" alt=""></center>
+
+<ul>
+<li>现状分析</li>
+</ul>
+<p>简单来说就是告诉你过去发生了什么.具体体现在：</p>
+<p>第一，告诉你企业现阶段的整体运营情况，通过各个经营指标的完成情况来衡量企业的运营状态，以说明企业整体运营是好了还是坏了，好的程度如何，坏的程度又到哪里.</p>
+<p>第二，告诉你企业各项业务的构成，让你了解企业各项业务的发展及变动情况，对企业运营状况有更深入的了解.</p>
+<p>现状分析一般通过日常通报来完成，如日报、周报、月报等形式.</p>
+<ul>
+<li>原因分析</li>
+</ul>
+<p>简单来说就是告诉你某一现状为什么发生.</p>
+<p>经过第一阶段的现状分析，我们对企业的运营情况有了基本了解，但不知道运营情况具体好在哪里，差在哪里，是什么原因引起的.这时就需要开展原因分析，以进一步确定业务变动的具体原因.例如$2012$年$2$月运营收入环比下降$5\%$，是什么原因导致的呢？是各项业务收入都出现下降，还是个别业务收入下降引起的？是各个地区业务收入都出现下降，还是个别地区业务收入下降引起的？这就需要我们开展原因分析，进一步确定收入下降的具体原因，对运营策略做出调整与优化.</p>
+<p>原因分析一般通过专题分析来完成，根据企业运营情况选择针对某一现状进行原因分析.</p>
+<ul>
+<li>预测分析</li>
+</ul>
+<p>简单来说就是告诉你将来会发生什么.</p>
+<p>在了解企业运营现状后，有时还需要对企业未来发展趋势作出预测，为制订企业运营目标及策略提供有效的参考与决策依据，以保证企业的可持续健康发展.</p>
+<p>预测分析一般通过专题分析来完成，通常在制订企业季度、年度等计划时进行，其开展的频率没有现状分析及原因分析高.</p>
+<p>Mr.林：小白，现在对数据分析有了进一步认识了吧.什么时候开展什么样的数据分析，需要根据你的需要及目的来确定.</p>
+<p>小白：是的，Mr.林，那么请问数据分析具体如何开展呢？有哪些准备工作要做呢？</p>
+<h1 id="数据分析六部曲">数据分析六部曲</h1><p>Mr.林：小白，你的问题问得好，现在我们就来看看如何开展数据分析工作.</p>
+<p>数据分析过程主要包括$6$个既相对独立又互有联系的阶段.它们是：明确分析目的和思路、数据收集、数据处理、数据分析、数据展现、报告撰写等$6$步（参见图$1-3$）.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-3.jpg" alt=""></center>
+
+<h2 id="明确分析目的和思路">明确分析目的和思路</h2><ul>
+<li>明确分析目的</li>
+</ul>
+<p>Mr.林：做任何事都要有目标，数据分析也不例外.小白，我们先来看看菜鸟与数据分析师之间的差别.刚好我这里有一张菜鸟与数据分析师想法对比图（见图$1-4$）,你可以对比一下，看看自己在哪些方面想法还属于菜鸟级别，在哪些方面想法已经达到了数据分析师的水平.从他们思考问题的方式，你就能发现为什么一个是菜鸟，而另外一个是数据分析师了.</p>
+<p>小白：好的，我来看一看菜鸟与数据分析师各是什么样的.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-4.jpg" alt=""></center>
+
+<p>Mr.林：小白，从菜鸟与数据分析师想法对比图中，你发现菜鸟与数据分析师的区别了吗？</p>
+<p>小白：我发现，菜鸟很迷茫，目的不明确，而且一味追求高级的分析方法.而数据分析师的目的就很明确，一切都是以解决问题为中心.</p>
+<p>Mr.林：说得好！其实他们最主要的区别就在于目的是否明确，如果目的明确，所有的问题就自然迎刃而解了.例如，分析师是不会考虑“需要多少张图表”这样的问题的，而是思考这张图表是否有效表达了观点？如果没有，需要怎样调整？如果目的不明确，菜鸟自然会在用什么样的分析方法、作多少张图表、需要多少文字说明、报告要写多少页等这些问题上纠结.</p>
+<p>小白：我明白了，我不要做菜鸟，我要朝着数据分析师的方向努力.</p>
+<p>Mr.林：菜鸟与数据分析师的区别就在于菜鸟做分析时目的不明确，从而导致分析过程非常盲目.所以在开展数据分析之前，要想想：为什么要开展数据分析？通过这次分析我要解决什么问题？只有明确数据分析的目标，数据分析才不会偏离方向，否则得出的数据分析结果不仅没有指导意义，甚至可能将决策者引入歧途，后果严重.</p>
+<ul>
+<li>确定分析思路</li>
+</ul>
+<p>Mr.林：当分析目的明确后，我们就要梳理分析思路，并搭建分析框架，把分析目的分解成若干个不同的分析要点，即如何具体开展数据分析，需要从哪几个角度进行分析，采用哪些分析指标.</p>
+<p>只有明确了分析目的，分析框架才能跟着确定下来，最后还要确保分析框架的体系化，使分析结果具有说服力.</p>
+<p>小白：Mr.林，前面说的角度与指标我都理解，但分析体系化应该如何理解呢？</p>
+<p>Mr.林：体系化也就是逻辑化，简单来说就是先分析什么，后分析什么，使得各个分析点之间具有逻辑联系.这也是很多人常常感到困扰的问题，比如经常不知从哪方面入手，分析的内容和指标常常被质疑是否合理、完整，而自己也说不出个所以然来，所以体系化就是为了让你的分析框架具有说服力.</p>
+<p>小白：如何使分析框架体系化呢？</p>
+<p>Mr.林：问得好！根据我的经验，就是以营销、管理等理论为指导，结合实际业务情况，搭建分析框架，这样才能确保数据分析维度的完整性，分析结果的有效性及正确性.</p>
+<p>营销方面的理论模型有4P、用户使用行为、STP理论、SWOT等，而管理方面的理论模型有PEST、5W2H、时间管理、生命周期、逻辑树、金字塔、SMART原则等.这些都是经典的营销、管理方面的理论，需要在工作中不断实践应用，你才能体会其强大的作用.如图$1-5$所示，就是以PEST分析理论为指导，搭建的互联网行业PEST分析框架，故而使数据分析变得有血有肉有脉络，真正做到理论指导实践.其他具体应用我在后面会为你介绍.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-5.jpg" alt=""></center>
+
+
+<p>明确数据分析目的以及确定分析思路，是确保数据分析过程有效进行的先决条件，它可以为数据的收集、处理及分析提供清晰的指引方向.</p>
+<p>小白：嗯，在做数据分析之前，先想想到底为什么要做数据分析，明确数据分析方向，才能保证不迷失在数据的丛林中.</p>
+<h2 id="数据收集">数据收集</h2><p>Mr.林：数据收集是按照确定的数据分析框架，收集相关数据的过程，它为数据分析提供了素材和依据.这里所说的数据包括第一手数据与第二手数据，第一手数据主要指可直接获取的数据，第二手数据主要指经过加工整理后得到的数据.一般数据来源主要有以下几种方式，如图$1-6$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-6.jpg" alt=""></center>
+
+<ul>
+<li>数据库</li>
+</ul>
+<p>每个公司都有自己的业务数据库，存放从公司成立以来产生的相关业务数据.这个业务数据库就是一个庞大的数据资源，需要有效地利用起来.</p>
+<ul>
+<li>公开出版物</li>
+</ul>
+<p>可以用来收集数据的公开出版物包括《中国统计年鉴》《中国社会统计年鉴》《中国人口统计年鉴》《世界经济年鉴》《世界发展报告》等统计年鉴或报告.</p>
+<ul>
+<li>互联网</li>
+</ul>
+<p>随着互联网的发展，网络上发布的数据越来越多，特别是搜索引擎可以帮助我们快速找到所需要的数据，例如国家及地方统计局网站、行业组织网站、政府机构网站、传播媒体网站、大型综合门户网站等上面都可能有我们需要的数据.</p>
+<ul>
+<li>市场调查</li>
+</ul>
+<p>进行数据分析时，需要了解用户的想法与需求，但是通过以上三种方式获得此类数据会比较困难，因此可以尝试使用市场调查的方法收集用户的想法和需要数据.市场调查就是指运用科学的方法，有目的、有系统地收集、记录、整理有关市场营销的信息和资料，分析市场情况，了解市场现状及其发展趋势，为市场预测和营销决策提供客观、正确的数据资料.市场调查可以弥补其他数据收集方式的不足，但进行市场调查所需的费用较高，而且存在一定的误差，故仅作参考之用.</p>
+<p>小白：看来我以后做数据分析时，不用担心没有数据来源啦.</p>
+<h2 id="数据处理">数据处理</h2><p>Mr.林：数据处理是指对收集到的数据进行加工处理，形成适合数据分析的样式，它是数据分析前必不可少的阶段.数据处理的基本目的是从大量的、杂乱无章、难以理解的数据中，抽取并推导出对解决问题有价值、有意义的数据.</p>
+<p>数据处理主要包括数据清洗、数据转化、数据提取、数据计算等处理方法（参见图$1-7$）.一般拿到手的数据都需要进行一定的处理才能用于后续的数据分析工作，即使再“干净”的原始数据也需要先进行一定的处理才能使用.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-7.jpg" alt=""></center>
+
+
+<p>小白：哦，数据处理是数据分析的前提，对有效数据的分析才是有意义的，明白啦！</p>
+<h2 id="数据分析">数据分析</h2><p>Mr.林：数据分析是指用适当的分析方法及工具，对处理过的数据进行分析，提取有价值的信息，形成有效结论的过程.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/2.jpg" alt=""></center>
+
+<p>在确定数据分析思路的阶段，数据分析师应当为需要分析的内容确定适合的数据分析方法，等到真正进入进行数据分析阶段时，就能够驾驭数据，从容地进行分析和研究了.</p>
+<p>由于数据分析多是通过软件来完成的，这就要求数据分析师不仅要掌握各种数据分析方法，还要熟悉主流数据分析软件的操作.一般的数据分析我们可以通过Excel完成，后面也将重点为你介绍，而高级的数据分析就要采用专业的分析软件进行了，如数据分析工具SPSS Statistics等.</p>
+<p>小白：好的，期待您后续精彩的数据分析讲解.</p>
+<ul>
+<li>数据分析与数据处理的区别</li>
+</ul>
+<p>小白：Mr.林，我有个问题.我经常听到数据处理和数据分析这两个词，它们之间有何关系呢？</p>
+<p>Mr.林：从前面介绍数据处理和分析的过程不难看出，数据处理是数据分析的基础.通过数据处理，将收集到的原始数据转换为可以分析的形式，并且保证数据的一致性和有效性.如果数据本身存在错误，那么即使使用最先进的数据分析方法，得到的结果也是错误的，不具备任何参考价值，甚至还会误导决策.</p>
+<ul>
+<li>数据分析与数据挖掘的关系</li>
+</ul>
+<p>小白：还有个问题，我常听到数据挖掘，那么数据挖掘是什么呢？它与数据分析有什么关系呢？</p>
+<p>Mr.林：这个问题问得好！数据挖掘其实是一种高级的数据分析方法.</p>
+<p>数据挖掘就是从大量的数据中挖掘出有用的信息，它是根据用户的特定要求，从浩如烟海的数据中找出所需的信息，以满足用户的特定需求.数据挖掘技术是人们长期对数据库技术进行研究和开发的结果.一般来说，数据挖掘侧重解决四类数据分析问题：分类、聚类、关联和预测，重点在寻找模式与规律.</p>
+<p>数据分析与数据挖掘的本质是一样的，都是从数据里面发现关于业务的知识.</p>
+<p>数据挖掘现在还不是你学习的重点，如果你有兴趣，可在掌握一定的数据分析知识后，再进一步查阅相关资料学习.</p>
+<h2 id="数据展现">数据展现</h2><p>小白：您刚才讲通过分析，隐藏在数据内部的关系和规律就会逐渐浮现出来，那么通过什么方式展现出这些关系和规律，才能让人一目了然呢？</p>
+<p>Mr.林：不错，孺子可教也！这就是我接下来要说的数据展现了.众所周知，每个人看待事物都有自己的理解方式，所以数据分析师在展现结果的时候一定要保证绝大部分人的理解是一致的.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/3.jpg" alt=""></center>
+
+<p>一般情况下，数据是通过表格和图形的方式来呈现的，我们常说用图表说话就是这个意思.常用的数据图表包括饼图、柱形图、条形图、折线图、散点图、雷达图等，当然可以对这些图表进一步整理加工，使之变为我们所需要的图形，例如金字塔、矩阵图、漏斗图、帕雷托图等.</p>
+<p>大多数情况下，人们更愿意接受图形这种数据展现方式，因为它能更加有效、直观地传递出分析师所要表达的观点.记住，在一般情况下，能用图说明问题的就不用表格，能用表格说明问题的就不用文字.</p>
+<p>小白：原来图表的运用还这么有讲究呀，我一定好好学习如何用图表说话！</p>
+<h2 id="报告撰写">报告撰写</h2><p>Mr.林：数据分析报告其实是对整个数据分析过程的一个总结与呈现.通过报告，把数据分析的起因、过程、结果及建议完整地呈现出来，供决策者参考.所以，数据分析报告是通过对数据全方位的科学分析来评估企业运营质量，为决策者提供科学、严谨的决策依据，以降低企业运营风险，提高企业核心竞争力.</p>
+<p>一份好的数据分析报告，首先需要有一个好的分析框架，并且图文并茂，层次明晰，能够让阅读者一目了然.结构清晰、主次分明可以使阅读者正确理解报告内容；图文并茂，可以令数据更加生动活泼，提高视觉冲击力，有助于阅读者更形象、直观地看清楚问题和结论，从而产生思考.</p>
+<p>另外，数据分析报告需要有明确的结论，没有明确结论的分析称不上分析，同时也失去了报告的意义，因为我们最初就是为寻找或求证一个结论才进行分析的，所以千万不要舍本求末.</p>
+<p>最后，好的分析报告一定要有建议或解决方案.作为决策者，需要的不仅仅是找出问题，更重要的是建议或解决方案，以便他们在决策时作参考.所以，数据分析师不仅需要掌握数据分析方法，而且还要了解和熟悉业务，这样才能根据发现的业务问题，提出具有可行性的建议或解决方案.下面的图$1-8$给出了一个分析报告的基本框架示例.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-8.jpg" alt=""></center>
+
+<p>Mr.林：以上是数据分析的$6$个关键步骤，今天只是简要介绍，以后将逐一为你讲解.说了这个多，给你讲个段子轻松一下，顺便回顾下刚讲的内容.</p>
+<p>小白一听有段子听，立马精神起来：好啊！如啊！</p>
+<p>Mr.林：如何判断数据分析师正处于分析流程的哪个阶段？</p>
+<p>手托腮帮，沉思痛苦状—在思考分析思路.</p>
+<p>手放在键盘上不动，表情呆滞—在数据处理.</p>
+<p>鼠标在飞快移动—在用数据透视表做分析.</p>
+<p>不断交替点击鼠标左右鍵—在画图表.</p>
+<p>断断续续敲击键盘，时而移动鼠标—在写PTT分析报告.</p>
+<p>小白：还真形象啊！Mr.林，您该不会说的就是您自己吧？呵呵！</p>
+<p>Mr.林：哈哈，数据分析师差不多都是这样的状态.</p>
+<h1 id="数据分析的三大误区">数据分析的三大误区</h1><p>Mr.林：小白，刚才对数据分析进行了简要介绍，而在实际的学习、工作中，常常有数据分析人员陷入一些误区，现在我来讲一讲这些误区，你日后一定要注意.</p>
+<ul>
+<li>分析目的不明确，为分析而分析</li>
+</ul>
+<p>Mr.林：经常有人问：要用多少图？除了摆数据，还需要说些什么？在此我想说的是，数据分析不应为了分析而分析，而是应该围绕你的分析目的（了解现状、找出业务变动原因、预测发展等）而进行分析.</p>
+<p>只有对自己的目的有清晰的认识，你才知道要知道要怎样去实现这个目的，需要通过哪些图表展现，才会知道这些图表是否能反映问题，自然而然地进行相应的问题分析，而不是连该说些什么都不知道.</p>
+<ul>
+<li>缺乏业务知识，分析结果偏离实际</li>
+</ul>
+<p>Mr.林：目前现有的数据分析师大多是统计学、计算机、数学等专业出身，他们大多缺乏从事营销、管理方面的工作经验，对业务的理解相对较浅，对数据的分析偏重于数据分析方法的使用，如回归分析、相关分析等.</p>
+<p>有的公司老板抱怨手下的数据分析师每天给他看几十个零散数据，虽然做出的报告很专业，图表也很漂亮，但所作的分析忽视了业务逻辑上的关联性，得不到全面、综合性的结论.</p>
+<p>在企业中所作的数据分析不是纯数据分析，而是需要多从业务方面进行分析，不应停留在数据表面，要思考数据背后的事实与真相，使得分析结果更加切合实际，为老板的决策提供有力的支撑，否则就是纸上谈兵.</p>
+<ul>
+<li>一味追求使用高级分析方法，热衷研究模型</li>
+</ul>
+<p>Mr.林：在进行数据分析时，相当一部分人都喜欢用回归分析、因子分析等高级分析方法，总认为有分析模型就是专业的，只有这样才能体现专业性，结果才是可信的.其实不然，高级的数据分析方法不一定是最好的，能够简单有效解决问题的方法才是最好的.</p>
+<p>我们坚信，仅有分析模型远远不够，围绕业务发现问题并解决问题才是数据分析的最终目的！不论高级的分析方法还是简单的分析方法，只要能够解决业务问题，就是好办法，正如我们常说的“不论黑猫还是白猫，只要能抓老鼠就是好猫”.</p>
+<p>小白：好的，我在以后的工作中会注意这些的，做好一个数据分析师并不容易的事，我要努力向Mr.林靠齐.</p>
+<h1 id="数据分析师的职业发展">数据分析师的职业发展</h1><h2 id="数据分析的广阔前景">数据分析的广阔前景</h2><p>Mr.林：数据分析作为一个新的行业领域正在全球迅速发展，它开辟了人类获取知识的新途径.</p>
+<p>目前，数据库技术、软件工具、各种硬件设备飞速发展，在这些软硬件技术与设备的支持下，信息技术的应用已在各行各业全面展开，尤其是对通信、互联网、金融等行业的发展做出了巨大贡献，并且经过长期的应用积累了大量丰富的数.但大部分企业对其存储信息的利用率极低.庞大的历史数据是否有价值？有何价值？是否可以综合利用分析？是否能够为领导决策提供参考依据？</p>
+<p>回答是肯定的，数据分析这一项工作越来越受到决策层的重视，借助数据分析的各种工具，从海量的历史数据中提取、挖掘对业务发展有价值的、潜在知识，找出趋势，为决策层的决策提供有力的依据，对产品或服务的发展方向起到积极作用，有力推动企业的科学化、信息化管理.</p>
+<p>从$20$世纪$90$年代起，欧美国家开始大量培养数据分析师，直到现在，对数据分析师的需求仍然长盛不衰，而且还有扩张之势.根据美国劳工部预测，到$2018$年，数据分析师的需求量将增长$20\%$.就算你不进数据分析，但数据分析技能也是未来必不可少的工作技能之一.</p>
+<p>小白：数据分析师如此抢手的原因何在呢？</p>
+<p>Mr.林：一个简单的原因就是社会越发达，人们对数据的依赖就越多.无论政府决策还是公司运营，科学研究还是媒体宣传，都需要数据支持.那么，对数据有如此大的依赖，就必然导致对数据分析的大量需求.因此，将数据转化为知识、结论和规律，就是数据分析的作用和价值.</p>
+<p>小白：那数据究竟会庞大到什么地步呢？</p>
+<p>Mr.林：据国际知名咨询公司估计，到$2020$年，全球每年产生的数据量将达到$3500$万亿GB，打个比方，就是用普通的DVD一张一张地摞起来，可以从地球摞到月球两次.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/4.jpg" alt=""></center>
+
+<p>面对这样庞大的数据，对数据分析师的要求就不仅仅是单纯做分析了，更重要的是与相关业务部门进行合作，将数据真正应用到业务中，根据实际的业务发展情况识别哪些数据可用，哪些不适用，而不是孤立地在“真空环境”下进行分析.这就要求数据分析师不仅具备洞察数据的能力，还要对相关业务的背景有深入的了解，明白客户或业务部门的需求，从而将数据信息化、可视化，最后转化为生产力，帮助企业获得利润，这就是整个数据“供应链”.当然，数据分析师也需要理解这个“供应链”.</p>
+<h2 id="数据分析师的职业要求">数据分析师的职业要求</h2><p>小白：那么怎样才能成为一名优秀的数据分析师？数据分析师的职业要求又有哪些？</p>
+<p>Mr.林：你的问题可以用“五懂”来回答，即懂业务、懂管理、懂分析、懂工具，还要懂设计.</p>
+<ul>
+<li>懂业务</li>
+</ul>
+<p>从事数据分析工作的前提就是需要懂业务，即熟悉行业知识、公司业务及流程，最好有自己独到见解，若脱离行业认识和公司业务背景，分析的结果只会是脱了线的风筝，没有太大的实用价值.</p>
+<p>例如公司$2011$年的运营收入是$1000$万元，那么不熟悉业务的数据分析师看到的只是$1000$万这个数字，而熟悉业务的数据分析师，还能看到这个数字背后隐藏的信息，如$1000$万元是由哪几个业务收入构成，哪个业务收入占主要部分，哪个业务收入是最小占比，最高业务收入的地区又是哪个地区等.</p>
+<p>这就是懂业务与不懂业务的数据分析师之间的区别.</p>
+<p>从另外一个角度来说，懂业务也是数据敏感的体现.不懂业务的数据分析师，看到的只是一个个数字；懂业务的数据分析师，则看到的不仅仅是数字，他明白数字代表什么意义，知道数字是大了还是小了，心中有数，这才是真正意义的数据敏感性.</p>
+<ul>
+<li>懂管理</li>
+</ul>
+<p>懂管理，一方面是搭建数据分析框架的要求，比如刚才介绍的数据分析六部曲的第一步确定分析思路就需要用到营销、管理等理论知识来指导，如果不熟悉管理理论，那你如何指导数据分析框架的搭建，以及开展后续的数据分析呢？</p>
+<p>懂管理另一方面的作用是针对数据分析结论提出有指导意义的分析建议，如果没有管理理论的支撑，就难以确保分析建议的有效性.</p>
+<p>所以数据分析师需要一定的管理理论知识.</p>
+<ul>
+<li>懂分析</li>
+</ul>
+<p>懂分析是指掌握数据分析的基本原理与一些有效的数据分析方法，并能灵活运用到实践工作中，以便有效地开展数据分析.</p>
+<p>基本的分析方法有：对比分析法、分组分析法、交叉分析法、结构分析法、漏斗图分析法、综合评价分析法、因素分析法、矩阵关联分析法等.</p>
+<p>高级的分析方法有：相关分析法、回归分析法、聚类分析法、判别分析法、主成分分析法、因子分析法、对应分析法、时间序列等.</p>
+<p>不论简单还是复杂的分析方法，只要能解决问题的方法就是好方法.</p>
+<ul>
+<li>懂工具</li>
+</ul>
+<p>懂工具是指掌握数据分析相关的常用工具.数据分析工具就是实现数据分析方法理论的工具，面对越来越庞大的数据，依靠计算器进行分析是不现实的，必须利用强大的数据分析工具完成数据分析工具.</p>
+<p>常用的数据分析工具有Excel、Access、SPSS、SAS，建议先用好Excel分析工具.Excel就是一款非常实用的数据处理、分析工具，它能解决，满足你工作中$80\%$，甚至$100\%$的要求.有兴趣、时间、需要的话，再学习SPSS、SAS等统计分析工具.</p>
+<p>同样，应该根据研究的问题选择合适的工具，只要能解决问题的工具就是好工具.</p>
+<ul>
+<li>懂设计</li>
+</ul>
+<p>懂设计是指运用图表有效表达数据分析师的分析观点，使分析结果一目了然.</p>
+<p>图表的设计是门大学问，如图形的选择、版式的设计、颜色的搭配等，都需要掌握一定的设计原则.</p>
+<p>小白：颜色搭配都有要求？不能根据自己的喜好选择么？</p>
+<p>Mr.林：当然有要求，根据喜好选择也要在符合设计原则的基础上选择，例如公司的VI设计是以蓝色为主色调，属冷色系，那么你选的图表颜色就要与公司的VI设计相吻合，尽量避免使用红色、黄色等暖色系的颜色，这方面知识我会在讲到数据展现部分再为你详细介绍.</p>
+<p>小白：好的，看来要成为一名合格的数据分析师还有很长的路要走啊.</p>
+<h2 id="数据分析师的基本素质">数据分析师的基本素质</h2><p>Mr.林接着说道：要成为一名优秀的数据分析师并非一件容易的事.虽然大学的专业与数据分析不相关，但你可以通过工作中的实践来学习数据分析，这需要付出大量的时间和精力，不经一番寒彻骨，怎得梅花扑鼻香？</p>
+<p>小白点点头：嗯，我会努力的.</p>
+<p>Mr.林：刚才介绍的是数据分析师的职业要求，现在再介绍数据分析的五大基本能力和素质.</p>
+<ul>
+<li>态度严谨负责</li>
+</ul>
+<p>严谨负责是数据分析师的必备素质之一，只有本着严谨负责的态度，才能保证数据的客观、准确.</p>
+<p>数据分析师可以说是企业的医生，他们通过对企业运营数据的分析，为企业寻找症结及潜在问题.一名合格的数据分析师，应具有严谨负责的态度，保持中立立场，客户评价企业在发展过程中存在的问题，为决策层提供有效的参考依据.数据分析师不应受其他因素影响而更改数据，隐瞒企业存在的问题，这样做对企业发展是非常不利的，甚至会造成严重的后果.而且，对数据分析师自身来说，其职业生涯也会受影响，从此以后所做的数据分析结果都将受到质疑，因为你不再是可依赖的人，在同事、领导、客户面前已经失去了信任.</p>
+<p>所以，作为一名数据分析师就必须持有严谨负责的态度，这也是最基本的职业道德.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/5.jpg" alt=""></center>
+
+<ul>
+<li>好奇心强烈</li>
+</ul>
+<p>好奇心人皆有之，但是作为数据分析师，这份好奇心就应该更强烈，应该把自己当写数据福尔摩斯，要积极主动地发现和挖掘隐藏在数据内部的真相.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/6.jpg" alt=""></center>
+
+<p>在数据分析师的脑子里，应该充满着无数个“为什么”：为什么是这样的结果，为什么不是那样的结果，导致这个结果的原因是什么，为什么结果不是预期的那样等等，只有这样才有突破点.</p>
+<p>这一系列问题都要在进行数据分析时提出来，并且通过数据分析，给自己一个满意的答案.越是优秀的数据分析师，好奇心越不容易满足，回答了一个问题，又会抛出一个新的问题，继续研究下去.</p>
+<p>只有拥有了这样一种刨根问底的精神，才会对数据和结论保持敏感，继而顺藤摸瓜，找出数据背后的真相.当然，你也会从中获取成就感.</p>
+<ul>
+<li>逻辑思维清晰</li>
+</ul>
+<p>除了一颗探索真相的好奇心，数据分析师还需要具备缜密的思维和清晰的逻辑推理能力.我记得有位大师说过：结构为王.何谓结构，结构就是我们常说的逻辑，不论说话还是写文章的时候都要有条理、有目的地做，不可眉毛胡子一把抓，不分主次.</p>
+<p>通常，从事数据分析时所面对的商业问题都是较为复杂的，我们要思考错综复杂的成因，分析所面对的各种复杂的环境因素，并在问题的若干发展可能性中选择一个最优的方面.这就需要我们对事实有足够的了解，同时也需要我们能真正理清问题的整体以及局部的结构，在深度思考后，理清结构中相互的逻辑关系，只有这样才能真正客观地、科学地找到商业问题的答案.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/7.jpg" alt=""></center>
+
+<ul>
+<li>擅长模仿学习</li>
+</ul>
+<p>在做数据分析时，有自己的想法固然重要，但是“前车之鉴”也是非常有必要学习的，它能帮助数据分析师迅速地成长.因此，模仿学习是快速提高学习效果的有效方法.这里说的模仿主要是指参考、借鉴他们优秀的分析思路和方法，而非直接“照搬”.</p>
+<p>成功的模仿需要领会他人方法的精髓，理解其分析原理，透过表面达到实质.万变不离其宗，要善于将这些精华转化为自己的知识，否则，只能是“一直在模仿，从未超越过”.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/8.jpg" alt=""></center>
+
+<ul>
+<li>勇于创新</li>
+</ul>
+<p>通过模仿可以借鉴他人的成功经验，但模仿的时间不宜太长，并且建议每次模仿后都要进行总结，提出可以改进的地方，甚至要有所创新，不断总结分析方法、分析思路、分析流程，在总结中前行.</p>
+<p>创新是一个优秀数据分析师应具备的精神，只有不断的创新，才能提高自己的分析水平，使自己站在更高的角度去分析问题，为整个研究领域乃至社会带来更多的价值.现在的分析方法和研究课题千变万化，墨守成规是无法很好地解决所面临的新问题的.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/9.jpg" alt=""></center>
+
+<p>听到这里，小白掰着手指头算自己有几条符合优秀数据分析师的素质和能力.</p>
+<p>Mr.林继续说道：学习数据分析需要时间和经验的积累，这些素质与能力不是说有就有的，需要慢慢培养形成，不能一蹴而就.在工作中运用不同的分析方法对数据进行分析，并与业务部门的同事积极沟通，加深自己对整个行业或研究内容的理解，相信在两到三年内，你就能成为一名合格的数据分析师.</p>
+<p>小白：好的，我会努力学习的.</p>
+<h1 id="几个常用指标和术语">几个常用指标和术语</h1><p>Mr.林：一个优秀的数据分析师要有扎实的数据解读功底，因为在进行数据分析时，经常会遇到一些分析指标或术语，对这些指标或术语的理解不够充分就没法开展工作.还有点时间，我先给你简单介绍一些基础的分析指标和术语.</p>
+<p>小白：太好了！拿支笔先～～</p>
+<ul>
+<li>平均数</li>
+</ul>
+<p>Mr.林：我们在日常生活中提到的平均数，一般是指算术平均数，就是一组数据的算术平均值，即全部数据累加后除以数据个数.算术平均数是非常重要的基础性指标，它的特点是将总体内各单位的数量差异抽象化，代表总体的一般水平，掩盖了总体内各单位的差异.</p>
+<p>例如现有某学期学生的数学考试成绩，通过计算成绩平均数，可得如图$1-9$所示的结果.将每位同学的数学成绩与平均数相比较，就能发现哪些同学的数学成绩高于平均数，需要保持；哪些同学的成绩低于平均数，需要继续努力.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-9.jpg" alt=""></center>
+
+<p>当然，在平均数这个指标中，除算术平均数以外，还有其他平均数，如调和平均数和几何平均数.</p>
+<p>小白：一个小小的平均数都有这么多学问呀.</p>
+<ul>
+<li>绝对数与相对数</li>
+</ul>
+<p>Mr.林：绝对数是反映客观现象总体在一定时间、地点条件下的总规模、总水平的综合性指标，也是数据分析中常用的指标，如GDP、总人口等.此外，绝对数也可以表现为在一定时间、地点条件下数量增减变化的绝对数，比如A国人口比B国人口多$1000$万人.</p>
+<p>相对数是指由两个有联系的指标对比计算而得到的数值，用以反映客观现象之间数量联系程度的综合指标.计算相对数的基本公式是：</p>
+<p>$$相对数=\dfrac{比较数值（比数）}{基础数值（基数）} $$</p>
+<p>分母是用做对比标准的指标数值，简称基数；分子是用做与基数对比的指标数值，简称比数.相对数一般以倍数、成数、百分数等表示，它反映了客观现象之间数量联系的程度.</p>
+<p>使用相对数时需要注意指标的可比性，同时要与总量指标（绝对数）结合使用.关于绝对数与相对数，我举几个例子，你一看就明白了，如图$1-10$所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-10.jpg" alt=""></center>
+
+<ul>
+<li>百分比与百分点</li>
+</ul>
+<p>Mr.林：百分比是相对数中的一种，它表示一个数是另一个数的百分之几，也称百分率或百分数.百分比通常采用百分号$(\%)$来表示，如$8\%$，$50\%$，$168\%$等.由于百分比的分母都是$100$，也就是都以$1\%$作为度量单位（如图$1-11$所示），因此便于比较，在数据分析中的应用非常广泛.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-11.jpg" alt=""></center>
+
+<p>百分点是指不同时期以百分数的形式表示的相对指标的变动幅度，$1$个百分点$=1\%$.例如，图$1-12$中某公司发言人就混淆了百分比与百分点的概念.表示构成的变动幅度不宜用百分数，而应该用百分点.因此，这位公司发言人正确的说法应该是“公司今年的利润是$45\%$，比去年的$28\%$提高了$17$个百分点”.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-12.jpg" alt=""></center>
+
+<ul>
+<li>频数与频率</li>
+</ul>
+<p>Mr.林：频数是指一组数据中个别数据重复出现的的次数.如图$1-13$的左图所示，某校A班共$50$名学生，按性别进行分组，分为男与女两个组别，男同学的频数为$30$，女同学的频数为$20$.</p>
+<p>频率是每组类别次数与总次数的比值，它代表某类别在总体中出现的频繁程度，一般采用百分数表示，所有组的频率加总等于$100\%$.还是用某校A班的例子，$30$个男同学在$50$个同学中出现的频率为$60\%$，即$(30\div 50)\times 100\%$；而$20$个女同学在$50$个同学中出现的频率为$40\%$，即$(20\div 50)\times 100\%$，如图$1-13$的右图所示.</p>
+<p>小白：所以频数是绝对数，频率是相对数.</p>
+<p>Mr.林赞许地说：对，活学活用，你领悟得很快嘛.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-13.jpg" alt=""></center>
+
+<ul>
+<li>比例与比率</li>
+</ul>
+<p>Mr.林：比例与比率都属于相对数.</p>
+<p>比例是指在总体中各部分的数值占全部数值的比重，通常反映总体的构成和结构.比如A班共有学生$50$人，男生$30$人，女生$20$人，则男生的比例是$30\colon 50$，女生的比例是$20\colon 50$.由此可以看出，比例的基数（也就是分母）都是全体学生人数，即为同一个基数.</p>
+<p>比率是指不同类别数值的对比，它反映的不是部分与整体之间的关系，而是一个整体中各部分之间的关系.比如刚才的例子，男生$30$人，女生$20$人，则男生与女生的比率是$30\colon 20$，如图$1-14$所示.这一指标经常会用在社会经济领域，比如我国的人口性别比就是用每$100$名女性数量相对的男性数量来表示的.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-14.jpg" alt=""></center>
+
+<ul>
+<li>倍数与番数</li>
+</ul>
+<p>Mr.林：倍数与番数同样属于相对数，但使用时容易混淆.倍数是一个数除以另一个数所得的商.比如$A\div B=C$，就是说$A$是$B$的$C$倍.需要注意的是，倍数一般表示数量的增长或上升幅度，而不适用于表示数量的减少或下降.</p>
+<p>番数是指原来数量的$2$的$N$次方倍.比如翻一番为原来数量的$2$倍$(2^1)$，翻两番为$4$倍$(2^2)$.如图$1-15$所示，这位公司发言人在讲话中就混淆了倍数与番数的概念.正确的说法应该是“公司产品销量翻一番$(6.4=3.2\times 2^1)$，从去年的$3.2$万件提高到今年的$6.4$万件.此外，我们成本控制也很好，由$20$万元下降了$50\%$，今年成本为$10$万元”.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-15.jpg" alt=""></center>
+
+<ul>
+<li>同比与环比</li>
+</ul>
+<p>Mr.林：同比是指与历史同时期进行比较得到的数值，该指标主要反映的是事物发展的相对情况.例如$2010$年$12$月与$2009$年$12$月相比，如图$1-16$的左图所示.</p>
+<p>环比是指与前一个统计期进行比较得到的数值，该指标主要反映的是事物逐期发展的情况.例如$2010$年$12$月与$2010$年$11$月相比，如图$1-16$的右图所示.</p>
+<center><img src="/assets/img/dataanalysis/shuishoucainiaobuhuishujufenxi/rumen/1-16.jpg" alt=""></center>
+
+<p>Mr.林：讲了这么多，我估计你都听晕了.没关系，这些内容现在听起来虽然枯燥，但能够为你以后的数据分析打下坚实的基础.其中一些内容需要通过实际操作才能有更深刻的体会.）</p>
+<p>小白：是啊.我明白您讲的这些都是基本功，回去后我一定认真复习、加深理解，绝不辜负您的教导.</p>
+<h1 id="本章小节">本章小节</h1><p>Mr.林：今天讲了不少内容，估计你有点应接不暇了，我带着你回顾下这些内容.</p>
+<p>什么是数据分析以及数据分析的三大作用.</p>
+<p>数据分析的六步曲：首先是明确分析目的和思路，然后是数据收集，第三步是将收集回来的数据进行处理，第四步是根据分析目的和思路进行数据分析，第五步是将分析出的结果通过图表的方式展现出来，最后一步是撰写数据分析报告.</p>
+<p>认识常见的数据分析误区，明白数据分析师的要求与基本素质，了解如何成为一个合格的数据分析师.</p>
+<p>数据分析师中经常用到的指标和术语，除掌握最基本的平均数、百分比等概念以外，还需要将容易混淆的指标进行明确区分，避免在以后阐述分析结果时出现错误.</p>
+<p>最后送数据分析心法给你，也叫做数据分析三字经.</p>
+<ol>
+<li><p>学习：先了解，后深入；先记录，后记忆；先理论，后实践；先模仿，后创新；</p>
+</li>
+<li><p>方法：先思路，后方法；先框架，后细化；先方法，后工具；先思考，后动手；</p>
+</li>
+<li><p>分析：先业务，后数据；先假设，后验证；先总体，后局部；先总结，后建议.</p>
+</li>
+</ol>
+<p>当然你现在看这个还不会有太深刻的理解，没关系，正如三字经里所说，“先了解，后深入；先记录，后记忆”，等到积累一定经验，再回头看看你就会深有感触.</p>
+<p>小白：谢谢Mr.林的指点，您说的我都记下了，我会加倍努力，早日出师.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数据分析/">数据分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数据分析/">数据分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/04/24/2016/04/shuishoucainiaobuhuishujufenxi-rumen01/" data-title="《谁说菜鸟不会数据分析（入门篇）》第1章 数据分析那些事儿 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/04/25/2016/04/shuishoucainiaobuhuishujufenxi-rumen02/" title="《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《谁说菜鸟不会数据分析（入门篇）》第2章 结构为王——确定分析思路</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/04/22/2016/04/ahistoryofmathematicsscott6/"  title="">
+ <strong>下一篇：</strong><br/> 
+ <span>(no title)
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析是“神马”"><span class="toc-number">1.</span> <span class="toc-text">数据分析是“神马”</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#何谓数据分析"><span class="toc-number">1.1.</span> <span class="toc-text">何谓数据分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析的作用"><span class="toc-number">1.2.</span> <span class="toc-text">数据分析的作用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析六部曲"><span class="toc-number">2.</span> <span class="toc-text">数据分析六部曲</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#明确分析目的和思路"><span class="toc-number">2.1.</span> <span class="toc-text">明确分析目的和思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据收集"><span class="toc-number">2.2.</span> <span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理"><span class="toc-number">2.3.</span> <span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析"><span class="toc-number">2.4.</span> <span class="toc-text">数据分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据展现"><span class="toc-number">2.5.</span> <span class="toc-text">数据展现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#报告撰写"><span class="toc-number">2.6.</span> <span class="toc-text">报告撰写</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析的三大误区"><span class="toc-number">3.</span> <span class="toc-text">数据分析的三大误区</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据分析师的职业发展"><span class="toc-number">4.</span> <span class="toc-text">数据分析师的职业发展</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析的广阔前景"><span class="toc-number">4.1.</span> <span class="toc-text">数据分析的广阔前景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析师的职业要求"><span class="toc-number">4.2.</span> <span class="toc-text">数据分析师的职业要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据分析师的基本素质"><span class="toc-number">4.3.</span> <span class="toc-text">数据分析师的基本素质</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用指标和术语"><span class="toc-number">5.</span> <span class="toc-text">几个常用指标和术语</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本章小节"><span class="toc-number">6.</span> <span class="toc-text">本章小节</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>30</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据分析/" title="数据分析">数据分析<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 15.71px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18.57px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.86px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 17.14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 14.29px;">数学史</a> <a href="/tags/数据分析/" style="font-size: 11.43px;">数据分析</a> <a href="/tags/积分学/" style="font-size: 18.57px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.86px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

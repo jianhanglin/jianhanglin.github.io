@@ -1,0 +1,1317 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-hk">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《数学分析习题集》第一章 分析引论 5.函数的极限 | Jianhang&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jianhang Lin">
+    
+
+    
+    <meta name="description" content="习题381-470">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《数学分析习题集》第一章 分析引论 5.函数的极限">
+<meta property="og:url" content="http://yoursite.com/2016/03/03/2016/03/jimiduoweiqishuxuefenxixitiji1151/index.html">
+<meta property="og:site_name" content="Jianhang's Blog">
+<meta property="og:description" content="习题381-470">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/400.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/405-4.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/405-7.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/406-4.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/406-7.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/407-7.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/jimiduoweiqishuxuefenxixitiji/1/434.png">
+<meta property="og:updated_time" content="2016-03-27T05:42:27.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《数学分析习题集》第一章 分析引论 5.函数的极限">
+<meta name="twitter:description" content="习题381-470">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jianhang&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jianhang&#39;s Blog" title="Jianhang&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jianhang&#39;s Blog">Jianhang&#39;s Blog</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/library">图书馆</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+                    
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/03/03/2016/03/jimiduoweiqishuxuefenxixitiji1151/" title="《数学分析习题集》第一章 分析引论 5.函数的极限" itemprop="url">《数学分析习题集》第一章 分析引论 5.函数的极限</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jianhang Lin" target="_blank" itemprop="author">Jianhang Lin</a>
+		
+  <p class="article-time">
+    <time datetime="2016-03-03T13:25:05.000Z" itemprop="datePublished"> 發表於 2016-03-03</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#有界性、确界和振幅"><span class="toc-number">1.</span> <span class="toc-text">有界性、确界和振幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数极限的定义"><span class="toc-number">2.</span> <span class="toc-text">函数极限的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理函数的极限计算"><span class="toc-number">3.</span> <span class="toc-text">有理函数的极限计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无理函数的极限计算"><span class="toc-number">4.</span> <span class="toc-text">无理函数的极限计算</span></a></li></ol>
+		
+		</div>
+		
+		<p>内容简介$\quad $这一节在数列极限的基础上学习函数极限，通过$\S 1.2$与本节的训练，可以在极限理论方面打下比较扎实的基础，从而为进入微积分学做好准备.在本节的极限计算中要突出无穷小量的阶数的概念，同时学习应用《习题集》的下一节中的小$o$、大$O$、等价记号$\sim $和等价量代换法.</p>
+<p>在补注小节中对于等价量代换法补充说明，给出函数极限的复合运算的充分条件，讲解一些较难的习题，还对迭代生成的函数列作专门讨论.</p>
+<p>$1$.函数的有界性.</p>
+<p>设存在某两数$m$和$M$，使得当$x\in (a,b)$时，</p>
+<p>$$m\leqslant f(x)\leqslant M,$$</p>
+<p>则称函数$f(x)$在区间$(a,b)$上为有界的.数$m_0 =\underset{x\in (a,b)}{\inf{} }  \lbrace f(x)\rbrace =\max{m} $称为函数$f(x)$在区间$(a,b)$上的下确界，而数$M_0 =\underset{x\in (a,b)}{\sup{} } \lbrace f(x)\rbrace =\min{M} $称为函数$f(x)$在区间$(a,b)$上的上确界.差$M_0 -m_0 $称为函数在区间$(a,b)$上的振幅.</p>
+<p>$2$.函数在某一点的极限.</p>
+<p>设函数$f(x)$定义在集合$X=\lbrace x\rbrace $上，且该集合以$a$为极限点.记号</p>
+<p>$$\lim_{x\to a} f(x)=A\label{1} \tag{1} $$</p>
+<p>表示，对于任一数$\varepsilon &gt; 0$，都存在数$\delta =\delta (\varepsilon ) &gt; 0$，使得对于满足条件$0 &lt; \vert x-a\vert &lt; \delta $并使$f(x)$有意义的一切$x$，下列不等式成立：</p>
+<p>$$\vert f(x)-A\vert &lt; \varepsilon .$$</p>
+<p>函数的极限$\eqref{1} $存在的充分必要条件是：对于每一个数列$x_n \to a$，$x_n \neq a(x_n \in X;n=1,2,\cdots )$都成立等式</p>
+<p>$$\lim_{n\to \infty } f(x_n )=A.$$</p>
+<p>有两个著名的极限：</p>
+<p>$$(1)\lim_{x\to 0} \dfrac{\sin{x} }{x} =1;\quad (2)\lim_{x\to 0} (1+x)^{\frac{1}{x} } =e.$$</p>
+<p>柯西准则.函数$f(x)$在点$a$的极限存在的充分必要条件为：对于每一个$\varepsilon &gt; 0$，都存在$\delta =\delta (\varepsilon ) &gt; 0$，使得只要</p>
+<p>$$0 &lt; \vert x’-a \vert &lt; \delta \quad \mathrm{and} \quad 0 &lt; \vert x’’ -a\vert &lt; \delta ,$$</p>
+<p>就有</p>
+<p>$$\vert f(x’)-f(x’’) \vert &lt; \varepsilon ,$$</p>
+<p>其中$x’$和$x’’$属于函数$f(x)$的定义域.</p>
+<p>$3$.单侧极限.</p>
+<p>若对于任何$\varepsilon &gt; 0$都存在$\delta =\delta (\varepsilon ) &gt; 0$，使得当$0 &lt; a-x &lt; \delta (\varepsilon )$时，有</p>
+<p>$$\vert A’-f(x)\vert &lt; \varepsilon ,$$</p>
+<p>则称数$A’$为函数$f(x)$在点$a$的左极限：</p>
+<p>$$A’=\lim_{x\to a-0} f(x)=f(a-0).$$</p>
+<p>类似地，若对于任何$\varepsilon &gt; 0$都存在$\delta =\delta (\varepsilon ) &gt; 0$，使得当$0 &lt; x-a &lt; \delta (\varepsilon )$时，有</p>
+<p>$$\vert A’’-f(x)\vert &lt; \varepsilon ,$$</p>
+<p>则称数$A’’$为函数$f(x)$在点$a$的右极限：</p>
+<p>$$A’’=\lim_{x\to a+0} f(x)=f(a+0).$$</p>
+<p>函数$f(x)$在点$a$的极限存在的充分必要条件为：$f(a-0)=f(a+0)$.</p>
+<p>$4$.无穷极限.</p>
+<p>约定记号</p>
+<p>$$\lim_{x\to a } f(x)=\infty $$</p>
+<p>表示，对于任何的$E &gt; 0$，都存在$\delta =\delta (E) &gt; 0$，使得只要$0 &lt; \vert x-a \vert &lt; \delta (E)$，则有</p>
+<p>$$\vert f(x)\vert &gt; E.$$</p>
+<p>$5$.子列极限.</p>
+<p>若对于某数列$x_n \to a(x_n \neq a)$成立等式</p>
+<p>$$\lim_{n\to \infty } f(x_n ) =B,$$</p>
+<p>则称数$B$（或符号$\infty $）为函数$f(x)$在点$a$的子列极限（有限的或无穷的）.</p>
+<p>这些子列极限中最小的和最大的用</p>
+<p>$$\varliminf_{x\to a} f(x)\quad \mathrm{and} \quad \varlimsup_{x\to a} f(x)$$</p>
+<p>来表示，分别称为函数$f(x)$在点$a$的下极限和上极限.</p>
+<p>等式</p>
+<p>$$\varliminf_{x\to a} f(x)=\varlimsup_{x\to a} f(x) $$</p>
+<p>为函数$f(x)$在点$a$有（有限的或无穷的）极限的充分必要条件.</p>
+<h2 id="有界性、确界和振幅">有界性、确界和振幅</h2><p>数列的极限存在时必定有界，这是收敛数列的重要性质（见$\S 1.2.6$的习题$93$）.概略地说，当下标充分大后收敛数列的所有各项都在极限值的某邻域中，而在邻域外至多只有数列中的有限项，因此数列有界.对于在某点$x=x_0 $存在极限的函数$f(x)$而言，当$x$进入去心邻域$(x_0 -\delta ,x_0 +\delta )\backslash \lbrace x_0 \rbrace $后，$f(x)$都在极限值的某邻域中，但在该邻域外，在函数的定义域中仍可能有许多点，从而$f(x)$未必有界，因此当函数$f(x)$在$x=x_0 $存在极限时只能得出函数在该点局部有界的结论.</p>
+<p>$381$.证明：函数</p>
+<p>$$f(x)=\begin{cases}<br>n, &amp; x=\dfrac{m}{n} (m 和n 为互素的整数，且 n &gt; 0),\\<br>0, &amp; x为无理数 \end{cases}$$</p>
+<p>在每一点$x$为有限的，但并非有界的（即在该点的任何邻域中是无界的）.</p>
+<p>证$\quad $按题意只要对于任意给定的点$x_0 ,\varepsilon &gt; 0$和$M &gt; 0$，找出一个有理点$x=\dfrac{m}{n} $，使得它落在邻域$O_{\varepsilon } (x_0 )$内，且满足$f(x)=n &gt; M$.</p>
+<p>取$n$是大于$\max{\lbrace M,\dfrac{1}{\varepsilon } \rbrace }$的素数.由于素数有无限多个，这是可能的.（素数有无限多个的定理是古希腊数学家早已证明的事实）.</p>
+<p>这时所有以该素数$n$为分母的有理分数$\dfrac{m}{n} $有无限多个.若$m$与素数$n$可约，则$m$只能是$n$的倍数.去掉这样的分数之后，在留下的$\dfrac{m}{n} $全体中，相邻两个分数之间的距离不会超过$\dfrac{2}{n} $.由于$n$的取法，已经有$\dfrac{2}{n} &lt; 2\varepsilon $，因此至少有一个$\dfrac{m}{n} $落在邻域$O_{\varepsilon } (x_0 ) $之中，而这时就有$f(\dfrac{m}{n} ) =n &gt; M$.</p>
+<p>$382$.若函数$f(x)$在$(a)$开区间，$(b)$闭区间的每一点有定义且局部有界，则此函数在此开区间或闭区间上是否为有界的？举出相应的例子.</p>
+<p>解$\quad $本题讨论与上题不同的另一个问题：若$f(x)$在区间上每点局部有界，$f(x)$是否有界？</p>
+<p>$(a)$记开区间为$(a,b)$.由条件知对每一个$x_0 \in (a,b)$，存在$\delta_{x_0 } &gt; 0$，使$(x_0 -\delta_{x_0 } ,x_0 +\delta_{x_0 } )$上有界.但无穷个界中未必有最大的五个可以作为$f(x)$的界.例如$f(x)=\dfrac{1}{x}$，$x\in (0,1)$，即为无界的.</p>
+<p>$(b)$记闭区间为$[a,b]$.同$(a)$一样，对于每一个$x_0 \in [a,b]$，存在$\delta_{x_0 } &gt; 0$，使$f(x)$在$(x_0 -\delta_{x_0} ,x_0 +\delta_{x_0 } ) \cap [a,b]$上有界.由有限覆盖定理知道，可从开区间集$\lbrace (x_0 -\delta_{x_0 } ,x_0 +\delta_{x_0 } )\vert x_0 \in [a,b]\rbrace $中选出有限个即可覆盖$[a,b]$，而对应的有限个界中的最大者可取作为$f(x)$的界.</p>
+<p>若覆盖定理尚未学到，上法录存备用，下面给出另一个方法.</p>
+<p>用反证法.若在题设条件下，所述函数无界，则仿$\S 1.2.6$的习题$126$知存在$\lbrace x_n \rbrace \subset [a,b]$使$\vert f(x_n )\vert \geqslant n$.由习题$125$（即凝聚定理），存在$\lbrace x_n \rbrace $的收敛子列$\lbrace x_{p_n } \rbrace $，记其极限为$x_0 \in [a,b]$，而$\vert f(x_{p_n } )\vert \geqslant p_n \to +\infty (n\to \infty ) $，这与$f(x)$在$x_0 $局部有界矛盾.</p>
+<p>注$\quad $对于已经学过数学分析的读者来说，可能会觉得本题极其“初等”.然而我们认为还是需要对于第一次见到这类习题的初学者说几句话.</p>
+<p>首先，本题是两个开放式的证明题（简称为开放题），因为对于开区间和闭区间的最后结论完全不同，而在题意中对此没有任何提示.这本身就是困难.设想某位初学者以为开区间上处处局部有界的函数在整个开区间上一定有界，然后想方设法去证明它，会成功吗？</p>
+<p>其次，对于表面上完全相同的两道题，我们的答案完全不同.为什么？</p>
+<p>仔细看一下该题就可以知道，题中实际上提出的是一种猜测，即在定义域上处处局部有界的函数在整体上有界.将它作为一个待证的命题，则在开区间情况它是不成立的.因此只要举一个例子就够了.这种用于否定一个命题（或论断）的例子就称为反例.对于闭区间则情况完全不同.这里该命题是成立的，于是就需要给出严格的证明.</p>
+<p>那么如何知道本题所含的两个结论恰好相反，因而会采取完全不同的策略呢？这里只能说我们在学习过程中必须积累一些基本的知识和结论，它们往往可以作为思考问题的依据.有一位数学家（也许不无偏颇地）说过，在数学中只有两种内容是重要的，一是定理，二是反例.可以理解，定理告诉我们什么是正确的，反例告诉我们什么是不正确的.在这个意义上它们具有同等的重要性.</p>
+<p>最后，可以想到，在今后还会遇到许多这样的开放题，特别是在科学研究中遇到的许多问题，事先不知道它们的答案，那时怎么办？这里的回答只能是在摸索中积累经验，逐步增强自己对于命题和猜测的判断能力.即使如此，判断错误还是会经常发生的.实际上这就是科学研究本身的特点.科研中遇到的问题与学习中的作业题（包括《习题集》中的习题）相比，最大的不同点在于：前者没有现成的答案，而后者则肯定有答案.</p>
+<p>$383$.证明：函数$f(x)=\dfrac{1+x^2}{1+x^4} $在区间$-\infty &lt; x &lt; +\infty $上是有界的.</p>
+<p>解$1\quad f(x)$为偶函数，对$x\geqslant 0$考虑其有界性即可.</p>
+<p>注意到$f(x)\to 0(x\to +\infty )$，故对$\varepsilon_0 =1$，存在$X_0 &gt; 0$，当$x &gt; X_0 $时$\vert f(x)\vert &lt; 1$.当$0\leqslant x\leqslant X_0 $时，$\vert f(x)\vert \leqslant 1+X_0^2 $，故$f(x)$在$[0,+\infty )$中<br>以$1+X_0^2 $为界.</p>
+<p>解$2\quad $由$\dfrac{1}{1+x^4} \leqslant 1$，$\dfrac{x^2}{1+x^4} =\dfrac12 \cdot \dfrac{2x^2}{1+x^4} \leqslant \dfrac12 $，故$f(x)\leqslant 1+\dfrac12 =\dfrac32 $.</p>
+<p>解$3\quad $在作以上两种估计时，或将自变量分段，或把函数分为两个，这些都会影响估计的精度.下面对函数作整体考虑，求其最“确切”的界，即确界.</p>
+<p>作代换$1+x^=u$，则$1+x^4 =(1+x^2)^2-2(1+x^2) +2=u^2-2u+2$，于是即可有</p>
+<p>$$0\leqslant f(x)=\dfrac{u}{u^2-2u+2} =\dfrac{1}{u+\dfrac{2}{u} -2} \leqslant \dfrac{1}{2\sqrt{2} -2} =\dfrac12 (1+\sqrt{2} )\approx 1.207.$$</p>
+<p>其中利用了平均值不等式$u+\dfrac{2}{u} \geqslant 2\sqrt{2} $，且可知当$u=\sqrt{2} $时成立等号.</p>
+<p>注意这样估计得到的上界是可达的，故是最小的上界，即上确界.下界$0$虽不可达，但可无限接近（即当$x\to +\infty $时$f(x)\to 0$），故是最大的下界，即下确界.</p>
+<p>$384$.证明：函数$f(x)=\dfrac{1}{x} \cos{\dfrac{1}{x}} $在点$x=0$的任何邻域内是无界的，但在$x\to 0$时不成为无穷大.</p>
+<p>解$\quad $考虑趋于$x=0$的两个数列$\lbrace x_k \rbrace $，$\lbrace x_k’ \rbrace $：</p>
+<p>取$x_k =\dfrac{1}{2k\pi } ,k=1,2,\cdots $，则$f(x_k )=2k\pi \to +\infty (k\to \infty )$.</p>
+<p>取$x_k’ =\dfrac{1}{2k\pi +\dfrac{\pi }{2} } ,k=1,2,\cdots $，则$f(x_k’ )=0$.</p>
+<p>故$f(x)$在$x=0$的任意邻域内无界，但是当$x\to 0$时不是无穷大量.</p>
+<p>上述两个数列的取法是从图形启示下得出的.函数$f(x)=\dfrac{1}{x} \cos{\dfrac{1}{x} } $的图像是直角双曲线$\dfrac{1}{x} $与$\cos{\dfrac{1}{x} } $的图像的乘积，后者与习题$299$中$\sin{\dfrac{1}{x} }$的图像是类似的（参见$\S 1.4.2$中该题的附图）.</p>
+<p>$385$.研究函数$f(x)=\ln x\cdot \sin{}^2 \dfrac{\pi }{x} $在区间$0 &lt; x &lt; \varepsilon $内的有界性.</p>
+<p>$386$.证明：函数</p>
+<p>$$f(x)=\dfrac{x}{1+x} $$</p>
+<p>在区域$0\leqslant x &lt; +\infty $上有下确界$m=0$和上确界$M=1$.</p>
+<p>证$\quad $由于$f(x)$在$[0,+\infty )$上非负，因此$f(0)=0$是函数所能取到的最小值，它就是下确界.另一方面，$f(x) &lt; 1$处处成立，因此$1$是$f$的一个上界.下面证明它就是最小的上界.</p>
+<p>为此任取$0 &lt; \varepsilon &lt; 1$，我们来看是否在定义域$[0,+\infty )$内存在某个点$x$，使得$f(x) &gt; 1-\varepsilon $.</p>
+<p>从$f(x)=\dfrac{x}{1+x} &gt; 1-\varepsilon $即可解出$x &gt; \dfrac{1}{\varepsilon } -1$，这样的$x$在$[0,+\infty )$内是能取到的.由此可见$1-\varepsilon $不是$f$的上界.因此$1$是最小上界，即上确界.</p>
+<p>$387$.设函数$f(x)$在闭区间$[a,b]$上有定义且单调上升，则它在此区间上的下确界和上确界等于什么？</p>
+<p>解$\quad m_0 =f(a) ,M_0 =f(b)$，其中$m_0 $及$M_0 $代表下确界及上确界.</p>
+<p>求下列函数在给定区间上的下确界和上确界：</p>
+<p>$388$.$f(x)=x^2 ,[-2,5]$.</p>
+<p>解$\quad m_0 =0 ,M_0 =25$.</p>
+<p>$389$.$f(x)=\dfrac{1}{1+x^2} ,(-\infty ,+\infty )$.</p>
+<p>解$\quad m_0 =0,M_0 =1$.</p>
+<p>$390$.$f(x)=\dfrac{2x}{1+x^2} ,(0,+\infty )$.</p>
+<p>解$\quad $由于$f(x)$在$(0,1)$内为增函数，而在$(1,+\infty )$内为减函数，且$f(1)$存在，所以，</p>
+<p>$$m_0 =0,M_0 =f(1)=1.$$</p>
+<p>$391$.$f(x)=x+\dfrac{1}{x} ,(0,+\infty )$.</p>
+<p>解$\quad $由$x +\dfrac{1}{x} \geqslant 2$知$m_0 =f(1)=2$，又$\displaystyle \lim_{x\to \infty } f(x)=+\infty $，故知$M_0 =+\infty $.</p>
+<p>$392$.$f(x)=\sin{x} ,(0,+\infty )$.</p>
+<p>解$\quad m_0 =-1,M_0 =1$.</p>
+<p>$393$.$f(x)=\sin{x} +\cos{x} ,[0,2\pi ]$.</p>
+<p>解$\quad $由$f(x)=\sqrt{2} \sin{\left( x+\dfrac{\pi }{4} \right) } $知$m_0  =-\sqrt{2} $，$M_0 =\sqrt{2} $.</p>
+<p>$394$.$f(x)=2^x ,(-1,2)$.</p>
+<p>解$\quad m_0 =f(-1) =\dfrac12 $，$M_0 =f(2) =4$.</p>
+<p>$395$.$f(x)=[x],(a)(0,2);(b)[0,2]$.</p>
+<p>解$\quad (a) m_0  =0 ,M_0 =1$；$(b)=m_0 =0,M_0 =2$.</p>
+<p>$396$.$f(x)=x-[x],[0,1]$.</p>
+<p>解$\quad m_0 =0,M_0 =1$.</p>
+<p>$397$.求函数$f(x)=x^2 $在下列区间上的振幅：</p>
+<p>$$(a)(1,3);(b)(1.9,2.1);(c)(1.99,2.01);(d)(1.999,2.001).$$</p>
+<p>解$\quad (a)$振幅以$\omega $表示之.$\omega =M_0 -m_0 $.因为$m_0 =1$，$M_0 =9$，所以，$\omega =8$.</p>
+<p>$(b)m_0 =(1.9)^2 ,M_0 =(2.1)^2 ,\omega =(2.1)^2 -(1.9)^2 =0.8$.</p>
+<p>$(c)\omega =(2.01)^2 -(1.99)^2 =0.08$.</p>
+<p>$(d)\omega =(2.001)^2 -(1.999)^2 =0.008$.</p>
+<p>$398$.求函数$f(x)=\arctan{\dfrac{1}{x}} $在下列区间上的振幅：</p>
+<p>$$(a)(-1,1);(b)(-0.1,0.1);(c)(-0.01,0.01);(d)(-0.001,0.001).$$</p>
+<p>解$\quad (a)\omega =\dfrac{\pi }{2} -\left( -\dfrac{\pi }{2} \right) =\pi $；$(b)\omega =\pi $；$(c)\omega =\pi $；$(d)\omega =\pi $.</p>
+<p>$399$.设$m[f]$和$M[f]$分别为函数$f(x)$在区间$(a,b)$上的下确界和上确界.证明：若$f_1 (x)$和$f_2 (x)$为定义于$(a,b)$的函数，则</p>
+<p>$$m[f_1 +f_2 ] \geqslant m[f_1 ]+m[f_2 ] ,M[f_1 +f_2 ]\leqslant M[f_1 ]+M[f_2 ].$$</p>
+<p>举出函数$f_1 (x)$和$f_2 (x)$的例子，使上述两个关系式为：$(a)$等式，$(b)$不等式.</p>
+<p>证$\quad $因为</p>
+<p>$$m[f_1 ]\leqslant f_1 \leqslant M[f_1 ] $$</p>
+<p>及</p>
+<p>$$m[f_2 ]\leqslant f_2 \leqslant M[f_2 ] ,$$</p>
+<p>所以，</p>
+<p>$$m[f_1 ] +m[f_2 ]\leqslant f_1 +f_2 ,$$</p>
+<p>从而有</p>
+<p>$$m[f_1 ]+m[f_2 ] \leqslant m[f_1 +f_2 ] .$$</p>
+<p>又因</p>
+<p>$$f_1 +f_2 \leqslant M[f_1 ]+M[f_2 ] ,$$</p>
+<p>所以，</p>
+<p>$$M[f_1 +f_2 ]\leqslant M[f_1 ]+M[f_2 ] .$$</p>
+<p>$(a)$当$f_1 (x)$及$f_2 (x)$在$(a,b)$内具有相同的单调性，且$m$及$M$均为有限时，取等式.</p>
+<p>$(b)f_1 (x)=x^2 ,f_2 (x)=-x^2$在区间$(-1,1)$内</p>
+<p>$m[f_1 ]=0,M[f_1 ]=1,m[f_2 ]=-1,M[f_2 ]=0.$$</p>
+<p>又因为$f_1 +f_2 =0$，所以，</p>
+<p>$$m[f_1 +f_2 ]=M[f_1 +f_2 ]=0.$$</p>
+<p>此时</p>
+<p>$$m[f_1 +f_2 ] &gt; m[f_1 ]+m[f_2 ] ,M[f_1 +f_2 ] &lt; M[f_1 ]+M[f_2 ] .$$</p>
+<p>取不等式.</p>
+<p>$400$.设函数$f(x)$定义于区间$[a,+\infty )$，且在每一个区间$[a,b]$上都是有界的.令</p>
+<p>$$m(x)=\underset{a\leqslant \xi \leqslant x}{\inf{} } f(\xi ),M(x)=\underset{a\leqslant \xi \leqslant x}{\sup{} } f(\xi ).$$</p>
+<p>作函数$y=m(x)$和$y=M(x)$的图像，设</p>
+<p>$$(a)f(x)=\sin{x} ;(b)f(x)=\cos{x} .$$</p>
+<p>解$\quad $如图所示.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/400.png" alt=""></center>
+
+<h2 id="函数极限的定义">函数极限的定义</h2><p>这里除了前两个题相当于数列极限中的习题$41-43$的对应物之外，其他都是为熟悉各种函数的定义而设置的.</p>
+<p>函数极限有许多种不同的类型.为方便起见，我们将以下函数极限称为基本类型，即设$a,A$为有限实数，设函数$f$在以$a$为中心的去心邻域上有定义，称$f$在点$a$处存在极限$A$，记为</p>
+<p>$$\lim_{x\to a} f(x)=A,$$</p>
+<p>如果对任意数$\varepsilon &gt; 0$，存在数$\delta =\delta (\varepsilon ) &gt; 0$，使得当$0 &lt; \vert x-a \vert &lt; \delta $时，不等式$\vert f(x)-A\vert &lt; \varepsilon $成立.也可记为$f(x)\to A(x\to a)$.</p>
+<p>所有其他类型的函数极限定义可以从基本类型的函数极限定义加以变更而得到.从自变量方面来看，基本类型的函数极限定义中所用的去心邻域$0 &lt; \vert x-a\vert &lt; \delta $应修改如下：</p>
+<p>对于$x\to a+0$，改用$a &lt; x &lt; a+\delta $，或$0 &lt; x-a &lt; \delta $，或$x\in (a,a+\delta )$；</p>
+<p>对于$x\to a-0$，改用$a -\delta &lt; x &lt; a$，或$-\delta &lt; x-a &lt; 0 $，或$x\in (a-\delta ,a )$；</p>
+<p>对于$x\to \infty $，改用$\vert x\vert &gt; E &gt; 0$；</p>
+<p>对于$x\to +\infty $，改用$x &gt; E &gt; 0$；</p>
+<p>对于$x\to -\infty $，改用$x &lt; -E &lt; 0$.</p>
+<p>从因变量方面来看，基本类型的函数极限定义中的$\vert f(x)-A\vert &lt; \varepsilon $应修改如下：</p>
+<p>对于$A=\infty $，改为$\vert f(x)\vert &gt; G &gt; 0$；</p>
+<p>对于$A=+\infty $，改为$f(x) &gt; G &gt; 0$；</p>
+<p>对于$A=-\infty $，改为$f(x) &lt; -G &lt; 0$；</p>
+<p>对于$A=b-0$，改为$b-\varepsilon &lt; f(x) &lt; b$；</p>
+<p>对于$A=b+0 $，改为$b &lt; f(x) &lt; b+\varepsilon $.</p>
+<p>$401$.利用“$\varepsilon -\delta $”语言证明：</p>
+<p>$$\lim_{x\to 2} x^2 =4.$$</p>
+<p>填下表：</p>
+<p>$$\begin{array}{c|c|c|c|c|c}<br>\hline \varepsilon &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; 0.0001 &amp; \cdots \\<br> \hline \delta &amp; &amp; &amp; &amp; &amp; \\ \hline<br>\end{array}$$</p>
+<p>证$\quad \vert x^2 -4\vert =\vert x-2\vert \vert x+2\vert $.</p>
+<p>先限制$\vert x-2\vert &lt; 1$，即$1 &lt; x &lt; 3$，则</p>
+<p>$$\vert x^2 -4\vert =\vert x-2\vert \vert x+2\vert &lt; 5\vert x-2\vert ,$$</p>
+<p>取$\delta =\min{\lbrace 1,\dfrac{\varepsilon }{5} \rbrace } $.于是，当$0 &lt; \vert x-2 \vert &lt; \delta $时，$\vert x^2 -4\vert &lt; \varepsilon $，即$\displaystyle \lim_{x\to 2} x^2 =4$.</p>
+<p>$$\begin{array}{c|c|c|c|c|c}<br>\hline \varepsilon &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; 0.0001 &amp; \cdots \\<br> \hline \delta &amp; 0.02 &amp; 0.002 &amp; 0.0002 &amp; 0.00002 &amp; \cdots \\ \hline<br>\end{array}$$</p>
+<p>$402$.以“$E-\delta $”语言证明：</p>
+<p>$$\lim_{x\to 1} \dfrac{1}{(1-x)^2} =+\infty .$$</p>
+<p>填下表：</p>
+<p>$$\begin{array}{c|c|c|c|c|c}<br>\hline E &amp; 10 &amp; 100 &amp; 1000 &amp; 10000 &amp; \cdots \\<br> \hline \delta &amp; &amp; &amp; &amp; &amp; \\ \hline<br>\end{array}$$</p>
+<p>证$\quad $任给$E &gt; 0$，要使$\dfrac{1}{\vert 1-x\vert^2 } &gt; E$，只要$0 &lt; \vert x-1\vert &lt; \dfrac{1}{\sqrt{E} } $，又只要$0 &lt; \vert x-1\vert &lt; \dfrac{1}{E} (E &gt; 1)$， 取$\delta =\min{\lbrace 1,\dfrac{1}{E} \rbrace }$，则当$0 &lt; \vert x-1\vert &lt; \delta $时，$\left\vert \dfrac{1}{(1-x)^2} \right\vert &gt; E$，所以，$\displaystyle \lim_{x\to 1} \dfrac{1}{(1-x)^2} =+\infty $.</p>
+<p>$$\begin{array}{c|c|c|c|c|c}<br>\hline E &amp; 10 &amp; 100 &amp; 1000 &amp; 10000 &amp; \cdots \\<br> \hline \delta &amp; 0.1 &amp; 0.01 &amp; 0.001 &amp; 0.0001 &amp; \cdots \\ \hline<br>\end{array}$$</p>
+<p>$403$.利用不等式表示下列结论：</p>
+<p>$$(a)\lim_{x\to a} f(x)=b;(b)\lim_{x\to a-0} f(x)=b;(c)\lim_{x\to a+0} f(x)=b.$$</p>
+<p>举出适当的例子.</p>
+<p>解$\quad (a)$对于任给的$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; \vert x-a\vert &lt; \delta $时$\vert f(x)-b\vert &lt; \varepsilon $，此即$\displaystyle \lim_{x\to a} f(x)=b$.例如$f(x)=x+1<br>$，$\displaystyle \lim_{x\to 1} f(x)=2$.</p>
+<p>$(b)$对于任给的$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; a-x &lt; \delta $时，$\vert f(x)-b\vert &lt; \varepsilon $，此即$\displaystyle \lim_{x\to a-0} f(x)=b$.例如，若$f(x)=\begin{cases} x+1 ,&amp; x\leqslant 1, \\ 2, &amp; x &gt; 1, \end{cases} $则$\displaystyle \lim_{x\to 1-0} f(x)=2$.</p>
+<p>$(c)$对于任给的$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; x-a &lt; \delta $时，$\vert f(x)-b\vert &lt; \varepsilon $，此即$\displaystyle \lim_{x\to a+0} f(x)=b$.例如，若$f(x)=\begin{cases} x+1 ,&amp; x\leqslant 1, \\ 2, &amp; x &gt; 1, \end{cases} $则$\displaystyle \lim_{x\to 1+0} f(x)=2$.</p>
+<p>利用不等式表示下列结论，并举出相应的例子：</p>
+<p>$404$.$\displaystyle (a)\lim_{x\to \infty } f(x)=b$；$\displaystyle (b)\lim_{x\to -\infty } f(x)=b$；$\displaystyle (c)\lim_{x\to +\infty } f(x)=b$.</p>
+<p>解$\quad (a)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$\vert x\vert &gt; N$时，$\vert f(x)-b\vert &lt; \varepsilon $，此即$\displaystyle \lim_{x\to \infty } f(x)=b$.</p>
+<p>$(b)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$x &lt; -N$时，$\vert f(x)-b\vert &lt; \varepsilon $，此即$\displaystyle \lim_{x\to -\infty } f(x)=b$.</p>
+<p>$(c)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$x &gt; N$时，$\vert f(x)-b\vert &lt; \varepsilon $，此即$\displaystyle \lim_{x\to +\infty } f(x)=b$.</p>
+<p>例如，对于函数$f(x)=\dfrac{1}{x^2} $，即有$\displaystyle \lim_{x\to -\infty } f(x)=\lim_{x\to +\infty } f(x) =\lim_{x\to \infty } f(x)=0$.</p>
+<p>$405$.$(a)\displaystyle \lim_{x\to a} f(x)=\infty $；$(b)\displaystyle \lim_{x\to a} f(x)=-\infty $；$(c)\displaystyle \lim_{x\to a} f(x)=+\infty $；</p>
+<p>$(d)\displaystyle \lim_{x\to a-0} f(x)=\infty $；$(e)\displaystyle \lim_{x\to a-0} f(x)=-\infty $；$(f)\displaystyle \lim_{x\to a-0} f(x)=+\infty $；</p>
+<p>$(g)\displaystyle \lim_{x\to a+0} f(x)=\infty $；$(h)\displaystyle \lim_{x\to a+0} f(x)=-\infty $；$(i)\displaystyle \lim_{x\to a+0} f(x)=+\infty $.</p>
+<p>解$\quad (a)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; \vert x-a\vert &lt; \delta $时，$\vert f(x)\vert &gt; E$，此即$\displaystyle \lim_{x\to a} f(x)=\infty $.</p>
+<p>例如，$f(x)=\dfrac{1}{x-1} $，即有$\displaystyle \lim_{x\to 1} f(x)=\infty $.</p>
+<p>$(b)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; \vert x-a\vert &lt; \delta $时，$f(x) &lt; -E$，此即$\displaystyle \lim_{x\to a} f(x)=-\infty $.</p>
+<p>例如，$f(x)=\dfrac{-1}{(x-1)^2} $，即有$\displaystyle \lim_{x\to 1} f(x)=-\infty $.</p>
+<p>$(c)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; \vert x-a\vert &lt; \delta $时，$f(x) &gt; E$，此即$\displaystyle \lim_{x\to a} f(x)=+\infty $.</p>
+<p>例如，$f(x)=\dfrac{1}{(x-1)^2} $，即有$\displaystyle \lim_{x\to 1} f(x)=+\infty $.</p>
+<p>$(d)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; a-x &lt; \delta $时，$\vert f(x) \vert &gt; E$，此即$\displaystyle \lim_{x\to a-0} f(x)=\infty $.</p>
+<p>例如，$f(x)=\dfrac{(-1)^{[\frac{1}{1-x} ]}}{1-x} $，即有$\displaystyle \lim_{x\to 1-0} f(x)=\infty $.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plot[&#123;(-<span class="number">1</span>)^(Floor[<span class="number">1</span>/(<span class="number">1</span> - x)])/(<span class="number">1</span> - x)&#125;, &#123;x, -<span class="number">2</span>, <span class="number">3</span>&#125;, PlotLabel -&gt; HoldForm[f = (-<span class="number">1</span>)^(Floor[<span class="number">1</span>/(<span class="number">1</span> - x)])/(<span class="number">1</span> - x)], LabelStyle -&gt; &#123;GrayLevel[<span class="number">0</span>]&#125;]</span><br></pre></td></tr></table></figure>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/405-4.png" alt=""></center>
+
+<p>$(e)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; a-x &lt; \delta $时，$f(x) &lt; -E$，此即$\displaystyle \lim_{x\to a-0} f(x)=-\infty $.</p>
+<p>例如，$f(x)=\dfrac{1}{x-1} $，即有$\displaystyle \lim_{x\to 1-0} f(x)=-\infty $.</p>
+<p>$(f)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; a-x &lt; \delta $时，$f(x) &gt; E$，此即$\displaystyle \lim_{x\to a-0} f(x)=+\infty $.</p>
+<p>例如，$f(x)=\dfrac{1}{1-x} $，即有$\displaystyle \lim_{x\to 1-0} f(x)=+\infty $.</p>
+<p>$(g)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; x-a &lt; \delta $时，$\vert f(x) \vert &gt; E$，此即$\displaystyle \lim_{x\to a+0} f(x)=\infty $.</p>
+<p>例如，$f(x)=\dfrac{(-1)^{[\frac{1}{x-1} ]}}{x-1} $，即有$\displaystyle \lim_{x\to 1+0} f(x)=\infty $.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plot[&#123;(-<span class="number">1</span>)^(Floor[<span class="number">1</span>/(x - <span class="number">1</span>)])/(x - <span class="number">1</span>)&#125;, &#123;x, -<span class="number">2</span>, <span class="number">3</span>&#125;, PlotLabel -&gt; HoldForm[f = (-<span class="number">1</span>)^(Floor[<span class="number">1</span>/(x - <span class="number">1</span>)])/(x - <span class="number">1</span>)], LabelStyle -&gt; &#123;GrayLevel[<span class="number">0</span>]&#125;]</span><br></pre></td></tr></table></figure>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/405-7.png" alt=""></center>
+
+<p>$(h)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; x-a &lt; \delta $时，$f(x) &lt; -E$，此即$\displaystyle \lim_{x\to a+0} f(x)=-\infty $.</p>
+<p>例如，$f(x)=\dfrac{1}{1-x} $，即有$\displaystyle \lim_{x\to 1+0} f(x)=-\infty $.</p>
+<p>$(i)$任给$E &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; x-a &lt; \delta $时，$f(x) &gt; E$，此即$\displaystyle \lim_{x\to a+0} f(x)=+\infty $.</p>
+<p>例如，$f(x)=\dfrac{1}{x-1} $，即有$\displaystyle \lim_{x\to 1+0} f(x)=+\infty $.</p>
+<p>$406$.$(a)\displaystyle \lim_{x\to \infty } f(x)=\infty $；$(b)\displaystyle \lim_{x\to \infty } f(x)=-\infty $；$(c)\displaystyle \lim_{x\to \infty } f(x)=+\infty $；</p>
+<p>$(d)\displaystyle \lim_{x\to -\infty } f(x)=\infty $；$(e)\displaystyle \lim_{x\to -\infty } f(x)=-\infty $；$(f)\displaystyle \lim_{x\to -\infty } f(x)=+\infty $；</p>
+<p>$(g)\displaystyle \lim_{x\to +\infty } f(x)=\infty $；$(h)\displaystyle \lim_{x\to +\infty } f(x)=-\infty $；$(i)\displaystyle \lim_{x\to +\infty } f(x)=+\infty $.</p>
+<p>解$\quad (a)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$\vert x\vert &gt; N$时，$\vert f(x)\vert &gt; E $，此即$\displaystyle \lim_{x\to \infty } f(x)=\infty $.</p>
+<p>例如，$f(x)=x^3$，则有$\displaystyle \lim_{x\to \infty } f(x)=\infty $.</p>
+<p>$(b)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$\vert x\vert &gt; N$时，$f(x) &lt; -N$，此即$\displaystyle \lim_{x\to \infty } f(x)=-\infty $.</p>
+<p>例如，$f(x)=-x^2 $，即有$\displaystyle \lim_{x\to \infty } f(x)=-\infty $.</p>
+<p>$(c)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$\vert x\vert &gt; N$时，$f(x) &gt;E$，此即$\displaystyle \lim_{x\to \infty } f(x)=+\infty $.</p>
+<p>例如，$f(x)=x^2 $，即有$\displaystyle \lim_{x\to \infty } f(x)=+\infty $.</p>
+<p>$(d)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$x &lt; -N$时，$\vert f(x)\vert &gt; E$，此即$\displaystyle \lim_{x\to -\infty } f(x)=\infty $.</p>
+<p>例如，$f(x)=(-1)^{[x^2]} x$，即有$\displaystyle \lim_{x\to -\infty } f(x)=\infty $.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plot[&#123;(-<span class="number">1</span>)^(Floor[x^<span class="number">2</span>])*x&#125;, &#123;x, -<span class="number">4</span>, <span class="number">4</span>&#125;, PlotLabel -&gt; HoldForm[f = (-<span class="number">1</span>)^Floor[x^<span class="number">2</span>] x], LabelStyle -&gt; &#123;GrayLevel[<span class="number">0</span>]&#125;]</span><br></pre></td></tr></table></figure>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/406-4.png" alt=""></center>
+
+<p>$(e)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$x &lt; -N$时，$f(x) &lt; -E$，此即$\displaystyle \lim_{x\to -\infty } f(x)=-\infty $.</p>
+<p>例如，$f(x)=x$，即有$\displaystyle \lim_{x\to -\infty } f(x)=-\infty $.</p>
+<p>$(f)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$x &lt; -N$时，$f(x) &gt; E$，此即$\displaystyle \lim_{x\to -\infty } f(x)=+\infty $.</p>
+<p>例如，$f(x)=-x$，即有$\displaystyle \lim_{x\to -\infty } f(x)=+\infty $.</p>
+<p>$(g)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$x &gt; N$时，$\vert f(x)\vert &gt; E$，此即$\displaystyle \lim_{x\to +\infty } f(x)=\infty $.</p>
+<p>例如，$f(x)=(-1)^{[x]} x^2 $，即有$\displaystyle \lim_{x\to +\infty } f(x)=\infty $.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plot[&#123;(-<span class="number">1</span>)^(Floor[x^<span class="number">2</span>])*x&#125;, &#123;x, -<span class="number">4</span>, <span class="number">4</span>&#125;, PlotLabel -&gt; HoldForm[f = (-<span class="number">1</span>)^Floor[x^<span class="number">2</span>] x], LabelStyle -&gt; &#123;GrayLevel[<span class="number">0</span>]&#125;]</span><br></pre></td></tr></table></figure>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/406-7.png" alt=""></center>
+
+<p>$(h)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$x &gt; N$时，$f(x) &lt; -E$，此即$\displaystyle \lim_{x\to +\infty } f(x)=-\infty $.</p>
+<p>例如，$f(x)=-x$，即有$\displaystyle \lim_{x\to +\infty } f(x)=-\infty $.</p>
+<p>$(i)$任给$E &gt; 0$，存在数$N &gt; 0$，使当$x &gt; N$时，$f(x) &gt; E$，此即$\displaystyle \lim_{x\to +\infty } f(x)=+\infty $.</p>
+<p>例如，$f(x)=x$，即有$\displaystyle \lim_{x\to +\infty } f(x)=+\infty $.</p>
+<p>$407$设$y=f(x)$.利用不等式表示下列结论：</p>
+<p>$(a)$当$x\to a$时$y\to b-0$；$(b)$当$x\to a-0$时$y\to b-0$；</p>
+<p>$(c)$当$x\to a+0$时$y\to b-0$；$(d)$当$x\to a$时$y\to b+0$；</p>
+<p>$(e)$当$x\to a-0$时$y\to b+0$；$(f)$当$x\to a+0$时$y\to b+0$；</p>
+<p>$(g)$当$x\to \infty $时$y\to b-0$；$(h)$当$x\to -\infty $时$y\to b-0$；</p>
+<p>$(i)$当$x\to +\infty $时$y\to b-0$；$(j)$当$x\to \infty $时$y\to b+0$；</p>
+<p>$(k)$当$x\to -\infty $时$y\to b+0$；$(l)$当$x\to +\infty $时$y\to b+0$.</p>
+<p>举出适当的例子.</p>
+<p>解$\quad (a)$任给$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; \vert x-a\vert &lt; \delta $时，$0 &lt; b-y &lt; \varepsilon $，此即$\displaystyle \lim_{x\to a} f(x)=b-0$，或当$x\to a $时，$y\to b-0$.</p>
+<p>例如，$y=-\vert x\vert $，即当$x\to 0$时，$y\to 0-0$.</p>
+<p>$(b)$任给$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; a-x &lt; \delta $时，$0 &lt; b-y &lt; \varepsilon $，此即$\displaystyle \lim_{x\to a-} f(x)=b-0$.</p>
+<p>例如，$y=x$，即有当$x\to 0-0$时，$y\to 0-0$.</p>
+<p>$(c)$任给$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; x-a &lt; \delta $时，$0 &lt; b-y &lt; \varepsilon $，此即，当$x\to a+0 $时，$y\to b-0$.</p>
+<p>例如，$y=-x$，即有当$x\to 0+0$是时，$y\to 0-0$.</p>
+<p>$(d)$任给$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; \vert x-a\vert &lt; \delta $时，$0 &lt; y-b &lt; \varepsilon $，此即，当$x\to a$时，$y\to b+0$.</p>
+<p>例如，$y=\vert x\vert $，即有当$x\to 0$时，$y\to 0+0$.</p>
+<p>$(e)$任给$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; a-x &lt; \delta $时，$0 &lt; y-b &lt; \varepsilon $，此即，当$x\to a-0$时，$y\to b+0$.</p>
+<p>例如，$y=-x$，即有当$x\to 0-0$时，$y\to 0+0$.</p>
+<p>$(f)$任给$\varepsilon &gt; 0$，存在数$\delta &gt; 0$，使当$0 &lt; x-a &lt; \delta $时，$0 &lt; y-b &lt; \varepsilon $，此即，当$x\to a+0 $时，$y\to b+0$.</p>
+<p>例如，$y=x$，即有当$x\to 0+0$时，$y\to 0+0$.</p>
+<p>$(g)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$\vert x\vert &gt; N$时，$0 &lt; b-y &lt; \varepsilon $，此即，当$x\to \infty $时，$y\to b-0$.</p>
+<p>例如，$y=-\dfrac{1}{\vert x\vert }$，即有当$x\to \infty $时，$y\to 0-0$.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plot[&#123;-<span class="number">1</span>/Abs[x]&#125;, &#123;x, -<span class="number">1</span>, <span class="number">1</span>&#125;, PlotLabel -&gt; HoldForm[y = -(<span class="number">1</span>/Abs[x])], LabelStyle -&gt; &#123;GrayLevel[<span class="number">0</span>]&#125;]</span><br></pre></td></tr></table></figure>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/407-7.png" alt=""></center>
+
+<p>$(h)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$x &lt; -N$时，$0 &lt; b-y &lt; \varepsilon $，此即，$x\to -\infty $时，$y\to b-0$.</p>
+<p>例如，$y=\dfrac{1}{x}$，即有当$x\to -\infty $时，$y\to 0-0$.</p>
+<p>$(i)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$x &gt; N$时，$0 &lt; y-b &lt; \varepsilon $，此即，$x\to +\infty $时，$y\to b-0$.</p>
+<p>例如，$y=-\dfrac{1}{x} $，即有当$x\to +\infty $时，$y\to 0-0$.</p>
+<p>$(j)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$\vert x\vert &gt; N$时，$0 &lt; y-b &lt; \varepsilon $，此即，$x\to \infty $时，$y\to b+0$.</p>
+<p>例如，$y=\dfrac{1}{\vert x\vert } $，即有当$x\to \infty $时，$y\to 0+0$.</p>
+<p>$(k)$任给$\varepsilon &gt; 0$时，存在数$N &gt; 0$，使当$x &lt; -N$时，$0 &lt; y-b &lt; \varepsilon $，此即，当$x\to -\infty $时，$y\to b+0 $.</p>
+<p>例如，$y=-\dfrac{1}{x} $，即有当$x\to -\infty $时，$y\to 0+0$.</p>
+<p>$(l)$任给$\varepsilon &gt; 0$，存在数$N &gt; 0$，使当$x &gt; N$时，$0 &lt; y-b &lt; \varepsilon $，此即，当$x\to +\infty $时，$y\to b+0$.</p>
+<p>例如，$y=\dfrac{1}{x} $，即有当$x\to +\infty $时，$y\to 0+0$.</p>
+<p>本节以下的习题内容主要是函数极限的计算，其中较常见且较困难的极限是各种类型的不定式.在不定式中常见的有$\dfrac00 ,\dfrac{\infty }{\infty } $，$0\cdot \infty $，$\infty -\infty $，$0^0 $，$\infty^0 $，$1^{\infty }$等类型.计算的基本方法是用代数、三角等运算或变量代换把未定因式、无穷小因式和无穷大因式析出加以比较；还需结合等价无穷量的代换，先算出确定因式（非零，非无穷）的极限，利用一些已知结果等.</p>
+<h2 id="有理函数的极限计算">有理函数的极限计算</h2><p>本小节主要计算有理函数的极限.常用因式分解、二项式展开等代数方法析出未定因式加以处理，有时也引用简单的变量代换.</p>
+<p>$408$.设</p>
+<p>$$P(x)=a_0 x^n +a_1 x^{n-1} +\cdots +a_n ,$$</p>
+<p>式中$a_i (i=0,1,\cdots ,n;n\geqslant 1,a_0 \neq 0)$为实数.证明：</p>
+<p>$$\lim_{x\to \infty } \vert P(x)\vert =+\infty .$$</p>
+<p>证$\quad P(x)$的非零系数对应的项当$x\to \infty $时为无穷大量，关键在于注意$a_0 \neq 0$时$a_0 x^n $是其中最高阶的无穷大量，从而起主要作用.</p>
+<p>从三点不等式（参见习题$21(b)$）得到</p>
+<p>$$\begin{align}<br>\vert P(x)\vert &amp; \geqslant \vert a_0 x^n \vert -\vert a_1 x^{n-1} \vert -\cdots -\vert a_n \vert \\<br> &amp; =\vert a_0 \vert \cdot \vert x^n \vert \left( 1-\dfrac{\vert a_1 \vert }{\vert a_0 \vert \cdot \vert x\vert } -\cdots -\dfrac{\vert a_n \vert }{\vert a_0 \vert \cdot \vert x^n \vert } \right) .<br>\end{align}$$</p>
+<p>由于上式右边括号内的表达式当$x\to \infty $时的极限等于$1$，因此存在$E &gt; 0$，使当$\vert x \vert &gt; E$时有</p>
+<p>$$1-\dfrac{\vert a_1 \vert }{\vert a_0 \vert \cdot \vert x\vert } -\cdots -\dfrac{\vert a_n \vert }{\vert a_0 \vert \cdot \vert x^n \vert } &gt; \dfrac12 ,$$</p>
+<p>于是就有$\vert P(x)\vert &gt; \dfrac12 \vert a_0 \vert \cdot \vert x\vert^n $，可见成立$\displaystyle \lim_{x\to \infty } \vert P(x)\vert =+\infty $.</p>
+<p>$409$.设</p>
+<p>$$R(x)=\dfrac{a_0 x^n +a_1 x^{n-1} +\cdots +a_n }{b_0 x^m +b_1 x^{m-1} +\cdots +b_m } ,$$</p>
+<p>式中$a_0 \neq 0,b_0 \neq 0$.证明：</p>
+<p>$$\lim_{x\to \infty } \vert R(x)\vert =\begin{cases} \infty , &amp; n &gt; m, \\ \dfrac{a_0 }{b_0 } , &amp; n=m , \\ 0, &amp; n &lt; m. \end{cases} $$</p>
+<p>证$\quad $从习题$408$知道本题是$\dfrac{\infty }{\infty }$型的不定式.</p>
+<p>对于$n &gt; m$的情况，将分子分母同除以$x^m $，则当$x\to \infty $时分母趋于$b_0 \neq 0$，分子从上一题知道趋于无穷大，因此分式的极限为$\infty $.</p>
+<p>对于$n=m$的情况，将分子分母同除以$x^n $，则当$x\to \infty $时分子和分母分别收敛于$a_0 $和$b_0 $，根据极限运算的除法法则就知道分式的极限为$\dfrac{a_0 }{b_0 }$.</p>
+<p>对于$n &lt; m$的情况，将分子分母同除以$x^n $，则当$x\to \infty $时分子收敛于$a_0 $，而分母则趋于无穷大，因此分式的极限为$0$.</p>
+<p>$410$.设$R(x)=\dfrac{P(x)}{Q(x)} $，式中$P(x)$和$Q(x)$为$x$的多项式，且$P(a)=Q(a)=0$.表达式</p>
+<p>$$\lim_{x\to a} \dfrac{P(x)}{Q(x)} $$</p>
+<p>可能取何值？</p>
+<p>解$\quad $根据韦达定理，这时多项式$P(x)$和$Q(x)$都可以用$x-a$除尽，因此存在因式分解</p>
+<p>$$P(x)=P_1 (x)(x-a)^n ,Q(x)=Q_1 (x) (x-a)^m .$$</p>
+<p>其中多项式$P_1 (x)$和$Q_1 (x)$满足条件$P_1 (a)\neq 0$，$Q_1 (a)\neq 0$.</p>
+<p>由于在$x\to a$的函数极限定义中始终要求$x\neq a$，因此可以约去分子分母中共同的$(x-a)$的幂次，然后与上题类似地得到以下结果：</p>
+<p>$$\lim_{x\to a }  R(x) =\begin{cases} 0 , &amp; n &gt; m, \\ \dfrac{P_1 (a) }{Q_1 (a) } , &amp; n=m , \\ \infty , &amp; n &lt; m. \end{cases} $$</p>
+<p>注$1\quad $这两个习题为以下的习题提供了有力的计算方法.</p>
+<p>习题$409$表明对于有理分式函数的情况，当自变量$x\in \infty $时，只要根据分子分母的最高次项系数就可以解决这时的$\dfrac{\infty }{\infty } $型的不定式问题.习题$410$则表明，如果当$x\to a$时出现$\dfrac{0}{0} $型的不定式时，则只要对分子和分母的多项式分别分离出$(x-a)$的所有幂次，然后约去它们的共有部分，就可以解决此时的不定式问题.</p>
+<p>注$2\quad $在很多习题中都是$n=m$的情况，这时如何快速有效地计算出$P_1 (a)$和$Q_1 (a)$是一个问题.若$a=0$，则在$P(x)=P_1 (x)x^n $且$P_1 (0)\neq 0$的条件下，容易看出$P_1 (0)$就是$P(x)$按$x$的幂次排列的展开式中次数最低项$x^n $项的系数.对$Q(x)$也可作同样的讨论.</p>
+<p>由此可见，在确定了$n=m$之后，只需要求出多项式$P(x)$和$Q(x)$按照$(x-a)$的幂次展开式中的最低次项$(x-a)^n $的系数即可.这有许多代数方法可用，例如二项式定理等.这样就为许多习题的计算提供了较好的方法.</p>
+<p>根据以上分析可见，在今后写出$x-a$的幂次的多项式时，将经常采用升幂排列，这对于极限计算特别方便.</p>
+<p>求下列各式之值：</p>
+<p>$411$.$(a)\displaystyle \lim_{x\to 0} \dfrac{x^2 -1}{2x^2 -x-1} $；$(b)\displaystyle \lim_{x\to 1} \dfrac{x^2 -1}{2x^2 -x-1} $；$(c) \displaystyle \lim_{x\to \infty } \dfrac{x^2-1}{2x^2 -x-1} $.</p>
+<p>解$\quad (a)\displaystyle \lim_{x\to 0} \dfrac{x^2 -1}{2x^2 -x-1} =\dfrac{-1}{-1} =1$.</p>
+<p>$(b)\displaystyle \lim_{x\to 1} \dfrac{x^2 -1}{2x^2 -x-1} =\lim_{x\to 1} \dfrac{(x-1)(x+1)}{(2x+1)(x-1)} =\lim_{x\to 1} \dfrac{x+1}{2x+1} =\dfrac23 $.</p>
+<p>$(c) \displaystyle \lim_{x\to \infty } \dfrac{x^2-1}{2x^2 -x-1} =\lim_{x\to \infty } \dfrac{1-\dfrac{1}{x^2} }{2-\dfrac{1}{x} -\dfrac{1}{x^2} } =\dfrac12 $.</p>
+<p>$412$.$\displaystyle \lim_{x\to 0} \dfrac{(1+x)(1+2x)(1+3x)-1}{x} $.</p>
+<p>解$1\quad $本题属$\dfrac00$型.将分子按照升幂排列展开，提出最低阶的无穷小量$x$得</p>
+<p>$$\lim_{x\to 0} \dfrac{(1+x)(1+2x)(1+3x)-1}{x} =\lim_{x\to } \dfrac{x(6+11x+6x^2)}{x} =6.$$</p>
+<p>解$2\quad $也可用递推的方式解之.</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 0} \dfrac{(1+x)(1+2x)(1+3x)-1}{x} \\<br>= &amp; \lim_{x\to 0} \left( \dfrac{(1+x)(1+2x)-1}{x} +(1+x)(1+2x)\cdot 3<br>\right) \\<br>= &amp; \lim_{x\to 0} \dfrac{(1+x)(1+2x)-1}{x} +3 \\<br>= &amp; \cdots \\<br>= &amp; 1+2+3 \\<br>= &amp; 6 .\end{align} $$</p>
+<p>解$3\quad $直接看出分子按照$x$的幂次作升幂排列时的第一项为$(1+2+3)x=6x$，即可知答案为$6$.</p>
+<p>$413$.$\displaystyle \lim_{x\to 0} \dfrac{(1+x)^5 -(1+5x)}{x^2 +x^5} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 0} \dfrac{(1+x)^5 -(1+5x)}{x^2 +x^5} \\<br>= &amp; \lim_{x\to 0} \dfrac{x^5+5x^4 +10x^3+10x^2}{x^2+x^5} \\<br>= &amp; \lim_{x\to 0} \dfrac{x^3+5x^2+10x+10}{x^3+1} \\<br>= &amp; 10. \end{align} $$</p>
+<p>$414$.$\displaystyle \lim_{x\to 0} \dfrac{(1+mx)^n -(1+nx)^m}{x^2} $（$m$与$n$为正整数）.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \dfrac{(1+mx)^n -(1+nx)^m}{x^2} \\<br>= &amp; \dfrac{[1+nmx+\dfrac{1}{2!} n(n-1) m^2 x^2 +\cdots +m^n x^n ]}{x^2} \\<br>{+} &amp; \dfrac{-[1+mnx+\dfrac{1}{2!} m(m-1) n^2 x^2 +\cdots +n^m x^m ]}{x^2} \\<br>= &amp; \dfrac{n}{2} (n-1)m^2 -\dfrac{m}{2} (m-1)n^2 +o(x) \\<br>= &amp; \dfrac12 mn(n-m)+o(x) \end{align} $$</p>
+<p>于是，$\displaystyle \lim_{x\to 0} \dfrac{(1+mx)^n -(1+nx)^m}{x^2} =\dfrac12 mn(n-m)$.</p>
+<p>$415$.$\displaystyle \lim_{x\to \infty } \dfrac{(x-1)(x-2)(x-3)(x-4)(x-5)}{(5x-1)^5} $.</p>
+<p>解$\quad $分子的最高次方为$5$次，分母的最高次方也为$5$次，因而当$x\to \infty $时，此分式的极限为分子与分母的最高次方系数之比，于是</p>
+<p>$$\displaystyle \lim_{x\to \infty } \dfrac{(x-1)(x-2)(x-3)(x-4)(x-5)}{(5x-1)^5} =\dfrac{1}{5^5} .$$</p>
+<p>$416$.$\displaystyle \lim_{x\to \infty } \dfrac{(2x-3)^{20} (3x+2)^{30}}{(2x+1)^{50}} $.</p>
+<p>解$\quad $分子与分母的最高次方相同，故</p>
+<p>$$\lim_{x\to \infty } \dfrac{(2x-3)^{20} (3x+2)^{30}}{(2x+1)^{50}} =\dfrac{2^{20} \cdot 3^{30} }{2^{50}} =\left( \dfrac32 \right)^{30} .$$</p>
+<p>$417$.$\displaystyle \lim_{x\to \infty } \dfrac{(x+1)(x^2 +1)\cdots (x^n +1)}{[(nx)^n +1]^{\frac{n+1}{2}}} $.</p>
+<p>解$\quad $分子的最高次方为$1+2+\cdots +n=\dfrac{n(n+1)}{2} $，它与分母的最高次方相同，所以，</p>
+<p>$$\lim_{x\to \infty } \dfrac{(x+1)(x^2 +1)\cdots (x^n +1)}{[(nx)^n +1]^{\frac{n+1}{2}}} =n^{-\frac{n(n+1)}{2} } .$$</p>
+<p>$418$.$\displaystyle \lim_{x\to 3} \dfrac{x^2 -5x+6}{x^2 -8x+15}$.</p>
+<p>解$\quad \displaystyle \lim_{x\to 3} \dfrac{x^2 -5x+6}{x^2 -8x+15} =\lim_{x\to 3} \dfrac{(x-3)(x-2)}{(x-3)(x-5)} =\lim_{x\to 3} \dfrac{x-2}{x-5} =-\dfrac12 $.</p>
+<p>$419$.$\displaystyle \lim_{x\to 1} \dfrac{x^3 -3x+2}{x^4-4x+3} $.</p>
+<p>解$\quad \displaystyle \lim_{x\to 1} \dfrac{x^3 -3x+2}{x^4-4x+3} =\lim_{x\to 1} \dfrac{(x-1)^2(x+2)}{(x-1)^2(x^2+2x+3)} =\lim_{x\to 1} \dfrac{x+2}{x^2+2x+3} =\dfrac12 $.</p>
+<p>$420$.$\displaystyle \lim_{x\to 1} \dfrac{x^4 -3x+2}{x^5 -4x+3} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 1} \dfrac{x^4 -3x+2}{x^5 -4x+3} \\<br>= &amp; \lim_{x\to 1} \dfrac{(x-1)(x^3+x^2+x-2)}{(x-1)[x(x^2+1)(x+1)-3]} \\<br>= &amp; \lim_{x\to 1} \dfrac{x^3+x^2+x-2}{x(x^2+1)(x+1)-3} \\<br>= &amp; \dfrac{1+1+1-2}{2\cdot 2-3} \\<br>= &amp; 1 .\end{align} $$</p>
+<p>$421$.$\displaystyle \lim_{x\to 2} \dfrac{x^3 -2x^2 -4x+8}{x^4 -8x^2 +16} $.</p>
+<p>解$\quad \displaystyle \lim_{x\to 2} \dfrac{x^3 -2x^2 -4x+8}{x^4 -8x^2 +16} =\lim_{x\to 2} \dfrac{(x-2)^2(x+2)}{(x-2)^2(x+2)^2} =\lim_{x\to 2} \dfrac{1}{x+2} =\dfrac14 $.</p>
+<p>$422$.$\displaystyle \lim_{x\to -1} \dfrac{x^3-2x-1}{x^5-2x-1} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to -1} \dfrac{x^3-2x-1}{x^5-2x-1} \\<br>= &amp; \lim_{x\to -1} \dfrac{(x+1)(x^2-x-1)}{(x+1)[x(x^2+1)(x-1)-1]} \\<br>= &amp; \lim_{x\to -1} \dfrac{x^2-x-1}{x(x^2+1)(x-1)-1} \\<br>= &amp; \dfrac{1+1-1}{4-1} \\<br>= &amp; \dfrac13 . \end{align} $$</p>
+<p>$423$.$\displaystyle \lim_{x\to 2} \dfrac{(x^2 -x-2)^{20}}{(x^3 -12x+16)^{10}} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 2} \dfrac{(x^2 -x-2)^{20}}{(x^3 -12x+16)^{10}} \\<br>= &amp; \lim_{x\to 2} \dfrac{(x-2)^{20}(x+1)^{20}}{(x-2)^{20}(x+4)^{10}} \\<br>= &amp; \lim_{x\to 2} \dfrac{(x+1)^{20}}{(x+4)^{10}} \\<br>= &amp; \dfrac{3^{20}}{6^{10}} \\<br>= &amp; \left( \dfrac32 \right)^{10} . \end{align} $$</p>
+<p>$424$.$(a)\displaystyle \lim_{x\to 1} \dfrac{x+x^2 +\cdots +x^n -n }{x-1} $；$(b)\displaystyle \lim_{x\to 1} \dfrac{x^{100} -2x+1}{x^{50} -2x+1} $.</p>
+<p>解$\quad (a)$这是$\dfrac00 $型的不定式.用代换$t=x-1$，即有$x=1+t$，则分式改写为</p>
+<p>$$\dfrac{(1+t)+(1+t)^2+\cdots +(1+t)^n -n}{t} .$$</p>
+<p>由于这时分子当$t=0$时为$0$，如习题$410$的注$2$所示，只要计算出分子多项式中的$t$的一次项的系数即可.从二项式定理可见这就是$1+2+\cdots +n =\dfrac{n(n+1)}{2} $.</p>
+<p>$(b)$</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 1} \dfrac{x^{100} -2x+1}{x^{50} -2x+1} \\<br>= &amp; \lim_{x\to 1} \dfrac{(x-1)[x(x^{98}+x^{97}+\cdots +1) -1]}{(x-1)[x(x^{48}+x^{47}+\cdots +1) -1]} \\<br>= &amp; \lim_{x\to 1} \dfrac{x(x^{98}+x^{97}+\cdots +1) -1}{x(x^{48}+x^{47}+\cdots +1) -1} \\<br>= &amp; \dfrac{99-1}{49-1} \\<br>= &amp; 2\dfrac{1}{24} . \end{align} $$</p>
+<p>$425$.$\displaystyle \lim_{x\to 1} \dfrac{x^m -1}{x^n -1} $（$m$和$n$为正整数）.</p>
+<p>解$\quad \displaystyle \lim_{x\to 1} \dfrac{x^m -1}{x^n -1} =\lim_{x\to 1} \dfrac{x^{m-1}+x^{m-2} +\cdots +x+1}{x^{n-1}+x^{n-2} +\cdots +x+1} =\dfrac{m}{n} $.</p>
+<p>$426$.$\displaystyle \lim_{x\to a} \dfrac{(x^n -a^n )-na^{n-1} (x-a)}{(x-a)^2} $（$n$为正整数）.</p>
+<p>解$\quad $由于分子在$x=a$时为$0$，因此是$\dfrac00 $型的不定式.如习题$410$的注$2$所示，只需要计算出分子按照$(x-a)$的幂次写出的多项式中$(x-a)^2 $项的系数，这就是所要的答案.（当然在计算中需要注意分子的一次项$x-a$的系数是否为$0$.）</p>
+<p>为此只需考虑分子的第一项.应用二项式定理就有</p>
+<p>$$x^n -a^n =[a+(x-a)]^n -a^n =na^{n-1} (x-a)+\dfrac{n(n-1)}{2} a^{n-2} (x-a)^2 +\cdots ,$$</p>
+<p>其中未写出的是$(x-a)$的幂次大于等于$3$的有限项.由此可见极限就是$\dfrac{n(n-1)}{2} a^{n-2} $.这是在$n\geqslant 2$时得到的，但它对于$n=1$仍成立.因分子恒等于$0$，极限当然等于$0$.</p>
+<p>$427$.$\displaystyle \lim_{x\to 1 } \dfrac{x^{n+1} -(n+1)x+n }{(x-1)^2 } $（$n$为正整数）.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 1 } \dfrac{x^{n+1} -(n+1)x+n }{(x-1)^2 } \\<br>= &amp; \lim_{x\to 1 } \dfrac{[1+(x-1)]^{n+1} -(n+1)x+n }{(x-1)^2 } \\<br>= &amp; \lim_{x\to 1 } \dfrac{[1+(n+1)(x-1)+\dfrac{(n+1)n}{2} (x-1)^2 +\cdots ] -(n+1)x+n }{(x-1)^2 } \\<br>= &amp; \lim_{x\to 1 } \dfrac{\dfrac{(n+1)n}{2} (x-1)^2 +\cdots }{(x-1)^2 } \\<br>= &amp; \dfrac{n(n+1)}{2} , \end{align} $$</p>
+<p>其中未写出的是$(x-1)$的幂次大于等于$3$的有限项.</p>
+<p>$428$.$\displaystyle \lim_{x\to 1} \left( \dfrac{m}{1-x^m} -\dfrac{n}{1-x^n} \right) $（$m$和$n$为正整数）.</p>
+<p>解$1\quad $这是$\infty -\infty $型的不定式.如前面在$\S 1.2.9$的第$1$点中所说，它总可以转化为$\dfrac00 $型的不定式.为此通分就得到</p>
+<p>$$\dfrac{m}{1-x^m} -\dfrac{n}{1-x^n} =\dfrac{m-n+nx^m -mx^n}{(1-x^m)(1-x^n)} ,$$</p>
+<p>可见分母在提出因子$(x-1)^2$之后，余下的因式在$x=1$处不等于$0$.从而只要将右边分式的分子和分母分别按照$(x-1)$的幂次展开并计算出其中的$(x-1)^2$项系数后相除就是本题的答案.</p>
+<p>这项计算并不复杂.对分子可计算其中的后两项：</p>
+<p>$$\begin{align}<br> &amp; nx^m -mx^n \\<br>= &amp; n[1+(x-1)]^m -m[1+(x-1)]^n \\<br>= &amp; n[1+m(x-1)+\dfrac{m(m-1)}{2} (x-1)^2 +\cdots ] \\<br> &amp; -m[1+n(x-1)+\dfrac{n(n-1)}{2} (x-1)^2 +\cdots ] \\<br>= &amp; n-m+\dfrac{mn(m-n)}{2} (x-1)^2 +\cdots , \end{align} $$</p>
+<p>其中未写出的是$(x-1)$的幂次大于等于$3$的有限项.又观察到分母按照$(x-1)$的幂次展开的最低项是$(x-1)^2$，其系数是</p>
+<p>$$\left. [(1+x+\cdots +x^{m-1})\cdot (1+x+\cdots +x^{n-1})]\right\vert_{x=1} =mn,$$</p>
+<p>这样就得到本题的极限为$\dfrac{m-n}{2} $.</p>
+<p>解$2\quad $利用代数恒等式</p>
+<p>$$1-x^k =(1-x)(1+x+\cdots +x^{k-1}) $$</p>
+<p>也可解决.注意到上式的因式$1+x+\cdots +x^{k-1} \to k(x\to 1)$在$x\to 1$时既非无穷小，也非无穷大，故在两个分式通分后可以先求出分母中这种非零因式的极限，而不影响原式的收敛性及收敛时的结果，最后再利用习题$424(a)$的结论，得到</p>
+<p>$$\begin{align}<br> &amp; \lim_{x\to 1} ( \dfrac{m}{1-x^m} -\dfrac{n}{1-x^n} ) \\<br>= &amp; \lim_{x\to 1}  \dfrac{m(1-x^n)-n(1-x^m)}{(1-x^m)(1-x^n)} \\<br>= &amp; \lim_{x\to 1}  \dfrac{m(1+x+\cdots +x^{n-1})-n(1+x+\cdots +x^{m-1})}{(1+x+\cdots +x^{m-1})(1+x+\cdots +x^{n-1})(1-x)} \\<br>= &amp; \dfrac{1}{mn} \lim_{x\to 1}  \dfrac{m(1+x+\cdots +x^{n-1})-n(1+x+\cdots +x^{m-1})}{(1-x)} \\<br>= &amp; -\dfrac{1}{mn} \lim_{x\to 1}  \dfrac{m[x+x^2 +\cdots +x^{n-1}-(n-1)]-n[x+x^2 +\cdots +x^{m-1}-(m-1)]}{(x-1)} ,\\<br>= &amp; -\dfrac{1}{mn} \left( \dfrac{m(n-1)n}{2} -\dfrac{n(m-1)m}{2} \right) \\<br>= &amp; \dfrac{m-n}{2} .\end{align} $$</p>
+<p>本小节的最后几题（习题$429-434$）是与等幂和有关的数列极限，类似的内容在$\S 1.2$的习题$50-54$已经见过.通常有两种方法：一种是将等幂和写成封闭式，然后比较分子分母的最高阶无穷大；另一种是用施托尔茨定理.通常后者先求差，前者先求和，后者可能要简单一些，特殊情形则需因地制宜处理.</p>
+<p>$429$.$\displaystyle \lim_{n\to \infty } \dfrac{1}{n} \left[ \left( x+\dfrac{a}{n} \right) +\left( x+\dfrac{2a}{n} \right) +\cdots +\left( x+\dfrac{(n-1)a}{n} \right) \right] $.</p>
+<p>解</p>
+<p>$$\begin{align}<br> &amp; \lim_{n\to \infty } \dfrac{1}{n} \left[ \left( x+\dfrac{a}{n} \right) +\left( x+\dfrac{2a}{n} \right) +\cdots +\left( x+\dfrac{(n-1)a}{n} \right) \right] \\<br>= &amp; \lim_{n\to \infty } \dfrac{1}{n} \left\lbrace (n-1)x+\dfrac{a}{n} [1+2+\cdots +(n-1)] \right\rbrace \\<br>= &amp; \lim_{n\to \infty } \dfrac{n-1}{n} \left( x+\dfrac{a}{2} \right) \\<br>= &amp; x+\dfrac{a}{2} .\end{align} $$</p>
+<p>$430$.$\displaystyle \lim_{n\to \infty } \dfrac{1}{n} \left[ \left( x+\dfrac{a}{n} \right)^2 +\left( x+\dfrac{2a}{n} \right)^2 +\cdots +\left( x+\dfrac{(n-1)a}{n} \right)^2 \right] $.</p>
+<p>提示：参阅习题$2$.</p>
+<p>解$\quad $利用$\S 1.1.1$的习题$1$和习题$2$即可计算如下</p>
+<p>$$\begin{align}<br> &amp; \lim_{n\to \infty } \dfrac{1}{n} \left[ \left( x+\dfrac{a}{n} \right)^2 +\left( x+\dfrac{2a}{n} \right)^2 +\cdots +\left( x+\dfrac{(n-1)a}{n} \right)^2 \right] \\<br>= &amp; \lim_{n\to \infty } \dfrac{1}{n} \left[ (n-1)x^2+\dfrac{2ax}{n} (1+2+\cdots +(n-1)) +\dfrac{a^2}{n^2} (1^2+2^2 +\cdots +(n-1)^2) \right] \\<br>= &amp; x^2 +\lim_{n\to \infty }  \left[ \dfrac{2ax}{n^2} \cdot \dfrac{(n-1)n}{2} + \dfrac{a^2}{n^3} \cdot \dfrac16 (n-1)n(2n-1) \right] \\<br>= &amp; x^2+ax+\dfrac{a^2}{3} .\end{align} $$</p>
+<p>$431$.$\displaystyle \lim_{n\to \infty } \dfrac{1^2 +3^2 +\cdots +(2n-1)^2}{2^2+4^2+\cdots +(2n)^2} $.</p>
+<p>解$\quad (1)$利用数学归纳法证明</p>
+<p>$$1^2 + 3^2+ 5^2 + \cdots + (2n-1)^2 = \dfrac{1}{3}n(2n-1)(2n+1) . \label{431} \tag{1} $$</p>
+<p>当$n=1$时，有$1^2=\dfrac13 \cdot 1\cdot (2-1)\cdot (2+1) $，即左边等于右边.所以当$n=1$时，满足$\eqref{431}$.</p>
+<p>假设当$n=k$时，$\eqref{431} $成立，即</p>
+<p>$$1^1+3^2+5^2+\cdots +(2k+1)^2 = \dfrac{1}{3}(k+1)(2k+1)(2k+3).$$</p>
+<p>那么当$n=k+1$时，有</p>
+<p>$$\begin{align}<br>&amp; 1^2 + 3^2 + 5^2 + \cdots + (2k+1)^2 \\<br>= &amp; 1^2 + 3^2 + 5^2 + \cdots + (2k-1)^2 + (2k+1)^2 \\<br>= &amp; \dfrac{1}{3}k(2k-1)(2k+1) + (2k+1)^2 \\<br>= &amp; \dfrac{k(2k-1)(2k+1)+3(2k+1)^2}{3} \\<br>= &amp; \dfrac{(2k+1)}{3} \left[ k(2k-1) + 3(2k+1) \right]\\<br>= &amp; \dfrac{(2k+1)}{3} \left[ 2k^2 - k + 6k + 3 \right]\\<br>= &amp; \dfrac{1}{3} (2k+1)(2k^2 +5k + 3)\\<br>= &amp; \dfrac{1}{3}(k+1)(2k+1)(2k+3)<br>\end{align}$$</p>
+<p>故可知当$n=k+1 $时，$\eqref{431}$也成立.故对任意的$n\geqslant 1$，式子$\eqref{431}$都成立.</p>
+<p>$(2)$由$\eqref{431} $及$2^2+4^2+\cdots (2n)^2 =\dfrac{2n(n+1)(2n+1)}{3} $，于是有</p>
+<p>$$\lim_{n\to \infty } \dfrac{1^2 +3^2 +\cdots +(2n-1)^2}{2^2+4^2+\cdots +(2n)^2} =\lim_{n\to \infty } \dfrac{2n-1}{2(n+1)} =1.$$</p>
+<p>$432$.$\displaystyle \lim_{n\to \infty } \left( \dfrac{1^3 +2^3 +\cdots +n^3 }{n^3} -\dfrac{n}{4} \right) $.</p>
+<p>提示：参阅习题$3$.</p>
+<p>解$\quad $由习题$3$，有$1^3+2^3 +\cdots n^3 =\left[ \dfrac{n(n+1)}{2} \right]^2 $.则</p>
+<p>$$\lim_{n\to \infty } \left( \dfrac{1^3 +2^3 +\cdots +n^3 }{n^3} -\dfrac{n}{4} \right) =\lim_{n\to \infty } \left[ \dfrac{n^2(n+1)^2}{4n^3} -\dfrac{n}{4} \right] =\lim_{n\to \infty } \dfrac{2n+1}{4n} =\dfrac12 .$$</p>
+<p>$433$.$\displaystyle \lim_{n\to \infty } \dfrac{1^3+4^3 +7^3 +\cdots +(3n-2)^3}{[1+4+7+\cdots +(3n-2)]^2} $.</p>
+<p>解$\quad $记$x_n =1^3 +4^3 +7^3 +\cdots +(3n-2)^3 $，$y_n =[1+4+7+\cdots +(3n-2)]^2$.由于数列$\lbrace y_n \rbrace $严格单调递增趋于$+\infty $，计算得到</p>
+<p>$$\begin{align}<br>&amp; \dfrac{x_{n+1} -x_n }{y_{n+1} -y_n } \\<br>= &amp; \dfrac{(3n+1)^3}{[1+4+\cdots +(3n+1)]^2-[1+4+\cdots +(3n-2)]^2} \\<br>= &amp; \dfrac{(3n+1)^3}{\left( \dfrac{(3n+2)(n+1)}{2} \right)^2-\left( \dfrac{(3n-1)n}{2} \right)^2} \\<br>= &amp; \dfrac{(3n+1)^2}{\dfrac{(3n+2)(n+1)}{2} + \dfrac{(3n-1)n}{2} } \\<br>\to &amp; \dfrac{3^2}{\dfrac{3}{2} +\dfrac{3}{2} } = 3(n\to \infty ).<br>\end{align}$$</p>
+<p>故可从施托尔茨定理知道$\displaystyle \lim_{n\to \infty } \dfrac{x_n }{y_n } =3$.</p>
+<p>$434$.把由抛物线$y=b\left( \dfrac{x}{a} \right)^2 $，$Ox$轴及直线$x=a$所围成的曲边三角形$OAM$（图$3$）的面积，当作以$\dfrac{a}{n}$为底的各内接矩形面积之和当$n\to \infty $时的极限值，求此面积.</p>
+<center><img src="/assets/img/jimiduoweiqishuxuefenxixitiji/1/434.png" alt=""></center>
+
+<p>解$\quad $如附图所示，在曲边三角形内作出以$\dfrac{a}{n} $为底，$b\left( \dfrac{k}{n} \right)^2 (k=1,2,\cdots ,n-1) $为高的$n-1$个内接矩形，其面积之和为</p>
+<p>$$\begin{align}<br>&amp; S_n \\<br>= &amp; \dfrac{a}{n} \cdot b\left( \dfrac{1}{n} \right)^2 +\dfrac{a}{n} \cdot b\left( \dfrac{2}{n} \right)^2 +\cdots + \dfrac{a}{n} \cdot b\left( \dfrac{n-1}{n} \right)^2 \\<br>= &amp; \dfrac{ab}{n^3} \cdot \dfrac16 (n-1)n(2n-1) \\<br>= &amp; \dfrac{ab(n-1)(2n-1)}{6n^2} ,<br>\end{align}$$</p>
+<p>故所求面积为$\displaystyle \lim_{n\to \infty } S_n =\dfrac{ab}{3} $.</p>
+<h2 id="无理函数的极限计算">无理函数的极限计算</h2><p>这里的习题的处理原则与有理函数情况是类似的.对于$\dfrac{\infty }{\infty } $型的不定式，可以将分子分母同除以某个无穷大量以消除不定式；对于$\dfrac{0}{0} $型的不定式，则设法找出使得分子和分母当$x=a$时等于$0$的因子，约去它们共有的因子.一条容易想到的思路就是有理化，即将无理函数的极限计算归结为上一小节的有理函数的极限计算.</p>
+<p>$435$.$\displaystyle \lim_{x\to +\infty } \dfrac{\sqrt{x+\sqrt{x+\sqrt{x} } } }{\sqrt{x+1} } $.</p>
+<p>解$\quad $分子分母同除以$\sqrt{x} $，得</p>
+<p>$$\lim_{x\to +\infty } \dfrac{\sqrt{x+\sqrt{x+\sqrt{x} } } }{\sqrt{x+1} } =\lim_{x\to +\infty } \dfrac{\sqrt{1+\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x^3} } } } }{\sqrt{1+\dfrac{1}{x} } } =1.$$</p>
+<p>$436$.$\displaystyle \lim_{x\to +\infty } \dfrac{\sqrt{x} +\sqrt[3]{x} +\sqrt[4]{x} }{\sqrt{2x+1} } $.</p>
+<p>解$\quad $分子分母同除以$\sqrt{x} $，得</p>
+<p>$$\lim_{x\to +\infty } \dfrac{\sqrt{x} +\sqrt[3]{x} +\sqrt[4]{x} }{\sqrt{2x+1} } =\lim_{x\to +\infty } \dfrac{1+x^{-\frac{1}{6} } +x^{-\frac{1}{4} } }{\sqrt{2+\dfrac{1}{x} } } =\dfrac{1}{\sqrt{2} } .$$</p>
+<p>$437$.$\displaystyle \lim_{x\to 4} \dfrac{\sqrt{1+2x} -3}{\sqrt{x} -2} $.</p>
+<p>解$1\quad $第一步是看出这是$\dfrac{0}{0} $型的不定式，因此不能有代入法.然后用初等代数运算处理分子，使得能够与分母相消，这就是用共轭因式把分子分母都有理化：</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 4} \dfrac{\sqrt{1+2x} -3}{\sqrt{x} -2} \\<br>= &amp; \lim_{x\to 4} \left( \dfrac{1+2x-9}{x-4} \cdot \dfrac{\sqrt{x} +2}{\sqrt{1+2x} +3 } \right) \\<br>= &amp; \dfrac{4}{6} \lim_{x\to 4} \dfrac{2x-8}{x-4} \\<br>= &amp; \dfrac{4}{3} .<br>\end{align}$$</p>
+<p>下面我们先看习题$444$的应用方法.</p>
+<p>解$2\quad $这时$x-4$是$x\to 4$时的无穷小量.令$x-4=t$，则有</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 4} \dfrac{\sqrt{1+2x} -3}{\sqrt{x} -2} \\<br>= &amp; \lim_{x\to 4} \dfrac{\sqrt{9+2(x-4)} -3}{\sqrt{4+(x-4)} -2} \\<br>= &amp; \lim_{t\to 0} \dfrac{\sqrt{9+2t} -3}{\sqrt{4+t} -2} \\<br>= &amp; \lim_{t\to 0} \dfrac{3\left( \sqrt{1+\dfrac{2t}{9} } -1 \right) }{2\left( \sqrt{1+\dfrac{t}{4} } -1 \right)} \\<br>= &amp; \dfrac32 \lim_{t\to 0} \dfrac{\dfrac12 \cdot \dfrac{2t}{9} }{\dfrac12 \cdot \dfrac{t}{4} } \\<br>= &amp; \dfrac43 .<br>\end{align}$$</p>
+<p>然后再看公式$\eqref{444} $的用法.</p>
+<p>解$3\quad $将分子分母的各自第一项的根式函数用公式$\eqref{444} $得到</p>
+<p>$$\sqrt{1+2x} =\sqrt{9+2(x-4)} =3\sqrt{1+\dfrac29 (x-4)} =3[1+\dfrac19 (x-4)] +o(x-4) (x\to 4),$$</p>
+<p>$$\sqrt{x} =\sqrt{4+(x-4)} =2\sqrt{1+\dfrac{x-4}{4}} =2[1+\dfrac18 (x-4)]+o(x-4)(x\to 4),$$</p>
+<p>其中$o(x-4)$即是当$x\to 4$时比$(x-4)$更高阶的无穷小量.然后将上式代入题中的分式就有</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 4} \dfrac{\sqrt{1+2x} -3}{\sqrt{x} -2} \\<br>= &amp; \lim_{x\to 4} \dfrac{\dfrac13 (x-4) +o(x-4)}{\dfrac14 (x-4)+o(x-4)} \\<br>= &amp; \lim_{x\to 4} \dfrac{\dfrac13 +o(1)}{\dfrac14 +o(1)} \\<br>= &amp; \dfrac{4}{3} .<br>\end{align}$$</p>
+<p>就本小节的所有习题来说，原则上用初等代数运算方法都可以解决，只是有时会出现比有理函数情况繁复得多的计算，从而容易出错.那么有没有比较好的方法来计算无理函数的极限呢？</p>
+<p>这样的方法是存在的.学过微分学的读者都知道，求函数极限至少有三大方法：$(1)$等价量代换法，$(2)$泰勒公式法，$(3)$洛必达法则.它们中间的任何一种方法都可用于解决无理函数的极限问题，至少原则上要比初等代数方法高明得多（后两种方法要学了导数之后才能用）.</p>
+<p>由于《习题集》要到下一节才提到等价量代换法，然而与此有关的习题却全在这一节，因此我们建议以习题$444$及其进一步的发展（即下面的命题$1.7$）作为解决无理函数极限计算的新工具.</p>
+<p>$438$.$\displaystyle \lim_{x\to -8} \dfrac{\sqrt{1-x} -3}{2+\sqrt[3]{x} } $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to -8} \dfrac{\sqrt{1-x} -3}{2+\sqrt[3]{x} } \\<br>= &amp; \lim_{x\to -8} \dfrac{(\sqrt{1-x} -3)(\sqrt{1-x} +3)(4+\sqrt[3]{x^2} -2\sqrt[3]{x} )}{(2+\sqrt[3]{x} )(4+\sqrt[3]{x^2} -2\sqrt[3]{x} )(\sqrt{1-x} +3)} \\<br>= &amp; \lim_{x\to -8} \dfrac{-(x+8)(4+\sqrt[3]{x^2} -2\sqrt[3]{x} )}{(8+x)(\sqrt{1-x} +3 )} \\<br>= &amp; -\lim_{x\to -8} \dfrac{4+\sqrt[3]{x^2} -2\sqrt[3]{x} }{\sqrt{1-x} +3 } \\<br>= &amp; -2.<br>\end{align}$$</p>
+<p>$439$.$\displaystyle \lim_{x\to a} \dfrac{\sqrt{x} -\sqrt{a} +\sqrt{x-a} }{\sqrt{x^2 -a^2} } $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to a} \dfrac{\sqrt{x} -\sqrt{a} +\sqrt{x-a} }{\sqrt{x^2 -a^2} } \\<br>= &amp; \lim_{x\to a} \dfrac{(\sqrt{x} -\sqrt{a} +\sqrt{x-a} )(\sqrt{x} +\sqrt{a} )}{\sqrt{x^2 -a^2} (\sqrt{x} +\sqrt{a} )} \\<br>= &amp; \lim_{x\to a} \dfrac{\sqrt{x-a} (\sqrt{x-a} +\sqrt{x} +\sqrt{a} )}{\sqrt{x-a} \sqrt{x+a} (\sqrt{x} +\sqrt{a} )} \\<br>= &amp; \lim_{x\to a} \dfrac{\sqrt{x-a} +\sqrt{x} +\sqrt{a} }{\sqrt{x+a} (\sqrt{x} +\sqrt{a} )} \\<br>= &amp; \dfrac{1}{\sqrt{2a} } \quad (a &gt; 0).<br>\end{align}$$</p>
+<p>$440$.$\displaystyle \lim_{x\to 3} \dfrac{\sqrt{x+13} -2\sqrt{x+1} }{x^2 -9} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 3} \dfrac{\sqrt{x+13} -2\sqrt{x+1} }{x^2 -9} \\<br>= &amp; \lim_{x\to 3} \dfrac{(\sqrt{x+13} -2\sqrt{x+1} )(\sqrt{x+13} +2\sqrt{x+1} )}{(x+3)(x-3)(\sqrt{x+13} +2\sqrt{x+1} )} \\<br>= &amp; \lim_{x\to 3} \dfrac{-3(x-3)}{(x+3)(x-3)(\sqrt{x+13} +2\sqrt{x+1} )} \\<br>= &amp; \lim_{x\to 3} \dfrac{-3}{(x+3)(\sqrt{x+13} +2\sqrt{x+1} )} \\<br>= &amp; -\dfrac{1}{16} .<br>\end{align}$$</p>
+<p>$441$.$\displaystyle \lim_{x\to -2} \dfrac{\sqrt[3]{x-6} +2}{x^3+8} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to -2} \dfrac{\sqrt[3]{x-6} +2}{x^3+8} \\<br>= &amp; \lim_{x\to -2} \dfrac{(\sqrt[3]{x-6} +2)(\sqrt[]{(x-6)^2} -2\sqrt[3]{x-6} +4)}{(x^3+8)(\sqrt[]{(x-6)^2} -2\sqrt[3]{x-6} +4)} \\<br>= &amp; \lim_{x\to -2} \dfrac{1}{(x^2 -2x+4)(\sqrt[]{(x-6)^2} -2\sqrt[3]{x-6} +4)} \\<br>= &amp; \dfrac{1}{144} .<br>\end{align}$$</p>
+<p>$442$.$\displaystyle \lim_{x\to 16} \dfrac{\sqrt[4]{x} -2}{\sqrt{x} -4} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 16} \dfrac{\sqrt[4]{x} -2}{\sqrt{x} -4} \\<br>= &amp; \lim_{x\to 16} \dfrac{1}{\sqrt[4]{x} +2} \\<br>= &amp; \dfrac{1}{4} .<br>\end{align}$$</p>
+<p>$443$.$\displaystyle \lim_{x\to 8} \dfrac{\sqrt{9+2x} -5}{\sqrt[3]{x} -2} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 8} \dfrac{\sqrt{9+2x} -5}{\sqrt[3]{x} -2} \\<br>= &amp; \lim_{x\to 8} \dfrac{(\sqrt{9+2x} -5)(\sqrt{9+2x} +5)(\sqrt[3]{x^2} +2\sqrt[3]{x} +4)}{(\sqrt[3]{x} -2)(\sqrt[3]{x^2} +2\sqrt[3]{x} +4)(\sqrt{9+2x} +5)} \\<br>= &amp; 2\lim_{x\to 8} \dfrac{\sqrt[3]{x^2} +2\sqrt[3]{x} +4}{\sqrt{9+2x} +5} \\<br>= &amp; \dfrac{12}{5} .<br>\end{align}$$</p>
+<p>$444$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt[n]{1+x} -1}{x} $（$n$为非零整数）.</p>
+<p>解$\quad $对$n$为正整数的情况，令$t=(1+x)^{\frac{1}{n} } -1$，则$x=(1+t)^n -1=nt+\cdots +t^n $，且$x\to 0\Leftrightarrow t\to 0$.于是有</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt[n]{1+x} -1}{x} =\lim_{t\to 0} \dfrac{t}{(1+t)^n -1} =\lim_{t\to 0} \dfrac{t}{nt+\cdots +t^n} =\dfrac{1}{n} .$$</p>
+<p>对于$n &lt; 0$为负整数的情况，只要利用$-n &gt; 0$时已经解决并作如下计算即可：</p>
+<p>$$\lim_{x\to 0} \dfrac{(1+x)^{\frac{1}{n} } -1}{x} =\lim_{x\to 0} \left( (1+x)^{\frac{1}{n} } \dfrac{1 -(1+x)^{\frac{1}{-n} }}{x} \right) =\dfrac{1}{n} .$$</p>
+<p>为便于应用，我们将习题$444$的结论用小$o$记号改写成为等价的如下公式：</p>
+<p>$$\sqrt[n]{1+x} =1+\dfrac{1}{n} +o(x)\quad (x\to 0).\label{444} \tag{1.30} $$</p>
+<p>其中$o(x)$是$x\to 0$时高于一阶的无穷小量（见《习题集》下一节的说明）.也可以定义$o(x)=o(1)x$，其中$o(1)$即是当$x\to 0$时极限为$0$的无穷小量.</p>
+<p>习题$444$（即公式$\eqref{444}$）已可解决本小节的大部分习题，它的进一步发展是下面的命题.</p>
+<p>命题$1.7\quad $设$n$为非零整数，则有$\displaystyle \lim_{x\to 0} \dfrac{(1+x)^{\frac{1}{n} } -1-\dfrac{1}{n} x}{x^2} =\dfrac{1-n}{2n^2} .$</p>
+<p>证$\quad $与习题$444$类似，由于从$n$为正整数的情况推广到$n$为负整数的情况是容易的，因此只给出$n$为正整数的证明.这时仍然令$t=(1+x)^{\frac{1}{n} } -1$，$x=(1+t)^n -1=nt+\cdots +t^n $，就有</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{(1+x)^{\frac{1}{n} } -1-\dfrac{1}{n} x}{x^2} \\<br>= &amp; \lim_{t\to 0} \dfrac{t-\dfrac{1}{n} [(1+t)^n -1]}{[(1+t)^n -1]^2} \\<br>= &amp; \lim_{t\to 0} \dfrac{t-\dfrac{1}{n} (nt+\dfrac{n(n-1)}{2} t^2 +\cdots +t^n )}{(nt+\cdots +t^n )^2} \\<br>= &amp; \dfrac{1-n}{2n^2} .<br>\end{align}$$</p>
+<p>注$\quad $命题$1.7$的结论也可仿照$\eqref{444} $写为如下的等价形式：</p>
+<p>$$\sqrt[n]{1+x} =1+\dfrac{1}{n} x+\dfrac{1-n}{2n^2} x^2 +o(x^2) (x\to 0) ,\label{444-1} \tag{1.30’} $$</p>
+<p>同时又可以用它将公式$\eqref{444} $改进为更强一些的结论：</p>
+<p>$$(1+x)^{\frac{1}{n} } =1+\dfrac{1}{n} x+O(x^2) (x\to 0),$$</p>
+<p>其中$O(x^2)$的意义是指它与$x^2 $的比值在$x=0$的邻近有界（见《习题集》下一节的说明）.</p>
+<p>以下简写方式也是常用的，即若从上下文知道所讨论的极限过程是$x\to a$时，则可以将$O((x-a)^2) (x\to a)$简记为$O_2 $.类似地将$O((x-a)^3)(x\to a)$记为$O_3 $等等.</p>
+<p>学过微分学的读者都知道，$\eqref{444} $、$\eqref{444-1} $等就是泰勒公式的特例.</p>
+<p>$445$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt{1-2x-x^2} -(1+x)}{x} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt{1-2x-x^2} -(1+x)}{x} \\<br>= &amp; \lim_{x\to 0} \dfrac{(\sqrt{1-2x-x^2} -1-x)(\sqrt{1-2x-x^2} +1+x)}{x(\sqrt{1-2x-x^2} +1+x)} \\<br>= &amp; \lim_{x\to 0} \dfrac{-2(2+x)}{\sqrt{1-2x-x^2} +1+x} \\<br>= &amp; -2 .<br>\end{align}$$</p>
+<p>$446$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt[3]{8+3x-x^2} -2}{x+x^2} $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt[3]{8+3x-x^2} -2}{x+x^2} \\<br>= &amp; \lim_{x\to 0} \left[ \dfrac{(\sqrt[3]{8+3x-x^2} -2)}{(x+x^2)} \cdot \dfrac{(\sqrt[3]{(8+3x-x^2)^2} +2\sqrt[3]{8+3x-x^2} +4)}{(\sqrt[3]{(8+3x-x^2)^2} +2\sqrt[3]{8+3x-x^2} +4)} \right] \\<br>= &amp; \lim_{x\to 0} \dfrac{3-x}{(1+x)(\sqrt[3]{(8+3x-x^2)^2} +2\sqrt[3]{8+3x-x^2} +4)} \\<br>= &amp; \dfrac{1}{4} .<br>\end{align}$$</p>
+<p>$447$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt[3]{27+x} -\sqrt[3]{27-x} }{x+2\sqrt[3]{x^4} } $.</p>
+<p>解$\quad $分母$x+2\sqrt[3]{x^4} $当$x(x\to 0)$时等价于$x$，因此可换为$x$（这就是等价量代换法），分子则可以用公式$\eqref{444} $，这样就可如下计算：</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt[3]{27+x} -\sqrt[3]{27-x} }{x+2\sqrt[3]{x^4} } \\<br>= &amp; \lim_{x\to 0} \dfrac{3}{x} \left( \sqrt[3]{1+\dfrac{x}{27}} -\sqrt[3]{1-\dfrac{x}{27} } \right) \\<br>= &amp; 3\lim_{x\to 0} \dfrac{\left( 1+\dfrac{x}{81} +o(x)\right) -\left( 1-\dfrac{x}{81} +o(x)\right) }{x} \\<br>= &amp; \dfrac{2}{27} .<br>\end{align}$$</p>
+<p>$448$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt{1+x} -\sqrt{1-x} }{\sqrt[3]{1+x} -\sqrt[3]{1-x} } $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt{1+x} -\sqrt{1-x} }{\sqrt[3]{1+x} -\sqrt[3]{1-x} } \\<br>= &amp; \lim_{x\to 0} \left[ \dfrac{(\sqrt{1+x} -\sqrt{1-x} )(\sqrt{1+x} +\sqrt{1-x} )}{(\sqrt[3]{1+x} -\sqrt[3]{1-x} )(\sqrt{1+x} +\sqrt{1-x} )} \cdot \dfrac{(\sqrt[3]{(1+x)^2} +\sqrt[3]{1-x^2} +\sqrt[3]{(1-x)^2} )}{(\sqrt[3]{(1+x)^2} +\sqrt[3]{1-x^2} +\sqrt[3]{(1-x)^2} )} \right] \\<br>= &amp; \lim_{x\to 0} \dfrac{\sqrt[3]{(1+x)^2} +\sqrt[3]{1-x^2} +\sqrt[3]{(1-x)^2} }{\sqrt{1+x} +\sqrt{1-x}} \\<br>= &amp; \dfrac{3}{2} .<br>\end{align}$$</p>
+<p>$449$.$\displaystyle \lim_{x\to 7} \dfrac{\sqrt{x+2} -\sqrt[3]{x+20} }{\sqrt[4]{x+9} -2} $.</p>
+<p>解$\quad $对于题中的三个根式函数分别用公式$\eqref{444} $，得到在$x\to 7$的渐近展开式：</p>
+<p>$$\begin{align}<br>&amp; \sqrt{x+2} \\<br>= &amp; \sqrt{9+(x-7)} = 3\sqrt{1+\dfrac{x-7}{9} } \\<br>= &amp; 3\left( 1+\dfrac{1}{2} \cdot \dfrac{x-7}{9} \right) +o(x-7)(x\to 7);<br>\end{align}$$</p>
+<p>$$\begin{align}<br>&amp; \sqrt[3]{x+20} \\<br>= &amp; \sqrt[3]{27+(x-7)} = 3\sqrt[3]{1+\dfrac{x-7}{27} } \\<br>= &amp; 3\left( 1+\dfrac{1}{3} \cdot \dfrac{x-7}{27} \right) +o(x-7)(x\to 7);<br>\end{align}$$</p>
+<p>$$\begin{align}<br>&amp; \sqrt[4]{x+9} \\<br>= &amp; \sqrt[4]{16+(x-7)} = 2\sqrt[4]{1+\dfrac{x-7}{16} } \\<br>= &amp; 2\left( 1+\dfrac{1}{4} \cdot \dfrac{x-7}{16} \right) +o(x-7)(x\to 7),<br>\end{align}$$</p>
+<p>其中$o(x-7)$是当$x\to 7$时比$x-7$更高阶的无穷小量.然后将它们代入题中，并约去分子分母的共有因子$(x-7)$，即可有：</p>
+<p>$$\lim_{x\to 7} \dfrac{\sqrt{x+2} -\sqrt[3]{x+20} }{\sqrt[4]{x+9} -2} =\lim_{x\to 7} \dfrac{\dfrac{1}{6} -\dfrac{1}{27} +o(1)}{\dfrac{1}{32} +o(1)} =\dfrac{7\cdot 16}{27} =\dfrac{112}{27} .$$</p>
+<p>$450$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt[3]{1+\dfrac{x}{3}} -\sqrt[4]{1+\dfrac{x}{4}} }{1-\sqrt{1-\dfrac{x}{2} } } $.</p>
+<p>解$\quad $对于题中的三个根式函数分别用公式$\eqref{444} $，得到在$x\to 0$的渐近展开式：</p>
+<p>$$\sqrt[3]{1+\dfrac{x}{3}} =1+\dfrac{1}{3} \cdot \dfrac{x}{3} +o(x)(x\to 0) ;$$</p>
+<p>$$\sqrt[4]{1+\dfrac{x}{4}} =1+\dfrac{1}{4} \cdot \dfrac{x}{4} +o(x)(x\to 0) ;$$</p>
+<p>$$\sqrt{1-\dfrac{x}{2} } =1+\dfrac{1}{2} \cdot (-\dfrac{x}{2} ) +o(x)(x\to 0) ;$$</p>
+<p>其中$o(x)$是当$x\to 0$时比$x$更高阶的无穷小量.然后将它们代入题中，并约去分子分母的共有因子$x$，即可有：</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt[3]{1+\dfrac{x}{3}} -\sqrt[4]{1+\dfrac{x}{4}} }{1-\sqrt{1-\dfrac{x}{2} } } =\lim_{x\to 0} \dfrac{\dfrac{1}{9} -\dfrac{1}{16} +o(1)}{\dfrac{1}{4} +o(1)} =\dfrac{7}{36} .$$</p>
+<p>$451$.$\displaystyle \lim_{x\to 0} \dfrac{x^2}{\sqrt[5]{1+5x} -(1+x)} $.</p>
+<p>解$1\quad $用代换把无理函数有理化.令$t=\sqrt[5]{1+5x} -1$，得$x=\dfrac{1}{5} ((1+t)^5-1)=t+2t^2 +\cdots +\dfrac{t^5}{5} $.于是有</p>
+<p>$$\lim_{x\to 0} \dfrac{x^2}{\sqrt[5]{1+5x} -(1+x)} =\lim_{t\to 0} \dfrac{t^2 (1+2t +\cdots +\dfrac{t^4}{5})^2}{t-(t+2t^2 +\cdots +\dfrac{t^5}{5})} =-\dfrac{1}{2} .$$</p>
+<p>解$2\quad $直接用命题$1.7$得到</p>
+<p>$$\dfrac{1}{25} \lim_{x\to 0} \dfrac{(5x)^2}{(1+5x)^{\frac{1}{5} } -1-\dfrac{1}{5} (5x) } =\dfrac{1}{25} \cdot \dfrac{2\cdot 5^2}{1-5} =-\dfrac{1}{2} .$$</p>
+<p>解$3\quad $用$\eqref{444-1} $即有</p>
+<p>$$(1+5x)^{\frac{1}{5} } =1+\dfrac{1}{5} (5x) +\dfrac{1-5}{2\cdot 5^2} (5x)^2 +o(x^2) =1+x-2x^2+o(x^2) (x\to 0),$$</p>
+<p>将它代入就可见所求极限为$-\dfrac{1}{2} $.</p>
+<p>注$\quad $从无穷小量$x\to 0$的角度来看，可见问题在于求出分母的二阶无穷小量$x^2 $阶项的系数.这也就是命题$1.7$与公式$\eqref{444-1}$的作用.从习题$451$的解$1$可见它与命题$1.7$的证明完全相同.</p>
+<p>$452$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt[m]{1+\alpha x} -\sqrt[n]{1+\beta x} }{x} $（$m$及$n$为整数）.</p>
+<p>解$\quad $对于题中的三个根式函数分别用公式$\eqref{444} $，得到在$x\to 0$的渐近展开式：</p>
+<p>$$\sqrt[m]{1+\alpha x} =1+\dfrac{1}{m} \cdot (\alpha x) +o(x)(x\to 0) ;$$</p>
+<p>$$\sqrt[n]{1+\beta x} =1+\dfrac{1}{n} \cdot (\beta x) +o(x)(x\to 0) ;$$</p>
+<p>其中$o(x)$是当$x\to 0$时比$x$更高阶的无穷小量.然后将它们代入题中，并约去分子分母的共有因子$x$，即可有：</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt[m]{1+\alpha x} -\sqrt[n]{1+\beta x} }{x} =\lim_{x\to 0} \left( \dfrac{1}{m} \cdot (\alpha ) -\dfrac{1}{n} \cdot (\beta ) +o(1) \right) =\dfrac{\alpha }{m} -\dfrac{\beta }{n} .$$</p>
+<p>$453$.$\displaystyle \lim_{x\to 0} \dfrac{\sqrt[m]{1+\alpha x} \sqrt[n]{1+\beta x} -1}{x} $（$m$及$n$为整数）.</p>
+<p>解$1\quad $用习题$444$再配合递推法（参见$\S 1.5.3$的习题$412$的解$2$）就可计算如下：</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt[m]{1+\alpha x} \sqrt[n]{1+\beta x} -1}{x} \\<br>= &amp; \lim_{x\to 0} \left( \dfrac{\sqrt[m]{1+\alpha x} (\sqrt[n]{1+\beta x} -1)}{x} +\dfrac{\sqrt[m]{1+\alpha x} -1}{x}\right) \\<br>= &amp; \dfrac{\beta }{n} +\dfrac{\alpha }{m} .<br>\end{align}$$</p>
+<p>解$2\quad $用公式$\eqref{444} $可计算如下：</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt[m]{1+\alpha x} \sqrt[n]{1+\beta x} -1}{x} \\<br>= &amp; \lim_{x\to 0} \dfrac{\left( 1+\dfrac{\alpha }{m} x +o(x)\right) \left( 1+\dfrac{\beta }{n} x +o(x)\right) -1}{x} \\<br>= &amp; \lim_{x\to 0} \dfrac{\left( \dfrac{\alpha }{m} +\dfrac{\beta }{n} \right) x+o(x)}{x} \\<br>= &amp; \dfrac{\alpha }{m} +\dfrac{\beta }{n} .<br>\end{align}$$</p>
+<p>$454$.设$P(x)=a_1 x+a_2 x^2 +\cdots +a_n x^n$且$m$为整数，求证：</p>
+<p>$$\lim_{x\to 0} \dfrac{\sqrt[m]{1+P(x)} -1}{x} =\dfrac{a_1 }{m} .$$</p>
+<p>证</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{\sqrt[m]{1+P(x)} -1}{x}  \\<br>= &amp; \lim_{x\to 0} \dfrac{\left( 1+\dfrac{P(x) }{m} +o(x)\right) -1}{x} \\<br>= &amp; \lim_{x\to 0} \dfrac{\dfrac{P(x)}{m} +o(x)}{x} \\<br>= &amp; \dfrac{a_1 }{m} .<br>\end{align}$$</p>
+<p>求下列极限：</p>
+<p>$455.1$.$\displaystyle \lim_{x\to 1} \dfrac{\sqrt[m]{x} -1}{\sqrt[n]{x} -1} $（$m$及$n$为整数）.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 1} \dfrac{\sqrt[m]{x} -1}{\sqrt[n]{x} -1}  \\<br>= &amp; \lim_{x\to 1} \dfrac{\sqrt[m]{1+x-1} -1}{\sqrt[n]{1+x-1} -1} \\<br>= &amp; \lim_{x\to 1} \dfrac{\left( 1+\dfrac{x-1}{m} +o(x-1)\right) -1}{\left( 1+\dfrac{x-1}{n} +o(x-1)\right) -1} \\<br>= &amp; \dfrac{n}{m} .<br>\end{align}$$</p>
+<p>$455.2$.$\displaystyle \lim_{x\to 1} \left( \dfrac{3}{1-\sqrt{x} } -\dfrac{2}{1-\sqrt[3]{x} } \right)$.</p>
+<p>解$1\quad $取$t=\sqrt[6]{x} $就可以将本题转化为习题$428$中的有理函数的极限来解决：</p>
+<p>$$\lim_{x\to 1} \left( \dfrac{3}{1-\sqrt{x} } -\dfrac{2}{1-\sqrt[3]{x} } \right) =\lim_{t\to 1} \left( \dfrac{3}{1-t^3} -\dfrac{2}{1-t^2} \right) =\dfrac{3-2}{2} =\dfrac{1}{2} .$$</p>
+<p>解$2\quad $这是$\infty -\infty $的不定式.将两个分式通分后就成为$\dfrac{0}{0} $的不定式：</p>
+<p>$$\lim_{x\to 1} \dfrac{3(1-\sqrt[3]{x} )-2(1-\sqrt{x} )}{(1-\sqrt{x} )(1-\sqrt[3]{x} )} .$$</p>
+<p>先分析分母，用公式$\eqref{444} $得到</p>
+<p>$$\begin{align}<br>&amp; (1-\sqrt{x} )(1-\sqrt[3]{x} ) \\<br>= &amp; (1-\sqrt{1+(x-1)} )(1-\sqrt[3]{1+(x-1)} ) \\<br>= &amp; [ -\dfrac{1}{2} (x-1)+o(x-1) ] [-\dfrac{1}{3} (x-1)+o(x-1)] \\<br>= &amp; \dfrac{1}{6} (x-1)^2+o((x-1)^2) (x\to 1),<br>\end{align}$$</p>
+<p>这表明分母是二阶无穷小量，从而提示我们需要用命题$1.7$或公式$\eqref{444-1} $于分子.</p>
+<p>用公式$\eqref{444-1} $于分子，即有</p>
+<p>$$\begin{align}<br>&amp; 3(1-\sqrt[3]{x} )-2(1-\sqrt{x} ) \\<br>= &amp; -3[\sqrt[3]{1+(x-1)} -1]+2[\sqrt{1+(x-1)} -1] \\<br>= &amp; -3[ \dfrac{1}{3} (x-1)-\dfrac{1}{9} (x-1)^2 +o((x-1)^2) ] \\<br> &amp; +2[ \dfrac{1}{2} (x-1)-\dfrac{1}{8} (x-1)^2 +o((x-1)^2) ] \\<br>= &amp; (\dfrac{1}{3} -\dfrac{1}{4} )(x-1)^2 +O((x-1)^2) \\<br>= &amp; \dfrac{1}{12} (x-1)^2 +o((x-1)^2) (x\to 1) ,<br>\end{align}$$</p>
+<p>这样就得到极限为</p>
+<p>$$\lim_{x\to 1} \left( \dfrac{3}{1-\sqrt{x} } -\dfrac{2}{1-\sqrt[3]{x} } \right) =\lim_{x\to 1} \dfrac{\dfrac{1}{12} (x-1)^2 +o((x-1)^2)}{\dfrac{1}{6} (x-1)^2+o((x-1)^2)} =\dfrac{1}{2} .$$</p>
+<p>$456$.$\displaystyle \lim_{x\to 1} \dfrac{(1-\sqrt{x} )(1-\sqrt[3]{x} )\cdots (1-\sqrt[n]{x} )}{(1-x)^{n-1}} $.</p>
+<p>解$\quad $作$t=1-x$并直接用习题$444$的结论就可得到</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 1} \dfrac{(1-\sqrt{x} )(1-\sqrt[3]{x} )\cdots (1-\sqrt[n]{x} )}{(1-x)^{n-1}} \\<br>= &amp; \lim_{t\to 0} \dfrac{1-\sqrt{1-t} }{t} \cdot \dfrac{1-\sqrt[3]{1-t} }{t} \cdot \cdots \cdot \dfrac{1-\sqrt[n]{1-t} }{t} \\<br>= &amp; \dfrac{1}{2} \cdot \dfrac{1}{3} \cdot \cdots \cdot \dfrac{1}{n} \\<br>= &amp; \dfrac{1}{n!} .<br>\end{align}$$</p>
+<p>小结$\quad $从上面的介绍可见，在函数极限的计算中引入无穷小量的阶数的概念是非常有用的.我们经常将$x\to a$的极限过程中的$x-a$称为（标准的）一阶无穷小量，然后将$(x-a)^n $称为$n$阶无穷小量.同样可以在$x\to \infty $的极限问题中将$\dfrac{1}{x} $称为一阶无穷小量，而将$\dfrac{1}{x^n} $称为$n$阶无穷小量.公式$\eqref{444} $和命题$1.7$的意义就在于此.虽然本小节的习题原则上都可以只用初等代数运算解决，然而我们还是建议初学者除了学习将无理函数有理化的方法之外，还是应当“向前看”，尽早培养起用无穷小量的阶数的观点，这样来理解和解决有关函数极限的计算问题对今后的微分学学习是非常有益的.</p>
+<p>习题$457-470$大都是$x\to \infty $的极限过程和$\infty -\infty $型的不定式问题.原则上可以用$t=\dfrac{1}{x} $将它们转化为$t\to 0$，并用有理化或通分等代数运算转化为$\dfrac{0}{0} $或$\dfrac{\infty }{\infty } $类型的不定式来解决.前面提出的各种方法在这里同样有效.</p>
+<p>$457$.$\displaystyle \lim_{x\to +\infty } \left[ \sqrt{(x+a)(x+b)} -x\right] $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to +\infty } \left[ \sqrt{(x+a)(x+b)} -x\right] \\<br>= &amp; \lim_{x\to +\infty } \dfrac{(x+a)(x+b)-x^2}{\sqrt{(x+a)(x+b)} +x} \\<br>= &amp; \lim_{x\to +\infty } \dfrac{a+b+\dfrac{ab}{x} }{1+\sqrt{\left(1+\dfrac{a}{x} \right) \left(x+\dfrac{b}{x} \right) } } \\<br>= &amp; \dfrac{a+b}{2} .<br>\end{align}$$</p>
+<p>$458$.$\displaystyle \lim_{x\to +\infty } \left( \sqrt{x+\sqrt{x+\sqrt{x} } } -\sqrt{x} \right) $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to +\infty } \left( \sqrt{x+\sqrt{x+\sqrt{x} } } -\sqrt{x} \right) \\<br>= &amp; \lim_{x\to +\infty }  \dfrac{(x+\sqrt{x+\sqrt{x} } )-x}{\sqrt{x+\sqrt{x+\sqrt{x} } } +\sqrt{x} } \\<br>= &amp; \lim_{x\to +\infty }  \dfrac{\sqrt{1+\sqrt{\dfrac{1}{x} } } }{1+\sqrt{1+\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x^3} } } } } \\<br>= &amp; \dfrac{1}{2} .<br>\end{align}$$</p>
+<p>$459$.$\displaystyle \lim_{x\to +\infty } x(\sqrt{x^2 +2x} -2\sqrt{x^2+x} +x) $.</p>
+<p>解$\quad $设$x=\dfrac{1}{t} $，则</p>
+<p>$$\begin{align}<br>&amp; x(\sqrt{x^2 +2x} -2\sqrt{x^2+x} +x) \\<br>= &amp; \dfrac{\sqrt{1+2t} -2\sqrt{1+t} +1}{t^2} \\<br>= &amp; \dfrac{(\sqrt{1+2t} +1)^2-4(1+t) }{t^2(\sqrt{1+2t} +1+2\sqrt{1+t} )} \\<br>= &amp; \dfrac{2(\sqrt{1+2t} -1-t) }{t^2(\sqrt{1+2t} +1+2\sqrt{1+t} )} \\<br>= &amp; \dfrac{2(\sqrt{1+2t} -1-t) (1+\sqrt{1+2t} )^2}{t^2(\sqrt{1+2t} +1+2\sqrt{1+t} )(1+\sqrt{1+2t} )^2} \\<br>= &amp; \dfrac{-4}{(\sqrt{1+2t} +1+2\sqrt{1+t} )(1+\sqrt{1+2t} )^2} .<br>\end{align}$$</p>
+<p>当$x\to +\infty $时，$t\to 0$.于是，上式趋向于$-\dfrac{1}{4} $，即</p>
+<p>$$\displaystyle \lim_{x\to +\infty } x(\sqrt{x^2 +2x} -2\sqrt{x^2+x} +x) =-\dfrac{1}{4} .$$</p>
+<p>$460$.$\displaystyle \lim_{x\to +0} \left( \sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } -\sqrt{\dfrac{1}{x} -\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } \right) $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to +0} \left( \sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } -\sqrt{\dfrac{1}{x} -\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } \right) \\<br>= &amp; \lim_{x\to +0} \dfrac{\left( \dfrac{1}{x} +\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } \right) -\left( \dfrac{1}{x} -\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } \right) }{\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } -\sqrt{\dfrac{1}{x} -\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } } \\<br>= &amp; \lim_{x\to +0} \dfrac{2\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } }{\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } -\sqrt{\dfrac{1}{x} -\sqrt{\dfrac{1}{x} +\sqrt{\dfrac{1}{x} } } } } \\<br>= &amp; 2\lim_{x\to +0} \dfrac{\sqrt{1+\sqrt{x} } }{\sqrt{1+\sqrt{x+x\sqrt{x} } } +\sqrt{1-\sqrt{x+x\sqrt{x} } }} \\<br>= &amp; 1.<br>\end{align}$$</p>
+<p>$461$.$\displaystyle \lim_{x\to \infty } (\sqrt[3]{x^3+x^2+1} -\sqrt[3]{x^3-x^2 +1} )$.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to \infty } (\sqrt[3]{x^3+x^2+1} -\sqrt[3]{x^3-x^2 +1} ) \\<br>= &amp; \lim_{x\to \infty } \dfrac{2x^2}{\sqrt[3]{(x^3+x^2+1)^2} +\sqrt[3]{(x^3+x^2+1)(x^3-x^2 +1)} +\sqrt[3]{(x^3-x^2 +1)^2 } } \\<br>= &amp; \dfrac{2}{3} .<br>\end{align}$$</p>
+<p>$462$.$\displaystyle \lim_{x\to +\infty } (\sqrt[3]{x^3+3x^2} -\sqrt{x^2-2x} )$.</p>
+<p>解$\quad $先提取$x$，再令$t=\dfrac{1}{x} $，则当$x\to \infty $时，$t\to 0$. </p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to +\infty } (\sqrt[3]{x^3+3x^2} -\sqrt{x^2-2x} ) \\<br>= &amp; \lim_{x\to \infty } \left(\sqrt[3]{x^3\left( 1+\dfrac{3}{x} \right) } -\sqrt{x^2\left( 1-\dfrac{2}{x} \right) } \right) \\<br>= &amp; \lim_{x\to \infty } x\left(\sqrt[3]{1+\dfrac{3}{x} } -\sqrt{1-\dfrac{2}{x} } \right) \\<br>= &amp; \lim_{t\to 0 } \dfrac{1}{t} (\sqrt[3]{1+3t } -\sqrt{1-2t } ) \\<br>= &amp; \lim_{t\to 0 } \dfrac{\left( 1+\dfrac{1}{3} \cdot (3t)+o(t)\right) -\left( 1+\dfrac{1}{2} \cdot (-2t)+o(t)\right) }{t} \\<br>= &amp; 2.<br>\end{align}$$</p>
+<p>$463$.$\displaystyle \lim_{x\to \infty } x^{\frac{1}{3} } \left[ (x+1)^{\frac{2}{3} } -(x-1)^{\frac{2}{3} }\right] $.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to \infty } x^{\frac{1}{3} } \left[ (x+1)^{\frac{2}{3} } -(x-1)^{\frac{2}{3} }\right] \\<br>= &amp; \lim_{x\to \infty } \dfrac{x^{\frac{1}{3} } \left[ (x+1)^{\frac{2}{3} } -(x-1)^{\frac{2}{3} }\right] \cdot [(x+1)^{\frac{4}{3} } +(x^2-1)^{\frac{2}{3} } +(x-1)^{\frac{4}{3} } ]}{(x+1)^{\frac{4}{3} } +(x^2-1)^{\frac{2}{3} } +(x-1)^{\frac{4}{3} }} \\<br>= &amp; \lim_{x\to \infty } \dfrac{4x^{\frac{4}{3} }}{(x+1)^{\frac{4}{3} } +(x^2-1)^{\frac{2}{3} } +(x-1)^{\frac{4}{3} }} \\<br>= &amp; \lim_{x\to \infty } \dfrac{4}{\left( 1+\dfrac{1}{x} \right)^{\frac{4}{3} } +\left( 1-\dfrac{1}{x^2} \right)^{\frac{2}{3} } +\left( 1-\dfrac{1}{x} \right)^{\frac{4}{3} } } \\<br>= &amp; \dfrac{4}{3} .<br>\end{align}$$</p>
+<p>$464$.$\displaystyle \lim_{x\to +\infty } x^{\frac{3}{2} } (\sqrt{x+2} -2\sqrt{x+1} +\sqrt{x} )$.</p>
+<p>解</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to +\infty } x^{\frac{3}{2} } (\sqrt{x+2} -2\sqrt{x+1} +\sqrt{x} ) \\<br>= &amp; \lim_{x\to \infty } \dfrac{x^{\frac{3}{2} } (\sqrt{x+2} -2\sqrt{x+1} +\sqrt{x} )(\sqrt{x+2} +2\sqrt{x+1} +\sqrt{x} )}{\sqrt{x+2} +2\sqrt{x+1} +\sqrt{x} } \\<br>= &amp; \lim_{x\to \infty } \dfrac{2x^{\frac{3}{2} } (\sqrt{x^2+2x} -x-1 )(\sqrt{x^2+2x} +x+1 )}{(\sqrt{x+2} +2\sqrt{x+1} +\sqrt{x} )(\sqrt{x^2+2x} +x+1)} \\<br>= &amp; -2\lim_{x\to +\infty } \dfrac{1}{\left( \sqrt{1+\dfrac{2}{x} } +2\sqrt{1+\dfrac{1}{x} } +1\right) \left( \sqrt{1+\dfrac{2}{x} } +1+\dfrac{1}{x} \right) } \\<br>= &amp; -\dfrac{1}{4} .<br>\end{align}$$</p>
+<p>$465$.$\displaystyle \lim_{x\to +\infty } \left[ \sqrt[n]{(x+a_1 )\cdots (x+a_n )} -x\right] $.</p>
+<p>解$\quad $令$t=\dfrac{1}{x} $，则当$x\to +\infty $时，$t\to +0$.</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to +\infty } \left[ \sqrt[n]{(x+a_1 )\cdots (x+a_n )} -x\right] \\<br>= &amp; \lim_{x\to +\infty } \left[ \sqrt[n]{ x^n(1+\dfrac{a_1 }{x} )\cdots (1+\dfrac{a_n }{x} )} -x\right] \\<br>= &amp; \lim_{x\to +\infty } x\left[ \sqrt[n]{ (1+\dfrac{a_1 }{x} )\cdots (1+\dfrac{a_n }{x} )} -1\right] \\<br>= &amp; \lim_{t\to +0 } \dfrac{\sqrt[n]{ (1+a_1 t )\cdots (1+a_n t)} -1}{t} \\<br>= &amp; \lim_{t\to +0 } \dfrac{\sqrt[n]{ 1+[(1+a_1 t )\cdots (1+a_n t)-1]} -1}{t}<br>\end{align}$$</p>
+<p>由习题$454$的结论，得到</p>
+<p>$$\displaystyle \lim_{x\to +\infty } \left[ \sqrt[n]{(x+a_1 )\cdots (x+a_n )} -x\right] =\dfrac{a_1 +\cdots  +a_n }{n} .$$</p>
+<p>最后再举几个简单例子，说明如何将代数运算与无穷小分析相结合.</p>
+<p>$466$.$\displaystyle \lim_{x\to +\infty } \dfrac{(x-\sqrt{x^2 -1} )^n +(x-\sqrt{x^2 -1} )^n }{x^n} $（$n$为正整数）.</p>
+<p>解$\quad $令$t=\dfrac{1}{x} $并改写如下：</p>
+<p>$$\lim_{x\to +\infty } \dfrac{(x-\sqrt{x^2 -1} )^n +(x-\sqrt{x^2 -1} )^n }{x^n} =\lim_{t\to 0} [(1-\sqrt{1-t^2} )^n +(1+\sqrt{1-t^2} )^n] ,$$</p>
+<p>就可以看出当$t\to 0$时方括号内的两项都只要分别用$t=0$代入就可以得到极限，因此答案为$2^n $.</p>
+<p>$467$.$\displaystyle \lim_{x\to 0} \dfrac{(\sqrt{1+x^2} +x)^n -(\sqrt{1+x^2} -x)^n }{x} $（$n$为正整数）.</p>
+<p>解$\quad $令$\sqrt{1+x^2} +x=1+t$，则有$\sqrt{1+x^2} -x=\dfrac{1}{1+t}$，$x=\dfrac{1}{2} \left( 1+t-\dfrac{1}{1+t} \right) $，于是有</p>
+<p>$$\begin{align}<br>&amp; \lim_{x\to 0} \dfrac{(\sqrt{1+x^2} +x)^n -(\sqrt{1+x^2} -x)^n }{x} \\<br>= &amp; 2\lim_{t\to 0} \dfrac{(1+t)^n -\dfrac{1}{(1+t)^n} }{1+t-\dfrac{1}{1+t} } \\<br>= &amp; 2\lim_{t\to 0} \left( \dfrac{1+t}{(1+t)^n} \cdot \dfrac{(1+t)^{2n} -1}{(1+t)^2 -1} \right) \\<br>= &amp; 2\cdot \dfrac{2n}{2} \\<br>= &amp; 2n.<br>\end{align}$$</p>
+<p>$468$.设二次方程$ax^2 +bx+c=0$的系数$a$趋于零，系数$b$与$c$为常数，且$b\neq 0$，试研究此二次方程之二根$x_1 $及$x_2 $的性质.</p>
+<p>解$\quad x_1 =\dfrac{-b+\sqrt{b^2-4ac} }{2a} ,x_2 =\dfrac{-b-\sqrt{b^2-4ac} }{2a} $.</p>
+<p>不失一般性，假设$b &gt; 0$，于是，有</p>
+<p>$$\lim_{a\to 0} x_2 =\infty $$</p>
+<p>及</p>
+<p>$$\lim_{a\to 0} x_1 =\lim_{a\to 0} \dfrac{(-b+\sqrt{b^2-4ac} )(-b-\sqrt{b^2-4ac} )}{2a(-b-\sqrt{b^2-4ac} )} =-2c\lim_{a\to 0} \dfrac{1}{b+\sqrt{b^2-4ac} } =-\dfrac{c}{b} .$$</p>
+<p>$469$.从条件</p>
+<p>$$\lim_{x\to \infty } \left( \dfrac{x^2 +1}{x+1} -ax-b \right) =0$$</p>
+<p>求常数$a$和$b$.</p>
+<p>解$\quad \dfrac{x^2 +1}{x+1} -ax-b =\dfrac{(1-a^2)x^2 -(a+b)x+(1-b)}{x+1} .$</p>
+<p>按假设，上式的极限为零的必要条件是$1-a=0$及$a+b=0$，解之，得$a= 1$，$b=-1$.</p>
+<p>$470$.从条件</p>
+<p>$$\lim_{x\to -\infty } \left( \sqrt{x^2-x+1} -a_1 x-b_1 \right) =0,$$</p>
+<p>$$\lim_{x\to +\infty } \left( \sqrt{x^2-x+1} -a_2 x-b_2 \right) =0$$</p>
+<p>求常数$a_i $和$b_i (i=1,2)$.</p>
+<p>解$1\quad $只给出后半题的解答.从条件可见有</p>
+<p>$$\begin{align}<br>0 = &amp; \lim_{x\to +\infty }  \dfrac{\sqrt{x^2-x+1} -a_2 x-b_2 }{x} \\<br>= &amp; \lim_{x\to +\infty } \left( \sqrt{1-\dfrac{1}{x} +\dfrac{1}{x^2} } -a_2 -\dfrac{b_2 }{x} \right) \\<br>= &amp; 1-a_2 ,<br>\end{align}$$</p>
+<p>于是$a_2 =1$.</p>
+<p>然后从题设条件就有</p>
+<p>$$b_2 =\lim_{x\to +\infty } \left( \sqrt{x^2-x+1} -x\right) =\lim_{x\to +\infty } \dfrac{-x+1}{\sqrt{x^2-x+1} +x} =-\dfrac{1}{2} .$$</p>
+<p>解$2\quad $仍只解答后半题.这时视$\dfrac{1}{x} $为$x\to +\infty $时的标准无穷小量，则从$\eqref{444} $就有</p>
+<p>$$\begin{align}<br>\sqrt{x^2-x+1} = &amp; x \sqrt{1-\dfrac{1}{x} +\dfrac{1}{x^2} } \\<br>= &amp; x\left( 1+\dfrac{1}{2} \left( -\dfrac{1}{x} +\dfrac{1}{x^2} \right) +o(\dfrac{1}{x} ) \right) \\<br>= &amp; x-\dfrac{1}{2} +o(1)(x\to +\infty ),<br>\end{align}$$</p>
+<p>可见$a_2 =1,b_2 =-\dfrac{1}{2} $.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/数学分析/">数学分析</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/数学分析/">数学分析</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/03/03/2016/03/jimiduoweiqishuxuefenxixitiji1151/" data-title="《数学分析习题集》第一章 分析引论 5.函数的极限 | Jianhang&#39;s Blog" data-tsina="1763313312" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/03/17/2016/03/ahistoryofmathematicsscott1/" title="《数学史》第一章 上古时代的数学">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《数学史》第一章 上古时代的数学</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/02/14/2016/02/shuxuefengxizhuoliqi112/"  title="《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算">
+ <strong>下一篇：</strong><br/> 
+ <span>《数学分析(第一卷)（第4版）》第一章 一些通用的数学概念与记号 2.集与集的初等运算
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#有界性、确界和振幅"><span class="toc-number">1.</span> <span class="toc-text">有界性、确界和振幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数极限的定义"><span class="toc-number">2.</span> <span class="toc-text">函数极限的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理函数的极限计算"><span class="toc-number">3.</span> <span class="toc-text">有理函数的极限计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无理函数的极限计算"><span class="toc-number">4.</span> <span class="toc-text">无理函数的极限计算</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/代数学/" title="代数学">代数学<sup>57</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/代数数论/" title="代数数论">代数数论<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/函数论/" title="函数论">函数论<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>30</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数学史/" title="数学史">数学史<sup>6</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据分析/" title="数据分析">数据分析<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/考研/" title="考研">考研<sup>6</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">標簽雲</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/代数学/" style="font-size: 20px;">代数学</a> <a href="/tags/函数论/" style="font-size: 15.71px;">函数论</a> <a href="/tags/微分学/" style="font-size: 18.57px;">微分学</a> <a href="/tags/微积分/" style="font-size: 10px;">微积分</a> <a href="/tags/抽象代数/" style="font-size: 12.86px;">抽象代数</a> <a href="/tags/数学分析/" style="font-size: 17.14px;">数学分析</a> <a href="/tags/数学史/" style="font-size: 14.29px;">数学史</a> <a href="/tags/数据分析/" style="font-size: 11.43px;">数据分析</a> <a href="/tags/积分学/" style="font-size: 18.57px;">积分学</a> <a href="/tags/高等代数/" style="font-size: 12.86px;">高等代数</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.google.com.hk" target="_blank" title="全球规模最大的搜索引擎">谷歌Google</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://academic.research.microsoft.com/" target="_blank" title="Microsoft Academic Search">Microsoft Academic Search</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		<a href="https://www.facebook.com/jianhang.lin.5" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 		
+		
+		<a href="/about" target="_blank" title="Jianhang Lin">Jianhang Lin</a>
+		
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  }); 
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+$('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'jianhanglin';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-2', 'jianhanglin.github.io');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
